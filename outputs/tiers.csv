@@ -1,23 +1,23 @@
 technology_id,name,arm,status,tier,science_signal_year,science_growth_3y,edgar_latest_count,edgar_signal_year
 3d_printing,3D printing,tech,validation,T1,2013,0.082,104,2015
-autonomous_cars,Autonomous cars,tech,validation,T1,2017,0.291,173,2018
+autonomous_cars,Autonomous cars,tech,validation,T1,2016,0.291,173,2018
 bispecific_antibody,Bispecific antibody,bio,validation,T1,2013,1.373,110,2019
-cloud_computing,Cloud computing,tech,validation,T2,2012,-0.354,1515,2011
-computer_vision,Computer vision,tech,validation,T-,,0.113,173,2023
+cloud_computing,Cloud computing,tech,validation,T2,2011,-0.345,1515,2011
+computer_vision,Computer vision,tech,validation,T-,,0.113,173,2019
 drug_conjugates,Antibody drug conjugates,bio,validation,T1,2012,1.012,128,2015
 millimeter_wave,Millimeter wave,tech,validation,T-,,0.244,24,2020
 fingerprint_sensor,Fingerprint sensor,tech,validation,T-,,-0.485,3,
 fracking,Fracking,tech,validation,T1,2014,-0.063,197,2010
 hybrid_ev,Hybrid vehicle / Electric car,tech,validation,T2,2014,0.278,604,2010
 lithium_battery,Lithium battery,tech,validation,T1,2010,0.069,114,2009
-machine_learning,Machine learning / AI,tech,validation,T2,2018,0.697,3986,2018
+machine_learning,Machine learning / AI,tech,validation,T2,2018,0.697,3986,2016
 mobile_payment,Mobile payment,tech,validation,T1,2022,0.031,136,2011
 oled_display,OLED display,tech,validation,T-,,0.176,24,
-smart_devices,Smart devices,tech,validation,T2,2011,0.145,1132,2010
+smart_devices,Smart devices,tech,validation,T2,2011,0.145,1132,2011
 social_networking,Social networking,tech,validation,T2,2011,-0.056,2706,2008
 solar_power,Solar power,tech,validation,T2,2005,0.041,314,2009
 stent_graft,Stent graft,bio,validation,T-,,-0.072,5,
-virtual_reality,Virtual reality,tech,validation,T1,2019,0.326,175,2018
+virtual_reality,Virtual reality,tech,validation,T1,2019,0.326,175,2017
 wireless_charging,Wireless charging,tech,validation,T-,,0.113,17,
 rfid,RFID,tech,validation,T1,2006,0.141,54,2005
 touch_screen,Touch screen,tech,validation,T-,,-0.256,73,
