@@ -12,7 +12,7 @@ from collectors.common import (ALL, env, get_json, load_counts, load_settings, l
                                log, needs_collection, save_counts, upsert, year_range)
 
 SOURCE = "arxiv"
-API = "http://export.arxiv.org/api/query"
+API = "https://export.arxiv.org/api/query"
 STATS = "https://arxiv.org/stats/get_monthly_submissions"
 
 
@@ -23,7 +23,8 @@ def build_query(keywords: list[str], field: str, year: int) -> str:
 
 def total_results(query: str, sleep: float) -> int:
     time.sleep(sleep)
-    text = get_json(API, params={"search_query": query, "max_results": 0})
+    # max_results=0 makes the arXiv API return HTTP 500 (verified 2026-11-03); 1 is the minimum.
+    text = get_json(API, params={"search_query": query, "max_results": 1})
     m = re.search(r"<opensearch:totalResults[^>]*>(\d+)<", text)
     if not m:
         raise RuntimeError("arXiv: totalResults not found in response")

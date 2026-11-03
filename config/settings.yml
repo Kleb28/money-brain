@@ -18,7 +18,7 @@ sources:
     enabled: true
     arms: [bio, tech]
     forms: "10-K"
-    denominator_query: '"fiscal year"'   # proxy for "all 10-K filed that year"
+    # denominator = exact "10-K" rows in the quarterly master index (full-index/<y>/QTR<n>/form.gz)
   clinicaltrials:
     enabled: true
     arms: [bio]

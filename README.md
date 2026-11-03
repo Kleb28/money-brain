@@ -51,6 +51,6 @@ theses/                   thesis 카드 (md, _template.md 참고)
 
 ## 알려진 한계
 - EDGAR 전문검색은 2001년 이후만 있고 건수 10,000에서 상한 (relation=gte)
-- 10-K 분모는 `"fiscal year"` 포함 건수로 대체한 근사치
+- 10-K 분모는 EDGAR 분기 마스터 인덱스(form.gz)의 정확한 "10-K" 행 수; EFTS 총계는 10,000에서 상한이라 분모로 못 씀
 - uspto 수집기는 PatentsView → data.uspto.gov 이전 후 스키마 미확인 (experimental)
 - 키워드 OR 검색이라 동음이의 잡음 포함 — Kalyani는 사람 감사로 80% 정확도 기준을 썼고 여기서는 아직 안 함
