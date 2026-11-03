@@ -3,28 +3,28 @@ technology_id,name,arm,status,tier,science_signal_year,science_growth_3y,edgar_l
 autonomous_cars,Autonomous cars,tech,validation,T1,2016,0.291,173,2018
 bispecific_antibody,Bispecific antibody,bio,validation,T1,2013,1.373,110,2019
 cloud_computing,Cloud computing,tech,validation,T2,2011,-0.345,1515,2011
-computer_vision,Computer vision,tech,validation,T-,,0.113,173,2019
+computer_vision,Computer vision,tech,validation,T1,2013,0.113,173,2019
 drug_conjugates,Antibody drug conjugates,bio,validation,T1,2012,1.012,128,2015
-millimeter_wave,Millimeter wave,tech,validation,T-,,0.244,24,2020
+millimeter_wave,Millimeter wave,tech,validation,T0,2016,0.244,24,2020
 fingerprint_sensor,Fingerprint sensor,tech,validation,T-,,-0.485,3,
 fracking,Fracking,tech,validation,T1,2014,-0.063,197,2010
 hybrid_ev,Hybrid vehicle / Electric car,tech,validation,T2,2014,0.278,604,2010
 lithium_battery,Lithium battery,tech,validation,T1,2010,0.069,114,2009
-machine_learning,Machine learning / AI,tech,validation,T2,2018,0.697,3986,2016
+machine_learning,Machine learning / AI,tech,validation,T2,2013,0.697,3986,2016
 mobile_payment,Mobile payment,tech,validation,T1,2022,0.031,136,2011
 oled_display,OLED display,tech,validation,T-,,0.176,24,
 smart_devices,Smart devices,tech,validation,T2,2011,0.145,1132,2011
 social_networking,Social networking,tech,validation,T2,2011,-0.056,2706,2008
 solar_power,Solar power,tech,validation,T2,2005,0.041,314,2009
 stent_graft,Stent graft,bio,validation,T-,,-0.072,5,
-virtual_reality,Virtual reality,tech,validation,T1,2019,0.326,175,2017
+virtual_reality,Virtual reality,tech,validation,T1,2016,0.326,175,2017
 wireless_charging,Wireless charging,tech,validation,T-,,0.113,17,
-rfid,RFID,tech,validation,T1,2006,0.141,54,2005
-touch_screen,Touch screen,tech,validation,T-,,-0.256,73,
-gps,GPS,tech,validation,T2,,-0.046,219,
-search_engine,Search engine,tech,validation,T2,,-0.485,507,2009
-online_streaming,Online streaming,tech,validation,T1,2021,0.031,153,
-wifi,Wi-Fi,tech,validation,T2,2014,-0.104,267,
+rfid,RFID,tech,validation,T1,2006,0.328,54,2005
+touch_screen,Touch screen,tech,validation,T-,,-0.221,73,
+gps,GPS,tech,validation,T2,,0.056,219,
+search_engine,Search engine,tech,validation,T2,2010,-0.45,507,2009
+online_streaming,Online streaming,tech,validation,T1,2021,0.181,153,
+wifi,Wi-Fi,tech,validation,T2,2007,-0.104,267,
 electronic_gaming,Electronic gaming,tech,validation,T1,2010,-0.21,117,
 software_defined_radio,Software defined radio,tech,validation,T-,,0.389,6,
-lane_departure,Lane departure warning,tech,validation,T-,,-0.072,12,
+lane_departure,Lane departure warning,tech,validation,T-,,1.324,12,
