@@ -9,6 +9,7 @@ jobs:
     timeout-minutes: 20
     env:
       EDGAR_USER_AGENT: ${{ vars.EDGAR_USER_AGENT }}
+      USPTO_API_KEY: ${{ secrets.USPTO_API_KEY }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
