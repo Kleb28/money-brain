@@ -13,7 +13,7 @@ sources:
     enabled: true
     arms: [tech]
     field: abs
-    sleep_seconds: 3     # arXiv asks >= 3 s between requests
+    sleep_seconds: 4     # arXiv asks >= 3 s between requests; 429s appeared at 3 s after ~90 calls
   edgar:
     enabled: true
     arms: [bio, tech]

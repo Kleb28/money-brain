@@ -24,7 +24,9 @@ def build_query(keywords: list[str], field: str, year: int) -> str:
 def total_results(query: str, sleep: float) -> int:
     time.sleep(sleep)
     # max_results=0 makes the arXiv API return HTTP 500 (verified 2026-11-03); 1 is the minimum.
-    text = get_json(API, params={"search_query": query, "max_results": 1})
+    # arXiv returns 429 after ~90 requests even at 3 s spacing (seen 2026-11-03): back off for minutes.
+    text = get_json(API, params={"search_query": query, "max_results": 1},
+                    retries=6, rate_limit_sleep=120.0)
     m = re.search(r"<opensearch:totalResults[^>]*>(\d+)<", text)
     if not m:
         raise RuntimeError("arXiv: totalResults not found in response")

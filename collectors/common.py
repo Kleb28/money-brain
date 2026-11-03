@@ -90,13 +90,24 @@ def upsert(existing: dict, tech_id: str, source: str, year: int, count: int) -> 
 
 
 def get_json(url: str, params: dict | None = None, headers: dict | None = None,
-             retries: int = 4, backoff: float = 2.0, timeout: int = 60):
-    """GET with simple retry/backoff. Returns parsed JSON (or raw text when not JSON)."""
+             retries: int = 4, backoff: float = 2.0, timeout: int = 60,
+             rate_limit_sleep: float = 60.0):
+    """GET with retry/backoff. Returns parsed JSON (or raw text when not JSON).
+
+    HTTP 429 is treated as a rate-limit: sleep max(Retry-After, rate_limit_sleep * 2**attempt).
+    """
     last_err = None
     for attempt in range(retries):
         try:
             r = requests.get(url, params=params, headers=headers, timeout=timeout)
-            if r.status_code == 429 or r.status_code >= 500:
+            if r.status_code == 429:
+                ra = r.headers.get("Retry-After")
+                wait = max(float(ra) if ra and ra.isdigit() else 0.0, rate_limit_sleep * (2 ** attempt))
+                log(f"  429 rate-limited; sleeping {wait:.0f}s (attempt {attempt + 1}/{retries})")
+                time.sleep(wait)
+                last_err = requests.HTTPError("429 rate limited", response=r)
+                continue
+            if r.status_code >= 500:
                 raise requests.HTTPError(f"{r.status_code} {r.reason}", response=r)
             r.raise_for_status()
             ctype = r.headers.get("content-type", "")
