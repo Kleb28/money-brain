@@ -1,0 +1,30 @@
+id,name,arm,status,ec_year,keywords
+3d_printing,3D printing,tech,validation,2011,3d printing; additive manufacturing; 3d printed; 3d printer
+autonomous_cars,Autonomous cars,tech,validation,2014,autonomous vehicle; autonomous vehicles; self-driving car; autonomous driving; driverless car
+bispecific_antibody,Bispecific antibody,bio,validation,2012,bispecific antibody; bispecific antibodies; bispecific monoclonal
+cloud_computing,Cloud computing,tech,validation,2008,cloud computing; cloud services; public cloud; cloud infrastructure
+computer_vision,Computer vision,tech,validation,2008,computer vision; object recognition; image recognition; facial recognition
+drug_conjugates,Antibody drug conjugates,bio,validation,2002,antibody drug conjugate; antibody-drug conjugate; drug conjugates
+millimeter_wave,Millimeter wave,tech,validation,2014,millimeter wave
+fingerprint_sensor,Fingerprint sensor,tech,validation,2011,fingerprint sensor; fingerprint scanner
+fracking,Fracking,tech,validation,2007,hydraulic fracturing; fracking; hydrofracturing
+hybrid_ev,Hybrid vehicle / Electric car,tech,validation,2007,electric vehicle; electric vehicles; hybrid vehicle; plug-in hybrid
+lithium_battery,Lithium battery,tech,validation,2002,lithium ion battery; lithium-ion battery; lithium ion batteries
+machine_learning,Machine learning / AI,tech,validation,2015,machine learning; deep learning; neural network; artificial intelligence
+mobile_payment,Mobile payment,tech,validation,2007,mobile payment; mobile wallet; mobile commerce; mobile money
+oled_display,OLED display,tech,validation,2002,organic light-emitting diode; oled display; oled
+smart_devices,Smart devices,tech,validation,2005,mobile devices; smartphone; smartphones; wearable devices; connected devices
+social_networking,Social networking,tech,validation,2006,social networking; social media; social network; user generated content
+solar_power,Solar power,tech,validation,2002,solar cell; solar cells; photovoltaic; solar panel; solar power
+stent_graft,Stent graft,bio,validation,2003,stent graft; stent-graft
+virtual_reality,Virtual reality,tech,validation,2013,virtual reality; augmented reality; mixed reality
+wireless_charging,Wireless charging,tech,validation,2012,wireless charging; inductive charging
+rfid,RFID,tech,validation,2002,radio frequency identification; rfid
+touch_screen,Touch screen,tech,validation,2002,touchscreen; touch screen; capacitive touch
+gps,GPS,tech,validation,2002,global positioning system; gps
+search_engine,Search engine,tech,validation,2002,search engine; search engines
+online_streaming,Online streaming,tech,validation,2002,video streaming; streaming media; live streaming; online streaming
+wifi,Wi-Fi,tech,validation,2002,wifi; wi-fi; wireless networks
+electronic_gaming,Electronic gaming,tech,validation,2002,video game; video games; electronic gaming
+software_defined_radio,Software defined radio,tech,validation,2002,software defined radio; software-defined radio
+lane_departure,Lane departure warning,tech,validation,2002,lane departure warning; lane departure

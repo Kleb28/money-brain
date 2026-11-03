@@ -1,0 +1,38 @@
+# money-brain collection / detection settings
+years:
+  start: 2002
+  end: null          # null = current year
+  refresh_last_n: 2  # re-collect the most recent N years every run (counts drift as indexes update)
+
+sources:
+  pubmed:
+    enabled: true
+    arms: [bio, tech]
+    field: tiab          # title/abstract
+  arxiv:
+    enabled: true
+    arms: [tech]
+    field: abs
+    sleep_seconds: 3     # arXiv asks >= 3 s between requests
+  edgar:
+    enabled: true
+    arms: [bio, tech]
+    forms: "10-K"
+    denominator_query: '"fiscal year"'   # proxy for "all 10-K filed that year"
+  clinicaltrials:
+    enabled: true
+    arms: [bio]
+  uspto:
+    enabled: true        # auto-skips when USPTO_API_KEY is missing
+    arms: [bio, tech]
+
+detector:
+  # share = count / denominator * 1e6  (per million documents of that source/year)
+  min_count: 30            # ignore years with fewer raw documents than this (noise floor)
+  growth_window_years: 2   # compare share[y] vs share[y - window]
+  growth_threshold: 0.5    # +50 % over the window
+  consecutive_hits: 2      # windows that must pass back-to-back for a signal
+  # provisional Tier thresholds for NEW candidates (no ec_year label). Re-tune after validation.
+  tier:
+    edgar_low_max: 50      # 10-K mentions/yr below this = "market not yet talking" (Tier 0/1)
+    edgar_high_min: 200    # at/above this = "already in the conversation" (Tier 2)
