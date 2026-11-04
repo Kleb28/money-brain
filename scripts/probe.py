@@ -1,52 +1,51 @@
-"""Read the techdiffusion.net site text (data documentation) and list the three Dropbox folders."""
+"""Aggregate the techdiffusion.net location-level file (1.7 GB .dta, 14.4M rows) to one job-posting
+share series per technology bigram and year, 2010-2019. Written to data/external/jobs_by_tech_year.csv
+(tech, title, start_year, year, tech_hiring, total_jobs). Streams the file in chunks; nothing is held
+in memory beyond the running sums."""
 from __future__ import annotations
 
-import html
-import re
+import os
+import time
+from collections import defaultdict
 
+import pandas as pd
+import pyreadstat
 import requests
 
+URL = "https://www.dropbox.com/scl/fi/dy1yhzp3padagsvg2189t/location_data.dta?rlkey=5r9xyvlsn2h5dqbh1u20tm12r&dl=1"
 H = {"User-Agent": "Mozilla/5.0 (money-brain research probe)"}
+TMP = "/tmp/dnt/location_data.dta"
+OUT = "data/external/jobs_by_tech_year.csv"
+os.makedirs("/tmp/dnt", exist_ok=True)
+os.makedirs("data/external", exist_ok=True)
 
+t0 = time.time()
+with requests.get(URL, headers=H, timeout=600, stream=True) as r:
+    r.raise_for_status()
+    with open(TMP, "wb") as f:
+        for chunk in r.iter_content(1 << 22):
+            f.write(chunk)
+print(f"downloaded {os.path.getsize(TMP)/1e6:.0f} MB in {time.time()-t0:.0f}s", flush=True)
 
-def text_of(url):
-    r = requests.get(url, headers=H, timeout=120)
-    t = re.sub(r"<(script|style)[^>]*>.*?</\1>", " ", r.text, flags=re.S | re.I)
-    t = re.sub(r"<[^>]+>", "\n", t)
-    t = html.unescape(t)
-    t = re.sub(r"\n\s*\n+", "\n", t)
-    return r.status_code, t
+hiring = defaultdict(int)
+jobs = defaultdict(int)
+meta_rows = {}
+n = 0
+for df, _ in pyreadstat.read_file_in_chunks(pyreadstat.read_dta, TMP, chunksize=2_000_000):
+    g = df.groupby(["tech", "year"], as_index=False).agg(h=("tech_hiring", "sum"), t=("total_jobs", "sum"))
+    for row in g.itertuples(index=False):
+        hiring[(row.tech, int(row.year))] += int(row.h)
+        jobs[(row.tech, int(row.year))] += int(row.t)
+    m = df.drop_duplicates("tech")[["tech", "title", "start_year"]]
+    for row in m.itertuples(index=False):
+        meta_rows.setdefault(row.tech, (row.title, int(row.start_year)))
+    n += len(df)
+    print(f"  {n:,} rows; {len(hiring):,} tech-years; {time.time()-t0:.0f}s", flush=True)
 
-
-def log(*a):
-    print(*a, flush=True)
-
-
-base = "https://www.techdiffusion.net"
-r = requests.get(base, headers=H, timeout=120)
-links = sorted(set(re.findall(r'href="(/[^"#?]*)"', r.text)))
-log("site pages:", links)
-for p in [""] + [l for l in links if l not in ("/",)]:
-    code, t = text_of(base + p)
-    log(f"\n######## PAGE {p or '/'} status {code}")
-    log(t[:6000])
-
-for name, url in {
-    "folder1": "https://www.dropbox.com/sh/kml262k1l381mw6/AAA5A6YjQPz6ATLlXr5l49Ana?dl=0",
-    "folder2": "https://www.dropbox.com/scl/fo/hnmj9svolva18ca88vixk/AKjuI1MXiojRkdxgO6XR5rw?rlkey=evdkmt0ywad3vohf71jb1naqo&st=iqoaoudk&dl=0",
-    "folder3": "https://www.dropbox.com/scl/fo/q8qem553r8qflgx127wi1/AAo-LwqkR5zWFud3z2uIVGk?rlkey=ozlw34nmmdh0uy5ab74ga09ba&dl=0",
-}.items():
-    log(f"\n######## {name}")
-    try:
-        r = requests.get(url, headers=H, timeout=120)
-        log("status", r.status_code, "bytes", len(r.text))
-        m = re.search(r"<title>(.*?)</title>", r.text, flags=re.S)
-        log("title:", html.unescape(m.group(1)).strip() if m else None)
-        names = sorted(set(re.findall(r'"(?:filename|name)"\s*:\s*"([^"]{1,120}\.(?:dta|csv|xlsx|xls|pdf|txt|zip|do|R|py|md|docx)(?:\.gz)?)"', r.text)))
-        log("file names in page json:", names[:100])
-        words = sorted(set(re.findall(r'[\w\-]+\.(?:dta|csv|xlsx|pdf|zip|txt|do)\b', html.unescape(r.text))))
-        log("file-like tokens:", words[:100])
-        for pat in ("rlkey", "sharing_modal", "folder"):
-            pass
-    except Exception as e:  # noqa: BLE001
-        log("EXC", repr(e)[:300])
+rows = [{"tech": k[0], "title": meta_rows[k[0]][0], "start_year": meta_rows[k[0]][1], "year": k[1],
+         "tech_hiring": hiring[k], "total_jobs": jobs[k]} for k in sorted(hiring)]
+out = pd.DataFrame(rows)
+out.to_csv(OUT, index=False)
+print("techs", out.tech.nunique(), "years", sorted(out.year.unique()), "rows", len(out), flush=True)
+print(out.groupby("year").total_jobs.max().to_string(), flush=True)
+os.remove(TMP)
