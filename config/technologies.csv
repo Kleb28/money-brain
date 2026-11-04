@@ -28,3 +28,21 @@ wifi,Wi-Fi,tech,validation,2002,wifi; wi-fi; wireless networks
 electronic_gaming,Electronic gaming,tech,validation,2002,video game; video games; electronic gaming
 software_defined_radio,Software defined radio,tech,validation,2002,software defined radio; software-defined radio
 lane_departure,Lane departure warning,tech,validation,2002,lane departure warning; lane departure
+ctl_ball_bearing,Ball bearing (control),tech,control,,ball bearing; ball bearings; rolling bearing
+ctl_hydraulic_cylinder,Hydraulic cylinder (control),tech,control,,hydraulic cylinder; hydraulic cylinders; hydraulic actuator
+ctl_heat_exchanger,Heat exchanger (control),tech,control,,heat exchanger; heat exchangers
+ctl_centrifugal_pump,Centrifugal pump (control),tech,control,,centrifugal pump; centrifugal pumps
+ctl_circuit_breaker,Circuit breaker (control),tech,control,,circuit breaker; circuit breakers
+ctl_power_transformer,Power transformer (control),tech,control,,power transformer; distribution transformer
+ctl_epoxy_resin,Epoxy resin (control),tech,control,,epoxy resin; epoxy resins; epoxy composition
+ctl_polyurethane_foam,Polyurethane foam (control),tech,control,,polyurethane foam; polyurethane foams
+ctl_carbon_nanotube,Carbon nanotube (control),tech,control,,carbon nanotube; carbon nanotubes
+ctl_graphene,Graphene (control),tech,control,,graphene
+ctl_zeolite_catalyst,Zeolite catalyst (control),tech,control,,zeolite catalyst; zeolite catalysts; zeolite
+ctl_catheter,Catheter (control),bio,control,,catheter; catheters
+ctl_dental_implant,Dental implant (control),bio,control,,dental implant; dental implants
+ctl_syringe,Syringe (control),bio,control,,syringe; syringes
+ctl_rna_interference,RNA interference (control),bio,control,,rna interference; small interfering rna; sirna
+ctl_stem_cell,Stem cell (control),bio,control,,stem cell; stem cells
+ctl_toothbrush,Toothbrush (control),tech,control,,toothbrush; toothbrushes
+ctl_razor,Razor (control),tech,control,,razor blade; razor cartridge; shaving razor

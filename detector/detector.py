@@ -152,7 +152,93 @@ def main() -> None:
                      f"{sum(1 for x in ls if x < 0)} | {med} |")
     lines += ["", "Technologies imputed to 2002 by Kalyani et al. are excluded from the summary: their true breakthrough predates the earnings-call sample.", ""]
     (OUT / "validation_report.md").write_text("\n".join(lines), encoding="utf-8")
+
+    # ---- Rule selection: lead rate on positives vs. fire rate on negative controls ----
+    rule_selection(techs, shares, by, d)
     print(f"detector: {len(signals)} tech-source series, {len(tier_rows)} tier rows")
+
+
+def _rule_g(sh: dict, raw: dict, w: int, g: float, hits: int, mc: int):
+    streak = 0
+    for y in sorted(sh):
+        ok = (raw.get(y, 0) >= mc and (y - w) in sh and sh[y - w] > 0 and sh[y] / sh[y - w] >= 1 + g)
+        streak = streak + 1 if ok else 0
+        if streak >= hits:
+            return y
+    return None
+
+
+def rule_selection(techs: dict, shares: dict, by: dict, d: dict) -> None:
+    """Grid over Rule G parameters. Score = lead_rate(positives) - fire_rate(controls).
+    Positives: status=validation with ec_year > 2002. Controls: status=control whose 10-K share
+    stayed flat (validity check), fired = signal year <= 2019."""
+    grid = d.get("grid")
+    if not grid:
+        return
+    w = int(d["growth_window_years"])
+    max_ratio = float(d.get("control_edgar_max_ratio", 3.0))
+    positives = [tid for tid, t in techs.items() if t["status"] == "validation" and t.get("ec_year") and int(t["ec_year"]) > 2002]
+    controls_all = [tid for tid, t in techs.items() if t["status"] == "control"]
+
+    # control validity via EDGAR share trajectory
+    valid, invalid, unchecked = [], [], []
+    for tid in controls_all:
+        sh = shares.get((tid, "edgar_10k"))
+        if not sh:
+            unchecked.append(tid); continue
+        base = [sh[y] for y in (2002, 2003, 2004) if y in sh and sh[y] > 0]
+        later = [sh[y] for y in range(2005, 2020) if y in sh]
+        if not base or not later:
+            unchecked.append(tid); continue
+        ratio = max(later) / (sum(base) / len(base))
+        (valid if ratio < max_ratio else invalid).append((tid, round(ratio, 2)))
+    valid_ids = [t for t, _ in valid]
+
+    sources = sorted({src for (_, src) in shares})
+    lines = [f"# Rule selection ({dt.date.today().isoformat()})", "",
+             f"Positives: {len(positives)} validation technologies with ec_year > 2002. "
+             f"Controls: {len(valid_ids)} valid of {len(controls_all)} "
+             f"(valid = max 10-K share 2005-19 / mean 2002-04 < {max_ratio}).", "",
+             "Valid controls: " + ", ".join(f"{t} ({r})" for t, r in valid), "",
+             "Rejected controls (10-K share rose): " + (", ".join(f"{t} ({r})" for t, r in invalid) or "none"), "",
+             "Unchecked (no EDGAR data yet): " + (", ".join(unchecked) or "none"), "",
+             "score = lead_rate − fire_rate; fired = Rule G signal year ≤ 2019 on a control.", ""]
+    best = {}
+    for src in sources:
+        lines += [f"## {src}", "", "| min_count | growth | windows | n_pos | led | lead_rate | n_ctl | fired | fire_rate | score |",
+                  "|---|---|---|---|---|---|---|---|---|---|"]
+        for mc in grid["min_count"]:
+            for g in grid["growth_threshold"]:
+                for hits in grid["consecutive_hits"]:
+                    led = n_pos = 0
+                    for tid in positives:
+                        k = (tid, src)
+                        if k not in shares:
+                            continue
+                        n_pos += 1
+                        sy = _rule_g(shares[k], by[k], w, float(g), int(hits), int(mc))
+                        if sy and int(techs[tid]["ec_year"]) - sy >= 1:
+                            led += 1
+                    fired = n_ctl = 0
+                    for tid in valid_ids:
+                        k = (tid, src)
+                        if k not in shares:
+                            continue
+                        n_ctl += 1
+                        sy = _rule_g(shares[k], by[k], w, float(g), int(hits), int(mc))
+                        if sy and sy <= 2019:
+                            fired += 1
+                    lr = led / n_pos if n_pos else 0.0
+                    fr = fired / n_ctl if n_ctl else 0.0
+                    score = lr - fr
+                    lines.append(f"| {mc} | +{int(float(g)*100)}% | {hits} | {n_pos} | {led} | {lr:.2f} | {n_ctl} | {fired} | {fr:.2f} | {score:+.2f} |")
+                    if n_pos and n_ctl and (src not in best or score > best[src][0]):
+                        best[src] = (score, mc, g, hits, lr, fr)
+        lines.append("")
+    lines += ["## Best score per source (arithmetic only — freezing a rule is a human decision)", ""]
+    for src, (score, mc, g, hits, lr, fr) in best.items():
+        lines.append(f"- {src}: min_count {mc}, +{int(float(g)*100)}%, {hits} window(s) → lead {lr:.2f}, fire {fr:.2f}, score {score:+.2f}")
+    (OUT / "rule_selection.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
 if __name__ == "__main__":

@@ -32,6 +32,13 @@ detector:
   growth_window_years: 2   # compare share[y] vs share[y - window]
   growth_threshold: 0.5    # +50 % over the window
   consecutive_hits: 2      # windows that must pass back-to-back for a signal
+  # rule-selection grid: evaluated on validation rows (lead rate) and control rows (fire rate)
+  grid:
+    min_count: [10, 30]
+    growth_threshold: [0.3, 0.5]
+    consecutive_hits: [1, 2]
+  # a control row is a valid negative only if its 10-K share did not rise much 2002-2019
+  control_edgar_max_ratio: 3.0   # max(share 2005-2019) / mean(share 2002-2004) must be below this
   # provisional Tier thresholds for NEW candidates (no ec_year label). Re-tune after validation.
   tier:
     edgar_low_max: 50      # 10-K mentions/yr below this = "market not yet talking" (Tier 0/1)
