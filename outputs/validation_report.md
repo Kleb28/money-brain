@@ -84,7 +84,7 @@ Rule G: window 2y, +50%, 2 consecutive, min_count 30. lead = ec_year - signal_ye
 | Wireless charging | 2012 | edgar_10k | – | – | 2011 | 1 |
 | Wireless charging | 2012 | pubmed | – | – | 2009 | 3 |
 | Wireless charging | 2012 | uspto | 2012 | 0 | 2011 | 1 |
-| RFID | 2002 | arxiv | – | – | 2006 | -4 |
+| RFID | 2002 | arxiv | 2026 | -24 | 2006 | -4 |
 | RFID | 2002 | edgar_10k | 2005 | -3 | 2002 | 0 |
 | RFID | 2002 | pubmed | 2006 | -4 | 2004 | -2 |
 | RFID | 2002 | uspto | 2005 | -3 | 2002 | 0 |
