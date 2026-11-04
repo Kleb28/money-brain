@@ -1,0 +1,329 @@
+test,rule,technology,role,emergence,signal
+A,10 / +30% / 1w,Adenoassociated virus,positive,2014,2015
+A,10 / +30% / 1w,Augmented reality,positive,2012,2006
+A,10 / +30% / 1w,Autonomous system Internet,positive,2012,2005
+A,10 / +30% / 1w,Binder material,positive,2011,2009
+A,10 / +30% / 1w,Contact region,positive,2017,
+A,10 / +30% / 1w,Chemicalmechanical polishing,control,,2014
+A,10 / +30% / 1w,Codedivision multiple access,control,,
+A,10 / +30% / 1w,Active site,control,,
+A,10 / +30% / 1w,Affinity chromatography,control,,2013
+A,10 / +30% / 1w,Agarose gel electrophoresis,control,,
+A,10 / +30% / 1w,Antenna array,control,,2009
+A,10 / +30% / 1w,Audio file format,control,,2004
+A,10 / +30% / 1w,Airbag,control,,2011
+A,10 / +30% / 1w,Baseband,control,,2011
+A,10 / +30% / 1w,Componentbased software engineering,control,,
+A,10 / +30% / 1w,BIOS,control,,2004
+A,10 / +30% / 1w,Building automation,control,,2004
+A,10 / +30% / 1w,Automatic call distributor,control,,
+A,10 / +30% / 1w,Capillary electrophoresis,control,,2008
+A,10 / +30% / 1w,CDNA library,control,,
+A,10 / +30% / 1w,Charge pump,control,,
+A,10 / +30% / 1w,Client computing,control,,2013
+A,10 / +30% / 1w,CMOS,control,,2006
+A,10 / +30% / 1w,Common Interface,control,,
+A,10 / +30% / 1w,Communication protocol,control,,2004
+A,10 / +30% / 1w,Computer simulation,control,,2005
+A,10 / +30% / 1w,Confocal microscopy,control,,2004
+A,10 / +30% / 1w,Atomic force microscopy,control,,2011
+A,10 / +30% / 1w,Amazon Relational Database Service,control,,2008
+A,10 / +30% / 1w,2CB,control,,
+A,10 / +30% / 1w,Accounting software,control,,
+A,10 / +30% / 1w,Computer keyboard,control,,
+A,10 / +30% / 1w,Commandline interface,control,,2006
+A,10 / +30% / 1w,Compression seal fitting,control,,
+A,10 / +30% / 1w,Class computer programming,control,,
+A,10 / +30% / 1w,Consistency model,control,,2005
+A,10 / +30% / 1w,Cgroups,control,,2004
+A,10 / +30% / 1w,Automatic vehicle location,control,,2013
+A,10 / +30% / 2w,Adenoassociated virus,positive,2014,2016
+A,10 / +30% / 2w,Augmented reality,positive,2012,2007
+A,10 / +30% / 2w,Autonomous system Internet,positive,2012,
+A,10 / +30% / 2w,Binder material,positive,2011,
+A,10 / +30% / 2w,Contact region,positive,2017,
+A,10 / +30% / 2w,Chemicalmechanical polishing,control,,
+A,10 / +30% / 2w,Codedivision multiple access,control,,
+A,10 / +30% / 2w,Active site,control,,
+A,10 / +30% / 2w,Affinity chromatography,control,,
+A,10 / +30% / 2w,Agarose gel electrophoresis,control,,
+A,10 / +30% / 2w,Antenna array,control,,2017
+A,10 / +30% / 2w,Audio file format,control,,2005
+A,10 / +30% / 2w,Airbag,control,,
+A,10 / +30% / 2w,Baseband,control,,
+A,10 / +30% / 2w,Componentbased software engineering,control,,
+A,10 / +30% / 2w,BIOS,control,,2005
+A,10 / +30% / 2w,Building automation,control,,2005
+A,10 / +30% / 2w,Automatic call distributor,control,,
+A,10 / +30% / 2w,Capillary electrophoresis,control,,2009
+A,10 / +30% / 2w,CDNA library,control,,
+A,10 / +30% / 2w,Charge pump,control,,
+A,10 / +30% / 2w,Client computing,control,,2014
+A,10 / +30% / 2w,CMOS,control,,
+A,10 / +30% / 2w,Common Interface,control,,
+A,10 / +30% / 2w,Communication protocol,control,,
+A,10 / +30% / 2w,Computer simulation,control,,
+A,10 / +30% / 2w,Confocal microscopy,control,,2005
+A,10 / +30% / 2w,Atomic force microscopy,control,,
+A,10 / +30% / 2w,Amazon Relational Database Service,control,,2009
+A,10 / +30% / 2w,2CB,control,,
+A,10 / +30% / 2w,Accounting software,control,,
+A,10 / +30% / 2w,Computer keyboard,control,,
+A,10 / +30% / 2w,Commandline interface,control,,
+A,10 / +30% / 2w,Compression seal fitting,control,,
+A,10 / +30% / 2w,Class computer programming,control,,
+A,10 / +30% / 2w,Consistency model,control,,2006
+A,10 / +30% / 2w,Cgroups,control,,2005
+A,10 / +30% / 2w,Automatic vehicle location,control,,2014
+A,10 / +50% / 1w,Adenoassociated virus,positive,2014,2015
+A,10 / +50% / 1w,Augmented reality,positive,2012,2007
+A,10 / +50% / 1w,Autonomous system Internet,positive,2012,2005
+A,10 / +50% / 1w,Binder material,positive,2011,2009
+A,10 / +50% / 1w,Contact region,positive,2017,
+A,10 / +50% / 1w,Chemicalmechanical polishing,control,,
+A,10 / +50% / 1w,Codedivision multiple access,control,,
+A,10 / +50% / 1w,Active site,control,,
+A,10 / +50% / 1w,Affinity chromatography,control,,2013
+A,10 / +50% / 1w,Agarose gel electrophoresis,control,,
+A,10 / +50% / 1w,Antenna array,control,,2009
+A,10 / +50% / 1w,Audio file format,control,,2004
+A,10 / +50% / 1w,Airbag,control,,2015
+A,10 / +50% / 1w,Baseband,control,,2011
+A,10 / +50% / 1w,Componentbased software engineering,control,,
+A,10 / +50% / 1w,BIOS,control,,2005
+A,10 / +50% / 1w,Building automation,control,,2004
+A,10 / +50% / 1w,Automatic call distributor,control,,
+A,10 / +50% / 1w,Capillary electrophoresis,control,,2009
+A,10 / +50% / 1w,CDNA library,control,,
+A,10 / +50% / 1w,Charge pump,control,,
+A,10 / +50% / 1w,Client computing,control,,
+A,10 / +50% / 1w,CMOS,control,,2016
+A,10 / +50% / 1w,Common Interface,control,,
+A,10 / +50% / 1w,Communication protocol,control,,
+A,10 / +50% / 1w,Computer simulation,control,,2005
+A,10 / +50% / 1w,Confocal microscopy,control,,2004
+A,10 / +50% / 1w,Atomic force microscopy,control,,2011
+A,10 / +50% / 1w,Amazon Relational Database Service,control,,2008
+A,10 / +50% / 1w,2CB,control,,
+A,10 / +50% / 1w,Accounting software,control,,
+A,10 / +50% / 1w,Computer keyboard,control,,
+A,10 / +50% / 1w,Commandline interface,control,,
+A,10 / +50% / 1w,Compression seal fitting,control,,
+A,10 / +50% / 1w,Class computer programming,control,,
+A,10 / +50% / 1w,Consistency model,control,,2017
+A,10 / +50% / 1w,Cgroups,control,,2005
+A,10 / +50% / 1w,Automatic vehicle location,control,,2013
+A,10 / +50% / 2w,Adenoassociated virus,positive,2014,2016
+A,10 / +50% / 2w,Augmented reality,positive,2012,2011
+A,10 / +50% / 2w,Autonomous system Internet,positive,2012,
+A,10 / +50% / 2w,Binder material,positive,2011,
+A,10 / +50% / 2w,Contact region,positive,2017,
+A,10 / +50% / 2w,Chemicalmechanical polishing,control,,
+A,10 / +50% / 2w,Codedivision multiple access,control,,
+A,10 / +50% / 2w,Active site,control,,
+A,10 / +50% / 2w,Affinity chromatography,control,,
+A,10 / +50% / 2w,Agarose gel electrophoresis,control,,
+A,10 / +50% / 2w,Antenna array,control,,
+A,10 / +50% / 2w,Audio file format,control,,
+A,10 / +50% / 2w,Airbag,control,,
+A,10 / +50% / 2w,Baseband,control,,
+A,10 / +50% / 2w,Componentbased software engineering,control,,
+A,10 / +50% / 2w,BIOS,control,,
+A,10 / +50% / 2w,Building automation,control,,2005
+A,10 / +50% / 2w,Automatic call distributor,control,,
+A,10 / +50% / 2w,Capillary electrophoresis,control,,
+A,10 / +50% / 2w,CDNA library,control,,
+A,10 / +50% / 2w,Charge pump,control,,
+A,10 / +50% / 2w,Client computing,control,,
+A,10 / +50% / 2w,CMOS,control,,
+A,10 / +50% / 2w,Common Interface,control,,
+A,10 / +50% / 2w,Communication protocol,control,,
+A,10 / +50% / 2w,Computer simulation,control,,
+A,10 / +50% / 2w,Confocal microscopy,control,,2005
+A,10 / +50% / 2w,Atomic force microscopy,control,,
+A,10 / +50% / 2w,Amazon Relational Database Service,control,,2009
+A,10 / +50% / 2w,2CB,control,,
+A,10 / +50% / 2w,Accounting software,control,,
+A,10 / +50% / 2w,Computer keyboard,control,,
+A,10 / +50% / 2w,Commandline interface,control,,
+A,10 / +50% / 2w,Compression seal fitting,control,,
+A,10 / +50% / 2w,Class computer programming,control,,
+A,10 / +50% / 2w,Consistency model,control,,
+A,10 / +50% / 2w,Cgroups,control,,
+A,10 / +50% / 2w,Automatic vehicle location,control,,
+A,30 / +30% / 1w,Adenoassociated virus,positive,2014,
+A,30 / +30% / 1w,Augmented reality,positive,2012,2010
+A,30 / +30% / 1w,Autonomous system Internet,positive,2012,
+A,30 / +30% / 1w,Binder material,positive,2011,2012
+A,30 / +30% / 1w,Contact region,positive,2017,
+A,30 / +30% / 1w,Chemicalmechanical polishing,control,,2014
+A,30 / +30% / 1w,Codedivision multiple access,control,,
+A,30 / +30% / 1w,Active site,control,,
+A,30 / +30% / 1w,Affinity chromatography,control,,
+A,30 / +30% / 1w,Agarose gel electrophoresis,control,,
+A,30 / +30% / 1w,Antenna array,control,,2009
+A,30 / +30% / 1w,Audio file format,control,,
+A,30 / +30% / 1w,Airbag,control,,2011
+A,30 / +30% / 1w,Baseband,control,,
+A,30 / +30% / 1w,Componentbased software engineering,control,,
+A,30 / +30% / 1w,BIOS,control,,2004
+A,30 / +30% / 1w,Building automation,control,,
+A,30 / +30% / 1w,Automatic call distributor,control,,
+A,30 / +30% / 1w,Capillary electrophoresis,control,,
+A,30 / +30% / 1w,CDNA library,control,,
+A,30 / +30% / 1w,Charge pump,control,,
+A,30 / +30% / 1w,Client computing,control,,
+A,30 / +30% / 1w,CMOS,control,,2006
+A,30 / +30% / 1w,Common Interface,control,,
+A,30 / +30% / 1w,Communication protocol,control,,2004
+A,30 / +30% / 1w,Computer simulation,control,,
+A,30 / +30% / 1w,Confocal microscopy,control,,
+A,30 / +30% / 1w,Atomic force microscopy,control,,
+A,30 / +30% / 1w,Amazon Relational Database Service,control,,
+A,30 / +30% / 1w,2CB,control,,
+A,30 / +30% / 1w,Accounting software,control,,
+A,30 / +30% / 1w,Computer keyboard,control,,
+A,30 / +30% / 1w,Commandline interface,control,,
+A,30 / +30% / 1w,Compression seal fitting,control,,
+A,30 / +30% / 1w,Class computer programming,control,,
+A,30 / +30% / 1w,Consistency model,control,,2005
+A,30 / +30% / 1w,Cgroups,control,,
+A,30 / +30% / 1w,Automatic vehicle location,control,,
+A,30 / +30% / 2w,Adenoassociated virus,positive,2014,
+A,30 / +30% / 2w,Augmented reality,positive,2012,2011
+A,30 / +30% / 2w,Autonomous system Internet,positive,2012,
+A,30 / +30% / 2w,Binder material,positive,2011,
+A,30 / +30% / 2w,Contact region,positive,2017,
+A,30 / +30% / 2w,Chemicalmechanical polishing,control,,
+A,30 / +30% / 2w,Codedivision multiple access,control,,
+A,30 / +30% / 2w,Active site,control,,
+A,30 / +30% / 2w,Affinity chromatography,control,,
+A,30 / +30% / 2w,Agarose gel electrophoresis,control,,
+A,30 / +30% / 2w,Antenna array,control,,2017
+A,30 / +30% / 2w,Audio file format,control,,
+A,30 / +30% / 2w,Airbag,control,,
+A,30 / +30% / 2w,Baseband,control,,
+A,30 / +30% / 2w,Componentbased software engineering,control,,
+A,30 / +30% / 2w,BIOS,control,,2005
+A,30 / +30% / 2w,Building automation,control,,
+A,30 / +30% / 2w,Automatic call distributor,control,,
+A,30 / +30% / 2w,Capillary electrophoresis,control,,
+A,30 / +30% / 2w,CDNA library,control,,
+A,30 / +30% / 2w,Charge pump,control,,
+A,30 / +30% / 2w,Client computing,control,,
+A,30 / +30% / 2w,CMOS,control,,
+A,30 / +30% / 2w,Common Interface,control,,
+A,30 / +30% / 2w,Communication protocol,control,,
+A,30 / +30% / 2w,Computer simulation,control,,
+A,30 / +30% / 2w,Confocal microscopy,control,,
+A,30 / +30% / 2w,Atomic force microscopy,control,,
+A,30 / +30% / 2w,Amazon Relational Database Service,control,,
+A,30 / +30% / 2w,2CB,control,,
+A,30 / +30% / 2w,Accounting software,control,,
+A,30 / +30% / 2w,Computer keyboard,control,,
+A,30 / +30% / 2w,Commandline interface,control,,
+A,30 / +30% / 2w,Compression seal fitting,control,,
+A,30 / +30% / 2w,Class computer programming,control,,
+A,30 / +30% / 2w,Consistency model,control,,2006
+A,30 / +30% / 2w,Cgroups,control,,
+A,30 / +30% / 2w,Automatic vehicle location,control,,
+A,30 / +50% / 1w,Adenoassociated virus,positive,2014,
+A,30 / +50% / 1w,Augmented reality,positive,2012,2010
+A,30 / +50% / 1w,Autonomous system Internet,positive,2012,
+A,30 / +50% / 1w,Binder material,positive,2011,2012
+A,30 / +50% / 1w,Contact region,positive,2017,
+A,30 / +50% / 1w,Chemicalmechanical polishing,control,,
+A,30 / +50% / 1w,Codedivision multiple access,control,,
+A,30 / +50% / 1w,Active site,control,,
+A,30 / +50% / 1w,Affinity chromatography,control,,
+A,30 / +50% / 1w,Agarose gel electrophoresis,control,,
+A,30 / +50% / 1w,Antenna array,control,,2009
+A,30 / +50% / 1w,Audio file format,control,,
+A,30 / +50% / 1w,Airbag,control,,
+A,30 / +50% / 1w,Baseband,control,,
+A,30 / +50% / 1w,Componentbased software engineering,control,,
+A,30 / +50% / 1w,BIOS,control,,2005
+A,30 / +50% / 1w,Building automation,control,,
+A,30 / +50% / 1w,Automatic call distributor,control,,
+A,30 / +50% / 1w,Capillary electrophoresis,control,,
+A,30 / +50% / 1w,CDNA library,control,,
+A,30 / +50% / 1w,Charge pump,control,,
+A,30 / +50% / 1w,Client computing,control,,
+A,30 / +50% / 1w,CMOS,control,,2016
+A,30 / +50% / 1w,Common Interface,control,,
+A,30 / +50% / 1w,Communication protocol,control,,
+A,30 / +50% / 1w,Computer simulation,control,,
+A,30 / +50% / 1w,Confocal microscopy,control,,
+A,30 / +50% / 1w,Atomic force microscopy,control,,
+A,30 / +50% / 1w,Amazon Relational Database Service,control,,
+A,30 / +50% / 1w,2CB,control,,
+A,30 / +50% / 1w,Accounting software,control,,
+A,30 / +50% / 1w,Computer keyboard,control,,
+A,30 / +50% / 1w,Commandline interface,control,,
+A,30 / +50% / 1w,Compression seal fitting,control,,
+A,30 / +50% / 1w,Class computer programming,control,,
+A,30 / +50% / 1w,Consistency model,control,,2017
+A,30 / +50% / 1w,Cgroups,control,,
+A,30 / +50% / 1w,Automatic vehicle location,control,,
+A,30 / +50% / 2w,Adenoassociated virus,positive,2014,
+A,30 / +50% / 2w,Augmented reality,positive,2012,2011
+A,30 / +50% / 2w,Autonomous system Internet,positive,2012,
+A,30 / +50% / 2w,Binder material,positive,2011,
+A,30 / +50% / 2w,Contact region,positive,2017,
+A,30 / +50% / 2w,Chemicalmechanical polishing,control,,
+A,30 / +50% / 2w,Codedivision multiple access,control,,
+A,30 / +50% / 2w,Active site,control,,
+A,30 / +50% / 2w,Affinity chromatography,control,,
+A,30 / +50% / 2w,Agarose gel electrophoresis,control,,
+A,30 / +50% / 2w,Antenna array,control,,
+A,30 / +50% / 2w,Audio file format,control,,
+A,30 / +50% / 2w,Airbag,control,,
+A,30 / +50% / 2w,Baseband,control,,
+A,30 / +50% / 2w,Componentbased software engineering,control,,
+A,30 / +50% / 2w,BIOS,control,,
+A,30 / +50% / 2w,Building automation,control,,
+A,30 / +50% / 2w,Automatic call distributor,control,,
+A,30 / +50% / 2w,Capillary electrophoresis,control,,
+A,30 / +50% / 2w,CDNA library,control,,
+A,30 / +50% / 2w,Charge pump,control,,
+A,30 / +50% / 2w,Client computing,control,,
+A,30 / +50% / 2w,CMOS,control,,
+A,30 / +50% / 2w,Common Interface,control,,
+A,30 / +50% / 2w,Communication protocol,control,,
+A,30 / +50% / 2w,Computer simulation,control,,
+A,30 / +50% / 2w,Confocal microscopy,control,,
+A,30 / +50% / 2w,Atomic force microscopy,control,,
+A,30 / +50% / 2w,Amazon Relational Database Service,control,,
+A,30 / +50% / 2w,2CB,control,,
+A,30 / +50% / 2w,Accounting software,control,,
+A,30 / +50% / 2w,Computer keyboard,control,,
+A,30 / +50% / 2w,Commandline interface,control,,
+A,30 / +50% / 2w,Compression seal fitting,control,,
+A,30 / +50% / 2w,Class computer programming,control,,
+A,30 / +50% / 2w,Consistency model,control,,
+A,30 / +50% / 2w,Cgroups,control,,
+A,30 / +50% / 2w,Automatic vehicle location,control,,
+C,10 / +30% / 1w,Adenoassociated virus,positive,2005,2015
+C,10 / +30% / 1w,Cloud computing,positive,2011,2006
+C,10 / +30% / 1w,Augmented reality,positive,2013,2006
+C,10 / +30% / 2w,Adenoassociated virus,positive,2005,2016
+C,10 / +30% / 2w,Cloud computing,positive,2011,2009
+C,10 / +30% / 2w,Augmented reality,positive,2013,2007
+C,10 / +50% / 1w,Adenoassociated virus,positive,2005,2015
+C,10 / +50% / 1w,Cloud computing,positive,2011,2006
+C,10 / +50% / 1w,Augmented reality,positive,2013,2007
+C,10 / +50% / 2w,Adenoassociated virus,positive,2005,2016
+C,10 / +50% / 2w,Cloud computing,positive,2011,2009
+C,10 / +50% / 2w,Augmented reality,positive,2013,2011
+C,30 / +30% / 1w,Adenoassociated virus,positive,2005,
+C,30 / +30% / 1w,Cloud computing,positive,2011,2008
+C,30 / +30% / 1w,Augmented reality,positive,2013,2010
+C,30 / +30% / 2w,Adenoassociated virus,positive,2005,
+C,30 / +30% / 2w,Cloud computing,positive,2011,2009
+C,30 / +30% / 2w,Augmented reality,positive,2013,2011
+C,30 / +50% / 1w,Adenoassociated virus,positive,2005,
+C,30 / +50% / 1w,Cloud computing,positive,2011,2008
+C,30 / +50% / 1w,Augmented reality,positive,2013,2010
+C,30 / +50% / 2w,Adenoassociated virus,positive,2005,
+C,30 / +50% / 2w,Cloud computing,positive,2011,2009
+C,30 / +50% / 2w,Augmented reality,positive,2013,2011

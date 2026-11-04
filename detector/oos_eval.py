@@ -82,15 +82,23 @@ def first_fire(sh: dict[int, float], raw: dict[int, int], rule: dict, upto: int 
     return y
 
 
-def timing_table(rows: list[tuple[int | None, int]]) -> dict:
-    """rows = (signal_year or None, emergence_year). Lead = emergence - signal."""
+def timing_table(rows: list[tuple[int | None, int, bool]]) -> dict:
+    """rows = (signal_year or None, emergence_year, eligible). Lead = emergence - signal.
+    eligible = the technology's peak raw count reaches the rule's min_count at all (title-phrase
+    counts are sparse, so many technologies can never fire under a rule)."""
     n = len(rows)
-    leads = [e - s for s, e in rows if s is not None]
+    elig = sum(1 for r in rows if r[2])
+    leads = [e - s for s, e, _ in rows if s is not None]
     led = sum(1 for x in leads if x > 0); same = sum(1 for x in leads if x == 0); lag = sum(1 for x in leads if x < 0)
     useful = sum(1 for x in leads if 1 <= x <= 5)
-    return {"n": n, "signal": len(leads), "led": led, "same": same, "lagged": lag, "no_signal": n - len(leads),
-            "lead_rate": led / n if n else float("nan"), "useful_lead_rate": useful / n if n else float("nan"),
+    return {"n": n, "eligible": elig, "signal": len(leads), "led": led, "same": same, "lagged": lag, "no_signal": n - len(leads),
+            "lead_rate": led / n if n else float("nan"), "lead_rate_elig": led / elig if elig else float("nan"),
+            "useful_lead_rate": useful / n if n else float("nan"),
             "median_lead": statistics.median([x for x in leads if x > 0]) if led else None}
+
+
+def eligible(raw: dict[int, int], rule: dict) -> bool:
+    return max(raw.values(), default=0) >= rule["mc"]
 
 
 def fmt(x) -> str:
@@ -159,15 +167,17 @@ def main() -> None:
     lines += ["## A. Hiring timing (Burning Glass postings 2010–2019; outcome independent of patents)",
               f"Positives: posting share < 10% of its 2010–19 max in 2010 and ≥ 1,000 postings → emergence year = first year ≥ 10% of max (n = {len(pos_A)}). "
               f"Controls: share already ≥ 10% of max in 2010 and never +50% above the 2010 level (n = {len(ctl_A)}).", "",
-              "| rule | n pos | signal | led | same | lagged | lead rate | lead 1–5y | median lead | n ctl | fire rate | lead − fire |",
-              "|---|---|---|---|---|---|---|---|---|---|---|---|"]
+              "| rule | n pos | eligible (peak ≥ min_count) | signal | led | same | lagged | lead rate (all / eligible) | lead 1–5y | median lead | n ctl (eligible) | fire rate (all / eligible) | lead − fire |",
+              "|---|---|---|---|---|---|---|---|---|---|---|---|---|"]
     for rule in rules:
-        rows = [(first_fire(us_sh[tid], us_raw[tid], rule), em) for tid, em in pos_A.items()]
+        rows = [(first_fire(us_sh[tid], us_raw[tid], rule), em, eligible(us_raw[tid], rule)) for tid, em in pos_A.items()]
         t = timing_table(rows)
+        ctl_e = [tid for tid in ctl_A if eligible(us_raw[tid], rule)]
         fires = sum(1 for tid in ctl_A if first_fire(us_sh[tid], us_raw[tid], rule) is not None)
         fr = fires / len(ctl_A) if ctl_A else float("nan")
-        lines.append(f"| {rule['name']} | {t['n']} | {t['signal']} | {t['led']} | {t['same']} | {t['lagged']} | {fmt(t['lead_rate'])} | "
-                     f"{fmt(t['useful_lead_rate'])} | {fmt(t['median_lead'])} | {len(ctl_A)} | {fmt(fr)} | {fmt(t['lead_rate'] - fr) if ctl_A else '–'} |")
+        fr_e = fires / len(ctl_e) if ctl_e else float("nan")
+        lines.append(f"| {rule['name']} | {t['n']} | {t['eligible']} | {t['signal']} | {t['led']} | {t['same']} | {t['lagged']} | {fmt(t['lead_rate'])} / {fmt(t['lead_rate_elig'])} | "
+                     f"{fmt(t['useful_lead_rate'])} | {fmt(t['median_lead'])} | {len(ctl_A)} ({len(ctl_e)}) | {fmt(fr)} / {fmt(fr_e)} | {fmt(t['lead_rate'] - fr) if ctl_A else '–'} |")
         for tid, em in pos_A.items():
             details.append({"test": "A", "rule": rule["name"], "technology": techs[tid]["title"], "role": "positive",
                             "emergence": em, "signal": first_fire(us_sh[tid], us_raw[tid], rule)})
@@ -232,15 +242,20 @@ def main() -> None:
     lines += ["## C. 10-K timing (EDGAR full-text, 2002–2019; 10-K lags earnings calls by ~4 years on the 29-technology set, so leads here overstate leads vs. the market)",
               f"Positives: 10-K share < 10% of max in 2002, peak ≥ 30 filings → emergence = first year ≥ 10% of max (n = {len(pos_C)}). "
               f"Controls: flat 10-K share (max 2005–19 / mean 2002–04 < {max_ratio:g}; n = {len(ctl_flat)}) and never ≥ 10 filings in any year (n = {len(ctl_never)}).", "",
-              "| rule | n pos | signal | led | same | lagged | lead rate | lead 1–5y | median lead | fire rate flat | fire rate never | lead − fire(flat) |",
-              "|---|---|---|---|---|---|---|---|---|---|---|---|"]
+              "| rule | n pos | eligible | signal | led | same | lagged | lead rate (all / eligible) | lead 1–5y | median lead | fire rate flat (all / eligible) | fire rate never (all / eligible) | lead − fire(flat) |",
+              "|---|---|---|---|---|---|---|---|---|---|---|---|---|"]
     for rule in rules:
-        rows = [(first_fire(us_sh[tid], us_raw[tid], rule), em) for tid, em in pos_C.items()]
+        rows = [(first_fire(us_sh[tid], us_raw[tid], rule), em, eligible(us_raw[tid], rule)) for tid, em in pos_C.items()]
         t = timing_table(rows)
-        f_flat = sum(1 for tid in ctl_flat if first_fire(us_sh[tid], us_raw[tid], rule) is not None) / len(ctl_flat) if ctl_flat else float("nan")
-        f_never = sum(1 for tid in ctl_never if first_fire(us_sh[tid], us_raw[tid], rule) is not None) / len(ctl_never) if ctl_never else float("nan")
-        lines.append(f"| {rule['name']} | {t['n']} | {t['signal']} | {t['led']} | {t['same']} | {t['lagged']} | {fmt(t['lead_rate'])} | "
-                     f"{fmt(t['useful_lead_rate'])} | {fmt(t['median_lead'])} | {fmt(f_flat)} | {fmt(f_never)} | {fmt(t['lead_rate'] - f_flat) if ctl_flat else '–'} |")
+
+        def fire_rates(ids):
+            e = [tid for tid in ids if eligible(us_raw[tid], rule)]
+            f = sum(1 for tid in ids if first_fire(us_sh[tid], us_raw[tid], rule) is not None)
+            return (f / len(ids) if ids else float("nan")), (f / len(e) if e else float("nan")), len(e)
+        f_flat, f_flat_e, n_flat_e = fire_rates(ctl_flat)
+        f_never, f_never_e, n_never_e = fire_rates(ctl_never)
+        lines.append(f"| {rule['name']} | {t['n']} | {t['eligible']} | {t['signal']} | {t['led']} | {t['same']} | {t['lagged']} | {fmt(t['lead_rate'])} / {fmt(t['lead_rate_elig'])} | "
+                     f"{fmt(t['useful_lead_rate'])} | {fmt(t['median_lead'])} | {fmt(f_flat)} / {fmt(f_flat_e)} (n={n_flat_e}) | {fmt(f_never)} / {fmt(f_never_e)} (n={n_never_e}) | {fmt(t['lead_rate'] - f_flat) if ctl_flat else '–'} |")
         for tid, em in pos_C.items():
             details.append({"test": "C", "rule": rule["name"], "technology": techs[tid]["title"], "role": "positive",
                             "emergence": em, "signal": first_fire(us_sh[tid], us_raw[tid], rule)})
