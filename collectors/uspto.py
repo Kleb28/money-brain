@@ -43,6 +43,17 @@ def query(base: str, key: str, keywords: list[str] | None, year: int) -> int:
         if r.status_code == 429 or r.status_code >= 500:
             wait = 30 * (2 ** attempt)
             log(f"  uspto {r.status_code}; sleeping {wait}s"); time.sleep(wait); continue
+        if r.status_code == 404:
+            # ODP returns 404 "No matching records found" for a zero-hit query (verified 2026-11-04);
+            # an unknown field name is also a 404, so distinguish by message.
+            msg = ""
+            try:
+                msg = str(r.json().get("detailedMessage") or r.json().get("message") or "")
+            except Exception:  # noqa: BLE001
+                pass
+            if "No matching records" in msg:
+                return 0
+            raise RuntimeError(f"uspto 404: {msg[:200]} :: q={body['q'][:120]}")
         r.raise_for_status()
         return int(r.json().get("count", 0))
     raise RuntimeError("uspto: repeated 429/5xx")
