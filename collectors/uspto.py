@@ -1,9 +1,16 @@
-"""USPTO patent yearly counts (abstract phrase match, by grant date).
+"""USPTO patent-application yearly counts via the Open Data Portal (ODP) search API.
 
-STATUS: experimental. PatentsView moved under data.uspto.gov in 2025; the request
-schema below follows the PatentsView Search API v1 convention (POST JSON, X-Api-Key).
-If the endpoint has changed, set USPTO_API_BASE (repository variable) and adjust `query()`.
-Skips silently when USPTO_API_KEY is not set so the rest of the pipeline keeps running.
+PatentsView's search.patentsview.org stopped resolving after the 2026-03-20 migration to ODP.
+Verified 2026-11-04 on the Actions runner:
+  POST https://api.uspto.gov/api/v1/patent/applications/search   header X-API-KEY
+  body {"q": '<lucene>', "pagination": {"offset": 0, "limit": 1}}  -> {"count": N, ...}
+  Searchable text field: applicationMetaData.inventionTitle (abstract is NOT exposed -> 404).
+  Date fields: applicationMetaData.filingDate / grantDate, range syntax [YYYY-MM-DD TO YYYY-MM-DD].
+
+We count by FILING year (what Kalyani et al. use; grants lag filings by 2-3 years). Applications
+become visible at publication (~18 months after filing), so the last ~2 years are undercounted;
+settings.years.refresh_last_n re-collects them weekly. Utility applications only.
+Denominator (__all): all utility applications filed that year.
 """
 from __future__ import annotations
 
@@ -15,22 +22,30 @@ from collectors.common import (ALL, env, load_counts, load_settings, load_techno
                                needs_collection, save_counts, upsert, year_range)
 
 SOURCE = "uspto"
-DEFAULT_BASE = "https://search.patentsview.org/api/v1/patent/"
+DEFAULT_BASE = "https://api.uspto.gov/api/v1/patent/applications/search"
+TITLE = "applicationMetaData.inventionTitle"
+DATE = "applicationMetaData.filingDate"
+UTILITY = 'applicationMetaData.applicationTypeLabelName:Utility'
+
+
+def build_q(keywords: list[str] | None, year: int) -> str:
+    parts = [UTILITY, f"{DATE}:[{year}-01-01 TO {year}-12-31]"]
+    if keywords:
+        parts.append("(" + " OR ".join(f'{TITLE}:"{k}"' for k in keywords) + ")")
+    return " AND ".join(parts)
 
 
 def query(base: str, key: str, keywords: list[str] | None, year: int) -> int:
-    clauses = [{"_gte": {"patent_date": f"{year}-01-01"}},
-               {"_lte": {"patent_date": f"{year}-12-31"}}]
-    if keywords:
-        clauses.append({"_or": [{"_text_phrase": {"patent_abstract": k}} for k in keywords]})
-    body = {"q": {"_and": clauses}, "f": ["patent_id"], "o": {"size": 1}}
-    for attempt in range(4):
-        r = requests.post(base, json=body, headers={"X-Api-Key": key}, timeout=60)
-        if r.status_code == 429:
-            time.sleep(2 ** attempt); continue
+    body = {"q": build_q(keywords, year), "pagination": {"offset": 0, "limit": 1}}
+    headers = {"X-API-KEY": key, "Accept": "application/json", "Content-Type": "application/json"}
+    for attempt in range(6):
+        r = requests.post(base, json=body, headers=headers, timeout=90)
+        if r.status_code == 429 or r.status_code >= 500:
+            wait = 30 * (2 ** attempt)
+            log(f"  uspto {r.status_code}; sleeping {wait}s"); time.sleep(wait); continue
         r.raise_for_status()
-        return int(r.json().get("total_hits", 0))
-    raise RuntimeError("uspto: rate limited repeatedly")
+        return int(r.json().get("count", 0))
+    raise RuntimeError("uspto: repeated 429/5xx")
 
 
 def main() -> None:
@@ -48,6 +63,7 @@ def main() -> None:
         if needs_collection(existing, ALL, SOURCE, y, settings):
             upsert(existing, ALL, SOURCE, y, query(base, key, None, y)); n += 1
             time.sleep(1.5)
+    save_counts(existing)
     for t in techs:
         for y in years:
             if not needs_collection(existing, t["id"], SOURCE, y, settings):
