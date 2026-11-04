@@ -1,0 +1,43 @@
+name: oos-collect
+
+on:
+  workflow_dispatch:
+    inputs:
+      source:
+        description: "uspto or edgar"
+        required: true
+        default: "uspto"
+      shard:
+        description: "shard index (0-based)"
+        required: true
+        default: "0"
+      nshards:
+        description: "number of shards"
+        required: true
+        default: "4"
+      years:
+        description: "year range"
+        required: false
+        default: "2002-2019"
+
+permissions:
+  contents: write
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    env:
+      EDGAR_USER_AGENT: ${{ vars.EDGAR_USER_AGENT }}
+      USPTO_API_KEY: ${{ secrets.USPTO_API_KEY }}
+      GIT_COMMIT: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      - run: |
+          git config user.name "money-brain-bot"
+          git config user.email "money-brain-bot@users.noreply.github.com"
+      - run: python -u -m scripts.collect_oos --source ${{ github.event.inputs.source }} --shard ${{ github.event.inputs.shard }} --nshards ${{ github.event.inputs.nshards }} --years ${{ github.event.inputs.years }} --max-minutes 330

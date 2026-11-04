@@ -1,0 +1,1287 @@
+id,title,keywords,start_year,transcript_counts,num_patents,total_postings,ec_class
+oos_2cb,2CB,dosage ranges,1996,41,1683,1273,intermediate
+oos_2ethylhexyl_acrylate,2Ethylhexyl acrylate,hexyl acrylate,1984,0,1086,2,non_disruptive
+oos_4toluenesulfonyl_chloride,4Toluenesulfonyl chloride,toluene sulfonyl; toluenesulfonyl chloride,1987,0,2467,0,non_disruptive
+oos_5reductase_inhibitor,5Reductase inhibitor,reductase inhibitor; reductase inhibitors,1983,32,4027,8,intermediate
+oos_64bit_computing,64bit computing,bit address,1992,4,4219,1,non_disruptive
+oos_8bit_computing,8bit computing,bit integer,1992,0,919,0,non_disruptive
+oos_absorption_spectroscopy,Absorption spectroscopy,absorption spectroscopy,1996,1,1089,1268,non_disruptive
+oos_access_key,Access key,access key,1993,48,725,11855,intermediate
+oos_accounting_software,Accounting software,functional modules,1994,16,1368,15300,intermediate
+oos_acoustic_model,Acoustic model,acoustic model,1992,0,764,927,non_disruptive
+oos_acrylonitrile_butadiene_styrene,Acrylonitrile butadiene styrene,acrylonitrile butadiene,1994,0,5096,48,non_disruptive
+oos_active_cooling,Active cooling,active cooling,1993,22,1043,132,intermediate
+oos_active_noise_control,Active noise control,noise cancellation,1989,159,1546,1313,disruptive
+oos_active_site,Active site,active site,1988,273,7400,1772,disruptive
+oos_active_users,Active users,active user,1994,2522,590,49273,disruptive
+oos_adaptive_bitrate_streaming,Adaptive bitrate streaming,respective bit,1994,2,1398,0,non_disruptive
+oos_adenoassociated_virus,Adenoassociated virus,aav vector; aav vectors; virus aav,1994,118,3353,2516,disruptive
+oos_adverse_event,Adverse event,adverse event,1999,3864,870,260235,disruptive
+oos_aerosol,Aerosol,aerodynamic diameter; aerosol particles,1993,3,1540,168,non_disruptive
+oos_affinity_chromatography,Affinity chromatography,affinity chromatography,1988,3,12207,1607,non_disruptive
+oos_affinity_label,Affinity label,targeting moiety,1995,8,1976,36,non_disruptive
+oos_agarose_gel_electrophoresis,Agarose gel electrophoresis,agarose gel; agarose gels,1981,1,12935,5364,non_disruptive
+oos_agentbased_model,Agentbased model,based model,1993,554,1309,76094,disruptive
+oos_aggregate_data,Aggregate data,aggregate data,1996,204,901,25735,disruptive
+oos_air_conditioning,Air conditioning,removing heat,1985,2,2390,36,non_disruptive
+oos_airbag,Airbag,bag system; occupant restraint,1985,29,1936,1665,intermediate
+oos_airborne_early_warning_and_control,Airborne early warning and control,control capabilities,1992,374,685,10674,disruptive
+oos_alcohol_dehydrogenase,Alcohol dehydrogenase,alcohol dehydrogenase,1994,0,2210,0,non_disruptive
+oos_alkyne,Alkyne,carbon triple,1996,2,1637,0,non_disruptive
+oos_allelespecific_oligonucleotide,Allelespecific oligonucleotide,specific oligonucleotide,1990,0,1774,207,non_disruptive
+oos_aloe_vera,Aloe vera,aloe vera,1996,36,1169,193,intermediate
+oos_alpha_hydroxy_acid,Alpha hydroxy acid,acid substituted,1985,0,1090,0,non_disruptive
+oos_amazon_relational_database_service,Amazon Relational Database Service,database service; database services,1993,128,1377,45709,disruptive
+oos_amine_oxide,Amine oxide,amine oxide; amine oxides,1992,2,4818,16,non_disruptive
+oos_aminocaproic_acid,Aminocaproic acid,aminocaproic acid,2006,1,716,0,non_disruptive
+oos_ammonium_bromide,Ammonium bromide,ammonium bromide,1990,3,2070,0,non_disruptive
+oos_ammonium_dihydrogen_phosphate,Ammonium dihydrogen phosphate,monoammonium phosphate,2006,2,287,9,non_disruptive
+oos_amplicon_sequence_variant,Amplicon sequence variant,sequence variant; sequence variants,1992,9,3991,600,non_disruptive
+oos_amplified_fragment_length_polymorphism,Amplified fragment length polymorphism,adaptor sequence; amplified fragment,1994,0,4681,56,non_disruptive
+oos_amsler_grid,Amsler grid,detecting defects,1993,3,825,929,non_disruptive
+oos_anaerobic_digestion,Anaerobic digestion,anaerobic digestion,1996,66,607,1789,intermediate
+oos_analogtodigital_converter,Analogtodigital converter,converter adc,1991,0,3436,1179,non_disruptive
+oos_angioplasty,Angioplasty,balloon angioplasty,1987,92,2451,1753,intermediate
+oos_anglesensitive_pixel,Anglesensitive pixel,incident angles,1992,8,741,8,non_disruptive
+oos_anionic_addition_polymerization,Anionic addition polymerization,anionic polymerization,1985,0,1563,108,non_disruptive
+oos_anomaly_detection,Anomaly detection,anomaly detection,1996,61,828,19506,intermediate
+oos_answering_machine,Answering machine,answering machine,1989,39,1442,5533,intermediate
+oos_antenna_array,Antenna array,antenna array; antenna arrays; array antennas,1987,33,7580,5471,intermediate
+oos_antenna_diversity,Antenna diversity,antenna diversity,1995,3,796,102,non_disruptive
+oos_antenna_radio,Antenna radio,antenna element; antenna elements,1991,10,9630,459,intermediate
+oos_antibodydependent_cellular_cytotoxicity,Antibodydependent cellular cytotoxicity,cytotoxicity adcc; mediated cytotoxicity,1997,6,2582,254,non_disruptive
+oos_antibodydrug_conjugate,Antibodydrug conjugate,antibody drug; drug conjugate; drug conjugates,1998,390,2295,23779,disruptive
+oos_antifungal,Antifungal,anti fungal,1986,4,1880,0,non_disruptive
+oos_antioxidant,Antioxidant,anti oxidant,1994,1,2330,0,non_disruptive
+oos_antireflective_coating,Antireflective coating,anti reflective; antireflective coating; reflection coating; reflective coating; reflective coatings,1984,94,13327,3662,intermediate
+oos_antithrombin,Antithrombin,reactive site,1990,0,1254,39,non_disruptive
+oos_antiviral_drug,Antiviral drug,anti viral,1988,10,4085,0,intermediate
+oos_arabidopsis_thaliana,Arabidopsis thaliana,arabidopsis thaliana,1995,0,3840,208,non_disruptive
+oos_argininelysine,Argininelysine,arginine lysine,1995,0,812,0,non_disruptive
+oos_arithmetic_logic_unit,Arithmetic logic unit,unit alu,1989,1,1029,58,non_disruptive
+oos_array_data_structure,Array data structure,dimensional array; dimensional arrays; linear array; linear arrays,1981,13,20934,890,intermediate
+oos_arrow_keys,Arrow keys,arrow key,1987,2,611,143,non_disruptive
+oos_artificial_neural_network,Artificial neural network,artificial neural,1989,4,1598,2838,non_disruptive
+oos_aspergillus_niger,Aspergillus niger,aspergillus niger,1987,0,2200,9,non_disruptive
+oos_aspheric_lens,Aspheric lens,aspheric lens,1994,15,534,89,intermediate
+oos_atomic_force_microscopy,Atomic force microscopy,contact mode; force microscopy,1990,15,2321,1953,intermediate
+oos_atomic_layer_deposition,Atomic layer deposition,atomic layer; layer deposition,1992,146,8139,1923,disruptive
+oos_attachment_theory,Attachment theory,attachment system,1986,7,1671,401,non_disruptive
+oos_audio_file_format,Audio file format,audio file; audio files,1994,278,5675,12041,disruptive
+oos_augmented_reality,Augmented reality,augmented reality,2006,733,1715,31558,disruptive
+oos_autocorrelation,Autocorrelation,correlation function,1995,1,1937,32,non_disruptive
+oos_automated_teller_machine,Automated teller machine,automated teller; teller machine; teller machines,1990,55,3621,104401,intermediate
+oos_automatic_and_controlled_processes,Automatic and controlled processes,processing resources,1990,14,3847,3932,intermediate
+oos_automatic_call_distributor,Automatic call distributor,call distributor,1991,24,630,4344,intermediate
+oos_automatic_generation_control,Automatic generation control,automatic generation,1993,7,887,2022,non_disruptive
+oos_automatic_vehicle_location,Automatic vehicle location,vehicle location,1989,45,1598,9500,intermediate
+oos_autonomous_system_internet,Autonomous system Internet,autonomous system,1995,108,833,18731,disruptive
+oos_avalanche_photodiode,Avalanche photodiode,photodiode detector,1989,0,524,44,non_disruptive
+oos_avidin,Avidin,avidin biotin,1989,2,1367,21,non_disruptive
+oos_avx512,AVX512,mask register,1988,0,1367,0,non_disruptive
+oos_azole,Azole,parent compounds,1990,33,566,103,intermediate
+oos_baltimore_classification,Baltimore classification,stranded rna,1986,7,6075,54,non_disruptive
+oos_bank_account,Bank account,card accounts,1990,509,668,47759,disruptive
+oos_barcode,Barcode,bar code; bar codes,1979,456,22760,330137,disruptive
+oos_barcode_reader,Barcode reader,barcode reader; barcode scanner; code reader; code readers; code scanner; code scanners; decoder circuitry,1980,104,11177,58408,disruptive
+oos_baseband,Baseband,base band; baseband signals; received audio,1988,414,5767,24344,disruptive
+oos_bcl2,Bcl2,bcl gene,2002,4,378,0,non_disruptive
+oos_bend_radius,Bend radius,bend radius,1985,7,2016,806,non_disruptive
+oos_bendix_drive,Bendix drive,engagement mechanism,1990,8,1179,520,non_disruptive
+oos_benzenesulfonic_acid,Benzenesulfonic acid,benzenesulfonic acid,1998,0,1133,0,non_disruptive
+oos_benzyl_bromide,Benzyl bromide,benzyl bromide,1990,0,2853,0,non_disruptive
+oos_benzylamine,Benzylamine,benzyl amine,1989,0,842,0,non_disruptive
+oos_betalactamase,Betalactamase,beta lactamase,1990,9,1285,0,non_disruptive
+oos_bimolecular_fluorescence_complementation,Bimolecular fluorescence complementation,terminal fragment,1992,0,1305,2,non_disruptive
+oos_binary_tree,Binary tree,binary tree; internal nodes,1992,1,2474,3235,non_disruptive
+oos_binder_material,Binder material,binder material; binding agents,1986,34,10732,1830,intermediate
+oos_binding_site,Binding site,binding site,1986,93,22468,812,intermediate
+oos_bioisostere,Bioisostere,desired biological,1992,3,2775,110,non_disruptive
+oos_biomolecule,Biomolecule,biological molecule,1987,22,982,1804,intermediate
+oos_bios,BIOS,basic input; output system; system bios,1988,27,6386,10040,intermediate
+oos_bit_array,Bit array,bit vector,1992,1,1583,38,non_disruptive
+oos_bit_horse,Bit horse,bit location,1987,9,1287,68,non_disruptive
+oos_blister_pack,Blister pack,blister pack; blister packs,1993,71,2469,3434,intermediate
+oos_boiling_vessel,Boiling vessel,vehicle electrical,1994,25,1291,28333,intermediate
+oos_bone_morphogenetic_protein,Bone morphogenetic protein,bone morphogenetic; morphogenetic protein; morphogenetic proteins,1989,20,3959,110,intermediate
+oos_boolean_function,Boolean function,switching function,1993,20,1190,2290,intermediate
+oos_borate_buffered_saline,Borate buffered saline,borate buffer,1991,0,1282,0,non_disruptive
+oos_borax,Borax,sodium tetraborate,1995,0,716,0,non_disruptive
+oos_boric_acid,Boric acid,colorless crystals,1984,0,851,0,non_disruptive
+oos_boronic_acid,Boronic acid,boronic acid; boronic acids,1986,1,6587,44,non_disruptive
+oos_bovine_papillomavirus,Bovine papillomavirus,bovine papilloma,1993,0,885,0,non_disruptive
+oos_bovine_serum_albumin,Bovine serum albumin,bovine serum,1987,23,20584,98,intermediate
+oos_brake_pad,Brake pad,pad material,1991,12,932,178,intermediate
+oos_branchedchain_amino_acid,Branchedchain amino acid,chain amino,1994,1,1585,12,non_disruptive
+oos_branching_polymer_chemistry,Branching polymer chemistry,branched polymer,1996,0,876,6,non_disruptive
+oos_breakwater_structure,Breakwater structure,structure constructed,1994,1,647,172,non_disruptive
+oos_brushless_dc_electric_motor,Brushless DC electric motor,controller adjusts,1992,0,1063,111,non_disruptive
+oos_buccal_fat_pad,Buccal fat pad,pads located,1991,33,902,49,intermediate
+oos_buck_converter,Buck converter,buck converter,1990,30,1456,460,intermediate
+oos_buffer_overflow,Buffer overflow,adjacent memory; buffer overflow,1992,1,2123,5600,non_disruptive
+oos_buffy_coat,Buffy coat,buffy coat,1990,1,1131,481,non_disruptive
+oos_building_automation,Building automation,building automation,1998,294,385,208217,disruptive
+oos_burst_errorcorrecting_code,Burst errorcorrecting code,burst length,1990,0,965,0,non_disruptive
+oos_burst_mode_photography,Burst mode photography,burst mode; continuous mode,1986,39,4070,121,intermediate
+oos_butylated_hydroxytoluene,Butylated hydroxytoluene,hydroxytoluene bht,2004,0,558,0,non_disruptive
+oos_butyric_acid,Butyric acid,butanoic acid,2005,0,2104,0,non_disruptive
+oos_cablestayed_bridge,Cablestayed bridge,cable support,1985,8,766,6399,non_disruptive
+oos_cache_computing,Cache computing,cache hit; cache misses,1985,1,4191,157,non_disruptive
+oos_caenorhabditis_elegans,Caenorhabditis elegans,caenorhabditis elegans,1995,0,964,149,non_disruptive
+oos_calcium_bromide,Calcium bromide,calcium bromide,1992,11,491,19,intermediate
+oos_calcium_stearate,Calcium stearate,calcium stearate,1992,0,2712,8,non_disruptive
+oos_calendarbased_contraceptive_methods,Calendarbased contraceptive methods,based methods,1990,58,3983,22721,intermediate
+oos_calibration_curve,Calibration curve,calibration curve,1982,2,3513,567,non_disruptive
+oos_call_forwarding,Call forwarding,call forwarding,1988,36,2238,9483,intermediate
+oos_caller_id,Caller ID,caller identification,1991,9,1747,270,non_disruptive
+oos_can_bus,CAN bus,node transmits,1990,0,984,4,non_disruptive
+oos_capillary_electrophoresis,Capillary electrophoresis,capillary electrophoresis,1991,44,3783,10114,intermediate
+oos_capillary_pressure,Capillary pressure,capillary pressure,1992,8,682,198,non_disruptive
+oos_caprylic_acid,Caprylic acid,caprylic acid; octanoic acid,1988,1,2328,0,non_disruptive
+oos_carbamic_acid,Carbamic acid,carbamic acid,1995,0,4119,0,non_disruptive
+oos_carbon_filtering,Carbon filtering,carbon filter,1986,18,827,628,intermediate
+oos_carbon_nanotube,Carbon nanotube,carbon nanotube; carbon nanotubes; multi wall; multi walled,1995,41,10536,1149,intermediate
+oos_carbon_tetrabromide,Carbon tetrabromide,carbon tetrabromide,1989,0,658,0,non_disruptive
+oos_card_security_code,Card security code,security feature,1991,679,1206,47647,disruptive
+oos_cardiopulmonary_bypass,Cardiopulmonary bypass,cardiopulmonary bypass,1990,52,2052,4169,intermediate
+oos_caregiver,Caregiver,care giver,1990,109,842,4134426,disruptive
+oos_carnauba_wax,Carnauba wax,carnauba wax,1996,0,1466,63,non_disruptive
+oos_carrier_aggregation,Carrier aggregation,component carrier,2006,3,850,493,non_disruptive
+oos_carriersense_multiple_access_with_collision_detection,Carriersense multiple access with collision detection,sense multiple,1989,82,838,27,intermediate
+oos_cas_registry_number,CAS Registry Number,cas registry,1999,0,726,233,non_disruptive
+oos_cathoderay_tube,Cathoderay tube,crt monitor,1993,24,715,548,intermediate
+oos_cationic_polymerization,Cationic polymerization,cationic polymerization,1985,0,940,16,non_disruptive
+oos_cdna_library,CDNA library,cdna libraries; cdna library; dna library,1987,6,19215,2253,non_disruptive
+oos_cell_microprocessor,Cell microprocessor,processing element,1983,37,5425,0,intermediate
+oos_cell_site,Cell site,cell site; cell sites; cell tower,1984,1331,5543,94650,disruptive
+oos_cell_suspension,Cell suspension,cell suspension; cell suspensions,1991,2,8506,1366,non_disruptive
+oos_central_processing_unit,Central processing unit,processing units; unit cpu,1988,429,18285,35194,disruptive
+oos_ceramic_capacitor,Ceramic capacitor,capacitance values,1994,1,1851,5,non_disruptive
+oos_ceramic_matrix_composite,Ceramic matrix composite,matrix composites,1982,31,1631,0,intermediate
+oos_cetylpyridinium_chloride,Cetylpyridinium chloride,cetylpyridinium chloride,2005,0,882,0,non_disruptive
+oos_cgroups,Cgroups,resource usage,1990,41,2109,25637,intermediate
+oos_channel_access_method,Channel access method,channel access; multiple access,1987,156,26360,10959,disruptive
+oos_channel_blocker,Channel blocker,channel blockers,1990,139,2883,60,disruptive
+oos_charge_density,Charge density,charge distribution,1994,10,1119,331,intermediate
+oos_charge_pump,Charge pump,charge pump; charge pumps; charge storage; pump circuit,1981,47,13745,2785,intermediate
+oos_charge_trap_flash,Charge trap flash,charge trapping; trapping layer,1994,8,1937,9,non_disruptive
+oos_chargecoupled_device,Chargecoupled device,ccd camera; ccd cameras; coupled devices; led devices,1988,47,7021,2460,intermediate
+oos_chebyshev_filter,Chebyshev filter,filter characteristics,1986,2,738,26,non_disruptive
+oos_chemical_vapor_deposition,Chemical vapor deposition,deposition cvd,1986,1,4992,818,non_disruptive
+oos_chemicalmechanical_polishing,Chemicalmechanical polishing,abrasive polishing; mechanical polishing; polishing cmp,1989,11,11527,1531,intermediate
+oos_chemostat,Chemostat,fresh medium,1989,5,1922,76,non_disruptive
+oos_cherenkov_detector,Cherenkov detector,speed threshold,2004,5,770,0,non_disruptive
+oos_child_safety_seat,Child safety seat,child seat,1989,21,1220,2284,intermediate
+oos_chinese_hamster_ovary_cell,Chinese hamster ovary cell,cho cell; cho cells; hamster ovary,1987,29,12684,2381,intermediate
+oos_chloroiodomethane,Chloroiodomethane,chloro iodo,1994,0,1020,0,non_disruptive
+oos_cholera_toxin,Cholera toxin,cholera toxin,1994,2,1100,14,non_disruptive
+oos_chromatography,Chromatography,liquid chromatography,1995,88,18026,27630,intermediate
+oos_circular_dichroism,Circular dichroism,circular dichroism,1996,0,1189,1135,non_disruptive
+oos_circulating_fluidized_bed,Circulating fluidized bed,circulating fluidized,2006,35,510,2663,intermediate
+oos_citizens_band_radio,Citizens band radio,mhz band,1990,39,1349,273,intermediate
+oos_class_computer_programming,Class computer programming,object classes,1991,0,1035,4720,non_disruptive
+oos_client_computing,Client computing,client computing; client software,1993,250,6552,85311,disruptive
+oos_cloning_vector,Cloning vector,cloning vector; cloning vectors,1990,0,9234,898,non_disruptive
+oos_cloth_diaper,Cloth diaper,cloth material,1990,1,900,176,non_disruptive
+oos_cloud_computing,Cloud computing,cloud computing; computing power; computing resources,1989,2784,16452,660032,disruptive
+oos_cmos,CMOS,cmos devices; cmos process; cmos processes; cmos technology; complementary metal; mos devices; nmos transistor; nmos transistors; semiconductor cmos,1983,130,24522,22846,disruptive
+oos_cocrystal,Cocrystal,hydrates solvates,2000,0,614,15,non_disruptive
+oos_codeblocks,CodeBlocks,code block,1988,6,1333,2543,non_disruptive
+oos_codedivision_multiple_access,Codedivision multiple access,access cdma; cdma system; cdma systems; code division; division multiple; random code,1986,67,39372,39831,intermediate
+oos_coiled_tubing,Coiled tubing,coiled tubing,1988,594,2878,12786,disruptive
+oos_cold_spring_harbor_laboratory_press,Cold Spring Harbor Laboratory Press,laboratory press,1991,3,5953,38,non_disruptive
+oos_colloid_mill,Colloid mill,rotor stator,2005,0,1212,524,non_disruptive
+oos_color_temperature,Color temperature,color temperatures,1995,47,472,930,intermediate
+oos_combination_therapy,Combination therapy,combination therapies; combination therapy,1993,1904,10045,1731,disruptive
+oos_combined_charging_system,Combined Charging System,charging system,2006,167,2429,45451,disruptive
+oos_combustor,Combustor,annular combustor,1985,0,493,7,non_disruptive
+oos_command_and_data_modes_modem,Command and Data modes modem,command mode; data mode,1989,10,1677,737,intermediate
+oos_commandline_interface,Commandline interface,line interface,1993,34,4004,32916,intermediate
+oos_common_drain,Common drain,source follower,1991,0,2307,1,non_disruptive
+oos_common_interface,Common Interface,common interface,1991,68,1200,3299,intermediate
+oos_communication_channel,Communication channel,communication channel,1989,496,18158,227367,disruptive
+oos_communication_protocol,Communication protocol,communication protocol; communication protocols; communications protocol; communications protocols; protocol layer; protocol layers,1981,179,24746,190770,disruptive
+oos_compact_fluorescent_lamp,Compact fluorescent lamp,compact fluorescent,2006,64,724,1177,intermediate
+oos_complementary_dna,Complementary DNA,complementary dna,1990,5,2517,11,non_disruptive
+oos_complementary_sequences,Complementary sequences,complementary sequence; complementary sequences,1990,0,8031,0,non_disruptive
+oos_componentbased_software_engineering,Componentbased software engineering,based software; component based; components based; software component; software components,1989,688,19936,677008,disruptive
+oos_composite_data_type,Composite data type,composite data; site data,1993,81,1152,31813,intermediate
+oos_compression_seal_fitting,Compression seal fitting,multiple element,1994,424,564,10015,disruptive
+oos_computational_complexity,Computational complexity,computational complexity,1992,3,2756,2772,non_disruptive
+oos_computer_data_storage,Computer data storage,primary storage,1992,127,2488,2562,disruptive
+oos_computer_graphics,Computer graphics,computer graphics,1983,67,4894,76108,intermediate
+oos_computer_keyboard,Computer keyboard,key presses,1987,41,511,1650,intermediate
+oos_computer_monitor,Computer monitor,computer monitor; computer monitors; display monitor,1985,73,7903,148368,intermediate
+oos_computer_mouse,Computer mouse,computer mouse,1992,24,1568,27261,intermediate
+oos_computer_network,Computer network,computer network; network technologies,1985,780,21992,489396,disruptive
+oos_computer_simulation,Computer simulation,computer simulations; simulation model,1989,148,2422,63047,disruptive
+oos_computeraided_design,Computeraided design,aided design; computer aided,1984,78,10868,171369,intermediate
+oos_conditional_probability,Conditional probability,conditional probabilities; conditional probability,1993,9,1553,674,non_disruptive
+oos_conductive_polymer,Conductive polymer,conducting polymer; conducting polymers; conductive polymer; conductive polymers,1982,11,9292,526,intermediate
+oos_conductive_textile,Conductive textile,conductive elements,1994,4,5382,0,non_disruptive
+oos_confocal_microscopy,Confocal microscopy,confocal microscope,1991,25,1002,1949,intermediate
+oos_consistency_model,Consistency model,read operations; write operation; write operations,1986,5,31769,3805,non_disruptive
+oos_contact_geometry,Contact geometry,contact structure; contact structures,1991,10,3023,233,intermediate
+oos_contact_region,Contact region,contact region,1985,0,4274,1576,non_disruptive
+oos_contentaddressable_memory,Contentaddressable memory,content addressable,1989,17,2823,577,intermediate
+oos_contentbased_image_retrieval,Contentbased image retrieval,based image; image content,1991,10,4000,7209,intermediate
+oos_contextsensitive_grammar,Contextsensitive grammar,context sensitive,1991,7,1885,0,non_disruptive
+oos_continuous_glucose_monitor,Continuous glucose monitor,continuous glucose,1996,225,828,6595,disruptive
+oos_continuous_stirredtank_reactor,Continuous stirredtank reactor,stirred tank,1994,2,2379,1064,non_disruptive
+oos_continuousrod_warhead,Continuousrod warhead,continuous rod,1982,1,199,113,non_disruptive
+oos_controllerpilot_data_link_communications,Controllerpilot data link communications,pilot data,2004,90,1332,1232,intermediate
+oos_convection_heat_transfer,Convection heat transfer,bulk fluid,1994,2,593,1442,non_disruptive
+oos_coordination_complex,Coordination complex,coordination complex,1988,2,780,665,non_disruptive
+oos_copper_indium_gallium_selenide,Copper indium gallium selenide,copper indium,2003,7,766,52,non_disruptive
+oos_copper_phthalocyanine,Copper phthalocyanine,superior properties,1996,45,642,1801,intermediate
+oos_coppertungsten,Coppertungsten,copper tungsten,1990,7,625,52,non_disruptive
+oos_copy_protection,Copy protection,copy protection,1989,69,1091,1241,intermediate
+oos_coreshell_semiconductor_nanocrystal,Coreshell semiconductor nanocrystal,core shell; semiconductor nanocrystals,1996,10,4224,2158,intermediate
+oos_coupling_reaction,Coupling reaction,coupling reaction; coupling reactions,1986,1,6565,216,non_disruptive
+oos_covalent_bond,Covalent bond,covalent bonds,1992,11,4348,46,intermediate
+oos_covariance_matrix,Covariance matrix,covariance matrix,1993,0,2494,284,non_disruptive
+oos_cove_lighting,Cove lighting,directs light,1991,11,1100,266,intermediate
+oos_crabeating_macaque,Crabeating macaque,cynomolgus monkey,1997,27,687,31,intermediate
+oos_crossflow_filtration,Crossflow filtration,tangential flow,2005,13,1335,6294,intermediate
+oos_cruise_control,Cruise control,cruise control,1993,169,1617,80011,disruptive
+oos_cryptococcus_neoformans,Cryptococcus neoformans,cryptococcus neoformans,2003,0,631,31,non_disruptive
+oos_crystal_violet,Crystal violet,crystal violet,1994,1,1285,12,non_disruptive
+oos_cumene_hydroperoxide,Cumene hydroperoxide,cumene hydroperoxide,1995,0,1111,0,non_disruptive
+oos_currentmode_logic,Currentmode logic,source coupled,1985,17,7865,120,intermediate
+oos_customfit,Customfit,custom fit,1986,93,841,0,intermediate
+oos_cyanine,Cyanine,cyanine dye,1989,0,720,3,non_disruptive
+oos_cyclic_compound,Cyclic compound,cyclic structure; cyclic structures; ring atom; ring atoms,1989,0,12857,0,non_disruptive
+oos_cyclic_olefin_copolymer,Cyclic olefin copolymer,cyclic olefin; olefin copolymer; olefin copolymers,1982,2,4814,62,non_disruptive
+oos_cyclic_redundancy_check,Cyclic redundancy check,check crc; cyclic redundancy; redundancy check,1988,2,7904,552,non_disruptive
+oos_cyclic_voltammetry,Cyclic voltammetry,cyclic voltammetry,1994,0,775,604,non_disruptive
+oos_cycling_probe_technology,Cycling probe technology,internucleotide linkage,1995,0,607,0,non_disruptive
+oos_cycloheximide,Cycloheximide,therapeutic compound,1992,38,1966,958,intermediate
+oos_cysteine,Cysteine,cysteine residue; cysteine residues,1987,4,9181,14,non_disruptive
+oos_da_vinci_surgical_system,Da Vinci Surgical System,surgical systems,2005,182,619,32125,disruptive
+oos_dameraulevenshtein_distance,DamerauLevenshtein distance,insertions deletions,1995,10,1145,316,intermediate
+oos_data_access_object,Data access object,data accesses,1985,545,825,177797,disruptive
+oos_data_buffer,Data buffer,data buffer; data buffers,1991,9,8370,102,non_disruptive
+oos_data_communication,Data communication,data communications; data transmissions; digital communication; digital communications,1990,1232,24848,487442,disruptive
+oos_data_compression,Data compression,audio compression; compression algorithm; compression algorithms; data compression; video compression,1983,173,15344,27792,disruptive
+oos_data_file,Data file,data file; stores data,1983,262,17175,241602,disruptive
+oos_data_integrity,Data integrity,data integrity; retrieves data,1985,291,4839,1029567,disruptive
+oos_data_loss,Data loss,data loss,1991,229,3240,103901,disruptive
+oos_data_matrix,Data Matrix,data matrix,1989,10,1319,1597,intermediate
+oos_data_model,Data model,data model; data models,1991,347,5154,763801,disruptive
+oos_data_quality,Data quality,data quality,1996,769,1070,981086,disruptive
+oos_data_source_name,Data source name,data sources,1990,1672,8535,860787,disruptive
+oos_data_store,Data store,data store; data stores,1990,204,19402,177695,disruptive
+oos_data_type,Data type,data type; data types,1985,202,18389,62853,disruptive
+oos_data_validation,Data validation,data validation,1992,53,542,181528,intermediate
+oos_database_index,Database index,index data,1990,71,1079,4872,intermediate
+oos_database_search_engine,Database search engine,database search,1991,31,1321,36435,intermediate
+oos_datadriven_programming,Datadriven programming,programming data,1992,3,1123,31273,non_disruptive
+oos_datareader,DataReader,data reader,1993,1,674,705,non_disruptive
+oos_dataspaces,Dataspaces,data space,1991,250,1368,30902,disruptive
+oos_debit_card,Debit card,card debit; cards debit; debit card; debit cards,1990,3561,7447,362419,disruptive
+oos_decoupling_capacitor,Decoupling capacitor,decoupling capacitor; decoupling capacitors,1984,7,2350,142,non_disruptive
+oos_default_effect,Default effect,default setting,1992,16,963,2879,intermediate
+oos_delete_key,Delete key,selected object,1987,1,1892,115,non_disruptive
+oos_dendritic_cell,Dendritic cell,dendritic cell,1995,184,2078,2106,disruptive
+oos_dental_implant,Dental implant,dental implant; dental implants,1987,247,2106,19882,disruptive
+oos_depth_map,Depth map,depth map; depth maps,2004,12,1361,170,intermediate
+oos_design_structure_matrix,Design structure matrix,design structure,2004,60,1530,21545,intermediate
+oos_desktop_computer,Desktop computer,desktop computer; desktop computers,1991,279,5622,146898,disruptive
+oos_dialog_box,Dialog box,dialog box; dialog boxes,1990,13,5149,795,intermediate
+oos_dialysis,Dialysis,dialysis machine,1992,62,826,176247,intermediate
+oos_diamond_tool,Diamond tool,diamond grains,2001,0,564,0,non_disruptive
+oos_dibutyl_phthalate,Dibutyl phthalate,dibutyl phthalate,2006,1,1183,163,non_disruptive
+oos_dicalcium_phosphate,Dicalcium phosphate,dibasic calcium,2006,0,636,0,non_disruptive
+oos_dielsalder_reaction,DielsAlder reaction,diels alder,1993,0,1752,3,non_disruptive
+oos_diesel_engine,Diesel engine,medium speed,1994,77,747,0,intermediate
+oos_diethyl_azodicarboxylate,Diethyl azodicarboxylate,diethyl azodicarboxylate,1989,0,970,0,non_disruptive
+oos_differential_gps,Differential GPS,differential gps,1993,4,816,452,non_disruptive
+oos_differential_scanning_calorimetry,Differential scanning calorimetry,calorimetry dsc; scanning calorimetry,1985,4,6630,2743,non_disruptive
+oos_differential_signalling,Differential signalling,differential pair; differential pairs,1989,1,4616,1256,non_disruptive
+oos_digital_camera,Digital camera,digital camera; digital cameras,1992,1493,12406,228541,disruptive
+oos_digital_content,Digital content,digital content,1996,1937,4451,269536,disruptive
+oos_digital_image_processing,Digital image processing,image processing; processing digital,1985,403,23587,120671,disruptive
+oos_digital_imaging,Digital imaging,digital imaging,1992,784,2825,87178,disruptive
+oos_digital_mapping,Digital mapping,digital map,1992,79,799,4881,intermediate
+oos_digital_object_identifier,Digital object identifier,object identifier; object identifiers,1989,0,2487,354,non_disruptive
+oos_digital_signal_processing,Digital signal processing,digital processing,1991,97,5518,5747,intermediate
+oos_digital_signature,Digital signature,digital signature; digital signatures,1988,134,8411,32382,disruptive
+oos_digital_subscriber_line,Digital subscriber line,digital subscriber; subscriber line; subscriber lines,1990,584,10088,8226,disruptive
+oos_digital_subtraction_angiography,Digital subtraction angiography,subsequent image,1991,0,874,82,non_disruptive
+oos_digital_television,Digital television,digital television,1989,956,2821,31070,disruptive
+oos_digital_video,Digital video,digital video,1987,1855,15455,143389,disruptive
+oos_dihydrofolate_reductase,Dihydrofolate reductase,dhfr gene,1986,0,1079,0,non_disruptive
+oos_dimethoxyethane,Dimethoxyethane,glycol dimethyl,1996,0,2580,0,non_disruptive
+oos_dimethyl_carbonate,Dimethyl carbonate,dimethyl carbonate; ethyl carbonate,1989,0,1751,3,non_disruptive
+oos_dimethyl_ether,Dimethyl ether,dimethyl ether,1994,13,4607,22,intermediate
+oos_dimethylacetamide,Dimethylacetamide,dimethyl acetamide; ethyl acetamide; methyl acetamide,1989,0,2565,2,non_disruptive
+oos_dipcoating,Dipcoating,dip coating,1982,1,4287,407,non_disruptive
+oos_dipotassium_phosphate,Dipotassium phosphate,dipotassium phosphate,2006,0,292,1,non_disruptive
+oos_dipropylene_glycol,Dipropylene glycol,dipropylene glycol,1994,0,5905,0,non_disruptive
+oos_direct_memory_access,Direct memory access,access dma,1991,2,2554,256,non_disruptive
+oos_directcurrent_plasma,Directcurrent plasma,plasma stream,1984,1,435,8,non_disruptive
+oos_directed_graph,Directed graph,directed graph,1992,0,1323,150,non_disruptive
+oos_directsequence_spread_spectrum,Directsequence spread spectrum,sequence spread,1987,0,1379,265,non_disruptive
+oos_discrete_cosine_transform,Discrete cosine transform,cosine transform; discrete cosine; transform dct,1984,1,6261,11,non_disruptive
+oos_discrete_time_and_continuous_time,Discrete time and continuous time,discrete time,1983,22,3274,2847,intermediate
+oos_disodium_phosphate,Disodium phosphate,phosphate dibasic,1996,0,1195,20,non_disruptive
+oos_dispersion_polymerization,Dispersion polymerization,dispersion polymerization,1993,0,662,19,non_disruptive
+oos_display_device,Display device,display devices; electronic displays,1989,110,11790,19531,disruptive
+oos_displayport,DisplayPort,port connector,1990,2,899,16,non_disruptive
+oos_dissolution_testing,Dissolution testing,dissolution profile,1996,9,747,154,non_disruptive
+oos_distributed_antenna_system,Distributed antenna system,antenna systems; distributed antenna,1991,450,2835,56736,disruptive
+oos_distributed_computing,Distributed computing,distributed computing; distributed system; distributed systems,1987,123,27996,598146,disruptive
+oos_distributed_control_system,Distributed control system,distributed control,1993,65,1578,37427,intermediate
+oos_dna,DNA,dna strand; dna strands,1989,11,4762,43,intermediate
+oos_dna_construct,DNA construct,dna construct; dna constructs,1988,6,9117,3438,non_disruptive
+oos_dna_extraction,DNA extraction,dna extraction,2004,32,873,11685,intermediate
+oos_dna_microarray,DNA microarray,stringency conditions,1993,0,8775,0,non_disruptive
+oos_dna_sequencing,DNA sequencing,dna sequencing,1985,241,8558,25229,disruptive
+oos_docking_station,Docking station,docking station; docking stations,1993,176,3864,12487,disruptive
+oos_document_object_model,Document Object Model,document object; object representing,1991,1,2905,5835,non_disruptive
+oos_domain_name,Domain name,domain names,1994,458,1638,64979,disruptive
+oos_domain_name_system,Domain Name System,dns servers,1995,15,623,11884,intermediate
+oos_domainspecific_language,Domainspecific language,domain specific,1992,32,1675,42874,intermediate
+oos_dominance_genetics,Dominance genetics,dominant negative; recessive allele,1994,11,8170,74,intermediate
+oos_dot_blot,Dot blot,dot blot,1990,1,2039,258,non_disruptive
+oos_double_bond,Double bond,single bonds,1990,33,1156,95,intermediate
+oos_drill_bit_well,Drill bit well,cutting elements,2004,9,3072,0,non_disruptive
+oos_dropletbased_microfluidics,Dropletbased microfluidics,droplet based,2001,1,251,169,non_disruptive
+oos_drug_carrier,Drug carrier,drug carrier,1995,2,1574,97,non_disruptive
+oos_drug_design,Drug design,drug design,1990,113,3527,5989,disruptive
+oos_drug_test,Drug test,parent drug,2004,29,1599,86,intermediate
+oos_drugeluting_stent,Drugeluting stent,drug eluting,1999,140,1230,2932,disruptive
+oos_dry_blender,Dry blender,dry components,1991,0,497,0,non_disruptive
+oos_dry_etching,Dry etching,dry etch; dry etching,1990,6,6074,6513,non_disruptive
+oos_drypowder_inhaler,Drypowder inhaler,powder inhaler; powder inhalers,1994,126,1804,1315,disruptive
+oos_duplicate_content,Duplicate content,content search,2002,46,409,5729,intermediate
+oos_duty_cycle,Duty cycle,duty cycle; duty cycles,1994,173,27261,4259,disruptive
+oos_dynamic_light_scattering,Dynamic light scattering,dynamic light,1997,3,1342,1539,non_disruptive
+oos_dynamic_randomaccess_memory,Dynamic randomaccess memory,column address; column addresses; dram cells; dram chips; dram memory; memory dram; row address; trench capacitor,1988,146,21142,2790,disruptive
+oos_echo_suppression_and_cancellation,Echo suppression and cancellation,echo cancellation,1991,91,1868,2766,intermediate
+oos_ecommerce,Ecommerce,electronic commerce,1994,204,3563,34701,disruptive
+oos_eeprom,EEPROM,electrically erasable,1985,1,3340,369,non_disruptive
+oos_effective_dose_radiation,Effective dose radiation,effective doses,1985,334,1789,166,disruptive
+oos_effective_microorganism,Effective microorganism,carrier substrate,1987,0,2140,8,non_disruptive
+oos_elasticity_physics,Elasticity physics,elastic materials,1982,2,1078,90,non_disruptive
+oos_electric_multiple_unit,Electric multiple unit,permanently coupled,2005,0,584,0,non_disruptive
+oos_electric_strike,Electric strike,ramped surface,1987,0,1078,145,non_disruptive
+oos_electrical_breakdown,Electrical breakdown,dielectric breakdown,1994,1,1362,213,non_disruptive
+oos_electrical_impedance,Electrical impedance,electrical impedance,1991,3,2423,1048,non_disruptive
+oos_electrical_length,Electrical length,electrical length,1990,0,1492,9,non_disruptive
+oos_electrically_conductive_adhesive,Electrically conductive adhesive,conductive adhesive; conductive adhesives,1981,3,4369,310,non_disruptive
+oos_electrochromic_device,Electrochromic device,electrochromic devices; electrochromic mirror; electrochromic mirrors,1990,18,1651,50,intermediate
+oos_electromagnetic_interference,Electromagnetic interference,interference emi,1989,1,2047,3456,non_disruptive
+oos_electron_paramagnetic_resonance,Electron paramagnetic resonance,spin resonance,1991,0,542,158,non_disruptive
+oos_electronic_discovery,Electronic discovery,electronic format,2004,113,1222,72440,disruptive
+oos_electronic_game,Electronic game,electronic games,1992,148,546,5652,disruptive
+oos_electronic_lock,Electronic lock,electronic lock,2006,59,616,9134,intermediate
+oos_electronic_paper,Electronic paper,electrophoretic display; electrophoretic displays,1994,3,1346,108,non_disruptive
+oos_electronic_program_guide,Electronic program guide,electronic program; program guides,1987,165,2662,44657,disruptive
+oos_electronic_stability_control,Electronic stability control,stability control,1996,160,793,4049,disruptive
+oos_electrooptical_sensor,Electrooptical sensor,optical sensors,1982,133,4297,10403,disruptive
+oos_electroosmosis,Electroosmosis,electro osmotic,1992,0,443,17,non_disruptive
+oos_electrospray_ionization,Electrospray ionization,electrospray ionization,1993,1,1864,222,non_disruptive
+oos_electrosurgery,Electrosurgery,return electrode; return electrodes,1990,0,2412,190,non_disruptive
+oos_elisa,ELISA,assay elisa; enzyme linked; immunosorbent assay; linked immunosorbent,1990,3,18005,13232,non_disruptive
+oos_email,Email,electronic mail; email message; email messages; mail message; mail messages,1989,100,20998,514024,intermediate
+oos_emergency_broadcast_system,Emergency Broadcast System,broadcast systems,1991,107,1306,15279,disruptive
+oos_employee_monitoring_software,Employee monitoring software,monitoring software,1993,95,569,45265,intermediate
+oos_enduser_development,Enduser development,user program; user programs,1991,21,1911,6875,intermediate
+oos_energy_harvesting,Energy harvesting,energy harvesting,2000,60,1174,1591,intermediate
+oos_engineered_wood,Engineered wood,composite wood,1994,77,297,434,intermediate
+oos_entity_component_system,Entity component system,component systems,1992,97,817,0,intermediate
+oos_entityattributevalue_model,Entityattributevalue model,attribute values,1989,38,3229,4196,intermediate
+oos_enzyme_assay,Enzyme assay,enzyme assay; enzyme assays,1995,8,1968,8058,non_disruptive
+oos_enzyme_inhibitor,Enzyme inhibitor,enzyme inhibitor; irreversible inhibitor; irreversible inhibitors,1994,36,1732,209,intermediate
+oos_epdm_rubber,EPDM rubber,rubber ethylene,1994,0,898,7,non_disruptive
+oos_ephemeral_port,Ephemeral port,predefined range,1990,2,1076,85,non_disruptive
+oos_epidermal_growth_factor,Epidermal growth factor,epidermal growth,1987,102,6748,127,disruptive
+oos_epidermal_growth_factor_receptor,Epidermal growth factor receptor,factor receptor,1991,180,7107,492,disruptive
+oos_epitaxy,Epitaxy,epitaxial growth,1985,14,4648,1359,intermediate
+oos_equivalent_dose,Equivalent dose,weighting factors,1991,42,2517,212,intermediate
+oos_erlenmeyer_flask,Erlenmeyer flask,conical body,1993,0,510,0,non_disruptive
+oos_erotic_target_location_error,Erotic target location error,target location,1987,149,4111,81236,disruptive
+oos_error_correction_code,Error correction code,correcting code; correcting codes; correction code; correction codes; correction fec,1985,9,7766,5403,non_disruptive
+oos_error_detection_and_correction,Error detection and correction,detection technique; error control; error correction; error detection,1986,152,29912,50472,disruptive
+oos_error_function,Error function,error function,1989,2,1235,823,non_disruptive
+oos_estimation_theory,Estimation theory,measured data,1983,35,3097,3155,intermediate
+oos_ethidium_bromide,Ethidium bromide,ethidium bromide,1987,0,3850,88,non_disruptive
+oos_ethoxylation,Ethoxylation,alcohol ethoxylate; alcohol ethoxylates,1993,1,2757,88,non_disruptive
+oos_ethyl_bromoacetate,Ethyl bromoacetate,ethyl bromoacetate,1989,0,911,0,non_disruptive
+oos_ethyl_carbamate,Ethyl carbamate,ethyl carbamate,1997,0,945,8,non_disruptive
+oos_ethyl_eicosapentaenoic_acid,Ethyl eicosapentaenoic acid,acid ethyl,1996,4,8555,8,non_disruptive
+oos_ethyl_oleate,Ethyl oleate,ethyl oleate,1996,0,2605,0,non_disruptive
+oos_eukaryote,Eukaryote,eukaryotic cell,1985,3,6788,1618,non_disruptive
+oos_event_data_recorder,Event data recorder,vehicle data,1989,82,1646,21723,intermediate
+oos_excimer_laser,Excimer laser,excimer laser; excimer lasers,1991,88,3923,0,intermediate
+oos_exogenous_dna,Exogenous DNA,exogenous dna,1990,0,3680,9,non_disruptive
+oos_expansion_card,Expansion card,adapter card; expansion bus,1989,32,2979,1284,intermediate
+oos_expected_value,Expected value,expected values,1990,566,1317,5231,disruptive
+oos_explosive,Explosive,primary explosive,2003,4,192,73,non_disruptive
+oos_expression_vector,Expression vector,expression construct; expression vector; expression vectors,1987,3,69355,6052,non_disruptive
+oos_extremely_high_frequency,Extremely high frequency,millimeter wave,2001,434,2839,8578,disruptive
+oos_extrusion,Extrusion,sectional profile,1981,1,2976,339,non_disruptive
+oos_extrusion_coating,Extrusion coating,extrusion coating,1997,15,1763,1715,intermediate
+oos_eye,Eye,detects light,1990,2,559,29,non_disruptive
+oos_facial_recognition_system,Facial recognition system,facial recognition; frt system; recognition software; recognition system; recognition systems; recognition technologies; recognition technology,1986,334,15099,32661,disruptive
+oos_failure_mode_and_effects_analysis,Failure mode and effects analysis,failure mode; failure modes,1985,91,4076,179351,intermediate
+oos_fast_fourier_transform,Fast Fourier transform,fast fourier; transform fft,1984,0,8273,770,non_disruptive
+oos_fatty_amine,Fatty amine,fatty amines,2007,0,925,188,non_disruptive
+oos_feature_data,Feature data,feature data,1991,16,910,6691,intermediate
+oos_federated_learning,Federated learning,local node,1991,1,1291,327,non_disruptive
+oos_ferrite_core,Ferrite core,ferrite core,1985,15,1331,191,intermediate
+oos_ferritic_stainless_steel,Ferritic stainless steel,ferritic stainless,2002,7,426,11,non_disruptive
+oos_ferroelectricity,Ferroelectricity,ferroelectric material; ferroelectric materials,1987,2,2194,98,non_disruptive
+oos_fetal_bovine_serum,Fetal bovine serum,fetal bovine; serum fbs,1987,17,10715,65,intermediate
+oos_fiber_bragg_grating,Fiber Bragg grating,bragg grating; bragg gratings,1992,3,3736,406,non_disruptive
+oos_fiberboard,Fiberboard,density fiberboard,1991,35,408,637,intermediate
+oos_fiberoptic_cable,Fiberoptic cable,optic cable; optic cables,1980,195,18402,49493,disruptive
+oos_fiberoptic_communication,Fiberoptic communication,optic communication,1995,44,1087,5705,intermediate
+oos_fibrin_glue,Fibrin glue,fibrin glue,1992,4,622,1,non_disruptive
+oos_fibroblast_growth_factor,Fibroblast growth factor,fibroblast growth,1989,50,6598,84,intermediate
+oos_fiducial_marker,Fiducial marker,fiducial markers; fiducial marks,1992,3,1241,240,non_disruptive
+oos_fieldemission_display,Fieldemission display,emission display; emission displays,1992,6,1815,0,non_disruptive
+oos_fieldprogrammable_gate_array,Fieldprogrammable gate array,programmable gate,1989,24,10419,7543,intermediate
+oos_file_format,File format,file format; file formats; file type,1990,146,9531,217283,disruptive
+oos_file_inclusion_vulnerability,File inclusion vulnerability,remote file,1991,3,676,3344,non_disruptive
+oos_file_server,File server,file server; file servers,1988,90,5736,66710,intermediate
+oos_file_system,File system,file systems,1985,334,4646,365889,disruptive
+oos_financial_instrument,Financial instrument,financial instruments,1993,3649,1570,68723,disruptive
+oos_fingerprint,Fingerprint,fingerprint sensor,2001,157,751,393,disruptive
+oos_finite_element_method,Finite element method,finite element,1988,49,3178,113836,intermediate
+oos_fire_extinguisher,Fire extinguisher,wet chemical,1989,29,2448,9647,intermediate
+oos_firmware,Firmware,hardware firmware,2002,16,3305,63010,intermediate
+oos_fischer_indole_synthesis,Fischer indole synthesis,aromatic heterocycle,1991,0,688,1,non_disruptive
+oos_flash_memory,Flash memory,flash devices; flash memories; nand flash,1991,1261,4792,40175,disruptive
+oos_flatpanel_display,Flatpanel display,flat panel; panel display; panel displays,1983,1973,18351,39876,disruptive
+oos_flexible_electronics,Flexible electronics,flex circuit; flexible circuit; flexible circuits,1984,138,6995,5838,disruptive
+oos_flight_controller,Flight controller,controller monitors,1988,2,1454,1722,non_disruptive
+oos_flipflop_electronics,Flipflop electronics,edge triggered,1990,0,1447,1,non_disruptive
+oos_float_glass,Float glass,float glass,1990,50,932,3329,intermediate
+oos_floatinggate_mosfet,Floatinggate MOSFET,floating gate; floating gates,1985,53,11948,90,intermediate
+oos_flooding_computer_networking,Flooding computer networking,incoming packet,1993,0,1716,59,non_disruptive
+oos_flow_cytometry,Flow cytometry,flow cytometry,1990,283,10721,101843,disruptive
+oos_flow_diagram,Flow diagram,flow diagrams,1991,29,5327,224283,intermediate
+oos_flpfrt_recombination,FLPFRT recombination,flp frt; frt sites,2002,0,2296,4,non_disruptive
+oos_fluid_dynamics,Fluid dynamics,fluid dynamic,1993,140,817,56619,disruptive
+oos_fluorescence_anisotropy,Fluorescence anisotropy,fluorescence polarization,1997,0,1859,253,non_disruptive
+oos_fluorescence_in_situ_hybridization,Fluorescence in situ hybridization,fluorescent probe,1989,2,933,355,non_disruptive
+oos_fluorescencelifetime_imaging_microscopy,Fluorescencelifetime imaging microscopy,fluorescence lifetime,1994,0,613,107,non_disruptive
+oos_fluorescent_tag,Fluorescent tag,fluorescent label; fluorescent labels,1987,1,6345,466,non_disruptive
+oos_fluoroiodomethane,Fluoroiodomethane,fluoro iodo,1997,0,784,0,non_disruptive
+oos_forcesensing_resistor,Forcesensing resistor,force sensing,1983,22,1353,193,intermediate
+oos_fourier_transform,Fourier transform,fourier transform; fourier transformation; fourier transforms,1986,4,20137,9303,non_disruptive
+oos_fouriertransform_infrared_spectroscopy,Fouriertransform infrared spectroscopy,transform infrared,1993,4,1071,2925,non_disruptive
+oos_fragment_antigenbinding,Fragment antigenbinding,antigen binding,1985,14,13341,171,intermediate
+oos_frequency_domain,Frequency domain,domain representation; frequency domain,1993,13,15934,5982,intermediate
+oos_frequencyhopping_spread_spectrum,Frequencyhopping spread spectrum,frequency hopping,1990,15,3190,576,intermediate
+oos_frster_resonance_energy_transfer,Frster resonance energy transfer,fluorescence resonance; transfer fret,1994,2,2829,217,non_disruptive
+oos_fumed_silica,Fumed silica,fumed silica,1992,67,5229,1176,intermediate
+oos_gallium_nitride,Gallium nitride,gallium nitride,1993,269,2901,2356,disruptive
+oos_game_controller,Game controller,game controller; game controllers; keyboard mouse,1990,58,3396,98177,intermediate
+oos_game_server,Game server,server transmits,1992,0,1111,5,non_disruptive
+oos_gas_blending_for_scuba_diving,Gas blending for scuba diving,gas mixing,1991,5,599,288,non_disruptive
+oos_gas_chromatographymass_spectrometry,Gas chromatographymass spectrometry,chromatography mass,1992,14,1773,12526,intermediate
+oos_gasification,Gasification,gasification system,1987,10,351,225,intermediate
+oos_gastric_bypass_surgery,Gastric bypass surgery,gastric bypass,1998,90,473,3077,intermediate
+oos_gel_permeation_chromatography,Gel permeation chromatography,chromatography gpc,1995,0,1024,269,non_disruptive
+oos_gene_delivery,Gene delivery,gene delivery,1993,61,4352,2212,intermediate
+oos_gene_expression_profiling,Gene expression profiling,expression profiling,2000,67,1532,2488,intermediate
+oos_gene_regulatory_network,Gene regulatory network,gene regulatory,1996,2,2306,738,non_disruptive
+oos_gene_silencing,Gene silencing,gene silencing; sirna molecules,2001,71,5762,1153,intermediate
+oos_gene_targeting,Gene targeting,gene targeting,1994,14,1425,1181,intermediate
+oos_general_packet_radio_service,General Packet Radio Service,coding schemes,1992,8,1551,5493,non_disruptive
+oos_generalpurpose_computing_on_graphics_processing_units,Generalpurpose computing on graphics processing units,purpose computing,1994,13,3898,575,intermediate
+oos_genetic_engineering,Genetic engineering,genetic modification; genetic modifications; genetically modified,1994,183,7934,6014,disruptive
+oos_genetic_marker,Genetic marker,genetic marker; genetic markers,1990,168,9846,2029,disruptive
+oos_genome_editing,Genome editing,target dna,1986,19,5771,27,intermediate
+oos_geomembrane,Geomembrane,polymer sheet; polymer sheets,1991,0,2062,154,non_disruptive
+oos_gesture_recognition,Gesture recognition,gesture recognition,1994,109,1039,1270,disruptive
+oos_giant_magnetoresistance,Giant magnetoresistance,ferromagnetic layers; magnetic layers,1991,7,3696,9,non_disruptive
+oos_glassy_carbon,Glassy carbon,glassy carbon,1988,0,716,1,non_disruptive
+oos_global_positioning_system,Global Positioning System,global positioning; gps system; gps systems; positioning system; positioning systems; system gps,1984,325,38490,159083,disruptive
+oos_gluconic_acid,Gluconic acid,gluconic acid,1993,2,2290,2,non_disruptive
+oos_glucose,Glucose,glucose concentrations,1990,18,1395,30,intermediate
+oos_glucose_meter,Glucose meter,glucose measurement; glucose meter,1993,121,1698,9558,disruptive
+oos_glucose_oxidase,Glucose oxidase,glucose oxidase,1995,1,3468,30,non_disruptive
+oos_glucose_test,Glucose test,glucose test,1991,21,515,1980,intermediate
+oos_glutamate_carboxypeptidase_ii,Glutamate carboxypeptidase II,membrane antigen,2005,42,608,61,intermediate
+oos_glycolic_acid,Glycolic acid,glycolic acid,1990,5,9705,133,non_disruptive
+oos_gonadotropinreleasing_hormone,Gonadotropinreleasing hormone,gonadotropin releasing; releasing hormone,2006,10,3650,105,intermediate
+oos_google_classroom,Google Classroom,respective user; respective users,1993,8,2517,1366,non_disruptive
+oos_google_search,Google Search,search terms,1992,201,3679,173752,disruptive
+oos_goretex,GoreTex,expanded ptfe,1990,1,868,16,non_disruptive
+oos_gps_exchange_format,GPS Exchange Format,gps data,1992,22,2244,13271,intermediate
+oos_gps_signals,GPS signals,gps signals,1986,35,2591,1038,intermediate
+oos_gradientindex_optics,Gradientindex optics,gradient index,1994,0,889,37,non_disruptive
+oos_grain_drying,Grain drying,drying methods,1993,1,366,197,non_disruptive
+oos_grampositive_bacteria,Grampositive bacteria,positive bacteria,1989,12,2043,183,intermediate
+oos_gray_code,Gray code,gray code,1990,0,1240,71,non_disruptive
+oos_green_fluorescent_protein,Green fluorescent protein,fluorescent protein; fluorescent proteins,1995,10,7985,368,intermediate
+oos_growth_medium,Growth medium,growth media; growth medium,1991,112,13638,3375,disruptive
+oos_gsm,GSM,communications gsm,2005,0,1067,526,non_disruptive
+oos_gunfire_locator,Gunfire locator,location systems,1990,70,630,14701,intermediate
+oos_gypsum,Gypsum,sulfate dihydrate,1988,0,601,0,non_disruptive
+oos_haloalkane,Haloalkane,alkyl halide; alkyl halides,1995,0,5044,38,non_disruptive
+oos_hamming_distance,Hamming distance,hamming distance,1993,0,1025,2,non_disruptive
+oos_handleometer,HandleoMeter,thwing albert,1994,0,500,40,non_disruptive
+oos_handover,Handover,channel connected,1990,9,1015,161,non_disruptive
+oos_haptic_technology,Haptic technology,force feedback,1992,26,1315,693,intermediate
+oos_hard_disk_drive,Hard disk drive,disk drive; disk drives; hard disk; hard disks,1979,1863,89816,68083,disruptive
+oos_hardware_security_module,Hardware security module,security module,1994,90,1704,0,intermediate
+oos_harvard_architecture,Harvard architecture,separate storage,1994,10,944,4672,intermediate
+oos_hash_function,Hash function,hash code; hash function; hash functions; hash values,1989,3,9921,1933,non_disruptive
+oos_hash_table,Hash table,hash table; hash tables,1989,0,4751,4148,non_disruptive
+oos_headmounted_display,Headmounted display,mounted display,1989,39,1500,2854,intermediate
+oos_heat_treating,Heat treating,heat treat,1983,257,806,46100,disruptive
+oos_heatshrink_tubing,Heatshrink tubing,heat shrink,1982,16,2076,3900,intermediate
+oos_hela,HeLa,hela cells,1987,3,3660,27,non_disruptive
+oos_hematopoietic_stem_cell_transplantation,Hematopoietic stem cell transplantation,cell transplantation,1994,225,1355,11276,disruptive
+oos_heterocyclic_compound,Heterocyclic compound,heterocyclic compound; heterocyclic compounds; membered rings,1995,0,6284,184,non_disruptive
+oos_hidden_markov_model,Hidden Markov model,hidden markov,1987,0,1728,1340,non_disruptive
+oos_high_dielectric,High dielectric,gate dielectric,1983,25,9799,136,intermediate
+oos_high_efficiency_image_file_format,High Efficiency Image File Format,image sequences,1988,1,834,259,non_disruptive
+oos_high_efficiency_video_coding,High Efficiency Video Coding,coding efficiency,1993,3,1171,779,non_disruptive
+oos_highdensity_polyethylene,Highdensity polyethylene,polyethylene hdpe,1994,2,1499,1549,non_disruptive
+oos_highintensity_discharge_lamp,Highintensity discharge lamp,fused alumina,1985,1,355,12,non_disruptive
+oos_highlevel_programming_language,Highlevel programming language,level language; level programming,1989,5,3038,121476,non_disruptive
+oos_highperformance_liquid_chromatography,Highperformance liquid chromatography,chromatography hplc; mobile phase; phase chromatography; sample components,1984,17,14637,11169,intermediate
+oos_highshear_mixer,Highshear mixer,shear mixer,1989,0,1605,599,non_disruptive
+oos_hindered_amine_light_stabilizers,Hindered amine light stabilizers,hindered amine; hindered amines,1982,0,2914,54,non_disruptive
+oos_history_of_ibm_magnetic_disk_drives,History of IBM magnetic disk drives,drive module,2007,42,844,1062,intermediate
+oos_holographic_optical_element,Holographic optical element,optical element,1992,31,10787,2461,intermediate
+oos_home_automation,Home automation,home automation,1993,638,849,56491,disruptive
+oos_homologous_recombination,Homologous recombination,homologous recombination,1990,62,9269,404,intermediate
+oos_hookandloop_fastener,Hookandloop fastener,loop fastener; loop fasteners,1980,2,8344,284,non_disruptive
+oos_hotmelt_adhesive,Hotmelt adhesive,melt adhesive; melt adhesives,1981,29,6466,566,intermediate
+oos_huffman_coding,Huffman coding,length code,1986,0,1015,23,non_disruptive
+oos_humanized_antibody,Humanized antibody,humanized antibodies; humanized antibody,1992,86,12232,60,intermediate
+oos_hybrid_electric_vehicle,Hybrid electric vehicle,hybrid electric,1995,520,2458,12321,disruptive
+oos_hybridization_probe,Hybridization probe,hybridization probe; hybridization probes; labeled probe,1988,1,11305,353,non_disruptive
+oos_hybridoma_technology,Hybridoma technology,hybridoma cell; hybridoma cells; hybridoma technology,1990,1,8674,1575,non_disruptive
+oos_hydrobromic_acid,Hydrobromic acid,acid hydrobromic,1990,0,1252,0,non_disruptive
+oos_hydrogel,Hydrogel,hydrophilic polymer,1989,3,4069,28,non_disruptive
+oos_hydrogen_production,Hydrogen production,hydrogen production,1991,88,1021,1117,intermediate
+oos_hydrophilic_interaction_chromatography,Hydrophilic interaction chromatography,interaction chromatography,1998,1,1101,498,non_disruptive
+oos_hydroxamic_acid,Hydroxamic acid,hydroxamic acid,1995,2,1362,2,non_disruptive
+oos_hydroxide,Hydroxide,hydroxide ions,1985,0,735,0,non_disruptive
+oos_hydroxylterminated_polybutadiene,Hydroxylterminated polybutadiene,terminated polybutadiene,1992,0,790,35,non_disruptive
+oos_hydroxypropyl_cellulose,Hydroxypropyl cellulose,hydroxypropyl cellulose,1983,0,4366,0,non_disruptive
+oos_hypersensitivity,Hypersensitivity,hypersensitivity reactions,1995,78,978,337,intermediate
+oos_hypromellose,Hypromellose,hydroxypropyl methyl; hydroxypropyl methylcellulose; suspending agent,1983,0,8428,3,non_disruptive
+oos_ibm_mq,IBM MQ,queue manager,1994,1,865,5583,non_disruptive
+oos_ic,IC,target address; target devices,1988,31,3747,3172,intermediate
+oos_identity_verification_service,Identity verification service,identity verification,1990,133,717,39569,disruptive
+oos_image_organizer,Image organizer,image management,2003,104,605,18092,disruptive
+oos_image_segmentation,Image segmentation,image region; image regions; image segmentation,1992,1,3737,2325,non_disruptive
+oos_imidazole,Imidazole,aromatic heterocycles,1991,0,347,1,non_disruptive
+oos_immortalised_cell_line,Immortalised cell line,cell lines,1979,891,40144,63745,disruptive
+oos_immunoglobulin_therapy,Immunoglobulin therapy,human immunoglobulin; human immunoglobulins,1987,2,5949,56,non_disruptive
+oos_immunoprecipitation,Immunoprecipitation,magnetic beads,1990,29,3405,782,intermediate
+oos_in_vivo,In vivo,vivo testing,2000,28,547,1246,intermediate
+oos_inclinometer,Inclinometer,tilt sensor; tilt sensors,1991,6,1049,146,non_disruptive
+oos_incremental_backup,Incremental backup,incremental backup; incremental backups,1992,1,951,1184,non_disruptive
+oos_indium_gallium_arsenide,Indium gallium arsenide,indium gallium,1990,26,2046,157,intermediate
+oos_indium_tin_oxide,Indium tin oxide,indium tin; oxide ito,1989,18,8194,86,intermediate
+oos_indiumiii_oxide,IndiumIII oxide,indium oxide,1994,0,1259,0,non_disruptive
+oos_inductive_charging,Inductive charging,inductive charging,2004,5,427,187,non_disruptive
+oos_inductively_coupled_plasma,Inductively coupled plasma,transformer coupled,2006,1,1176,51,non_disruptive
+oos_industrial_microbiology,Industrial microbiology,industrial microbiology,2003,15,529,1717,intermediate
+oos_industry_standard_architecture,Industry Standard Architecture,isa bus; standard architecture,1992,35,3502,14342,intermediate
+oos_inertial_measurement_unit,Inertial measurement unit,inertial measurement,1995,65,1159,3044,intermediate
+oos_information_privacy,Information privacy,data protection,1998,1111,1763,303557,disruptive
+oos_infrared_blaster,Infrared blaster,infrared signals,1982,2,1262,31,non_disruptive
+oos_infrasonic_sensing_array,Infrasonic sensing array,sensing array,1993,4,906,26,non_disruptive
+oos_inheritance_objectoriented_programming,Inheritance objectoriented programming,base class; parent object,1993,2,2448,1333,non_disruptive
+oos_input_device,Input device,input devices,1985,110,16250,9371,disruptive
+oos_instant_messaging,Instant messaging,instant messaging,1998,614,6094,45043,disruptive
+oos_insulin_pump,Insulin pump,insulin pump,1995,308,717,14974,disruptive
+oos_integrated_services_digital_network,Integrated Services Digital Network,network isdn,1992,0,760,1003,non_disruptive
+oos_intelligent_input_bus,Intelligent Input Bus,input bus,1990,1,1709,40,non_disruptive
+oos_intensive_care_unit,Intensive care unit,treatment unit,1991,115,962,30993,disruptive
+oos_interactive_programming,Interactive programming,interactive program,1991,81,735,12351,intermediate
+oos_interface_control_document,Interface control document,interface control,1991,17,2687,43653,intermediate
+oos_interferon_type_i,Interferon type I,interferon ifn,1995,0,993,8,non_disruptive
+oos_internal_ribosome_entry_site,Internal ribosome entry site,entry site,1992,8,1244,1250,non_disruptive
+oos_internet_control_message_protocol,Internet Control Message Protocol,control message; control messages,1989,4,7810,1174,non_disruptive
+oos_internet_filter,Internet filter,content filtering,2002,144,432,33427,disruptive
+oos_internet_protocol_suite,Internet protocol suite,protocol tcp,1993,1,2761,59221,non_disruptive
+oos_interprocess_communication,Interprocess communication,inter process; process communication,1989,7,1846,54177,non_disruptive
+oos_intersection_road,Intersection road,road segments,1994,45,674,176,intermediate
+oos_intraocular_lens,Intraocular lens,intraocular lenses,1983,96,1625,3764,intermediate
+oos_ion_channel,Ion channel,ion channel; ion channels,1992,162,4616,4472,disruptive
+oos_ion_mobility_spectrometry,Ion mobility spectrometry,ion mobility,1998,21,923,766,intermediate
+oos_ionic_liquid,Ionic liquid,ionic liquid; ionic liquids,1998,0,2533,1470,non_disruptive
+oos_ip_multicast,IP multicast,multicast packet,1994,0,840,52,non_disruptive
+oos_ism_radio_band,ISM radio band,ism band,1995,19,857,539,intermediate
+oos_iso_31661_alpha3,ISO 31661 alpha3,code elements,1993,1,755,958,non_disruptive
+oos_isoamyl_alcohol,Isoamyl alcohol,isoamyl alcohol,1991,0,1008,0,non_disruptive
+oos_isobutanol,Isobutanol,methyl propan,1998,0,976,0,non_disruptive
+oos_isoiec_base_media_file_format,ISOIEC base media file format,media file; media files,1995,37,4929,10365,intermediate
+oos_isolation_valve,Isolation valve,isolation valve,1982,31,1915,1921,intermediate
+oos_isopropyl_myristate,Isopropyl myristate,isopropyl myristate,2006,0,2124,0,non_disruptive
+oos_jakarta_enterprise_beans,Jakarta Enterprise Beans,remote interface,1994,1,635,1481,non_disruptive
+oos_joule_heating,Joule heating,joule heating,1993,0,970,35,non_disruptive
+oos_kalman_filter,Kalman filter,kalman filter,1986,0,2320,5266,non_disruptive
+oos_katana,Katana,facing upward,1991,9,771,11,non_disruptive
+oos_key_frame,Key frame,key frames,1990,8,763,3630,non_disruptive
+oos_keyhole_limpet_hemocyanin,Keyhole limpet hemocyanin,limpet hemocyanin,1991,2,2023,0,non_disruptive
+oos_keypad,Keypad,key pad,1979,1572,2307,63434,disruptive
+oos_label_printer,Label printer,label printer,1986,124,465,14545,disruptive
+oos_laboratory_rat,Laboratory rat,dawley rats; sprague dawley,1989,0,9113,66,non_disruptive
+oos_land_grid_array,Land grid array,land grid,1994,5,857,109,non_disruptive
+oos_language_model,Language model,language model; language models,1991,8,2324,10190,non_disruptive
+oos_lanthanide,Lanthanide,lanthanide metal,1991,0,655,3,non_disruptive
+oos_lanthanum_oxide,Lanthanum oxide,lanthanum oxide,1994,5,845,0,non_disruptive
+oos_laptop,Laptop,laptop computer; laptop computers; notebook computer; notebook computers,1989,669,13669,310846,disruptive
+oos_laser_ablation,Laser ablation,laser ablation,1988,57,4258,2114,intermediate
+oos_laser_beam_profiler,Laser beam profiler,beam profile,1990,5,1257,283,non_disruptive
+oos_laser_cutting,Laser cutting,focused laser; laser cut,1991,22,2449,2123,intermediate
+oos_laser_diode,Laser diode,diode laser; diode lasers; emitting laser; emitting lasers; laser diode; laser diodes; semiconductor laser; semiconductor lasers,1981,261,30358,12630,disruptive
+oos_laser_engraving,Laser engraving,laser marking,1993,47,624,4980,intermediate
+oos_laser_scanning,Laser scanning,laser scanner; laser scanners; laser scanning,1983,122,5644,18061,disruptive
+oos_latent_semantic_analysis,Latent semantic analysis,latent semantic,1996,1,329,851,non_disruptive
+oos_lateral_flow_test,Lateral flow test,target molecule; target molecules,1987,56,11276,1832,intermediate
+oos_layer_by_layer,Layer by layer,wash steps,1994,1,912,34,non_disruptive
+oos_leased_line,Leased line,data line,1991,248,8064,11698,disruptive
+oos_led_circuit,LED circuit,led driver,2005,420,1516,4142,disruptive
+oos_led_lamp,LED lamp,led lights,1987,326,746,7298,disruptive
+oos_lidar,Lidar,laser imaging,1987,30,661,869,intermediate
+oos_liftoff_microtechnology,Liftoff microtechnology,sacrificial material,1990,0,2385,9,non_disruptive
+oos_ligand_binding_assay,Ligand binding assay,binding assay; binding assays,1990,7,19950,15808,non_disruptive
+oos_light_field_camera,Light field camera,conventional camera,1990,10,358,90,intermediate
+oos_light_tube,Light tube,light pipe,1990,22,3240,852,intermediate
+oos_lightemitting_diode,Lightemitting diode,blue leds; color led; diode led; diodes led; diodes leds; green leds; led emits; white leds,1982,201,12500,8768,disruptive
+oos_lignocellulosic_biomass,Lignocellulosic biomass,lignocellulosic biomass,2004,2,641,303,non_disruptive
+oos_line_mode_browser,Line Mode Browser,line mode,1994,11,703,208,intermediate
+oos_linear_combination,Linear combination,linear combination; linear combinations,1995,1,3333,16,non_disruptive
+oos_linear_map,Linear map,linear transformation,1985,0,847,57,non_disruptive
+oos_linearfeedback_shift_register,Linearfeedback shift register,feedback shift; linear feedback,1992,0,2328,305,non_disruptive
+oos_linuxpowered_device,Linuxpowered device,based devices,1992,113,2816,14638,disruptive
+oos_lipoic_acid,Lipoic acid,acid alpha,1991,1,2043,13,non_disruptive
+oos_liquid_crystal,Liquid crystal,liquid crystalline,1986,1,2395,60,non_disruptive
+oos_liquid_metal,Liquid metal,elemental metal,1994,2,1631,29,non_disruptive
+oos_liquidcrystal_display,Liquidcrystal display,crystal displays; display lcd; lcd panel; lcd screen; lcd screens,1984,498,9100,7401,disruptive
+oos_list_of_copy_protection_schemes,List of copy protection schemes,protection schemes,1990,118,720,9226,disruptive
+oos_list_of_search_engines,List of search engines,search tool; search tools,1994,194,1808,274935,disruptive
+oos_lithium_battery,Lithium battery,lithium batteries; lithium battery,1986,277,2294,3962,disruptive
+oos_lithium_bistrimethylsilylamide,Lithium bistrimethylsilylamide,trimethylsilyl amide,1992,0,2216,0,non_disruptive
+oos_lithium_polymer_battery,Lithium polymer battery,liquid electrolyte; polymer electrolyte,1986,4,3795,448,non_disruptive
+oos_lithiumion_battery,Lithiumion battery,ion batteries; ion battery; lithium ion; lithium ions,1990,626,10016,30288,disruptive
+oos_litz_wire,Litz wire,litz wire,2006,0,399,67,non_disruptive
+oos_llm01,LLM01,acquisition module,1996,5,1041,1317,non_disruptive
+oos_load_balancing_computing,Load balancing computing,load balancing,1989,264,8028,310657,disruptive
+oos_load_bank,Load bank,resistive load,1994,0,1616,267,non_disruptive
+oos_local_area_network,Local area network,network lan; networks lans,1986,7,6825,216550,non_disruptive
+oos_local_interconnect_network,Local Interconnect Network,interconnect network,1991,20,645,1092,intermediate
+oos_locationbased_service,Locationbased service,location based; locations based; service location,1990,565,9706,798706,disruptive
+oos_logic_block,Logic block,logic block; logic blocks,1991,2,9265,2908,non_disruptive
+oos_logitech_unifying_receiver,Logitech Unifying receiver,receiver pair,1994,2,844,18,non_disruptive
+oos_lossy_compression,Lossy compression,lossy compression,1993,0,1484,13,non_disruptive
+oos_low_pin_count,Low Pin Count,bus cycles; pin count,1989,162,2819,717,disruptive
+oos_lowdensity_paritycheck_code,Lowdensity paritycheck code,check code,1995,0,718,26672,non_disruptive
+oos_lownoise_amplifier,Lownoise amplifier,noise amplifier,1985,62,3463,5083,intermediate
+oos_lubricant,Lubricant,liquid lubricant,1984,1,795,26,non_disruptive
+oos_m10_tank_destroyer,M10 tank destroyer,suitable vehicle,1990,5,2267,3625,non_disruptive
+oos_mac_address,MAC address,control address; mac address; mac addresses,1991,13,11295,3214,intermediate
+oos_machine_learning,Machine learning,learning algorithm; learning algorithms; machine learning,1992,2871,6741,981849,disruptive
+oos_machzehnder_interferometer,MachZehnder interferometer,zehnder interferometer,1995,0,813,25,non_disruptive
+oos_magnesium_stearate,Magnesium stearate,magnesium stearate,1994,0,17105,4,non_disruptive
+oos_magnetic_resonance_imaging,Magnetic resonance imaging,imaging mri; mri scan; resonance imaging,1989,128,13950,81708,disruptive
+oos_magnetic_stirrer,Magnetic stirrer,stir bar,1996,0,5386,12,non_disruptive
+oos_magnetic_stripe_card,Magnetic stripe card,magnetic stripe,1985,75,3215,1341,intermediate
+oos_mainframe_computer,Mainframe computer,mainframe computers,1986,61,1346,49584,intermediate
+oos_maize,Maize,maize genetics,2003,0,1281,94,non_disruptive
+oos_malic_acid,Malic acid,stereoisomeric forms,1994,0,1235,0,non_disruptive
+oos_maltosebinding_protein,Maltosebinding protein,maltose binding,1995,0,1325,0,non_disruptive
+oos_markerassisted_selection,Markerassisted selection,marker assisted,2003,1,3329,0,non_disruptive
+oos_markov_chain,Markov chain,transition probabilities,1994,1,597,54,non_disruptive
+oos_markup_language,Markup language,markup language,1994,10,13727,72933,intermediate
+oos_mass_spectrometry,Mass spectrometry,mass analyzer; mass spectrometers; mass spectrometry,1983,372,17818,89221,disruptive
+oos_matrixassisted_laser_desorptionionization,Matrixassisted laser desorptionionization,maldi tof,1995,5,2064,0,non_disruptive
+oos_mean_squared_error,Mean squared error,squared error,1993,0,1568,37,non_disruptive
+oos_media_control_symbols,Media control symbols,media control,1992,28,650,5646,intermediate
+oos_media_player_windows,Media Player Windows,media players,1996,954,2166,0,disruptive
+oos_medical_imaging,Medical imaging,imaging technique; imaging techniques; medical image; medical images; medical imaging,1988,915,13283,291490,disruptive
+oos_medipix,Medipix,readout electronics,2004,0,404,411,non_disruptive
+oos_megestrol_acetate,Megestrol acetate,megestrol acetate,2000,4,659,14,non_disruptive
+oos_melt_blowing,Melt blowing,melt blowing; polymer melt,1982,1,3253,267,non_disruptive
+oos_membrane_transport_protein,Membrane transport protein,carrier protein; carrier proteins,1986,21,3808,79,intermediate
+oos_memory_address,Memory address,memory address; memory addresses; memory location; memory locations,1992,3,46821,567,non_disruptive
+oos_memory_card,Memory card,memory card; memory cards,1986,269,6190,5828,disruptive
+oos_mental_chronometry,Mental chronometry,processing speed; processing speeds,1992,211,2883,17041,disruptive
+oos_mesh_networking,Mesh networking,mesh network; mesh networks,1996,182,3434,4649,disruptive
+oos_message_authentication_code,Message authentication code,authentication code; message authentication,1992,4,3416,1027,non_disruptive
+oos_message_transfer_agent,Message transfer agent,message transfer,1989,3,892,3547,non_disruptive
+oos_messaging_pattern,Messaging pattern,message exchange,1993,5,1047,1963,non_disruptive
+oos_metaanalysis,Metaanalysis,analysis results,1990,139,1856,79275,disruptive
+oos_metal_matrix_composite,Metal matrix composite,matrix composite,1982,31,2318,2631,intermediate
+oos_metereddose_inhaler,Metereddose inhaler,metered dose,1988,97,2881,0,intermediate
+oos_methanesulfonic_acid,Methanesulfonic acid,methane sulfonic,1996,0,1030,12,non_disruptive
+oos_methanol_fuel,Methanol fuel,methanol fuel,1994,60,640,61,intermediate
+oos_methyl_acetate,Methyl acetate,acid methyl,1998,3,13734,52,non_disruptive
+oos_methyl_benzoate,Methyl benzoate,methyl benzoate,1997,0,964,12,non_disruptive
+oos_methyl_chloroformate,Methyl chloroformate,methyl chloroformate,2005,0,826,0,non_disruptive
+oos_methyl_tertbutyl_ether,Methyl tertbutyl ether,butyl methyl; methyl tert,1991,0,8602,1,non_disruptive
+oos_methylene_diphenyl_diisocyanate,Methylene diphenyl diisocyanate,diisocyanate mdi,1994,0,795,0,non_disruptive
+oos_methylparaben,Methylparaben,methyl paraben,1996,0,1412,0,non_disruptive
+oos_microcontact_printing,Microcontact printing,conformal contact,2000,0,288,0,non_disruptive
+oos_microcontroller,Microcontroller,micro controller,1983,196,3321,120865,disruptive
+oos_microcrystalline_cellulose,Microcrystalline cellulose,microcrystalline cellulose,1986,25,8699,52,intermediate
+oos_microelectromechanical_systems,Microelectromechanical systems,micro electro; micro electromechanical; microelectromechanical system; microelectromechanical systems,1990,31,5732,2218,intermediate
+oos_microfiltration,Microfiltration,contaminated fluid,1988,1,702,18,non_disruptive
+oos_microfluidics,Microfluidics,micro fluidic; microfluidic devices,1994,13,2652,2165,intermediate
+oos_microsatellite,Microsatellite,sequence repeats,2002,1,2905,15,non_disruptive
+oos_microsoft_access,Microsoft Access,access data,1987,253,5026,78908,disruptive
+oos_microsoft_windows,Microsoft Windows,microsoft windows,1992,427,4961,816617,disruptive
+oos_microwave_antenna,Microwave antenna,microwave antenna,1989,13,975,1911,intermediate
+oos_milstd1553,MILSTD1553,controller sends,1991,0,2332,144,non_disruptive
+oos_mimo,MIMO,multiple antenna; multiple inputs; multiple outputs,1984,85,3098,12145,intermediate
+oos_minimally_invasive_procedure,Minimally invasive procedure,invasive procedure; invasive procedures; invasive surgery,1991,438,4707,197562,disruptive
+oos_mirror_mount,Mirror mount,mirror mount,1995,4,571,110,non_disruptive
+oos_mitogenactivated_protein_kinase,Mitogenactivated protein kinase,activated protein; map kinase,1993,51,4837,119,intermediate
+oos_mobile_computing,Mobile computing,mobile computing,1996,960,7015,51364,disruptive
+oos_mobile_device,Mobile device,computer devices; handheld computer; handheld computers; held computer; mobile devices,1989,8650,22820,1437460,disruptive
+oos_mobile_genetic_elements,Mobile genetic elements,genetic elements,1992,10,5235,252,intermediate
+oos_mobile_ip,Mobile IP,mobile node; mobile nodes,1997,1,2983,1020,non_disruptive
+oos_mobile_phone,Mobile phone,cell phone; cell phones; cellular phone; cellular phones; cellular telephone; cellular telephones; mobile phones; mobile telephones; phones mobile,1985,7636,55662,2424931,disruptive
+oos_mobile_positioning_data,Mobile positioning data,positioning data,1992,19,813,828,intermediate
+oos_mode_locking,Mode locking,mode locked,1990,0,1197,271,non_disruptive
+oos_model_organism,Model organism,animal models,1988,1849,10675,36293,disruptive
+oos_modified_starch,Modified starch,starch derivatives,1982,1,896,279,non_disruptive
+oos_molecular_cloning,Molecular cloning,molecular cloning,1989,0,24609,10850,non_disruptive
+oos_molecular_dynamics,Molecular dynamics,molecular dynamics,1995,21,1644,3799,intermediate
+oos_molecular_marker,Molecular marker,molecular marker; molecular markers,2002,83,7011,2907,intermediate
+oos_monitor_mode,Monitor mode,monitor mode,1991,8,529,116,non_disruptive
+oos_monoclonal_antibody,Monoclonal antibody,antibodies derived; monoclonal antibodies; monoclonal antibody,1979,1703,60385,26081,disruptive
+oos_monoclonal_antibody_therapy,Monoclonal antibody therapy,antibody therapy,2002,179,930,576,disruptive
+oos_mops,MOPS,propanesulfonic acid,1994,0,1121,0,non_disruptive
+oos_mosfet,MOSFET,channel mosfet; channel mosfets; oxide semiconductors; transistor mosfet,1991,16,4640,1521,intermediate
+oos_motion_analysis,Motion analysis,motion analysis,1994,10,589,5986,intermediate
+oos_motion_capture,Motion capture,capture system,1991,142,1933,28845,disruptive
+oos_motion_compensation,Motion compensation,motion compensation,1989,35,3538,482,intermediate
+oos_motion_detection,Motion detection,motion detection,1993,62,2438,889,intermediate
+oos_motion_estimation,Motion estimation,motion estimation,1991,20,3144,819,intermediate
+oos_mouse_button,Mouse button,mouse button,1988,0,2686,2252,non_disruptive
+oos_mpeg_transport_stream,MPEG transport stream,transport stream,1991,21,2282,3127,intermediate
+oos_mtoluic_acid,MToluic acid,methylbenzoic acid,1997,0,1031,0,non_disruptive
+oos_multibeam_echosounder,Multibeam echosounder,multi beam,1987,1,840,0,non_disruptive
+oos_multicomponent_reaction,Multicomponent reaction,multi component,1995,16,5250,0,intermediate
+oos_multicore_processor,Multicore processor,core processors; multi core,1997,334,4578,16736,disruptive
+oos_multifunction_printer,Multifunction printer,features functions,1997,246,3377,42768,disruptive
+oos_multilayer_perceptron,Multilayer perceptron,hidden layer; input layer; input nodes; multiple layer,1988,394,6602,30718,disruptive
+oos_multimedia_messaging_service,Multimedia Messaging Service,messaging service; messaging services,1991,597,3923,46646,disruptive
+oos_multimode_optical_fiber,Multimode optical fiber,multi mode,1992,54,4979,0,intermediate
+oos_multiple_cloning_site,Multiple cloning site,cloning site; cloning sites; located downstream; multiple cloning,1984,4,11898,961,non_disruptive
+oos_multiplecamera_setup,Multiplecamera setup,multiple camera; multiple cameras,1994,85,1405,2423,intermediate
+oos_multiplex_polymerase_chain_reaction,Multiplex polymerase chain reaction,multiplex pcr,2002,20,621,920,intermediate
+oos_multiprotocol_label_switching,Multiprotocol Label Switching,multi protocol,1993,24,1884,0,intermediate
+oos_multisite_church,Multisite church,multi site,1995,53,1077,0,intermediate
+oos_multivariate_statistics,Multivariate statistics,multivariate analysis,1996,33,681,12857,intermediate
+oos_murine_leukemia_virus,Murine leukemia virus,murine leukemia,1990,0,1842,7,non_disruptive
+oos_music_player_daemon,Music Player Daemon,music players,2001,263,698,2222,disruptive
+oos_nanoimprint_lithography,Nanoimprint lithography,nanometer scale,1995,14,1663,442,intermediate
+oos_nanoparticle,Nanoparticle,nano particle; nano particles,1992,44,2029,0,intermediate
+oos_naturebased_solutions,Naturebased solutions,based solution; based solutions,1992,848,2290,585324,disruptive
+oos_nearfield_communication,Nearfield communication,communication nfc; enable communication; enabled devices,1990,259,3628,16321,disruptive
+oos_network_address_translation,Network address translation,address translation,1987,19,5591,8638,intermediate
+oos_network_monitoring,Network monitoring,network monitoring,1991,278,1397,157110,disruptive
+oos_network_operating_system,Network operating system,network operating,1988,817,1695,104041,disruptive
+oos_network_switch,Network switch,network switch; network switches,1990,124,4693,55403,disruptive
+oos_network_virtualization,Network virtualization,virtual network,1991,343,2467,25149,disruptive
+oos_networking_hardware,Networking hardware,network equipment,1991,1177,1442,201588,disruptive
+oos_neural_network,Neural network,neural network,1986,177,6997,50526,disruptive
+oos_neutraldensity_filter,Neutraldensity filter,neutral density,1991,0,1361,14,non_disruptive
+oos_noise_figure,Noise figure,noise figure,1990,16,1552,6805,intermediate
+oos_noise_free_america,Noise Free America,noise free,1996,4,966,0,non_disruptive
+oos_nonimaging_optics,Nonimaging optics,imaging optics,1991,20,1413,1244,intermediate
+oos_nonlinear_editing,Nonlinear editing,editing system,1987,43,689,26261,intermediate
+oos_normalization_statistics,Normalization statistics,values measured,1992,43,885,268,intermediate
+oos_northern_bleached_softwood_kraft,Northern bleached softwood kraft,softwood kraft,1990,65,738,4,intermediate
+oos_northern_blot,Northern blot,northern blot; northern blots; northern blotting; rna samples,1990,11,12183,4603,intermediate
+oos_notification_led,Notification LED,notification messages,1993,2,806,14071,non_disruptive
+oos_nsa_encryption_systems,NSA encryption systems,encryption system,1990,33,877,4521,intermediate
+oos_ntfs,NTFS,file stored,1987,9,2448,3374,non_disruptive
+oos_nucleic_acid_hybridization,Nucleic acid hybridization,acid hybridization,1989,0,6105,357,non_disruptive
+oos_object_detection,Object detection,object detection,1994,51,2326,7527,intermediate
+oos_objectoriented_programming,Objectoriented programming,object oriented; oriented software,1986,26,14287,1807025,intermediate
+oos_occupancy_sensor,Occupancy sensor,occupancy sensor,2007,23,521,1090,intermediate
+oos_octoprint,OctoPrint,printer controller,1988,9,1319,347,non_disruptive
+oos_oled,OLED,emitting devices; organic light,1992,24,8147,778,intermediate
+oos_online_game,Online game,online game; online games,2002,1091,1401,23963,disruptive
+oos_openapi_specification,OpenAPI Specification,api specification,1993,0,412,0,non_disruptive
+oos_operating_system,Operating system,multi tasking; software resources,1989,43,2299,31804,intermediate
+oos_optical_brightener,Optical brightener,optical brightener,1995,22,882,122,intermediate
+oos_optical_cavity,Optical cavity,optical resonator,1994,0,984,85,non_disruptive
+oos_optical_coating,Optical coating,optical coating; optical coatings,1985,72,1285,6377,intermediate
+oos_optical_coherence_tomography,Optical coherence tomography,optical coherence,2001,62,1689,3870,intermediate
+oos_optical_disc_drive,Optical disc drive,disc drives; optical drive,1991,129,3165,2325,disruptive
+oos_optical_medium,Optical medium,optical medium,1991,103,2476,1331,disruptive
+oos_optical_module,Optical module,optical module,1995,241,933,3127,disruptive
+oos_optical_proximity_correction,Optical proximity correction,optical proximity; proximity correction,1995,37,2189,1545,intermediate
+oos_optical_transistor,Optical transistor,optical source; optical switch; optical switches,1985,76,9297,1756,intermediate
+oos_organizational_structure,Organizational structure,structure defines,1996,2,1070,2883,non_disruptive
+oos_organosulfate,Organosulfate,alkyl sulfate,1990,0,1390,0,non_disruptive
+oos_oriented_strand_board,Oriented strand board,strand board,1991,106,583,1122,disruptive
+oos_origin_of_replication,Origin of replication,replication origin,1990,0,2533,23,non_disruptive
+oos_orthogonal_frequencydivision_multiplexing,Orthogonal frequencydivision multiplexing,orthogonal frequency,1995,2,5998,190,non_disruptive
+oos_orthogonal_ligandprotein_pair,Orthogonal ligandprotein pair,binding pair,1990,0,3201,0,non_disruptive
+oos_oslevel_virtualization,OSlevel virtualization,programs running,1987,578,3522,8291,disruptive
+oos_outline_of_object_recognition,Outline of object recognition,object recognition,1993,53,2053,4292,intermediate
+oos_output_device,Output device,output devices,1988,67,12567,11397,intermediate
+oos_overlay_network,Overlay network,overlay network,1999,75,842,941,intermediate
+oos_oxalyl_chloride,Oxalyl chloride,oxalyl chloride,1994,0,5917,2,non_disruptive
+oos_ozone,Ozone,ozone generator,1983,18,1108,780,intermediate
+oos_pacific_data_images,Pacific Data Images,data image,1990,15,1096,19618,intermediate
+oos_packet_radio,Packet radio,packet radio,1994,3,1305,1410,non_disruptive
+oos_page_fault,Page fault,page fault,1992,0,1050,132,non_disruptive
+oos_page_table,Page table,page tables,1987,22,1110,491,intermediate
+oos_pager,Pager,paging system; paging systems,1986,27,1915,299982,intermediate
+oos_parallel_computing,Parallel computing,processing elements,1983,37,4706,981,intermediate
+oos_particle_board,Particle board,suitable binders,1988,0,2152,1,non_disruptive
+oos_partition_coefficient,Partition coefficient,octanol water; partition coefficient,1992,1,1781,109,non_disruptive
+oos_passive_optical_network,Passive optical network,optical network; optical networks; passive optical,1990,755,8382,23392,disruptive
+oos_patch_computing,Patch computing,software updates,1991,567,1060,114815,disruptive
+oos_pattern_recognition,Pattern recognition,pattern recognition,1981,110,7523,30147,disruptive
+oos_payment_card,Payment card,payment card; payment cards,2003,440,1737,58562,disruptive
+oos_pc_card,PC Card,card slot,1989,87,1541,136,intermediate
+oos_pc_game,PC game,computer game; computer games,1992,54,1628,15850,intermediate
+oos_peanut_oil,Peanut oil,arachis oil,1993,0,1607,0,non_disruptive
+oos_peertopeer,Peertopeer,peer network; peer networks,1996,28,4083,10904,intermediate
+oos_pegylation,PEGylation,covalent attachment,1990,0,6032,10,non_disruptive
+oos_pellet_mill,Pellet mill,pellet mill,2005,41,321,2363,intermediate
+oos_pentaerythritol_tetraacrylate,Pentaerythritol tetraacrylate,pentaerythritol tetraacrylate,1992,0,748,0,non_disruptive
+oos_peptide_nucleic_acid,Peptide nucleic acid,peptide nucleic,1994,0,5616,153,non_disruptive
+oos_peracetic_acid,Peracetic acid,peracetic acid,1987,19,1922,501,intermediate
+oos_percutaneous_coronary_intervention,Percutaneous coronary intervention,stent delivery,1992,46,1781,623,intermediate
+oos_performance_appraisal,Performance appraisal,performance evaluation,1993,254,709,1291791,disruptive
+oos_peripheral_blood_mononuclear_cell,Peripheral blood mononuclear cell,blood mononuclear,1992,32,3881,691,intermediate
+oos_peritoneal_dialysis,Peritoneal dialysis,peritoneal dialysis,1990,155,1082,88528,disruptive
+oos_personal_computer,Personal computer,personal computer; personal computers,1982,869,47407,2346843,disruptive
+oos_personal_digital_assistant,Personal digital assistant,assistant pda; assistants pdas; digital assistant; digital assistants; personal digital,1992,77,26577,78246,intermediate
+oos_phage_display,Phage display,phage display,1993,51,7180,3104,intermediate
+oos_pharmaceutical_formulation,Pharmaceutical formulation,pharmaceutical formulation; pharmaceutical formulations,1986,28,14163,3759,intermediate
+oos_phase_transition,Phase transition,magnetic transition; magnetic transitions,1991,0,1182,0,non_disruptive
+oos_phaselocked_loop,Phaselocked loop,loop filter; loop pll,1993,0,7612,1303,non_disruptive
+oos_phosphatebuffered_saline,Phosphatebuffered saline,saline pbs,1987,0,4508,2,non_disruptive
+oos_phosphine_oxide,Phosphine oxide,phosphine oxide; phosphine oxides,1992,0,2969,0,non_disruptive
+oos_photodiode,Photodiode,diode array; diode arrays,1993,34,3618,518,intermediate
+oos_photoresist,Photoresist,patterned mask,1990,0,1380,1,non_disruptive
+oos_photovoltaics,Photovoltaics,photovoltaic module; photovoltaic modules,2005,37,1383,1200,intermediate
+oos_physical_address,Physical address,physical addresses,1992,26,3215,56507,intermediate
+oos_physical_media,Physical media,physical media,1990,122,2265,9220,disruptive
+oos_physical_vapor_deposition,Physical vapor deposition,deposition pvd; physical vapor; vapor deposition,1984,92,44993,11327,intermediate
+oos_pichia_pastoris,Pichia pastoris,pichia pastoris,1992,0,1883,120,non_disruptive
+oos_pid_controller,PID controller,pid controller; proportional gain,1987,2,1702,2374,non_disruptive
+oos_pilot_signal,Pilot signal,pilot signals,1993,1,1813,8,non_disruptive
+oos_piping_sewing,Piping sewing,fabric strip,1981,0,595,1,non_disruptive
+oos_plasma_display,Plasma display,plasma display,1989,162,966,1078,disruptive
+oos_plasmaenhanced_chemical_vapor_deposition,Plasmaenhanced chemical vapor deposition,deposition pecvd; plasma enhanced,1990,28,6603,982,intermediate
+oos_plateletderived_growth_factor,Plateletderived growth factor,derived growth; factor pdgf; platelet derived,1988,18,11289,56,intermediate
+oos_plateletpoor_plasma,Plateletpoor plasma,platelet poor,1987,4,608,50,non_disruptive
+oos_plug_flow_reactor_model,Plug flow reactor model,flow reactor,1994,5,1385,405,non_disruptive
+oos_pn_junction_isolation,Pn junction isolation,electrically isolate,1985,6,2497,23,non_disruptive
+oos_polarizationmaintaining_optical_fiber,Polarizationmaintaining optical fiber,polarization maintaining,1992,3,1003,165,non_disruptive
+oos_policy_entrepreneur,Policy entrepreneur,multiple streams,1993,108,1228,17308,disruptive
+oos_polyacrylic_acid,Polyacrylic acid,poly acrylic,1989,2,2544,0,non_disruptive
+oos_polybutylene_terephthalate,Polybutylene terephthalate,polybutylene terephthalate,1989,0,2235,34,non_disruptive
+oos_polyclonal_antibodies,Polyclonal antibodies,polyclonal anti; polyclonal antibodies; polyclonal antibody,1983,51,17708,650,intermediate
+oos_polycrystalline_silicon,Polycrystalline silicon,poly silicon,1984,53,990,0,intermediate
+oos_polyethylene_glycol,Polyethylene glycol,glycol peg; polyethylene glycol; polyethylene glycols,1987,28,66220,98,intermediate
+oos_polyethylene_terephthalate,Polyethylene terephthalate,terephthalate pet,1990,0,2789,489,non_disruptive
+oos_polyglycolide,Polyglycolide,poly glycolide,1990,0,918,0,non_disruptive
+oos_polylactic_acid,Polylactic acid,poly lactic; polylactic acid,1983,31,6989,17,intermediate
+oos_polymer_capacitor,Polymer capacitor,polymer layer,1984,3,6986,11,non_disruptive
+oos_polymer_electrolytes,Polymer electrolytes,polymer electrolytes,1986,4,571,367,non_disruptive
+oos_polymerase_chain_reaction,Polymerase chain reaction,pcr product; pcr products; polymerase chain; reaction pcr,1989,73,54252,15033,intermediate
+oos_polymeric_surface,Polymeric surface,polymeric surface,1987,1,747,36,non_disruptive
+oos_polyorthoester,Polyorthoester,poly ortho,2004,0,477,1,non_disruptive
+oos_polyphenylene_sulfide,Polyphenylene sulfide,polyphenylene sulfide,1983,1,1609,35,non_disruptive
+oos_polypphenylene_oxide,Polypphenylene oxide,poly phenylene,1982,0,1538,51,non_disruptive
+oos_polypropylene,Polypropylene,isotactic polypropylene,1985,0,1555,0,non_disruptive
+oos_polypropylene_glycol,Polypropylene glycol,polypropylene oxide,1983,2,1787,1,non_disruptive
+oos_polytetrafluoroethylene,Polytetrafluoroethylene,poly tetrafluoroethylene,1989,0,935,163,non_disruptive
+oos_polyurethane,Polyurethane,polyurethane polymer; polyurethane polymers,1992,1,1925,314,non_disruptive
+oos_polyvinylidene_fluoride,Polyvinylidene fluoride,poly vinylidene; polyvinylidene fluoride,1983,0,5341,91,non_disruptive
+oos_polyvinylpyrrolidone,Polyvinylpyrrolidone,polyvinylpyrrolidone pvp,2003,0,1004,15,non_disruptive
+oos_porous_silicon,Porous silicon,porous layers,1991,0,483,9,non_disruptive
+oos_portable_media_player,Portable media player,portable media,1999,334,1727,3609,disruptive
+oos_positron_emission,Positron emission,positron emission,1986,62,2869,7846,intermediate
+oos_potassium_channel,Potassium channel,potassium channel,1996,42,1580,125,intermediate
+oos_potassium_metabisulfite,Potassium metabisulfite,potassium metabisulfite,2005,0,375,9,non_disruptive
+oos_potassium_tertbutoxide,Potassium tertbutoxide,potassium tert; tert butoxide,1994,0,6158,0,non_disruptive
+oos_powder_coating,Powder coating,powder coating; powder coatings,1984,227,3514,19961,disruptive
+oos_power_dividers_and_directional_couplers,Power dividers and directional couplers,power splitter,2006,5,1210,227,non_disruptive
+oos_power_electronics,Power electronics,power electronic,1990,651,797,101407,disruptive
+oos_power_inverter,Power inverter,power inverter,1989,88,750,29973,intermediate
+oos_power_semiconductor_device,Power semiconductor device,power semiconductor,1993,259,1542,4824,disruptive
+oos_power_strip,Power strip,power strip,1993,73,572,3114,intermediate
+oos_precursor_cell,Precursor cell,precursor cell; precursor cells,1992,29,2829,111,intermediate
+oos_predictive_modelling,Predictive modelling,predictive model; predictive models,1990,471,2109,85406,disruptive
+oos_pressure_swing_adsorption,Pressure swing adsorption,adsorbent material; adsorbent materials,1995,0,2396,398,non_disruptive
+oos_primer_molecular_biology,Primer molecular biology,pcr primer; pcr primers,1991,1,12195,1864,non_disruptive
+oos_principal_component_analysis,Principal component analysis,component analysis,1996,12,2143,11427,intermediate
+oos_printed_circuit_board,Printed circuit board,board pcb; conductive layer; conductive layers; copper layer; copper layers,1987,19,42088,11499,intermediate
+oos_printer_driver,Printer driver,printer driver,1993,35,1359,10850,intermediate
+oos_printing,Printing,printing technologies,1993,312,395,31577,disruptive
+oos_priority_queue,Priority queue,priority queue,1993,13,1486,367,intermediate
+oos_process_variable,Process variable,process parameter; process variable; process variables,1991,73,5011,56956,intermediate
+oos_programmable_logic_device,Programmable logic device,devices plds; logic devices; programmable logic,1988,290,25367,140135,disruptive
+oos_programmed_cell_death,Programmed cell death,programmed cell,1993,57,2570,137,intermediate
+oos_programming_language,Programming language,programming language; programming languages,1989,128,56442,1352090,disruptive
+oos_programming_tool,Programming tool,development tool,1992,774,772,601337,disruptive
+oos_project_delivery_method,Project delivery method,delivery methods,1991,451,1386,218687,disruptive
+oos_promoter_genetics,Promoter genetics,promoter region; promoter regions,1987,8,5864,52,non_disruptive
+oos_propylparaben,Propylparaben,propyl paraben,1994,0,1221,10,non_disruptive
+oos_prostatespecific_antigen,Prostatespecific antigen,prostate specific; specific antigen; specific antigens,1989,52,7982,627,intermediate
+oos_prosthesis,Prosthesis,prosthetic implant,1984,8,638,271,non_disruptive
+oos_protection_ring,Protection ring,privilege level,1993,0,918,772,non_disruptive
+oos_protein_complex,Protein complex,protein complex; protein complexes,1987,72,4082,1718,intermediate
+oos_protein_secondary_structure,Protein secondary structure,secondary structures,1988,54,1232,8788,intermediate
+oos_proteinprotein_interaction,Proteinprotein interaction,protein interaction; protein interactions,1992,48,5649,5837,intermediate
+oos_protonexchange_membrane,Protonexchange membrane,proton exchange,1993,28,1743,272,intermediate
+oos_protonexchange_membrane_fuel_cell,Protonexchange membrane fuel cell,catalyst layer,1988,1,1453,248,non_disruptive
+oos_proximity_sensor,Proximity sensor,proximity sensor; proximity sensors,1986,79,7008,10533,intermediate
+oos_proxy_server,Proxy server,proxy server; proxy servers,1994,36,5430,49309,intermediate
+oos_pseudocode,Pseudocode,pseudo code,1991,0,4750,8866,non_disruptive
+oos_pseudomonas_putida,Pseudomonas putida,pseudomonas putida,1992,0,911,23,non_disruptive
+oos_publickey_cryptography,Publickey cryptography,encryption key; key cryptography; key encryption; key pair; key pairs; public key; public keys,1983,65,27047,178153,intermediate
+oos_pulseforming_network,Pulseforming network,forming network,1990,9,720,389,non_disruptive
+oos_pump,Pump,pump pumps,1991,36,765,2508,intermediate
+oos_purified_water,Purified water,ionized water,1992,1,3251,1384,non_disruptive
+oos_purine_analogue,Purine analogue,purine analogs,2006,3,627,0,non_disruptive
+oos_push_technology,Push technology,push notification,2007,190,430,26256,disruptive
+oos_pyranometer,Pyranometer,spectral response,1990,10,2193,255,intermediate
+oos_pyrimidine_analogue,Pyrimidine analogue,pyrimidine analogs,2006,2,638,0,non_disruptive
+oos_qi_standard,Qi standard,power receiver,1995,4,619,132,non_disruptive
+oos_quadrupole_mass_analyzer,Quadrupole mass analyzer,quadrupole mass,1994,28,796,978,intermediate
+oos_quality_of_service,Quality of service,service qos,1994,6,4220,12442,non_disruptive
+oos_quantum_dot,Quantum dot,quantum dot; quantum dots,1995,71,5145,2115,intermediate
+oos_quaternary_ammonium_cation,Quaternary ammonium cation,quaternary amine; quaternary amines,1992,2,2382,62,non_disruptive
+oos_query_language,Query language,query language,1990,9,3511,155908,non_disruptive
+oos_radio_broadcasting,Radio broadcasting,station transmits,1990,2,2142,112,non_disruptive
+oos_radio_spectrum,Radio spectrum,band frequency,1992,43,1084,686,intermediate
+oos_radioactive_tracer,Radioactive tracer,radioactive label,1989,0,890,8,non_disruptive
+oos_radiofrequency_sweep,Radiofrequency sweep,frequency sweep,1995,0,1026,313,non_disruptive
+oos_raman_laser,Raman laser,conventional laser,1992,20,913,36,intermediate
+oos_raman_scattering,Raman scattering,incident photons,1990,0,556,3,non_disruptive
+oos_randomaccess_memory,Randomaccess memory,access memories; memory ram,1992,40,13641,2167,intermediate
+oos_rapeseed_oil,Rapeseed oil,canola oil,1995,75,1670,357,intermediate
+oos_rapid_prototyping,Rapid prototyping,rapid prototyping,1992,226,1284,109616,disruptive
+oos_raster_graphics,Raster graphics,display medium; raster image,1986,59,2119,12305,intermediate
+oos_reactiveion_etching,Reactiveion etching,etching rie; reactive ion,1989,5,9610,1479,non_disruptive
+oos_readonly_memory,Readonly memory,memory rom,1991,0,7029,22,non_disruptive
+oos_realtime_polymerase_chain_reaction,Realtime polymerase chain reaction,time pcr,1997,48,4645,15561,intermediate
+oos_receptor_antagonist,Receptor antagonist,receptor antagonist; receptor antagonists,1989,614,13350,309,disruptive
+oos_receptormediated_endocytosis,Receptormediated endocytosis,mediated endocytosis; receptor mediated,1991,16,5864,231,intermediate
+oos_recombinant_antibodies,Recombinant antibodies,recombinant antibodies; recombinant antibody,1995,20,2325,1172,intermediate
+oos_recombinant_dna,Recombinant DNA,recombinant protein; recombinant proteins,1986,175,14475,22759,disruptive
+oos_reduced_relative_clause,Reduced relative clause,reduced relative,1991,101,944,0,disruptive
+oos_reedsolomon_error_correction,ReedSolomon error correction,reed solomon,1986,0,3059,657,non_disruptive
+oos_release_liner,Release liner,release liner; release liners,1981,76,6281,973,intermediate
+oos_reporter_gene,Reporter gene,reporter genes,1991,6,2731,1148,non_disruptive
+oos_residual_stress,Residual stress,residual stress,1994,5,1623,503,non_disruptive
+oos_resistance_thermometer,Resistance thermometer,temperature detector,1989,2,786,690,non_disruptive
+oos_resonance,Resonance,driving frequency,2006,94,635,618,intermediate
+oos_restriction_enzyme,Restriction enzyme,recognition sites; restriction endonuclease; restriction endonucleases; restriction enzyme,1984,2,24387,2081,non_disruptive
+oos_restriction_fragment_length_polymorphism,Restriction fragment length polymorphism,fragment length; length polymorphism; length polymorphisms,1994,4,14236,484,non_disruptive
+oos_restriction_site,Restriction site,restriction site; restriction sites,1989,0,16667,164,non_disruptive
+oos_retroreflector,Retroreflector,retro reflective,1990,0,757,157,non_disruptive
+oos_reverse_transcriptase,Reverse transcriptase,reverse transcriptase,1986,62,11311,783,intermediate
+oos_reverse_transcription_polymerase_chain_reaction,Reverse transcription polymerase chain reaction,reverse transcription,1990,4,6911,1120,non_disruptive
+oos_rf_module,RF module,receiver module,1993,15,2252,353,intermediate
+oos_rich_text_format,Rich Text Format,text format,1992,14,979,63468,intermediate
+oos_rna_interference,RNA interference,rna interference,1999,86,3229,1833,intermediate
+oos_robotic_arm,Robotic arm,robotic arm; robotic arms,1987,104,4181,5034,disruptive
+oos_roller_cone_bit,Roller cone bit,roller cone,1991,22,917,675,intermediate
+oos_routing_protocol,Routing protocol,routing protocol; routing protocols,1991,37,4829,221674,intermediate
+oos_saccharomyces_cerevisiae,Saccharomyces cerevisiae,saccharomyces cerevisiae,1990,0,6522,297,non_disruptive
+oos_saccharum_officinarum,Saccharum officinarum,stalk internode,2002,0,1176,0,non_disruptive
+oos_salt_metathesis_reaction,Salt metathesis reaction,metathesis reaction,1994,1,566,1,non_disruptive
+oos_satellite_navigation_device,Satellite navigation device,gps receiver; gps receivers; navigation devices,1986,295,10286,13657,disruptive
+oos_satellite_television,Satellite television,satellite broadcast,1989,81,653,1634,intermediate
+oos_saturated_calomel_electrode,Saturated calomel electrode,calomel electrode,1987,0,497,0,non_disruptive
+oos_scanning_acoustic_microscope,Scanning acoustic microscope,microelectronic packages,2007,5,435,356,non_disruptive
+oos_scheduling_computing,Scheduling computing,scheduling algorithm,1993,6,1201,1792,non_disruptive
+oos_scripting_language,Scripting language,scripting language; scripting languages,1993,14,2510,674824,intermediate
+oos_scsi,SCSI,scsi bus,1990,0,1389,72,non_disruptive
+oos_sdspage,SDSPAGE,sds page,1987,0,15995,22446,non_disruptive
+oos_search_algorithm,Search algorithm,search algorithm; search algorithms,1992,159,3101,6601,disruptive
+oos_seat_belt,Seat belt,vehicle occupants,1988,4,1259,1759,non_disruptive
+oos_selective_serotonin_reuptake_inhibitor,Selective serotonin reuptake inhibitor,reuptake inhibitors,2003,131,1551,6,disruptive
+oos_selective_service_system,Selective Service System,services system,1990,833,669,848461,disruptive
+oos_selfdriving_car,Selfdriving car,autonomous vehicle,2007,758,649,31637,disruptive
+oos_semiconductor_device,Semiconductor device,semiconductor devices,1992,468,30463,31791,disruptive
+oos_semiconductor_device_fabrication,Semiconductor device fabrication,processing steps,1987,146,19925,11857,disruptive
+oos_semiconductor_memory,Semiconductor memory,circuit memory; memory chip; memory chips; semiconductor memories; semiconductor memory; semiconductor mos,1987,242,20301,5307,disruptive
+oos_sense_amplifier,Sense amplifier,sense amplifier; sense amplifiers,1991,1,14299,394,non_disruptive
+oos_sensor_fusion,Sensor fusion,sensor fusion,1996,111,589,11603,disruptive
+oos_sequence_alignment,Sequence alignment,sequence alignment,1995,1,4179,1667,non_disruptive
+oos_serial_peripheral_interface,Serial Peripheral Interface,communication interfaces; peripheral interface; peripherals interface,1991,40,3595,30913,intermediate
+oos_serial_port,Serial port,serial port; serial ports,1983,41,7489,3116,intermediate
+oos_serine_protease,Serine protease,serine protease; serine proteases,1987,26,5270,23,intermediate
+oos_serinethreoninespecific_protein_kinase,Serinethreoninespecific protein kinase,serine threonine,1992,1,5916,0,non_disruptive
+oos_server_computing,Server computing,server computing; server system; server systems,1992,200,13012,169659,disruptive
+oos_serverless_computing,Serverless computing,resources allocated,1995,210,1116,8088,disruptive
+oos_session_initiation_protocol,Session Initiation Protocol,initiation protocol; protocol sip; session initiation,1997,29,7917,21422,intermediate
+oos_setosphaeria_turcica,Setosphaeria turcica,helminthosporium turcicum,2002,0,1204,0,non_disruptive
+oos_sexhormonal_agent,Sexhormonal agent,hormonal agents,1996,18,657,38,intermediate
+oos_shapememory_alloy,Shapememory alloy,memory alloy; memory alloys; shape memory,1983,37,13481,657,intermediate
+oos_shapememory_polymer,Shapememory polymer,memory polymer,1995,1,679,58,non_disruptive
+oos_signal_processing,Signal processing,measured signals; processing technique,1990,91,2290,58230,intermediate
+oos_signalflow_graph,Signalflow graph,flow graph,1990,25,1030,654,intermediate
+oos_signaltonoise_ratio,Signaltonoise ratio,ratio snr,1992,0,3035,153,non_disruptive
+oos_silicon,Silicon,silicon atoms,1994,2,2991,8,non_disruptive
+oos_silicon_nitride,Silicon nitride,silicon nitride,1981,44,23862,273,intermediate
+oos_silicon_on_insulator,Silicon on insulator,conventional silicon; insulator soi,1991,20,3878,298,intermediate
+oos_silicon_oxynitride,Silicon oxynitride,silicon oxynitride,1992,5,2815,0,non_disruptive
+oos_silicon_tetrachloride,Silicon tetrachloride,silicon tetrachloride,1996,4,1017,7,non_disruptive
+oos_silicongermanium,Silicongermanium,silicon germanium,1996,206,5131,308,disruptive
+oos_siloxane,Siloxane,methyl siloxane,1989,0,320,0,non_disruptive
+oos_sim_card,SIM card,identity module; subscriber identification; subscriber identity,1994,13,4148,471,intermediate
+oos_similarity_measure,Similarity measure,similarity measure; similarity metric,1993,0,1591,107,non_disruptive
+oos_single_instruction_multiple_data,Single instruction multiple data,multiple data; single instruction,1989,461,12017,179786,disruptive
+oos_singledomain_antibody,Singledomain antibody,antibody fragments; single domain,1988,68,11339,3037,intermediate
+oos_singlelayer_materials,Singlelayer materials,layer material; layer materials,1995,29,6527,83,intermediate
+oos_singlenucleotide_polymorphism,Singlenucleotide polymorphism,polymorphisms snps; single nucleotide,1992,49,11693,876,intermediate
+oos_singlephoton_emission_computed_tomography,Singlephoton emission computed tomography,photon emission,1992,1,1424,1355,non_disruptive
+oos_sitedirected_mutagenesis,Sitedirected mutagenesis,directed mutagenesis; oligonucleotide directed; site directed; specific mutagenesis,1985,9,25524,2335,non_disruptive
+oos_sizeexclusion_chromatography,Sizeexclusion chromatography,exclusion chromatography; gel filtration; size exclusion,1980,2,15925,7596,non_disruptive
+oos_sleeping_pad,Sleeping pad,ground pad,1990,1,687,279,non_disruptive
+oos_slide_rule,Slide rule,linear slide,1993,3,700,366,non_disruptive
+oos_slotdie_coating,Slotdie coating,slot die,1989,1,1004,538,non_disruptive
+oos_small_interfering_rna,Small interfering RNA,interfering rna,2001,39,2349,131,intermediate
+oos_smart_card,Smart card,smart card; smart cards,1990,714,9160,25305,disruptive
+oos_smartphone,Smartphone,smart phone; smart phones,2001,2734,8038,1238842,disruptive
+oos_smoke_detector,Smoke detector,smoke detector,1994,68,1332,43334,intermediate
+oos_sms,SMS,sms message; sms messages,1996,137,3510,19987,disruptive
+oos_soap,SOAP,header block,1989,0,482,57,non_disruptive
+oos_social_networking_service,Social networking service,networking site; networking sites; social networking,2003,1548,8438,354379,disruptive
+oos_sodium_cyanoborohydride,Sodium cyanoborohydride,sodium cyanoborohydride,1988,0,3693,5,non_disruptive
+oos_sodium_dodecyl_sulfate,Sodium dodecyl sulfate,dodecyl sulfate; sodium dodecyl,1988,0,8716,504,non_disruptive
+oos_sodium_metabisulfite,Sodium metabisulfite,sodium metabisulfite,2005,2,1756,56,non_disruptive
+oos_sodium_molybdate,Sodium molybdate,sodium molybdate,1995,0,709,1,non_disruptive
+oos_sodium_percarbonate,Sodium percarbonate,sodium percarbonate,1996,9,738,0,non_disruptive
+oos_sodium_polyacrylate,Sodium polyacrylate,super absorbent,1983,57,737,0,intermediate
+oos_sodium_stearoyl_lactylate,Sodium stearoyl lactylate,stearoyl lactylate,1996,0,638,0,non_disruptive
+oos_soft_lithography,Soft lithography,elastomeric stamp,2002,0,159,1,non_disruptive
+oos_software_architecture,Software architecture,software architecture; software elements,1985,250,4549,320383,disruptive
+oos_software_distribution,Software distribution,software distribution,1990,197,514,47194,disruptive
+oos_software_updater,Software Updater,software update,1991,567,861,0,disruptive
+oos_software_versioning,Software versioning,software version,1990,238,1664,52461,disruptive
+oos_softwaredefined_radio,Softwaredefined radio,software defined,1996,482,1242,133046,disruptive
+oos_soil_moisture_sensor,Soil moisture sensor,moisture sensor,1985,7,927,410,non_disruptive
+oos_solar_cell,Solar cell,photovoltaic cell,2004,64,2381,2778,intermediate
+oos_solar_panel,Solar panel,solar module; solar modules,2001,504,882,14891,disruptive
+oos_solar_thermal_energy,Solar thermal energy,solar thermal,2003,141,562,5508,disruptive
+oos_solder_paste,Solder paste,solder paste,1990,38,2742,4339,intermediate
+oos_solgel_process,Solgel process,sol gel,1984,0,5376,748,non_disruptive
+oos_solid_oxide_fuel_cell,Solid oxide fuel cell,solid oxide,1993,87,1862,1241,intermediate
+oos_sorbic_acid,Sorbic acid,sorbic acid,2006,1,2054,25,non_disruptive
+oos_soulseek,Soulseek,client interface,1994,103,1151,70813,disruptive
+oos_southern_blot,Southern blot,southern blot; southern blotting,1989,2,5710,2679,non_disruptive
+oos_soybean,Soybean,glycine max,1991,0,3691,8,non_disruptive
+oos_spanning_tree,Spanning tree,spanning tree,1991,3,1685,49875,non_disruptive
+oos_spatial_light_modulator,Spatial light modulator,light modulator; light modulators; spatial light,1987,7,9905,627,non_disruptive
+oos_spectral_density,Spectral density,power spectral; spectral density,1993,2,4113,1228,non_disruptive
+oos_speech_processing,Speech processing,speech processing; speech signals,1991,22,3188,4069,intermediate
+oos_speech_recognition,Speech recognition,automatic speech; speech recognition,1990,301,10308,56295,disruptive
+oos_speech_synthesis,Speech synthesis,synthesis system,1988,4,758,261,non_disruptive
+oos_speed_networking,Speed networking,speed network,1992,141,625,6719,disruptive
+oos_sperm_sorting,Sperm sorting,conventional techniques,1991,26,19150,975,intermediate
+oos_spin_casting,Spin casting,spin casting,1985,0,821,26,non_disruptive
+oos_spin_valve,Spin valve,spin valve,1994,0,1703,22,non_disruptive
+oos_sport_utility_vehicle,Sport utility vehicle,utility vehicle,1987,449,904,31802,disruptive
+oos_sputter_deposition,Sputter deposition,deposition process; sputter deposition,1983,64,14911,2375,intermediate
+oos_sql,SQL,structured query,1992,0,1517,73256,non_disruptive
+oos_stack_light,Stack light,audible indicator,1990,1,544,265,non_disruptive
+oos_staged_combustion_cycle,Staged combustion cycle,combustion cycle,1994,5,887,60,non_disruptive
+oos_static_randomaccess_memory,Static randomaccess memory,bit lines; static ram; static random,1982,48,14926,506,intermediate
+oos_statistical_process_control,Statistical process control,statistical process,1994,73,606,189880,intermediate
+oos_stereoscopy,Stereoscopy,stereo image; stereo images,1991,0,1189,232,non_disruptive
+oos_stochastic_gradient_descent,Stochastic gradient descent,selected subset,1991,5,2220,108,non_disruptive
+oos_stop_codon,Stop codon,termination codon,1990,0,1744,17,non_disruptive
+oos_storedvalue_card,Storedvalue card,values stored,1991,4,4497,40,non_disruptive
+oos_stream_processing,Stream processing,stream processing,2002,42,840,21622,intermediate
+oos_strongly_connected_component,Strongly connected component,connected component; connected components,1991,3,2093,1190,non_disruptive
+oos_strontium_titanate,Strontium titanate,strontium titanate,1988,0,1533,1,non_disruptive
+oos_stylish,Stylish,user supplied,1990,2,1713,181,non_disruptive
+oos_styrenebutadiene,Styrenebutadiene,styrene content,1990,0,919,0,non_disruptive
+oos_sucker_rod,Sucker rod,sucker rod,2002,56,1007,1416,intermediate
+oos_suction_filtration,Suction filtration,suction filtration,2000,0,1475,2,non_disruptive
+oos_supercritical_carbon_dioxide,Supercritical carbon dioxide,supercritical carbon,1985,2,1046,97,non_disruptive
+oos_supercritical_fluid,Supercritical fluid,supercritical conditions; supercritical fluid; supercritical fluids,1985,9,4514,571,non_disruptive
+oos_superoxide_dismutase,Superoxide dismutase,superoxide dismutase,1990,9,2028,2844,non_disruptive
+oos_superresolution_imaging,Superresolution imaging,super resolution,1992,14,662,2099,intermediate
+oos_supervised_learning,Supervised learning,desired output,1991,12,5698,6869,intermediate
+oos_supportvector_machine,Supportvector machine,support vector; vector machine; vector machines,1999,14,4156,12171,intermediate
+oos_surface_acoustic_wave_sensor,Surface acoustic wave sensor,wave sensor,1996,1,489,67,non_disruptive
+oos_surface_plasmon,Surface plasmon,surface plasmon,1992,2,3891,1881,non_disruptive
+oos_surface_plasmon_resonance,Surface plasmon resonance,plasmon resonance,1994,2,3568,1889,non_disruptive
+oos_surfaceenhanced_raman_spectroscopy,Surfaceenhanced Raman spectroscopy,surface enhanced,1994,2,1048,127,non_disruptive
+oos_surgical_staple,Surgical staple,surgical staple,1988,5,570,371,non_disruptive
+oos_switchedmode_power_supply,Switchedmode power supply,switching mode,1992,18,783,492,intermediate
+oos_sybr_green_i,SYBR Green I,sybr green,2000,0,1504,101,non_disruptive
+oos_synchronous_dynamic_randomaccess_memory,Synchronous dynamic randomaccess memory,read command; read commands,1987,0,4658,46,non_disruptive
+oos_syngas,Syngas,synthesis gas,1995,49,4431,739,intermediate
+oos_synthetic_diamond,Synthetic diamond,synthetic diamond,1984,27,612,295,intermediate
+oos_system_resource,System resource,system resource,1985,85,1581,86636,intermediate
+oos_systems_architecture,Systems architecture,system architecture; system architectures,1986,578,7873,723220,disruptive
+oos_tablet_computer,Tablet computer,tablet computer; tablet computers,2007,244,3611,27464,disruptive
+oos_tablet_pharmacy,Tablet pharmacy,suitable excipients,1996,0,1604,9,non_disruptive
+oos_tandem_mass_spectrometry,Tandem mass spectrometry,tandem mass,1996,25,1343,2084,intermediate
+oos_tangible_user_interface,Tangible user interface,tangible media,1991,2,1216,91,non_disruptive
+oos_tantalum_nitride,Tantalum nitride,tantalum nitride,1993,1,2298,4,non_disruptive
+oos_targeted_advertising,Targeted advertising,targeted advertisement; targeted advertisements,1995,28,905,329,intermediate
+oos_telephone,Telephone,receiving user,1989,1,6417,238,non_disruptive
+oos_telescopic_sight,Telescopic sight,mounting rail,1993,1,769,158,non_disruptive
+oos_temperature_data_logger,Temperature data logger,temperature monitor,1985,2,740,4526,non_disruptive
+oos_temperaturedependent_sex_determination,Temperaturedependent sex determination,temperature dependent,1994,3,3623,1004,non_disruptive
+oos_terrestrial_trunked_radio,Terrestrial Trunked Radio,serving cell,2007,0,1739,34,non_disruptive
+oos_tertbutyl_alcohol,TertButyl alcohol,tert butyl,1996,0,31565,4,non_disruptive
+oos_test_tube,Test tube,sample tubes,2005,5,734,4491,non_disruptive
+oos_tetrahydrofuran,Tetrahydrofuran,tetrahydrofuran thf,1985,0,3749,0,non_disruptive
+oos_tetrakistriphenylphosphinepalladium0,Tetrakistriphenylphosphinepalladium0,tetrakis triphenylphosphine,1988,0,3560,0,non_disruptive
+oos_text_editor,Text editor,text editor,1990,3,763,11789,non_disruptive
+oos_text_messaging,Text messaging,text message; text messages; text messaging,1989,655,11928,538572,disruptive
+oos_textbased_user_interface,Textbased user interface,based user,1994,37,1449,37877,intermediate
+oos_therapeutic_drug_monitoring,Therapeutic drug monitoring,therapeutic drug,1987,183,1778,14542,disruptive
+oos_thermal_barrier_coating,Thermal barrier coating,barrier coating; barrier coatings; bond coat,1991,25,4858,1093,intermediate
+oos_thermal_copper_pillar_bump,Thermal copper pillar bump,solder bump; solder bumps,1986,33,5641,100,intermediate
+oos_thermal_printing,Thermal printing,direct thermal; print heads,1990,53,3111,5594,intermediate
+oos_thermal_spraying,Thermal spraying,thermal spraying,1988,2,772,277,non_disruptive
+oos_thermaltransfer_printing,Thermaltransfer printing,thermal transfer,1986,73,4529,4134,intermediate
+oos_thermistor,Thermistor,operational temperature,1986,0,743,473,non_disruptive
+oos_thermographic_camera,Thermographic camera,imaging camera,1992,98,695,0,intermediate
+oos_thermography,Thermography,thermal imaging,1994,257,1784,12145,disruptive
+oos_thermogravimetric_analysis,Thermogravimetric analysis,thermogravimetric analysis,1993,0,1223,691,non_disruptive
+oos_thermometer,Thermometer,temperature sensor,1991,184,25039,7331,disruptive
+oos_thermoplastic_elastomer,Thermoplastic elastomer,thermoplastic elastomer; thermoplastic elastomers,1992,22,7210,977,intermediate
+oos_thermoplastic_polyurethane,Thermoplastic polyurethane,thermoplastic polyurethane; thermoplastic polyurethanes,1992,16,3070,518,intermediate
+oos_thickening_agent,Thickening agent,rheology modifier; rheology modifiers,1995,8,2058,846,non_disruptive
+oos_thin_film,Thin film,film deposition,1990,79,3692,6935,intermediate
+oos_thinfilm_transistor,Thinfilm transistor,conducting substrate; film transistors,1986,11,2890,2,intermediate
+oos_thinfilmtransistor_liquidcrystal_display,Thinfilmtransistor liquidcrystal display,film transistor,1987,11,2603,738,intermediate
+oos_thinlayer_chromatography,Thinlayer chromatography,chromatography tlc,1990,0,829,186,non_disruptive
+oos_thymidine_kinase,Thymidine kinase,thymidine kinase,1987,1,4644,1,non_disruptive
+oos_thyroidstimulating_hormone,Thyroidstimulating hormone,thyroid stimulating,1990,4,738,17,non_disruptive
+oos_timedivision_multiple_access,Timedivision multiple access,access tdma,1990,1,2566,384,non_disruptive
+oos_timedivision_multiplexing,Timedivision multiplexing,division multiplexing,1991,54,11248,6501,intermediate
+oos_timeofflight_mass_spectrometry,Timeofflight mass spectrometry,flight mass; tof mass,1992,3,2461,1039,non_disruptive
+oos_tissue_paper,Tissue paper,ply tissue,1989,0,361,0,non_disruptive
+oos_tissue_plasminogen_activator,Tissue plasminogen activator,plasminogen activator,1990,9,4884,0,non_disruptive
+oos_titanium_nitride,Titanium nitride,nitride tin; titanium nitride,1992,8,7465,23,non_disruptive
+oos_tnf_inhibitor,TNF inhibitor,anti tnf,1994,16,1597,0,intermediate
+oos_token_ring,Token Ring,token ring,1987,7,2155,11111,non_disruptive
+oos_toluene,Toluene,methyl benzene,2001,0,743,0,non_disruptive
+oos_toner_cartridge,Toner cartridge,toner cartridge,1992,49,924,6769,intermediate
+oos_touchpad,Touchpad,touch pad,1993,228,2172,9875,disruptive
+oos_track_algorithm,Track algorithm,tracking algorithm,1991,6,611,2912,non_disruptive
+oos_trackball,Trackball,track ball,1986,6,711,0,non_disruptive
+oos_transaction_account,Transaction account,transaction account,2000,1303,760,18844,disruptive
+oos_transaction_log,Transaction log,transaction log,1991,10,1086,11787,intermediate
+oos_transdermal_patch,Transdermal patch,transdermal patch; transdermal patches,1996,147,3408,747,disruptive
+oos_transduction_genetics,Transduction genetics,mammalian cell,1981,92,11243,0,intermediate
+oos_transfer_switch,Transfer switch,transfer switch,1992,37,937,26650,intermediate
+oos_translation,Translation,translation process,1990,28,982,7126,intermediate
+oos_translation_memory,Translation memory,memory manager,1989,0,1495,381,non_disruptive
+oos_transmissible_spongiform_encephalopathy,Transmissible spongiform encephalopathy,spongiform encephalopathies,2003,6,280,250,non_disruptive
+oos_transmission_control_protocol,Transmission Control Protocol,control protocol; control protocols; tcp connection; tcp connections; transmission control,1991,35,15472,51796,intermediate
+oos_transmission_medium,Transmission medium,transmission media,1991,23,8761,7608,intermediate
+oos_transport_layer_security,Transport Layer Security,transport layers,1990,73,1276,7851,intermediate
+oos_tree_data_structure,Tree data structure,child node; child nodes; leaf node; leaf nodes; parent node; parent nodes; root node; tree data,1988,2,18379,119784,non_disruptive
+oos_tree_traversal,Tree traversal,current node,1991,38,1800,65,intermediate
+oos_tretinoin,Tretinoin,trans retinoic,2004,0,803,2,non_disruptive
+oos_triamcinolone_acetonide,Triamcinolone acetonide,triamcinolone acetonide,1991,35,946,0,intermediate
+oos_trifluoroacetic_acid,Trifluoroacetic acid,acid tfa,1992,0,1357,0,non_disruptive
+oos_trimethylene_carbonate,Trimethylene carbonate,trimethylene carbonate,1989,0,2391,0,non_disruptive
+oos_triptorelin,Triptorelin,trp leu,1994,0,2723,0,non_disruptive
+oos_trisdibenzylideneacetonedipalladium0,Trisdibenzylideneacetonedipalladium0,dibenzylideneacetone dipalladium,1999,0,1161,0,non_disruptive
+oos_trusted_execution_environment,Trusted execution environment,execution environment; execution environments,1991,32,4783,6745,intermediate
+oos_trypan_blue,Trypan blue,trypan blue,1992,0,2070,83,non_disruptive
+oos_tumbler_screening_technique,Tumbler screening technique,screening techniques,1990,19,2308,3820,intermediate
+oos_tunable_laser,Tunable laser,tunable laser,1996,158,1428,713,disruptive
+oos_tungsten_disilicide,Tungsten disilicide,tungsten silicide,1992,2,1385,0,non_disruptive
+oos_turboexpander,Turboexpander,expansion turbine,2005,3,332,58,non_disruptive
+oos_turbofan,Turbofan,turbofan engine,1985,79,769,0,intermediate
+oos_twisted_pair,Twisted pair,pair cable; twisted pairs,1990,84,2386,5438,intermediate
+oos_twophoton_absorption,Twophoton absorption,photon absorption,1993,0,824,33,non_disruptive
+oos_twophoton_excitation_microscopy,Twophoton excitation microscopy,excitation light; excitation wavelengths,1986,0,3885,2,non_disruptive
+oos_typical_versus_maximum_performance,Typical versus maximum performance,maximum performance,1991,138,647,115484,disruptive
+oos_ultrasonic_horn,Ultrasonic horn,ultrasonic horn,1988,0,897,11,non_disruptive
+oos_ultrasonic_transducer,Ultrasonic transducer,ultrasonic sensor; ultrasonic sensors,1995,29,1903,1023,intermediate
+oos_ultrasonic_welding,Ultrasonic welding,sonic welding,1983,0,1000,1436,non_disruptive
+oos_ultrawideband,Ultrawideband,ultra wideband,1996,50,1394,714,intermediate
+oos_unmanned_aerial_vehicle,Unmanned aerial vehicle,aerial vehicle; aerial vehicles; unmanned aerial,1999,334,2138,33790,disruptive
+oos_unsaturated_hydrocarbon,Unsaturated hydrocarbon,unsaturated carbon,1996,0,1268,0,non_disruptive
+oos_unstructured_data,Unstructured data,unstructured data,2002,424,1402,102101,disruptive
+oos_urine_collection_device,Urine collection device,collection devices,1983,158,1182,43204,disruptive
+oos_urine_test_strip,Urine test strip,test strips,1990,124,2162,6699,disruptive
+oos_urokinase,Urokinase,type plasminogen,1994,1,695,0,non_disruptive
+oos_usb_flash_drive,USB flash drive,flash drive,2003,229,726,21553,disruptive
+oos_user_activity_monitoring,User activity monitoring,user actions; user activities; user activity,1989,293,5419,22837,disruptive
+oos_user_agent,User agent,user agent,1993,12,2218,4499,intermediate
+oos_user_interface,User interface,user interface; user interfaces,1984,3772,124204,1200510,disruptive
+oos_user_profile,User profile,user profile; user profiles; users profile,1990,237,12331,83983,disruptive
+oos_vacuum_fluorescent_display,Vacuum fluorescent display,fluorescent display; vacuum fluorescent,1987,1,812,47,non_disruptive
+oos_vacuum_pump,Vacuum pump,transfer pump,1985,17,770,6898,intermediate
+oos_valeric_acid,Valeric acid,valeric acid,1991,0,856,0,non_disruptive
+oos_variable_computer_science,Variable computer science,storage location,1992,105,11308,128156,disruptive
+oos_variablefrequency_drive,Variablefrequency drive,frequency drive,1991,65,870,66484,intermediate
+oos_vascular_bypass,Vascular bypass,vascular graft; vascular grafts,1989,99,2882,0,intermediate
+oos_vector_space,Vector space,vector space,1992,1,1162,332,non_disruptive
+oos_ventricular_assist_device,Ventricular assist device,assist devices; ventricular assist,1983,127,1799,78864,disruptive
+oos_vertical_launching_system,Vertical launching system,launch system,1987,167,329,22826,disruptive
+oos_verticalcavity_surfaceemitting_laser,Verticalcavity surfaceemitting laser,vertical cavity,1989,19,2095,519,intermediate
+oos_video_capture,Video capture,video capture,1992,110,1973,8969,disruptive
+oos_video_clip,Video clip,video clip; video clips,1992,399,4064,21350,disruptive
+oos_video_display_controller,Video display controller,display controller,1991,41,2852,1052,intermediate
+oos_video_editing,Video editing,video editing,1991,134,876,136669,disruptive
+oos_video_game_console,Video game console,game console; game consoles,1991,964,2480,22162,disruptive
+oos_video_graphics_array,Video Graphics Array,video graphics,1985,38,1214,14803,intermediate
+oos_video_on_demand,Video on demand,video playback,1986,70,1249,11687,intermediate
+oos_viral_vector,Viral vector,viral vector,1986,112,6991,13269,disruptive
+oos_virtual_audio_cable,Virtual Audio Cable,receive audio,1990,0,998,469,non_disruptive
+oos_virtual_disk_and_virtual_drive,Virtual disk and virtual drive,virtual disk; virtual disks,2005,13,1609,810,intermediate
+oos_virtual_ground,Virtual ground,virtual ground,1985,1,1581,24,non_disruptive
+oos_virtual_private_network,Virtual private network,virtual private,1994,281,3919,58971,disruptive
+oos_virtual_reality,Virtual reality,virtual environment; virtual environments; virtual reality,1989,904,5705,228246,disruptive
+oos_virus,Virus,viral genome; viral genomes,1990,17,4746,402,intermediate
+oos_viscoelasticity,Viscoelasticity,material exhibits; visco elastic,1981,10,2029,3805,intermediate
+oos_vision_chip,Vision chip,processing circuitry; processing performed,1991,14,13084,1048,intermediate
+oos_visitor_based_network,Visitor Based Network,based network; based networks,1993,275,5184,57768,disruptive
+oos_vlc_media_player,VLC media player,media player,1996,954,4967,30785,disruptive
+oos_voice_activity_detection,Voice activity detection,voice activity,1995,24,903,584,intermediate
+oos_voicemail,Voicemail,voice mail,1988,307,4693,658947,disruptive
+oos_voltage_controller,Voltage controller,voltage controller,1990,3,926,151,non_disruptive
+oos_watchdog_timer,Watchdog timer,watchdog timer,1983,2,1681,398,non_disruptive
+oos_wax_emulsion,Wax emulsion,wax emulsion,1990,0,467,58,non_disruptive
+oos_waxy_corn,Waxy corn,waxy starch,2002,0,3023,0,non_disruptive
+oos_wear_leveling,Wear leveling,wear leveling,2000,7,693,732,non_disruptive
+oos_web_feed,Web feed,news feed,2006,332,438,168067,disruptive
+oos_web_query,Web query,search queries; search query,1994,289,9825,10234,disruptive
+oos_well_control,Well control,formation pressure; formation pressures,1994,35,1740,233,intermediate
+oos_western_blot,Western blot,western blot; western blots; western blotting,1989,102,20717,51469,disruptive
+oos_wetware_computer,Wetware computer,conventional computer,1991,5,2599,567,non_disruptive
+oos_widebandgap_semiconductor,Widebandgap semiconductor,bandgap material; conventional semiconductor,1985,24,1968,160,intermediate
+oos_wimax,WiMAX,subscriber station,1992,5,2307,146,non_disruptive
+oos_windowing_system,Windowing system,window system,1990,101,714,196277,disruptive
+oos_windows_image_acquisition,Windows Image Acquisition,image acquisition,1991,60,5478,8762,intermediate
+oos_wireless,Wireless,wireless technologies; wireless technology,1996,1323,8784,411094,disruptive
+oos_wireless_ad_hoc_network,Wireless ad hoc network,hoc network; hoc networks,1998,13,3007,2361,intermediate
+oos_wireless_lan,Wireless LAN,wireless lan; wireless lans,1993,1331,3239,44319,disruptive
+oos_wireless_network,Wireless network,wireless networks,1992,2540,10373,239192,disruptive
+oos_wireless_sensor_network,Wireless sensor network,sensor data; wireless sensor; wireless sensors,1991,159,11393,25200,disruptive
+oos_wisa,WiSA,wirelessly transmitting,1994,0,1909,0,non_disruptive
+oos_word_processor,Word processor,word processing,1989,28,5448,2522434,intermediate
+oos_xdr_dram,XDR DRAM,write command,1989,1,4250,834,non_disruptive
+oos_xenobot,Xenobot,desired function,1992,4,1980,2130,non_disruptive
+oos_xenon_arc_lamp,Xenon arc lamp,xenon arc,1995,0,742,58,non_disruptive
+oos_yagiuda_antenna,YagiUda antenna,reflector element,1995,0,527,0,non_disruptive
+oos_yawrate_sensor,Yawrate sensor,rate sensor; rate sensors,1993,29,2893,360,intermediate
+oos_yeast,Yeast,yeast strain; yeast strains,1994,11,2823,937,intermediate
+oos_zieglernatta_catalyst,ZieglerNatta catalyst,based catalysts; natta catalyst; natta catalysts; ziegler natta,1985,6,5831,533,non_disruptive
+oos_zinc_acetate,Zinc acetate,zinc acetate,1990,1,1609,1,non_disruptive
+oos_zinc_finger,Zinc finger,zinc finger; zinc fingers,1995,88,2924,0,intermediate
+oos_zinc_stearate,Zinc stearate,zinc stearate,1988,0,2276,3,non_disruptive
