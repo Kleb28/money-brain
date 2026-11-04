@@ -61,3 +61,33 @@ The second consecutive window is what removes most leads (it costs 1–2 years);
 
 ## Next step before fixing thresholds
 Add 10–15 negative-control rows to technologies.csv (status `control`): patent-active topics with no earnings-call emergence 2002–2019. Measure how often each rule fires on controls; choose the rule by (lead rate on positives) − (fire rate on controls), then freeze it.
+
+---
+
+# Addendum 2026-11-04 (2) — Negative controls and rule selection
+
+Controls: 18 candidates; 13 valid by their own 10-K trajectory (max share 2005-19 / mean 2002-04 < 3). Rejected: carbon nanotube (18.3×), razor (4.9×), RNA interference (4.7×), stem cell (4.6×); graphene unchecked (no 2002-04 EDGAR base).
+
+## Discrimination (lead rate on 16 positives − fire rate on 13 controls), from outputs/rule_selection.md
+| source | best rule | lead | fire | score |
+|---|---|---|---|---|
+| uspto | 10 / +50% / 1 window | 0.62 | 0.31 | +0.32 |
+| uspto | 30 / +50% / 1 window | 0.50 | 0.23 | +0.27 |
+| uspto | 30 / +50% / 2 windows (pre-registered baseline) | 0.19 | 0.08 | +0.11 |
+| arxiv | 30 / +50% / 1 window | 0.14 | 0.00 | +0.14 |
+| pubmed | best | 0.12 | 0.08 | +0.05 |
+| edgar_10k | best | 0.00 | 0.00 | 0.00 |
+
+Text sources do not discriminate: with loose rules PubMed and EDGAR fire on controls more often than they lead on positives (PubMed 0.31 vs 0.62; EDGAR 0.38 vs 0.62).
+USPTO false positives under the 1-window rules are small-count jumps (hydraulic cylinder 15→27, centrifugal pump 22→40, power transformer 5→15) plus one real mini-surge (circuit breaker 63→111 in 2008).
+
+## Decision proposed (not yet frozen)
+Change exactly one parameter from the pre-registered baseline: consecutive windows 2 → 1, keeping min_count 30 and +50%. Rationale: the second window costs 1–2 years of lead on positives and controls alike (it delays rather than discriminates); min_count 30 was set a priori as the noise floor and removes the 5→15-type false positives.
+Resulting USPTO rule: min_count 30, +50% over 2 years, 1 window → lead 8/16, fire 3/13.
+Uncertainty: with n = 16 / 13 the standard error on each rate is ≈ ±0.12; the difference between the two 1-window rules is not resolvable on this set.
+
+## Role of each source after validation
+- uspto (title phrase, filing year): the leading signal.
+- arxiv: weak secondary for CS/physics themes; pubmed: no leading value; both still useful as denominators of "science volume" in cards.
+- edgar_10k: lagging by ~4 years → use as the "already in the market" (Tier 2) marker, not as evidence.
+- clinicaltrials: downstream (lags 11 years on bispecific) → card context only.
