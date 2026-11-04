@@ -19,7 +19,7 @@ jobs:
         with:
           python-version: "3.11"
       - run: pip install requests pandas pyreadstat
-      - run: python scripts/probe.py
+      - run: python -u scripts/probe.py
       - name: Commit any fetched external data
         run: |
           git config user.name "money-brain-bot"
