@@ -91,3 +91,25 @@ Uncertainty: with n = 16 / 13 the standard error on each rate is ≈ ±0.12; the
 - arxiv: weak secondary for CS/physics themes; pubmed: no leading value; both still useful as denominators of "science volume" in cards.
 - edgar_10k: lagging by ~4 years → use as the "already in the market" (Tier 2) marker, not as evidence.
 - clinicaltrials: downstream (lags 11 years on bispecific) → card context only.
+
+---
+
+# Addendum 2026-11-04 (3) — Out-of-sample test on the techdiffusion.net set (1,286 technologies)
+
+Data: Kalyani·Bloom·Carvalho·Hassan·Lerner·Tahoun public release (techdiffusion.net, Nov 2023; paper NBER w28999 rev2 / QJE 2025): 1,899 patent bigrams grouped into 1,286 Wikipedia titles, earnings-call transcript totals 2002-19 (disruptive > 100 / intermediate 10-100 / non-disruptive < 10), Burning Glass postings 2010-19, patent-based emergence year. No per-year earnings-call series is public, so the 29-set EC label cannot be reproduced; three substitute labels were used. New series collected: USPTO title-phrase filings 2002-19 and 10-K full-text hits 2002-19 for all 1,286 (data/external/). Full tables: outputs/oos_report.md.
+
+## Results
+- A. Hiring timing (n = 25 positives emerging in postings after 2010, 286 flat controls): lead − fire between −0.13 and +0.11 for every rule; the loose rule fires on 63% of controls. No timing discrimination.
+- C. 10-K timing (n = 26 positives, 205 flat controls): lead − fire between −0.21 and +0.04. No timing discrimination.
+- B. Cross-section (signal from 2002-09 counts only): fire rate disruptive 0.29 vs non-disruptive 0.03 under 30/+30%/1w (lift 10×), holding within patent-size quartiles. The signal picks commercially relevant technologies, but B does not separate "before" from "contemporaneous".
+- D. Tier-1 logic as of 2009 (signal AND < 10 10-K filings 2007-09): over all 1,286, Tier-1 technologies became disruptive at 3-11% vs 3-5% for no-signal/low-10-K — no lift; the technologies that became disruptive were already in 10-Ks by 2007-09 (Tier 2: 59-67%). Restricted to young technologies (patent emergence ≥ 2000, n = 114): Tier 1 under 10/+50%/1w has n = 13, of which 5 became disruptive (38% vs 6% base; augmented reality 2007, self-driving car 2008, fingerprint 2004, LED circuit 2005, USB flash drive 2007). Under min_count 30 the Tier-1 group is nearly empty (n = 3).
+
+## Reading
+- Timing power of the USPTO growth rule, found on the 29-set in-sample (lead 0.50-0.62 vs fire 0.23-0.31), does not replicate on hiring- or 10-K-based labels. Treat the 29-set result as in-sample optimism until a per-year earnings-call series is available.
+- What survives: cross-sectional selection (B) and, among young technologies only, the Tier-1 combination (D, n = 13). The set is dominated by 1980s-90s technologies, which is the wrong population for a "new technology" screen; the young subset is the relevant analog and it is small.
+- Title-only counts are the binding constraint: median peak count 9 titles/yr; only 25% of technologies ever reach min_count 30, so the pre-registered floor silences most of the universe. Full-text patent counts (abstract/claims) are needed before the floor can be judged.
+
+## Decisions proposed (not frozen)
+- Do not use the detector as a timing trigger; use it as a screen (signal AND 10-K low) restricted to technologies whose patent history starts recently.
+- Replace title-only USPTO counts with full-text counts before re-running rule selection (candidate: Google Patents public dataset on BigQuery, free tier; needs a GCP project).
+- Keep settings.yml unchanged until the full-text series exists.

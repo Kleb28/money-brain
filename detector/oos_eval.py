@@ -261,6 +261,44 @@ def main() -> None:
                             "emergence": em, "signal": first_fire(us_sh[tid], us_raw[tid], rule)})
     lines.append("")
 
+    # ---- Test D: pseudo-prospective Tier logic as of 2009 ----
+    # Tier 1 = USPTO signal fired by 2009 AND the market is not yet talking (10-K filings 2007–09 peak < low_max).
+    # Outcome 2010–2019: 10-K filings reach >= 30 in some year ("market talks later"), or 10-K share
+    # 2015–19 mean >= 3x the 2007–09 mean ("10-K growth").
+    low_max = 10
+    lines += ["## D. Pseudo-prospective Tier logic, as of 2009 (uses only 2002–2009 data for the decision)",
+              f"Tier 1 = USPTO signal by 2009 AND 10-K filings 2007–09 peak < {low_max}; Tier 2 = signal AND 10-K ≥ {low_max}; "
+              "baselines = no signal with the same 10-K split. Outcomes 2010–19: ≥ 30 10-K filings in some year; 10-K share 2015–19 mean ≥ 3× 2007–09 mean.", "",
+              "| rule | group | n | reach ≥30 10-K | 10-K share 3× | disruptive (EC) |", "|---|---|---|---|---|---|"]
+    ids_D = [t for t in us_sh if t in ed_sh]
+
+    def outcomes(t):
+        raw = ed_raw[t]; sh = ed_sh[t]
+        reach = max(raw.get(y, 0) for y in range(2010, 2020)) >= 30
+        base = [sh[y] for y in (2007, 2008, 2009) if y in sh]
+        late = [sh[y] for y in range(2015, 2020) if y in sh]
+        b = sum(base) / len(base) if base else 0.0
+        growth = bool(late) and b > 0 and (sum(late) / len(late)) / b >= 3
+        return reach, growth, techs[t]["ec_class"] == "disruptive"
+    for rule in rules:
+        groups = {"T1 signal & 10-K low": [], "T2 signal & 10-K high": [], "no signal & 10-K low": [], "no signal & 10-K high": []}
+        for t in ids_D:
+            sig = first_fire(us_sh[t], us_raw[t], rule, upto=2009) is not None
+            low = max(ed_raw[t].get(y, 0) for y in (2007, 2008, 2009)) < low_max
+            key = ("T1 signal & 10-K low" if low else "T2 signal & 10-K high") if sig else ("no signal & 10-K low" if low else "no signal & 10-K high")
+            groups[key].append(t)
+        for gname, ids in groups.items():
+            if not ids:
+                lines.append(f"| {rule['name']} | {gname} | 0 | – | – | – |"); continue
+            o = [outcomes(t) for t in ids]
+            lines.append(f"| {rule['name']} | {gname} | {len(ids)} | {fmt(sum(x[0] for x in o)/len(o))} | {fmt(sum(x[1] for x in o)/len(o))} | {fmt(sum(x[2] for x in o)/len(o))} |")
+        t1 = groups["T1 signal & 10-K low"]
+        for t in t1:
+            r, g, dsr = outcomes(t)
+            details.append({"test": "D", "rule": rule["name"], "technology": techs[t]["title"], "role": "T1_2009",
+                            "emergence": "reach30" if r else "", "signal": first_fire(us_sh[t], us_raw[t], rule, upto=2009)})
+    lines.append("")
+
     OUT.mkdir(exist_ok=True)
     (OUT / "oos_report.md").write_text("\n".join(lines), encoding="utf-8")
     with open(OUT / "oos_details.csv", "w", newline="", encoding="utf-8") as f:

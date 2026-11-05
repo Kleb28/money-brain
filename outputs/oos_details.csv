@@ -1,329 +1,3258 @@
 test,rule,technology,role,emergence,signal
 A,10 / +30% / 1w,Adenoassociated virus,positive,2014,2015
+A,10 / +30% / 1w,Artificial neural network,positive,2016,2014
 A,10 / +30% / 1w,Augmented reality,positive,2012,2006
 A,10 / +30% / 1w,Autonomous system Internet,positive,2012,2005
+A,10 / +30% / 1w,Selfdriving car,positive,2015,2008
 A,10 / +30% / 1w,Binder material,positive,2011,2009
+A,10 / +30% / 1w,Tree data structure,positive,2012,2008
+A,10 / +30% / 1w,PC game,positive,2012,2008
 A,10 / +30% / 1w,Contact region,positive,2017,
+A,10 / +30% / 1w,Dataspaces,positive,2014,2006
+A,10 / +30% / 1w,Default effect,positive,2011,
+A,10 / +30% / 1w,Machine learning,positive,2012,2005
+A,10 / +30% / 1w,Notification LED,positive,2014,2011
+A,10 / +30% / 1w,Pager,positive,2012,
+A,10 / +30% / 1w,Highdensity polyethylene,positive,2011,
+A,10 / +30% / 1w,Power inverter,positive,2014,2007
+A,10 / +30% / 1w,Push technology,positive,2012,2013
+A,10 / +30% / 1w,Antireflective coating,positive,2016,2006
+A,10 / +30% / 1w,Google Search,positive,2011,2007
+A,10 / +30% / 1w,Harvard architecture,positive,2014,
+A,10 / +30% / 1w,Smartphone,positive,2011,2010
+A,10 / +30% / 1w,SMS,positive,2012,2005
+A,10 / +30% / 1w,Softwaredefined radio,positive,2013,2005
+A,10 / +30% / 1w,Superoxide dismutase,positive,2018,2006
+A,10 / +30% / 1w,Touchpad,positive,2011,2004
 A,10 / +30% / 1w,Chemicalmechanical polishing,control,,2014
 A,10 / +30% / 1w,Codedivision multiple access,control,,
+A,10 / +30% / 1w,Microsoft Access,control,,2004
 A,10 / +30% / 1w,Active site,control,,
 A,10 / +30% / 1w,Affinity chromatography,control,,2013
 A,10 / +30% / 1w,Agarose gel electrophoresis,control,,
+A,10 / +30% / 1w,Metaanalysis,control,,
+A,10 / +30% / 1w,Model organism,control,,2013
+A,10 / +30% / 1w,Answering machine,control,,
 A,10 / +30% / 1w,Antenna array,control,,2009
+A,10 / +30% / 1w,Distributed antenna system,control,,2004
+A,10 / +30% / 1w,Monoclonal antibody,control,,
+A,10 / +30% / 1w,Singledomain antibody,control,,2006
+A,10 / +30% / 1w,Data compression,control,,
 A,10 / +30% / 1w,Audio file format,control,,2004
+A,10 / +30% / 1w,Automatic generation control,control,,2005
 A,10 / +30% / 1w,Airbag,control,,2011
 A,10 / +30% / 1w,Baseband,control,,2011
+A,10 / +30% / 1w,Inheritance objectoriented programming,control,,
+A,10 / +30% / 1w,Linuxpowered device,control,,2006
+A,10 / +30% / 1w,Visitor Based Network,control,,2013
 A,10 / +30% / 1w,Componentbased software engineering,control,,
+A,10 / +30% / 1w,Textbased user interface,control,,2004
 A,10 / +30% / 1w,BIOS,control,,2004
+A,10 / +30% / 1w,Ligand binding assay,control,,
+A,10 / +30% / 1w,Biomolecule,control,,
+A,10 / +30% / 1w,Blister pack,control,,2005
+A,10 / +30% / 1w,Lightemitting diode,control,,2004
+A,10 / +30% / 1w,Printed circuit board,control,,
+A,10 / +30% / 1w,Emergency Broadcast System,control,,
 A,10 / +30% / 1w,Building automation,control,,2004
 A,10 / +30% / 1w,Automatic call distributor,control,,
+A,10 / +30% / 1w,Differential scanning calorimetry,control,,
 A,10 / +30% / 1w,Capillary electrophoresis,control,,2008
+A,10 / +30% / 1w,Chargecoupled device,control,,2010
 A,10 / +30% / 1w,CDNA library,control,,
+A,10 / +30% / 1w,Immortalised cell line,control,,2009
+A,10 / +30% / 1w,Cell site,control,,2005
 A,10 / +30% / 1w,Charge pump,control,,
+A,10 / +30% / 1w,Circulating fluidized bed,control,,2009
 A,10 / +30% / 1w,Client computing,control,,2013
+A,10 / +30% / 1w,Soulseek,control,,
 A,10 / +30% / 1w,CMOS,control,,2006
+A,10 / +30% / 1w,General Packet Radio Service,control,,
 A,10 / +30% / 1w,Common Interface,control,,
+A,10 / +30% / 1w,Serial Peripheral Interface,control,,2006
+A,10 / +30% / 1w,Nearfield communication,control,,2005
 A,10 / +30% / 1w,Communication protocol,control,,2004
+A,10 / +30% / 1w,Principal component analysis,control,,2008
+A,10 / +30% / 1w,Composite data type,control,,
+A,10 / +30% / 1w,Computer network,control,,
 A,10 / +30% / 1w,Computer simulation,control,,2005
 A,10 / +30% / 1w,Confocal microscopy,control,,2004
 A,10 / +30% / 1w,Atomic force microscopy,control,,2011
+A,10 / +30% / 1w,Internet filter,control,,2004
+A,10 / +30% / 1w,MAC address,control,,2004
+A,10 / +30% / 1w,Airborne early warning and control,control,,
+A,10 / +30% / 1w,Flight controller,control,,
+A,10 / +30% / 1w,Multicore processor,control,,2004
+A,10 / +30% / 1w,Error correction code,control,,2012
+A,10 / +30% / 1w,Cruise control,control,,2007
+A,10 / +30% / 1w,Data access object,control,,
+A,10 / +30% / 1w,Data file,control,,2005
+A,10 / +30% / 1w,Data integrity,control,,2004
+A,10 / +30% / 1w,Leased line,control,,2004
+A,10 / +30% / 1w,Data Matrix,control,,
+A,10 / +30% / 1w,Data model,control,,2004
+A,10 / +30% / 1w,Data quality,control,,2007
+A,10 / +30% / 1w,Data validation,control,,2016
 A,10 / +30% / 1w,Amazon Relational Database Service,control,,2008
+A,10 / +30% / 1w,Project delivery method,control,,2006
+A,10 / +30% / 1w,Sputter deposition,control,,2014
+A,10 / +30% / 1w,Design structure matrix,control,,2007
+A,10 / +30% / 1w,Supervised learning,control,,
+A,10 / +30% / 1w,Programming tool,control,,2007
+A,10 / +30% / 1w,Dialog box,control,,
+A,10 / +30% / 1w,Differential signalling,control,,2007
+A,10 / +30% / 1w,Digital camera,control,,
+A,10 / +30% / 1w,Digital imaging,control,,2004
+A,10 / +30% / 1w,Digital mapping,control,,2008
+A,10 / +30% / 1w,Digital video,control,,
+A,10 / +30% / 1w,Laser diode,control,,
+A,10 / +30% / 1w,Thermal printing,control,,2007
+A,10 / +30% / 1w,Sitedirected mutagenesis,control,,
+A,10 / +30% / 1w,Optical disc drive,control,,2004
+A,10 / +30% / 1w,Discrete time and continuous time,control,,2008
+A,10 / +30% / 1w,Hard disk drive,control,,
+A,10 / +30% / 1w,Raster graphics,control,,2006
+A,10 / +30% / 1w,Distributed computing,control,,2005
+A,10 / +30% / 1w,Distributed control system,control,,2007
+A,10 / +30% / 1w,Timedivision multiplexing,control,,
+A,10 / +30% / 1w,DNA construct,control,,2006
+A,10 / +30% / 1w,DNA extraction,control,,
+A,10 / +30% / 1w,DNA sequencing,control,,2009
+A,10 / +30% / 1w,Domain Name System,control,,
+A,10 / +30% / 1w,Document Object Model,control,,
 A,10 / +30% / 1w,2CB,control,,
+A,10 / +30% / 1w,Drug design,control,,
+A,10 / +30% / 1w,Drugeluting stent,control,,2004
+A,10 / +30% / 1w,Dry etching,control,,2009
+A,10 / +30% / 1w,Dynamic light scattering,control,,
+A,10 / +30% / 1w,Email,control,,
+A,10 / +30% / 1w,Publickey cryptography,control,,2017
+A,10 / +30% / 1w,Enzyme assay,control,,
+A,10 / +30% / 1w,Reactiveion etching,control,,
+A,10 / +30% / 1w,Eukaryote,control,,
+A,10 / +30% / 1w,Excimer laser,control,,2006
+A,10 / +30% / 1w,Sizeexclusion chromatography,control,,
+A,10 / +30% / 1w,Trusted execution environment,control,,2004
+A,10 / +30% / 1w,Expression vector,control,,2010
+A,10 / +30% / 1w,Gene expression profiling,control,,2004
+A,10 / +30% / 1w,Facial recognition system,control,,2013
+A,10 / +30% / 1w,Failure mode and effects analysis,control,,2014
+A,10 / +30% / 1w,Multifunction printer,control,,
+A,10 / +30% / 1w,File server,control,,2004
+A,10 / +30% / 1w,NTFS,control,,
+A,10 / +30% / 1w,File system,control,,2005
+A,10 / +30% / 1w,Thin film,control,,2008
+A,10 / +30% / 1w,Financial instrument,control,,2006
+A,10 / +30% / 1w,Finite element method,control,,2005
+A,10 / +30% / 1w,Flow diagram,control,,
+A,10 / +30% / 1w,Fluid dynamics,control,,2004
 A,10 / +30% / 1w,Accounting software,control,,
+A,10 / +30% / 1w,Gallium nitride,control,,2004
+A,10 / +30% / 1w,Genetic engineering,control,,2008
+A,10 / +30% / 1w,Satellite navigation device,control,,
+A,10 / +30% / 1w,Growth medium,control,,2005
+A,10 / +30% / 1w,Hash table,control,,2005
+A,10 / +30% / 1w,Heatshrink tubing,control,,
+A,10 / +30% / 1w,Wireless ad hoc network,control,,2004
+A,10 / +30% / 1w,Hybrid electric vehicle,control,,2007
+A,10 / +30% / 1w,Windows Image Acquisition,control,,2004
+A,10 / +30% / 1w,Image organizer,control,,2004
+A,10 / +30% / 1w,Digital image processing,control,,2004
+A,10 / +30% / 1w,Magnetic resonance imaging,control,,
+A,10 / +30% / 1w,Session Initiation Protocol,control,,2004
+A,10 / +30% / 1w,Input device,control,,2004
+A,10 / +30% / 1w,Instant messaging,control,,2004
+A,10 / +30% / 1w,Interprocess communication,control,,2006
+A,10 / +30% / 1w,Interface control document,control,,2007
+A,10 / +30% / 1w,Lithiumion battery,control,,2004
+A,10 / +30% / 1w,Ion channel,control,,2004
+A,10 / +30% / 1w,Purified water,control,,
+A,10 / +30% / 1w,Industry Standard Architecture,control,,
+A,10 / +30% / 1w,Key frame,control,,
 A,10 / +30% / 1w,Computer keyboard,control,,
+A,10 / +30% / 1w,Laptop,control,,
+A,10 / +30% / 1w,LED circuit,control,,2005
+A,10 / +30% / 1w,Highlevel programming language,control,,2006
 A,10 / +30% / 1w,Commandline interface,control,,2006
+A,10 / +30% / 1w,Lithium battery,control,,2007
+A,10 / +30% / 1w,Load balancing computing,control,,
+A,10 / +30% / 1w,Logic block,control,,2005
+A,10 / +30% / 1w,Magnetic stripe card,control,,2005
+A,10 / +30% / 1w,Mass spectrometry,control,,2004
+A,10 / +30% / 1w,Estimation theory,control,,
+A,10 / +30% / 1w,Signal processing,control,,2014
+A,10 / +30% / 1w,Media control symbols,control,,2011
+A,10 / +30% / 1w,VLC media player,control,,2004
+A,10 / +30% / 1w,Media Player Windows,control,,2006
+A,10 / +30% / 1w,Mesh networking,control,,2004
+A,10 / +30% / 1w,Microcontroller,control,,2007
+A,10 / +30% / 1w,Microfluidics,control,,
+A,10 / +30% / 1w,Microsoft Windows,control,,
+A,10 / +30% / 1w,Microwave antenna,control,,2006
+A,10 / +30% / 1w,Mobile computing,control,,2004
+A,10 / +30% / 1w,Molecular cloning,control,,
+A,10 / +30% / 1w,Molecular dynamics,control,,
+A,10 / +30% / 1w,Molecular marker,control,,2012
+A,10 / +30% / 1w,Employee monitoring software,control,,
+A,10 / +30% / 1w,Motion analysis,control,,2014
+A,10 / +30% / 1w,MIMO,control,,2004
 A,10 / +30% / 1w,Compression seal fitting,control,,
+A,10 / +30% / 1w,Policy entrepreneur,control,,2014
+A,10 / +30% / 1w,Multivariate statistics,control,,
+A,10 / +30% / 1w,Nanoparticle,control,,2004
+A,10 / +30% / 1w,Networking hardware,control,,2006
+A,10 / +30% / 1w,Network monitoring,control,,2008
+A,10 / +30% / 1w,Network switch,control,,2011
+A,10 / +30% / 1w,Social networking service,control,,2006
+A,10 / +30% / 1w,Lownoise amplifier,control,,2007
+A,10 / +30% / 1w,Noise figure,control,,
+A,10 / +30% / 1w,Northern blot,control,,
 A,10 / +30% / 1w,Class computer programming,control,,
+A,10 / +30% / 1w,Objectoriented programming,control,,
+A,10 / +30% / 1w,Online game,control,,2006
+A,10 / +30% / 1w,Fiberoptic communication,control,,
+A,10 / +30% / 1w,Optical coating,control,,2005
+A,10 / +30% / 1w,Holographic optical element,control,,
+A,10 / +30% / 1w,Optical medium,control,,2004
+A,10 / +30% / 1w,Optical module,control,,2013
+A,10 / +30% / 1w,Passive optical network,control,,
+A,10 / +30% / 1w,Optical proximity correction,control,,2005
+A,10 / +30% / 1w,Electrooptical sensor,control,,2004
+A,10 / +30% / 1w,Optical transistor,control,,2017
+A,10 / +30% / 1w,Output device,control,,2006
+A,10 / +30% / 1w,Pattern recognition,control,,2017
+A,10 / +30% / 1w,Payment card,control,,2007
+A,10 / +30% / 1w,Primer molecular biology,control,,
+A,10 / +30% / 1w,Performance appraisal,control,,2008
+A,10 / +30% / 1w,Personal computer,control,,
+A,10 / +30% / 1w,Phage display,control,,
+A,10 / +30% / 1w,Pharmaceutical formulation,control,,
+A,10 / +30% / 1w,Photovoltaics,control,,2005
+A,10 / +30% / 1w,Surface plasmon resonance,control,,2005
+A,10 / +30% / 1w,Portable media player,control,,2005
+A,10 / +30% / 1w,Powder coating,control,,2015
+A,10 / +30% / 1w,Power electronics,control,,2008
+A,10 / +30% / 1w,Power semiconductor device,control,,2005
+A,10 / +30% / 1w,Power strip,control,,2011
+A,10 / +30% / 1w,Printing,control,,
+A,10 / +30% / 1w,Mental chronometry,control,,2005
+A,10 / +30% / 1w,Datadriven programming,control,,
+A,10 / +30% / 1w,Programming language,control,,2016
+A,10 / +30% / 1w,List of copy protection schemes,control,,
+A,10 / +30% / 1w,Protein complex,control,,2017
+A,10 / +30% / 1w,Proteinprotein interaction,control,,2013
+A,10 / +30% / 1w,Internet protocol suite,control,,
+A,10 / +30% / 1w,Pump,control,,
+A,10 / +30% / 1w,Quantum dot,control,,2004
+A,10 / +30% / 1w,Query language,control,,2004
+A,10 / +30% / 1w,IBM MQ,control,,
+A,10 / +30% / 1w,Rapid prototyping,control,,2004
 A,10 / +30% / 1w,Consistency model,control,,2005
+A,10 / +30% / 1w,Restriction enzyme,control,,2004
+A,10 / +30% / 1w,Recombinant antibodies,control,,2010
+A,10 / +30% / 1w,Recombinant DNA,control,,2010
+A,10 / +30% / 1w,File inclusion vulnerability,control,,
 A,10 / +30% / 1w,Cgroups,control,,2004
+A,10 / +30% / 1w,Serverless computing,control,,
+A,10 / +30% / 1w,RNA interference,control,,2004
+A,10 / +30% / 1w,Routing protocol,control,,2004
+A,10 / +30% / 1w,Satellite television,control,,
+A,10 / +30% / 1w,Scheduling computing,control,,
+A,10 / +30% / 1w,Scripting language,control,,
+A,10 / +30% / 1w,SDSPAGE,control,,
+A,10 / +30% / 1w,Search algorithm,control,,2005
+A,10 / +30% / 1w,Web query,control,,2004
+A,10 / +30% / 1w,Semiconductor device,control,,2011
+A,10 / +30% / 1w,Wireless sensor network,control,,2004
+A,10 / +30% / 1w,Sequence alignment,control,,
+A,10 / +30% / 1w,Serial port,control,,2006
+A,10 / +30% / 1w,Server computing,control,,2010
+A,10 / +30% / 1w,Smart card,control,,
+A,10 / +30% / 1w,Software architecture,control,,2006
+A,10 / +30% / 1w,Software distribution,control,,2011
+A,10 / +30% / 1w,Operating system,control,,2004
+A,10 / +30% / 1w,Software Updater,control,,2004
+A,10 / +30% / 1w,Patch computing,control,,2005
+A,10 / +30% / 1w,Software versioning,control,,
+A,10 / +30% / 1w,Solar thermal energy,control,,2007
+A,10 / +30% / 1w,Solder paste,control,,2012
+A,10 / +30% / 1w,Southern blot,control,,
+A,10 / +30% / 1w,Spanning tree,control,,2006
+A,10 / +30% / 1w,Speech processing,control,,2007
+A,10 / +30% / 1w,Statistical process control,control,,
+A,10 / +30% / 1w,Organizational structure,control,,
+A,10 / +30% / 1w,SQL,control,,
+A,10 / +30% / 1w,M10 tank destroyer,control,,
+A,10 / +30% / 1w,Copper phthalocyanine,control,,
+A,10 / +30% / 1w,Surface plasmon,control,,2004
+A,10 / +30% / 1w,Systems architecture,control,,
+A,10 / +30% / 1w,System resource,control,,2005
+A,10 / +30% / 1w,Lateral flow test,control,,2008
+A,10 / +30% / 1w,Thermometer,control,,2005
+A,10 / +30% / 1w,Text editor,control,,
+A,10 / +30% / 1w,Thermography,control,,2004
+A,10 / +30% / 1w,Realtime polymerase chain reaction,control,,2008
+A,10 / +30% / 1w,Transaction log,control,,
+A,10 / +30% / 1w,Transmission medium,control,,
+A,10 / +30% / 1w,Transport Layer Security,control,,
+A,10 / +30% / 1w,MPEG transport stream,control,,2004
+A,10 / +30% / 1w,Intensive care unit,control,,2008
+A,10 / +30% / 1w,User activity monitoring,control,,2004
+A,10 / +30% / 1w,User interface,control,,2005
+A,10 / +30% / 1w,Enduser development,control,,
+A,10 / +30% / 1w,Sport utility vehicle,control,,2004
 A,10 / +30% / 1w,Automatic vehicle location,control,,2013
+A,10 / +30% / 1w,Video Graphics Array,control,,
+A,10 / +30% / 1w,Virtual disk and virtual drive,control,,2007
+A,10 / +30% / 1w,Western blot,control,,
+A,10 / +30% / 1w,Fire extinguisher,control,,2014
+A,10 / +30% / 1w,Windowing system,control,,2005
+A,10 / +30% / 1w,Wireless LAN,control,,2014
+A,10 / +30% / 1w,Wireless network,control,,2004
+A,10 / +30% / 1w,Word processor,control,,2004
 A,10 / +30% / 2w,Adenoassociated virus,positive,2014,2016
+A,10 / +30% / 2w,Artificial neural network,positive,2016,2015
 A,10 / +30% / 2w,Augmented reality,positive,2012,2007
 A,10 / +30% / 2w,Autonomous system Internet,positive,2012,
+A,10 / +30% / 2w,Selfdriving car,positive,2015,2013
 A,10 / +30% / 2w,Binder material,positive,2011,
+A,10 / +30% / 2w,Tree data structure,positive,2012,2016
+A,10 / +30% / 2w,PC game,positive,2012,2009
 A,10 / +30% / 2w,Contact region,positive,2017,
+A,10 / +30% / 2w,Dataspaces,positive,2014,
+A,10 / +30% / 2w,Default effect,positive,2011,
+A,10 / +30% / 2w,Machine learning,positive,2012,2006
+A,10 / +30% / 2w,Notification LED,positive,2014,
+A,10 / +30% / 2w,Pager,positive,2012,
+A,10 / +30% / 2w,Highdensity polyethylene,positive,2011,
+A,10 / +30% / 2w,Power inverter,positive,2014,2008
+A,10 / +30% / 2w,Push technology,positive,2012,2017
+A,10 / +30% / 2w,Antireflective coating,positive,2016,
+A,10 / +30% / 2w,Google Search,positive,2011,
+A,10 / +30% / 2w,Harvard architecture,positive,2014,
+A,10 / +30% / 2w,Smartphone,positive,2011,2011
+A,10 / +30% / 2w,SMS,positive,2012,
+A,10 / +30% / 2w,Softwaredefined radio,positive,2013,2006
+A,10 / +30% / 2w,Superoxide dismutase,positive,2018,
+A,10 / +30% / 2w,Touchpad,positive,2011,2012
 A,10 / +30% / 2w,Chemicalmechanical polishing,control,,
 A,10 / +30% / 2w,Codedivision multiple access,control,,
+A,10 / +30% / 2w,Microsoft Access,control,,2012
 A,10 / +30% / 2w,Active site,control,,
 A,10 / +30% / 2w,Affinity chromatography,control,,
 A,10 / +30% / 2w,Agarose gel electrophoresis,control,,
+A,10 / +30% / 2w,Metaanalysis,control,,
+A,10 / +30% / 2w,Model organism,control,,
+A,10 / +30% / 2w,Answering machine,control,,
 A,10 / +30% / 2w,Antenna array,control,,2017
+A,10 / +30% / 2w,Distributed antenna system,control,,2010
+A,10 / +30% / 2w,Monoclonal antibody,control,,
+A,10 / +30% / 2w,Singledomain antibody,control,,2016
+A,10 / +30% / 2w,Data compression,control,,
 A,10 / +30% / 2w,Audio file format,control,,2005
+A,10 / +30% / 2w,Automatic generation control,control,,
 A,10 / +30% / 2w,Airbag,control,,
 A,10 / +30% / 2w,Baseband,control,,
+A,10 / +30% / 2w,Inheritance objectoriented programming,control,,
+A,10 / +30% / 2w,Linuxpowered device,control,,
+A,10 / +30% / 2w,Visitor Based Network,control,,
 A,10 / +30% / 2w,Componentbased software engineering,control,,
+A,10 / +30% / 2w,Textbased user interface,control,,2005
 A,10 / +30% / 2w,BIOS,control,,2005
+A,10 / +30% / 2w,Ligand binding assay,control,,
+A,10 / +30% / 2w,Biomolecule,control,,
+A,10 / +30% / 2w,Blister pack,control,,2015
+A,10 / +30% / 2w,Lightemitting diode,control,,2005
+A,10 / +30% / 2w,Printed circuit board,control,,
+A,10 / +30% / 2w,Emergency Broadcast System,control,,
 A,10 / +30% / 2w,Building automation,control,,2005
 A,10 / +30% / 2w,Automatic call distributor,control,,
+A,10 / +30% / 2w,Differential scanning calorimetry,control,,
 A,10 / +30% / 2w,Capillary electrophoresis,control,,2009
+A,10 / +30% / 2w,Chargecoupled device,control,,
 A,10 / +30% / 2w,CDNA library,control,,
+A,10 / +30% / 2w,Immortalised cell line,control,,
+A,10 / +30% / 2w,Cell site,control,,2014
 A,10 / +30% / 2w,Charge pump,control,,
+A,10 / +30% / 2w,Circulating fluidized bed,control,,
 A,10 / +30% / 2w,Client computing,control,,2014
+A,10 / +30% / 2w,Soulseek,control,,
 A,10 / +30% / 2w,CMOS,control,,
+A,10 / +30% / 2w,General Packet Radio Service,control,,
 A,10 / +30% / 2w,Common Interface,control,,
+A,10 / +30% / 2w,Serial Peripheral Interface,control,,2007
+A,10 / +30% / 2w,Nearfield communication,control,,2006
 A,10 / +30% / 2w,Communication protocol,control,,
+A,10 / +30% / 2w,Principal component analysis,control,,
+A,10 / +30% / 2w,Composite data type,control,,
+A,10 / +30% / 2w,Computer network,control,,
 A,10 / +30% / 2w,Computer simulation,control,,
 A,10 / +30% / 2w,Confocal microscopy,control,,2005
 A,10 / +30% / 2w,Atomic force microscopy,control,,
+A,10 / +30% / 2w,Internet filter,control,,2008
+A,10 / +30% / 2w,MAC address,control,,2005
+A,10 / +30% / 2w,Airborne early warning and control,control,,
+A,10 / +30% / 2w,Flight controller,control,,
+A,10 / +30% / 2w,Multicore processor,control,,2005
+A,10 / +30% / 2w,Error correction code,control,,2013
+A,10 / +30% / 2w,Cruise control,control,,2008
+A,10 / +30% / 2w,Data access object,control,,
+A,10 / +30% / 2w,Data file,control,,2006
+A,10 / +30% / 2w,Data integrity,control,,2005
+A,10 / +30% / 2w,Leased line,control,,2015
+A,10 / +30% / 2w,Data Matrix,control,,
+A,10 / +30% / 2w,Data model,control,,2005
+A,10 / +30% / 2w,Data quality,control,,2008
+A,10 / +30% / 2w,Data validation,control,,
 A,10 / +30% / 2w,Amazon Relational Database Service,control,,2009
+A,10 / +30% / 2w,Project delivery method,control,,
+A,10 / +30% / 2w,Sputter deposition,control,,2015
+A,10 / +30% / 2w,Design structure matrix,control,,2008
+A,10 / +30% / 2w,Supervised learning,control,,
+A,10 / +30% / 2w,Programming tool,control,,
+A,10 / +30% / 2w,Dialog box,control,,
+A,10 / +30% / 2w,Differential signalling,control,,2008
+A,10 / +30% / 2w,Digital camera,control,,
+A,10 / +30% / 2w,Digital imaging,control,,2005
+A,10 / +30% / 2w,Digital mapping,control,,
+A,10 / +30% / 2w,Digital video,control,,
+A,10 / +30% / 2w,Laser diode,control,,
+A,10 / +30% / 2w,Thermal printing,control,,
+A,10 / +30% / 2w,Sitedirected mutagenesis,control,,
+A,10 / +30% / 2w,Optical disc drive,control,,
+A,10 / +30% / 2w,Discrete time and continuous time,control,,
+A,10 / +30% / 2w,Hard disk drive,control,,
+A,10 / +30% / 2w,Raster graphics,control,,2007
+A,10 / +30% / 2w,Distributed computing,control,,
+A,10 / +30% / 2w,Distributed control system,control,,2011
+A,10 / +30% / 2w,Timedivision multiplexing,control,,
+A,10 / +30% / 2w,DNA construct,control,,
+A,10 / +30% / 2w,DNA extraction,control,,
+A,10 / +30% / 2w,DNA sequencing,control,,2010
+A,10 / +30% / 2w,Domain Name System,control,,
+A,10 / +30% / 2w,Document Object Model,control,,
 A,10 / +30% / 2w,2CB,control,,
+A,10 / +30% / 2w,Drug design,control,,
+A,10 / +30% / 2w,Drugeluting stent,control,,
+A,10 / +30% / 2w,Dry etching,control,,2013
+A,10 / +30% / 2w,Dynamic light scattering,control,,
+A,10 / +30% / 2w,Email,control,,
+A,10 / +30% / 2w,Publickey cryptography,control,,
+A,10 / +30% / 2w,Enzyme assay,control,,
+A,10 / +30% / 2w,Reactiveion etching,control,,
+A,10 / +30% / 2w,Eukaryote,control,,
+A,10 / +30% / 2w,Excimer laser,control,,
+A,10 / +30% / 2w,Sizeexclusion chromatography,control,,
+A,10 / +30% / 2w,Trusted execution environment,control,,2007
+A,10 / +30% / 2w,Expression vector,control,,2011
+A,10 / +30% / 2w,Gene expression profiling,control,,2005
+A,10 / +30% / 2w,Facial recognition system,control,,
+A,10 / +30% / 2w,Failure mode and effects analysis,control,,
+A,10 / +30% / 2w,Multifunction printer,control,,
+A,10 / +30% / 2w,File server,control,,
+A,10 / +30% / 2w,NTFS,control,,
+A,10 / +30% / 2w,File system,control,,
+A,10 / +30% / 2w,Thin film,control,,2009
+A,10 / +30% / 2w,Financial instrument,control,,2007
+A,10 / +30% / 2w,Finite element method,control,,2009
+A,10 / +30% / 2w,Flow diagram,control,,
+A,10 / +30% / 2w,Fluid dynamics,control,,
 A,10 / +30% / 2w,Accounting software,control,,
+A,10 / +30% / 2w,Gallium nitride,control,,
+A,10 / +30% / 2w,Genetic engineering,control,,2009
+A,10 / +30% / 2w,Satellite navigation device,control,,
+A,10 / +30% / 2w,Growth medium,control,,
+A,10 / +30% / 2w,Hash table,control,,2006
+A,10 / +30% / 2w,Heatshrink tubing,control,,
+A,10 / +30% / 2w,Wireless ad hoc network,control,,2005
+A,10 / +30% / 2w,Hybrid electric vehicle,control,,2008
+A,10 / +30% / 2w,Windows Image Acquisition,control,,2010
+A,10 / +30% / 2w,Image organizer,control,,2005
+A,10 / +30% / 2w,Digital image processing,control,,
+A,10 / +30% / 2w,Magnetic resonance imaging,control,,
+A,10 / +30% / 2w,Session Initiation Protocol,control,,2007
+A,10 / +30% / 2w,Input device,control,,2005
+A,10 / +30% / 2w,Instant messaging,control,,
+A,10 / +30% / 2w,Interprocess communication,control,,2012
+A,10 / +30% / 2w,Interface control document,control,,2008
+A,10 / +30% / 2w,Lithiumion battery,control,,2005
+A,10 / +30% / 2w,Ion channel,control,,
+A,10 / +30% / 2w,Purified water,control,,
+A,10 / +30% / 2w,Industry Standard Architecture,control,,
+A,10 / +30% / 2w,Key frame,control,,
 A,10 / +30% / 2w,Computer keyboard,control,,
+A,10 / +30% / 2w,Laptop,control,,
+A,10 / +30% / 2w,LED circuit,control,,2009
+A,10 / +30% / 2w,Highlevel programming language,control,,
 A,10 / +30% / 2w,Commandline interface,control,,
+A,10 / +30% / 2w,Lithium battery,control,,2011
+A,10 / +30% / 2w,Load balancing computing,control,,
+A,10 / +30% / 2w,Logic block,control,,
+A,10 / +30% / 2w,Magnetic stripe card,control,,2006
+A,10 / +30% / 2w,Mass spectrometry,control,,
+A,10 / +30% / 2w,Estimation theory,control,,
+A,10 / +30% / 2w,Signal processing,control,,
+A,10 / +30% / 2w,Media control symbols,control,,
+A,10 / +30% / 2w,VLC media player,control,,2005
+A,10 / +30% / 2w,Media Player Windows,control,,2014
+A,10 / +30% / 2w,Mesh networking,control,,2005
+A,10 / +30% / 2w,Microcontroller,control,,
+A,10 / +30% / 2w,Microfluidics,control,,
+A,10 / +30% / 2w,Microsoft Windows,control,,
+A,10 / +30% / 2w,Microwave antenna,control,,
+A,10 / +30% / 2w,Mobile computing,control,,2005
+A,10 / +30% / 2w,Molecular cloning,control,,
+A,10 / +30% / 2w,Molecular dynamics,control,,
+A,10 / +30% / 2w,Molecular marker,control,,2015
+A,10 / +30% / 2w,Employee monitoring software,control,,
+A,10 / +30% / 2w,Motion analysis,control,,2015
+A,10 / +30% / 2w,MIMO,control,,2009
 A,10 / +30% / 2w,Compression seal fitting,control,,
+A,10 / +30% / 2w,Policy entrepreneur,control,,
+A,10 / +30% / 2w,Multivariate statistics,control,,
+A,10 / +30% / 2w,Nanoparticle,control,,2005
+A,10 / +30% / 2w,Networking hardware,control,,2016
+A,10 / +30% / 2w,Network monitoring,control,,2014
+A,10 / +30% / 2w,Network switch,control,,
+A,10 / +30% / 2w,Social networking service,control,,2007
+A,10 / +30% / 2w,Lownoise amplifier,control,,2014
+A,10 / +30% / 2w,Noise figure,control,,
+A,10 / +30% / 2w,Northern blot,control,,
 A,10 / +30% / 2w,Class computer programming,control,,
+A,10 / +30% / 2w,Objectoriented programming,control,,
+A,10 / +30% / 2w,Online game,control,,2010
+A,10 / +30% / 2w,Fiberoptic communication,control,,
+A,10 / +30% / 2w,Optical coating,control,,
+A,10 / +30% / 2w,Holographic optical element,control,,
+A,10 / +30% / 2w,Optical medium,control,,2005
+A,10 / +30% / 2w,Optical module,control,,2014
+A,10 / +30% / 2w,Passive optical network,control,,
+A,10 / +30% / 2w,Optical proximity correction,control,,
+A,10 / +30% / 2w,Electrooptical sensor,control,,2015
+A,10 / +30% / 2w,Optical transistor,control,,
+A,10 / +30% / 2w,Output device,control,,2015
+A,10 / +30% / 2w,Pattern recognition,control,,
+A,10 / +30% / 2w,Payment card,control,,2008
+A,10 / +30% / 2w,Primer molecular biology,control,,
+A,10 / +30% / 2w,Performance appraisal,control,,2014
+A,10 / +30% / 2w,Personal computer,control,,
+A,10 / +30% / 2w,Phage display,control,,
+A,10 / +30% / 2w,Pharmaceutical formulation,control,,
+A,10 / +30% / 2w,Photovoltaics,control,,2006
+A,10 / +30% / 2w,Surface plasmon resonance,control,,2006
+A,10 / +30% / 2w,Portable media player,control,,2006
+A,10 / +30% / 2w,Powder coating,control,,
+A,10 / +30% / 2w,Power electronics,control,,2014
+A,10 / +30% / 2w,Power semiconductor device,control,,
+A,10 / +30% / 2w,Power strip,control,,
+A,10 / +30% / 2w,Printing,control,,
+A,10 / +30% / 2w,Mental chronometry,control,,
+A,10 / +30% / 2w,Datadriven programming,control,,
+A,10 / +30% / 2w,Programming language,control,,
+A,10 / +30% / 2w,List of copy protection schemes,control,,
+A,10 / +30% / 2w,Protein complex,control,,
+A,10 / +30% / 2w,Proteinprotein interaction,control,,2014
+A,10 / +30% / 2w,Internet protocol suite,control,,
+A,10 / +30% / 2w,Pump,control,,
+A,10 / +30% / 2w,Quantum dot,control,,2005
+A,10 / +30% / 2w,Query language,control,,2005
+A,10 / +30% / 2w,IBM MQ,control,,
+A,10 / +30% / 2w,Rapid prototyping,control,,2005
 A,10 / +30% / 2w,Consistency model,control,,2006
+A,10 / +30% / 2w,Restriction enzyme,control,,
+A,10 / +30% / 2w,Recombinant antibodies,control,,
+A,10 / +30% / 2w,Recombinant DNA,control,,
+A,10 / +30% / 2w,File inclusion vulnerability,control,,
 A,10 / +30% / 2w,Cgroups,control,,2005
+A,10 / +30% / 2w,Serverless computing,control,,
+A,10 / +30% / 2w,RNA interference,control,,
+A,10 / +30% / 2w,Routing protocol,control,,2005
+A,10 / +30% / 2w,Satellite television,control,,
+A,10 / +30% / 2w,Scheduling computing,control,,
+A,10 / +30% / 2w,Scripting language,control,,
+A,10 / +30% / 2w,SDSPAGE,control,,
+A,10 / +30% / 2w,Search algorithm,control,,
+A,10 / +30% / 2w,Web query,control,,2005
+A,10 / +30% / 2w,Semiconductor device,control,,
+A,10 / +30% / 2w,Wireless sensor network,control,,2005
+A,10 / +30% / 2w,Sequence alignment,control,,
+A,10 / +30% / 2w,Serial port,control,,
+A,10 / +30% / 2w,Server computing,control,,
+A,10 / +30% / 2w,Smart card,control,,
+A,10 / +30% / 2w,Software architecture,control,,
+A,10 / +30% / 2w,Software distribution,control,,
+A,10 / +30% / 2w,Operating system,control,,2005
+A,10 / +30% / 2w,Software Updater,control,,2017
+A,10 / +30% / 2w,Patch computing,control,,2011
+A,10 / +30% / 2w,Software versioning,control,,
+A,10 / +30% / 2w,Solar thermal energy,control,,2008
+A,10 / +30% / 2w,Solder paste,control,,2016
+A,10 / +30% / 2w,Southern blot,control,,
+A,10 / +30% / 2w,Spanning tree,control,,
+A,10 / +30% / 2w,Speech processing,control,,
+A,10 / +30% / 2w,Statistical process control,control,,
+A,10 / +30% / 2w,Organizational structure,control,,
+A,10 / +30% / 2w,SQL,control,,
+A,10 / +30% / 2w,M10 tank destroyer,control,,
+A,10 / +30% / 2w,Copper phthalocyanine,control,,
+A,10 / +30% / 2w,Surface plasmon,control,,2005
+A,10 / +30% / 2w,Systems architecture,control,,
+A,10 / +30% / 2w,System resource,control,,
+A,10 / +30% / 2w,Lateral flow test,control,,2014
+A,10 / +30% / 2w,Thermometer,control,,
+A,10 / +30% / 2w,Text editor,control,,
+A,10 / +30% / 2w,Thermography,control,,2010
+A,10 / +30% / 2w,Realtime polymerase chain reaction,control,,2012
+A,10 / +30% / 2w,Transaction log,control,,
+A,10 / +30% / 2w,Transmission medium,control,,
+A,10 / +30% / 2w,Transport Layer Security,control,,
+A,10 / +30% / 2w,MPEG transport stream,control,,
+A,10 / +30% / 2w,Intensive care unit,control,,2009
+A,10 / +30% / 2w,User activity monitoring,control,,2005
+A,10 / +30% / 2w,User interface,control,,
+A,10 / +30% / 2w,Enduser development,control,,
+A,10 / +30% / 2w,Sport utility vehicle,control,,2016
 A,10 / +30% / 2w,Automatic vehicle location,control,,2014
+A,10 / +30% / 2w,Video Graphics Array,control,,
+A,10 / +30% / 2w,Virtual disk and virtual drive,control,,2008
+A,10 / +30% / 2w,Western blot,control,,
+A,10 / +30% / 2w,Fire extinguisher,control,,
+A,10 / +30% / 2w,Windowing system,control,,2012
+A,10 / +30% / 2w,Wireless LAN,control,,2015
+A,10 / +30% / 2w,Wireless network,control,,2005
+A,10 / +30% / 2w,Word processor,control,,
 A,10 / +50% / 1w,Adenoassociated virus,positive,2014,2015
+A,10 / +50% / 1w,Artificial neural network,positive,2016,2014
 A,10 / +50% / 1w,Augmented reality,positive,2012,2007
 A,10 / +50% / 1w,Autonomous system Internet,positive,2012,2005
+A,10 / +50% / 1w,Selfdriving car,positive,2015,2008
 A,10 / +50% / 1w,Binder material,positive,2011,2009
+A,10 / +50% / 1w,Tree data structure,positive,2012,2008
+A,10 / +50% / 1w,PC game,positive,2012,2008
 A,10 / +50% / 1w,Contact region,positive,2017,
+A,10 / +50% / 1w,Dataspaces,positive,2014,2006
+A,10 / +50% / 1w,Default effect,positive,2011,
+A,10 / +50% / 1w,Machine learning,positive,2012,2005
+A,10 / +50% / 1w,Notification LED,positive,2014,2011
+A,10 / +50% / 1w,Pager,positive,2012,
+A,10 / +50% / 1w,Highdensity polyethylene,positive,2011,
+A,10 / +50% / 1w,Power inverter,positive,2014,2007
+A,10 / +50% / 1w,Push technology,positive,2012,
+A,10 / +50% / 1w,Antireflective coating,positive,2016,2017
+A,10 / +50% / 1w,Google Search,positive,2011,2007
+A,10 / +50% / 1w,Harvard architecture,positive,2014,
+A,10 / +50% / 1w,Smartphone,positive,2011,2010
+A,10 / +50% / 1w,SMS,positive,2012,2005
+A,10 / +50% / 1w,Softwaredefined radio,positive,2013,2005
+A,10 / +50% / 1w,Superoxide dismutase,positive,2018,
+A,10 / +50% / 1w,Touchpad,positive,2011,2004
 A,10 / +50% / 1w,Chemicalmechanical polishing,control,,
 A,10 / +50% / 1w,Codedivision multiple access,control,,
+A,10 / +50% / 1w,Microsoft Access,control,,2011
 A,10 / +50% / 1w,Active site,control,,
 A,10 / +50% / 1w,Affinity chromatography,control,,2013
 A,10 / +50% / 1w,Agarose gel electrophoresis,control,,
+A,10 / +50% / 1w,Metaanalysis,control,,
+A,10 / +50% / 1w,Model organism,control,,2013
+A,10 / +50% / 1w,Answering machine,control,,
 A,10 / +50% / 1w,Antenna array,control,,2009
+A,10 / +50% / 1w,Distributed antenna system,control,,2004
+A,10 / +50% / 1w,Monoclonal antibody,control,,
+A,10 / +50% / 1w,Singledomain antibody,control,,2006
+A,10 / +50% / 1w,Data compression,control,,
 A,10 / +50% / 1w,Audio file format,control,,2004
+A,10 / +50% / 1w,Automatic generation control,control,,2005
 A,10 / +50% / 1w,Airbag,control,,2015
 A,10 / +50% / 1w,Baseband,control,,2011
+A,10 / +50% / 1w,Inheritance objectoriented programming,control,,
+A,10 / +50% / 1w,Linuxpowered device,control,,2006
+A,10 / +50% / 1w,Visitor Based Network,control,,
 A,10 / +50% / 1w,Componentbased software engineering,control,,
+A,10 / +50% / 1w,Textbased user interface,control,,2004
 A,10 / +50% / 1w,BIOS,control,,2005
+A,10 / +50% / 1w,Ligand binding assay,control,,
+A,10 / +50% / 1w,Biomolecule,control,,
+A,10 / +50% / 1w,Blister pack,control,,2005
+A,10 / +50% / 1w,Lightemitting diode,control,,2004
+A,10 / +50% / 1w,Printed circuit board,control,,
+A,10 / +50% / 1w,Emergency Broadcast System,control,,
 A,10 / +50% / 1w,Building automation,control,,2004
 A,10 / +50% / 1w,Automatic call distributor,control,,
+A,10 / +50% / 1w,Differential scanning calorimetry,control,,
 A,10 / +50% / 1w,Capillary electrophoresis,control,,2009
+A,10 / +50% / 1w,Chargecoupled device,control,,2010
 A,10 / +50% / 1w,CDNA library,control,,
+A,10 / +50% / 1w,Immortalised cell line,control,,
+A,10 / +50% / 1w,Cell site,control,,2005
 A,10 / +50% / 1w,Charge pump,control,,
+A,10 / +50% / 1w,Circulating fluidized bed,control,,
 A,10 / +50% / 1w,Client computing,control,,
+A,10 / +50% / 1w,Soulseek,control,,
 A,10 / +50% / 1w,CMOS,control,,2016
+A,10 / +50% / 1w,General Packet Radio Service,control,,
 A,10 / +50% / 1w,Common Interface,control,,
+A,10 / +50% / 1w,Serial Peripheral Interface,control,,2007
+A,10 / +50% / 1w,Nearfield communication,control,,2005
 A,10 / +50% / 1w,Communication protocol,control,,
+A,10 / +50% / 1w,Principal component analysis,control,,2008
+A,10 / +50% / 1w,Composite data type,control,,
+A,10 / +50% / 1w,Computer network,control,,
 A,10 / +50% / 1w,Computer simulation,control,,2005
 A,10 / +50% / 1w,Confocal microscopy,control,,2004
 A,10 / +50% / 1w,Atomic force microscopy,control,,2011
+A,10 / +50% / 1w,Internet filter,control,,2004
+A,10 / +50% / 1w,MAC address,control,,2005
+A,10 / +50% / 1w,Airborne early warning and control,control,,
+A,10 / +50% / 1w,Flight controller,control,,
+A,10 / +50% / 1w,Multicore processor,control,,2004
+A,10 / +50% / 1w,Error correction code,control,,2013
+A,10 / +50% / 1w,Cruise control,control,,2013
+A,10 / +50% / 1w,Data access object,control,,
+A,10 / +50% / 1w,Data file,control,,2006
+A,10 / +50% / 1w,Data integrity,control,,2014
+A,10 / +50% / 1w,Leased line,control,,2014
+A,10 / +50% / 1w,Data Matrix,control,,
+A,10 / +50% / 1w,Data model,control,,2004
+A,10 / +50% / 1w,Data quality,control,,2007
+A,10 / +50% / 1w,Data validation,control,,
 A,10 / +50% / 1w,Amazon Relational Database Service,control,,2008
+A,10 / +50% / 1w,Project delivery method,control,,2014
+A,10 / +50% / 1w,Sputter deposition,control,,2015
+A,10 / +50% / 1w,Design structure matrix,control,,2007
+A,10 / +50% / 1w,Supervised learning,control,,
+A,10 / +50% / 1w,Programming tool,control,,2007
+A,10 / +50% / 1w,Dialog box,control,,
+A,10 / +50% / 1w,Differential signalling,control,,2008
+A,10 / +50% / 1w,Digital camera,control,,
+A,10 / +50% / 1w,Digital imaging,control,,2005
+A,10 / +50% / 1w,Digital mapping,control,,2008
+A,10 / +50% / 1w,Digital video,control,,
+A,10 / +50% / 1w,Laser diode,control,,
+A,10 / +50% / 1w,Thermal printing,control,,2007
+A,10 / +50% / 1w,Sitedirected mutagenesis,control,,
+A,10 / +50% / 1w,Optical disc drive,control,,
+A,10 / +50% / 1w,Discrete time and continuous time,control,,2008
+A,10 / +50% / 1w,Hard disk drive,control,,
+A,10 / +50% / 1w,Raster graphics,control,,2006
+A,10 / +50% / 1w,Distributed computing,control,,2014
+A,10 / +50% / 1w,Distributed control system,control,,2007
+A,10 / +50% / 1w,Timedivision multiplexing,control,,
+A,10 / +50% / 1w,DNA construct,control,,2006
+A,10 / +50% / 1w,DNA extraction,control,,
+A,10 / +50% / 1w,DNA sequencing,control,,2009
+A,10 / +50% / 1w,Domain Name System,control,,
+A,10 / +50% / 1w,Document Object Model,control,,
 A,10 / +50% / 1w,2CB,control,,
+A,10 / +50% / 1w,Drug design,control,,
+A,10 / +50% / 1w,Drugeluting stent,control,,2004
+A,10 / +50% / 1w,Dry etching,control,,2013
+A,10 / +50% / 1w,Dynamic light scattering,control,,
+A,10 / +50% / 1w,Email,control,,
+A,10 / +50% / 1w,Publickey cryptography,control,,2017
+A,10 / +50% / 1w,Enzyme assay,control,,
+A,10 / +50% / 1w,Reactiveion etching,control,,
+A,10 / +50% / 1w,Eukaryote,control,,
+A,10 / +50% / 1w,Excimer laser,control,,2006
+A,10 / +50% / 1w,Sizeexclusion chromatography,control,,
+A,10 / +50% / 1w,Trusted execution environment,control,,2006
+A,10 / +50% / 1w,Expression vector,control,,2010
+A,10 / +50% / 1w,Gene expression profiling,control,,2010
+A,10 / +50% / 1w,Facial recognition system,control,,2013
+A,10 / +50% / 1w,Failure mode and effects analysis,control,,2014
+A,10 / +50% / 1w,Multifunction printer,control,,
+A,10 / +50% / 1w,File server,control,,2004
+A,10 / +50% / 1w,NTFS,control,,
+A,10 / +50% / 1w,File system,control,,2008
+A,10 / +50% / 1w,Thin film,control,,2008
+A,10 / +50% / 1w,Financial instrument,control,,2006
+A,10 / +50% / 1w,Finite element method,control,,2005
+A,10 / +50% / 1w,Flow diagram,control,,
+A,10 / +50% / 1w,Fluid dynamics,control,,2004
 A,10 / +50% / 1w,Accounting software,control,,
+A,10 / +50% / 1w,Gallium nitride,control,,
+A,10 / +50% / 1w,Genetic engineering,control,,2008
+A,10 / +50% / 1w,Satellite navigation device,control,,
+A,10 / +50% / 1w,Growth medium,control,,
+A,10 / +50% / 1w,Hash table,control,,2006
+A,10 / +50% / 1w,Heatshrink tubing,control,,
+A,10 / +50% / 1w,Wireless ad hoc network,control,,2004
+A,10 / +50% / 1w,Hybrid electric vehicle,control,,2007
+A,10 / +50% / 1w,Windows Image Acquisition,control,,2004
+A,10 / +50% / 1w,Image organizer,control,,2004
+A,10 / +50% / 1w,Digital image processing,control,,
+A,10 / +50% / 1w,Magnetic resonance imaging,control,,
+A,10 / +50% / 1w,Session Initiation Protocol,control,,2004
+A,10 / +50% / 1w,Input device,control,,2005
+A,10 / +50% / 1w,Instant messaging,control,,
+A,10 / +50% / 1w,Interprocess communication,control,,2006
+A,10 / +50% / 1w,Interface control document,control,,2007
+A,10 / +50% / 1w,Lithiumion battery,control,,2006
+A,10 / +50% / 1w,Ion channel,control,,
+A,10 / +50% / 1w,Purified water,control,,
+A,10 / +50% / 1w,Industry Standard Architecture,control,,
+A,10 / +50% / 1w,Key frame,control,,
 A,10 / +50% / 1w,Computer keyboard,control,,
+A,10 / +50% / 1w,Laptop,control,,
+A,10 / +50% / 1w,LED circuit,control,,2005
+A,10 / +50% / 1w,Highlevel programming language,control,,2006
 A,10 / +50% / 1w,Commandline interface,control,,
+A,10 / +50% / 1w,Lithium battery,control,,2007
+A,10 / +50% / 1w,Load balancing computing,control,,
+A,10 / +50% / 1w,Logic block,control,,
+A,10 / +50% / 1w,Magnetic stripe card,control,,2005
+A,10 / +50% / 1w,Mass spectrometry,control,,
+A,10 / +50% / 1w,Estimation theory,control,,
+A,10 / +50% / 1w,Signal processing,control,,2014
+A,10 / +50% / 1w,Media control symbols,control,,2011
+A,10 / +50% / 1w,VLC media player,control,,2005
+A,10 / +50% / 1w,Media Player Windows,control,,2006
+A,10 / +50% / 1w,Mesh networking,control,,2004
+A,10 / +50% / 1w,Microcontroller,control,,2007
+A,10 / +50% / 1w,Microfluidics,control,,
+A,10 / +50% / 1w,Microsoft Windows,control,,
+A,10 / +50% / 1w,Microwave antenna,control,,
+A,10 / +50% / 1w,Mobile computing,control,,2004
+A,10 / +50% / 1w,Molecular cloning,control,,
+A,10 / +50% / 1w,Molecular dynamics,control,,
+A,10 / +50% / 1w,Molecular marker,control,,2012
+A,10 / +50% / 1w,Employee monitoring software,control,,
+A,10 / +50% / 1w,Motion analysis,control,,2014
+A,10 / +50% / 1w,MIMO,control,,2004
 A,10 / +50% / 1w,Compression seal fitting,control,,
+A,10 / +50% / 1w,Policy entrepreneur,control,,2014
+A,10 / +50% / 1w,Multivariate statistics,control,,
+A,10 / +50% / 1w,Nanoparticle,control,,2004
+A,10 / +50% / 1w,Networking hardware,control,,2006
+A,10 / +50% / 1w,Network monitoring,control,,2008
+A,10 / +50% / 1w,Network switch,control,,2011
+A,10 / +50% / 1w,Social networking service,control,,2006
+A,10 / +50% / 1w,Lownoise amplifier,control,,2007
+A,10 / +50% / 1w,Noise figure,control,,
+A,10 / +50% / 1w,Northern blot,control,,
 A,10 / +50% / 1w,Class computer programming,control,,
+A,10 / +50% / 1w,Objectoriented programming,control,,
+A,10 / +50% / 1w,Online game,control,,2009
+A,10 / +50% / 1w,Fiberoptic communication,control,,
+A,10 / +50% / 1w,Optical coating,control,,2005
+A,10 / +50% / 1w,Holographic optical element,control,,
+A,10 / +50% / 1w,Optical medium,control,,2004
+A,10 / +50% / 1w,Optical module,control,,2013
+A,10 / +50% / 1w,Passive optical network,control,,
+A,10 / +50% / 1w,Optical proximity correction,control,,2005
+A,10 / +50% / 1w,Electrooptical sensor,control,,2004
+A,10 / +50% / 1w,Optical transistor,control,,
+A,10 / +50% / 1w,Output device,control,,2006
+A,10 / +50% / 1w,Pattern recognition,control,,
+A,10 / +50% / 1w,Payment card,control,,2007
+A,10 / +50% / 1w,Primer molecular biology,control,,
+A,10 / +50% / 1w,Performance appraisal,control,,2008
+A,10 / +50% / 1w,Personal computer,control,,
+A,10 / +50% / 1w,Phage display,control,,
+A,10 / +50% / 1w,Pharmaceutical formulation,control,,
+A,10 / +50% / 1w,Photovoltaics,control,,2005
+A,10 / +50% / 1w,Surface plasmon resonance,control,,2006
+A,10 / +50% / 1w,Portable media player,control,,2005
+A,10 / +50% / 1w,Powder coating,control,,
+A,10 / +50% / 1w,Power electronics,control,,2008
+A,10 / +50% / 1w,Power semiconductor device,control,,
+A,10 / +50% / 1w,Power strip,control,,
+A,10 / +50% / 1w,Printing,control,,
+A,10 / +50% / 1w,Mental chronometry,control,,2005
+A,10 / +50% / 1w,Datadriven programming,control,,
+A,10 / +50% / 1w,Programming language,control,,2016
+A,10 / +50% / 1w,List of copy protection schemes,control,,
+A,10 / +50% / 1w,Protein complex,control,,2017
+A,10 / +50% / 1w,Proteinprotein interaction,control,,2014
+A,10 / +50% / 1w,Internet protocol suite,control,,
+A,10 / +50% / 1w,Pump,control,,
+A,10 / +50% / 1w,Quantum dot,control,,2004
+A,10 / +50% / 1w,Query language,control,,2004
+A,10 / +50% / 1w,IBM MQ,control,,
+A,10 / +50% / 1w,Rapid prototyping,control,,2005
 A,10 / +50% / 1w,Consistency model,control,,2017
+A,10 / +50% / 1w,Restriction enzyme,control,,2004
+A,10 / +50% / 1w,Recombinant antibodies,control,,2010
+A,10 / +50% / 1w,Recombinant DNA,control,,
+A,10 / +50% / 1w,File inclusion vulnerability,control,,
 A,10 / +50% / 1w,Cgroups,control,,2005
+A,10 / +50% / 1w,Serverless computing,control,,
+A,10 / +50% / 1w,RNA interference,control,,2004
+A,10 / +50% / 1w,Routing protocol,control,,2004
+A,10 / +50% / 1w,Satellite television,control,,
+A,10 / +50% / 1w,Scheduling computing,control,,
+A,10 / +50% / 1w,Scripting language,control,,
+A,10 / +50% / 1w,SDSPAGE,control,,
+A,10 / +50% / 1w,Search algorithm,control,,2005
+A,10 / +50% / 1w,Web query,control,,2004
+A,10 / +50% / 1w,Semiconductor device,control,,
+A,10 / +50% / 1w,Wireless sensor network,control,,2004
+A,10 / +50% / 1w,Sequence alignment,control,,
+A,10 / +50% / 1w,Serial port,control,,2006
+A,10 / +50% / 1w,Server computing,control,,2010
+A,10 / +50% / 1w,Smart card,control,,
+A,10 / +50% / 1w,Software architecture,control,,2006
+A,10 / +50% / 1w,Software distribution,control,,2011
+A,10 / +50% / 1w,Operating system,control,,2005
+A,10 / +50% / 1w,Software Updater,control,,2004
+A,10 / +50% / 1w,Patch computing,control,,2010
+A,10 / +50% / 1w,Software versioning,control,,
+A,10 / +50% / 1w,Solar thermal energy,control,,2007
+A,10 / +50% / 1w,Solder paste,control,,2012
+A,10 / +50% / 1w,Southern blot,control,,
+A,10 / +50% / 1w,Spanning tree,control,,2006
+A,10 / +50% / 1w,Speech processing,control,,
+A,10 / +50% / 1w,Statistical process control,control,,
+A,10 / +50% / 1w,Organizational structure,control,,
+A,10 / +50% / 1w,SQL,control,,
+A,10 / +50% / 1w,M10 tank destroyer,control,,
+A,10 / +50% / 1w,Copper phthalocyanine,control,,
+A,10 / +50% / 1w,Surface plasmon,control,,2005
+A,10 / +50% / 1w,Systems architecture,control,,
+A,10 / +50% / 1w,System resource,control,,2005
+A,10 / +50% / 1w,Lateral flow test,control,,2013
+A,10 / +50% / 1w,Thermometer,control,,
+A,10 / +50% / 1w,Text editor,control,,
+A,10 / +50% / 1w,Thermography,control,,2009
+A,10 / +50% / 1w,Realtime polymerase chain reaction,control,,2008
+A,10 / +50% / 1w,Transaction log,control,,
+A,10 / +50% / 1w,Transmission medium,control,,
+A,10 / +50% / 1w,Transport Layer Security,control,,
+A,10 / +50% / 1w,MPEG transport stream,control,,2006
+A,10 / +50% / 1w,Intensive care unit,control,,2008
+A,10 / +50% / 1w,User activity monitoring,control,,2004
+A,10 / +50% / 1w,User interface,control,,
+A,10 / +50% / 1w,Enduser development,control,,
+A,10 / +50% / 1w,Sport utility vehicle,control,,2004
 A,10 / +50% / 1w,Automatic vehicle location,control,,2013
+A,10 / +50% / 1w,Video Graphics Array,control,,
+A,10 / +50% / 1w,Virtual disk and virtual drive,control,,2008
+A,10 / +50% / 1w,Western blot,control,,
+A,10 / +50% / 1w,Fire extinguisher,control,,2014
+A,10 / +50% / 1w,Windowing system,control,,2005
+A,10 / +50% / 1w,Wireless LAN,control,,2014
+A,10 / +50% / 1w,Wireless network,control,,2005
+A,10 / +50% / 1w,Word processor,control,,2004
 A,10 / +50% / 2w,Adenoassociated virus,positive,2014,2016
+A,10 / +50% / 2w,Artificial neural network,positive,2016,
 A,10 / +50% / 2w,Augmented reality,positive,2012,2011
 A,10 / +50% / 2w,Autonomous system Internet,positive,2012,
+A,10 / +50% / 2w,Selfdriving car,positive,2015,2013
 A,10 / +50% / 2w,Binder material,positive,2011,
+A,10 / +50% / 2w,Tree data structure,positive,2012,
+A,10 / +50% / 2w,PC game,positive,2012,2009
 A,10 / +50% / 2w,Contact region,positive,2017,
+A,10 / +50% / 2w,Dataspaces,positive,2014,
+A,10 / +50% / 2w,Default effect,positive,2011,
+A,10 / +50% / 2w,Machine learning,positive,2012,2006
+A,10 / +50% / 2w,Notification LED,positive,2014,
+A,10 / +50% / 2w,Pager,positive,2012,
+A,10 / +50% / 2w,Highdensity polyethylene,positive,2011,
+A,10 / +50% / 2w,Power inverter,positive,2014,2008
+A,10 / +50% / 2w,Push technology,positive,2012,
+A,10 / +50% / 2w,Antireflective coating,positive,2016,
+A,10 / +50% / 2w,Google Search,positive,2011,
+A,10 / +50% / 2w,Harvard architecture,positive,2014,
+A,10 / +50% / 2w,Smartphone,positive,2011,2011
+A,10 / +50% / 2w,SMS,positive,2012,
+A,10 / +50% / 2w,Softwaredefined radio,positive,2013,2006
+A,10 / +50% / 2w,Superoxide dismutase,positive,2018,
+A,10 / +50% / 2w,Touchpad,positive,2011,
 A,10 / +50% / 2w,Chemicalmechanical polishing,control,,
 A,10 / +50% / 2w,Codedivision multiple access,control,,
+A,10 / +50% / 2w,Microsoft Access,control,,2012
 A,10 / +50% / 2w,Active site,control,,
 A,10 / +50% / 2w,Affinity chromatography,control,,
 A,10 / +50% / 2w,Agarose gel electrophoresis,control,,
+A,10 / +50% / 2w,Metaanalysis,control,,
+A,10 / +50% / 2w,Model organism,control,,
+A,10 / +50% / 2w,Answering machine,control,,
 A,10 / +50% / 2w,Antenna array,control,,
+A,10 / +50% / 2w,Distributed antenna system,control,,
+A,10 / +50% / 2w,Monoclonal antibody,control,,
+A,10 / +50% / 2w,Singledomain antibody,control,,
+A,10 / +50% / 2w,Data compression,control,,
 A,10 / +50% / 2w,Audio file format,control,,
+A,10 / +50% / 2w,Automatic generation control,control,,
 A,10 / +50% / 2w,Airbag,control,,
 A,10 / +50% / 2w,Baseband,control,,
+A,10 / +50% / 2w,Inheritance objectoriented programming,control,,
+A,10 / +50% / 2w,Linuxpowered device,control,,
+A,10 / +50% / 2w,Visitor Based Network,control,,
 A,10 / +50% / 2w,Componentbased software engineering,control,,
+A,10 / +50% / 2w,Textbased user interface,control,,2005
 A,10 / +50% / 2w,BIOS,control,,
+A,10 / +50% / 2w,Ligand binding assay,control,,
+A,10 / +50% / 2w,Biomolecule,control,,
+A,10 / +50% / 2w,Blister pack,control,,
+A,10 / +50% / 2w,Lightemitting diode,control,,2005
+A,10 / +50% / 2w,Printed circuit board,control,,
+A,10 / +50% / 2w,Emergency Broadcast System,control,,
 A,10 / +50% / 2w,Building automation,control,,2005
 A,10 / +50% / 2w,Automatic call distributor,control,,
+A,10 / +50% / 2w,Differential scanning calorimetry,control,,
 A,10 / +50% / 2w,Capillary electrophoresis,control,,
+A,10 / +50% / 2w,Chargecoupled device,control,,
 A,10 / +50% / 2w,CDNA library,control,,
+A,10 / +50% / 2w,Immortalised cell line,control,,
+A,10 / +50% / 2w,Cell site,control,,2014
 A,10 / +50% / 2w,Charge pump,control,,
+A,10 / +50% / 2w,Circulating fluidized bed,control,,
 A,10 / +50% / 2w,Client computing,control,,
+A,10 / +50% / 2w,Soulseek,control,,
 A,10 / +50% / 2w,CMOS,control,,
+A,10 / +50% / 2w,General Packet Radio Service,control,,
 A,10 / +50% / 2w,Common Interface,control,,
+A,10 / +50% / 2w,Serial Peripheral Interface,control,,
+A,10 / +50% / 2w,Nearfield communication,control,,2006
 A,10 / +50% / 2w,Communication protocol,control,,
+A,10 / +50% / 2w,Principal component analysis,control,,
+A,10 / +50% / 2w,Composite data type,control,,
+A,10 / +50% / 2w,Computer network,control,,
 A,10 / +50% / 2w,Computer simulation,control,,
 A,10 / +50% / 2w,Confocal microscopy,control,,2005
 A,10 / +50% / 2w,Atomic force microscopy,control,,
+A,10 / +50% / 2w,Internet filter,control,,2008
+A,10 / +50% / 2w,MAC address,control,,2006
+A,10 / +50% / 2w,Airborne early warning and control,control,,
+A,10 / +50% / 2w,Flight controller,control,,
+A,10 / +50% / 2w,Multicore processor,control,,2005
+A,10 / +50% / 2w,Error correction code,control,,
+A,10 / +50% / 2w,Cruise control,control,,
+A,10 / +50% / 2w,Data access object,control,,
+A,10 / +50% / 2w,Data file,control,,
+A,10 / +50% / 2w,Data integrity,control,,
+A,10 / +50% / 2w,Leased line,control,,
+A,10 / +50% / 2w,Data Matrix,control,,
+A,10 / +50% / 2w,Data model,control,,2005
+A,10 / +50% / 2w,Data quality,control,,2008
+A,10 / +50% / 2w,Data validation,control,,
 A,10 / +50% / 2w,Amazon Relational Database Service,control,,2009
+A,10 / +50% / 2w,Project delivery method,control,,
+A,10 / +50% / 2w,Sputter deposition,control,,
+A,10 / +50% / 2w,Design structure matrix,control,,2008
+A,10 / +50% / 2w,Supervised learning,control,,
+A,10 / +50% / 2w,Programming tool,control,,
+A,10 / +50% / 2w,Dialog box,control,,
+A,10 / +50% / 2w,Differential signalling,control,,
+A,10 / +50% / 2w,Digital camera,control,,
+A,10 / +50% / 2w,Digital imaging,control,,
+A,10 / +50% / 2w,Digital mapping,control,,
+A,10 / +50% / 2w,Digital video,control,,
+A,10 / +50% / 2w,Laser diode,control,,
+A,10 / +50% / 2w,Thermal printing,control,,
+A,10 / +50% / 2w,Sitedirected mutagenesis,control,,
+A,10 / +50% / 2w,Optical disc drive,control,,
+A,10 / +50% / 2w,Discrete time and continuous time,control,,
+A,10 / +50% / 2w,Hard disk drive,control,,
+A,10 / +50% / 2w,Raster graphics,control,,
+A,10 / +50% / 2w,Distributed computing,control,,
+A,10 / +50% / 2w,Distributed control system,control,,2011
+A,10 / +50% / 2w,Timedivision multiplexing,control,,
+A,10 / +50% / 2w,DNA construct,control,,
+A,10 / +50% / 2w,DNA extraction,control,,
+A,10 / +50% / 2w,DNA sequencing,control,,2010
+A,10 / +50% / 2w,Domain Name System,control,,
+A,10 / +50% / 2w,Document Object Model,control,,
 A,10 / +50% / 2w,2CB,control,,
+A,10 / +50% / 2w,Drug design,control,,
+A,10 / +50% / 2w,Drugeluting stent,control,,
+A,10 / +50% / 2w,Dry etching,control,,
+A,10 / +50% / 2w,Dynamic light scattering,control,,
+A,10 / +50% / 2w,Email,control,,
+A,10 / +50% / 2w,Publickey cryptography,control,,
+A,10 / +50% / 2w,Enzyme assay,control,,
+A,10 / +50% / 2w,Reactiveion etching,control,,
+A,10 / +50% / 2w,Eukaryote,control,,
+A,10 / +50% / 2w,Excimer laser,control,,
+A,10 / +50% / 2w,Sizeexclusion chromatography,control,,
+A,10 / +50% / 2w,Trusted execution environment,control,,2007
+A,10 / +50% / 2w,Expression vector,control,,
+A,10 / +50% / 2w,Gene expression profiling,control,,2011
+A,10 / +50% / 2w,Facial recognition system,control,,
+A,10 / +50% / 2w,Failure mode and effects analysis,control,,
+A,10 / +50% / 2w,Multifunction printer,control,,
+A,10 / +50% / 2w,File server,control,,
+A,10 / +50% / 2w,NTFS,control,,
+A,10 / +50% / 2w,File system,control,,
+A,10 / +50% / 2w,Thin film,control,,2009
+A,10 / +50% / 2w,Financial instrument,control,,2007
+A,10 / +50% / 2w,Finite element method,control,,2009
+A,10 / +50% / 2w,Flow diagram,control,,
+A,10 / +50% / 2w,Fluid dynamics,control,,
 A,10 / +50% / 2w,Accounting software,control,,
+A,10 / +50% / 2w,Gallium nitride,control,,
+A,10 / +50% / 2w,Genetic engineering,control,,2009
+A,10 / +50% / 2w,Satellite navigation device,control,,
+A,10 / +50% / 2w,Growth medium,control,,
+A,10 / +50% / 2w,Hash table,control,,2012
+A,10 / +50% / 2w,Heatshrink tubing,control,,
+A,10 / +50% / 2w,Wireless ad hoc network,control,,2005
+A,10 / +50% / 2w,Hybrid electric vehicle,control,,
+A,10 / +50% / 2w,Windows Image Acquisition,control,,
+A,10 / +50% / 2w,Image organizer,control,,2005
+A,10 / +50% / 2w,Digital image processing,control,,
+A,10 / +50% / 2w,Magnetic resonance imaging,control,,
+A,10 / +50% / 2w,Session Initiation Protocol,control,,
+A,10 / +50% / 2w,Input device,control,,
+A,10 / +50% / 2w,Instant messaging,control,,
+A,10 / +50% / 2w,Interprocess communication,control,,
+A,10 / +50% / 2w,Interface control document,control,,2008
+A,10 / +50% / 2w,Lithiumion battery,control,,2010
+A,10 / +50% / 2w,Ion channel,control,,
+A,10 / +50% / 2w,Purified water,control,,
+A,10 / +50% / 2w,Industry Standard Architecture,control,,
+A,10 / +50% / 2w,Key frame,control,,
 A,10 / +50% / 2w,Computer keyboard,control,,
+A,10 / +50% / 2w,Laptop,control,,
+A,10 / +50% / 2w,LED circuit,control,,2009
+A,10 / +50% / 2w,Highlevel programming language,control,,
 A,10 / +50% / 2w,Commandline interface,control,,
+A,10 / +50% / 2w,Lithium battery,control,,
+A,10 / +50% / 2w,Load balancing computing,control,,
+A,10 / +50% / 2w,Logic block,control,,
+A,10 / +50% / 2w,Magnetic stripe card,control,,2006
+A,10 / +50% / 2w,Mass spectrometry,control,,
+A,10 / +50% / 2w,Estimation theory,control,,
+A,10 / +50% / 2w,Signal processing,control,,
+A,10 / +50% / 2w,Media control symbols,control,,
+A,10 / +50% / 2w,VLC media player,control,,2006
+A,10 / +50% / 2w,Media Player Windows,control,,
+A,10 / +50% / 2w,Mesh networking,control,,2005
+A,10 / +50% / 2w,Microcontroller,control,,
+A,10 / +50% / 2w,Microfluidics,control,,
+A,10 / +50% / 2w,Microsoft Windows,control,,
+A,10 / +50% / 2w,Microwave antenna,control,,
+A,10 / +50% / 2w,Mobile computing,control,,2005
+A,10 / +50% / 2w,Molecular cloning,control,,
+A,10 / +50% / 2w,Molecular dynamics,control,,
+A,10 / +50% / 2w,Molecular marker,control,,
+A,10 / +50% / 2w,Employee monitoring software,control,,
+A,10 / +50% / 2w,Motion analysis,control,,
+A,10 / +50% / 2w,MIMO,control,,
 A,10 / +50% / 2w,Compression seal fitting,control,,
+A,10 / +50% / 2w,Policy entrepreneur,control,,
+A,10 / +50% / 2w,Multivariate statistics,control,,
+A,10 / +50% / 2w,Nanoparticle,control,,
+A,10 / +50% / 2w,Networking hardware,control,,
+A,10 / +50% / 2w,Network monitoring,control,,
+A,10 / +50% / 2w,Network switch,control,,
+A,10 / +50% / 2w,Social networking service,control,,2007
+A,10 / +50% / 2w,Lownoise amplifier,control,,
+A,10 / +50% / 2w,Noise figure,control,,
+A,10 / +50% / 2w,Northern blot,control,,
 A,10 / +50% / 2w,Class computer programming,control,,
+A,10 / +50% / 2w,Objectoriented programming,control,,
+A,10 / +50% / 2w,Online game,control,,2010
+A,10 / +50% / 2w,Fiberoptic communication,control,,
+A,10 / +50% / 2w,Optical coating,control,,
+A,10 / +50% / 2w,Holographic optical element,control,,
+A,10 / +50% / 2w,Optical medium,control,,2005
+A,10 / +50% / 2w,Optical module,control,,
+A,10 / +50% / 2w,Passive optical network,control,,
+A,10 / +50% / 2w,Optical proximity correction,control,,
+A,10 / +50% / 2w,Electrooptical sensor,control,,
+A,10 / +50% / 2w,Optical transistor,control,,
+A,10 / +50% / 2w,Output device,control,,2015
+A,10 / +50% / 2w,Pattern recognition,control,,
+A,10 / +50% / 2w,Payment card,control,,2008
+A,10 / +50% / 2w,Primer molecular biology,control,,
+A,10 / +50% / 2w,Performance appraisal,control,,
+A,10 / +50% / 2w,Personal computer,control,,
+A,10 / +50% / 2w,Phage display,control,,
+A,10 / +50% / 2w,Pharmaceutical formulation,control,,
+A,10 / +50% / 2w,Photovoltaics,control,,2006
+A,10 / +50% / 2w,Surface plasmon resonance,control,,
+A,10 / +50% / 2w,Portable media player,control,,2006
+A,10 / +50% / 2w,Powder coating,control,,
+A,10 / +50% / 2w,Power electronics,control,,
+A,10 / +50% / 2w,Power semiconductor device,control,,
+A,10 / +50% / 2w,Power strip,control,,
+A,10 / +50% / 2w,Printing,control,,
+A,10 / +50% / 2w,Mental chronometry,control,,
+A,10 / +50% / 2w,Datadriven programming,control,,
+A,10 / +50% / 2w,Programming language,control,,
+A,10 / +50% / 2w,List of copy protection schemes,control,,
+A,10 / +50% / 2w,Protein complex,control,,
+A,10 / +50% / 2w,Proteinprotein interaction,control,,
+A,10 / +50% / 2w,Internet protocol suite,control,,
+A,10 / +50% / 2w,Pump,control,,
+A,10 / +50% / 2w,Quantum dot,control,,2005
+A,10 / +50% / 2w,Query language,control,,2017
+A,10 / +50% / 2w,IBM MQ,control,,
+A,10 / +50% / 2w,Rapid prototyping,control,,
 A,10 / +50% / 2w,Consistency model,control,,
+A,10 / +50% / 2w,Restriction enzyme,control,,
+A,10 / +50% / 2w,Recombinant antibodies,control,,
+A,10 / +50% / 2w,Recombinant DNA,control,,
+A,10 / +50% / 2w,File inclusion vulnerability,control,,
 A,10 / +50% / 2w,Cgroups,control,,
+A,10 / +50% / 2w,Serverless computing,control,,
+A,10 / +50% / 2w,RNA interference,control,,
+A,10 / +50% / 2w,Routing protocol,control,,
+A,10 / +50% / 2w,Satellite television,control,,
+A,10 / +50% / 2w,Scheduling computing,control,,
+A,10 / +50% / 2w,Scripting language,control,,
+A,10 / +50% / 2w,SDSPAGE,control,,
+A,10 / +50% / 2w,Search algorithm,control,,
+A,10 / +50% / 2w,Web query,control,,2008
+A,10 / +50% / 2w,Semiconductor device,control,,
+A,10 / +50% / 2w,Wireless sensor network,control,,
+A,10 / +50% / 2w,Sequence alignment,control,,
+A,10 / +50% / 2w,Serial port,control,,
+A,10 / +50% / 2w,Server computing,control,,
+A,10 / +50% / 2w,Smart card,control,,
+A,10 / +50% / 2w,Software architecture,control,,
+A,10 / +50% / 2w,Software distribution,control,,
+A,10 / +50% / 2w,Operating system,control,,
+A,10 / +50% / 2w,Software Updater,control,,2017
+A,10 / +50% / 2w,Patch computing,control,,2011
+A,10 / +50% / 2w,Software versioning,control,,
+A,10 / +50% / 2w,Solar thermal energy,control,,2008
+A,10 / +50% / 2w,Solder paste,control,,
+A,10 / +50% / 2w,Southern blot,control,,
+A,10 / +50% / 2w,Spanning tree,control,,
+A,10 / +50% / 2w,Speech processing,control,,
+A,10 / +50% / 2w,Statistical process control,control,,
+A,10 / +50% / 2w,Organizational structure,control,,
+A,10 / +50% / 2w,SQL,control,,
+A,10 / +50% / 2w,M10 tank destroyer,control,,
+A,10 / +50% / 2w,Copper phthalocyanine,control,,
+A,10 / +50% / 2w,Surface plasmon,control,,
+A,10 / +50% / 2w,Systems architecture,control,,
+A,10 / +50% / 2w,System resource,control,,
+A,10 / +50% / 2w,Lateral flow test,control,,2014
+A,10 / +50% / 2w,Thermometer,control,,
+A,10 / +50% / 2w,Text editor,control,,
+A,10 / +50% / 2w,Thermography,control,,2010
+A,10 / +50% / 2w,Realtime polymerase chain reaction,control,,2012
+A,10 / +50% / 2w,Transaction log,control,,
+A,10 / +50% / 2w,Transmission medium,control,,
+A,10 / +50% / 2w,Transport Layer Security,control,,
+A,10 / +50% / 2w,MPEG transport stream,control,,
+A,10 / +50% / 2w,Intensive care unit,control,,2009
+A,10 / +50% / 2w,User activity monitoring,control,,2013
+A,10 / +50% / 2w,User interface,control,,
+A,10 / +50% / 2w,Enduser development,control,,
+A,10 / +50% / 2w,Sport utility vehicle,control,,
 A,10 / +50% / 2w,Automatic vehicle location,control,,
+A,10 / +50% / 2w,Video Graphics Array,control,,
+A,10 / +50% / 2w,Virtual disk and virtual drive,control,,2011
+A,10 / +50% / 2w,Western blot,control,,
+A,10 / +50% / 2w,Fire extinguisher,control,,
+A,10 / +50% / 2w,Windowing system,control,,
+A,10 / +50% / 2w,Wireless LAN,control,,2015
+A,10 / +50% / 2w,Wireless network,control,,
+A,10 / +50% / 2w,Word processor,control,,
 A,30 / +30% / 1w,Adenoassociated virus,positive,2014,
+A,30 / +30% / 1w,Artificial neural network,positive,2016,2017
 A,30 / +30% / 1w,Augmented reality,positive,2012,2010
 A,30 / +30% / 1w,Autonomous system Internet,positive,2012,
+A,30 / +30% / 1w,Selfdriving car,positive,2015,2013
 A,30 / +30% / 1w,Binder material,positive,2011,2012
+A,30 / +30% / 1w,Tree data structure,positive,2012,
+A,30 / +30% / 1w,PC game,positive,2012,
 A,30 / +30% / 1w,Contact region,positive,2017,
+A,30 / +30% / 1w,Dataspaces,positive,2014,
+A,30 / +30% / 1w,Default effect,positive,2011,
+A,30 / +30% / 1w,Machine learning,positive,2012,2008
+A,30 / +30% / 1w,Notification LED,positive,2014,
+A,30 / +30% / 1w,Pager,positive,2012,
+A,30 / +30% / 1w,Highdensity polyethylene,positive,2011,
+A,30 / +30% / 1w,Power inverter,positive,2014,
+A,30 / +30% / 1w,Push technology,positive,2012,
+A,30 / +30% / 1w,Antireflective coating,positive,2016,2006
+A,30 / +30% / 1w,Google Search,positive,2011,
+A,30 / +30% / 1w,Harvard architecture,positive,2014,
+A,30 / +30% / 1w,Smartphone,positive,2011,2011
+A,30 / +30% / 1w,SMS,positive,2012,
+A,30 / +30% / 1w,Softwaredefined radio,positive,2013,2013
+A,30 / +30% / 1w,Superoxide dismutase,positive,2018,
+A,30 / +30% / 1w,Touchpad,positive,2011,
 A,30 / +30% / 1w,Chemicalmechanical polishing,control,,2014
 A,30 / +30% / 1w,Codedivision multiple access,control,,
+A,30 / +30% / 1w,Microsoft Access,control,,
 A,30 / +30% / 1w,Active site,control,,
 A,30 / +30% / 1w,Affinity chromatography,control,,
 A,30 / +30% / 1w,Agarose gel electrophoresis,control,,
+A,30 / +30% / 1w,Metaanalysis,control,,
+A,30 / +30% / 1w,Model organism,control,,
+A,30 / +30% / 1w,Answering machine,control,,
 A,30 / +30% / 1w,Antenna array,control,,2009
+A,30 / +30% / 1w,Distributed antenna system,control,,2009
+A,30 / +30% / 1w,Monoclonal antibody,control,,
+A,30 / +30% / 1w,Singledomain antibody,control,,
+A,30 / +30% / 1w,Data compression,control,,
 A,30 / +30% / 1w,Audio file format,control,,
+A,30 / +30% / 1w,Automatic generation control,control,,2005
 A,30 / +30% / 1w,Airbag,control,,2011
 A,30 / +30% / 1w,Baseband,control,,
+A,30 / +30% / 1w,Inheritance objectoriented programming,control,,
+A,30 / +30% / 1w,Linuxpowered device,control,,
+A,30 / +30% / 1w,Visitor Based Network,control,,2013
 A,30 / +30% / 1w,Componentbased software engineering,control,,
+A,30 / +30% / 1w,Textbased user interface,control,,2008
 A,30 / +30% / 1w,BIOS,control,,2004
+A,30 / +30% / 1w,Ligand binding assay,control,,
+A,30 / +30% / 1w,Biomolecule,control,,
+A,30 / +30% / 1w,Blister pack,control,,
+A,30 / +30% / 1w,Lightemitting diode,control,,2010
+A,30 / +30% / 1w,Printed circuit board,control,,
+A,30 / +30% / 1w,Emergency Broadcast System,control,,
 A,30 / +30% / 1w,Building automation,control,,
 A,30 / +30% / 1w,Automatic call distributor,control,,
+A,30 / +30% / 1w,Differential scanning calorimetry,control,,
 A,30 / +30% / 1w,Capillary electrophoresis,control,,
+A,30 / +30% / 1w,Chargecoupled device,control,,
 A,30 / +30% / 1w,CDNA library,control,,
+A,30 / +30% / 1w,Immortalised cell line,control,,2009
+A,30 / +30% / 1w,Cell site,control,,
 A,30 / +30% / 1w,Charge pump,control,,
+A,30 / +30% / 1w,Circulating fluidized bed,control,,
 A,30 / +30% / 1w,Client computing,control,,
+A,30 / +30% / 1w,Soulseek,control,,
 A,30 / +30% / 1w,CMOS,control,,2006
+A,30 / +30% / 1w,General Packet Radio Service,control,,
 A,30 / +30% / 1w,Common Interface,control,,
+A,30 / +30% / 1w,Serial Peripheral Interface,control,,
+A,30 / +30% / 1w,Nearfield communication,control,,2011
 A,30 / +30% / 1w,Communication protocol,control,,2004
+A,30 / +30% / 1w,Principal component analysis,control,,
+A,30 / +30% / 1w,Composite data type,control,,
+A,30 / +30% / 1w,Computer network,control,,
 A,30 / +30% / 1w,Computer simulation,control,,
 A,30 / +30% / 1w,Confocal microscopy,control,,
 A,30 / +30% / 1w,Atomic force microscopy,control,,
+A,30 / +30% / 1w,Internet filter,control,,
+A,30 / +30% / 1w,MAC address,control,,
+A,30 / +30% / 1w,Airborne early warning and control,control,,
+A,30 / +30% / 1w,Flight controller,control,,
+A,30 / +30% / 1w,Multicore processor,control,,2004
+A,30 / +30% / 1w,Error correction code,control,,2012
+A,30 / +30% / 1w,Cruise control,control,,2017
+A,30 / +30% / 1w,Data access object,control,,
+A,30 / +30% / 1w,Data file,control,,2006
+A,30 / +30% / 1w,Data integrity,control,,2004
+A,30 / +30% / 1w,Leased line,control,,
+A,30 / +30% / 1w,Data Matrix,control,,
+A,30 / +30% / 1w,Data model,control,,2005
+A,30 / +30% / 1w,Data quality,control,,2014
+A,30 / +30% / 1w,Data validation,control,,
 A,30 / +30% / 1w,Amazon Relational Database Service,control,,
+A,30 / +30% / 1w,Project delivery method,control,,
+A,30 / +30% / 1w,Sputter deposition,control,,2014
+A,30 / +30% / 1w,Design structure matrix,control,,2007
+A,30 / +30% / 1w,Supervised learning,control,,
+A,30 / +30% / 1w,Programming tool,control,,
+A,30 / +30% / 1w,Dialog box,control,,
+A,30 / +30% / 1w,Differential signalling,control,,
+A,30 / +30% / 1w,Digital camera,control,,
+A,30 / +30% / 1w,Digital imaging,control,,2004
+A,30 / +30% / 1w,Digital mapping,control,,
+A,30 / +30% / 1w,Digital video,control,,
+A,30 / +30% / 1w,Laser diode,control,,
+A,30 / +30% / 1w,Thermal printing,control,,
+A,30 / +30% / 1w,Sitedirected mutagenesis,control,,
+A,30 / +30% / 1w,Optical disc drive,control,,
+A,30 / +30% / 1w,Discrete time and continuous time,control,,
+A,30 / +30% / 1w,Hard disk drive,control,,
+A,30 / +30% / 1w,Raster graphics,control,,2006
+A,30 / +30% / 1w,Distributed computing,control,,2005
+A,30 / +30% / 1w,Distributed control system,control,,
+A,30 / +30% / 1w,Timedivision multiplexing,control,,
+A,30 / +30% / 1w,DNA construct,control,,
+A,30 / +30% / 1w,DNA extraction,control,,
+A,30 / +30% / 1w,DNA sequencing,control,,
+A,30 / +30% / 1w,Domain Name System,control,,
+A,30 / +30% / 1w,Document Object Model,control,,
 A,30 / +30% / 1w,2CB,control,,
+A,30 / +30% / 1w,Drug design,control,,
+A,30 / +30% / 1w,Drugeluting stent,control,,2011
+A,30 / +30% / 1w,Dry etching,control,,
+A,30 / +30% / 1w,Dynamic light scattering,control,,
+A,30 / +30% / 1w,Email,control,,
+A,30 / +30% / 1w,Publickey cryptography,control,,2017
+A,30 / +30% / 1w,Enzyme assay,control,,
+A,30 / +30% / 1w,Reactiveion etching,control,,
+A,30 / +30% / 1w,Eukaryote,control,,
+A,30 / +30% / 1w,Excimer laser,control,,
+A,30 / +30% / 1w,Sizeexclusion chromatography,control,,
+A,30 / +30% / 1w,Trusted execution environment,control,,2014
+A,30 / +30% / 1w,Expression vector,control,,
+A,30 / +30% / 1w,Gene expression profiling,control,,
+A,30 / +30% / 1w,Facial recognition system,control,,2013
+A,30 / +30% / 1w,Failure mode and effects analysis,control,,
+A,30 / +30% / 1w,Multifunction printer,control,,
+A,30 / +30% / 1w,File server,control,,2017
+A,30 / +30% / 1w,NTFS,control,,
+A,30 / +30% / 1w,File system,control,,2008
+A,30 / +30% / 1w,Thin film,control,,2008
+A,30 / +30% / 1w,Financial instrument,control,,
+A,30 / +30% / 1w,Finite element method,control,,
+A,30 / +30% / 1w,Flow diagram,control,,
+A,30 / +30% / 1w,Fluid dynamics,control,,2006
 A,30 / +30% / 1w,Accounting software,control,,
+A,30 / +30% / 1w,Gallium nitride,control,,2004
+A,30 / +30% / 1w,Genetic engineering,control,,2009
+A,30 / +30% / 1w,Satellite navigation device,control,,
+A,30 / +30% / 1w,Growth medium,control,,
+A,30 / +30% / 1w,Hash table,control,,
+A,30 / +30% / 1w,Heatshrink tubing,control,,
+A,30 / +30% / 1w,Wireless ad hoc network,control,,2004
+A,30 / +30% / 1w,Hybrid electric vehicle,control,,2007
+A,30 / +30% / 1w,Windows Image Acquisition,control,,2007
+A,30 / +30% / 1w,Image organizer,control,,
+A,30 / +30% / 1w,Digital image processing,control,,2004
+A,30 / +30% / 1w,Magnetic resonance imaging,control,,
+A,30 / +30% / 1w,Session Initiation Protocol,control,,2006
+A,30 / +30% / 1w,Input device,control,,2008
+A,30 / +30% / 1w,Instant messaging,control,,2004
+A,30 / +30% / 1w,Interprocess communication,control,,
+A,30 / +30% / 1w,Interface control document,control,,
+A,30 / +30% / 1w,Lithiumion battery,control,,2004
+A,30 / +30% / 1w,Ion channel,control,,2004
+A,30 / +30% / 1w,Purified water,control,,
+A,30 / +30% / 1w,Industry Standard Architecture,control,,
+A,30 / +30% / 1w,Key frame,control,,
 A,30 / +30% / 1w,Computer keyboard,control,,
+A,30 / +30% / 1w,Laptop,control,,
+A,30 / +30% / 1w,LED circuit,control,,2010
+A,30 / +30% / 1w,Highlevel programming language,control,,
 A,30 / +30% / 1w,Commandline interface,control,,
+A,30 / +30% / 1w,Lithium battery,control,,2007
+A,30 / +30% / 1w,Load balancing computing,control,,
+A,30 / +30% / 1w,Logic block,control,,
+A,30 / +30% / 1w,Magnetic stripe card,control,,
+A,30 / +30% / 1w,Mass spectrometry,control,,2004
+A,30 / +30% / 1w,Estimation theory,control,,
+A,30 / +30% / 1w,Signal processing,control,,
+A,30 / +30% / 1w,Media control symbols,control,,
+A,30 / +30% / 1w,VLC media player,control,,2005
+A,30 / +30% / 1w,Media Player Windows,control,,
+A,30 / +30% / 1w,Mesh networking,control,,2004
+A,30 / +30% / 1w,Microcontroller,control,,
+A,30 / +30% / 1w,Microfluidics,control,,
+A,30 / +30% / 1w,Microsoft Windows,control,,
+A,30 / +30% / 1w,Microwave antenna,control,,
+A,30 / +30% / 1w,Mobile computing,control,,2007
+A,30 / +30% / 1w,Molecular cloning,control,,
+A,30 / +30% / 1w,Molecular dynamics,control,,
+A,30 / +30% / 1w,Molecular marker,control,,
+A,30 / +30% / 1w,Employee monitoring software,control,,
+A,30 / +30% / 1w,Motion analysis,control,,
+A,30 / +30% / 1w,MIMO,control,,2004
 A,30 / +30% / 1w,Compression seal fitting,control,,
+A,30 / +30% / 1w,Policy entrepreneur,control,,
+A,30 / +30% / 1w,Multivariate statistics,control,,
+A,30 / +30% / 1w,Nanoparticle,control,,
+A,30 / +30% / 1w,Networking hardware,control,,
+A,30 / +30% / 1w,Network monitoring,control,,2013
+A,30 / +30% / 1w,Network switch,control,,2011
+A,30 / +30% / 1w,Social networking service,control,,2007
+A,30 / +30% / 1w,Lownoise amplifier,control,,2007
+A,30 / +30% / 1w,Noise figure,control,,
+A,30 / +30% / 1w,Northern blot,control,,
 A,30 / +30% / 1w,Class computer programming,control,,
+A,30 / +30% / 1w,Objectoriented programming,control,,
+A,30 / +30% / 1w,Online game,control,,2011
+A,30 / +30% / 1w,Fiberoptic communication,control,,
+A,30 / +30% / 1w,Optical coating,control,,
+A,30 / +30% / 1w,Holographic optical element,control,,
+A,30 / +30% / 1w,Optical medium,control,,
+A,30 / +30% / 1w,Optical module,control,,2013
+A,30 / +30% / 1w,Passive optical network,control,,
+A,30 / +30% / 1w,Optical proximity correction,control,,2005
+A,30 / +30% / 1w,Electrooptical sensor,control,,
+A,30 / +30% / 1w,Optical transistor,control,,2017
+A,30 / +30% / 1w,Output device,control,,
+A,30 / +30% / 1w,Pattern recognition,control,,2017
+A,30 / +30% / 1w,Payment card,control,,2007
+A,30 / +30% / 1w,Primer molecular biology,control,,
+A,30 / +30% / 1w,Performance appraisal,control,,
+A,30 / +30% / 1w,Personal computer,control,,
+A,30 / +30% / 1w,Phage display,control,,
+A,30 / +30% / 1w,Pharmaceutical formulation,control,,
+A,30 / +30% / 1w,Photovoltaics,control,,2007
+A,30 / +30% / 1w,Surface plasmon resonance,control,,2006
+A,30 / +30% / 1w,Portable media player,control,,2006
+A,30 / +30% / 1w,Powder coating,control,,2015
+A,30 / +30% / 1w,Power electronics,control,,
+A,30 / +30% / 1w,Power semiconductor device,control,,2005
+A,30 / +30% / 1w,Power strip,control,,
+A,30 / +30% / 1w,Printing,control,,
+A,30 / +30% / 1w,Mental chronometry,control,,
+A,30 / +30% / 1w,Datadriven programming,control,,
+A,30 / +30% / 1w,Programming language,control,,
+A,30 / +30% / 1w,List of copy protection schemes,control,,
+A,30 / +30% / 1w,Protein complex,control,,
+A,30 / +30% / 1w,Proteinprotein interaction,control,,
+A,30 / +30% / 1w,Internet protocol suite,control,,
+A,30 / +30% / 1w,Pump,control,,
+A,30 / +30% / 1w,Quantum dot,control,,2004
+A,30 / +30% / 1w,Query language,control,,
+A,30 / +30% / 1w,IBM MQ,control,,
+A,30 / +30% / 1w,Rapid prototyping,control,,
 A,30 / +30% / 1w,Consistency model,control,,2005
+A,30 / +30% / 1w,Restriction enzyme,control,,
+A,30 / +30% / 1w,Recombinant antibodies,control,,
+A,30 / +30% / 1w,Recombinant DNA,control,,2010
+A,30 / +30% / 1w,File inclusion vulnerability,control,,
 A,30 / +30% / 1w,Cgroups,control,,
+A,30 / +30% / 1w,Serverless computing,control,,
+A,30 / +30% / 1w,RNA interference,control,,2004
+A,30 / +30% / 1w,Routing protocol,control,,
+A,30 / +30% / 1w,Satellite television,control,,
+A,30 / +30% / 1w,Scheduling computing,control,,
+A,30 / +30% / 1w,Scripting language,control,,
+A,30 / +30% / 1w,SDSPAGE,control,,
+A,30 / +30% / 1w,Search algorithm,control,,
+A,30 / +30% / 1w,Web query,control,,2005
+A,30 / +30% / 1w,Semiconductor device,control,,2011
+A,30 / +30% / 1w,Wireless sensor network,control,,2004
+A,30 / +30% / 1w,Sequence alignment,control,,
+A,30 / +30% / 1w,Serial port,control,,
+A,30 / +30% / 1w,Server computing,control,,2010
+A,30 / +30% / 1w,Smart card,control,,
+A,30 / +30% / 1w,Software architecture,control,,
+A,30 / +30% / 1w,Software distribution,control,,
+A,30 / +30% / 1w,Operating system,control,,
+A,30 / +30% / 1w,Software Updater,control,,
+A,30 / +30% / 1w,Patch computing,control,,
+A,30 / +30% / 1w,Software versioning,control,,
+A,30 / +30% / 1w,Solar thermal energy,control,,2010
+A,30 / +30% / 1w,Solder paste,control,,
+A,30 / +30% / 1w,Southern blot,control,,
+A,30 / +30% / 1w,Spanning tree,control,,
+A,30 / +30% / 1w,Speech processing,control,,2016
+A,30 / +30% / 1w,Statistical process control,control,,
+A,30 / +30% / 1w,Organizational structure,control,,
+A,30 / +30% / 1w,SQL,control,,
+A,30 / +30% / 1w,M10 tank destroyer,control,,
+A,30 / +30% / 1w,Copper phthalocyanine,control,,
+A,30 / +30% / 1w,Surface plasmon,control,,2005
+A,30 / +30% / 1w,Systems architecture,control,,
+A,30 / +30% / 1w,System resource,control,,
+A,30 / +30% / 1w,Lateral flow test,control,,
+A,30 / +30% / 1w,Thermometer,control,,2005
+A,30 / +30% / 1w,Text editor,control,,
+A,30 / +30% / 1w,Thermography,control,,
+A,30 / +30% / 1w,Realtime polymerase chain reaction,control,,
+A,30 / +30% / 1w,Transaction log,control,,
+A,30 / +30% / 1w,Transmission medium,control,,
+A,30 / +30% / 1w,Transport Layer Security,control,,
+A,30 / +30% / 1w,MPEG transport stream,control,,
+A,30 / +30% / 1w,Intensive care unit,control,,
+A,30 / +30% / 1w,User activity monitoring,control,,2006
+A,30 / +30% / 1w,User interface,control,,2005
+A,30 / +30% / 1w,Enduser development,control,,
+A,30 / +30% / 1w,Sport utility vehicle,control,,2009
 A,30 / +30% / 1w,Automatic vehicle location,control,,
+A,30 / +30% / 1w,Video Graphics Array,control,,
+A,30 / +30% / 1w,Virtual disk and virtual drive,control,,2014
+A,30 / +30% / 1w,Western blot,control,,
+A,30 / +30% / 1w,Fire extinguisher,control,,
+A,30 / +30% / 1w,Windowing system,control,,
+A,30 / +30% / 1w,Wireless LAN,control,,2014
+A,30 / +30% / 1w,Wireless network,control,,2004
+A,30 / +30% / 1w,Word processor,control,,
 A,30 / +30% / 2w,Adenoassociated virus,positive,2014,
+A,30 / +30% / 2w,Artificial neural network,positive,2016,
 A,30 / +30% / 2w,Augmented reality,positive,2012,2011
 A,30 / +30% / 2w,Autonomous system Internet,positive,2012,
+A,30 / +30% / 2w,Selfdriving car,positive,2015,2014
 A,30 / +30% / 2w,Binder material,positive,2011,
+A,30 / +30% / 2w,Tree data structure,positive,2012,
+A,30 / +30% / 2w,PC game,positive,2012,
 A,30 / +30% / 2w,Contact region,positive,2017,
+A,30 / +30% / 2w,Dataspaces,positive,2014,
+A,30 / +30% / 2w,Default effect,positive,2011,
+A,30 / +30% / 2w,Machine learning,positive,2012,2012
+A,30 / +30% / 2w,Notification LED,positive,2014,
+A,30 / +30% / 2w,Pager,positive,2012,
+A,30 / +30% / 2w,Highdensity polyethylene,positive,2011,
+A,30 / +30% / 2w,Power inverter,positive,2014,
+A,30 / +30% / 2w,Push technology,positive,2012,
+A,30 / +30% / 2w,Antireflective coating,positive,2016,
+A,30 / +30% / 2w,Google Search,positive,2011,
+A,30 / +30% / 2w,Harvard architecture,positive,2014,
+A,30 / +30% / 2w,Smartphone,positive,2011,2012
+A,30 / +30% / 2w,SMS,positive,2012,
+A,30 / +30% / 2w,Softwaredefined radio,positive,2013,2014
+A,30 / +30% / 2w,Superoxide dismutase,positive,2018,
+A,30 / +30% / 2w,Touchpad,positive,2011,
 A,30 / +30% / 2w,Chemicalmechanical polishing,control,,
 A,30 / +30% / 2w,Codedivision multiple access,control,,
+A,30 / +30% / 2w,Microsoft Access,control,,
 A,30 / +30% / 2w,Active site,control,,
 A,30 / +30% / 2w,Affinity chromatography,control,,
 A,30 / +30% / 2w,Agarose gel electrophoresis,control,,
+A,30 / +30% / 2w,Metaanalysis,control,,
+A,30 / +30% / 2w,Model organism,control,,
+A,30 / +30% / 2w,Answering machine,control,,
 A,30 / +30% / 2w,Antenna array,control,,2017
+A,30 / +30% / 2w,Distributed antenna system,control,,2010
+A,30 / +30% / 2w,Monoclonal antibody,control,,
+A,30 / +30% / 2w,Singledomain antibody,control,,
+A,30 / +30% / 2w,Data compression,control,,
 A,30 / +30% / 2w,Audio file format,control,,
+A,30 / +30% / 2w,Automatic generation control,control,,
 A,30 / +30% / 2w,Airbag,control,,
 A,30 / +30% / 2w,Baseband,control,,
+A,30 / +30% / 2w,Inheritance objectoriented programming,control,,
+A,30 / +30% / 2w,Linuxpowered device,control,,
+A,30 / +30% / 2w,Visitor Based Network,control,,
 A,30 / +30% / 2w,Componentbased software engineering,control,,
+A,30 / +30% / 2w,Textbased user interface,control,,
 A,30 / +30% / 2w,BIOS,control,,2005
+A,30 / +30% / 2w,Ligand binding assay,control,,
+A,30 / +30% / 2w,Biomolecule,control,,
+A,30 / +30% / 2w,Blister pack,control,,
+A,30 / +30% / 2w,Lightemitting diode,control,,2011
+A,30 / +30% / 2w,Printed circuit board,control,,
+A,30 / +30% / 2w,Emergency Broadcast System,control,,
 A,30 / +30% / 2w,Building automation,control,,
 A,30 / +30% / 2w,Automatic call distributor,control,,
+A,30 / +30% / 2w,Differential scanning calorimetry,control,,
 A,30 / +30% / 2w,Capillary electrophoresis,control,,
+A,30 / +30% / 2w,Chargecoupled device,control,,
 A,30 / +30% / 2w,CDNA library,control,,
+A,30 / +30% / 2w,Immortalised cell line,control,,
+A,30 / +30% / 2w,Cell site,control,,
 A,30 / +30% / 2w,Charge pump,control,,
+A,30 / +30% / 2w,Circulating fluidized bed,control,,
 A,30 / +30% / 2w,Client computing,control,,
+A,30 / +30% / 2w,Soulseek,control,,
 A,30 / +30% / 2w,CMOS,control,,
+A,30 / +30% / 2w,General Packet Radio Service,control,,
 A,30 / +30% / 2w,Common Interface,control,,
+A,30 / +30% / 2w,Serial Peripheral Interface,control,,
+A,30 / +30% / 2w,Nearfield communication,control,,2012
 A,30 / +30% / 2w,Communication protocol,control,,
+A,30 / +30% / 2w,Principal component analysis,control,,
+A,30 / +30% / 2w,Composite data type,control,,
+A,30 / +30% / 2w,Computer network,control,,
 A,30 / +30% / 2w,Computer simulation,control,,
 A,30 / +30% / 2w,Confocal microscopy,control,,
 A,30 / +30% / 2w,Atomic force microscopy,control,,
+A,30 / +30% / 2w,Internet filter,control,,
+A,30 / +30% / 2w,MAC address,control,,
+A,30 / +30% / 2w,Airborne early warning and control,control,,
+A,30 / +30% / 2w,Flight controller,control,,
+A,30 / +30% / 2w,Multicore processor,control,,2007
+A,30 / +30% / 2w,Error correction code,control,,2013
+A,30 / +30% / 2w,Cruise control,control,,
+A,30 / +30% / 2w,Data access object,control,,
+A,30 / +30% / 2w,Data file,control,,
+A,30 / +30% / 2w,Data integrity,control,,
+A,30 / +30% / 2w,Leased line,control,,
+A,30 / +30% / 2w,Data Matrix,control,,
+A,30 / +30% / 2w,Data model,control,,2013
+A,30 / +30% / 2w,Data quality,control,,
+A,30 / +30% / 2w,Data validation,control,,
 A,30 / +30% / 2w,Amazon Relational Database Service,control,,
+A,30 / +30% / 2w,Project delivery method,control,,
+A,30 / +30% / 2w,Sputter deposition,control,,
+A,30 / +30% / 2w,Design structure matrix,control,,2008
+A,30 / +30% / 2w,Supervised learning,control,,
+A,30 / +30% / 2w,Programming tool,control,,
+A,30 / +30% / 2w,Dialog box,control,,
+A,30 / +30% / 2w,Differential signalling,control,,
+A,30 / +30% / 2w,Digital camera,control,,
+A,30 / +30% / 2w,Digital imaging,control,,2005
+A,30 / +30% / 2w,Digital mapping,control,,
+A,30 / +30% / 2w,Digital video,control,,
+A,30 / +30% / 2w,Laser diode,control,,
+A,30 / +30% / 2w,Thermal printing,control,,
+A,30 / +30% / 2w,Sitedirected mutagenesis,control,,
+A,30 / +30% / 2w,Optical disc drive,control,,
+A,30 / +30% / 2w,Discrete time and continuous time,control,,
+A,30 / +30% / 2w,Hard disk drive,control,,
+A,30 / +30% / 2w,Raster graphics,control,,2007
+A,30 / +30% / 2w,Distributed computing,control,,
+A,30 / +30% / 2w,Distributed control system,control,,
+A,30 / +30% / 2w,Timedivision multiplexing,control,,
+A,30 / +30% / 2w,DNA construct,control,,
+A,30 / +30% / 2w,DNA extraction,control,,
+A,30 / +30% / 2w,DNA sequencing,control,,
+A,30 / +30% / 2w,Domain Name System,control,,
+A,30 / +30% / 2w,Document Object Model,control,,
 A,30 / +30% / 2w,2CB,control,,
+A,30 / +30% / 2w,Drug design,control,,
+A,30 / +30% / 2w,Drugeluting stent,control,,
+A,30 / +30% / 2w,Dry etching,control,,
+A,30 / +30% / 2w,Dynamic light scattering,control,,
+A,30 / +30% / 2w,Email,control,,
+A,30 / +30% / 2w,Publickey cryptography,control,,
+A,30 / +30% / 2w,Enzyme assay,control,,
+A,30 / +30% / 2w,Reactiveion etching,control,,
+A,30 / +30% / 2w,Eukaryote,control,,
+A,30 / +30% / 2w,Excimer laser,control,,
+A,30 / +30% / 2w,Sizeexclusion chromatography,control,,
+A,30 / +30% / 2w,Trusted execution environment,control,,2015
+A,30 / +30% / 2w,Expression vector,control,,
+A,30 / +30% / 2w,Gene expression profiling,control,,
+A,30 / +30% / 2w,Facial recognition system,control,,
+A,30 / +30% / 2w,Failure mode and effects analysis,control,,
+A,30 / +30% / 2w,Multifunction printer,control,,
+A,30 / +30% / 2w,File server,control,,
+A,30 / +30% / 2w,NTFS,control,,
+A,30 / +30% / 2w,File system,control,,
+A,30 / +30% / 2w,Thin film,control,,2009
+A,30 / +30% / 2w,Financial instrument,control,,
+A,30 / +30% / 2w,Finite element method,control,,
+A,30 / +30% / 2w,Flow diagram,control,,
+A,30 / +30% / 2w,Fluid dynamics,control,,
 A,30 / +30% / 2w,Accounting software,control,,
+A,30 / +30% / 2w,Gallium nitride,control,,
+A,30 / +30% / 2w,Genetic engineering,control,,2010
+A,30 / +30% / 2w,Satellite navigation device,control,,
+A,30 / +30% / 2w,Growth medium,control,,
+A,30 / +30% / 2w,Hash table,control,,
+A,30 / +30% / 2w,Heatshrink tubing,control,,
+A,30 / +30% / 2w,Wireless ad hoc network,control,,2005
+A,30 / +30% / 2w,Hybrid electric vehicle,control,,2008
+A,30 / +30% / 2w,Windows Image Acquisition,control,,2010
+A,30 / +30% / 2w,Image organizer,control,,
+A,30 / +30% / 2w,Digital image processing,control,,
+A,30 / +30% / 2w,Magnetic resonance imaging,control,,
+A,30 / +30% / 2w,Session Initiation Protocol,control,,2007
+A,30 / +30% / 2w,Input device,control,,
+A,30 / +30% / 2w,Instant messaging,control,,
+A,30 / +30% / 2w,Interprocess communication,control,,
+A,30 / +30% / 2w,Interface control document,control,,
+A,30 / +30% / 2w,Lithiumion battery,control,,2005
+A,30 / +30% / 2w,Ion channel,control,,
+A,30 / +30% / 2w,Purified water,control,,
+A,30 / +30% / 2w,Industry Standard Architecture,control,,
+A,30 / +30% / 2w,Key frame,control,,
 A,30 / +30% / 2w,Computer keyboard,control,,
+A,30 / +30% / 2w,Laptop,control,,
+A,30 / +30% / 2w,LED circuit,control,,2011
+A,30 / +30% / 2w,Highlevel programming language,control,,
 A,30 / +30% / 2w,Commandline interface,control,,
+A,30 / +30% / 2w,Lithium battery,control,,2011
+A,30 / +30% / 2w,Load balancing computing,control,,
+A,30 / +30% / 2w,Logic block,control,,
+A,30 / +30% / 2w,Magnetic stripe card,control,,
+A,30 / +30% / 2w,Mass spectrometry,control,,
+A,30 / +30% / 2w,Estimation theory,control,,
+A,30 / +30% / 2w,Signal processing,control,,
+A,30 / +30% / 2w,Media control symbols,control,,
+A,30 / +30% / 2w,VLC media player,control,,2006
+A,30 / +30% / 2w,Media Player Windows,control,,
+A,30 / +30% / 2w,Mesh networking,control,,2005
+A,30 / +30% / 2w,Microcontroller,control,,
+A,30 / +30% / 2w,Microfluidics,control,,
+A,30 / +30% / 2w,Microsoft Windows,control,,
+A,30 / +30% / 2w,Microwave antenna,control,,
+A,30 / +30% / 2w,Mobile computing,control,,2008
+A,30 / +30% / 2w,Molecular cloning,control,,
+A,30 / +30% / 2w,Molecular dynamics,control,,
+A,30 / +30% / 2w,Molecular marker,control,,
+A,30 / +30% / 2w,Employee monitoring software,control,,
+A,30 / +30% / 2w,Motion analysis,control,,
+A,30 / +30% / 2w,MIMO,control,,2009
 A,30 / +30% / 2w,Compression seal fitting,control,,
+A,30 / +30% / 2w,Policy entrepreneur,control,,
+A,30 / +30% / 2w,Multivariate statistics,control,,
+A,30 / +30% / 2w,Nanoparticle,control,,
+A,30 / +30% / 2w,Networking hardware,control,,
+A,30 / +30% / 2w,Network monitoring,control,,2014
+A,30 / +30% / 2w,Network switch,control,,
+A,30 / +30% / 2w,Social networking service,control,,2008
+A,30 / +30% / 2w,Lownoise amplifier,control,,
+A,30 / +30% / 2w,Noise figure,control,,
+A,30 / +30% / 2w,Northern blot,control,,
 A,30 / +30% / 2w,Class computer programming,control,,
+A,30 / +30% / 2w,Objectoriented programming,control,,
+A,30 / +30% / 2w,Online game,control,,
+A,30 / +30% / 2w,Fiberoptic communication,control,,
+A,30 / +30% / 2w,Optical coating,control,,
+A,30 / +30% / 2w,Holographic optical element,control,,
+A,30 / +30% / 2w,Optical medium,control,,
+A,30 / +30% / 2w,Optical module,control,,2014
+A,30 / +30% / 2w,Passive optical network,control,,
+A,30 / +30% / 2w,Optical proximity correction,control,,
+A,30 / +30% / 2w,Electrooptical sensor,control,,
+A,30 / +30% / 2w,Optical transistor,control,,
+A,30 / +30% / 2w,Output device,control,,
+A,30 / +30% / 2w,Pattern recognition,control,,
+A,30 / +30% / 2w,Payment card,control,,2008
+A,30 / +30% / 2w,Primer molecular biology,control,,
+A,30 / +30% / 2w,Performance appraisal,control,,
+A,30 / +30% / 2w,Personal computer,control,,
+A,30 / +30% / 2w,Phage display,control,,
+A,30 / +30% / 2w,Pharmaceutical formulation,control,,
+A,30 / +30% / 2w,Photovoltaics,control,,2008
+A,30 / +30% / 2w,Surface plasmon resonance,control,,2010
+A,30 / +30% / 2w,Portable media player,control,,2007
+A,30 / +30% / 2w,Powder coating,control,,
+A,30 / +30% / 2w,Power electronics,control,,
+A,30 / +30% / 2w,Power semiconductor device,control,,
+A,30 / +30% / 2w,Power strip,control,,
+A,30 / +30% / 2w,Printing,control,,
+A,30 / +30% / 2w,Mental chronometry,control,,
+A,30 / +30% / 2w,Datadriven programming,control,,
+A,30 / +30% / 2w,Programming language,control,,
+A,30 / +30% / 2w,List of copy protection schemes,control,,
+A,30 / +30% / 2w,Protein complex,control,,
+A,30 / +30% / 2w,Proteinprotein interaction,control,,
+A,30 / +30% / 2w,Internet protocol suite,control,,
+A,30 / +30% / 2w,Pump,control,,
+A,30 / +30% / 2w,Quantum dot,control,,2005
+A,30 / +30% / 2w,Query language,control,,
+A,30 / +30% / 2w,IBM MQ,control,,
+A,30 / +30% / 2w,Rapid prototyping,control,,
 A,30 / +30% / 2w,Consistency model,control,,2006
+A,30 / +30% / 2w,Restriction enzyme,control,,
+A,30 / +30% / 2w,Recombinant antibodies,control,,
+A,30 / +30% / 2w,Recombinant DNA,control,,
+A,30 / +30% / 2w,File inclusion vulnerability,control,,
 A,30 / +30% / 2w,Cgroups,control,,
+A,30 / +30% / 2w,Serverless computing,control,,
+A,30 / +30% / 2w,RNA interference,control,,
+A,30 / +30% / 2w,Routing protocol,control,,
+A,30 / +30% / 2w,Satellite television,control,,
+A,30 / +30% / 2w,Scheduling computing,control,,
+A,30 / +30% / 2w,Scripting language,control,,
+A,30 / +30% / 2w,SDSPAGE,control,,
+A,30 / +30% / 2w,Search algorithm,control,,
+A,30 / +30% / 2w,Web query,control,,2008
+A,30 / +30% / 2w,Semiconductor device,control,,
+A,30 / +30% / 2w,Wireless sensor network,control,,2005
+A,30 / +30% / 2w,Sequence alignment,control,,
+A,30 / +30% / 2w,Serial port,control,,
+A,30 / +30% / 2w,Server computing,control,,
+A,30 / +30% / 2w,Smart card,control,,
+A,30 / +30% / 2w,Software architecture,control,,
+A,30 / +30% / 2w,Software distribution,control,,
+A,30 / +30% / 2w,Operating system,control,,
+A,30 / +30% / 2w,Software Updater,control,,
+A,30 / +30% / 2w,Patch computing,control,,
+A,30 / +30% / 2w,Software versioning,control,,
+A,30 / +30% / 2w,Solar thermal energy,control,,2011
+A,30 / +30% / 2w,Solder paste,control,,
+A,30 / +30% / 2w,Southern blot,control,,
+A,30 / +30% / 2w,Spanning tree,control,,
+A,30 / +30% / 2w,Speech processing,control,,
+A,30 / +30% / 2w,Statistical process control,control,,
+A,30 / +30% / 2w,Organizational structure,control,,
+A,30 / +30% / 2w,SQL,control,,
+A,30 / +30% / 2w,M10 tank destroyer,control,,
+A,30 / +30% / 2w,Copper phthalocyanine,control,,
+A,30 / +30% / 2w,Surface plasmon,control,,2006
+A,30 / +30% / 2w,Systems architecture,control,,
+A,30 / +30% / 2w,System resource,control,,
+A,30 / +30% / 2w,Lateral flow test,control,,
+A,30 / +30% / 2w,Thermometer,control,,
+A,30 / +30% / 2w,Text editor,control,,
+A,30 / +30% / 2w,Thermography,control,,
+A,30 / +30% / 2w,Realtime polymerase chain reaction,control,,
+A,30 / +30% / 2w,Transaction log,control,,
+A,30 / +30% / 2w,Transmission medium,control,,
+A,30 / +30% / 2w,Transport Layer Security,control,,
+A,30 / +30% / 2w,MPEG transport stream,control,,
+A,30 / +30% / 2w,Intensive care unit,control,,
+A,30 / +30% / 2w,User activity monitoring,control,,2013
+A,30 / +30% / 2w,User interface,control,,
+A,30 / +30% / 2w,Enduser development,control,,
+A,30 / +30% / 2w,Sport utility vehicle,control,,2016
 A,30 / +30% / 2w,Automatic vehicle location,control,,
+A,30 / +30% / 2w,Video Graphics Array,control,,
+A,30 / +30% / 2w,Virtual disk and virtual drive,control,,
+A,30 / +30% / 2w,Western blot,control,,
+A,30 / +30% / 2w,Fire extinguisher,control,,
+A,30 / +30% / 2w,Windowing system,control,,
+A,30 / +30% / 2w,Wireless LAN,control,,2015
+A,30 / +30% / 2w,Wireless network,control,,2005
+A,30 / +30% / 2w,Word processor,control,,
 A,30 / +50% / 1w,Adenoassociated virus,positive,2014,
+A,30 / +50% / 1w,Artificial neural network,positive,2016,2017
 A,30 / +50% / 1w,Augmented reality,positive,2012,2010
 A,30 / +50% / 1w,Autonomous system Internet,positive,2012,
+A,30 / +50% / 1w,Selfdriving car,positive,2015,2013
 A,30 / +50% / 1w,Binder material,positive,2011,2012
+A,30 / +50% / 1w,Tree data structure,positive,2012,
+A,30 / +50% / 1w,PC game,positive,2012,
 A,30 / +50% / 1w,Contact region,positive,2017,
+A,30 / +50% / 1w,Dataspaces,positive,2014,
+A,30 / +50% / 1w,Default effect,positive,2011,
+A,30 / +50% / 1w,Machine learning,positive,2012,2008
+A,30 / +50% / 1w,Notification LED,positive,2014,
+A,30 / +50% / 1w,Pager,positive,2012,
+A,30 / +50% / 1w,Highdensity polyethylene,positive,2011,
+A,30 / +50% / 1w,Power inverter,positive,2014,
+A,30 / +50% / 1w,Push technology,positive,2012,
+A,30 / +50% / 1w,Antireflective coating,positive,2016,2017
+A,30 / +50% / 1w,Google Search,positive,2011,
+A,30 / +50% / 1w,Harvard architecture,positive,2014,
+A,30 / +50% / 1w,Smartphone,positive,2011,2011
+A,30 / +50% / 1w,SMS,positive,2012,
+A,30 / +50% / 1w,Softwaredefined radio,positive,2013,2013
+A,30 / +50% / 1w,Superoxide dismutase,positive,2018,
+A,30 / +50% / 1w,Touchpad,positive,2011,
 A,30 / +50% / 1w,Chemicalmechanical polishing,control,,
 A,30 / +50% / 1w,Codedivision multiple access,control,,
+A,30 / +50% / 1w,Microsoft Access,control,,
 A,30 / +50% / 1w,Active site,control,,
 A,30 / +50% / 1w,Affinity chromatography,control,,
 A,30 / +50% / 1w,Agarose gel electrophoresis,control,,
+A,30 / +50% / 1w,Metaanalysis,control,,
+A,30 / +50% / 1w,Model organism,control,,
+A,30 / +50% / 1w,Answering machine,control,,
 A,30 / +50% / 1w,Antenna array,control,,2009
+A,30 / +50% / 1w,Distributed antenna system,control,,2010
+A,30 / +50% / 1w,Monoclonal antibody,control,,
+A,30 / +50% / 1w,Singledomain antibody,control,,
+A,30 / +50% / 1w,Data compression,control,,
 A,30 / +50% / 1w,Audio file format,control,,
+A,30 / +50% / 1w,Automatic generation control,control,,2005
 A,30 / +50% / 1w,Airbag,control,,
 A,30 / +50% / 1w,Baseband,control,,
+A,30 / +50% / 1w,Inheritance objectoriented programming,control,,
+A,30 / +50% / 1w,Linuxpowered device,control,,
+A,30 / +50% / 1w,Visitor Based Network,control,,
 A,30 / +50% / 1w,Componentbased software engineering,control,,
+A,30 / +50% / 1w,Textbased user interface,control,,2008
 A,30 / +50% / 1w,BIOS,control,,2005
+A,30 / +50% / 1w,Ligand binding assay,control,,
+A,30 / +50% / 1w,Biomolecule,control,,
+A,30 / +50% / 1w,Blister pack,control,,
+A,30 / +50% / 1w,Lightemitting diode,control,,2010
+A,30 / +50% / 1w,Printed circuit board,control,,
+A,30 / +50% / 1w,Emergency Broadcast System,control,,
 A,30 / +50% / 1w,Building automation,control,,
 A,30 / +50% / 1w,Automatic call distributor,control,,
+A,30 / +50% / 1w,Differential scanning calorimetry,control,,
 A,30 / +50% / 1w,Capillary electrophoresis,control,,
+A,30 / +50% / 1w,Chargecoupled device,control,,
 A,30 / +50% / 1w,CDNA library,control,,
+A,30 / +50% / 1w,Immortalised cell line,control,,
+A,30 / +50% / 1w,Cell site,control,,
 A,30 / +50% / 1w,Charge pump,control,,
+A,30 / +50% / 1w,Circulating fluidized bed,control,,
 A,30 / +50% / 1w,Client computing,control,,
+A,30 / +50% / 1w,Soulseek,control,,
 A,30 / +50% / 1w,CMOS,control,,2016
+A,30 / +50% / 1w,General Packet Radio Service,control,,
 A,30 / +50% / 1w,Common Interface,control,,
+A,30 / +50% / 1w,Serial Peripheral Interface,control,,
+A,30 / +50% / 1w,Nearfield communication,control,,2011
 A,30 / +50% / 1w,Communication protocol,control,,
+A,30 / +50% / 1w,Principal component analysis,control,,
+A,30 / +50% / 1w,Composite data type,control,,
+A,30 / +50% / 1w,Computer network,control,,
 A,30 / +50% / 1w,Computer simulation,control,,
 A,30 / +50% / 1w,Confocal microscopy,control,,
 A,30 / +50% / 1w,Atomic force microscopy,control,,
+A,30 / +50% / 1w,Internet filter,control,,
+A,30 / +50% / 1w,MAC address,control,,
+A,30 / +50% / 1w,Airborne early warning and control,control,,
+A,30 / +50% / 1w,Flight controller,control,,
+A,30 / +50% / 1w,Multicore processor,control,,2004
+A,30 / +50% / 1w,Error correction code,control,,2013
+A,30 / +50% / 1w,Cruise control,control,,2017
+A,30 / +50% / 1w,Data access object,control,,
+A,30 / +50% / 1w,Data file,control,,2006
+A,30 / +50% / 1w,Data integrity,control,,2014
+A,30 / +50% / 1w,Leased line,control,,
+A,30 / +50% / 1w,Data Matrix,control,,
+A,30 / +50% / 1w,Data model,control,,2005
+A,30 / +50% / 1w,Data quality,control,,2014
+A,30 / +50% / 1w,Data validation,control,,
 A,30 / +50% / 1w,Amazon Relational Database Service,control,,
+A,30 / +50% / 1w,Project delivery method,control,,
+A,30 / +50% / 1w,Sputter deposition,control,,
+A,30 / +50% / 1w,Design structure matrix,control,,2007
+A,30 / +50% / 1w,Supervised learning,control,,
+A,30 / +50% / 1w,Programming tool,control,,
+A,30 / +50% / 1w,Dialog box,control,,
+A,30 / +50% / 1w,Differential signalling,control,,
+A,30 / +50% / 1w,Digital camera,control,,
+A,30 / +50% / 1w,Digital imaging,control,,2005
+A,30 / +50% / 1w,Digital mapping,control,,
+A,30 / +50% / 1w,Digital video,control,,
+A,30 / +50% / 1w,Laser diode,control,,
+A,30 / +50% / 1w,Thermal printing,control,,
+A,30 / +50% / 1w,Sitedirected mutagenesis,control,,
+A,30 / +50% / 1w,Optical disc drive,control,,
+A,30 / +50% / 1w,Discrete time and continuous time,control,,
+A,30 / +50% / 1w,Hard disk drive,control,,
+A,30 / +50% / 1w,Raster graphics,control,,2006
+A,30 / +50% / 1w,Distributed computing,control,,2014
+A,30 / +50% / 1w,Distributed control system,control,,
+A,30 / +50% / 1w,Timedivision multiplexing,control,,
+A,30 / +50% / 1w,DNA construct,control,,
+A,30 / +50% / 1w,DNA extraction,control,,
+A,30 / +50% / 1w,DNA sequencing,control,,
+A,30 / +50% / 1w,Domain Name System,control,,
+A,30 / +50% / 1w,Document Object Model,control,,
 A,30 / +50% / 1w,2CB,control,,
+A,30 / +50% / 1w,Drug design,control,,
+A,30 / +50% / 1w,Drugeluting stent,control,,2011
+A,30 / +50% / 1w,Dry etching,control,,
+A,30 / +50% / 1w,Dynamic light scattering,control,,
+A,30 / +50% / 1w,Email,control,,
+A,30 / +50% / 1w,Publickey cryptography,control,,2017
+A,30 / +50% / 1w,Enzyme assay,control,,
+A,30 / +50% / 1w,Reactiveion etching,control,,
+A,30 / +50% / 1w,Eukaryote,control,,
+A,30 / +50% / 1w,Excimer laser,control,,
+A,30 / +50% / 1w,Sizeexclusion chromatography,control,,
+A,30 / +50% / 1w,Trusted execution environment,control,,2014
+A,30 / +50% / 1w,Expression vector,control,,
+A,30 / +50% / 1w,Gene expression profiling,control,,
+A,30 / +50% / 1w,Facial recognition system,control,,2013
+A,30 / +50% / 1w,Failure mode and effects analysis,control,,
+A,30 / +50% / 1w,Multifunction printer,control,,
+A,30 / +50% / 1w,File server,control,,2017
+A,30 / +50% / 1w,NTFS,control,,
+A,30 / +50% / 1w,File system,control,,2008
+A,30 / +50% / 1w,Thin film,control,,2008
+A,30 / +50% / 1w,Financial instrument,control,,
+A,30 / +50% / 1w,Finite element method,control,,
+A,30 / +50% / 1w,Flow diagram,control,,
+A,30 / +50% / 1w,Fluid dynamics,control,,
 A,30 / +50% / 1w,Accounting software,control,,
+A,30 / +50% / 1w,Gallium nitride,control,,
+A,30 / +50% / 1w,Genetic engineering,control,,2009
+A,30 / +50% / 1w,Satellite navigation device,control,,
+A,30 / +50% / 1w,Growth medium,control,,
+A,30 / +50% / 1w,Hash table,control,,
+A,30 / +50% / 1w,Heatshrink tubing,control,,
+A,30 / +50% / 1w,Wireless ad hoc network,control,,2004
+A,30 / +50% / 1w,Hybrid electric vehicle,control,,2007
+A,30 / +50% / 1w,Windows Image Acquisition,control,,
+A,30 / +50% / 1w,Image organizer,control,,
+A,30 / +50% / 1w,Digital image processing,control,,
+A,30 / +50% / 1w,Magnetic resonance imaging,control,,
+A,30 / +50% / 1w,Session Initiation Protocol,control,,2006
+A,30 / +50% / 1w,Input device,control,,2008
+A,30 / +50% / 1w,Instant messaging,control,,
+A,30 / +50% / 1w,Interprocess communication,control,,
+A,30 / +50% / 1w,Interface control document,control,,
+A,30 / +50% / 1w,Lithiumion battery,control,,2006
+A,30 / +50% / 1w,Ion channel,control,,
+A,30 / +50% / 1w,Purified water,control,,
+A,30 / +50% / 1w,Industry Standard Architecture,control,,
+A,30 / +50% / 1w,Key frame,control,,
 A,30 / +50% / 1w,Computer keyboard,control,,
+A,30 / +50% / 1w,Laptop,control,,
+A,30 / +50% / 1w,LED circuit,control,,2012
+A,30 / +50% / 1w,Highlevel programming language,control,,
 A,30 / +50% / 1w,Commandline interface,control,,
+A,30 / +50% / 1w,Lithium battery,control,,2007
+A,30 / +50% / 1w,Load balancing computing,control,,
+A,30 / +50% / 1w,Logic block,control,,
+A,30 / +50% / 1w,Magnetic stripe card,control,,
+A,30 / +50% / 1w,Mass spectrometry,control,,
+A,30 / +50% / 1w,Estimation theory,control,,
+A,30 / +50% / 1w,Signal processing,control,,
+A,30 / +50% / 1w,Media control symbols,control,,
+A,30 / +50% / 1w,VLC media player,control,,2005
+A,30 / +50% / 1w,Media Player Windows,control,,
+A,30 / +50% / 1w,Mesh networking,control,,2004
+A,30 / +50% / 1w,Microcontroller,control,,
+A,30 / +50% / 1w,Microfluidics,control,,
+A,30 / +50% / 1w,Microsoft Windows,control,,
+A,30 / +50% / 1w,Microwave antenna,control,,
+A,30 / +50% / 1w,Mobile computing,control,,2007
+A,30 / +50% / 1w,Molecular cloning,control,,
+A,30 / +50% / 1w,Molecular dynamics,control,,
+A,30 / +50% / 1w,Molecular marker,control,,
+A,30 / +50% / 1w,Employee monitoring software,control,,
+A,30 / +50% / 1w,Motion analysis,control,,
+A,30 / +50% / 1w,MIMO,control,,2004
 A,30 / +50% / 1w,Compression seal fitting,control,,
+A,30 / +50% / 1w,Policy entrepreneur,control,,
+A,30 / +50% / 1w,Multivariate statistics,control,,
+A,30 / +50% / 1w,Nanoparticle,control,,
+A,30 / +50% / 1w,Networking hardware,control,,
+A,30 / +50% / 1w,Network monitoring,control,,2013
+A,30 / +50% / 1w,Network switch,control,,2011
+A,30 / +50% / 1w,Social networking service,control,,2007
+A,30 / +50% / 1w,Lownoise amplifier,control,,2007
+A,30 / +50% / 1w,Noise figure,control,,
+A,30 / +50% / 1w,Northern blot,control,,
 A,30 / +50% / 1w,Class computer programming,control,,
+A,30 / +50% / 1w,Objectoriented programming,control,,
+A,30 / +50% / 1w,Online game,control,,2011
+A,30 / +50% / 1w,Fiberoptic communication,control,,
+A,30 / +50% / 1w,Optical coating,control,,
+A,30 / +50% / 1w,Holographic optical element,control,,
+A,30 / +50% / 1w,Optical medium,control,,
+A,30 / +50% / 1w,Optical module,control,,2013
+A,30 / +50% / 1w,Passive optical network,control,,
+A,30 / +50% / 1w,Optical proximity correction,control,,2005
+A,30 / +50% / 1w,Electrooptical sensor,control,,
+A,30 / +50% / 1w,Optical transistor,control,,
+A,30 / +50% / 1w,Output device,control,,
+A,30 / +50% / 1w,Pattern recognition,control,,
+A,30 / +50% / 1w,Payment card,control,,2007
+A,30 / +50% / 1w,Primer molecular biology,control,,
+A,30 / +50% / 1w,Performance appraisal,control,,
+A,30 / +50% / 1w,Personal computer,control,,
+A,30 / +50% / 1w,Phage display,control,,
+A,30 / +50% / 1w,Pharmaceutical formulation,control,,
+A,30 / +50% / 1w,Photovoltaics,control,,2007
+A,30 / +50% / 1w,Surface plasmon resonance,control,,2006
+A,30 / +50% / 1w,Portable media player,control,,2006
+A,30 / +50% / 1w,Powder coating,control,,
+A,30 / +50% / 1w,Power electronics,control,,
+A,30 / +50% / 1w,Power semiconductor device,control,,
+A,30 / +50% / 1w,Power strip,control,,
+A,30 / +50% / 1w,Printing,control,,
+A,30 / +50% / 1w,Mental chronometry,control,,
+A,30 / +50% / 1w,Datadriven programming,control,,
+A,30 / +50% / 1w,Programming language,control,,
+A,30 / +50% / 1w,List of copy protection schemes,control,,
+A,30 / +50% / 1w,Protein complex,control,,
+A,30 / +50% / 1w,Proteinprotein interaction,control,,
+A,30 / +50% / 1w,Internet protocol suite,control,,
+A,30 / +50% / 1w,Pump,control,,
+A,30 / +50% / 1w,Quantum dot,control,,2004
+A,30 / +50% / 1w,Query language,control,,
+A,30 / +50% / 1w,IBM MQ,control,,
+A,30 / +50% / 1w,Rapid prototyping,control,,
 A,30 / +50% / 1w,Consistency model,control,,2017
+A,30 / +50% / 1w,Restriction enzyme,control,,
+A,30 / +50% / 1w,Recombinant antibodies,control,,
+A,30 / +50% / 1w,Recombinant DNA,control,,
+A,30 / +50% / 1w,File inclusion vulnerability,control,,
 A,30 / +50% / 1w,Cgroups,control,,
+A,30 / +50% / 1w,Serverless computing,control,,
+A,30 / +50% / 1w,RNA interference,control,,2004
+A,30 / +50% / 1w,Routing protocol,control,,
+A,30 / +50% / 1w,Satellite television,control,,
+A,30 / +50% / 1w,Scheduling computing,control,,
+A,30 / +50% / 1w,Scripting language,control,,
+A,30 / +50% / 1w,SDSPAGE,control,,
+A,30 / +50% / 1w,Search algorithm,control,,
+A,30 / +50% / 1w,Web query,control,,2007
+A,30 / +50% / 1w,Semiconductor device,control,,
+A,30 / +50% / 1w,Wireless sensor network,control,,2004
+A,30 / +50% / 1w,Sequence alignment,control,,
+A,30 / +50% / 1w,Serial port,control,,
+A,30 / +50% / 1w,Server computing,control,,2010
+A,30 / +50% / 1w,Smart card,control,,
+A,30 / +50% / 1w,Software architecture,control,,
+A,30 / +50% / 1w,Software distribution,control,,
+A,30 / +50% / 1w,Operating system,control,,
+A,30 / +50% / 1w,Software Updater,control,,
+A,30 / +50% / 1w,Patch computing,control,,
+A,30 / +50% / 1w,Software versioning,control,,
+A,30 / +50% / 1w,Solar thermal energy,control,,2010
+A,30 / +50% / 1w,Solder paste,control,,
+A,30 / +50% / 1w,Southern blot,control,,
+A,30 / +50% / 1w,Spanning tree,control,,
+A,30 / +50% / 1w,Speech processing,control,,
+A,30 / +50% / 1w,Statistical process control,control,,
+A,30 / +50% / 1w,Organizational structure,control,,
+A,30 / +50% / 1w,SQL,control,,
+A,30 / +50% / 1w,M10 tank destroyer,control,,
+A,30 / +50% / 1w,Copper phthalocyanine,control,,
+A,30 / +50% / 1w,Surface plasmon,control,,2005
+A,30 / +50% / 1w,Systems architecture,control,,
+A,30 / +50% / 1w,System resource,control,,
+A,30 / +50% / 1w,Lateral flow test,control,,
+A,30 / +50% / 1w,Thermometer,control,,
+A,30 / +50% / 1w,Text editor,control,,
+A,30 / +50% / 1w,Thermography,control,,
+A,30 / +50% / 1w,Realtime polymerase chain reaction,control,,
+A,30 / +50% / 1w,Transaction log,control,,
+A,30 / +50% / 1w,Transmission medium,control,,
+A,30 / +50% / 1w,Transport Layer Security,control,,
+A,30 / +50% / 1w,MPEG transport stream,control,,
+A,30 / +50% / 1w,Intensive care unit,control,,
+A,30 / +50% / 1w,User activity monitoring,control,,2006
+A,30 / +50% / 1w,User interface,control,,
+A,30 / +50% / 1w,Enduser development,control,,
+A,30 / +50% / 1w,Sport utility vehicle,control,,2009
 A,30 / +50% / 1w,Automatic vehicle location,control,,
+A,30 / +50% / 1w,Video Graphics Array,control,,
+A,30 / +50% / 1w,Virtual disk and virtual drive,control,,
+A,30 / +50% / 1w,Western blot,control,,
+A,30 / +50% / 1w,Fire extinguisher,control,,
+A,30 / +50% / 1w,Windowing system,control,,
+A,30 / +50% / 1w,Wireless LAN,control,,2014
+A,30 / +50% / 1w,Wireless network,control,,2005
+A,30 / +50% / 1w,Word processor,control,,
 A,30 / +50% / 2w,Adenoassociated virus,positive,2014,
+A,30 / +50% / 2w,Artificial neural network,positive,2016,
 A,30 / +50% / 2w,Augmented reality,positive,2012,2011
 A,30 / +50% / 2w,Autonomous system Internet,positive,2012,
+A,30 / +50% / 2w,Selfdriving car,positive,2015,2014
 A,30 / +50% / 2w,Binder material,positive,2011,
+A,30 / +50% / 2w,Tree data structure,positive,2012,
+A,30 / +50% / 2w,PC game,positive,2012,
 A,30 / +50% / 2w,Contact region,positive,2017,
+A,30 / +50% / 2w,Dataspaces,positive,2014,
+A,30 / +50% / 2w,Default effect,positive,2011,
+A,30 / +50% / 2w,Machine learning,positive,2012,2012
+A,30 / +50% / 2w,Notification LED,positive,2014,
+A,30 / +50% / 2w,Pager,positive,2012,
+A,30 / +50% / 2w,Highdensity polyethylene,positive,2011,
+A,30 / +50% / 2w,Power inverter,positive,2014,
+A,30 / +50% / 2w,Push technology,positive,2012,
+A,30 / +50% / 2w,Antireflective coating,positive,2016,
+A,30 / +50% / 2w,Google Search,positive,2011,
+A,30 / +50% / 2w,Harvard architecture,positive,2014,
+A,30 / +50% / 2w,Smartphone,positive,2011,2012
+A,30 / +50% / 2w,SMS,positive,2012,
+A,30 / +50% / 2w,Softwaredefined radio,positive,2013,2014
+A,30 / +50% / 2w,Superoxide dismutase,positive,2018,
+A,30 / +50% / 2w,Touchpad,positive,2011,
 A,30 / +50% / 2w,Chemicalmechanical polishing,control,,
 A,30 / +50% / 2w,Codedivision multiple access,control,,
+A,30 / +50% / 2w,Microsoft Access,control,,
 A,30 / +50% / 2w,Active site,control,,
 A,30 / +50% / 2w,Affinity chromatography,control,,
 A,30 / +50% / 2w,Agarose gel electrophoresis,control,,
+A,30 / +50% / 2w,Metaanalysis,control,,
+A,30 / +50% / 2w,Model organism,control,,
+A,30 / +50% / 2w,Answering machine,control,,
 A,30 / +50% / 2w,Antenna array,control,,
+A,30 / +50% / 2w,Distributed antenna system,control,,
+A,30 / +50% / 2w,Monoclonal antibody,control,,
+A,30 / +50% / 2w,Singledomain antibody,control,,
+A,30 / +50% / 2w,Data compression,control,,
 A,30 / +50% / 2w,Audio file format,control,,
+A,30 / +50% / 2w,Automatic generation control,control,,
 A,30 / +50% / 2w,Airbag,control,,
 A,30 / +50% / 2w,Baseband,control,,
+A,30 / +50% / 2w,Inheritance objectoriented programming,control,,
+A,30 / +50% / 2w,Linuxpowered device,control,,
+A,30 / +50% / 2w,Visitor Based Network,control,,
 A,30 / +50% / 2w,Componentbased software engineering,control,,
+A,30 / +50% / 2w,Textbased user interface,control,,
 A,30 / +50% / 2w,BIOS,control,,
+A,30 / +50% / 2w,Ligand binding assay,control,,
+A,30 / +50% / 2w,Biomolecule,control,,
+A,30 / +50% / 2w,Blister pack,control,,
+A,30 / +50% / 2w,Lightemitting diode,control,,
+A,30 / +50% / 2w,Printed circuit board,control,,
+A,30 / +50% / 2w,Emergency Broadcast System,control,,
 A,30 / +50% / 2w,Building automation,control,,
 A,30 / +50% / 2w,Automatic call distributor,control,,
+A,30 / +50% / 2w,Differential scanning calorimetry,control,,
 A,30 / +50% / 2w,Capillary electrophoresis,control,,
+A,30 / +50% / 2w,Chargecoupled device,control,,
 A,30 / +50% / 2w,CDNA library,control,,
+A,30 / +50% / 2w,Immortalised cell line,control,,
+A,30 / +50% / 2w,Cell site,control,,
 A,30 / +50% / 2w,Charge pump,control,,
+A,30 / +50% / 2w,Circulating fluidized bed,control,,
 A,30 / +50% / 2w,Client computing,control,,
+A,30 / +50% / 2w,Soulseek,control,,
 A,30 / +50% / 2w,CMOS,control,,
+A,30 / +50% / 2w,General Packet Radio Service,control,,
 A,30 / +50% / 2w,Common Interface,control,,
+A,30 / +50% / 2w,Serial Peripheral Interface,control,,
+A,30 / +50% / 2w,Nearfield communication,control,,2012
 A,30 / +50% / 2w,Communication protocol,control,,
+A,30 / +50% / 2w,Principal component analysis,control,,
+A,30 / +50% / 2w,Composite data type,control,,
+A,30 / +50% / 2w,Computer network,control,,
 A,30 / +50% / 2w,Computer simulation,control,,
 A,30 / +50% / 2w,Confocal microscopy,control,,
 A,30 / +50% / 2w,Atomic force microscopy,control,,
+A,30 / +50% / 2w,Internet filter,control,,
+A,30 / +50% / 2w,MAC address,control,,
+A,30 / +50% / 2w,Airborne early warning and control,control,,
+A,30 / +50% / 2w,Flight controller,control,,
+A,30 / +50% / 2w,Multicore processor,control,,2013
+A,30 / +50% / 2w,Error correction code,control,,
+A,30 / +50% / 2w,Cruise control,control,,
+A,30 / +50% / 2w,Data access object,control,,
+A,30 / +50% / 2w,Data file,control,,
+A,30 / +50% / 2w,Data integrity,control,,
+A,30 / +50% / 2w,Leased line,control,,
+A,30 / +50% / 2w,Data Matrix,control,,
+A,30 / +50% / 2w,Data model,control,,
+A,30 / +50% / 2w,Data quality,control,,
+A,30 / +50% / 2w,Data validation,control,,
 A,30 / +50% / 2w,Amazon Relational Database Service,control,,
+A,30 / +50% / 2w,Project delivery method,control,,
+A,30 / +50% / 2w,Sputter deposition,control,,
+A,30 / +50% / 2w,Design structure matrix,control,,2008
+A,30 / +50% / 2w,Supervised learning,control,,
+A,30 / +50% / 2w,Programming tool,control,,
+A,30 / +50% / 2w,Dialog box,control,,
+A,30 / +50% / 2w,Differential signalling,control,,
+A,30 / +50% / 2w,Digital camera,control,,
+A,30 / +50% / 2w,Digital imaging,control,,
+A,30 / +50% / 2w,Digital mapping,control,,
+A,30 / +50% / 2w,Digital video,control,,
+A,30 / +50% / 2w,Laser diode,control,,
+A,30 / +50% / 2w,Thermal printing,control,,
+A,30 / +50% / 2w,Sitedirected mutagenesis,control,,
+A,30 / +50% / 2w,Optical disc drive,control,,
+A,30 / +50% / 2w,Discrete time and continuous time,control,,
+A,30 / +50% / 2w,Hard disk drive,control,,
+A,30 / +50% / 2w,Raster graphics,control,,
+A,30 / +50% / 2w,Distributed computing,control,,
+A,30 / +50% / 2w,Distributed control system,control,,
+A,30 / +50% / 2w,Timedivision multiplexing,control,,
+A,30 / +50% / 2w,DNA construct,control,,
+A,30 / +50% / 2w,DNA extraction,control,,
+A,30 / +50% / 2w,DNA sequencing,control,,
+A,30 / +50% / 2w,Domain Name System,control,,
+A,30 / +50% / 2w,Document Object Model,control,,
 A,30 / +50% / 2w,2CB,control,,
+A,30 / +50% / 2w,Drug design,control,,
+A,30 / +50% / 2w,Drugeluting stent,control,,
+A,30 / +50% / 2w,Dry etching,control,,
+A,30 / +50% / 2w,Dynamic light scattering,control,,
+A,30 / +50% / 2w,Email,control,,
+A,30 / +50% / 2w,Publickey cryptography,control,,
+A,30 / +50% / 2w,Enzyme assay,control,,
+A,30 / +50% / 2w,Reactiveion etching,control,,
+A,30 / +50% / 2w,Eukaryote,control,,
+A,30 / +50% / 2w,Excimer laser,control,,
+A,30 / +50% / 2w,Sizeexclusion chromatography,control,,
+A,30 / +50% / 2w,Trusted execution environment,control,,
+A,30 / +50% / 2w,Expression vector,control,,
+A,30 / +50% / 2w,Gene expression profiling,control,,
+A,30 / +50% / 2w,Facial recognition system,control,,
+A,30 / +50% / 2w,Failure mode and effects analysis,control,,
+A,30 / +50% / 2w,Multifunction printer,control,,
+A,30 / +50% / 2w,File server,control,,
+A,30 / +50% / 2w,NTFS,control,,
+A,30 / +50% / 2w,File system,control,,
+A,30 / +50% / 2w,Thin film,control,,2009
+A,30 / +50% / 2w,Financial instrument,control,,
+A,30 / +50% / 2w,Finite element method,control,,
+A,30 / +50% / 2w,Flow diagram,control,,
+A,30 / +50% / 2w,Fluid dynamics,control,,
 A,30 / +50% / 2w,Accounting software,control,,
+A,30 / +50% / 2w,Gallium nitride,control,,
+A,30 / +50% / 2w,Genetic engineering,control,,
+A,30 / +50% / 2w,Satellite navigation device,control,,
+A,30 / +50% / 2w,Growth medium,control,,
+A,30 / +50% / 2w,Hash table,control,,
+A,30 / +50% / 2w,Heatshrink tubing,control,,
+A,30 / +50% / 2w,Wireless ad hoc network,control,,2005
+A,30 / +50% / 2w,Hybrid electric vehicle,control,,
+A,30 / +50% / 2w,Windows Image Acquisition,control,,
+A,30 / +50% / 2w,Image organizer,control,,
+A,30 / +50% / 2w,Digital image processing,control,,
+A,30 / +50% / 2w,Magnetic resonance imaging,control,,
+A,30 / +50% / 2w,Session Initiation Protocol,control,,
+A,30 / +50% / 2w,Input device,control,,
+A,30 / +50% / 2w,Instant messaging,control,,
+A,30 / +50% / 2w,Interprocess communication,control,,
+A,30 / +50% / 2w,Interface control document,control,,
+A,30 / +50% / 2w,Lithiumion battery,control,,2010
+A,30 / +50% / 2w,Ion channel,control,,
+A,30 / +50% / 2w,Purified water,control,,
+A,30 / +50% / 2w,Industry Standard Architecture,control,,
+A,30 / +50% / 2w,Key frame,control,,
 A,30 / +50% / 2w,Computer keyboard,control,,
+A,30 / +50% / 2w,Laptop,control,,
+A,30 / +50% / 2w,LED circuit,control,,2013
+A,30 / +50% / 2w,Highlevel programming language,control,,
 A,30 / +50% / 2w,Commandline interface,control,,
+A,30 / +50% / 2w,Lithium battery,control,,
+A,30 / +50% / 2w,Load balancing computing,control,,
+A,30 / +50% / 2w,Logic block,control,,
+A,30 / +50% / 2w,Magnetic stripe card,control,,
+A,30 / +50% / 2w,Mass spectrometry,control,,
+A,30 / +50% / 2w,Estimation theory,control,,
+A,30 / +50% / 2w,Signal processing,control,,
+A,30 / +50% / 2w,Media control symbols,control,,
+A,30 / +50% / 2w,VLC media player,control,,2006
+A,30 / +50% / 2w,Media Player Windows,control,,
+A,30 / +50% / 2w,Mesh networking,control,,2005
+A,30 / +50% / 2w,Microcontroller,control,,
+A,30 / +50% / 2w,Microfluidics,control,,
+A,30 / +50% / 2w,Microsoft Windows,control,,
+A,30 / +50% / 2w,Microwave antenna,control,,
+A,30 / +50% / 2w,Mobile computing,control,,2008
+A,30 / +50% / 2w,Molecular cloning,control,,
+A,30 / +50% / 2w,Molecular dynamics,control,,
+A,30 / +50% / 2w,Molecular marker,control,,
+A,30 / +50% / 2w,Employee monitoring software,control,,
+A,30 / +50% / 2w,Motion analysis,control,,
+A,30 / +50% / 2w,MIMO,control,,
 A,30 / +50% / 2w,Compression seal fitting,control,,
+A,30 / +50% / 2w,Policy entrepreneur,control,,
+A,30 / +50% / 2w,Multivariate statistics,control,,
+A,30 / +50% / 2w,Nanoparticle,control,,
+A,30 / +50% / 2w,Networking hardware,control,,
+A,30 / +50% / 2w,Network monitoring,control,,
+A,30 / +50% / 2w,Network switch,control,,
+A,30 / +50% / 2w,Social networking service,control,,2008
+A,30 / +50% / 2w,Lownoise amplifier,control,,
+A,30 / +50% / 2w,Noise figure,control,,
+A,30 / +50% / 2w,Northern blot,control,,
 A,30 / +50% / 2w,Class computer programming,control,,
+A,30 / +50% / 2w,Objectoriented programming,control,,
+A,30 / +50% / 2w,Online game,control,,
+A,30 / +50% / 2w,Fiberoptic communication,control,,
+A,30 / +50% / 2w,Optical coating,control,,
+A,30 / +50% / 2w,Holographic optical element,control,,
+A,30 / +50% / 2w,Optical medium,control,,
+A,30 / +50% / 2w,Optical module,control,,
+A,30 / +50% / 2w,Passive optical network,control,,
+A,30 / +50% / 2w,Optical proximity correction,control,,
+A,30 / +50% / 2w,Electrooptical sensor,control,,
+A,30 / +50% / 2w,Optical transistor,control,,
+A,30 / +50% / 2w,Output device,control,,
+A,30 / +50% / 2w,Pattern recognition,control,,
+A,30 / +50% / 2w,Payment card,control,,2008
+A,30 / +50% / 2w,Primer molecular biology,control,,
+A,30 / +50% / 2w,Performance appraisal,control,,
+A,30 / +50% / 2w,Personal computer,control,,
+A,30 / +50% / 2w,Phage display,control,,
+A,30 / +50% / 2w,Pharmaceutical formulation,control,,
+A,30 / +50% / 2w,Photovoltaics,control,,2008
+A,30 / +50% / 2w,Surface plasmon resonance,control,,
+A,30 / +50% / 2w,Portable media player,control,,
+A,30 / +50% / 2w,Powder coating,control,,
+A,30 / +50% / 2w,Power electronics,control,,
+A,30 / +50% / 2w,Power semiconductor device,control,,
+A,30 / +50% / 2w,Power strip,control,,
+A,30 / +50% / 2w,Printing,control,,
+A,30 / +50% / 2w,Mental chronometry,control,,
+A,30 / +50% / 2w,Datadriven programming,control,,
+A,30 / +50% / 2w,Programming language,control,,
+A,30 / +50% / 2w,List of copy protection schemes,control,,
+A,30 / +50% / 2w,Protein complex,control,,
+A,30 / +50% / 2w,Proteinprotein interaction,control,,
+A,30 / +50% / 2w,Internet protocol suite,control,,
+A,30 / +50% / 2w,Pump,control,,
+A,30 / +50% / 2w,Quantum dot,control,,2005
+A,30 / +50% / 2w,Query language,control,,
+A,30 / +50% / 2w,IBM MQ,control,,
+A,30 / +50% / 2w,Rapid prototyping,control,,
 A,30 / +50% / 2w,Consistency model,control,,
+A,30 / +50% / 2w,Restriction enzyme,control,,
+A,30 / +50% / 2w,Recombinant antibodies,control,,
+A,30 / +50% / 2w,Recombinant DNA,control,,
+A,30 / +50% / 2w,File inclusion vulnerability,control,,
 A,30 / +50% / 2w,Cgroups,control,,
+A,30 / +50% / 2w,Serverless computing,control,,
+A,30 / +50% / 2w,RNA interference,control,,
+A,30 / +50% / 2w,Routing protocol,control,,
+A,30 / +50% / 2w,Satellite television,control,,
+A,30 / +50% / 2w,Scheduling computing,control,,
+A,30 / +50% / 2w,Scripting language,control,,
+A,30 / +50% / 2w,SDSPAGE,control,,
+A,30 / +50% / 2w,Search algorithm,control,,
+A,30 / +50% / 2w,Web query,control,,2008
+A,30 / +50% / 2w,Semiconductor device,control,,
+A,30 / +50% / 2w,Wireless sensor network,control,,
+A,30 / +50% / 2w,Sequence alignment,control,,
+A,30 / +50% / 2w,Serial port,control,,
+A,30 / +50% / 2w,Server computing,control,,
+A,30 / +50% / 2w,Smart card,control,,
+A,30 / +50% / 2w,Software architecture,control,,
+A,30 / +50% / 2w,Software distribution,control,,
+A,30 / +50% / 2w,Operating system,control,,
+A,30 / +50% / 2w,Software Updater,control,,
+A,30 / +50% / 2w,Patch computing,control,,
+A,30 / +50% / 2w,Software versioning,control,,
+A,30 / +50% / 2w,Solar thermal energy,control,,2011
+A,30 / +50% / 2w,Solder paste,control,,
+A,30 / +50% / 2w,Southern blot,control,,
+A,30 / +50% / 2w,Spanning tree,control,,
+A,30 / +50% / 2w,Speech processing,control,,
+A,30 / +50% / 2w,Statistical process control,control,,
+A,30 / +50% / 2w,Organizational structure,control,,
+A,30 / +50% / 2w,SQL,control,,
+A,30 / +50% / 2w,M10 tank destroyer,control,,
+A,30 / +50% / 2w,Copper phthalocyanine,control,,
+A,30 / +50% / 2w,Surface plasmon,control,,
+A,30 / +50% / 2w,Systems architecture,control,,
+A,30 / +50% / 2w,System resource,control,,
+A,30 / +50% / 2w,Lateral flow test,control,,
+A,30 / +50% / 2w,Thermometer,control,,
+A,30 / +50% / 2w,Text editor,control,,
+A,30 / +50% / 2w,Thermography,control,,
+A,30 / +50% / 2w,Realtime polymerase chain reaction,control,,
+A,30 / +50% / 2w,Transaction log,control,,
+A,30 / +50% / 2w,Transmission medium,control,,
+A,30 / +50% / 2w,Transport Layer Security,control,,
+A,30 / +50% / 2w,MPEG transport stream,control,,
+A,30 / +50% / 2w,Intensive care unit,control,,
+A,30 / +50% / 2w,User activity monitoring,control,,2013
+A,30 / +50% / 2w,User interface,control,,
+A,30 / +50% / 2w,Enduser development,control,,
+A,30 / +50% / 2w,Sport utility vehicle,control,,
 A,30 / +50% / 2w,Automatic vehicle location,control,,
+A,30 / +50% / 2w,Video Graphics Array,control,,
+A,30 / +50% / 2w,Virtual disk and virtual drive,control,,
+A,30 / +50% / 2w,Western blot,control,,
+A,30 / +50% / 2w,Fire extinguisher,control,,
+A,30 / +50% / 2w,Windowing system,control,,
+A,30 / +50% / 2w,Wireless LAN,control,,2015
+A,30 / +50% / 2w,Wireless network,control,,
+A,30 / +50% / 2w,Word processor,control,,
 C,10 / +30% / 1w,Adenoassociated virus,positive,2005,2015
 C,10 / +30% / 1w,Cloud computing,positive,2011,2006
+C,10 / +30% / 1w,Data file,positive,2009,2005
+C,10 / +30% / 1w,Design structure matrix,positive,2003,2007
+C,10 / +30% / 1w,Machine learning,positive,2015,2005
+C,10 / +30% / 1w,MIMO,positive,2008,2004
+C,10 / +30% / 1w,Motion capture,positive,2007,2005
+C,10 / +30% / 1w,Normalization statistics,positive,2005,
+C,10 / +30% / 1w,Search algorithm,positive,2003,2005
+C,10 / +30% / 1w,Smartphone,positive,2008,2010
+C,10 / +30% / 1w,Social networking service,positive,2008,2006
+C,10 / +30% / 1w,Solar panel,positive,2007,2006
+C,10 / +30% / 1w,Transaction account,positive,2007,
 C,10 / +30% / 1w,Augmented reality,positive,2013,2006
+C,10 / +30% / 1w,Information privacy,positive,2008,2004
+C,10 / +30% / 1w,LED lamp,positive,2009,
+C,10 / +30% / 1w,Media Player Windows,positive,2003,2006
+C,10 / +30% / 1w,Multicore processor,positive,2005,2004
+C,10 / +30% / 1w,Nanoparticle,positive,2005,2004
+C,10 / +30% / 1w,Payment card,positive,2007,2007
+C,10 / +30% / 1w,Peripheral blood mononuclear cell,positive,2010,
+C,10 / +30% / 1w,Portable media player,positive,2004,2005
+C,10 / +30% / 1w,RNA interference,positive,2004,2004
+C,10 / +30% / 1w,Softwaredefined radio,positive,2003,2005
+C,10 / +30% / 1w,Solar thermal energy,positive,2009,2007
+C,10 / +30% / 1w,Tablet computer,positive,2010,2011
 C,10 / +30% / 2w,Adenoassociated virus,positive,2005,2016
 C,10 / +30% / 2w,Cloud computing,positive,2011,2009
+C,10 / +30% / 2w,Data file,positive,2009,2006
+C,10 / +30% / 2w,Design structure matrix,positive,2003,2008
+C,10 / +30% / 2w,Machine learning,positive,2015,2006
+C,10 / +30% / 2w,MIMO,positive,2008,2009
+C,10 / +30% / 2w,Motion capture,positive,2007,2011
+C,10 / +30% / 2w,Normalization statistics,positive,2005,
+C,10 / +30% / 2w,Search algorithm,positive,2003,
+C,10 / +30% / 2w,Smartphone,positive,2008,2011
+C,10 / +30% / 2w,Social networking service,positive,2008,2007
+C,10 / +30% / 2w,Solar panel,positive,2007,2007
+C,10 / +30% / 2w,Transaction account,positive,2007,
 C,10 / +30% / 2w,Augmented reality,positive,2013,2007
+C,10 / +30% / 2w,Information privacy,positive,2008,
+C,10 / +30% / 2w,LED lamp,positive,2009,
+C,10 / +30% / 2w,Media Player Windows,positive,2003,2014
+C,10 / +30% / 2w,Multicore processor,positive,2005,2005
+C,10 / +30% / 2w,Nanoparticle,positive,2005,2005
+C,10 / +30% / 2w,Payment card,positive,2007,2008
+C,10 / +30% / 2w,Peripheral blood mononuclear cell,positive,2010,
+C,10 / +30% / 2w,Portable media player,positive,2004,2006
+C,10 / +30% / 2w,RNA interference,positive,2004,
+C,10 / +30% / 2w,Softwaredefined radio,positive,2003,2006
+C,10 / +30% / 2w,Solar thermal energy,positive,2009,2008
+C,10 / +30% / 2w,Tablet computer,positive,2010,2012
 C,10 / +50% / 1w,Adenoassociated virus,positive,2005,2015
 C,10 / +50% / 1w,Cloud computing,positive,2011,2006
+C,10 / +50% / 1w,Data file,positive,2009,2006
+C,10 / +50% / 1w,Design structure matrix,positive,2003,2007
+C,10 / +50% / 1w,Machine learning,positive,2015,2005
+C,10 / +50% / 1w,MIMO,positive,2008,2004
+C,10 / +50% / 1w,Motion capture,positive,2007,2005
+C,10 / +50% / 1w,Normalization statistics,positive,2005,
+C,10 / +50% / 1w,Search algorithm,positive,2003,2005
+C,10 / +50% / 1w,Smartphone,positive,2008,2010
+C,10 / +50% / 1w,Social networking service,positive,2008,2006
+C,10 / +50% / 1w,Solar panel,positive,2007,2006
+C,10 / +50% / 1w,Transaction account,positive,2007,
 C,10 / +50% / 1w,Augmented reality,positive,2013,2007
+C,10 / +50% / 1w,Information privacy,positive,2008,2004
+C,10 / +50% / 1w,LED lamp,positive,2009,
+C,10 / +50% / 1w,Media Player Windows,positive,2003,2006
+C,10 / +50% / 1w,Multicore processor,positive,2005,2004
+C,10 / +50% / 1w,Nanoparticle,positive,2005,2004
+C,10 / +50% / 1w,Payment card,positive,2007,2007
+C,10 / +50% / 1w,Peripheral blood mononuclear cell,positive,2010,
+C,10 / +50% / 1w,Portable media player,positive,2004,2005
+C,10 / +50% / 1w,RNA interference,positive,2004,2004
+C,10 / +50% / 1w,Softwaredefined radio,positive,2003,2005
+C,10 / +50% / 1w,Solar thermal energy,positive,2009,2007
+C,10 / +50% / 1w,Tablet computer,positive,2010,2011
 C,10 / +50% / 2w,Adenoassociated virus,positive,2005,2016
 C,10 / +50% / 2w,Cloud computing,positive,2011,2009
+C,10 / +50% / 2w,Data file,positive,2009,
+C,10 / +50% / 2w,Design structure matrix,positive,2003,2008
+C,10 / +50% / 2w,Machine learning,positive,2015,2006
+C,10 / +50% / 2w,MIMO,positive,2008,
+C,10 / +50% / 2w,Motion capture,positive,2007,2011
+C,10 / +50% / 2w,Normalization statistics,positive,2005,
+C,10 / +50% / 2w,Search algorithm,positive,2003,
+C,10 / +50% / 2w,Smartphone,positive,2008,2011
+C,10 / +50% / 2w,Social networking service,positive,2008,2007
+C,10 / +50% / 2w,Solar panel,positive,2007,2007
+C,10 / +50% / 2w,Transaction account,positive,2007,
 C,10 / +50% / 2w,Augmented reality,positive,2013,2011
+C,10 / +50% / 2w,Information privacy,positive,2008,
+C,10 / +50% / 2w,LED lamp,positive,2009,
+C,10 / +50% / 2w,Media Player Windows,positive,2003,
+C,10 / +50% / 2w,Multicore processor,positive,2005,2005
+C,10 / +50% / 2w,Nanoparticle,positive,2005,
+C,10 / +50% / 2w,Payment card,positive,2007,2008
+C,10 / +50% / 2w,Peripheral blood mononuclear cell,positive,2010,
+C,10 / +50% / 2w,Portable media player,positive,2004,2006
+C,10 / +50% / 2w,RNA interference,positive,2004,
+C,10 / +50% / 2w,Softwaredefined radio,positive,2003,2006
+C,10 / +50% / 2w,Solar thermal energy,positive,2009,2008
+C,10 / +50% / 2w,Tablet computer,positive,2010,2012
 C,30 / +30% / 1w,Adenoassociated virus,positive,2005,
 C,30 / +30% / 1w,Cloud computing,positive,2011,2008
+C,30 / +30% / 1w,Data file,positive,2009,2006
+C,30 / +30% / 1w,Design structure matrix,positive,2003,2007
+C,30 / +30% / 1w,Machine learning,positive,2015,2008
+C,30 / +30% / 1w,MIMO,positive,2008,2004
+C,30 / +30% / 1w,Motion capture,positive,2007,2010
+C,30 / +30% / 1w,Normalization statistics,positive,2005,
+C,30 / +30% / 1w,Search algorithm,positive,2003,
+C,30 / +30% / 1w,Smartphone,positive,2008,2011
+C,30 / +30% / 1w,Social networking service,positive,2008,2007
+C,30 / +30% / 1w,Solar panel,positive,2007,2009
+C,30 / +30% / 1w,Transaction account,positive,2007,
 C,30 / +30% / 1w,Augmented reality,positive,2013,2010
+C,30 / +30% / 1w,Information privacy,positive,2008,2004
+C,30 / +30% / 1w,LED lamp,positive,2009,
+C,30 / +30% / 1w,Media Player Windows,positive,2003,
+C,30 / +30% / 1w,Multicore processor,positive,2005,2004
+C,30 / +30% / 1w,Nanoparticle,positive,2005,
+C,30 / +30% / 1w,Payment card,positive,2007,2007
+C,30 / +30% / 1w,Peripheral blood mononuclear cell,positive,2010,
+C,30 / +30% / 1w,Portable media player,positive,2004,2006
+C,30 / +30% / 1w,RNA interference,positive,2004,2004
+C,30 / +30% / 1w,Softwaredefined radio,positive,2003,2013
+C,30 / +30% / 1w,Solar thermal energy,positive,2009,2010
+C,30 / +30% / 1w,Tablet computer,positive,2010,2011
 C,30 / +30% / 2w,Adenoassociated virus,positive,2005,
 C,30 / +30% / 2w,Cloud computing,positive,2011,2009
+C,30 / +30% / 2w,Data file,positive,2009,
+C,30 / +30% / 2w,Design structure matrix,positive,2003,2008
+C,30 / +30% / 2w,Machine learning,positive,2015,2012
+C,30 / +30% / 2w,MIMO,positive,2008,2009
+C,30 / +30% / 2w,Motion capture,positive,2007,2011
+C,30 / +30% / 2w,Normalization statistics,positive,2005,
+C,30 / +30% / 2w,Search algorithm,positive,2003,
+C,30 / +30% / 2w,Smartphone,positive,2008,2012
+C,30 / +30% / 2w,Social networking service,positive,2008,2008
+C,30 / +30% / 2w,Solar panel,positive,2007,2010
+C,30 / +30% / 2w,Transaction account,positive,2007,
 C,30 / +30% / 2w,Augmented reality,positive,2013,2011
+C,30 / +30% / 2w,Information privacy,positive,2008,
+C,30 / +30% / 2w,LED lamp,positive,2009,
+C,30 / +30% / 2w,Media Player Windows,positive,2003,
+C,30 / +30% / 2w,Multicore processor,positive,2005,2007
+C,30 / +30% / 2w,Nanoparticle,positive,2005,
+C,30 / +30% / 2w,Payment card,positive,2007,2008
+C,30 / +30% / 2w,Peripheral blood mononuclear cell,positive,2010,
+C,30 / +30% / 2w,Portable media player,positive,2004,2007
+C,30 / +30% / 2w,RNA interference,positive,2004,
+C,30 / +30% / 2w,Softwaredefined radio,positive,2003,2014
+C,30 / +30% / 2w,Solar thermal energy,positive,2009,2011
+C,30 / +30% / 2w,Tablet computer,positive,2010,2012
 C,30 / +50% / 1w,Adenoassociated virus,positive,2005,
 C,30 / +50% / 1w,Cloud computing,positive,2011,2008
+C,30 / +50% / 1w,Data file,positive,2009,2006
+C,30 / +50% / 1w,Design structure matrix,positive,2003,2007
+C,30 / +50% / 1w,Machine learning,positive,2015,2008
+C,30 / +50% / 1w,MIMO,positive,2008,2004
+C,30 / +50% / 1w,Motion capture,positive,2007,2010
+C,30 / +50% / 1w,Normalization statistics,positive,2005,
+C,30 / +50% / 1w,Search algorithm,positive,2003,
+C,30 / +50% / 1w,Smartphone,positive,2008,2011
+C,30 / +50% / 1w,Social networking service,positive,2008,2007
+C,30 / +50% / 1w,Solar panel,positive,2007,2009
+C,30 / +50% / 1w,Transaction account,positive,2007,
 C,30 / +50% / 1w,Augmented reality,positive,2013,2010
+C,30 / +50% / 1w,Information privacy,positive,2008,2004
+C,30 / +50% / 1w,LED lamp,positive,2009,
+C,30 / +50% / 1w,Media Player Windows,positive,2003,
+C,30 / +50% / 1w,Multicore processor,positive,2005,2004
+C,30 / +50% / 1w,Nanoparticle,positive,2005,
+C,30 / +50% / 1w,Payment card,positive,2007,2007
+C,30 / +50% / 1w,Peripheral blood mononuclear cell,positive,2010,
+C,30 / +50% / 1w,Portable media player,positive,2004,2006
+C,30 / +50% / 1w,RNA interference,positive,2004,2004
+C,30 / +50% / 1w,Softwaredefined radio,positive,2003,2013
+C,30 / +50% / 1w,Solar thermal energy,positive,2009,2010
+C,30 / +50% / 1w,Tablet computer,positive,2010,2011
 C,30 / +50% / 2w,Adenoassociated virus,positive,2005,
 C,30 / +50% / 2w,Cloud computing,positive,2011,2009
+C,30 / +50% / 2w,Data file,positive,2009,
+C,30 / +50% / 2w,Design structure matrix,positive,2003,2008
+C,30 / +50% / 2w,Machine learning,positive,2015,2012
+C,30 / +50% / 2w,MIMO,positive,2008,
+C,30 / +50% / 2w,Motion capture,positive,2007,2011
+C,30 / +50% / 2w,Normalization statistics,positive,2005,
+C,30 / +50% / 2w,Search algorithm,positive,2003,
+C,30 / +50% / 2w,Smartphone,positive,2008,2012
+C,30 / +50% / 2w,Social networking service,positive,2008,2008
+C,30 / +50% / 2w,Solar panel,positive,2007,2010
+C,30 / +50% / 2w,Transaction account,positive,2007,
 C,30 / +50% / 2w,Augmented reality,positive,2013,2011
+C,30 / +50% / 2w,Information privacy,positive,2008,
+C,30 / +50% / 2w,LED lamp,positive,2009,
+C,30 / +50% / 2w,Media Player Windows,positive,2003,
+C,30 / +50% / 2w,Multicore processor,positive,2005,2013
+C,30 / +50% / 2w,Nanoparticle,positive,2005,
+C,30 / +50% / 2w,Payment card,positive,2007,2008
+C,30 / +50% / 2w,Peripheral blood mononuclear cell,positive,2010,
+C,30 / +50% / 2w,Portable media player,positive,2004,
+C,30 / +50% / 2w,RNA interference,positive,2004,
+C,30 / +50% / 2w,Softwaredefined radio,positive,2003,2014
+C,30 / +50% / 2w,Solar thermal energy,positive,2009,2011
+C,30 / +50% / 2w,Tablet computer,positive,2010,2012
+D,10 / +30% / 1w,Antenna diversity,T1_2009,,2004
+D,10 / +30% / 1w,Autonomous system Internet,T1_2009,,2005
+D,10 / +30% / 1w,Betalactamase,T1_2009,,2008
+D,10 / +30% / 1w,Bone morphogenetic protein,T1_2009,,2007
+D,10 / +30% / 1w,Cgroups,T1_2009,,2004
+D,10 / +30% / 1w,Child safety seat,T1_2009,,2008
+D,10 / +30% / 1w,Confocal microscopy,T1_2009,,2004
+D,10 / +30% / 1w,Contentaddressable memory,T1_2009,,2009
+D,10 / +30% / 1w,Cyclic olefin copolymer,T1_2009,,2004
+D,10 / +30% / 1w,Discrete time and continuous time,T1_2009,,2008
+D,10 / +30% / 1w,Fibroblast growth factor,T1_2009,,2004
+D,10 / +30% / 1w,Frequencyhopping spread spectrum,T1_2009,,2008
+D,10 / +30% / 1w,Glycolic acid,T1_2009,,2009
+D,10 / +30% / 1w,Haptic technology,T1_2009,,2004
+D,10 / +30% / 1w,Hash function,T1_2009,,2008
+D,10 / +30% / 1w,Huffman coding,T1_2009,,2005
+D,10 / +30% / 1w,IC,T1_2009,,2006
+D,10 / +30% / 1w,Interprocess communication,T1_2009,,2006
+D,10 / +30% / 1w,Ion mobility spectrometry,T1_2009,,2004
+D,10 / +30% / 1w,Isolation valve,T1_2009,,2008
+D,10 / +30% / 1w,Language model,T1_2009,,2005
+D,10 / +30% / 1w,Light tube,T1_2009,,2005
+D,10 / +30% / 1w,Microcontroller,T1_2009,,2007
+D,10 / +30% / 1w,Microwave antenna,T1_2009,,2006
+D,10 / +30% / 1w,Mode locking,T1_2009,,2005
+D,10 / +30% / 1w,Nucleic acid hybridization,T1_2009,,2004
+D,10 / +30% / 1w,OctoPrint,T1_2009,,2004
+D,10 / +30% / 1w,Optical coherence tomography,T1_2009,,2005
+D,10 / +30% / 1w,Polycrystalline silicon,T1_2009,,2004
+D,10 / +30% / 1w,Printer driver,T1_2009,,2005
+D,10 / +30% / 1w,Release liner,T1_2009,,2005
+D,10 / +30% / 1w,Search algorithm,T1_2009,reach30,2005
+D,10 / +30% / 1w,Selfdriving car,T1_2009,,2008
+D,10 / +30% / 1w,Shapememory alloy,T1_2009,,2008
+D,10 / +30% / 1w,Singlelayer materials,T1_2009,,2004
+D,10 / +30% / 1w,Spatial light modulator,T1_2009,,2004
+D,10 / +30% / 1w,Speech synthesis,T1_2009,,2005
+D,10 / +30% / 1w,Stereoscopy,T1_2009,,2005
+D,10 / +30% / 1w,Stream processing,T1_2009,,2005
+D,10 / +30% / 1w,Supportvector machine,T1_2009,,2005
+D,10 / +30% / 1w,Surfaceenhanced Raman spectroscopy,T1_2009,,2004
+D,10 / +30% / 1w,Titanium nitride,T1_2009,,2005
+D,10 / +30% / 1w,Toner cartridge,T1_2009,,2007
+D,10 / +30% / 1w,Transfer switch,T1_2009,,2007
+D,10 / +30% / 1w,USB flash drive,T1_2009,,2007
+D,10 / +30% / 1w,Virtual disk and virtual drive,T1_2009,,2007
+D,10 / +30% / 1w,Yawrate sensor,T1_2009,,2004
+D,10 / +30% / 1w,Zinc finger,T1_2009,,2006
+D,10 / +30% / 1w,Analogtodigital converter,T1_2009,,2009
+D,10 / +30% / 1w,Anomaly detection,T1_2009,,2004
+D,10 / +30% / 1w,Antenna radio,T1_2009,,2007
+D,10 / +30% / 1w,Augmented reality,T1_2009,reach30,2006
+D,10 / +30% / 1w,Boronic acid,T1_2009,,2008
+D,10 / +30% / 1w,Charge trap flash,T1_2009,,2004
+D,10 / +30% / 1w,Computer mouse,T1_2009,,2005
+D,10 / +30% / 1w,Consistency model,T1_2009,,2005
+D,10 / +30% / 1w,Coreshell semiconductor nanocrystal,T1_2009,,2004
+D,10 / +30% / 1w,Dry etching,T1_2009,,2009
+D,10 / +30% / 1w,Electronic paper,T1_2009,,2006
+D,10 / +30% / 1w,Energy harvesting,T1_2009,,2006
+D,10 / +30% / 1w,Ferroelectricity,T1_2009,,2005
+D,10 / +30% / 1w,Fingerprint,T1_2009,,2004
+D,10 / +30% / 1w,Fluid dynamics,T1_2009,,2004
+D,10 / +30% / 1w,Hash table,T1_2009,,2005
+D,10 / +30% / 1w,Homologous recombination,T1_2009,,2004
+D,10 / +30% / 1w,Hydroxamic acid,T1_2009,,2007
+D,10 / +30% / 1w,Internet Control Message Protocol,T1_2009,,2005
+D,10 / +30% / 1w,Ionic liquid,T1_2009,,2004
+D,10 / +30% / 1w,Logic block,T1_2009,,2005
+D,10 / +30% / 1w,Lowdensity paritycheck code,T1_2009,,2004
+D,10 / +30% / 1w,MAC address,T1_2009,,2004
+D,10 / +30% / 1w,Message authentication code,T1_2009,,2005
+D,10 / +30% / 1w,Metal matrix composite,T1_2009,,2007
+D,10 / +30% / 1w,Microcrystalline cellulose,T1_2009,,2005
+D,10 / +30% / 1w,Mitogenactivated protein kinase,T1_2009,,2004
+D,10 / +30% / 1w,Mobile IP,T1_2009,,2004
+D,10 / +30% / 1w,Motion compensation,T1_2009,,2005
+D,10 / +30% / 1w,MPEG transport stream,T1_2009,,2004
+D,10 / +30% / 1w,Object detection,T1_2009,,2004
+D,10 / +30% / 1w,Outline of object recognition,T1_2009,,2005
+D,10 / +30% / 1w,Polymer capacitor,T1_2009,,2005
+D,10 / +30% / 1w,Potassium channel,T1_2009,,2007
+D,10 / +30% / 1w,Restriction enzyme,T1_2009,,2004
+D,10 / +30% / 1w,Serine protease,T1_2009,,2008
+D,10 / +30% / 1w,Shapememory polymer,T1_2009,,2008
+D,10 / +30% / 1w,Solgel process,T1_2009,,2008
+D,10 / +30% / 1w,Strongly connected component,T1_2009,,2008
+D,10 / +30% / 1w,Sucker rod,T1_2009,,2007
+D,10 / +30% / 1w,Superoxide dismutase,T1_2009,,2006
+D,10 / +30% / 1w,Surface acoustic wave sensor,T1_2009,,2004
+D,10 / +30% / 1w,Thermometer,T1_2009,,2005
+D,10 / +30% / 1w,Timeofflight mass spectrometry,T1_2009,,2009
+D,10 / +30% / 1w,Touchpad,T1_2009,,2004
+D,10 / +30% / 1w,Turbofan,T1_2009,,2009
+D,10 / +30% / 1w,Video display controller,T1_2009,,2005
+D,10 / +30% / 1w,Voice activity detection,T1_2009,,2007
+D,10 / +30% / 1w,Automatic generation control,T1_2009,,2005
+D,10 / +30% / 1w,Buck converter,T1_2009,,2006
+D,10 / +30% / 1w,Cablestayed bridge,T1_2009,,2006
+D,10 / +30% / 1w,Ceramic matrix composite,T1_2009,,2004
+D,10 / +30% / 1w,Conductive polymer,T1_2009,,2004
+D,10 / +30% / 1w,Contextsensitive grammar,T1_2009,,2005
+D,10 / +30% / 1w,Cyanine,T1_2009,,2004
+D,10 / +30% / 1w,Dataspaces,T1_2009,,2006
+D,10 / +30% / 1w,Differential signalling,T1_2009,,2007
+D,10 / +30% / 1w,Dimethyl ether,T1_2009,,2007
+D,10 / +30% / 1w,DNA construct,T1_2009,,2006
+D,10 / +30% / 1w,Drill bit well,T1_2009,,2008
+D,10 / +30% / 1w,Electrically conductive adhesive,T1_2009,,2009
+D,10 / +30% / 1w,Fieldemission display,T1_2009,,2005
+D,10 / +30% / 1w,Fluorescence anisotropy,T1_2009,,2004
+D,10 / +30% / 1w,Fragment antigenbinding,T1_2009,,2007
+D,10 / +30% / 1w,Gesture recognition,T1_2009,,2007
+D,10 / +30% / 1w,Hardware security module,T1_2009,,2005
+D,10 / +30% / 1w,Headmounted display,T1_2009,,2004
+D,10 / +30% / 1w,High Efficiency Image File Format,T1_2009,,2009
+D,10 / +30% / 1w,Highlevel programming language,T1_2009,,2006
+D,10 / +30% / 1w,History of IBM magnetic disk drives,T1_2009,,2008
+D,10 / +30% / 1w,Hydrogel,T1_2009,,2005
+D,10 / +30% / 1w,LED circuit,T1_2009,,2005
+D,10 / +30% / 1w,Linearfeedback shift register,T1_2009,,2008
+D,10 / +30% / 1w,Lownoise amplifier,T1_2009,,2007
+D,10 / +30% / 1w,MOSFET,T1_2009,,2004
+D,10 / +30% / 1w,NSA encryption systems,T1_2009,,2005
+D,10 / +30% / 1w,Optical medium,T1_2009,,2004
+D,10 / +30% / 1w,Phosphine oxide,T1_2009,,2004
+D,10 / +30% / 1w,Polybutylene terephthalate,T1_2009,,2007
+D,10 / +30% / 1w,Polyphenylene sulfide,T1_2009,,2008
+D,10 / +30% / 1w,Precursor cell,T1_2009,,2009
+D,10 / +30% / 1w,Principal component analysis,T1_2009,,2008
+D,10 / +30% / 1w,Protonexchange membrane fuel cell,T1_2009,,2005
+D,10 / +30% / 1w,Quantum dot,T1_2009,,2004
+D,10 / +30% / 1w,Raster graphics,T1_2009,,2006
+D,10 / +30% / 1w,Superresolution imaging,T1_2009,,2004
+D,10 / +30% / 1w,Surface plasmon,T1_2009,,2004
+D,10 / +30% / 1w,Switchedmode power supply,T1_2009,,2004
+D,10 / +30% / 1w,Temperaturedependent sex determination,T1_2009,,2004
+D,10 / +30% / 1w,Thinfilm transistor,T1_2009,,2005
+D,10 / +30% / 1w,Twisted pair,T1_2009,,2006
+D,10 / +30% / 1w,User agent,T1_2009,,2009
+D,10 / +30% / 1w,Verticalcavity surfaceemitting laser,T1_2009,,2009
+D,10 / +30% / 1w,WiMAX,T1_2009,,2007
+D,10 / +30% / 1w,Wireless ad hoc network,T1_2009,,2004
+D,10 / +30% / 1w,ZieglerNatta catalyst,T1_2009,,2009
+D,10 / +30% / 1w,Amsler grid,T1_2009,,2009
+D,10 / +30% / 1w,Antenna array,T1_2009,,2009
+D,10 / +30% / 1w,Binder material,T1_2009,,2009
+D,10 / +30% / 1w,Boiling vessel,T1_2009,,2005
+D,10 / +30% / 1w,Burst mode photography,T1_2009,,2008
+D,10 / +30% / 1w,Card security code,T1_2009,,2004
+D,10 / +30% / 1w,Conductive textile,T1_2009,,2005
+D,10 / +30% / 1w,Dendritic cell,T1_2009,reach30,2005
+D,10 / +30% / 1w,Digital mapping,T1_2009,,2008
+D,10 / +30% / 1w,Effective microorganism,T1_2009,,2007
+D,10 / +30% / 1w,Electrochromic device,T1_2009,,2008
+D,10 / +30% / 1w,Epitaxy,T1_2009,,2004
+D,10 / +30% / 1w,Fast Fourier transform,T1_2009,,2004
+D,10 / +30% / 1w,Forcesensing resistor,T1_2009,,2008
+D,10 / +30% / 1w,Frequency domain,T1_2009,,2006
+D,10 / +30% / 1w,Giant magnetoresistance,T1_2009,,2005
+D,10 / +30% / 1w,Green fluorescent protein,T1_2009,,2009
+D,10 / +30% / 1w,Image segmentation,T1_2009,,2004
+D,10 / +30% / 1w,Land grid array,T1_2009,,2004
+D,10 / +30% / 1w,Motion estimation,T1_2009,,2005
+D,10 / +30% / 1w,Multilayer perceptron,T1_2009,,2006
+D,10 / +30% / 1w,Overlay network,T1_2009,,2009
+D,10 / +30% / 1w,Parallel computing,T1_2009,,2007
+D,10 / +30% / 1w,Photodiode,T1_2009,,2008
+D,10 / +30% / 1w,Power inverter,T1_2009,,2007
+D,10 / +30% / 1w,Process variable,T1_2009,,2004
+D,10 / +30% / 1w,Proximity sensor,T1_2009,,2008
+D,10 / +30% / 1w,Receptormediated endocytosis,T1_2009,,2006
+D,10 / +30% / 1w,ReedSolomon error correction,T1_2009,,2005
+D,10 / +30% / 1w,Roller cone bit,T1_2009,,2004
+D,10 / +30% / 1w,Singledomain antibody,T1_2009,,2006
+D,10 / +30% / 1w,Smoke detector,T1_2009,,2004
+D,10 / +30% / 1w,Spanning tree,T1_2009,,2006
+D,10 / +30% / 1w,Surface plasmon resonance,T1_2009,,2005
+D,10 / +30% / 1w,Thermal spraying,T1_2009,,2004
+D,10 / +30% / 1w,Thermoplastic polyurethane,T1_2009,,2005
+D,10 / +30% / 1w,Tree data structure,T1_2009,,2008
+D,10 / +30% / 1w,Trusted execution environment,T1_2009,,2004
+D,10 / +30% / 1w,Ultrasonic transducer,T1_2009,,2005
+D,10 / +30% / 1w,Voltage controller,T1_2009,,2007
+D,10 / +30% / 1w,Wear leveling,T1_2009,,2007
+D,10 / +30% / 1w,Windowing system,T1_2009,,2005
+D,10 / +30% / 2w,Cgroups,T1_2009,,2005
+D,10 / +30% / 2w,Child safety seat,T1_2009,,2009
+D,10 / +30% / 2w,Confocal microscopy,T1_2009,,2005
+D,10 / +30% / 2w,Cyclic olefin copolymer,T1_2009,,2005
+D,10 / +30% / 2w,Fibroblast growth factor,T1_2009,,2008
+D,10 / +30% / 2w,Hash function,T1_2009,,2009
+D,10 / +30% / 2w,Ion mobility spectrometry,T1_2009,,2005
+D,10 / +30% / 2w,Mode locking,T1_2009,,2009
+D,10 / +30% / 2w,Optical coherence tomography,T1_2009,,2006
+D,10 / +30% / 2w,Polycrystalline silicon,T1_2009,,2005
+D,10 / +30% / 2w,Shapememory alloy,T1_2009,,2009
+D,10 / +30% / 2w,Spatial light modulator,T1_2009,,2005
+D,10 / +30% / 2w,Speech synthesis,T1_2009,,2006
+D,10 / +30% / 2w,Stereoscopy,T1_2009,,2006
+D,10 / +30% / 2w,Stream processing,T1_2009,,2006
+D,10 / +30% / 2w,Surfaceenhanced Raman spectroscopy,T1_2009,,2005
+D,10 / +30% / 2w,Toner cartridge,T1_2009,,2008
+D,10 / +30% / 2w,Transfer switch,T1_2009,,2008
+D,10 / +30% / 2w,Virtual disk and virtual drive,T1_2009,,2008
+D,10 / +30% / 2w,Yawrate sensor,T1_2009,,2005
+D,10 / +30% / 2w,Anomaly detection,T1_2009,,2005
+D,10 / +30% / 2w,Antenna radio,T1_2009,,2008
+D,10 / +30% / 2w,Augmented reality,T1_2009,reach30,2007
+D,10 / +30% / 2w,Charge trap flash,T1_2009,,2005
+D,10 / +30% / 2w,Consistency model,T1_2009,,2006
+D,10 / +30% / 2w,Energy harvesting,T1_2009,,2007
+D,10 / +30% / 2w,Hash table,T1_2009,,2006
+D,10 / +30% / 2w,Internet Control Message Protocol,T1_2009,,2008
+D,10 / +30% / 2w,Ionic liquid,T1_2009,,2005
+D,10 / +30% / 2w,Lowdensity paritycheck code,T1_2009,,2005
+D,10 / +30% / 2w,MAC address,T1_2009,,2005
+D,10 / +30% / 2w,Message authentication code,T1_2009,,2008
+D,10 / +30% / 2w,Motion compensation,T1_2009,,2009
+D,10 / +30% / 2w,Outline of object recognition,T1_2009,,2006
+D,10 / +30% / 2w,Solgel process,T1_2009,,2009
+D,10 / +30% / 2w,Surface acoustic wave sensor,T1_2009,,2005
+D,10 / +30% / 2w,Cablestayed bridge,T1_2009,,2007
+D,10 / +30% / 2w,Differential signalling,T1_2009,,2008
+D,10 / +30% / 2w,Drill bit well,T1_2009,,2009
+D,10 / +30% / 2w,Fieldemission display,T1_2009,,2006
+D,10 / +30% / 2w,Gesture recognition,T1_2009,,2008
+D,10 / +30% / 2w,Hardware security module,T1_2009,,2006
+D,10 / +30% / 2w,Headmounted display,T1_2009,,2005
+D,10 / +30% / 2w,Hydrogel,T1_2009,,2006
+D,10 / +30% / 2w,LED circuit,T1_2009,,2009
+D,10 / +30% / 2w,NSA encryption systems,T1_2009,,2009
+D,10 / +30% / 2w,Optical medium,T1_2009,,2005
+D,10 / +30% / 2w,Protonexchange membrane fuel cell,T1_2009,,2006
+D,10 / +30% / 2w,Quantum dot,T1_2009,,2005
+D,10 / +30% / 2w,Raster graphics,T1_2009,,2007
+D,10 / +30% / 2w,Superresolution imaging,T1_2009,,2005
+D,10 / +30% / 2w,Surface plasmon,T1_2009,,2005
+D,10 / +30% / 2w,WiMAX,T1_2009,,2008
+D,10 / +30% / 2w,Wireless ad hoc network,T1_2009,,2005
+D,10 / +30% / 2w,Burst mode photography,T1_2009,,2009
+D,10 / +30% / 2w,Conductive textile,T1_2009,,2006
+D,10 / +30% / 2w,Effective microorganism,T1_2009,,2008
+D,10 / +30% / 2w,Electrochromic device,T1_2009,,2009
+D,10 / +30% / 2w,Epitaxy,T1_2009,,2005
+D,10 / +30% / 2w,Forcesensing resistor,T1_2009,,2009
+D,10 / +30% / 2w,Frequency domain,T1_2009,,2007
+D,10 / +30% / 2w,Image segmentation,T1_2009,,2005
+D,10 / +30% / 2w,Multilayer perceptron,T1_2009,,2007
+D,10 / +30% / 2w,Power inverter,T1_2009,,2008
+D,10 / +30% / 2w,Proximity sensor,T1_2009,,2009
+D,10 / +30% / 2w,Receptormediated endocytosis,T1_2009,,2007
+D,10 / +30% / 2w,ReedSolomon error correction,T1_2009,,2006
+D,10 / +30% / 2w,Surface plasmon resonance,T1_2009,,2006
+D,10 / +30% / 2w,Thermoplastic polyurethane,T1_2009,,2006
+D,10 / +30% / 2w,Trusted execution environment,T1_2009,,2007
+D,10 / +30% / 2w,Ultrasonic transducer,T1_2009,,2006
+D,10 / +30% / 2w,Wear leveling,T1_2009,,2008
+D,10 / +50% / 1w,Autonomous system Internet,T1_2009,,2005
+D,10 / +50% / 1w,Betalactamase,T1_2009,,2008
+D,10 / +50% / 1w,Bone morphogenetic protein,T1_2009,,2007
+D,10 / +50% / 1w,Cgroups,T1_2009,,2005
+D,10 / +50% / 1w,Confocal microscopy,T1_2009,,2004
+D,10 / +50% / 1w,Cyclic olefin copolymer,T1_2009,,2004
+D,10 / +50% / 1w,Discrete time and continuous time,T1_2009,,2008
+D,10 / +50% / 1w,Fibroblast growth factor,T1_2009,,2004
+D,10 / +50% / 1w,Frequencyhopping spread spectrum,T1_2009,,2008
+D,10 / +50% / 1w,Glycolic acid,T1_2009,,2009
+D,10 / +50% / 1w,Hash function,T1_2009,,2008
+D,10 / +50% / 1w,Huffman coding,T1_2009,,2005
+D,10 / +50% / 1w,IC,T1_2009,,2006
+D,10 / +50% / 1w,Interprocess communication,T1_2009,,2006
+D,10 / +50% / 1w,Ion mobility spectrometry,T1_2009,,2005
+D,10 / +50% / 1w,Language model,T1_2009,,2005
+D,10 / +50% / 1w,Microcontroller,T1_2009,,2007
+D,10 / +50% / 1w,Mode locking,T1_2009,,2005
+D,10 / +50% / 1w,OctoPrint,T1_2009,,2004
+D,10 / +50% / 1w,Optical coherence tomography,T1_2009,,2005
+D,10 / +50% / 1w,Polycrystalline silicon,T1_2009,,2004
+D,10 / +50% / 1w,Search algorithm,T1_2009,reach30,2005
+D,10 / +50% / 1w,Selfdriving car,T1_2009,,2008
+D,10 / +50% / 1w,Shapememory alloy,T1_2009,,2008
+D,10 / +50% / 1w,Singlelayer materials,T1_2009,,2004
+D,10 / +50% / 1w,Spatial light modulator,T1_2009,,2004
+D,10 / +50% / 1w,Speech synthesis,T1_2009,,2005
+D,10 / +50% / 1w,Stereoscopy,T1_2009,,2005
+D,10 / +50% / 1w,Stream processing,T1_2009,,2005
+D,10 / +50% / 1w,Surfaceenhanced Raman spectroscopy,T1_2009,,2004
+D,10 / +50% / 1w,Titanium nitride,T1_2009,,2005
+D,10 / +50% / 1w,Transfer switch,T1_2009,,2007
+D,10 / +50% / 1w,USB flash drive,T1_2009,,2007
+D,10 / +50% / 1w,Virtual disk and virtual drive,T1_2009,,2008
+D,10 / +50% / 1w,Yawrate sensor,T1_2009,,2004
+D,10 / +50% / 1w,Zinc finger,T1_2009,,2006
+D,10 / +50% / 1w,Anomaly detection,T1_2009,,2004
+D,10 / +50% / 1w,Antenna radio,T1_2009,,2007
+D,10 / +50% / 1w,Augmented reality,T1_2009,reach30,2007
+D,10 / +50% / 1w,Boronic acid,T1_2009,,2008
+D,10 / +50% / 1w,Charge trap flash,T1_2009,,2004
+D,10 / +50% / 1w,Computer mouse,T1_2009,,2005
+D,10 / +50% / 1w,Coreshell semiconductor nanocrystal,T1_2009,,2004
+D,10 / +50% / 1w,Electronic paper,T1_2009,,2006
+D,10 / +50% / 1w,Energy harvesting,T1_2009,,2007
+D,10 / +50% / 1w,Ferroelectricity,T1_2009,,2005
+D,10 / +50% / 1w,Fingerprint,T1_2009,,2004
+D,10 / +50% / 1w,Fluid dynamics,T1_2009,,2004
+D,10 / +50% / 1w,Hash table,T1_2009,,2006
+D,10 / +50% / 1w,Homologous recombination,T1_2009,,2004
+D,10 / +50% / 1w,Hydroxamic acid,T1_2009,,2007
+D,10 / +50% / 1w,Ionic liquid,T1_2009,,2005
+D,10 / +50% / 1w,Lowdensity paritycheck code,T1_2009,,2004
+D,10 / +50% / 1w,MAC address,T1_2009,,2005
+D,10 / +50% / 1w,Message authentication code,T1_2009,,2008
+D,10 / +50% / 1w,Microcrystalline cellulose,T1_2009,,2005
+D,10 / +50% / 1w,Motion compensation,T1_2009,,2008
+D,10 / +50% / 1w,MPEG transport stream,T1_2009,,2006
+D,10 / +50% / 1w,Object detection,T1_2009,,2004
+D,10 / +50% / 1w,Outline of object recognition,T1_2009,,2005
+D,10 / +50% / 1w,Potassium channel,T1_2009,,2007
+D,10 / +50% / 1w,Restriction enzyme,T1_2009,,2004
+D,10 / +50% / 1w,Serine protease,T1_2009,,2008
+D,10 / +50% / 1w,Shapememory polymer,T1_2009,,2008
+D,10 / +50% / 1w,Strongly connected component,T1_2009,,2008
+D,10 / +50% / 1w,Sucker rod,T1_2009,,2007
+D,10 / +50% / 1w,Surface acoustic wave sensor,T1_2009,,2009
+D,10 / +50% / 1w,Timeofflight mass spectrometry,T1_2009,,2009
+D,10 / +50% / 1w,Touchpad,T1_2009,,2004
+D,10 / +50% / 1w,Turbofan,T1_2009,,2009
+D,10 / +50% / 1w,Video display controller,T1_2009,,2005
+D,10 / +50% / 1w,Voice activity detection,T1_2009,,2007
+D,10 / +50% / 1w,Automatic generation control,T1_2009,,2005
+D,10 / +50% / 1w,Buck converter,T1_2009,,2006
+D,10 / +50% / 1w,Cablestayed bridge,T1_2009,,2006
+D,10 / +50% / 1w,Ceramic matrix composite,T1_2009,,2004
+D,10 / +50% / 1w,Conductive polymer,T1_2009,,2004
+D,10 / +50% / 1w,Cyanine,T1_2009,,2004
+D,10 / +50% / 1w,Dataspaces,T1_2009,,2006
+D,10 / +50% / 1w,Differential signalling,T1_2009,,2008
+D,10 / +50% / 1w,Dimethyl ether,T1_2009,,2007
+D,10 / +50% / 1w,DNA construct,T1_2009,,2006
+D,10 / +50% / 1w,Drill bit well,T1_2009,,2008
+D,10 / +50% / 1w,Electrically conductive adhesive,T1_2009,,2009
+D,10 / +50% / 1w,Fieldemission display,T1_2009,,2005
+D,10 / +50% / 1w,Fluorescence anisotropy,T1_2009,,2004
+D,10 / +50% / 1w,Fragment antigenbinding,T1_2009,,2007
+D,10 / +50% / 1w,Gesture recognition,T1_2009,,2007
+D,10 / +50% / 1w,Hardware security module,T1_2009,,2005
+D,10 / +50% / 1w,Headmounted display,T1_2009,,2004
+D,10 / +50% / 1w,High Efficiency Image File Format,T1_2009,,2009
+D,10 / +50% / 1w,Highlevel programming language,T1_2009,,2006
+D,10 / +50% / 1w,History of IBM magnetic disk drives,T1_2009,,2008
+D,10 / +50% / 1w,Hydrogel,T1_2009,,2005
+D,10 / +50% / 1w,LED circuit,T1_2009,,2005
+D,10 / +50% / 1w,Linearfeedback shift register,T1_2009,,2008
+D,10 / +50% / 1w,Lownoise amplifier,T1_2009,,2007
+D,10 / +50% / 1w,MOSFET,T1_2009,,2004
+D,10 / +50% / 1w,NSA encryption systems,T1_2009,,2005
+D,10 / +50% / 1w,Optical medium,T1_2009,,2004
+D,10 / +50% / 1w,Phosphine oxide,T1_2009,,2004
+D,10 / +50% / 1w,Polybutylene terephthalate,T1_2009,,2007
+D,10 / +50% / 1w,Polyphenylene sulfide,T1_2009,,2008
+D,10 / +50% / 1w,Precursor cell,T1_2009,,2009
+D,10 / +50% / 1w,Principal component analysis,T1_2009,,2008
+D,10 / +50% / 1w,Protonexchange membrane fuel cell,T1_2009,,2005
+D,10 / +50% / 1w,Quantum dot,T1_2009,,2004
+D,10 / +50% / 1w,Raster graphics,T1_2009,,2006
+D,10 / +50% / 1w,Superresolution imaging,T1_2009,,2004
+D,10 / +50% / 1w,Surface plasmon,T1_2009,,2005
+D,10 / +50% / 1w,Switchedmode power supply,T1_2009,,2004
+D,10 / +50% / 1w,Thinfilm transistor,T1_2009,,2005
+D,10 / +50% / 1w,Twisted pair,T1_2009,,2006
+D,10 / +50% / 1w,User agent,T1_2009,,2009
+D,10 / +50% / 1w,Verticalcavity surfaceemitting laser,T1_2009,,2009
+D,10 / +50% / 1w,WiMAX,T1_2009,,2007
+D,10 / +50% / 1w,Wireless ad hoc network,T1_2009,,2004
+D,10 / +50% / 1w,ZieglerNatta catalyst,T1_2009,,2009
+D,10 / +50% / 1w,Antenna array,T1_2009,,2009
+D,10 / +50% / 1w,Binder material,T1_2009,,2009
+D,10 / +50% / 1w,Boiling vessel,T1_2009,,2005
+D,10 / +50% / 1w,Burst mode photography,T1_2009,,2008
+D,10 / +50% / 1w,Card security code,T1_2009,,2007
+D,10 / +50% / 1w,Conductive textile,T1_2009,,2006
+D,10 / +50% / 1w,Dendritic cell,T1_2009,reach30,2005
+D,10 / +50% / 1w,Digital mapping,T1_2009,,2008
+D,10 / +50% / 1w,Effective microorganism,T1_2009,,2008
+D,10 / +50% / 1w,Electrochromic device,T1_2009,,2008
+D,10 / +50% / 1w,Epitaxy,T1_2009,,2004
+D,10 / +50% / 1w,Fast Fourier transform,T1_2009,,2009
+D,10 / +50% / 1w,Forcesensing resistor,T1_2009,,2008
+D,10 / +50% / 1w,Frequency domain,T1_2009,,2006
+D,10 / +50% / 1w,Giant magnetoresistance,T1_2009,,2008
+D,10 / +50% / 1w,Image segmentation,T1_2009,,2005
+D,10 / +50% / 1w,Land grid array,T1_2009,,2004
+D,10 / +50% / 1w,Motion estimation,T1_2009,,2005
+D,10 / +50% / 1w,Multilayer perceptron,T1_2009,,2007
+D,10 / +50% / 1w,Overlay network,T1_2009,,2009
+D,10 / +50% / 1w,Parallel computing,T1_2009,,2007
+D,10 / +50% / 1w,Power inverter,T1_2009,,2007
+D,10 / +50% / 1w,Process variable,T1_2009,,2007
+D,10 / +50% / 1w,Proximity sensor,T1_2009,,2009
+D,10 / +50% / 1w,Receptormediated endocytosis,T1_2009,,2006
+D,10 / +50% / 1w,ReedSolomon error correction,T1_2009,,2005
+D,10 / +50% / 1w,Roller cone bit,T1_2009,,2004
+D,10 / +50% / 1w,Singledomain antibody,T1_2009,,2006
+D,10 / +50% / 1w,Smoke detector,T1_2009,,2004
+D,10 / +50% / 1w,Spanning tree,T1_2009,,2006
+D,10 / +50% / 1w,Surface plasmon resonance,T1_2009,,2006
+D,10 / +50% / 1w,Thermal spraying,T1_2009,,2004
+D,10 / +50% / 1w,Thermoplastic polyurethane,T1_2009,,2006
+D,10 / +50% / 1w,Tree data structure,T1_2009,,2008
+D,10 / +50% / 1w,Trusted execution environment,T1_2009,,2006
+D,10 / +50% / 1w,Ultrasonic transducer,T1_2009,,2005
+D,10 / +50% / 1w,Wear leveling,T1_2009,,2007
+D,10 / +50% / 1w,Windowing system,T1_2009,,2005
+D,10 / +50% / 2w,Confocal microscopy,T1_2009,,2005
+D,10 / +50% / 2w,Cyclic olefin copolymer,T1_2009,,2005
+D,10 / +50% / 2w,Fibroblast growth factor,T1_2009,,2008
+D,10 / +50% / 2w,Hash function,T1_2009,,2009
+D,10 / +50% / 2w,Optical coherence tomography,T1_2009,,2006
+D,10 / +50% / 2w,Spatial light modulator,T1_2009,,2005
+D,10 / +50% / 2w,Speech synthesis,T1_2009,,2006
+D,10 / +50% / 2w,Stereoscopy,T1_2009,,2006
+D,10 / +50% / 2w,Stream processing,T1_2009,,2006
+D,10 / +50% / 2w,Surfaceenhanced Raman spectroscopy,T1_2009,,2005
+D,10 / +50% / 2w,Transfer switch,T1_2009,,2008
+D,10 / +50% / 2w,Anomaly detection,T1_2009,,2005
+D,10 / +50% / 2w,Antenna radio,T1_2009,,2008
+D,10 / +50% / 2w,Charge trap flash,T1_2009,,2005
+D,10 / +50% / 2w,Ionic liquid,T1_2009,,2006
+D,10 / +50% / 2w,Lowdensity paritycheck code,T1_2009,,2005
+D,10 / +50% / 2w,MAC address,T1_2009,,2006
+D,10 / +50% / 2w,Motion compensation,T1_2009,,2009
+D,10 / +50% / 2w,Outline of object recognition,T1_2009,,2006
+D,10 / +50% / 2w,Cablestayed bridge,T1_2009,,2007
+D,10 / +50% / 2w,Drill bit well,T1_2009,,2009
+D,10 / +50% / 2w,Gesture recognition,T1_2009,,2008
+D,10 / +50% / 2w,Hardware security module,T1_2009,,2006
+D,10 / +50% / 2w,Hydrogel,T1_2009,,2006
+D,10 / +50% / 2w,LED circuit,T1_2009,,2009
+D,10 / +50% / 2w,NSA encryption systems,T1_2009,,2009
+D,10 / +50% / 2w,Optical medium,T1_2009,,2005
+D,10 / +50% / 2w,Protonexchange membrane fuel cell,T1_2009,,2009
+D,10 / +50% / 2w,Quantum dot,T1_2009,,2005
+D,10 / +50% / 2w,Superresolution imaging,T1_2009,,2005
+D,10 / +50% / 2w,WiMAX,T1_2009,,2008
+D,10 / +50% / 2w,Wireless ad hoc network,T1_2009,,2005
+D,10 / +50% / 2w,Burst mode photography,T1_2009,,2009
+D,10 / +50% / 2w,Electrochromic device,T1_2009,,2009
+D,10 / +50% / 2w,Forcesensing resistor,T1_2009,,2009
+D,10 / +50% / 2w,Frequency domain,T1_2009,,2007
+D,10 / +50% / 2w,Power inverter,T1_2009,,2008
+D,10 / +50% / 2w,Receptormediated endocytosis,T1_2009,,2007
+D,10 / +50% / 2w,ReedSolomon error correction,T1_2009,,2006
+D,10 / +50% / 2w,Trusted execution environment,T1_2009,,2007
+D,10 / +50% / 2w,Ultrasonic transducer,T1_2009,,2006
+D,10 / +50% / 2w,Wear leveling,T1_2009,,2008
+D,30 / +30% / 1w,Contentaddressable memory,T1_2009,,2009
+D,30 / +30% / 1w,Frequencyhopping spread spectrum,T1_2009,,2008
+D,30 / +30% / 1w,Language model,T1_2009,,2008
+D,30 / +30% / 1w,Optical coherence tomography,T1_2009,,2006
+D,30 / +30% / 1w,Printer driver,T1_2009,,2005
+D,30 / +30% / 1w,Shapememory alloy,T1_2009,,2008
+D,30 / +30% / 1w,Spatial light modulator,T1_2009,,2004
+D,30 / +30% / 1w,Stream processing,T1_2009,,2008
+D,30 / +30% / 1w,Toner cartridge,T1_2009,,2007
+D,30 / +30% / 1w,Zinc finger,T1_2009,,2006
+D,30 / +30% / 1w,Antenna radio,T1_2009,,2007
+D,30 / +30% / 1w,Charge trap flash,T1_2009,,2004
+D,30 / +30% / 1w,Consistency model,T1_2009,,2005
+D,30 / +30% / 1w,Coreshell semiconductor nanocrystal,T1_2009,,2007
+D,30 / +30% / 1w,Electronic paper,T1_2009,,2006
+D,30 / +30% / 1w,Energy harvesting,T1_2009,,2009
+D,30 / +30% / 1w,Fluid dynamics,T1_2009,,2006
+D,30 / +30% / 1w,Ionic liquid,T1_2009,,2005
+D,30 / +30% / 1w,Metal matrix composite,T1_2009,,2007
+D,30 / +30% / 1w,Mobile IP,T1_2009,,2004
+D,30 / +30% / 1w,Motion compensation,T1_2009,,2008
+D,30 / +30% / 1w,Object detection,T1_2009,,2004
+D,30 / +30% / 1w,Serine protease,T1_2009,,2008
+D,30 / +30% / 1w,Thermometer,T1_2009,,2005
+D,30 / +30% / 1w,Video display controller,T1_2009,,2005
+D,30 / +30% / 1w,Automatic generation control,T1_2009,,2005
+D,30 / +30% / 1w,Conductive polymer,T1_2009,,2004
+D,30 / +30% / 1w,Contextsensitive grammar,T1_2009,,2005
+D,30 / +30% / 1w,Fieldemission display,T1_2009,,2005
+D,30 / +30% / 1w,Lownoise amplifier,T1_2009,,2007
+D,30 / +30% / 1w,Quantum dot,T1_2009,,2004
+D,30 / +30% / 1w,Raster graphics,T1_2009,,2006
+D,30 / +30% / 1w,Surface plasmon,T1_2009,,2005
+D,30 / +30% / 1w,Switchedmode power supply,T1_2009,,2004
+D,30 / +30% / 1w,Thinfilm transistor,T1_2009,,2005
+D,30 / +30% / 1w,Wireless ad hoc network,T1_2009,,2004
+D,30 / +30% / 1w,Antenna array,T1_2009,,2009
+D,30 / +30% / 1w,Frequency domain,T1_2009,,2006
+D,30 / +30% / 1w,Image segmentation,T1_2009,,2005
+D,30 / +30% / 1w,Land grid array,T1_2009,,2004
+D,30 / +30% / 1w,Motion estimation,T1_2009,,2005
+D,30 / +30% / 1w,Multilayer perceptron,T1_2009,,2007
+D,30 / +30% / 1w,Proximity sensor,T1_2009,,2008
+D,30 / +30% / 1w,Surface plasmon resonance,T1_2009,,2006
+D,30 / +30% / 1w,Wear leveling,T1_2009,,2009
+D,30 / +30% / 2w,Optical coherence tomography,T1_2009,,2007
+D,30 / +30% / 2w,Shapememory alloy,T1_2009,,2009
+D,30 / +30% / 2w,Spatial light modulator,T1_2009,,2005
+D,30 / +30% / 2w,Toner cartridge,T1_2009,,2008
+D,30 / +30% / 2w,Antenna radio,T1_2009,,2008
+D,30 / +30% / 2w,Charge trap flash,T1_2009,,2005
+D,30 / +30% / 2w,Consistency model,T1_2009,,2006
+D,30 / +30% / 2w,Ionic liquid,T1_2009,,2006
+D,30 / +30% / 2w,Motion compensation,T1_2009,,2009
+D,30 / +30% / 2w,Fieldemission display,T1_2009,,2006
+D,30 / +30% / 2w,Quantum dot,T1_2009,,2005
+D,30 / +30% / 2w,Raster graphics,T1_2009,,2007
+D,30 / +30% / 2w,Surface plasmon,T1_2009,,2006
+D,30 / +30% / 2w,Wireless ad hoc network,T1_2009,,2005
+D,30 / +30% / 2w,Frequency domain,T1_2009,,2007
+D,30 / +30% / 2w,Proximity sensor,T1_2009,,2009
+D,30 / +50% / 1w,Frequencyhopping spread spectrum,T1_2009,,2008
+D,30 / +50% / 1w,Language model,T1_2009,,2008
+D,30 / +50% / 1w,Optical coherence tomography,T1_2009,,2006
+D,30 / +50% / 1w,Shapememory alloy,T1_2009,,2008
+D,30 / +50% / 1w,Spatial light modulator,T1_2009,,2004
+D,30 / +50% / 1w,Zinc finger,T1_2009,,2006
+D,30 / +50% / 1w,Antenna radio,T1_2009,,2007
+D,30 / +50% / 1w,Charge trap flash,T1_2009,,2004
+D,30 / +50% / 1w,Coreshell semiconductor nanocrystal,T1_2009,,2007
+D,30 / +50% / 1w,Electronic paper,T1_2009,,2006
+D,30 / +50% / 1w,Energy harvesting,T1_2009,,2009
+D,30 / +50% / 1w,Ionic liquid,T1_2009,,2005
+D,30 / +50% / 1w,Motion compensation,T1_2009,,2008
+D,30 / +50% / 1w,Object detection,T1_2009,,2004
+D,30 / +50% / 1w,Serine protease,T1_2009,,2008
+D,30 / +50% / 1w,Video display controller,T1_2009,,2005
+D,30 / +50% / 1w,Automatic generation control,T1_2009,,2005
+D,30 / +50% / 1w,Conductive polymer,T1_2009,,2004
+D,30 / +50% / 1w,Fieldemission display,T1_2009,,2005
+D,30 / +50% / 1w,Lownoise amplifier,T1_2009,,2007
+D,30 / +50% / 1w,Quantum dot,T1_2009,,2004
+D,30 / +50% / 1w,Raster graphics,T1_2009,,2006
+D,30 / +50% / 1w,Surface plasmon,T1_2009,,2005
+D,30 / +50% / 1w,Switchedmode power supply,T1_2009,,2004
+D,30 / +50% / 1w,Thinfilm transistor,T1_2009,,2005
+D,30 / +50% / 1w,Wireless ad hoc network,T1_2009,,2004
+D,30 / +50% / 1w,Antenna array,T1_2009,,2009
+D,30 / +50% / 1w,Frequency domain,T1_2009,,2006
+D,30 / +50% / 1w,Image segmentation,T1_2009,,2005
+D,30 / +50% / 1w,Land grid array,T1_2009,,2004
+D,30 / +50% / 1w,Motion estimation,T1_2009,,2005
+D,30 / +50% / 1w,Multilayer perceptron,T1_2009,,2007
+D,30 / +50% / 1w,Proximity sensor,T1_2009,,2009
+D,30 / +50% / 1w,Surface plasmon resonance,T1_2009,,2006
+D,30 / +50% / 1w,Wear leveling,T1_2009,,2009
+D,30 / +50% / 2w,Optical coherence tomography,T1_2009,,2007
+D,30 / +50% / 2w,Spatial light modulator,T1_2009,,2005
+D,30 / +50% / 2w,Antenna radio,T1_2009,,2008
+D,30 / +50% / 2w,Charge trap flash,T1_2009,,2005
+D,30 / +50% / 2w,Ionic liquid,T1_2009,,2006
+D,30 / +50% / 2w,Motion compensation,T1_2009,,2009
+D,30 / +50% / 2w,Quantum dot,T1_2009,,2005
+D,30 / +50% / 2w,Wireless ad hoc network,T1_2009,,2005
+D,30 / +50% / 2w,Frequency domain,T1_2009,,2007
