@@ -1,4 +1,4 @@
-# Rule selection (2026-11-04)
+# Rule selection (2026-11-05)
 
 Positives: 16 validation technologies with ec_year > 2002. Controls: 13 valid of 18 (valid = max 10-K share 2005-19 / mean 2002-04 < 3.0).
 
@@ -75,6 +75,19 @@ score = lead_rate − fire_rate; fired = Rule G signal year ≤ 2019 on a contro
 | 30 | +50% | 1 | 16 | 8 | 0.50 | 13 | 3 | 0.23 | +0.27 |
 | 30 | +50% | 2 | 16 | 3 | 0.19 | 13 | 1 | 0.08 | +0.11 |
 
+## uspto_abs
+
+| min_count | growth | windows | n_pos | led | lead_rate | n_ctl | fired | fire_rate | score |
+|---|---|---|---|---|---|---|---|---|---|
+| 10 | +30% | 1 | 16 | 14 | 0.88 | 13 | 4 | 0.31 | +0.57 |
+| 10 | +30% | 2 | 16 | 7 | 0.44 | 13 | 1 | 0.08 | +0.36 |
+| 10 | +50% | 1 | 16 | 12 | 0.75 | 13 | 1 | 0.08 | +0.67 |
+| 10 | +50% | 2 | 16 | 5 | 0.31 | 13 | 0 | 0.00 | +0.31 |
+| 30 | +30% | 1 | 16 | 10 | 0.62 | 13 | 4 | 0.31 | +0.32 |
+| 30 | +30% | 2 | 16 | 6 | 0.38 | 13 | 1 | 0.08 | +0.30 |
+| 30 | +50% | 1 | 16 | 8 | 0.50 | 13 | 1 | 0.08 | +0.42 |
+| 30 | +50% | 2 | 16 | 4 | 0.25 | 13 | 0 | 0.00 | +0.25 |
+
 ## Best score per source (arithmetic only — freezing a rule is a human decision)
 
 - arxiv: min_count 30, +50%, 1 window(s) → lead 0.14, fire 0.00, score +0.14
@@ -82,3 +95,4 @@ score = lead_rate − fire_rate; fired = Rule G signal year ≤ 2019 on a contro
 - edgar_10k: min_count 30, +50%, 2 window(s) → lead 0.00, fire 0.00, score +0.00
 - pubmed: min_count 10, +50%, 2 window(s) → lead 0.12, fire 0.08, score +0.05
 - uspto: min_count 10, +50%, 1 window(s) → lead 0.62, fire 0.31, score +0.32
+- uspto_abs: min_count 10, +50%, 1 window(s) → lead 0.75, fire 0.08, score +0.67
