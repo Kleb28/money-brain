@@ -7,7 +7,10 @@ and did not shrink between 2010-14 and 2020-24 (a coarse prefilter; the exact Ru
 later by detector/candidates.py from config/settings.yml). Kalyani et al. (QJE 2025) start the same
 way — technical bigrams from patent text — then keep the ones whose use rises.
 
-Output: data/external/bigram_counts.csv.gz  (bigram, year, count) + __all denominator rows.
+Per bigram-year it also counts distinct harmonized assignees (n_assignees) and distinct 4-character
+CPC subclasses (n_cpc): a technology is used by many applicants across a few classes, whereas a
+single applicant's continuation family or a drafting phrase is not.
+Output: data/external/bigram_counts.csv.gz  (bigram, year, count, n_assignees, n_cpc) + __all rows.
 Scan ≈ 236 GB (title + abstract columns of the whole table); refuses above BQ_MAX_GB.
 Env: GCP_SA_KEY, GCP_PROJECT_ID.
 """
@@ -53,6 +56,8 @@ def build_sql() -> str:
 WITH docs AS (
   SELECT application_number,
          CAST(FLOOR(filing_date / 10000) AS INT64) AS yr,
+         IFNULL((SELECT name FROM UNNEST(assignee_harmonized) LIMIT 1), '') AS asg,
+         IFNULL((SELECT SUBSTR(code, 1, 4) FROM UNNEST(cpc) ORDER BY first DESC LIMIT 1), '') AS cpc4,
          LOWER(CONCAT(
            IFNULL((SELECT text FROM UNNEST(title_localized) WHERE language = 'en' LIMIT 1), ''), ' ',
            IFNULL((SELECT text FROM UNNEST(abstract_localized) WHERE language = 'en' LIMIT 1), ''))) AS txt
@@ -60,14 +65,14 @@ WITH docs AS (
   WHERE country_code = 'US' AND filing_date BETWEEN {Y0}0101 AND {Y1}1231
 ),
 docs1 AS (
-  SELECT application_number, yr, txt FROM docs
+  SELECT application_number, yr, asg, cpc4, txt FROM docs
   QUALIFY ROW_NUMBER() OVER (PARTITION BY application_number ORDER BY LENGTH(txt) DESC) = 1
 ),
 toks AS (
-  SELECT yr, REGEXP_EXTRACT_ALL(txt, r'[a-z0-9]+') AS w FROM docs1
+  SELECT yr, asg, cpc4, REGEXP_EXTRACT_ALL(txt, r'[a-z0-9]+') AS w FROM docs1
 ),
 bg AS (
-  SELECT yr, g
+  SELECT yr, asg, cpc4, g
   FROM toks, UNNEST(ARRAY(
     SELECT DISTINCT CONCAT(w[OFFSET(i)], ' ', w[OFFSET(i + 1)])
     FROM UNNEST(GENERATE_ARRAY(0, ARRAY_LENGTH(w) - 2)) AS i
@@ -76,15 +81,17 @@ bg AS (
       AND REGEXP_CONTAINS(w[OFFSET(i + 1)], r'^([a-z]{{2,}}|[0-9]+[a-z]+)$'))) AS g
   WHERE ARRAY_LENGTH(w) >= 2
 ),
-cnt AS (SELECT g, yr, COUNT(*) AS n FROM bg GROUP BY g, yr),
+cnt AS (SELECT g, yr, COUNT(*) AS n, COUNT(DISTINCT NULLIF(asg, '')) AS n_asg, COUNT(DISTINCT NULLIF(cpc4, '')) AS n_cpc
+        FROM bg GROUP BY g, yr),
 keep AS (
   SELECT g FROM cnt GROUP BY g
   HAVING MAX(n) >= {MIN_PEAK}
      AND SUM(IF(yr BETWEEN 2020 AND 2024, n, 0)) >= SUM(IF(yr BETWEEN 2010 AND 2014, n, 0))
 )
-SELECT c.g AS bigram, c.yr, c.n FROM cnt c JOIN keep USING (g)
+SELECT c.g AS bigram, c.yr, c.n, c.n_asg, c.n_cpc FROM cnt c JOIN keep USING (g)
 UNION ALL
-SELECT '{ALL}' AS bigram, yr, COUNT(*) AS n FROM docs1 GROUP BY yr
+SELECT '{ALL}' AS bigram, yr, COUNT(*) AS n, COUNT(DISTINCT NULLIF(asg, '')) AS n_asg, COUNT(DISTINCT NULLIF(cpc4, '')) AS n_cpc
+FROM docs1 GROUP BY yr
 """
 
 
@@ -116,9 +123,9 @@ def main() -> None:
     n = 0
     with gzip.open(OUT, "wt", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
-        w.writerow(["bigram", "year", "count"])
+        w.writerow(["bigram", "year", "count", "n_assignees", "n_cpc"])
         for r in it:
-            w.writerow([r["bigram"], int(r["yr"]), int(r["n"])]); n += 1
+            w.writerow([r["bigram"], int(r["yr"]), int(r["n"]), int(r["n_asg"]), int(r["n_cpc"])]); n += 1
             if n % 1_000_000 == 0:
                 log(f"  {n:,} rows")
     log(f"bigrams: wrote {OUT.name} with {n:,} rows ({OUT.stat().st_size/1e6:.1f} MB)")
