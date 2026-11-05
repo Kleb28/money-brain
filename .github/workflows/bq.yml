@@ -1,6 +1,8 @@
 name: patents-bq
 
 on:
+  schedule:
+    - cron: "23 4 2 * *"   # monthly (each run scans ~236 GB of the 1 TB/month free tier)
   workflow_dispatch:
     inputs:
       dry_run:

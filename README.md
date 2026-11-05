@@ -23,9 +23,9 @@ theses/                   thesis 카드 (md, _template.md 참고)
 
 ## 탐지 규칙 (settings.yml)
 - share = count / 그 소스의 해당 연도 전체 문서 수 × 1e6
-- Rule G: count ≥ min_count 이고 2년 성장률 ≥ +50%가 2회 연속인 첫 해
+- Rule G: count ≥ min_count(30) 이고 2년 성장률 ≥ +50%가 2회 연속인 첫 해 — 사전 등록 규칙 그대로 유지. 1,286개 세트 out-of-sample 테스트에서 가장 보수적이면서 네 테스트 모두 양의 구분력을 보임 (validation_notes addendum 4)
 - Rule K: 2002~2019 최대 share의 10%에 처음 도달한 해 (Kalyani 방식, 비교용)
-- Tier: T0 과학 신호만 / T1 과학 신호 + 10-K 언급 낮음 (후보) / T2 10-K 언급 높음 (늦음) / T- 신호 없음 — 임계값은 잠정이며 검증 결과로 재조정
+- Tier: 신호 = settings.detector.signal_sources(현재 uspto_abs, 특허 제목+초록)의 Rule G. T0 신호만(10-K 언급 거의 없음) / T1 신호 + 10-K 언급 낮음 (후보) / T2 10-K 언급 높음 (늦음) / T- 신호 없음 — Tier 임계값(edgar_low_max·high_min)은 잠정
 
 ## 실행
 - Actions: 매주 월요일 자동, 또는 Actions 탭 → collect-and-detect → Run workflow (sources 입력으로 일부만 실행 가능)

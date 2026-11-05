@@ -22,7 +22,7 @@ What scarce input or capability the driver runs into. The investable layer is us
 2–5 years. State the milestone that would mark "breakthrough" (first earnings-call wave, first FDA approval, etc.).
 
 ## Evidence (deterministic, from outputs/)
-- science signal year (Rule G): 
+- patent signal year (Rule G, uspto_abs): 
 - EDGAR 10-K latest count / signal year: 
 - clinical trials (bio only): 
 - patents (when USPTO is live): 

@@ -102,7 +102,7 @@ def main() -> None:
     tier_rows = []
     for tid, t in techs.items():
         s = sig_by_tech.get(tid, {})
-        sci = [s[k] for k in ("pubmed", "arxiv") if k in s]
+        sci = [s[k] for k in d.get("signal_sources", ["pubmed", "arxiv"]) if k in s]
         sci_growing = any((x["growth_3y"] or 0) >= g for x in sci)
         sci_signal = any(x["rule_g_year"] for x in sci)
         ed = s.get("edgar_10k")
@@ -119,8 +119,8 @@ def main() -> None:
             tier = "T-"
         tier_rows.append({"technology_id": tid, "name": t["name"], "arm": t["arm"],
                           "status": t["status"], "tier": tier,
-                          "science_signal_year": min((x["rule_g_year"] for x in sci if x["rule_g_year"]), default=None),
-                          "science_growth_3y": max(((x["growth_3y"] or 0) for x in sci), default=None),
+                          "signal_year": min((x["rule_g_year"] for x in sci if x["rule_g_year"]), default=None),
+                          "signal_growth_3y": max(((x["growth_3y"] or 0) for x in sci), default=None),
                           "edgar_latest_count": ed_latest,
                           "edgar_signal_year": ed["rule_g_year"] if ed else None})
     with open(OUT / "tiers.csv", "w", newline="", encoding="utf-8") as f:

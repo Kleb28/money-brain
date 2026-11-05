@@ -1,48 +1,48 @@
-technology_id,name,arm,status,tier,science_signal_year,science_growth_3y,edgar_latest_count,edgar_signal_year
-3d_printing,3D printing,tech,validation,T1,2013,0.082,104,2015
-autonomous_cars,Autonomous cars,tech,validation,T1,2016,0.292,173,2018
-bispecific_antibody,Bispecific antibody,bio,validation,T1,2013,1.369,110,2019
-cloud_computing,Cloud computing,tech,validation,T2,2011,-0.346,1517,2011
-computer_vision,Computer vision,tech,validation,T1,2013,0.111,173,2019
-drug_conjugates,Antibody drug conjugates,bio,validation,T1,2012,1.013,128,2015
-millimeter_wave,Millimeter wave,tech,validation,T0,2016,0.245,24,2020
-fingerprint_sensor,Fingerprint sensor,tech,validation,T-,,-0.486,3,
-fracking,Fracking,tech,validation,T1,2014,-0.066,198,2010
-hybrid_ev,Hybrid vehicle / Electric car,tech,validation,T2,2014,0.277,604,2010
-lithium_battery,Lithium battery,tech,validation,T1,2010,0.069,114,2009
-machine_learning,Machine learning / AI,tech,validation,T2,2013,0.697,3989,2016
-mobile_payment,Mobile payment,tech,validation,T1,2022,0.027,136,2011
-oled_display,OLED display,tech,validation,T-,,0.18,24,
-smart_devices,Smart devices,tech,validation,T2,2011,0.146,1133,2011
-social_networking,Social networking,tech,validation,T2,2011,-0.055,2707,2008
-solar_power,Solar power,tech,validation,T2,2005,0.041,314,2009
-stent_graft,Stent graft,bio,validation,T-,,-0.065,5,
-virtual_reality,Virtual reality,tech,validation,T1,2016,0.326,175,2017
-wireless_charging,Wireless charging,tech,validation,T-,,0.109,17,
-rfid,RFID,tech,validation,T1,2006,0.341,54,2005
-touch_screen,Touch screen,tech,validation,T-,,-0.228,73,
-gps,GPS,tech,validation,T2,,0.05,219,
-search_engine,Search engine,tech,validation,T2,2010,-0.455,507,2009
-online_streaming,Online streaming,tech,validation,T1,2021,0.177,153,
-wifi,Wi-Fi,tech,validation,T2,2007,-0.104,267,
-electronic_gaming,Electronic gaming,tech,validation,T1,2010,-0.208,118,
-software_defined_radio,Software defined radio,tech,validation,T-,,0.384,6,
-lane_departure,Lane departure warning,tech,validation,T-,,1.302,12,
-ctl_ball_bearing,Ball bearing (control),tech,control,T0,2019,-0.309,5,
-ctl_hydraulic_cylinder,Hydraulic cylinder (control),tech,control,T-,,-0.248,5,
-ctl_heat_exchanger,Heat exchanger (control),tech,control,T-,,-0.079,56,
-ctl_centrifugal_pump,Centrifugal pump (control),tech,control,T-,,0.303,14,
-ctl_circuit_breaker,Circuit breaker (control),tech,control,T-,,4.592,108,
-ctl_power_transformer,Power transformer (control),tech,control,T-,,0.222,6,
-ctl_epoxy_resin,Epoxy resin (control),tech,control,T-,,0.151,9,
-ctl_polyurethane_foam,Polyurethane foam (control),tech,control,T-,,0,18,
-ctl_carbon_nanotube,Carbon nanotube (control),tech,control,T0,2005,-0.215,5,
-ctl_graphene,Graphene (control),tech,control,T0,2006,-0.233,23,
-ctl_zeolite_catalyst,Zeolite catalyst (control),tech,control,T-,,-0.092,7,
-ctl_catheter,Catheter (control),bio,control,T-,,0.129,113,
-ctl_dental_implant,Dental implant (control),bio,control,T-,,0.03,12,
-ctl_syringe,Syringe (control),bio,control,T-,,-0.024,102,
-ctl_rna_interference,RNA interference (control),bio,control,T1,2005,0.179,74,
-ctl_stem_cell,Stem cell (control),bio,control,T2,,-0.073,235,2010
-ctl_toothbrush,Toothbrush (control),tech,control,T-,,0.067,4,
-ctl_razor,Razor (control),tech,control,T-,,0.284,8,
+technology_id,name,arm,status,tier,signal_year,signal_growth_3y,edgar_latest_count,edgar_signal_year
+3d_printing,3D printing,tech,validation,T1,2012,-0.067,104,2015
+autonomous_cars,Autonomous cars,tech,validation,T1,2013,-0.149,173,2018
+bispecific_antibody,Bispecific antibody,bio,validation,T1,2014,0.053,110,2019
+cloud_computing,Cloud computing,tech,validation,T2,2011,0.092,1517,2011
+computer_vision,Computer vision,tech,validation,T-,,0.127,173,2019
+drug_conjugates,Antibody drug conjugates,bio,validation,T1,2013,0.329,128,2015
+millimeter_wave,Millimeter wave,tech,validation,T0,2018,0.27,24,2020
+fingerprint_sensor,Fingerprint sensor,tech,validation,T0,2014,-0.404,3,
+fracking,Fracking,tech,validation,T1,2011,0.058,198,2010
+hybrid_ev,Hybrid vehicle / Electric car,tech,validation,T2,2008,-0.323,604,2010
+lithium_battery,Lithium battery,tech,validation,T1,2010,-0.177,114,2009
+machine_learning,Machine learning / AI,tech,validation,T2,2015,0.424,3989,2016
+mobile_payment,Mobile payment,tech,validation,T1,2012,-0.543,136,2011
+oled_display,OLED display,tech,validation,T0,2003,-0.134,24,
+smart_devices,Smart devices,tech,validation,T2,2012,0.072,1133,2011
+social_networking,Social networking,tech,validation,T2,2005,0.4,2707,2008
+solar_power,Solar power,tech,validation,T2,2008,0.221,314,2009
+stent_graft,Stent graft,bio,validation,T-,,-0.323,5,
+virtual_reality,Virtual reality,tech,validation,T1,2011,0.199,175,2017
+wireless_charging,Wireless charging,tech,validation,T0,2010,0.001,17,
+rfid,RFID,tech,validation,T1,2005,0.045,54,2005
+touch_screen,Touch screen,tech,validation,T1,2008,-0.244,73,
+gps,GPS,tech,validation,T2,,-0.205,219,
+search_engine,Search engine,tech,validation,T2,,-0.051,507,2009
+online_streaming,Online streaming,tech,validation,T1,2012,0.109,153,
+wifi,Wi-Fi,tech,validation,T2,,0.155,267,
+electronic_gaming,Electronic gaming,tech,validation,T-,,0.148,118,
+software_defined_radio,Software defined radio,tech,validation,T-,,0.097,6,
+lane_departure,Lane departure warning,tech,validation,T-,,-0.238,12,
+ctl_ball_bearing,Ball bearing (control),tech,control,T-,,-0.119,5,
+ctl_hydraulic_cylinder,Hydraulic cylinder (control),tech,control,T-,,-0.117,5,
+ctl_heat_exchanger,Heat exchanger (control),tech,control,T-,,0.084,56,
+ctl_centrifugal_pump,Centrifugal pump (control),tech,control,T-,,0.462,14,
+ctl_circuit_breaker,Circuit breaker (control),tech,control,T-,,-0.065,108,
+ctl_power_transformer,Power transformer (control),tech,control,T-,,-0.259,6,
+ctl_epoxy_resin,Epoxy resin (control),tech,control,T-,,-0.322,9,
+ctl_polyurethane_foam,Polyurethane foam (control),tech,control,T-,,0.1,18,
+ctl_carbon_nanotube,Carbon nanotube (control),tech,control,T0,2003,0.114,5,
+ctl_graphene,Graphene (control),tech,control,T0,2008,-0.003,23,
+ctl_zeolite_catalyst,Zeolite catalyst (control),tech,control,T-,,-0.285,7,
+ctl_catheter,Catheter (control),bio,control,T-,,0.556,113,
+ctl_dental_implant,Dental implant (control),bio,control,T-,,-0.115,12,
+ctl_syringe,Syringe (control),bio,control,T-,,0.25,102,
+ctl_rna_interference,RNA interference (control),bio,control,T1,2003,-0.292,74,
+ctl_stem_cell,Stem cell (control),bio,control,T2,,-0.211,235,2010
+ctl_toothbrush,Toothbrush (control),tech,control,T-,,-0.621,4,
+ctl_razor,Razor (control),tech,control,T-,,-0.588,8,

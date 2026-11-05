@@ -23,11 +23,18 @@ sources:
     enabled: true
     arms: [bio]
   uspto:
-    enabled: true        # auto-skips when USPTO_API_KEY is missing
+    enabled: true        # title-only counts via ODP API; auto-skips when USPTO_API_KEY is missing
     arms: [bio, tech]
+  uspto_abs:
+    enabled: true        # title+abstract counts, Google Patents public dataset on BigQuery
+    arms: [bio, tech]    # run monthly by .github/workflows/bq.yml (collectors/patents_bq.py); needs GCP_SA_KEY
 
 detector:
   # share = count / denominator * 1e6  (per million documents of that source/year)
+  # sources whose Rule G signal defines "signal" for Tier assignment. Set to uspto_abs on 2026-11-05:
+  # text sources (pubmed/arxiv/edgar) never led the earnings-call breakthrough on the 29-technology set,
+  # and the title-only uspto series was too sparse (outputs/validation_notes_2026-11-03.md, addenda 1-4).
+  signal_sources: [uspto_abs]
   min_count: 30            # ignore years with fewer raw documents than this (noise floor)
   growth_window_years: 2   # compare share[y] vs share[y - window]
   growth_threshold: 0.5    # +50 % over the window

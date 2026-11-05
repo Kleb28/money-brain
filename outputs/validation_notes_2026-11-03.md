@@ -113,3 +113,32 @@ Data: Kalyani·Bloom·Carvalho·Hassan·Lerner·Tahoun public release (techdiffu
 - Do not use the detector as a timing trigger; use it as a screen (signal AND 10-K low) restricted to technologies whose patent history starts recently.
 - Replace title-only USPTO counts with full-text counts before re-running rule selection (candidate: Google Patents public dataset on BigQuery, free tier; needs a GCP project).
 - Keep settings.yml unchanged until the full-text series exists.
+
+---
+
+# Addendum 2026-11-05 (4) — Full-text patent counts (uspto_abs) and rule decision
+
+Source: Google Patents public dataset on BigQuery (patents-public-data.patents.publications), US applications deduplicated by application number, English title + abstract, filing year 2000-2026, one query for all 2,027 phrases (235.8 GB scanned, 36 min; collectors/patents_bq.py, workflow patents-bq, monthly). Coverage vs title-only: median peak count 42/yr (was 9); 61% of the 1,286 technologies reach min_count 30 at some point (was 25%). Full tables: outputs/oos_report_uspto_abs.md, outputs/rule_selection.md.
+
+## Out-of-sample results (1,286 technologies), uspto_abs vs title-only
+| test | pre-registered 30/+50%/2w | 10/+50%/2w | 1-window rules | title-only best |
+|---|---|---|---|---|
+| A hiring timing, lead − fire | 0.20 − 0.12 = +0.08 | 0.32 − 0.16 = +0.16 | +0.01 to +0.07 (fire 0.31-0.45) | ≤ +0.11 |
+| C 10-K timing, lead − fire(flat); fire(never) | 0.19 − 0.08 = +0.11; 0.06 | 0.38 − 0.14 = +0.25; 0.17 | −0.10 to +0.04 | ≤ +0.04 |
+| B cross-section as of 2009, lift disruptive/non | 5.0× (0.12 vs 0.02) | 2.2× | 1.1-2.4× | 8-10× (eligibility = size proxy) |
+| D Tier 1 as of 2009 (10-K < 10 filings), disruptive by 2019 | 18% (n = 28) vs 4% base | 13% (n = 79) vs 4% | 6-9% | 3-11% |
+| D Tier 1 as of 2009 at settings threshold (10-K < 50) | 41% (n = 51) vs 12% base | 32% (n = 114) vs 12% | – | – |
+| D Tier 1, young technologies only (patent emergence ≥ 2000) | 38% (n = 8) | 33% (n = 21) vs 3% | 20% | 38% (n = 13) |
+
+In-sample (29-set, outputs/rule_selection.md): 10/+50%/1w lead 0.75 / fire 0.08 (score +0.67) — but the same rule fires on 42% (A) and 30% (C) of flat controls out of sample, so the in-sample score is optimism; 30/+50%/2w lead 0.25 / fire 0.00.
+
+## Reading
+- Dense counts make the second consecutive window a real filter: 2-window rules now show positive discrimination on all four tests; 1-window rules fire on a third to a half of everything and have no cross-sectional lift.
+- Timing lead, where it exists, is modest: median 2-3 years before 10-K emergence, 6 years before hiring emergence; on the 29-set the strict rule leads 4/14, lags 9.
+- Tier 1 at the settings threshold (signal AND < 50 10-K filings): about 4 in 10 became earnings-call "disruptive" technologies within the sample vs 1 in 8 for no-signal technologies with the same 10-K level. Almost none became heavy 10-K topics (≥ 30 filings/yr), so the thesis target is earnings-call relevance, not 10-K text.
+- Caveats unchanged: EC class is cumulative 2002-19 (association, not strict prediction); the set is dominated by 1980s-90s technologies; abstract text still narrower than Kalyani's full text.
+
+## Decision (2026-11-05)
+- Keep the pre-registered rule: min_count 30, +50% over 2 years, 2 consecutive windows. Not changed.
+- settings.detector.signal_sources = [uspto_abs]: Tier assignment now uses the full-text patent series; pubmed/arxiv/edgar/uspto(title) remain collected for cards and denominators.
+- 10/+50%/2w kept as a watch-list rule in the grid (more leads, 2× the false-positive rate), not for Tier assignment.
