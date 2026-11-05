@@ -19,6 +19,14 @@ on:
         description: "year range"
         required: false
         default: "2002-2019"
+      list:
+        description: "CSV with id,keywords (default: the out-of-sample set)"
+        required: false
+        default: "data/external/oos_technologies.csv"
+      prefix:
+        description: "output prefix (oos | cand)"
+        required: false
+        default: "oos"
 
 permissions:
   contents: write
@@ -40,4 +48,4 @@ jobs:
       - run: |
           git config user.name "money-brain-bot"
           git config user.email "money-brain-bot@users.noreply.github.com"
-      - run: python -u -m scripts.collect_oos --source ${{ github.event.inputs.source }} --shard ${{ github.event.inputs.shard }} --nshards ${{ github.event.inputs.nshards }} --years ${{ github.event.inputs.years }} --max-minutes 330
+      - run: python -u -m scripts.collect_oos --source ${{ github.event.inputs.source }} --shard ${{ github.event.inputs.shard }} --nshards ${{ github.event.inputs.nshards }} --years ${{ github.event.inputs.years }} --list ${{ github.event.inputs.list }} --prefix ${{ github.event.inputs.prefix }} --max-minutes 330

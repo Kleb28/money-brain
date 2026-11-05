@@ -22,8 +22,8 @@ LIST = ROOT / "data" / "external" / "oos_technologies.csv"
 COMMIT_EVERY = 60
 
 
-def load_list() -> list[dict]:
-    with open(LIST, encoding="utf-8") as f:
+def load_list(path: Path = LIST) -> list[dict]:
+    with open(path, encoding="utf-8") as f:
         rows = list(csv.DictReader(f))
     for r in rows:
         r["keywords"] = [k.strip() for k in r["keywords"].split(";") if k.strip()]
@@ -72,12 +72,14 @@ def main() -> None:
     ap.add_argument("--nshards", type=int, default=1)
     ap.add_argument("--years", default="2002-2019")
     ap.add_argument("--max-minutes", type=float, default=330)
+    ap.add_argument("--list", default=str(LIST), help="CSV with id,keywords columns")
+    ap.add_argument("--prefix", default="oos", help="output file prefix: data/external/<prefix>_counts_<source>_<shard>.csv")
     a = ap.parse_args()
     y0, y1 = (int(x) for x in a.years.split("-"))
     years = list(range(y0, y1 + 1))
-    techs = [t for i, t in enumerate(load_list()) if i % a.nshards == a.shard]
+    techs = [t for i, t in enumerate(load_list(Path(a.list))) if i % a.nshards == a.shard]
     src_name = "uspto" if a.source == "uspto" else edgar.SOURCE
-    out = ROOT / "data" / "external" / f"oos_counts_{a.source}_{a.shard}.csv"
+    out = ROOT / "data" / "external" / f"{a.prefix}_counts_{a.source}_{a.shard}.csv"
     done = load_done(out)
     log(f"{a.source} shard {a.shard}/{a.nshards}: {len(techs)} technologies, {len(done)} rows already done")
 
