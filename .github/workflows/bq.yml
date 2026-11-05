@@ -1,0 +1,39 @@
+name: patents-bq
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "true = estimate bytes only"
+        required: false
+        default: "false"
+
+permissions:
+  contents: write
+
+jobs:
+  bq:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      GCP_SA_KEY: ${{ secrets.GCP_SA_KEY }}
+      GCP_PROJECT_ID: ${{ vars.GCP_PROJECT_ID }}
+      BQ_MAX_GB: ${{ vars.BQ_MAX_GB }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt google-cloud-bigquery
+      - run: python -u -m collectors.patents_bq ${{ github.event.inputs.dry_run == 'true' && '--dry-run' || '' }}
+      - name: Run detector and commit
+        if: ${{ github.event.inputs.dry_run != 'true' }}
+        run: |
+          python -m detector.detector
+          git config user.name "money-brain-bot"
+          git config user.email "money-brain-bot@users.noreply.github.com"
+          git add data/ outputs/
+          if git diff --cached --quiet; then echo "nothing to commit"; else
+            git commit -m "data: uspto_abs full-text patent counts (BigQuery) $(date -u +%F)"
+            for i in 1 2 3 4 5; do git pull --rebase origin main && git push origin HEAD:main && break; sleep 15; done
+          fi

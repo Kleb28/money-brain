@@ -43,6 +43,9 @@ theses/                   thesis 카드 (md, _template.md 참고)
 | Secret | USPTO_API_KEY | data.uspto.gov 발급 (없으면 uspto 수집기는 자동 건너뜀) |
 | Variable | EDGAR_USER_AGENT | `money-brain research <연락 이메일>` — SEC 요구사항, 없으면 403 가능 |
 | Variable | USPTO_API_BASE | (선택) 엔드포인트가 바뀐 경우만 |
+| Secret | GCP_SA_KEY | GCP service account JSON 키 전체 (BigQuery Job User 권한) — patents-bq 워크플로용 |
+| Variable | GCP_PROJECT_ID | 그 service account가 속한 GCP 프로젝트 ID |
+| Variable | BQ_MAX_GB | (선택) BigQuery 1회 스캔 상한 GB, 기본 400 (무료 tier 월 1 TB) |
 
 ## 운영 주기
 - 수집 주 1회 (Actions) → 탐지·Tier 갱신 자동
@@ -52,5 +55,5 @@ theses/                   thesis 카드 (md, _template.md 참고)
 ## 알려진 한계
 - EDGAR 전문검색은 2001년 이후만 있고 건수 10,000에서 상한 (relation=gte)
 - 10-K 분모는 EDGAR 분기 마스터 인덱스(form.gz)의 정확한 "10-K" 행 수; EFTS 총계는 10,000에서 상한이라 분모로 못 씀
-- uspto는 ODP 검색 API(api.uspto.gov)로 제목(inventionTitle) 구절만 검색 가능 — 초록은 노출되지 않음; 출원 연도 기준이라 최근 2년은 미공개분만큼 과소 집계
+- uspto는 ODP 검색 API(api.uspto.gov)로 제목(inventionTitle) 구절만 검색 가능 — 초록은 노출되지 않음; 출원 연도 기준이라 최근 2년은 미공개분만큼 과소 집계. 제목만으로는 연간 peak count 중앙값 9건으로 너무 희소함 (validation_notes addendum 3) → uspto_abs(제목+초록, Google Patents 공개 데이터셋/BigQuery, collectors/patents_bq.py, Actions: patents-bq)로 대체 검증 중
 - 키워드 OR 검색이라 동음이의 잡음 포함 — Kalyani는 사람 감사로 80% 정확도 기준을 썼고 여기서는 아직 안 함

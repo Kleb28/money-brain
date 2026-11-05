@@ -110,6 +110,11 @@ def fmt(x) -> str:
 
 
 def main() -> None:
+    import argparse
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--source", default="uspto", help="patent series to evaluate: uspto (title only) or uspto_abs (title+abstract, BigQuery)")
+    args = ap.parse_args()
+    src = args.source
     settings = yaml.safe_load(open(ROOT / "config" / "settings.yml", encoding="utf-8"))
     d = settings["detector"]
     w = int(d["growth_window_years"])
@@ -122,9 +127,9 @@ def main() -> None:
         for k in t["keywords"].split(";"):
             bigram_to_id[k.strip()] = tid
     den = denominators()
-    us_raw = load_counts("oos_counts_uspto_*.csv")
+    us_raw = load_counts(f"oos_counts_{src}_*.csv")
     ed_raw = load_counts("oos_counts_edgar_*.csv")
-    us_sh = {tid: shares(r, den["uspto"]) for tid, r in us_raw.items() if len(r) >= len(YEARS)}
+    us_sh = {tid: shares(r, den[src]) for tid, r in us_raw.items() if all(y in r for y in YEARS)}
     ed_sh = {tid: shares(r, den["edgar_10k"]) for tid, r in ed_raw.items() if len(r) >= len(YEARS)}
 
     # ---- job-posting series per technology (sum over its bigrams) ----
@@ -141,7 +146,7 @@ def main() -> None:
             jobs_t[y] = max(jobs_t.get(y, 0), int(r["total_jobs"]))
     job_sh = {tid: {y: h[y] / jobs_t[y] * 1e6 for y in h if jobs_t.get(y)} for tid, h in jobs_h.items()}
 
-    lines = ["# Out-of-sample evaluation — techdiffusion.net technology set", "",
+    lines = [f"# Out-of-sample evaluation — techdiffusion.net technology set (patent series: {src})", "",
              f"USPTO series complete for {len(us_sh)} / {len(techs)} technologies; 10-K series for {len(ed_sh)}; "
              f"job-posting series for {len(job_sh)}.", "",
              "Rule G: share[y] / share[y−2] ≥ 1+g, raw count ≥ min_count, for N consecutive windows; "
@@ -300,8 +305,8 @@ def main() -> None:
     lines.append("")
 
     OUT.mkdir(exist_ok=True)
-    (OUT / "oos_report.md").write_text("\n".join(lines), encoding="utf-8")
-    with open(OUT / "oos_details.csv", "w", newline="", encoding="utf-8") as f:
+    (OUT / ("oos_report.md" if src == "uspto" else f"oos_report_{src}.md")).write_text("\n".join(lines), encoding="utf-8")
+    with open(OUT / ("oos_details.csv" if src == "uspto" else f"oos_details_{src}.csv"), "w", newline="", encoding="utf-8") as f:
         wri = csv.DictWriter(f, fieldnames=["test", "rule", "technology", "role", "emergence", "signal"])
         wri.writeheader(); wri.writerows(details)
     print("\n".join(lines))

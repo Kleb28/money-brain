@@ -1,4 +1,4 @@
-# Out-of-sample evaluation — techdiffusion.net technology set
+# Out-of-sample evaluation — techdiffusion.net technology set (patent series: uspto)
 
 USPTO series complete for 1286 / 1286 technologies; 10-K series for 1286; job-posting series for 1147.
 
