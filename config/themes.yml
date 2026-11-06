@@ -1,0 +1,31 @@
+# Candidate themes chosen from outputs/candidates_themes.md (2026-11-06).
+# patent_keywords: the Rule G bigrams behind the theme (from candidates_bigrams.csv) — the arithmetic signal.
+# market_phrases: how filings/analysts name the same thing — used ONLY to count 10-K mentions at theme
+#   level (the bigram count understates market attention when the market uses a different word).
+# Phrase lists are keyword grouping (LLM-assisted, allowed); all counts and tiers stay arithmetic.
+themes:
+  adv_packaging:
+    name: Advanced packaging, backside power, HBM
+    arm: tech
+    patent_keywords: [hybrid bonding, hybrid bonded, direct bond, backside power, backside contact, backside metal, power rail, bandwidth memory, computational storage, die package]
+    market_phrases: [advanced packaging, hybrid bonding, backside power delivery, high bandwidth memory, chiplet, co-packaged optics, 2.5D packaging, 3D packaging]
+  ntn_wifi7_oran:
+    name: Direct-to-device satellite (NTN), Wi-Fi 7, Open RAN
+    arm: tech
+    patent_keywords: [network ntn, terrestrial network, satellite network, ap mld, ap multi, multi link, time twt, target wake, open radio, rt ric, controller ric, intelligent surfaces]
+    market_phrases: [non-terrestrial network, direct-to-device, direct to cell, satellite-to-phone, satellite connectivity, Wi-Fi 7, Open RAN, RAN intelligent controller]
+  battery_chem_mfg:
+    name: Next battery chemistry and cell manufacturing
+    arm: tech
+    patent_keywords: [state electrolyte, electrolyte material, bis fluorosulfonyl, fluorosulfonyl imide, sulfur battery, iron phosphate, lithium iron, dry electrode, jelly roll, thermal runaway, immersion cooling, cold plate, lithium extraction]
+    market_phrases: [solid-state battery, solid state battery, dry electrode, lithium iron phosphate, LFP battery, lithium-sulfur, lithium sulfur, sodium-ion, battery thermal management, direct lithium extraction]
+  photonics_pic:
+    name: Silicon photonics and photonic integrated circuits
+    arm: tech
+    patent_keywords: [circuit pic, lithium niobate, ring resonator, waveguide core, laser vcsel, vertical cavity, wavelength converter]
+    market_phrases: [silicon photonics, photonic integrated circuit, co-packaged optics, optical interconnect, thin-film lithium niobate, optical transceiver, linear pluggable optics]
+  tpd_ev_cfdna:
+    name: Targeted protein degradation, extracellular vesicles, cell-free DNA
+    arm: bio
+    patent_keywords: [protein degradation, extracellular vesicles, extracellular vesicle, vesicles evs, free dna, free nucleic, rolling circle]
+    market_phrases: [targeted protein degradation, PROTAC, molecular glue, degrader, extracellular vesicle, exosome, cell-free DNA, liquid biopsy, minimal residual disease]
