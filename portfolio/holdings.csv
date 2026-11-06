@@ -1,0 +1,16 @@
+arm,basket,ticker,weight_in_basket,role
+treatment,adv_packaging,AMKR,0.25,beneficiary
+treatment,adv_packaging,MU,0.25,beneficiary (attention flag)
+treatment,adv_packaging,FORM,0.25,beneficiary
+treatment,adv_packaging,ONTO,0.25,beneficiary
+treatment,ntn_d2d,ASTS,0.5,beneficiary (attention flag)
+treatment,ntn_d2d,GSAT,0.5,beneficiary
+treatment,battery_next,QS,0.25,beneficiary (attention flag)
+treatment,battery_next,SLDP,0.25,beneficiary
+treatment,battery_next,ASPN,0.25,beneficiary
+treatment,battery_next,MVST,0.25,beneficiary
+control,attention_peak,FOTO,0.5,ETF launched 2026-05-27
+control,attention_peak,DRAM,0.5,ETF launched 2026-04
+control,market,SPY,1.0,benchmark
+control,sector,SMH,1.0,benchmark
+control,sector,QQQ,1.0,benchmark
