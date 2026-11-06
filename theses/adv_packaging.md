@@ -3,7 +3,7 @@ id: adv_packaging
 name: Advanced packaging / backside power / HBM
 arm: tech
 tier: T1
-status: candidate
+status: selected
 created: 2026-11-06
 updated: 2026-11-06
 ---
@@ -41,4 +41,4 @@ hybrid bonding 장비·공정 수율, HBM 적층 수율과 검사(probe card·�
 12개월 내 (1) hybrid bonding·backside power 10-K 언급이 늘지 않고 (2) AMKR advanced products 매출이 역성장하면 retire. HBM 쪽은 DRAM ETF 자금 유입이 꺾이는 시점이 상단 경고.
 
 ## Review log
-- 2026-11-06: created from candidates_themes.md (2026-11-06 run) + theme_market.md; linkage in theses/linkage_2026-11-06.md
+- 2026-11-06: status candidate → selected (Caleb, 2026-11-06); created from candidates_themes.md (2026-11-06 run) + theme_market.md; linkage in theses/linkage_2026-11-06.md

@@ -3,7 +3,7 @@ id: ntn_d2d
 name: Direct-to-device satellite (NTN)
 arm: tech
 tier: T0
-status: candidate
+status: selected
 created: 2026-11-06
 updated: 2026-11-06
 ---
@@ -40,4 +40,4 @@ updated: 2026-11-06
 2027년 말까지 ASTS 상용 서비스 매출이 발생하지 않거나 2026년 발사 목표(45-60기)를 절반 이하로 달성하면 retire. GSAT는 Apple 계약 조건 변화가 검증 포인트.
 
 ## Review log
-- 2026-11-06: created from candidates_themes.md + theme_market.md; linkage in theses/linkage_2026-11-06.md
+- 2026-11-06: status candidate → selected (Caleb, 2026-11-06); created from candidates_themes.md + theme_market.md; linkage in theses/linkage_2026-11-06.md

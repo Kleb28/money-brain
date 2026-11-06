@@ -3,7 +3,7 @@ id: battery_next
 name: Solid-state / dry-electrode / LFP / sodium-ion battery manufacturing
 arm: tech
 tier: T0
-status: candidate
+status: selected
 created: 2026-11-06
 updated: 2026-11-06
 ---
@@ -41,4 +41,4 @@ solid-state의 양산 수율(전해질 시트, 계면), dry electrode 공정 장
 12개월 내 QS·SLDP가 B-sample→C-sample 전환 일정을 또 미루고 OEM 채택 발표가 없으면 solid-state 축은 retire; Na-ion·LFP 축은 미국 상장 수혜주가 없으면 watch로 내림.
 
 ## Review log
-- 2026-11-06: created from candidates_themes.md + theme_market.md; linkage in theses/linkage_2026-11-06.md
+- 2026-11-06: status candidate → selected (Caleb, 2026-11-06); created from candidates_themes.md + theme_market.md; linkage in theses/linkage_2026-11-06.md
