@@ -102,7 +102,8 @@ def main() -> None:
     t_start = time.time()
     n_new, since_commit = 0, 0
     for i, t in enumerate(techs):
-        todo = [y for y in years if (t["id"], y) not in done]
+        row_years = [int(y) for y in t["years"].split(";") if y.strip()] if t.get("years") else years
+        todo = [y for y in row_years if (t["id"], y) not in done]
         for y in todo:
             try:
                 done[(t["id"], y)] = count(t, y); n_new += 1
