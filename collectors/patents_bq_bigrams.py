@@ -3,8 +3,9 @@
 Same table and tokenisation as collectors/patents_bq.py, but instead of counting known phrases it
 counts all bigrams (adjacent token pairs, both tokens outside a function-word / patent-legalese
 stoplist), by filing year, and keeps a bigram only if it reaches ≥ MIN_PEAK documents in some year
-and did not shrink between 2010-14 and 2020-24 (a coarse prefilter; the exact Rule G is applied
-later by detector/candidates.py from config/settings.yml). Kalyani et al. (QJE 2025) start the same
+(no other prefilter: an earlier version also required the bigram not to shrink between 2010-14 and
+2020-24, which used future information and would bias any historical simulation; removed 2026-11-06).
+The exact Rule G is applied later by detector/candidates.py from config/settings.yml. Kalyani et al. (QJE 2025) start the same
 way — technical bigrams from patent text — then keep the ones whose use rises.
 
 Per bigram-year it also counts distinct harmonized assignees (n_assignees) and distinct 4-character
@@ -86,7 +87,6 @@ cnt AS (SELECT g, yr, COUNT(*) AS n, COUNT(DISTINCT NULLIF(asg, '')) AS n_asg, C
 keep AS (
   SELECT g FROM cnt GROUP BY g
   HAVING MAX(n) >= {MIN_PEAK}
-     AND SUM(IF(yr BETWEEN 2020 AND 2024, n, 0)) >= SUM(IF(yr BETWEEN 2010 AND 2014, n, 0))
 )
 SELECT c.g AS bigram, c.yr, c.n, c.n_asg, c.n_cpc FROM cnt c JOIN keep USING (g)
 UNION ALL
