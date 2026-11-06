@@ -46,3 +46,11 @@ ctl_rna_interference,RNA interference (control),bio,control,,rna interference; s
 ctl_stem_cell,Stem cell (control),bio,control,,stem cell; stem cells
 ctl_toothbrush,Toothbrush (control),tech,control,,toothbrush; toothbrushes
 ctl_razor,Razor (control),tech,control,,razor blade; razor cartridge; shaving razor
+adv_packaging,Advanced packaging / backside power / HBM,tech,candidate,,hybrid bonding; backside power delivery; high bandwidth memory; chiplet; advanced packaging
+ntn_d2d,Direct-to-device satellite (NTN),tech,candidate,,non-terrestrial network; direct-to-device; direct to cell; satellite-to-phone
+wifi7_mlo,Wi-Fi 7 multi-link,tech,candidate,,wi-fi 7; multi-link operation; multi-link device; target wake time
+battery_next,Solid-state / dry-electrode / LFP battery manufacturing,tech,candidate,,solid-state battery; solid state electrolyte; dry electrode; lithium iron phosphate; lithium-sulfur battery; sodium-ion battery
+photonics_cpo,Silicon photonics / co-packaged optics,tech,candidate,,silicon photonics; photonic integrated circuit; co-packaged optics; thin-film lithium niobate; optical interconnect
+protein_degradation,Targeted protein degradation,bio,candidate,,targeted protein degradation; PROTAC; molecular glue degrader; protein degrader
+cfdna_mrd,Cell-free DNA / MRD diagnostics,bio,candidate,,cell-free DNA; circulating tumor DNA; minimal residual disease; liquid biopsy
+extracellular_vesicles,Extracellular vesicle therapeutics,bio,candidate,,extracellular vesicle; extracellular vesicles; exosome therapeutics; engineered exosome
