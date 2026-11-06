@@ -1,0 +1,37 @@
+name: sim-prices
+
+on:
+  workflow_dispatch:
+    inputs:
+      shard:
+        description: "shard index"
+        required: true
+        default: "0"
+      nshards:
+        description: "number of shards"
+        required: true
+        default: "4"
+
+permissions:
+  contents: write
+
+jobs:
+  prices:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt yfinance
+      - run: python -u -m scripts.collect_prices --shard ${{ github.event.inputs.shard }} --nshards ${{ github.event.inputs.nshards }}
+      - name: Commit
+        run: |
+          git config user.name "money-brain-bot"
+          git config user.email "money-brain-bot@users.noreply.github.com"
+          git add data/external/sim_prices_*.csv.gz
+          if git diff --cached --quiet; then echo "nothing to commit"; else
+            git commit -m "data: sim prices shard ${{ github.event.inputs.shard }} $(date -u +%F)"
+            for i in 1 2 3 4 5; do git pull --rebase origin main && git push origin HEAD:main && break; sleep 15; done
+          fi
