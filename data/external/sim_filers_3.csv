@@ -1,0 +1,710 @@
+bigram,year,entity,ticker,cik,n_filings
+1h pyrazol,2012,,,,0
+2a 2b,2018,SeD Intelligent Home Inc.,LVDW,0001503658,1
+2a 2b,2018,"ENBRIDGE INC  (ENB, EBBGF, EBBNF, EBGEF, EBRGF, EBRZF, ENBFF, ENBGF, ENBHF, ENBMF, ENBNF, ENBOF, ENBRF, ENNPF)",,0000895728,1
+2a 2b,2018,PEABODY ENERGY CORP,BTU,0001064728,1
+2a 2b,2018,"SOUTHERN CO  (SO, SOJC, SOJD, SOJE)",,0000092122,1
+2a 2b,2018,SOUTHERN POWER CO,,0001160661,1
+2a 2b,2018,ALABAMA POWER CO,,0000003153,1
+2a 2b,2018,GULF POWER CO,,0000044545,1
+2a 2b,2018,GEORGIA POWER CO,GPJA,0000041091,1
+2a 2b,2018,SOUTHERN Co GAS,,0001004155,1
+2a 2b,2018,MISSISSIPPI POWER CO,,0000066904,1
+2a 2b,2018,ARENA PHARMACEUTICALS INC,,0001080709,1
+2a 2b,2018,"Merck & Co., Inc.",MRK,0000310158,1
+2d image,2011,VIKING SYSTEMS INC,,0001065754,1
+2d image,2011,IMAGING3 INC,GPFT,0001205181,1
+2d image,2011,"Shrink Nanotechnologies, Inc.",,0001355242,1
+2d video,2012,"PREMIER EXHIBITIONS, INC.",,0000796764,1
+2d video,2012,"AccelPath, Inc.",,0001077800,1
+3d coordinate,2013,,,,0
+3d digital,2022,NATUS MEDICAL INC,,0000878526,1
+3d digital,2022,DUESENBERG TECHNOLOGIES INC.,DUSYF,0001551887,1
+3d digital,2022,Roblox Corp,RBLX,0001315098,1
+3d digital,2022,Bunker Hill Mining Corp.,BHLL,0001407583,2
+3d digital,2022,"Matterport, Inc./DE",MTTR,0001819394,1
+3d digital,2022,IMAGING DIAGNOSTIC SYSTEMS INC /FL/,,0000790652,1
+3d digital,2022,"SURGALIGN HOLDINGS, INC.",,0001760173,1
+3d digital,2022,ETHAN ALLEN INTERIORS INC,ETD,0000896156,1
+3d digital,2022,HOLOGIC INC,HOLX,0000859737,1
+3d digital,2022,AgEagle Aerial Systems Inc.,UAVS,0000008504,1
+3d digital,2022,AKUMIN INC.,,0001776197,1
+3d digital,2022,"Vivos Therapeutics, Inc.",VVOS,0001716166,1
+3d environment,2014,WORLDS ONLINE INC.,MRMD,0001522767,1
+3d environment,2014,WORLDS INC,WDDD,0000001961,1
+3d environment,2014,PLURISTEM THERAPEUTICS INC,PLUR,0001158780,1
+3d environment,2014,"VistaGen Therapeutics, Inc.",VTGN,0001411685,1
+3d image,2010,"Provision Holding, Inc.",,0001335493,1
+3d image,2010,3DICON CORP,CRTG,0001375195,1
+3d image,2010,IMAGING3 INC,GPFT,0001205181,2
+3d image,2010,"Coda Octopus Group, Inc.",CODA,0001334325,1
+3d image,2010,"Dolby Laboratories, Inc.",DLB,0001308547,1
+3d image,2010,ARTIFICIAL LIFE INC,,0001070361,1
+3d image,2010,HOLOGIC INC,HOLX,0000859737,1
+3d image,2010,SENORX INC,,0001097136,1
+3d image,2010,IMAX CORP,IMAX,0000921582,1
+3d image,2010,VARIAN MEDICAL SYSTEMS INC,,0000203527,1
+3d map,2012,HANSEN MEDICAL INC,,0001276591,1
+3d mesh,2012,,,,0
+3d models,2010,"Medical Design Studios, Inc.",,0001405917,1
+3d models,2010,"Worlds.com, Inc.",WDDD,0000001961,1
+3d models,2010,MOLEX INC,,0000067472,1
+3d models,2010,"Moggle, Inc.",RPMT,0001437283,1
+3d models,2010,UNR HOLDINGS INC,,0001093800,3
+3d models,2010,Google Inc.,,0001288776,1
+3d models,2010,NVIDIA CORP,NVDA,0001045810,1
+3d models,2010,HANSEN MEDICAL INC,,0001276591,1
+3d object,2013,,,,0
+3d point,2012,SCHMITT INDUSTRIES INC,,0000922612,1
+3d point,2012,PERCEPTRON INC/MI,,0000887226,1
+3d points,2020,,,,0
+3d printing,2014,ExOne Co,,0001561627,1
+3d printing,2014,Makism 3D Corp.,,0001495850,1
+3d printing,2014,3D SYSTEMS CORP,DDD,0000910638,1
+3d printing,2014,"ARC Group Worldwide, Inc.",,0000826326,1
+3d printing,2014,MEDIABISTRO INC.,,0001083712,1
+3d printing,2014,"Avante Systems, Inc.",,0001504388,1
+3d printing,2014,"CHANGING TECHNOLOGIES, INC.",,0001581378,2
+3d printing,2014,"SIGMA LABS, INC.",NTRP,0000788611,1
+3d printing,2014,AMERICAN GRAPHITE TECHNOLOGIES INC.,,0001497316,1
+3d printing,2014,"PUGET TECHNOLOGIES, INC.",PUGE,0001540615,3
+3d printing,2014,IKONICS CORP,WULF,0001083301,1
+3d printing,2014,Proto Labs Inc,PRLB,0001443669,1
+3d printing,2014,SCANSOURCE INC,SCSC,0000918965,5
+3d printing,2014,Songbird Development Inc.,,0001586372,1
+3d printing,2014,"Yummy Flies, Inc.",,0001501257,1
+3d printing,2014,"3DX Industries, Inc.",,0001453122,1
+3d printing,2014,"SPRIZA, INC.",,0001565248,1
+3d printing,2014,"ORGANOVO HOLDINGS, INC.",ONVO,0001497253,1
+3d printing,2014,IPG PHOTONICS CORP,IPGP,0001111928,1
+3d printing,2014,"Kandi Technologies Group, Inc.",,0001316517,2
+3d printing,2014,SCHULMAN A INC,,0000087565,1
+3d printing,2014,COHERENT INC,,0000021510,1
+3d printing,2014,MARVELL TECHNOLOGY GROUP LTD,,0001058057,1
+3d printing,2014,FLEXTRONICS INTERNATIONAL LTD.,FLEX,0000866374,1
+3d printing,2014,NEWPORT CORP,,0000225263,1
+3d scan,2022,3D SYSTEMS CORP,DDD,0000910638,1
+3d scene,2013,,,,0
+3d space,2012,WORLDS INC,WDDD,0000001961,1
+3d space,2012,WORLDS ONLINE INC.,MRMD,0001522767,1
+3d space,2012,SRS LABS INC,,0001016470,1
+3d space,2012,HANSEN MEDICAL INC,,0001276591,1
+3d space,2012,InvenSense Inc,,0001294924,1
+3d video,2010,"Provision Holding, Inc.",,0001335493,1
+3d video,2010,Parametric Sound Corp,HEAR,0001493761,1
+3d video,2010,Vuzix Corp,VUZI,0001463972,1
+3d video,2010,ENTROPIC COMMUNICATIONS INC,,0001227930,1
+3d video,2010,"Dolby Laboratories, Inc.",DLB,0001308547,1
+3d volume,2012,FX ENERGY INC,,0000907649,1
+3d volume,2012,IMAGING DIAGNOSTIC SYSTEMS INC /FL/,,0000790652,1
+3rd generation,2022,Lifevantage Corp,LFVN,0000849146,1
+3rd generation,2022,"Checkpoint Therapeutics, Inc.",CKPT,0001651407,1
+3rd generation,2022,VirnetX Holding Corp,VHC,0001082324,2
+3rd generation,2022,BION ENVIRONMENTAL TECHNOLOGIES INC,BNET,0000875729,1
+3rd generation,2022,WIRELESS TELECOM GROUP INC,,0000878828,1
+3rd generation,2022,DZS INC.,DZSI,0001101680,1
+3rd generation,2022,"Ikena Oncology, Inc.",IKNA,0001835579,1
+3rd generation,2022,Resonant Inc,,0001579910,1
+3rd generation,2022,"Dolby Laboratories, Inc.",DLB,0001308547,1
+3rd generation,2022,QUALCOMM INC/DE,QCOM,0000804328,1
+3rd generation,2022,CHEVRON CORP,CVX,0000093410,1
+3rd generation,2022,"ARCA biopharma, Inc.  (ABIO, ORKA)",,0000907654,1
+3rd generation,2022,"Black Diamond Therapeutics, Inc.",BDTX,0001701541,1
+5g 6g,2024,"AmpliTech Group, Inc.  (AMPG, AMPGW)",,0001518461,1
+5g 6g,2024,"Aeluma, Inc.",ALMU,0001828805,1
+5g 6g,2024,ANSYS INC,ANSS,0001013462,1
+5g 6g,2024,"Keysight Technologies, Inc.",KEYS,0001601046,1
+5g 6g,2024,Aerkomm Inc.,AKOM,0001590496,2
+5g network,2020,"T-Mobile US, Inc.",TMUS,0001283699,1
+5g network,2020,DISH Network CORP,,0001001082,1
+5g network,2020,WYTEC INTERNATIONAL INC,WYTC,0001560143,1
+5g network,2020,DISH DBS CORP,,0001042642,1
+5g network,2020,VERIZON COMMUNICATIONS INC,VZ,0000732712,2
+5g network,2020,"Akoustis Technologies, Inc.",AKTS,0001584754,1
+5g network,2020,QUALCOMM INC/DE,QCOM,0000804328,1
+5g network,2020,Gogo Inc.,GOGO,0001537054,1
+5g network,2020,VirnetX Holding Corp,VHC,0001082324,1
+5g network,2020,"Acacia Communications, Inc.",,0001651235,1
+5g network,2020,"SYNCHRONOSS TECHNOLOGIES INC  (SNCR, SNCRL)",,0001131554,1
+5g network,2020,WIRELESS TELECOM GROUP INC,,0000878828,1
+5g network,2020,"Digital Locations, Inc.",DLOC,0001407878,1
+5g network,2020,DIGITAL ALLY INC,DGLY,0001342958,1
+5g network,2020,SITIME Corp,SITM,0001451809,1
+5g network,2020,MONOLITHIC POWER SYSTEMS INC,MPWR,0001280452,1
+5g network,2020,"Polar Power, Inc.",POLA,0001622345,1
+5g network,2020,"A10 Networks, Inc.",ATEN,0001580808,1
+5g network,2020,"AVIAT NETWORKS, INC.",AVNW,0001377789,1
+5g network,2020,"Liberty Broadband Corp  (LBRDA, LBRDB, LBRDK, LBRDP)",,0001611983,1
+5g network,2020,INTEL CORP,INTC,0000050863,2
+5g network,2020,CCO HOLDINGS LLC,,0001271833,1
+5g network,2020,CCO HOLDINGS CAPITAL CORP,,0001271834,1
+5g network,2020,Casa Systems Inc,,0001333835,1
+5g network,2020,"ATN International, Inc.",ATNI,0000879585,1
+5g network,2020,"CommScope Holding Company, Inc.",COMM,0001517228,1
+5g network,2020,"CHARTER COMMUNICATIONS, INC. /MO/",CHTR,0001091667,1
+5g wireless,2018,VERIZON COMMUNICATIONS INC,VZ,0000732712,2
+5g wireless,2018,WIRELESS TELECOM GROUP INC,,0000878828,1
+5g wireless,2018,MAXLINEAR INC,MXL,0001288469,1
+5g wireless,2018,"CommScope Holding Company, Inc.",COMM,0001517228,1
+5g wireless,2018,INTEL CORP,INTC,0000050863,1
+5g wireless,2018,"COMCAST CORP  (CCZ, CMCSA)",,0001166691,1
+5g wireless,2018,"NBCUniversal Media, LLC",,0000902739,1
+5g wireless,2018,QUALCOMM INC/DE,QCOM,0000804328,1
+5g wireless,2018,II-VI INC,COHR,0000820318,1
+5g wireless,2018,VIAVI SOLUTIONS INC.,VIAV,0000912093,1
+5g wireless,2018,WESTELL TECHNOLOGIES INC,,0001002135,1
+5g wireless,2018,MASTEC INC,MTZ,0000015615,1
+5g wireless,2018,NATIONAL INSTRUMENTS CORP,,0000935494,1
+5g wireless,2018,"AT&T INC.  (T, TBB, TBC, T-PA, T-PC)",,0000732717,1
+5g wireless,2018,F5 NETWORKS INC,FFIV,0001048695,1
+5g wireless,2018,RADISYS CORP,,0000873044,1
+5g wireless,2018,VIASAT INC,VSAT,0000797721,1
+5g wireless,2018,"OCLARO, INC.",,0001110647,1
+aav vector,2022,"Homology Medicines, Inc.",QTTB,0001661998,1
+aav vector,2022,"Adverum Biotechnologies, Inc.",ADVM,0001501756,1
+aav vector,2022,SELECTA BIOSCIENCES INC,RNAC,0001453687,1
+aav vector,2022,"Taysha Gene Therapies, Inc.",TSHA,0001806310,1
+aav vector,2022,"Passage BIO, Inc.",PASG,0001787297,1
+aav vector,2022,APPLIED GENETIC TECHNOLOGIES CORP,,0001273636,1
+aav vector,2022,"Voyager Therapeutics, Inc.",VYGR,0001640266,1
+aav vector,2022,ABEONA THERAPEUTICS INC.,ABEO,0000318306,1
+aav vector,2022,Benitec Biopharma Inc.,BNTC,0001808898,1
+aav vector,2022,"Akouos, Inc.",,0001722271,1
+aav vector,2022,uniQure N.V.,QURE,0001590560,1
+aav vector,2022,Solid Biosciences Inc.,SLDB,0001707502,1
+aav vector,2022,REGENXBIO Inc.,RGNX,0001590877,1
+aav vector,2022,4D Molecular Therapeutics Inc.,FDMT,0001650648,1
+aav vector,2022,"Sarepta Therapeutics, Inc.",SRPT,0000873303,1
+aav vector,2022,"Decibel Therapeutics, Inc.",,0001656536,1
+aav vector,2022,BIOMARIN PHARMACEUTICAL INC,BMRN,0001048477,1
+aav vector,2022,PRECISION BIOSCIENCES INC,DTIL,0001357874,1
+aav vector,2022,"LogicBio Therapeutics, Inc.",,0001664106,1
+aav vector,2022,"IVERIC bio, Inc.",,0001410939,1
+aav vector,2022,"Renovacor, Inc.",,0001799850,1
+aav vector,2022,"SEELOS THERAPEUTICS, INC.",SEEL,0001017491,1
+aav vector,2022,"Apellis Pharmaceuticals, Inc.",APLS,0001492422,1
+aav vector,2022,"SANGAMO THERAPEUTICS, INC",SGMO,0001001233,1
+aav vector,2022,"Edgewise Therapeutics, Inc.",EWTX,0001710072,1
+aav vector,2022,"Tenaya Therapeutics, Inc.",TNYA,0001858848,1
+aav vector,2022,"Poseida Therapeutics, Inc.",PSTX,0001661460,1
+aav vector,2022,"Sana Biotechnology, Inc.",SANA,0001770121,1
+aav vector,2022,"Oyster Point Pharma, Inc.",,0001720725,1
+aav vector,2022,"Provention Bio, Inc.",,0001695357,1
+aav vector,2022,"Inozyme Pharma, Inc.",INZY,0001693011,1
+aav vector,2022,"Editas Medicine, Inc.",EDIT,0001650664,1
+aav vector,2022,"Ocugen, Inc.",OCGN,0001372299,1
+aav vector,2022,MeiraGTx Holdings plc,MGTX,0001735438,1
+aav vector,2022,Orchard Therapeutics plc,,0001748907,1
+aav vector,2022,Beam Therapeutics Inc.,BEAM,0001745999,1
+abbe number,2009,,,,0
+abiotic stress,2011,,,,0
+abnormal cell,2023,"Gossamer Bio, Inc.",GOSS,0001728117,1
+abnormal cell,2023,BURZYNSKI RESEARCH INSTITUTE INC,BZYR,0000724445,1
+abnormal cell,2023,Celcuity Inc.,CELC,0001603454,1
+abnormal cell,2023,"Nuvation Bio Inc.  (NUVB, NUVB-WT)",,0001811063,1
+abnormal cell,2023,"VACCINEX, INC.",VCNX,0001205922,1
+abnormal cell,2023,"Biomea Fusion, Inc.",BMEA,0001840439,1
+abnormal cell,2023,Kinnate Biopharma Inc.,,0001797768,1
+abnormal cell,2023,"Amylyx Pharmaceuticals, Inc.",AMLX,0001658551,1
+abrasive particles,2021,"CMC Materials, Inc.",,0001102934,1
+abrasive particles,2021,ChampionX Corp,CHX,0001723089,1
+absorbent articles,2015,,,,0
+absorbent layer,2014,,,,0
+absorbent resin,2012,,,,0
+absorption coefficient,2009,,,,0
+absorption wavelength,2017,,,,0
+abutment surface,2012,,,,0
+ac electric,2018,"Independence Contract Drilling, Inc.  (ICD, ICDI)",,0001537028,1
+ac electric,2018,"UNIT CORP  (UNTC, UNTCW)",,0000798949,2
+ac electric,2018,HAWAIIAN ELECTRIC INDUSTRIES INC,HE,0000354707,1
+ac electric,2018,"HAWAIIAN ELECTRIC CO INC  (HAWEL, HAWEM, HAWEN, HAWLI, HAWLL, HAWLM, HAWLN)",,0000046207,1
+ac line,2010,QUALSTAR CORP,,0000758938,1
+ac line,2010,VICOR CORP,VICR,0000751978,1
+acceleration deceleration,2018,"AMERICAN FINANCIAL GROUP INC  (AFG, AFGB, AFGC, AFGD, AFGE)",,0001042046,1
+acceleration deceleration,2018,HURCO COMPANIES INC,HURC,0000315374,1
+acceptable acid,2009,,,,0
+acceptable excipients,2009,,,,0
+access address,2019,,,,0
+access channel,2009,TELVUE CORP,,0000839443,1
+access channel,2009,VYCOR MEDICAL INC,VYCO,0001424768,1
+access channel,2009,LEAP WIRELESS INTERNATIONAL INC,,0001065049,1
+access channel,2009,SIERRA BANCORP,BSRR,0001130144,1
+access command,2019,,,,0
+access configuration,2019,,,,0
+access edge,2020,"CALIX, INC",CALX,0001406666,1
+access edge,2020,EXTREME NETWORKS INC,EXTR,0001078271,1
+access edge,2020,ADVANCED ENERGY INDUSTRIES INC,AEIS,0000927003,1
+access edge,2020,Casa Systems Inc,,0001333835,1
+access edge,2020,Broadcom Inc.,AVGO,0001730168,1
+access interface,2014,JANEL WORLD TRADE LTD,JANL,0001133062,2
+access laa,2017,QUALCOMM INC/DE,QCOM,0000804328,1
+access mechanism,2015,RUCKUS WIRELESS INC,,0001294016,1
+access networks,2019,"CALIX, INC",CALX,0001406666,1
+access networks,2019,"AEROHIVE NETWORKS, INC",,0001372414,1
+access networks,2019,"Limelight Networks, Inc.",EGIO,0001391127,1
+access networks,2019,Lumentum Holdings Inc.,LITE,0001633978,1
+access networks,2019,DASAN ZHONE SOLUTIONS INC,DZSI,0001101680,1
+access networks,2019,HAMMER FIBER OPTICS HOLDINGS CORP,HMMR,0001539680,1
+access networks,2019,VERIZON COMMUNICATIONS INC,VZ,0000732712,1
+access networks,2019,Viva Entertainment Group Inc.,,0001479000,1
+access networks,2019,VIASAT INC,VSAT,0000797721,1
+access networks,2019,"RigNet, Inc.",,0001162112,1
+access networks,2019,"Liberty Broadband Corp  (LBRDA, LBRDB, LBRDK, LBRDP)",,0001611983,1
+access networks,2019,"COMCAST CORP  (CCZ, CMCSA)",,0001166691,1
+access networks,2019,"NBCUniversal Media, LLC",,0000902739,1
+access networks,2019,Internap Corp,,0001056386,1
+access networks,2019,"APPLIED OPTOELECTRONICS, INC.",AAOI,0001158114,1
+access networks,2019,ADTRAN INC,ADTN,0000926282,1
+access networks,2019,Hughes Satellite Systems Corp,,0001533758,2
+access networks,2019,CIENA CORP,CIEN,0000936395,1
+access networks,2019,COUNTERPATH CORP,,0001236997,1
+access networks,2019,"COGENT COMMUNICATIONS HOLDINGS, INC.",CCOI,0001158324,1
+access networks,2019,PREFORMED LINE PRODUCTS CO,PLPC,0000080035,1
+access networks,2019,"BlackRidge Technology International, Inc.",,0001456212,1
+access networks,2019,EchoStar CORP,SATS,0001415404,2
+access networks,2019,VirnetX Holding Corp,VHC,0001082324,1
+access networks,2019,"GTT Communications, Inc.",,0001315255,1
+access networks,2019,FINISAR CORP,,0001094739,1
+access networks,2019,"Liberty Global plc  (LBTYA, LBTYB, LBTYK)",,0001570585,1
+access networks,2019,HARMONIC INC,HLIT,0000851310,1
+access networks,2019,"CommScope Holding Company, Inc.",COMM,0001517228,1
+access networks,2019,CORNING INC /NY,GLW,0000024741,1
+access networks,2019,INFINERA Corp,INFN,0001138639,1
+access networks,2019,CCO HOLDINGS LLC,,0001271833,1
+access networks,2019,CCO HOLDINGS CAPITAL CORP,,0001271834,1
+access networks,2019,"CHARTER COMMUNICATIONS, INC. /MO/",CHTR,0001091667,1
+access networks,2019,"Altice USA, Inc.",ATUS,0001702780,1
+access ofdma,2009,QUALCOMM INC/DE,QCOM,0000804328,1
+access ofdma,2009,PMC SIERRA INC,,0000767920,1
+access ofdma,2009,AIRSPAN NETWORKS INC,,0001105542,1
+access operations,2018,COCA COLA BOTTLING CO CONSOLIDATED /DE/,COKE,0000317540,1
+access operations,2018,DELTA AIR LINES INC /DE/,DAL,0000027904,1
+access operations,2018,Warner Music Group Corp.,WMG,0001319161,1
+access permissions,2015,"Guidance Software, Inc.",,0001375557,1
+access permissions,2015,VARONIS SYSTEMS INC,VRNS,0001361113,1
+access permissions,2015,DESTINY MEDIA TECHNOLOGIES INC,DSNY,0001099369,1
+access permissions,2015,WORKIVA INC,WK,0001445305,1
+access permissions,2015,HEALTH NET INC,,0000916085,1
+access ports,2012,NETWORK 1 SECURITY SOLUTIONS INC,NTIP,0001065078,1
+access ports,2012,TELEFLEX INC,TFX,0000096943,1
+access ports,2012,DOVER Corp,DOV,0000029905,1
+access ports,2012,BARD C R INC /NJ/,,0000009892,2
+access ports,2012,ANGIODYNAMICS INC,ANGO,0001275187,1
+access ports,2012,CARDICA INC,,0001178104,1
+access privileges,2013,BUCKEYE TECHNOLOGIES INC,,0000899597,1
+access privileges,2013,Portus Holdings Inc.,,0001517391,1
+access privileges,2013,"StarTek, Inc.",,0001031029,1
+access privileges,2013,"ClubCorp Club Operations, Inc.",,0001515382,1
+access privileges,2013,"QUALYS, INC.",QLYS,0001107843,2
+access privileges,2013,ID SYSTEMS INC,,0000049615,1
+access privileges,2013,"IntraLinks Holdings, Inc.",,0001488075,1
+access privileges,2013,"ARUBA NETWORKS, INC.",,0001173752,1
+access privileges,2013,NEUSTAR INC,,0001265888,1
+access procedures,2019,INTL FCSTONE INC.,SNEX,0000913760,1
+access procedures,2019,FRANKLIN RESOURCES INC,BEN,0000038777,1
+access procedures,2019,"MERITOR, INC.",,0001113256,1
+access procedures,2019,SHERWIN WILLIAMS CO,SHW,0000089800,2
+access procedures,2019,INTERNATIONAL BUSINESS MACHINES CORP,IBM,0000051143,1
+access procedures,2019,"IPALCO ENTERPRISES, INC.",,0000728391,1
+access procedures,2019,MERIT MEDICAL SYSTEMS INC,MMSI,0000856982,1
+access procedures,2019,OncoMed Pharmaceuticals Inc,,0001302573,1
+access ra,2018,,,,0
+access resource,2018,"INTERCLOUD SYSTEMS, INC.",,0001128725,2
+access response,2010,ODYSSEY PICTURES CORP,,0000863061,1
+access scheme,2009,,,,0
+access tdma,2009,"UNITED STATES CELLULAR CORP  (USM, UZD, UZE, UZF)",,0000821130,1
+access tdma,2009,"AT&T INC.  (T, TBB, TBC, T-PA, T-PC)",,0000732717,2
+access tdma,2009,"TELEPHONE & DATA SYSTEMS INC /DE/  (TDS, TDS-PU, TDS-PV)",,0001051512,1
+access tdma,2009,ALASKA COMMUNICATIONS SYSTEMS GROUP INC,,0001089511,1
+access tdma,2009,COMTECH TELECOMMUNICATIONS CORP /DE/,CMTL,0000023197,1
+access tdma,2009,LIBERTY MEDIA LLC,,0001082114,1
+access tdma,2009,"LIBERTY MEDIA CORP  (QRTEA, QRTEB, QRTEP)",,0001355096,1
+access terminals,2009,DOMINION MINERALS CORP,,0001402747,2
+access terminals,2009,"DCP Midstream Partners, LP",,0001338065,1
+access type,2015,,,,0
+accessing memory,2023,,,,0
+accommodating cavity,2016,,,,0
+accommodating groove,2021,,,,0
+accommodation chamber,2009,,,,0
+accommodation space,2009,,,,0
+accumulation layer,2009,,,,0
+accurate positioning,2018,"Coda Octopus Group, Inc.",CODA,0001334325,1
+accurate positioning,2018,TRIMBLE INC.,TRMB,0000864749,1
+accurate positioning,2018,Medtronic plc,MDT,0001613103,1
+achieving high,2009,"Summer Infant, Inc.",,0001314772,2
+achieving high,2009,BTU INTERNATIONAL INC,,0000840883,1
+achieving high,2009,Xstream Mobile Solutions Corp,,0000842919,1
+achieving high,2009,STURM RUGER & CO INC,RGR,0000095029,1
+achieving high,2009,ULTRATECH INC,,0000909791,1
+achieving high,2009,"CHINA YIDA HOLDING, CO.",,0001091325,1
+achieving high,2009,Quest Minerals & Mining Corp,,0001130126,2
+achieving high,2009,SONIC SOLUTIONS/CA/,,0000916235,1
+achieving high,2009,QKL Stores Inc.,,0000808047,2
+achieving high,2009,STEAK & SHAKE CO,,0000093859,1
+achieving high,2009,"Socialwise, Inc. (formerly known as IdeaEdge, Inc)",,0001062273,1
+achieving high,2009,EXELON GENERATION CO LLC,,0001168165,2
+achieving high,2009,PECO ENERGY CO,,0000078100,2
+achieving high,2009,COMMONWEALTH EDISON CO,,0000022606,2
+achieving high,2009,EXELON CORP,EXC,0001109357,2
+achieving high,2009,HENRY JACK & ASSOCIATES INC,JKHY,0000779152,1
+achieving high,2009,KB HOME,KBH,0000795266,1
+achieving high,2009,FISERV INC,FI,0000798354,1
+achieving high,2009,MOLEX INC,,0000067472,1
+achieving high,2009,ATMI INC,,0001041577,1
+achieving high,2009,INTEGRATED SILICON SOLUTION INC,,0000854701,1
+achieving high,2009,"MoSys, Inc.",PRSO,0000890394,1
+achieving high,2009,"REMEDENT, INC.",,0001078037,1
+achieving high,2009,"HC Innovations, Inc.",,0001370512,3
+achieving high,2009,CARMAX INC,KMX,0001170010,1
+achieving high,2009,"Calamos Asset Management, Inc. /DE/",,0001299033,1
+achieving high,2009,"DTS, INC.",,0001226308,1
+achieving high,2009,BIOFORM MEDICAL INC,,0001282393,1
+achieving high,2009,VAXGEN INC,,0001036968,1
+achieving high,2009,"Puda Coal, Inc.",,0001162747,1
+achieving high,2009,GENVEC INC,,0000934473,1
+achieving high,2009,"Paradigm Holdings, Inc",,0000313353,1
+achieving high,2009,"RadNet, Inc.",RDNT,0000790526,2
+achieving high,2009,"BROADRIDGE FINANCIAL SOLUTIONS, INC.",BR,0001383312,1
+achieving high,2009,3PAR Inc.,,0001408501,1
+achieving high,2009,EXCELSIOR LASALLE PROPERTY FUND INC,,0001314152,1
+achieving high,2009,ARENA PHARMACEUTICALS INC,,0001080709,1
+achieving high,2009,O CHARLEYS INC,,0000864233,1
+achieving high,2009,"Alliance HealthCare Services, Inc",,0000817135,1
+achieving high,2009,GOODRICH CORP,,0000042542,1
+achieving high,2009,"HOVNANIAN ENTERPRISES INC  (HOV, HOVNP, HOVVB)",,0000357294,1
+achieving high,2009,BROADVIEW NETWORKS HOLDINGS INC,,0001104358,1
+achieving high,2009,"JAMBA, INC.",,0001316898,1
+achieving high,2009,KLA TENCOR CORP,KLAC,0000319201,1
+achieving high,2009,FIRST PLACE FINANCIAL CORP /DE/,,0001068912,1
+achieving high,2009,MASSEY ENERGY CO,,0000037748,1
+achieving high,2009,FutureFuel Corp.,FF,0001337298,1
+achieving high,2009,"Neiman Marcus, Inc.",,0001358651,1
+achieving high,2009,W R GRACE & CO,,0001045309,1
+acid amplification,2009,GEN PROBE INC,,0000820237,2
+acid amplification,2009,CEPHEID,,0001037760,2
+acid amplification,2009,RESPONSE GENETICS INC,,0001124608,1
+acid amplification,2009,GENOMIC HEALTH INC,,0001131324,1
+acid amplification,2009,THERMO FISHER SCIENTIFIC INC.,TMO,0000097745,2
+acid amplification,2009,AGILENT TECHNOLOGIES INC,A,0001090872,1
+acid bacteria,2018,,,,0
+acid catalyst,2017,"Alon USA Partners, LP",,0001556766,1
+acid catalyst,2017,"Alon USA Energy, Inc.",,0001325955,1
+acid catalyst,2017,TESORO CORP /NEW/,,0000050104,1
+acid catalyst,2017,"Delek US Holdings, Inc.",,0001351541,1
+acid constructs,2011,"Marina Biotech, Inc.",ATRX,0000737207,1
+acid constructs,2011,BIOCANCELL THERAPEUTICS INC.,,0001451980,1
+acid constructs,2011,BRAINSTORM CELL THERAPEUTICS INC,BCLI,0001137883,1
+acid constructs,2011,"ALNYLAM PHARMACEUTICALS, INC.",ALNY,0001178670,1
+acid esters,2010,Chemtura CORP,,0001091862,1
+acid esters,2010,Lightlake Therapeutics Inc.,,0001385508,1
+acid esters,2010,IMAGENETIX INC /NV/,,0000839441,1
+acid gas,2011,USA Synthetic Fuel Corp,,0001487920,1
+acid gas,2011,ADA-ES INC,,0001223112,1
+acid gas,2011,Regency Energy Partners LP,,0001338613,1
+acid gas,2011,Targa Resources Corp.,TRGP,0001389170,2
+acid gas,2011,"FUEL TECH, INC.",FTEK,0000846913,1
+acid gas,2011,"Calumet Specialty Products Partners, L.P.",,0001340122,1
+acid gas,2011,"Energy Transfer Equity, L.P.  (ET, ET-PI)",,0001276187,1
+acid gas,2011,AES CORP,AES,0000874761,1
+acid gas,2011,SUNOCO INC,,0000095304,1
+acid gas,2011,"IPALCO ENTERPRISES, INC.",,0000728391,2
+acid gas,2011,TAMPA ELECTRIC CO,,0000096271,1
+acid gas,2011,TECO ENERGY INC,,0000350563,1
+acid gas,2011,Targa Resources Partners LP,,0001379661,1
+acid gas,2011,"NRG ENERGY, INC.",NRG,0001013871,1
+acid gas,2011,CALPINE CORP,,0000916457,1
+acid metal,2010,,,,0
+acid modified,2017,China XD Plastics Co Ltd,,0001353970,1
+acid modified,2017,IRELAND INC.,,0001166338,1
+acid modified,2017,"MIRAGEN THERAPEUTICS, INC.",VRDN,0001590750,1
+acid probe,2009,GEN PROBE INC,,0000820237,1
+acid probe,2009,RESPONSE GENETICS INC,,0001124608,1
+acid probe,2009,CEPHEID,,0001037760,1
+acid production,2017,BioAmber Inc.,,0001534287,1
+acid production,2017,FLEXIBLE SOLUTIONS INTERNATIONAL INC,FSI,0001069394,1
+acid production,2017,MARTIN MIDSTREAM PARTNERS LP,MMLP,0001176334,1
+acid production,2017,POTASH CORP OF SASKATCHEWAN INC,,0000855931,3
+acid production,2017,SOUTHERN COPPER CORP/,SCCO,0001001838,1
+acid production,2017,"RENTECH, INC.",,0000868725,1
+acid production,2017,HAYNES INTERNATIONAL INC,HAYN,0000858655,1
+acid production,2017,Akers Biosciences Inc,TNFA,0001321834,1
+acid production,2017,"China Green Agriculture, Inc.",CGA,0000857949,1
+acid production,2017,LSB INDUSTRIES INC,LXU,0000060714,1
+acid production,2017,LyondellBasell Industries N.V.,LYB,0001489393,1
+acid production,2017,MOSAIC CO,MOS,0001285785,1
+acid production,2017,"ALBIREO PHARMA, INC.",,0001322505,1
+acid salts,2011,VENDUM BATTERIES INC.,,0001426568,1
+acid substitution,2022,"bluebird bio, Inc.",BLUE,0001293971,1
+acid substitution,2022,"ARROWHEAD PHARMACEUTICALS, INC.",ARWR,0000879407,1
+acidic group,2011,,,,0
+ack codebook,2021,,,,0
+ack nack,2009,"ACTIVECARE, INC.",,0001429896,1
+acknowledgement information,2020,,,,0
+acoustic data,2018,,,,0
+acoustic feature,2019,,,,0
+acoustic model,2018,,,,0
+acoustic performance,2019,"Unique Fabricating, Inc.",UFABQ,0001617669,1
+acoustic performance,2019,NATUS MEDICAL INC,,0000878526,1
+acoustic performance,2019,Knowles Corp,KN,0001587523,1
+acoustic performance,2019,"Jason Industries, Inc.",,0001579252,2
+acoustic resonator,2017,Broadcom Ltd,,0001649338,1
+acoustic resonator,2017,Broadcom Cayman L.P.,,0001649345,1
+acoustic sensors,2009,"Avalon Oil & Gas, Inc.",GRVE,0000918573,1
+acoustic sensors,2009,IMAGE SENSING SYSTEMS INC,AATC,0000943034,1
+acoustic sensors,2009,CALAVO GROWERS INC,CVGW,0001133470,1
+acoustic sensors,2009,"ARGON ST, Inc.",,0000026537,1
+acoustic sensors,2009,"Ocean Power Technologies, Inc.",OPTT,0001378140,1
+acoustic source,2010,,,,0
+acoustic waveguide,2021,,,,0
+acquired position,2010,,,,0
+acquiring images,2021,,,,0
+acquiring sensor,2024,,,,0
+acrylate compound,2009,,,,0
+acrylic acid,2013,"METABOLIX, INC.",YTEN,0001121702,1
+acrylic acid,2013,FLEXIBLE SOLUTIONS INTERNATIONAL INC,FSI,0001069394,1
+acrylic acid,2013,CYTEC INDUSTRIES INC/DE/,,0000912513,1
+acrylic acid,2013,"Keyuan Petrochemicals, Inc.",,0001326396,2
+acrylic acid,2013,INSITE VISION INC,,0000802724,1
+acrylic acid,2013,"Shiner International, Inc.",,0001369774,1
+acrylic acid,2013,MOMENTIVE SPECIALTY CHEMICALS INC.,,0000013239,2
+acrylic acid,2013,DOW CHEMICAL CO /DE/,,0000029915,1
+acrylic pressure,2013,,,,0
+acryloyl group,2013,,,,0
+action information,2014,Trex Acquisition Corp.,TRXA,0001437750,1
+action information,2014,POTASH CORP OF SASKATCHEWAN INC,,0000855931,1
+action information,2014,"IntercontinentalExchange Group, Inc.",ICE,0001571949,1
+action recognition,2022,"IO Biotech, Inc.",IOBT,0001865494,1
+action set,2024,VALUE LINE INC,VALU,0000717720,1
+action set,2024,"DYNEX CAPITAL INC  (DX, DX-PC)",,0000826675,1
+action set,2024,"VNUE, Inc.",VNUE,0001376804,1
+action set,2024,Mr. Cooper Group Inc.,COOP,0000933136,1
+action set,2024,NISOURCE INC.,NI,0001111711,1
+action set,2024,"Avidity Biosciences, Inc.",RNA,0001599901,1
+action set,2024,Franklin BSP Capital Corp,FRBP,0001825248,1
+action set,2024,AVALONBAY COMMUNITIES INC,AVB,0000915912,1
+action set,2024,"Rocket Companies, Inc.",RKT,0001805284,1
+action set,2024,PHIBRO ANIMAL HEALTH CORP,PAHC,0001069899,1
+action set,2024,"Brookfield Oaktree Holdings, LLC  (OAK-PA, OAK-PB)",,0001403528,1
+action set,2024,Knight-Swift Transportation Holdings Inc.,KNX,0001492691,1
+action set,2024,ALLIANCE RESOURCE PARTNERS LP,ARLP,0001086600,1
+action set,2024,"Rackspace Technology, Inc.",RXT,0001810019,1
+action set,2024,UroGen Pharma Ltd.,URGN,0001668243,1
+activated protein,2015,Flexion Therapeutics Inc,,0001419600,1
+activated protein,2015,"NeoStem, Inc.",LSTA,0000320017,1
+activated protein,2015,Stevia First Corp.,RNGE,0001438943,1
+activated protein,2015,SUNESIS PHARMACEUTICALS INC,VIRX,0001061027,1
+activated protein,2015,"Esperion Therapeutics, Inc.",ESPR,0001434868,1
+activated protein,2015,"NephroGenex, Inc.",,0001338095,1
+activated protein,2015,ARRAY BIOPHARMA INC,,0001100412,1
+activating agent,2015,"BELLICUM PHARMACEUTICALS, INC",,0001358403,1
+activation deactivation,2021,,,,0
+active active,2013,"CORELOGIC, INC.",,0000036047,1
+active active,2013,"Bankrate, Inc.",,0001518222,1
+active active,2013,FALCONSTOR SOFTWARE INC,FALC,0000922521,1
+active active,2013,"ARCA biopharma, Inc.  (ABIO, ORKA)",,0000907654,1
+active active,2013,LEXMARK INTERNATIONAL INC /KY/,,0001001288,1
+active active,2013,OCZ TECHNOLOGY GROUP INC,,0001355128,1
+active active,2013,CONSOL Energy Inc,CNX,0001070412,1
+active bandwidth,2020,,,,0
+active control,2015,KERYX BIOPHARMACEUTICALS INC,,0001114220,1
+active control,2015,Regado Biosciences Inc,,0001311596,1
+active control,2015,Lipocine Inc.,LPCN,0001535955,1
+active control,2015,GENERAL DYNAMICS CORP,GD,0000040533,1
+active control,2015,"Synthetic Biologics, Inc.",TOVX,0000894158,1
+active control,2015,"Intra-Cellular Therapies, Inc.",ITCI,0001567514,1
+active control,2015,"AOXING PHARMACEUTICAL COMPANY, INC.",,0001060426,1
+active control,2015,"ContraVir Pharmaceuticals, Inc.  (HEPA, CTRVP)",,0001583771,1
+active control,2015,NEUROCRINE BIOSCIENCES INC,NBIX,0000914475,1
+active control,2015,"EnSync, Inc.",,0001140310,1
+active control,2015,CESCA THERAPEUTICS INC.,THMO,0000811212,1
+active control,2015,"Brownie's Marine Group, Inc",BWMG,0001166708,1
+active control,2015,DYNAVAX TECHNOLOGIES CORP,DVAX,0001029142,1
+active control,2015,"22nd Century Group, Inc.",XXII,0001347858,1
+active control,2015,"TITAN PHARMACEUTICALS INC  (TTNP, TTNPW)",,0000910267,1
+active control,2015,FIBROGEN INC,FGEN,0000921299,1
+active control,2015,"ARCA biopharma, Inc.  (ABIO, ORKA)",,0000907654,1
+active control,2015,"Coherus BioSciences, Inc.",CHRS,0001512762,1
+active control,2015,"ChemoCentryx, Inc.",,0001340652,1
+active control,2015,"Oculus Innovative Sciences, Inc.",SNOA,0001367083,1
+active control,2015,"RELMADA THERAPEUTICS, INC.",RLMD,0001553643,1
+active control,2015,Alkermes plc.,ALKS,0001520262,1
+active control,2015,"Receptos, Inc.",,0001463729,1
+active control,2015,"INOTEK PHARMACEUTICALS CORP  (RCKT, RCKTW)",,0001281895,1
+active control,2015,MEDICINES CO /DE,,0001113481,1
+active energy,2012,Onteco Corp,,0001427352,4
+active energy,2012,HORNBECK OFFSHORE SERVICES INC /LA,,0001131227,1
+active layers,2023,"SolarWindow Technologies, Inc.",WNDW,0001071840,2
+active memory,2013,,,,0
+active oxygen,2015,"ECOSCIENCES, INC.",,0001493174,1
+active polymer,2010,AMCOL INTERNATIONAL CORP,,0000813621,1
+active protocol,2021,,,,0
+active species,2013,Cullen Agricultural Holding Corp,,0001471256,1
+active time,2022,GAP INC,GAP,0000039911,2
+active time,2022,"Edgewise Therapeutics, Inc.",EWTX,0001710072,1
+activity information,2009,"Expedia, Inc.",EXPE,0001324424,1
+activity information,2009,FERRO CORP,,0000035214,1
+activity information,2009,GEVITY HR INC,,0001035185,1
+activity information,2009,"TREE TOP INDUSTRIES, INC.",GTII,0000356590,1
+activity information,2009,UNICA CORP,,0001138804,1
+activity information,2009,"INFORMATION SYSTEMS ASSOCIATES, INC.",DUOT,0001396536,1
+activity information,2009,"JAGGED PEAK, INC.",,0001121793,1
+activity information,2009,DAKOTA GROWERS PASTA CO INC,,0001166347,1
+activity information,2009,PATTERSON UTI ENERGY INC,PTEN,0000889900,1
+activity information,2009,PETRO RESOURCES CORP,,0001335190,1
+activity information,2009,ACACIA RESEARCH CORP,ACTG,0000934549,1
+activity information,2009,QUIXOTE CORP,,0000032870,1
+activity information,2009,P F CHANGS CHINA BISTRO INC,,0001039889,1
+activity information,2009,BIO KEY INTERNATIONAL INC,BKYI,0001019034,1
+activity information,2009,ELECTRO SCIENTIFIC INDUSTRIES INC,,0000726514,1
+activity information,2009,BOSTON BEER CO INC,SAM,0000949870,1
+activity information,2009,US CONCRETE INC,,0001073429,1
+activity information,2009,ArcSight Inc,,0001368582,1
+activity information,2009,COMPOSITE TECHNOLOGY CORP,,0000317477,2
+activity information,2009,Kraton Polymers LLC,,0001321730,1
+activity information,2009,"VWR Funding, Inc.",,0001319764,1
+activity information,2009,Federal Home Loan Bank of New York,,0001329842,1
+activity sensor,2016,,,,0
+actual position,2014,"INTERNATIONAL PAPER CO /NEW/  (IP, INPAP)",,0000051434,1
+actuator arm,2011,,,,0
+actuator control,2023,,,,0
+actuator module,2015,,,,0
+actuator position,2018,,,,0
+acute kidney,2020,NEKTAR THERAPEUTICS,NKTR,0000906709,1
+acute kidney,2020,Cytosorbents Corp,CTSO,0001175151,1
+acute kidney,2020,DURECT CORP,DRRX,0001082038,1
+acute kidney,2020,CONSTELLATION PHARMACEUTICALS INC,,0001434418,1
+acute kidney,2020,Agentix Corp.,AGTX,0001603345,1
+acute kidney,2020,Q BioMed Inc.,QBIO,0001596062,1
+acute kidney,2020,"Sesen Bio, Inc.",CARM,0001485003,1
+acute kidney,2020,Solid Biosciences Inc.,SLDB,0001707502,1
+acute kidney,2020,"BridgeBio Pharma, Inc.",BBIO,0001743881,1
+acute kidney,2020,Adaptimmune Therapeutics PLC,ADAP,0001621227,1
+acute kidney,2020,"Eidos Therapeutics, Inc.",,0001731831,1
+acute kidney,2020,SIMULATIONS PLUS INC,SLP,0001023459,1
+acute kidney,2020,"CHF Solutions, Inc.  (NUWE, NUWEW)",,0001506492,1
+acute kidney,2020,BAXTER INTERNATIONAL INC,BAX,0000010456,1
+acute kidney,2020,"Aprea Therapeutics, Inc.",APRE,0001781983,1
+acute kidney,2020,"LIGAND PHARMACEUTICALS INC  (LGND, LGNDZ, LGNXZ, LGNYZ, LGNZZ)",,0000886163,1
+acute kidney,2020,"Athenex, Inc.",,0001300699,1
+acute kidney,2020,CERUS CORP,CERS,0001020214,1
+acute kidney,2020,SEATTLE GENETICS INC /WA,,0001060736,1
+acute kidney,2020,DAVITA INC.,DVA,0000927066,1
+acute kidney,2020,"Morphic Holding, Inc.",,0001679363,1
+acute kidney,2020,Karyopharm Therapeutics Inc.,KPTI,0001503802,1
+acute myeloid,2012,BIO-PATH HOLDINGS INC,BPTH,0001133818,1
+acute myeloid,2012,TrovaGene Inc.,CRDF,0001213037,1
+acute myeloid,2012,EPICEPT CORP,,0001208261,1
+acute myeloid,2012,"Cyclacel Pharmaceuticals, Inc.  (CYCC, CYCCP)",,0001130166,1
+acute myeloid,2012,SUNESIS PHARMACEUTICALS INC,VIRX,0001061027,1
+acute myeloid,2012,"Arno Therapeutics, Inc",,0001195116,1
+acute myeloid,2012,"MEI Pharma, Inc.",MEIP,0001262104,1
+acute myeloid,2012,ENTREMED INC,,0000895051,1
+acute myeloid,2012,"CORONADO BIOSCIENCES INC  (FBIO, FBIOP)",,0001429260,2
+acute myeloid,2012,CELL THERAPEUTICS INC,,0000891293,1
+acute myeloid,2012,SYNTA PHARMACEUTICALS CORP,MDGL,0001157601,1
+acute myeloid,2012,BIOSANTE PHARMACEUTICALS INC,ANIP,0001023024,1
+acute myeloid,2012,"INOVIO PHARMACEUTICALS, INC.",INO,0001055726,1
+acute myeloid,2012,"Astex Pharmaceuticals, Inc",,0000919722,1
+acute myeloid,2012,OXIGENE INC,OTLC,0000908259,1
+acute myeloid,2012,ARRAY BIOPHARMA INC,,0001100412,1
+acute myeloid,2012,CELGENE CORP /DE/,,0000816284,1
+acute myeloid,2012,PLURISTEM THERAPEUTICS INC,PLUR,0001158780,1
+acute myeloid,2012,ARIAD PHARMACEUTICALS INC,,0000884731,1
+acute myeloid,2012,"PDL BIOPHARMA, INC.",,0000882104,1
+acute myeloid,2012,CYTRX CORP,LADX,0000799698,1
+acute myeloid,2012,THRESHOLD PHARMACEUTICALS INC,MTEM,0001183765,1
+acute myeloid,2012,COMPLETE GENOMICS INC,,0001361103,1
+acute myeloid,2012,"LIGAND PHARMACEUTICALS INC  (LGND, LGNDZ, LGNXZ, LGNYZ, LGNZZ)",,0000886163,2
+acute myeloid,2012,"GERON CORP  (GERN, GERNW)",,0000886744,1
+acute myeloid,2012,INCYTE CORP,INCY,0000879169,1
+acute myeloid,2012,"ONCOGENEX PHARMACEUTICALS, INC.",ACHV,0000949858,1
+acute myeloid,2012,BIOMARIN PHARMACEUTICAL INC,BMRN,0001048477,1
+acute myeloid,2012,ISIS PHARMACEUTICALS INC,IONS,0000874015,1
+acute myeloid,2012,AMGEN INC,AMGN,0000318154,1
+acyl group,2014,,,,0
+adaptive bit,2014,CONCURRENT COMPUTER CORP/DE,,0000749038,1
+adaptive filtering,2009,MASIMO CORP,MASI,0000937556,1
+adaptive offset,2014,"Freescale Semiconductor, Ltd.",,0001392522,1
+adaptive video,2009,,,,0
+add drop,2020,Lumentum Holdings Inc.,LITE,0001633978,1
+add drop,2020,INFINERA Corp,INFN,0001138639,1
+add drop,2020,CIENA CORP,CIEN,0000936395,1
+add drop,2020,II-VI INC,COHR,0000820318,1
+add drop,2020,NEOPHOTONICS CORP,,0001227025,2
+add drop,2020,Fabrinet,FN,0001408710,1
+add drop,2020,FRONTIER COMMUNICATIONS CORP,FYBR,0000020520,1
+additional input,2013,Chino Commercial Bancorp,,0001365794,1
+additional input,2013,INDUSTRIAL SERVICES OF AMERICA INC /FL,,0000004187,1
+additional input,2013,"CADIZ INC  (CDZI, CDZIP)",,0000727273,1
+additional input,2013,"EXPRESS, INC.",EXPRQ,0001483510,1
+additional input,2013,"LIGAND PHARMACEUTICALS INC  (LGND, LGNDZ, LGNXZ, LGNYZ, LGNZZ)",,0000886163,1
+additional input,2013,FIRST MARINER BANCORP,,0000946090,1
+additional input,2013,WACHOVIA PREFERRED FUNDING CORP,,0001188382,1
+additional input,2013,FRONTIER FUND,,0001261379,1
+additional input,2013,"BALANCED SERIES, a series of The Frontier Fund",,0001389122,1
+additional input,2013,"Frontier Heritage Series, a series of The Frontier Fund",,0001389123,1
+additional input,2013,"WINTON SERIES, a series of The Frontier Fund",,0001389124,1
+additional input,2013,"Frontier Select Series, a series of The Frontier Fund",,0001389125,1
+additional input,2013,"CURRENCY SERIES, a series of The Frontier Fund",,0001389126,1
+additional input,2013,"FRONTIER LONG/SHORT COMMODITY SERIES, a series of The Frontier Fund",,0001389128,1
+additional input,2013,"FRONTIER DIVERSIFIED SERIES, a series of The Frontier Fund",,0001450720,1
+additional input,2013,"FRONTIER MASTERS SERIES, a series of The Frontier Fund",,0001450722,1
+additional input,2013,"BROWN FORMAN CORP  (BF-A, BF-B)",,0000014693,1
+additional input,2013,CAPITOL BANCORP LTD,,0000840264,1
+additional input,2013,"ImmunoCellular Therapeutics, Ltd.",IMUC,0000822411,1
+additional input,2013,MIDDLEBURG FINANCIAL CORP,,0000914138,1
+additional input,2013,BCSB Bancorp Inc.,,0001391137,1
+additional input,2013,"TRULIA, INC.",,0001349454,1
+additional input,2013,"Ceres, Inc.",,0000767884,1
+additional input,2013,Eagle Bulk Shipping Inc.,,0001322439,1
+additional input,2013,LEXMARK INTERNATIONAL INC /KY/,,0001001288,1
+additional input,2013,Federal Home Loan Bank of New York,,0001329842,1
+additional input,2013,Pinnacle Foods Finance LLC,,0001420566,1
+additional input,2013,"OFS Capital Corp  (OFS, OFSSH)",,0001487918,1
+additional input,2013,COCA COLA CO,KO,0000021344,1
+additional input,2013,"Calumet Specialty Products Partners, L.P.",,0001340122,1
+additional input,2013,"WELLS FARGO & COMPANY/MN  (WFC, WFCNP, WFC-PA, WFC-PC, WFC-PD, WFC-PL, WFC-PY, WFC-PZ)",,0000072971,1
+additional user,2009,NETSUITE INC,,0001117106,1
+additional user,2009,SuperDirectories Inc.,,0001338624,1
+additional user,2009,PERVASIVE SOFTWARE INC,,0001042821,1
+additional user,2009,QUANTUM GROUP INC /FL,,0001118847,1
+additional user,2009,"Elixir Gaming Technologies, Inc.",,0001004673,1
+additional user,2009,PLANETOUT INC,,0001287258,1
+additional user,2009,Santa Fe Gold CORP,,0000851726,1
+additional user,2009,KIRBY CORP,KEX,0000056047,1
+additional user,2009,"TorreyPines Therapeutics, Inc.",,0001070698,1
+additional user,2009,"Morningstar, Inc.",MORN,0001289419,1
+additional user,2009,AMERICAN COMMERCIAL LINES INC.,,0001324479,1
+additional user,2009,INTEGRA LIFESCIENCES HOLDINGS CORP,IART,0000917520,1
+additional user,2009,TEPPCO PARTNERS LP,,0000857644,1
+additive manufacture,2018,,,,0
+additively manufactured,2016,"ALCOA INC.  (HWM, HWM-P)",,0000004281,1
+address data,2017,INPHI Corp,,0001160958,1
+address data,2017,Covisint Corp,,0001563699,1
+address data,2017,"Lightwave Logic, Inc.",LWLG,0001325964,1
+address data,2017,RESOURCES CONNECTION INC,RGP,0001084765,1
+address data,2017,"Polar Power, Inc.",POLA,0001622345,1
+address data,2017,"Zendesk, Inc.",,0001463172,1
+address data,2017,"NEW RELIC, INC.",,0001448056,1
+address data,2017,"BLACKLINE, INC.",BL,0001666134,1
+address electrodes,2011,,,,0
+address range,2012,China Ginseng Holdings Inc,,0001338460,1
+address spaces,2010,ACME PACKET INC,,0001130258,1
+adhesive agent,2013,,,,0
+adhesive film,2013,ULURU INC.,,0001168220,1
+adhesive film,2013,"STEEL PARTNERS HOLDINGS L.P.  (SPLP, SPLP-PA)",,0001452857,2
+adhesive film,2013,HANDY & HARMAN LTD.,,0000106618,1
+adhesive layers,2011,SOUTHWALL TECHNOLOGIES INC /DE/,,0000813619,1
+adhesive strip,2011,MEDICAL ACTION INDUSTRIES INC,,0000748270,1
+adjacent cells,2023,"KULR Technology Group, Inc.",KULR,0001662684,1
+adjacent cells,2023,"LEAP THERAPEUTICS, INC.",LPTX,0001509745,1
+adjacent cells,2023,"SOLIGENIX, INC.",SNGX,0000812796,1
+adjacent cells,2023,Merus N.V.,MRUS,0001651311,1
+adjacent cells,2023,BICYCLE THERAPEUTICS plc,BCYC,0001761612,1
+adjacent cells,2023,"Decibel Therapeutics, Inc.",,0001656536,1
+adjacent display,2019,,,,0
+adjacent lane,2018,,,,0
+adjacent light,2010,,,,0
+adjacent segments,2015,"Artec Global Media, Inc.",,0001561865,1
+adjacent segments,2015,"CHUY'S HOLDINGS, INC.",CHUY,0001524931,1
+adjacent segments,2015,"Malibu Boats, Inc.",MBUU,0001590976,1
