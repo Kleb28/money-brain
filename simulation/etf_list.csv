@@ -1,0 +1,47 @@
+ticker,name,theme,expected_launch_year
+ARKK,ARK Innovation,disruptive innovation,2014
+ARKG,ARK Genomic Revolution,genomics,2014
+ARKW,ARK Next Generation Internet,internet,2014
+ARKQ,ARK Autonomous Technology & Robotics,robotics,2014
+ARKF,ARK Fintech Innovation,fintech,2019
+ARKX,ARK Space Exploration,space,2021
+LIT,Global X Lithium & Battery Tech,batteries,2010
+BOTZ,Global X Robotics & AI,robotics AI,2016
+ROBO,ROBO Global Robotics & Automation,robotics,2013
+HACK,ETFMG Prime Cyber Security,cybersecurity,2014
+CIBR,First Trust NASDAQ Cybersecurity,cybersecurity,2015
+CLOU,Global X Cloud Computing,cloud,2019
+SKYY,First Trust Cloud Computing,cloud,2011
+FINX,Global X FinTech,fintech,2016
+BLOK,Amplify Transformational Data Sharing,blockchain,2018
+ESPO,VanEck Video Gaming and eSports,gaming,2018
+HERO,Global X Video Games & Esports,gaming,2019
+DRIV,Global X Autonomous & Electric Vehicles,EV,2018
+IDRV,iShares Self-Driving EV and Tech,EV,2019
+KARS,KraneShares Electric Vehicles,EV,2018
+ACES,ALPS Clean Energy,clean energy,2018
+QTUM,Defiance Quantum,quantum,2018
+AIQ,Global X Artificial Intelligence & Technology,AI,2018
+GNOM,Global X Genomics & Biotechnology,genomics,2019
+EDOC,Global X Telemedicine & Digital Health,digital health,2020
+SNSR,Global X Internet of Things,IoT,2016
+IPAY,ETFMG Prime Mobile Payments,payments,2015
+PRNT,3D Printing ETF,3D printing,2016
+UFO,Procure Space,space,2019
+BETZ,Roundhill Sports Betting & iGaming,betting,2020
+MSOS,AdvisorShares Pure US Cannabis,cannabis,2020
+WCLD,WisdomTree Cloud Computing,cloud,2019
+KOMP,SPDR S&P Kensho New Economies,innovation,2018
+METV,Roundhill Ball Metaverse,metaverse,2021
+BUZZ,VanEck Social Sentiment,sentiment,2021
+NERD,Roundhill Video Games,gaming,2019
+PAVE,Global X U.S. Infrastructure Development,infrastructure,2017
+SRVR,Pacer Data & Infrastructure Real Estate,data centers,2018
+BKCH,Global X Blockchain,blockchain,2021
+BITQ,Bitwise Crypto Industry Innovators,crypto,2021
+HAIL,SPDR S&P Kensho Smart Mobility,mobility,2017
+MOON,Direxion Moonshot Innovators,innovation,2020
+URNM,Sprott Uranium Miners,uranium,2019
+CHPS,Xtrackers Semiconductor Select Equity,semiconductors,2021
+FOTO,Tuttle Capital Pure Play Photonics,photonics,2026
+DRAM,Roundhill Memory,memory,2026

@@ -1,0 +1,34 @@
+name: sim-filers
+
+on:
+  workflow_dispatch:
+    inputs:
+      shard:
+        description: "shard index"
+        required: true
+        default: "0"
+      nshards:
+        description: "number of shards"
+        required: true
+        default: "4"
+
+permissions:
+  contents: write
+
+jobs:
+  filers:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    env:
+      EDGAR_USER_AGENT: ${{ vars.EDGAR_USER_AGENT }}
+      GIT_COMMIT: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      - run: |
+          git config user.name "money-brain-bot"
+          git config user.email "money-brain-bot@users.noreply.github.com"
+      - run: python -u -m scripts.collect_filers --shard ${{ github.event.inputs.shard }} --nshards ${{ github.event.inputs.nshards }} --max-minutes 330
