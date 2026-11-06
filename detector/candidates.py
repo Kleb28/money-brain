@@ -167,8 +167,8 @@ def main() -> None:
     for r in rows:
         e = ed.get(re.sub(r"[^a-z0-9]+", "_", r["bigram"]))
         if e:
-            ly = max(y for y in e if y <= latest + 1)
-            r["edgar_latest"] = e[ly]
+            ly = max(e)  # 10-Ks for fiscal year Y are filed in Y+1, so the newest EDGAR year is usable
+            r["edgar_latest"] = max(e[ly], e.get(ly - 1, 0))
             r["tier"] = "T2" if e[ly] >= hi else ("T0" if e[ly] < lo else "T1")
         else:
             r["edgar_latest"], r["tier"] = None, None
