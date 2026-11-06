@@ -50,3 +50,7 @@ detector:
   tier:
     edgar_low_max: 50      # 10-K mentions/yr below this = "market not yet talking" (Tier 0/1)
     edgar_high_min: 200    # at/above this = "already in the conversation" (Tier 2)
+
+candidates:
+  # candidate discovery over all patent bigrams (detector/candidates.py)
+  min_assignees: 10   # distinct applicants using the bigram in the latest complete year; below this it is one family, not a technology

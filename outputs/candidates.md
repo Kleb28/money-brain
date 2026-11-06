@@ -1,309 +1,309 @@
 # Candidate bigrams — Rule G (30 / +50% / 2 consecutive) on all US patent title+abstract bigrams
 
-Latest complete filing year 2025; signals since 2019; 1688 bigrams after collapsing plural variants.
-Signals per year: 2019: 219, 2020: 255, 2021: 251, 2022: 222, 2023: 171, 2024: 236, 2025: 334
+Latest complete filing year 2023; signals since 2017; 1498 bigrams after collapsing plural variants.
+Signals per year: 2017: 148, 2018: 156, 2019: 210, 2020: 248, 2021: 200, 2022: 191, 2023: 345
 
 Top 300 by signal recency, then 3-year growth:
 
-| bigram | signal | latest count | share ppm | growth 3y | 10-K latest | tier |
-|---|---|---|---|---|---|---|
-| processors individually | 2025 | 174 | 633.9 | 303.4 | – | – |
-| intelligence agents | 2025 | 111 | 404.4 | 96.09 | – | – |
-| prompt template | 2025 | 43 | 156.6 | 74.23 | – | – |
-| approach enhances | 2025 | 38 | 138.4 | 65.48 | – | – |
-| retrieval augmented | 2025 | 222 | 808.7 | 63.73 | – | – |
-| ai agent | 2025 | 275 | 1001.8 | 47.11 | – | – |
-| substituent defined | 2025 | 42 | 153.0 | 35.74 | – | – |
-| recursive division | 2025 | 40 | 145.7 | 33.99 | – | – |
-| large model | 2025 | 99 | 360.6 | 33.64 | – | – |
-| mobility ltm | 2025 | 75 | 273.2 | 31.8 | – | – |
-| handheld fan | 2025 | 73 | 265.9 | 30.93 | – | – |
-| non sbfd | 2025 | 35 | 127.5 | 29.62 | – | – |
-| customer goals | 2025 | 71 | 258.6 | 23.84 | – | – |
-| extract environmental | 2025 | 71 | 258.6 | 23.84 | – | – |
-| customer optimize | 2025 | 71 | 258.6 | 23.84 | – | – |
-| environment analyze | 2025 | 73 | 265.9 | 20.29 | – | – |
-| extract actionable | 2025 | 71 | 258.6 | 19.7 | – | – |
-| ensures efficient | 2025 | 34 | 123.9 | 18.83 | – | – |
-| defined policies | 2025 | 78 | 284.1 | 18.49 | – | – |
-| ensuring efficient | 2025 | 32 | 116.6 | 17.66 | – | – |
-| electromagnetic environment | 2025 | 74 | 269.6 | 17.49 | – | – |
-| vision language | 2025 | 84 | 306.0 | 17.37 | – | – |
-| language prompt | 2025 | 31 | 112.9 | 17.08 | – | – |
-| triple tree | 2025 | 40 | 145.7 | 16.49 | – | – |
-| tree division | 2025 | 40 | 145.7 | 16.49 | – | – |
-| across diverse | 2025 | 108 | 393.4 | 16.18 | – | – |
-| ai assistant | 2025 | 41 | 149.4 | 13.35 | – | – |
-| optimized network | 2025 | 78 | 284.1 | 12.65 | – | – |
-| vector embeddings | 2025 | 76 | 276.9 | 12.3 | – | – |
-| multimodal model | 2025 | 37 | 134.8 | 11.95 | – | – |
-| multimodal data | 2025 | 80 | 291.4 | 11.72 | – | – |
-| approach enables | 2025 | 123 | 448.1 | 10.95 | – | – |
-| enables real | 2025 | 66 | 240.4 | 10.55 | – | – |
-| pickleball paddle | 2025 | 48 | 174.9 | 9.5 | – | – |
-| generate responses | 2025 | 35 | 127.5 | 9.21 | – | – |
-| language request | 2025 | 35 | 127.5 | 9.21 | – | – |
-| wearable ring | 2025 | 63 | 229.5 | 9.02 | – | – |
-| actionable information | 2025 | 74 | 269.6 | 8.96 | – | – |
-| blocks generating | 2025 | 44 | 160.3 | 8.62 | – | – |
-| quad tree | 2025 | 43 | 156.6 | 8.4 | – | – |
-| policy editor | 2025 | 93 | 338.8 | 8.04 | – | – |
-| semantic engine | 2025 | 91 | 331.5 | 7.84 | – | – |
-| create actionable | 2025 | 91 | 331.5 | 7.84 | – | – |
-| prioritized spectrum | 2025 | 91 | 331.5 | 7.84 | – | – |
-| cue server | 2025 | 91 | 331.5 | 7.84 | – | – |
-| programmable rules | 2025 | 91 | 331.5 | 7.84 | – | – |
-| memory instructs | 2025 | 40 | 145.7 | 7.75 | – | – |
-| operable utilize | 2025 | 89 | 324.2 | 7.65 | – | – |
-| portable fan | 2025 | 39 | 142.1 | 7.53 | – | – |
-| dynamic prioritized | 2025 | 91 | 331.5 | 7.38 | – | – |
-| ai powered | 2025 | 112 | 408.0 | 7.16 | – | – |
-| response generated | 2025 | 32 | 116.6 | 7.0 | – | – |
-| co packaged | 2025 | 40 | 145.7 | 6.78 | – | – |
-| utilization management | 2025 | 93 | 338.8 | 6.75 | – | – |
-| secure attachment | 2025 | 61 | 222.2 | 5.67 | – | – |
-| enabling real | 2025 | 49 | 178.5 | 5.59 | – | – |
-| enables efficient | 2025 | 113 | 411.6 | 5.59 | – | – |
-| wearing state | 2025 | 41 | 149.4 | 5.52 | – | – |
-| lp wus | 2025 | 52 | 189.4 | 5.5 | – | – |
-| seamless integration | 2025 | 37 | 134.8 | 5.47 | – | – |
-| image dividing | 2025 | 48 | 174.9 | 5.46 | – | – |
-| monocyclic ring | 2025 | 44 | 160.3 | 5.41 | – | – |
-| onium salt | 2025 | 55 | 200.4 | 5.41 | – | – |
-| user query | 2025 | 237 | 863.4 | 5.38 | – | – |
-| dies stacked | 2025 | 44 | 160.3 | 4.92 | – | – |
-| continuously monitors | 2025 | 47 | 171.2 | 4.87 | – | – |
-| signal lp | 2025 | 49 | 178.5 | 4.71 | – | – |
-| integrated sensing | 2025 | 49 | 178.5 | 4.71 | – | – |
-| actionable data | 2025 | 94 | 342.4 | 4.67 | – | – |
-| manufacturing secondary | 2025 | 79 | 287.8 | 4.53 | – | – |
-| enhancing user | 2025 | 46 | 167.6 | 4.36 | – | – |
-| making reference | 2025 | 48 | 174.9 | 4.25 | – | – |
-| multi agent | 2025 | 165 | 601.1 | 4.15 | – | – |
-| emitting stack | 2025 | 49 | 178.5 | 4.04 | – | – |
-| query generating | 2025 | 57 | 207.6 | 3.99 | – | – |
-| actionable insights | 2025 | 37 | 134.8 | 3.98 | – | – |
-| projection format | 2025 | 48 | 174.9 | 3.94 | – | – |
-| terminal plate | 2025 | 31 | 112.9 | 3.93 | – | – |
-| enables rapid | 2025 | 50 | 182.1 | 3.86 | – | – |
-| generated response | 2025 | 41 | 149.4 | 3.78 | – | – |
-| text description | 2025 | 49 | 178.5 | 3.76 | – | – |
-| polycyclic fused | 2025 | 46 | 167.6 | 3.73 | – | – |
-| personalized recommendations | 2025 | 35 | 127.5 | 3.71 | – | – |
-| key features | 2025 | 35 | 127.5 | 3.71 | – | – |
-| user comfort | 2025 | 51 | 185.8 | 3.7 | – | – |
-| rrc messages | 2025 | 40 | 145.7 | 3.67 | – | – |
-| memory hbm | 2025 | 40 | 145.7 | 3.67 | – | – |
-| ai enabled | 2025 | 58 | 211.3 | 3.61 | – | – |
-| degree image | 2025 | 50 | 182.1 | 3.6 | – | – |
-| output generation | 2025 | 34 | 123.9 | 3.58 | – | – |
-| language query | 2025 | 106 | 386.1 | 3.52 | – | – |
-| electrode laminate | 2025 | 36 | 131.1 | 3.5 | – | – |
-| chip pads | 2025 | 46 | 167.6 | 3.47 | – | – |
-| pattern spaced | 2025 | 58 | 211.3 | 3.41 | – | – |
-| organometallic compounds | 2025 | 40 | 145.7 | 3.37 | – | – |
-| quantized transform | 2025 | 62 | 225.9 | 3.34 | – | – |
-| generate personalized | 2025 | 34 | 123.9 | 3.25 | – | – |
-| adjacent base | 2025 | 34 | 123.9 | 3.25 | – | – |
-| regulatory compliance | 2025 | 63 | 229.5 | 3.24 | – | – |
-| generated code | 2025 | 33 | 120.2 | 3.12 | – | – |
-| semantic search | 2025 | 44 | 160.3 | 3.05 | – | – |
-| processor set | 2025 | 30 | 109.3 | 3.04 | – | – |
-| intelligence driven | 2025 | 46 | 167.6 | 3.02 | – | – |
-| additional features | 2025 | 124 | 451.7 | 3.02 | – | – |
-| similarity search | 2025 | 36 | 131.1 | 2.94 | – | – |
-| analysis engine | 2025 | 137 | 499.1 | 2.93 | – | – |
-| base die | 2025 | 56 | 204.0 | 2.92 | – | – |
-| cell case | 2025 | 38 | 138.4 | 2.91 | – | – |
-| excluding lithium | 2025 | 31 | 112.9 | 2.87 | – | – |
-| enhance user | 2025 | 42 | 153.0 | 2.87 | – | – |
-| control frame | 2025 | 53 | 193.1 | 2.86 | – | – |
-| application executable | 2025 | 46 | 167.6 | 2.83 | – | – |
-| ear worn | 2025 | 34 | 123.9 | 2.72 | – | – |
-| following relational | 2025 | 34 | 123.9 | 2.72 | – | – |
-| pillar extending | 2025 | 51 | 185.8 | 2.72 | – | – |
-| data integration | 2025 | 90 | 327.9 | 2.66 | – | – |
-| sixth surface | 2025 | 35 | 127.5 | 2.6 | – | – |
-| embedding model | 2025 | 74 | 269.6 | 2.6 | – | – |
-| precise alignment | 2025 | 35 | 127.5 | 2.6 | – | – |
-| structural stability | 2025 | 92 | 335.1 | 2.58 | – | – |
-| generation request | 2025 | 63 | 229.5 | 2.56 | – | – |
-| transitory readable | 2025 | 30 | 109.3 | 2.5 | – | – |
-| query embedding | 2025 | 36 | 131.1 | 2.5 | – | – |
-| sensor driver | 2025 | 32 | 116.6 | 2.5 | – | – |
-| material satisfies | 2025 | 32 | 116.6 | 2.5 | – | – |
-| lithium batteries | 2025 | 160 | 582.9 | 2.5 | – | – |
-| modular design | 2025 | 76 | 276.9 | 2.41 | – | – |
-| reconstructed block | 2025 | 33 | 120.2 | 2.4 | – | – |
-| inorganic encapsulation | 2025 | 51 | 185.8 | 2.3 | – | – |
-| binary tree | 2025 | 64 | 233.1 | 2.29 | – | – |
-| modular storage | 2025 | 41 | 149.4 | 2.26 | – | – |
-| working vehicle | 2025 | 59 | 214.9 | 2.23 | – | – |
-| security measures | 2025 | 48 | 174.9 | 2.23 | – | – |
-| isolation feature | 2025 | 68 | 247.7 | 2.22 | – | – |
-| improving overall | 2025 | 33 | 120.2 | 2.21 | – | – |
-| ai processing | 2025 | 31 | 112.9 | 2.19 | – | – |
-| pulsed field | 2025 | 31 | 112.9 | 2.19 | – | – |
-| semiconductor stack | 2025 | 93 | 338.8 | 2.19 | – | – |
-| query response | 2025 | 71 | 258.6 | 2.18 | – | – |
-| liquid cooling | 2025 | 262 | 954.4 | 2.18 | – | – |
-| outdoor ornamental | 2025 | 34 | 123.9 | 2.13 | – | – |
-| context aware | 2025 | 215 | 783.2 | 2.13 | – | – |
-| hair brush | 2025 | 32 | 116.6 | 2.11 | – | – |
-| image obtain | 2025 | 39 | 142.1 | 2.1 | – | – |
-| gate isolation | 2025 | 39 | 142.1 | 2.1 | – | – |
-| floor mat | 2025 | 39 | 142.1 | 2.1 | – | – |
-| ue initiated | 2025 | 37 | 134.8 | 2.08 | – | – |
-| decision making | 2025 | 476 | 1734.0 | 2.08 | – | – |
-| model generate | 2025 | 40 | 145.7 | 2.04 | – | – |
-| multi modal | 2025 | 420 | 1530.0 | 2.04 | – | – |
-| directional optical | 2025 | 38 | 138.4 | 2.02 | – | – |
-| setting screen | 2025 | 65 | 236.8 | 1.99 | – | – |
-| conditional expression | 2025 | 75 | 273.2 | 1.98 | – | – |
-| chat interface | 2025 | 39 | 142.1 | 1.97 | – | – |
-| computational graph | 2025 | 39 | 142.1 | 1.97 | – | – |
-| semantic analysis | 2025 | 39 | 142.1 | 1.97 | – | – |
-| time feedback | 2025 | 105 | 382.5 | 1.96 | – | – |
-| model inference | 2025 | 32 | 116.6 | 1.95 | – | – |
-| trained generative | 2025 | 47 | 171.2 | 1.94 | – | – |
-| data processed | 2025 | 114 | 415.3 | 1.93 | – | – |
-| brain computer | 2025 | 50 | 182.1 | 1.92 | – | – |
-| significantly reduces | 2025 | 88 | 320.6 | 1.9 | – | – |
-| data inputting | 2025 | 38 | 138.4 | 1.89 | – | – |
-| circuits disposed | 2025 | 38 | 138.4 | 1.89 | – | – |
-| snap fitted | 2025 | 43 | 156.6 | 1.89 | – | – |
-| logic die | 2025 | 54 | 196.7 | 1.86 | – | – |
-| multi ap | 2025 | 39 | 142.1 | 1.84 | – | – |
-| semiconductor nanostructures | 2025 | 34 | 123.9 | 1.83 | – | – |
-| code generation | 2025 | 115 | 418.9 | 1.83 | – | – |
-| forefoot region | 2025 | 50 | 182.1 | 1.82 | – | – |
-| floor lamp | 2025 | 45 | 163.9 | 1.81 | – | – |
-| battery receptacle | 2025 | 39 | 142.1 | 1.73 | – | – |
-| diode disposed | 2025 | 39 | 142.1 | 1.73 | – | – |
-| energy utilization | 2025 | 42 | 153.0 | 1.72 | – | – |
-| sex toy | 2025 | 31 | 112.9 | 1.71 | – | – |
-| manual intervention | 2025 | 48 | 174.9 | 1.71 | – | – |
-| time user | 2025 | 34 | 123.9 | 1.7 | – | – |
-| external space | 2025 | 46 | 167.6 | 1.68 | – | – |
-| response frame | 2025 | 90 | 327.9 | 1.67 | – | – |
-| base electrode | 2025 | 35 | 127.5 | 1.66 | – | – |
-| semantic similarity | 2025 | 47 | 171.2 | 1.65 | – | – |
-| cathode disposed | 2025 | 50 | 182.1 | 1.65 | – | – |
-| gate signal | 2025 | 174 | 633.9 | 1.65 | – | – |
-| inhibiting corrosion | 2025 | 30 | 109.3 | 1.62 | – | – |
-| anti slip | 2025 | 66 | 240.4 | 1.62 | – | – |
-| battery energy | 2025 | 73 | 265.9 | 1.61 | – | – |
-| broad application | 2025 | 34 | 123.9 | 1.59 | – | – |
-| game processing | 2025 | 53 | 193.1 | 1.58 | – | – |
-| housing forms | 2025 | 31 | 112.9 | 1.58 | – | – |
-| configuration allows | 2025 | 60 | 218.6 | 1.56 | – | – |
-| electrode terminal | 2025 | 208 | 757.7 | 1.56 | – | – |
-| distal region | 2025 | 73 | 265.9 | 1.55 | – | – |
-| initial control | 2025 | 32 | 116.6 | 1.54 | – | – |
-| execution plan | 2025 | 64 | 233.1 | 1.54 | – | – |
-| data retrieval | 2025 | 91 | 331.5 | 1.53 | – | – |
-| input content | 2025 | 36 | 131.1 | 1.52 | – | – |
-| feedback module | 2025 | 33 | 120.2 | 1.51 | – | – |
-| circuit memory | 2025 | 53 | 193.1 | 1.51 | – | – |
-| plate covers | 2025 | 30 | 109.3 | 1.5 | – | – |
-| optical interconnect | 2025 | 30 | 109.3 | 1.5 | – | – |
-| dental appliances | 2025 | 37 | 134.8 | 1.49 | – | – |
-| contextually relevant | 2025 | 47 | 171.2 | 1.49 | – | – |
-| predictive modeling | 2025 | 51 | 185.8 | 1.48 | – | – |
-| torque tube | 2025 | 42 | 153.0 | 1.45 | – | – |
-| computational efficiency | 2025 | 49 | 178.5 | 1.45 | – | – |
-| requirement information | 2025 | 39 | 142.1 | 1.44 | – | – |
-| electrode connected | 2025 | 285 | 1038.2 | 1.43 | – | – |
-| panel driver | 2025 | 47 | 171.2 | 1.42 | – | – |
-| objective optimization | 2025 | 36 | 131.1 | 1.42 | – | – |
-| dynamically adjust | 2025 | 127 | 462.6 | 1.42 | – | – |
-| high bandwidth | 2025 | 166 | 604.7 | 1.42 | – | – |
-| light string | 2025 | 48 | 174.9 | 1.4 | – | – |
-| smart ring | 2025 | 30 | 109.3 | 1.39 | – | – |
-| workflow management | 2025 | 41 | 149.4 | 1.39 | – | – |
-| relevance scores | 2025 | 30 | 109.3 | 1.39 | – | – |
-| analyzed data | 2025 | 34 | 123.9 | 1.38 | – | – |
-| time monitoring | 2025 | 150 | 546.4 | 1.36 | – | – |
-| input directed | 2025 | 32 | 116.6 | 1.33 | – | – |
-| computation result | 2025 | 32 | 116.6 | 1.33 | – | – |
-| storage access | 2025 | 32 | 116.6 | 1.33 | – | – |
-| inspection result | 2025 | 45 | 163.9 | 1.32 | – | – |
-| source layer | 2025 | 61 | 222.2 | 1.32 | – | – |
-| normalized data | 2025 | 33 | 120.2 | 1.31 | – | – |
-| significantly reducing | 2025 | 82 | 298.7 | 1.31 | – | – |
-| multi model | 2025 | 34 | 123.9 | 1.29 | – | – |
-| circuitry operatively | 2025 | 30 | 109.3 | 1.28 | – | – |
-| dimensional scene | 2025 | 43 | 156.6 | 1.28 | – | – |
-| battery compartment | 2025 | 56 | 204.0 | 1.28 | – | – |
-| audio feature | 2025 | 35 | 127.5 | 1.27 | – | – |
-| enhanced security | 2025 | 52 | 189.4 | 1.27 | – | – |
-| emergency response | 2025 | 74 | 269.6 | 1.27 | – | – |
-| dynamically managing | 2025 | 40 | 145.7 | 1.26 | – | – |
-| variational autoencoder | 2025 | 36 | 131.1 | 1.25 | – | – |
-| detachably connect | 2025 | 32 | 116.6 | 1.24 | – | – |
-| target memory | 2025 | 82 | 298.7 | 1.24 | – | – |
-| time analysis | 2025 | 51 | 185.8 | 1.23 | – | – |
-| automatically adjusts | 2025 | 37 | 134.8 | 1.23 | – | – |
-| base semiconductor | 2025 | 38 | 138.4 | 1.22 | – | – |
-| allowing users | 2025 | 62 | 225.9 | 1.21 | – | – |
-| pressure relief | 2025 | 234 | 852.4 | 1.2 | – | – |
-| clamping plate | 2025 | 30 | 109.3 | 1.19 | – | – |
-| digital communication | 2025 | 56 | 204.0 | 1.18 | – | – |
-| fan blades | 2025 | 123 | 448.1 | 1.17 | – | – |
-| multi electrode | 2025 | 32 | 116.6 | 1.15 | – | – |
-| peripheral circuit | 2025 | 249 | 907.1 | 1.15 | – | – |
-| wiring layers | 2025 | 66 | 240.4 | 1.14 | – | – |
-| stacked along | 2025 | 79 | 287.8 | 1.13 | – | – |
-| mounting base | 2025 | 139 | 506.4 | 1.13 | – | – |
-| merge mode | 2025 | 69 | 251.4 | 1.12 | – | – |
-| cup lid | 2025 | 40 | 145.7 | 1.12 | – | – |
-| interconnection layer | 2025 | 46 | 167.6 | 1.12 | – | – |
-| camera parameters | 2025 | 35 | 127.5 | 1.11 | – | – |
-| amine group | 2025 | 41 | 149.4 | 1.11 | – | – |
-| geospatial data | 2025 | 30 | 109.3 | 1.1 | – | – |
-| mold layer | 2025 | 48 | 174.9 | 1.1 | – | – |
-| data integrity | 2025 | 96 | 349.7 | 1.1 | – | – |
-| electrocardiogram ecg | 2025 | 85 | 309.6 | 1.09 | – | – |
-| power battery | 2025 | 57 | 207.6 | 1.08 | – | – |
-| gate driver | 2025 | 271 | 987.2 | 1.08 | – | – |
-| state batteries | 2025 | 58 | 211.3 | 1.07 | – | – |
-| target computing | 2025 | 39 | 142.1 | 1.07 | – | – |
-| standardized format | 2025 | 34 | 123.9 | 1.05 | – | – |
-| light therapy | 2025 | 77 | 280.5 | 1.04 | – | – |
-| vapor chamber | 2025 | 85 | 309.6 | 1.04 | – | – |
-| polyfluoroalkyl substances | 2025 | 30 | 109.3 | 1.02 | – | – |
-| bonding layers | 2025 | 30 | 109.3 | 1.02 | – | – |
-| semiconductor package | 2025 | 1188 | 4327.8 | 1.02 | – | – |
-| disposed vertically | 2025 | 31 | 112.9 | 1.01 | – | – |
-| query language | 2025 | 65 | 236.8 | 0.99 | – | – |
-| pattern electrically | 2025 | 45 | 163.9 | 0.97 | – | – |
-| structured data | 2025 | 187 | 681.2 | 0.97 | – | – |
-| value obtaining | 2025 | 31 | 112.9 | 0.94 | – | – |
-| circuit layer | 2025 | 324 | 1180.3 | 0.94 | – | – |
-| temperature regulation | 2025 | 45 | 163.9 | 0.92 | – | – |
-| query data | 2025 | 45 | 163.9 | 0.92 | – | – |
-| body housing | 2025 | 57 | 207.6 | 0.92 | – | – |
-| accommodating chamber | 2025 | 47 | 171.2 | 0.91 | – | – |
-| transform block | 2025 | 65 | 236.8 | 0.9 | – | – |
-| fill layer | 2025 | 39 | 142.1 | 0.9 | – | – |
-| continuous monitoring | 2025 | 64 | 233.1 | 0.9 | – | – |
-| collection module | 2025 | 55 | 200.4 | 0.89 | – | – |
-| generating customized | 2025 | 31 | 112.9 | 0.87 | – | – |
-| making process | 2025 | 30 | 109.3 | 0.87 | – | – |
-| electroencephalogram eeg | 2025 | 33 | 120.2 | 0.86 | – | – |
-| help improve | 2025 | 35 | 127.5 | 0.86 | – | – |
-| start signal | 2025 | 72 | 262.3 | 0.85 | – | – |
-| table lut | 2025 | 37 | 134.8 | 0.85 | – | – |
-| energy efficiency | 2025 | 172 | 626.6 | 0.85 | – | – |
-| sacrificial layers | 2025 | 70 | 255.0 | 0.83 | – | – |
-| involves receiving | 2025 | 116 | 422.6 | 0.83 | – | – |
-| pad disposed | 2025 | 123 | 448.1 | 0.82 | – | – |
-| fan blade | 2025 | 100 | 364.3 | 0.82 | – | – |
-| setting values | 2025 | 35 | 127.5 | 0.8 | – | – |
-| structural strength | 2025 | 54 | 196.7 | 0.78 | – | – |
-| corrective actions | 2025 | 54 | 196.7 | 0.78 | – | – |
-| golf cart | 2025 | 38 | 138.4 | 0.75 | – | – |
-| contact connected | 2025 | 44 | 160.3 | 0.75 | – | – |
-| slide relative | 2025 | 59 | 214.9 | 0.75 | – | – |
-| different processing | 2025 | 36 | 131.1 | 0.75 | – | – |
-| clinical decision | 2025 | 38 | 138.4 | 0.75 | – | – |
+| bigram | signal | latest count | assignees | share ppm | growth 3y | 10-K latest | tier |
+|---|---|---|---|---|---|---|---|
+| diffusion model | 2023 | 91 | – | 199.8 | 93.7 | – | – |
+| 6g communication | 2023 | 596 | – | 1308.7 | 67.91 | – | – |
+| beam prediction | 2023 | 43 | – | 94.4 | 43.75 | – | – |
+| generation 6g | 2023 | 107 | – | 234.9 | 26.84 | – | – |
+| electronic vaporization | 2023 | 77 | – | 169.1 | 25.71 | – | – |
+| instructions configuring | 2023 | 127 | – | 278.9 | 21.03 | – | – |
+| object platform | 2023 | 35 | – | 76.9 | 17.21 | – | – |
+| plastic pyrolysis | 2023 | 35 | – | 76.9 | 17.21 | – | – |
+| network energy | 2023 | 86 | – | 188.8 | 16.9 | – | – |
+| rt ric | 2023 | 33 | – | 72.5 | 16.17 | – | – |
+| implemented services | 2023 | 78 | – | 171.3 | 15.23 | – | – |
+| controller ric | 2023 | 50 | – | 109.8 | 12.01 | – | – |
+| editing operation | 2023 | 46 | – | 101.0 | 10.97 | – | – |
+| intelligent surfaces | 2023 | 42 | – | 92.2 | 9.93 | – | – |
+| mbs session | 2023 | 39 | – | 85.6 | 9.15 | – | – |
+| air capture | 2023 | 77 | – | 169.1 | 9.02 | – | – |
+| sensing measurement | 2023 | 57 | – | 125.2 | 8.89 | – | – |
+| cylindrical secondary | 2023 | 47 | – | 103.2 | 8.78 | – | – |
+| cycling performance | 2023 | 52 | – | 114.2 | 8.02 | – | – |
+| iron phosphate | 2023 | 112 | – | 245.9 | 7.97 | – | – |
+| ap multi | 2023 | 76 | – | 166.9 | 7.79 | – | – |
+| ap mld | 2023 | 141 | – | 309.6 | 7.63 | – | – |
+| rf sensing | 2023 | 47 | – | 103.2 | 7.15 | – | – |
+| language model | 2023 | 1055 | – | 2316.5 | 7.13 | – | – |
+| service period | 2023 | 59 | – | 129.5 | 6.67 | – | – |
+| network gnn | 2023 | 44 | – | 96.6 | 6.63 | – | – |
+| contrastive learning | 2023 | 65 | – | 142.7 | 6.52 | – | – |
+| coherent joint | 2023 | 42 | – | 92.2 | 6.28 | – | – |
+| time twt | 2023 | 59 | – | 129.5 | 5.82 | – | – |
+| ionizable lipid | 2023 | 39 | – | 85.6 | 5.76 | – | – |
+| learning ai | 2023 | 78 | – | 171.3 | 5.76 | – | – |
+| backside contact | 2023 | 116 | – | 254.7 | 5.71 | – | – |
+| model mlm | 2023 | 37 | – | 81.2 | 5.42 | – | – |
+| carbon emission | 2023 | 47 | – | 103.2 | 5.11 | – | – |
+| triggering operation | 2023 | 76 | – | 166.9 | 5.08 | – | – |
+| manufacturing battery | 2023 | 91 | – | 199.8 | 4.92 | – | – |
+| carbon sequestration | 2023 | 45 | – | 98.8 | 4.85 | – | – |
+| user platform | 2023 | 44 | – | 96.6 | 4.72 | – | – |
+| virtual conference | 2023 | 32 | – | 70.3 | 4.55 | – | – |
+| cell switching | 2023 | 37 | – | 81.2 | 4.5 | – | – |
+| battery production | 2023 | 42 | – | 92.2 | 4.46 | – | – |
+| network controlled | 2023 | 84 | – | 184.4 | 4.46 | – | – |
+| single particle | 2023 | 83 | – | 182.2 | 4.4 | – | – |
+| cycles lithium | 2023 | 30 | – | 65.9 | 4.2 | – | – |
+| bank layer | 2023 | 94 | – | 206.4 | 4.15 | – | – |
+| moderate growth | 2023 | 54 | – | 118.6 | 4.11 | – | – |
+| charging pile | 2023 | 49 | – | 107.6 | 4.1 | – | – |
+| operation acting | 2023 | 39 | – | 85.6 | 4.07 | – | – |
+| electronic atomization | 2023 | 34 | – | 74.7 | 4.05 | – | – |
+| collector plate | 2023 | 53 | – | 116.4 | 4.01 | – | – |
+| computational storage | 2023 | 42 | – | 92.2 | 3.86 | – | – |
+| medical probe | 2023 | 37 | – | 81.2 | 3.81 | – | – |
+| lithium iron | 2023 | 78 | – | 171.3 | 3.77 | – | – |
+| ar glasses | 2023 | 32 | – | 70.3 | 3.76 | – | – |
+| enhanced multi | 2023 | 36 | – | 79.0 | 3.68 | – | – |
+| streaming platform | 2023 | 67 | – | 147.1 | 3.65 | – | – |
+| dry electrode | 2023 | 49 | – | 107.6 | 3.64 | – | – |
+| stacked transistors | 2023 | 40 | – | 87.8 | 3.63 | – | – |
+| communication field | 2023 | 44 | – | 96.6 | 3.58 | – | – |
+| combustion section | 2023 | 48 | – | 105.4 | 3.54 | – | – |
+| backside metal | 2023 | 51 | – | 112.0 | 3.42 | – | – |
+| conference participant | 2023 | 34 | – | 74.7 | 3.42 | – | – |
+| transformer model | 2023 | 76 | – | 166.9 | 3.39 | – | – |
+| supplemental enhancement | 2023 | 33 | – | 72.5 | 3.29 | – | – |
+| memory communicatively | 2023 | 182 | – | 399.6 | 3.21 | – | – |
+| 5g 6g | 2023 | 56 | – | 123.0 | 3.16 | – | – |
+| wound electrode | 2023 | 48 | – | 105.4 | 3.16 | – | – |
+| power consuming | 2023 | 133 | – | 292.0 | 3.07 | – | – |
+| series forecasting | 2023 | 31 | – | 68.1 | 3.03 | – | – |
+| thermal event | 2023 | 61 | – | 133.9 | 2.97 | – | – |
+| operation displaying | 2023 | 38 | – | 83.4 | 2.95 | – | – |
+| electric work | 2023 | 89 | – | 195.4 | 2.86 | – | – |
+| dioxide recovery | 2023 | 33 | – | 72.5 | 2.82 | – | – |
+| terminal technologies | 2023 | 33 | – | 72.5 | 2.82 | – | – |
+| generating content | 2023 | 62 | – | 136.1 | 2.8 | – | – |
+| nanoparticle lnp | 2023 | 36 | – | 79.0 | 2.75 | – | – |
+| host materials | 2023 | 61 | – | 133.9 | 2.73 | – | – |
+| plate electrode | 2023 | 32 | – | 70.3 | 2.7 | – | – |
+| adjustment operation | 2023 | 39 | – | 85.6 | 2.69 | – | – |
+| policy ursp | 2023 | 39 | – | 85.6 | 2.69 | – | – |
+| serial flow | 2023 | 42 | – | 92.2 | 2.64 | – | – |
+| intelligent controller | 2023 | 83 | – | 182.2 | 2.6 | – | – |
+| neural processing | 2023 | 69 | – | 151.5 | 2.59 | – | – |
+| battery manufacturing | 2023 | 85 | – | 186.6 | 2.54 | – | – |
+| core engine | 2023 | 47 | – | 103.2 | 2.49 | – | – |
+| generating target | 2023 | 40 | – | 87.8 | 2.47 | – | – |
+| vr headset | 2023 | 30 | – | 65.9 | 2.47 | – | – |
+| combustor section | 2023 | 63 | – | 138.3 | 2.45 | – | – |
+| gas pipeline | 2023 | 63 | – | 138.3 | 2.45 | – | – |
+| coverage information | 2023 | 43 | – | 94.4 | 2.44 | – | – |
+| treating fields | 2023 | 36 | – | 79.0 | 2.41 | – | – |
+| cell change | 2023 | 49 | – | 107.6 | 2.4 | – | – |
+| dioxide capture | 2023 | 62 | – | 136.1 | 2.4 | – | – |
+| bank disposed | 2023 | 39 | – | 85.6 | 2.38 | – | – |
+| latent representation | 2023 | 78 | – | 171.3 | 2.38 | – | – |
+| hybrid bonded | 2023 | 32 | – | 70.3 | 2.33 | – | – |
+| battery data | 2023 | 51 | – | 112.0 | 2.32 | – | – |
+| displacement data | 2023 | 35 | – | 76.9 | 2.31 | – | – |
+| enhancement information | 2023 | 35 | – | 76.9 | 2.31 | – | – |
+| aspiration catheter | 2023 | 50 | – | 109.8 | 2.25 | – | – |
+| classical computing | 2023 | 34 | – | 74.7 | 2.22 | – | – |
+| electrolysis cell | 2023 | 98 | – | 215.2 | 2.19 | – | – |
+| encoded computer | 2023 | 49 | – | 107.6 | 2.19 | – | – |
+| sl resource | 2023 | 61 | – | 133.9 | 2.17 | – | – |
+| cybersecurity threat | 2023 | 42 | – | 92.2 | 2.12 | – | – |
+| function lmf | 2023 | 33 | – | 72.5 | 2.12 | – | – |
+| lithium extraction | 2023 | 30 | – | 65.9 | 2.12 | – | – |
+| battery enclosure | 2023 | 41 | – | 90.0 | 2.05 | – | – |
+| trained language | 2023 | 41 | – | 90.0 | 2.05 | – | – |
+| tumor treating | 2023 | 41 | – | 90.0 | 2.05 | – | – |
+| weighted prediction | 2023 | 41 | – | 90.0 | 2.05 | – | – |
+| heterogeneous computing | 2023 | 70 | – | 153.7 | 2.04 | – | – |
+| lithium bis | 2023 | 32 | – | 70.3 | 2.03 | – | – |
+| wireless circuitry | 2023 | 52 | – | 114.2 | 2.01 | – | – |
+| cathode current | 2023 | 123 | – | 270.1 | 1.98 | – | – |
+| cationic lipid | 2023 | 54 | – | 118.6 | 1.96 | – | – |
+| access tokens | 2023 | 34 | – | 74.7 | 1.95 | – | – |
+| ar vr | 2023 | 50 | – | 109.8 | 1.89 | – | – |
+| rrc release | 2023 | 52 | – | 114.2 | 1.85 | – | – |
+| circuit packages | 2023 | 60 | – | 131.7 | 1.84 | – | – |
+| stations stas | 2023 | 75 | – | 164.7 | 1.79 | – | – |
+| image text | 2023 | 32 | – | 70.3 | 1.78 | – | – |
+| quantum error | 2023 | 40 | – | 87.8 | 1.78 | – | – |
+| network platform | 2023 | 69 | – | 151.5 | 1.76 | – | – |
+| battery array | 2023 | 37 | – | 81.2 | 1.75 | – | – |
+| hybrid bonding | 2023 | 95 | – | 208.6 | 1.75 | – | – |
+| relay terminal | 2023 | 37 | – | 81.2 | 1.75 | – | – |
+| digital platform | 2023 | 42 | – | 92.2 | 1.73 | – | – |
+| solution adding | 2023 | 55 | – | 120.8 | 1.73 | – | – |
+| imu data | 2023 | 34 | – | 74.7 | 1.72 | – | – |
+| fluorine free | 2023 | 31 | – | 68.1 | 1.69 | – | – |
+| stream captured | 2023 | 31 | – | 68.1 | 1.69 | – | – |
+| target task | 2023 | 54 | – | 118.6 | 1.68 | – | – |
+| text image | 2023 | 36 | – | 79.0 | 1.68 | – | – |
+| target determining | 2023 | 33 | – | 72.5 | 1.64 | – | – |
+| rate performance | 2023 | 43 | – | 94.4 | 1.63 | – | – |
+| electrode plate | 2023 | 463 | – | 1016.6 | 1.62 | – | – |
+| anode current | 2023 | 138 | – | 303.0 | 1.61 | – | – |
+| geometric information | 2023 | 30 | – | 65.9 | 1.6 | – | – |
+| reducing carbon | 2023 | 30 | – | 65.9 | 1.6 | – | – |
+| battery thermal | 2023 | 74 | – | 162.5 | 1.57 | – | – |
+| lithium source | 2023 | 42 | – | 92.2 | 1.57 | – | – |
+| marine drive | 2023 | 37 | – | 81.2 | 1.57 | – | – |
+| charging socket | 2023 | 32 | – | 70.3 | 1.56 | – | – |
+| teacher model | 2023 | 39 | – | 85.6 | 1.54 | – | – |
+| compound composition | 2023 | 56 | – | 123.0 | 1.53 | – | – |
+| pixel driver | 2023 | 34 | – | 74.7 | 1.53 | – | – |
+| galvanically isolated | 2023 | 41 | – | 90.0 | 1.51 | – | – |
+| direct bond | 2023 | 89 | – | 195.4 | 1.5 | – | – |
+| following requirements | 2023 | 48 | – | 105.4 | 1.5 | – | – |
+| model performance | 2023 | 69 | – | 151.5 | 1.48 | – | – |
+| sulfur battery | 2023 | 50 | – | 109.8 | 1.48 | – | – |
+| recycling process | 2023 | 45 | – | 98.8 | 1.46 | – | – |
+| conversion gain | 2023 | 33 | – | 72.5 | 1.45 | – | – |
+| outdoor power | 2023 | 33 | – | 72.5 | 1.45 | – | – |
+| verification operation | 2023 | 33 | – | 72.5 | 1.45 | – | – |
+| cell mobility | 2023 | 42 | – | 92.2 | 1.43 | – | – |
+| jelly roll | 2023 | 42 | – | 92.2 | 1.43 | – | – |
+| gate cut | 2023 | 72 | – | 158.1 | 1.42 | – | – |
+| input query | 2023 | 51 | – | 112.0 | 1.41 | – | – |
+| isolation pattern | 2023 | 37 | – | 81.2 | 1.41 | – | – |
+| task processing | 2023 | 58 | – | 127.4 | 1.41 | – | – |
+| transmitting bitstream | 2023 | 44 | – | 96.6 | 1.41 | – | – |
+| visual object | 2023 | 51 | – | 112.0 | 1.41 | – | – |
+| intraoral scanning | 2023 | 41 | – | 90.0 | 1.37 | – | – |
+| selection operation | 2023 | 100 | – | 219.6 | 1.37 | – | – |
+| board body | 2023 | 43 | – | 94.4 | 1.36 | – | – |
+| carrier head | 2023 | 34 | – | 74.7 | 1.36 | – | – |
+| manufacturing integrated | 2023 | 34 | – | 74.7 | 1.36 | – | – |
+| transmission rate | 2023 | 624 | – | 1370.1 | 1.36 | – | – |
+| assembled configuration | 2023 | 45 | – | 98.8 | 1.34 | – | – |
+| inlet line | 2023 | 63 | – | 138.3 | 1.34 | – | – |
+| ml algorithm | 2023 | 47 | – | 103.2 | 1.33 | – | – |
+| storing software | 2023 | 38 | – | 83.4 | 1.33 | – | – |
+| network core | 2023 | 40 | – | 87.8 | 1.31 | – | – |
+| cooling flow | 2023 | 75 | – | 164.7 | 1.3 | – | – |
+| aqueous organic | 2023 | 57 | – | 125.2 | 1.28 | – | – |
+| candidate resources | 2023 | 46 | – | 101.0 | 1.28 | – | – |
+| target reference | 2023 | 46 | – | 101.0 | 1.28 | – | – |
+| bis fluorosulfonyl | 2023 | 37 | – | 81.2 | 1.26 | – | – |
+| block vector | 2023 | 54 | – | 118.6 | 1.25 | – | – |
+| rnai agents | 2023 | 54 | – | 118.6 | 1.25 | – | – |
+| storage cabinet | 2023 | 52 | – | 114.2 | 1.25 | – | – |
+| active patterns | 2023 | 58 | – | 127.4 | 1.24 | – | – |
+| electric compressor | 2023 | 58 | – | 127.4 | 1.24 | – | – |
+| layer protocol | 2023 | 157 | – | 344.7 | 1.24 | – | – |
+| lifespan characteristics | 2023 | 34 | – | 74.7 | 1.21 | – | – |
+| rolling circle | 2023 | 34 | – | 74.7 | 1.21 | – | – |
+| vehicular exterior | 2023 | 34 | – | 74.7 | 1.21 | – | – |
+| conversion circuits | 2023 | 36 | – | 79.0 | 1.2 | – | – |
+| environment generating | 2023 | 55 | – | 120.8 | 1.2 | – | – |
+| sensor suite | 2023 | 38 | – | 83.4 | 1.2 | – | – |
+| vehicle taillamp | 2023 | 36 | – | 79.0 | 1.2 | – | – |
+| tabular data | 2023 | 42 | – | 92.2 | 1.19 | – | – |
+| dmrs ports | 2023 | 44 | – | 96.6 | 1.18 | – | – |
+| hydrogen storage | 2023 | 98 | – | 215.2 | 1.17 | – | – |
+| row hammer | 2023 | 50 | – | 109.8 | 1.17 | – | – |
+| interface displaying | 2023 | 87 | – | 191.0 | 1.16 | – | – |
+| current collector | 2023 | 1131 | – | 2483.4 | 1.15 | – | – |
+| prach transmission | 2023 | 33 | – | 72.5 | 1.15 | – | – |
+| door coupled | 2023 | 39 | – | 85.6 | 1.14 | – | – |
+| status monitoring | 2023 | 39 | – | 85.6 | 1.14 | – | – |
+| vehicle energy | 2023 | 39 | – | 85.6 | 1.14 | – | – |
+| electrode stack | 2023 | 47 | – | 103.2 | 1.13 | – | – |
+| uwb communication | 2023 | 47 | – | 103.2 | 1.13 | – | – |
+| network entities | 2023 | 98 | – | 215.2 | 1.12 | – | – |
+| polyacrylic acid | 2023 | 49 | – | 107.6 | 1.12 | – | – |
+| adjacent lane | 2023 | 46 | – | 101.0 | 1.08 | – | – |
+| capping pattern | 2023 | 30 | – | 65.9 | 1.08 | – | – |
+| cropped image | 2023 | 30 | – | 65.9 | 1.08 | – | – |
+| direct path | 2023 | 42 | – | 92.2 | 1.08 | – | – |
+| drain features | 2023 | 52 | – | 114.2 | 1.08 | – | – |
+| energy state | 2023 | 30 | – | 65.9 | 1.08 | – | – |
+| euv light | 2023 | 72 | – | 158.1 | 1.08 | – | – |
+| fluorosulfonyl imide | 2023 | 36 | – | 79.0 | 1.08 | – | – |
+| intelligence techniques | 2023 | 68 | – | 149.3 | 1.08 | – | – |
+| produce hydrogen | 2023 | 64 | – | 140.5 | 1.08 | – | – |
+| speech enhancement | 2023 | 38 | – | 83.4 | 1.08 | – | – |
+| threshold generating | 2023 | 44 | – | 96.6 | 1.08 | – | – |
+| traveling lane | 2023 | 38 | – | 83.4 | 1.08 | – | – |
+| vehicle applications | 2023 | 38 | – | 83.4 | 1.08 | – | – |
+| battery pack | 2023 | 2082 | – | 4571.5 | 1.07 | – | – |
+| storage rack | 2023 | 123 | – | 270.1 | 1.06 | – | – |
+| cleaning brush | 2023 | 67 | – | 147.1 | 1.05 | – | – |
+| reset transistor | 2023 | 75 | – | 164.7 | 1.05 | – | – |
+| template matching | 2023 | 71 | – | 155.9 | 1.05 | – | – |
+| alternating electric | 2023 | 53 | – | 116.4 | 1.04 | – | – |
+| dielectric isolation | 2023 | 47 | – | 103.2 | 1.04 | – | – |
+| gaming establishment | 2023 | 45 | – | 98.8 | 1.04 | – | – |
+| guide disposed | 2023 | 49 | – | 107.6 | 1.04 | – | – |
+| impact tool | 2023 | 47 | – | 103.2 | 1.04 | – | – |
+| insertion space | 2023 | 45 | – | 98.8 | 1.04 | – | – |
+| lane line | 2023 | 47 | – | 103.2 | 1.04 | – | – |
+| overcoat layer | 2023 | 47 | – | 103.2 | 1.04 | – | – |
+| pattern connected | 2023 | 53 | – | 116.4 | 1.04 | – | – |
+| acquiring target | 2023 | 41 | – | 90.0 | 1.03 | – | – |
+| decentralized network | 2023 | 37 | – | 81.2 | 1.03 | – | – |
+| information interaction | 2023 | 37 | – | 81.2 | 1.03 | – | – |
+| circuits ics | 2023 | 33 | – | 72.5 | 1.02 | – | – |
+| computing power | 2023 | 62 | – | 136.1 | 1.02 | – | – |
+| delay budget | 2023 | 33 | – | 72.5 | 1.02 | – | – |
+| excellent high | 2023 | 35 | – | 76.9 | 1.02 | – | – |
+| intermediate representation | 2023 | 68 | – | 149.3 | 1.02 | – | – |
+| line region | 2023 | 35 | – | 76.9 | 1.02 | – | – |
+| data carrier | 2023 | 78 | – | 171.3 | 0.98 | – | – |
+| student model | 2023 | 38 | – | 83.4 | 0.98 | – | – |
+| wallet application | 2023 | 40 | – | 87.8 | 0.98 | – | – |
+| mode mpm | 2023 | 36 | – | 79.0 | 0.97 | – | – |
+| drain leakage | 2023 | 32 | – | 70.3 | 0.96 | – | – |
+| intraoral scanner | 2023 | 49 | – | 107.6 | 0.96 | – | – |
+| roof deck | 2023 | 32 | – | 70.3 | 0.96 | – | – |
+| board surface | 2023 | 30 | – | 65.9 | 0.95 | – | – |
+| dielectric liner | 2023 | 58 | – | 127.4 | 0.95 | – | – |
+| quantum cryptography | 2023 | 30 | – | 65.9 | 0.95 | – | – |
+| intelligent vehicle | 2023 | 37 | – | 81.2 | 0.93 | – | – |
+| object positioned | 2023 | 39 | – | 85.6 | 0.93 | – | – |
+| quantum states | 2023 | 39 | – | 85.6 | 0.93 | – | – |
+| aircraft power | 2023 | 35 | – | 76.9 | 0.92 | – | – |
+| fastener driver | 2023 | 33 | – | 72.5 | 0.91 | – | – |
+| free nucleic | 2023 | 46 | – | 101.0 | 0.91 | – | – |
+| local machine | 2023 | 33 | – | 72.5 | 0.91 | – | – |
+| resonant capacitor | 2023 | 46 | – | 101.0 | 0.91 | – | – |
+| hydrogen gas | 2023 | 300 | – | 658.7 | 0.9 | – | – |
+| induced drain | 2023 | 31 | – | 68.1 | 0.9 | – | – |
+| process input | 2023 | 42 | – | 92.2 | 0.9 | – | – |
+| dimensionality reduction | 2023 | 49 | – | 107.6 | 0.89 | – | – |
+| joint transmission | 2023 | 58 | – | 127.4 | 0.89 | – | – |
+| fused ring | 2023 | 74 | – | 162.5 | 0.88 | – | – |
+| hydrogen supply | 2023 | 56 | – | 123.0 | 0.88 | – | – |
+| superconducting quantum | 2023 | 47 | – | 103.2 | 0.88 | – | – |
+| ta value | 2023 | 38 | – | 83.4 | 0.88 | – | – |
+| bandwidth memory | 2023 | 36 | – | 79.0 | 0.87 | – | – |
+| hydrogen generation | 2023 | 52 | – | 114.2 | 0.87 | – | – |
+| threat intelligence | 2023 | 36 | – | 79.0 | 0.87 | – | – |
+| container handling | 2023 | 59 | – | 129.5 | 0.86 | – | – |
+| network configurations | 2023 | 34 | – | 74.7 | 0.86 | – | – |
+| working condition | 2023 | 41 | – | 90.0 | 0.86 | – | – |
+| battery temperature | 2023 | 71 | – | 155.9 | 0.85 | – | – |
+| charge port | 2023 | 46 | – | 101.0 | 0.84 | – | – |
+| discharge gas | 2023 | 44 | – | 96.6 | 0.83 | – | – |
+| electric drive | 2023 | 342 | – | 750.9 | 0.82 | – | – |
+| connection electrode | 2023 | 136 | – | 298.6 | 0.81 | – | – |
+| input text | 2023 | 136 | – | 298.6 | 0.81 | – | – |
+| anisotropic layer | 2023 | 38 | – | 83.4 | 0.8 | – | – |
+| separator disposed | 2023 | 88 | – | 193.2 | 0.8 | – | – |
+| blocks rbs | 2023 | 43 | – | 94.4 | 0.79 | – | – |
+| charging discharging | 2023 | 84 | – | 184.4 | 0.78 | – | – |
+| semiconductor switching | 2023 | 53 | – | 116.4 | 0.78 | – | – |
+| cell sites | 2023 | 34 | – | 74.7 | 0.77 | – | – |
+| swimming pools | 2023 | 34 | – | 74.7 | 0.77 | – | – |
+| generating prediction | 2023 | 49 | – | 107.6 | 0.76 | – | – |
+| spectrum management | 2023 | 44 | – | 96.6 | 0.76 | – | – |
+| central node | 2023 | 37 | – | 81.2 | 0.75 | – | – |
+| combined power | 2023 | 35 | – | 76.9 | 0.73 | – | – |
+| tracking camera | 2023 | 30 | – | 65.9 | 0.73 | – | – |
+| cause presentation | 2023 | 33 | – | 72.5 | 0.72 | – | – |
+| coffee grounds | 2023 | 33 | – | 72.5 | 0.72 | – | – |
+| feed port | 2023 | 38 | – | 83.4 | 0.72 | – | – |
+| piezoelectric layer | 2023 | 324 | – | 711.4 | 0.72 | – | – |
+| platform determining | 2023 | 38 | – | 83.4 | 0.72 | – | – |
