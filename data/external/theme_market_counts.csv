@@ -1,0 +1,505 @@
+theme,phrase,year,count
+adv_packaging,advanced packaging,2015,32
+adv_packaging,advanced packaging,2016,30
+adv_packaging,advanced packaging,2017,29
+adv_packaging,advanced packaging,2018,33
+adv_packaging,advanced packaging,2019,33
+adv_packaging,advanced packaging,2020,29
+adv_packaging,advanced packaging,2021,35
+adv_packaging,advanced packaging,2022,33
+adv_packaging,advanced packaging,2023,40
+adv_packaging,advanced packaging,2024,44
+adv_packaging,advanced packaging,2025,54
+adv_packaging,advanced packaging,2026,46
+adv_packaging,hybrid bonding,2015,0
+adv_packaging,hybrid bonding,2016,1
+adv_packaging,hybrid bonding,2017,1
+adv_packaging,hybrid bonding,2018,1
+adv_packaging,hybrid bonding,2019,1
+adv_packaging,hybrid bonding,2020,1
+adv_packaging,hybrid bonding,2021,1
+adv_packaging,hybrid bonding,2022,2
+adv_packaging,hybrid bonding,2023,2
+adv_packaging,hybrid bonding,2024,3
+adv_packaging,hybrid bonding,2025,4
+adv_packaging,hybrid bonding,2026,3
+adv_packaging,backside power delivery,2015,0
+adv_packaging,backside power delivery,2016,0
+adv_packaging,backside power delivery,2017,0
+adv_packaging,backside power delivery,2018,0
+adv_packaging,backside power delivery,2019,0
+adv_packaging,backside power delivery,2020,0
+adv_packaging,backside power delivery,2021,0
+adv_packaging,backside power delivery,2022,1
+adv_packaging,backside power delivery,2023,1
+adv_packaging,backside power delivery,2024,1
+adv_packaging,backside power delivery,2025,1
+adv_packaging,backside power delivery,2026,1
+adv_packaging,high bandwidth memory,2015,1
+adv_packaging,high bandwidth memory,2016,3
+adv_packaging,high bandwidth memory,2017,2
+adv_packaging,high bandwidth memory,2018,5
+adv_packaging,high bandwidth memory,2019,4
+adv_packaging,high bandwidth memory,2020,5
+adv_packaging,high bandwidth memory,2021,6
+adv_packaging,high bandwidth memory,2022,4
+adv_packaging,high bandwidth memory,2023,6
+adv_packaging,high bandwidth memory,2024,10
+adv_packaging,high bandwidth memory,2025,12
+adv_packaging,high bandwidth memory,2026,21
+adv_packaging,chiplet,2015,0
+adv_packaging,chiplet,2016,0
+adv_packaging,chiplet,2017,0
+adv_packaging,chiplet,2018,0
+adv_packaging,chiplet,2019,0
+adv_packaging,chiplet,2020,3
+adv_packaging,chiplet,2021,3
+adv_packaging,chiplet,2022,5
+adv_packaging,chiplet,2023,8
+adv_packaging,chiplet,2024,9
+adv_packaging,chiplet,2025,7
+adv_packaging,chiplet,2026,13
+adv_packaging,co-packaged optics,2015,0
+adv_packaging,co-packaged optics,2016,0
+adv_packaging,co-packaged optics,2017,0
+adv_packaging,co-packaged optics,2018,0
+adv_packaging,co-packaged optics,2019,0
+adv_packaging,co-packaged optics,2020,0
+adv_packaging,co-packaged optics,2021,1
+adv_packaging,co-packaged optics,2022,1
+adv_packaging,co-packaged optics,2023,2
+adv_packaging,co-packaged optics,2024,3
+adv_packaging,co-packaged optics,2025,6
+adv_packaging,co-packaged optics,2026,11
+adv_packaging,2.5D packaging,2015,1
+adv_packaging,2.5D packaging,2016,0
+adv_packaging,2.5D packaging,2017,0
+adv_packaging,2.5D packaging,2018,0
+adv_packaging,2.5D packaging,2019,0
+adv_packaging,2.5D packaging,2020,0
+adv_packaging,2.5D packaging,2021,1
+adv_packaging,2.5D packaging,2022,1
+adv_packaging,2.5D packaging,2023,1
+adv_packaging,2.5D packaging,2024,0
+adv_packaging,2.5D packaging,2025,0
+adv_packaging,2.5D packaging,2026,1
+adv_packaging,3D packaging,2015,5
+adv_packaging,3D packaging,2016,6
+adv_packaging,3D packaging,2017,4
+adv_packaging,3D packaging,2018,1
+adv_packaging,3D packaging,2019,2
+adv_packaging,3D packaging,2020,1
+adv_packaging,3D packaging,2021,1
+adv_packaging,3D packaging,2022,2
+adv_packaging,3D packaging,2023,1
+adv_packaging,3D packaging,2024,1
+adv_packaging,3D packaging,2025,2
+adv_packaging,3D packaging,2026,2
+ntn_wifi7_oran,non-terrestrial network,2015,0
+ntn_wifi7_oran,non-terrestrial network,2016,0
+ntn_wifi7_oran,non-terrestrial network,2017,0
+ntn_wifi7_oran,non-terrestrial network,2018,0
+ntn_wifi7_oran,non-terrestrial network,2019,0
+ntn_wifi7_oran,non-terrestrial network,2020,0
+ntn_wifi7_oran,non-terrestrial network,2021,0
+ntn_wifi7_oran,non-terrestrial network,2022,0
+ntn_wifi7_oran,non-terrestrial network,2023,0
+ntn_wifi7_oran,non-terrestrial network,2024,3
+ntn_wifi7_oran,non-terrestrial network,2025,3
+ntn_wifi7_oran,non-terrestrial network,2026,3
+ntn_wifi7_oran,direct-to-device,2015,0
+ntn_wifi7_oran,direct-to-device,2016,0
+ntn_wifi7_oran,direct-to-device,2017,0
+ntn_wifi7_oran,direct-to-device,2018,0
+ntn_wifi7_oran,direct-to-device,2019,0
+ntn_wifi7_oran,direct-to-device,2020,0
+ntn_wifi7_oran,direct-to-device,2021,1
+ntn_wifi7_oran,direct-to-device,2022,1
+ntn_wifi7_oran,direct-to-device,2023,2
+ntn_wifi7_oran,direct-to-device,2024,4
+ntn_wifi7_oran,direct-to-device,2025,4
+ntn_wifi7_oran,direct-to-device,2026,8
+ntn_wifi7_oran,direct to cell,2015,0
+ntn_wifi7_oran,direct to cell,2016,0
+ntn_wifi7_oran,direct to cell,2017,0
+ntn_wifi7_oran,direct to cell,2018,0
+ntn_wifi7_oran,direct to cell,2019,0
+ntn_wifi7_oran,direct to cell,2020,0
+ntn_wifi7_oran,direct to cell,2021,0
+ntn_wifi7_oran,direct to cell,2022,0
+ntn_wifi7_oran,direct to cell,2023,1
+ntn_wifi7_oran,direct to cell,2024,1
+ntn_wifi7_oran,direct to cell,2025,2
+ntn_wifi7_oran,direct to cell,2026,6
+ntn_wifi7_oran,satellite-to-phone,2015,0
+ntn_wifi7_oran,satellite-to-phone,2016,0
+ntn_wifi7_oran,satellite-to-phone,2017,0
+ntn_wifi7_oran,satellite-to-phone,2018,0
+ntn_wifi7_oran,satellite-to-phone,2019,0
+ntn_wifi7_oran,satellite-to-phone,2020,0
+ntn_wifi7_oran,satellite-to-phone,2021,0
+ntn_wifi7_oran,satellite-to-phone,2022,0
+ntn_wifi7_oran,satellite-to-phone,2023,0
+ntn_wifi7_oran,satellite-to-phone,2024,0
+ntn_wifi7_oran,satellite-to-phone,2025,0
+ntn_wifi7_oran,satellite-to-phone,2026,0
+ntn_wifi7_oran,satellite connectivity,2015,9
+ntn_wifi7_oran,satellite connectivity,2016,5
+ntn_wifi7_oran,satellite connectivity,2017,6
+ntn_wifi7_oran,satellite connectivity,2018,7
+ntn_wifi7_oran,satellite connectivity,2019,7
+ntn_wifi7_oran,satellite connectivity,2020,8
+ntn_wifi7_oran,satellite connectivity,2021,9
+ntn_wifi7_oran,satellite connectivity,2022,10
+ntn_wifi7_oran,satellite connectivity,2023,9
+ntn_wifi7_oran,satellite connectivity,2024,8
+ntn_wifi7_oran,satellite connectivity,2025,9
+ntn_wifi7_oran,satellite connectivity,2026,8
+ntn_wifi7_oran,Wi-Fi 7,2015,0
+ntn_wifi7_oran,Wi-Fi 7,2016,0
+ntn_wifi7_oran,Wi-Fi 7,2017,0
+ntn_wifi7_oran,Wi-Fi 7,2018,0
+ntn_wifi7_oran,Wi-Fi 7,2019,0
+ntn_wifi7_oran,Wi-Fi 7,2020,1
+ntn_wifi7_oran,Wi-Fi 7,2021,1
+ntn_wifi7_oran,Wi-Fi 7,2022,3
+ntn_wifi7_oran,Wi-Fi 7,2023,4
+ntn_wifi7_oran,Wi-Fi 7,2024,8
+ntn_wifi7_oran,Wi-Fi 7,2025,9
+ntn_wifi7_oran,Wi-Fi 7,2026,13
+ntn_wifi7_oran,Open RAN,2015,0
+ntn_wifi7_oran,Open RAN,2016,0
+ntn_wifi7_oran,Open RAN,2017,0
+ntn_wifi7_oran,Open RAN,2018,0
+ntn_wifi7_oran,Open RAN,2019,0
+ntn_wifi7_oran,Open RAN,2020,1
+ntn_wifi7_oran,Open RAN,2021,5
+ntn_wifi7_oran,Open RAN,2022,5
+ntn_wifi7_oran,Open RAN,2023,5
+ntn_wifi7_oran,Open RAN,2024,6
+ntn_wifi7_oran,Open RAN,2025,2
+ntn_wifi7_oran,Open RAN,2026,5
+ntn_wifi7_oran,RAN intelligent controller,2015,0
+ntn_wifi7_oran,RAN intelligent controller,2016,0
+ntn_wifi7_oran,RAN intelligent controller,2017,0
+ntn_wifi7_oran,RAN intelligent controller,2018,0
+ntn_wifi7_oran,RAN intelligent controller,2019,0
+ntn_wifi7_oran,RAN intelligent controller,2020,0
+ntn_wifi7_oran,RAN intelligent controller,2021,0
+ntn_wifi7_oran,RAN intelligent controller,2022,1
+ntn_wifi7_oran,RAN intelligent controller,2023,1
+ntn_wifi7_oran,RAN intelligent controller,2024,0
+ntn_wifi7_oran,RAN intelligent controller,2025,0
+ntn_wifi7_oran,RAN intelligent controller,2026,0
+battery_chem_mfg,solid-state battery,2015,1
+battery_chem_mfg,solid-state battery,2016,0
+battery_chem_mfg,solid-state battery,2017,0
+battery_chem_mfg,solid-state battery,2018,0
+battery_chem_mfg,solid-state battery,2019,1
+battery_chem_mfg,solid-state battery,2020,1
+battery_chem_mfg,solid-state battery,2021,4
+battery_chem_mfg,solid-state battery,2022,8
+battery_chem_mfg,solid-state battery,2023,11
+battery_chem_mfg,solid-state battery,2024,9
+battery_chem_mfg,solid-state battery,2025,9
+battery_chem_mfg,solid-state battery,2026,9
+battery_chem_mfg,solid state battery,2015,1
+battery_chem_mfg,solid state battery,2016,0
+battery_chem_mfg,solid state battery,2017,0
+battery_chem_mfg,solid state battery,2018,0
+battery_chem_mfg,solid state battery,2019,1
+battery_chem_mfg,solid state battery,2020,1
+battery_chem_mfg,solid state battery,2021,4
+battery_chem_mfg,solid state battery,2022,8
+battery_chem_mfg,solid state battery,2023,11
+battery_chem_mfg,solid state battery,2024,9
+battery_chem_mfg,solid state battery,2025,9
+battery_chem_mfg,solid state battery,2026,9
+battery_chem_mfg,dry electrode,2015,0
+battery_chem_mfg,dry electrode,2016,0
+battery_chem_mfg,dry electrode,2017,1
+battery_chem_mfg,dry electrode,2018,1
+battery_chem_mfg,dry electrode,2019,1
+battery_chem_mfg,dry electrode,2020,0
+battery_chem_mfg,dry electrode,2021,0
+battery_chem_mfg,dry electrode,2022,2
+battery_chem_mfg,dry electrode,2023,2
+battery_chem_mfg,dry electrode,2024,3
+battery_chem_mfg,dry electrode,2025,3
+battery_chem_mfg,dry electrode,2026,2
+battery_chem_mfg,lithium iron phosphate,2015,3
+battery_chem_mfg,lithium iron phosphate,2016,5
+battery_chem_mfg,lithium iron phosphate,2017,5
+battery_chem_mfg,lithium iron phosphate,2018,5
+battery_chem_mfg,lithium iron phosphate,2019,4
+battery_chem_mfg,lithium iron phosphate,2020,3
+battery_chem_mfg,lithium iron phosphate,2021,7
+battery_chem_mfg,lithium iron phosphate,2022,12
+battery_chem_mfg,lithium iron phosphate,2023,20
+battery_chem_mfg,lithium iron phosphate,2024,19
+battery_chem_mfg,lithium iron phosphate,2025,19
+battery_chem_mfg,lithium iron phosphate,2026,18
+battery_chem_mfg,LFP battery,2015,1
+battery_chem_mfg,LFP battery,2016,0
+battery_chem_mfg,LFP battery,2017,0
+battery_chem_mfg,LFP battery,2018,0
+battery_chem_mfg,LFP battery,2019,0
+battery_chem_mfg,LFP battery,2020,0
+battery_chem_mfg,LFP battery,2021,2
+battery_chem_mfg,LFP battery,2022,4
+battery_chem_mfg,LFP battery,2023,7
+battery_chem_mfg,LFP battery,2024,4
+battery_chem_mfg,LFP battery,2025,7
+battery_chem_mfg,LFP battery,2026,7
+battery_chem_mfg,lithium-sulfur,2015,1
+battery_chem_mfg,lithium-sulfur,2016,0
+battery_chem_mfg,lithium-sulfur,2017,0
+battery_chem_mfg,lithium-sulfur,2018,0
+battery_chem_mfg,lithium-sulfur,2019,0
+battery_chem_mfg,lithium-sulfur,2020,0
+battery_chem_mfg,lithium-sulfur,2021,0
+battery_chem_mfg,lithium-sulfur,2022,0
+battery_chem_mfg,lithium-sulfur,2023,0
+battery_chem_mfg,lithium-sulfur,2024,1
+battery_chem_mfg,lithium-sulfur,2025,1
+battery_chem_mfg,lithium-sulfur,2026,1
+battery_chem_mfg,lithium sulfur,2015,1
+battery_chem_mfg,lithium sulfur,2016,0
+battery_chem_mfg,lithium sulfur,2017,0
+battery_chem_mfg,lithium sulfur,2018,0
+battery_chem_mfg,lithium sulfur,2019,0
+battery_chem_mfg,lithium sulfur,2020,0
+battery_chem_mfg,lithium sulfur,2021,0
+battery_chem_mfg,lithium sulfur,2022,0
+battery_chem_mfg,lithium sulfur,2023,0
+battery_chem_mfg,lithium sulfur,2024,1
+battery_chem_mfg,lithium sulfur,2025,1
+battery_chem_mfg,lithium sulfur,2026,1
+battery_chem_mfg,sodium-ion,2015,4
+battery_chem_mfg,sodium-ion,2016,4
+battery_chem_mfg,sodium-ion,2017,5
+battery_chem_mfg,sodium-ion,2018,5
+battery_chem_mfg,sodium-ion,2019,2
+battery_chem_mfg,sodium-ion,2020,1
+battery_chem_mfg,sodium-ion,2021,1
+battery_chem_mfg,sodium-ion,2022,2
+battery_chem_mfg,sodium-ion,2023,5
+battery_chem_mfg,sodium-ion,2024,8
+battery_chem_mfg,sodium-ion,2025,7
+battery_chem_mfg,sodium-ion,2026,16
+battery_chem_mfg,battery thermal management,2015,2
+battery_chem_mfg,battery thermal management,2016,1
+battery_chem_mfg,battery thermal management,2017,2
+battery_chem_mfg,battery thermal management,2018,2
+battery_chem_mfg,battery thermal management,2019,2
+battery_chem_mfg,battery thermal management,2020,2
+battery_chem_mfg,battery thermal management,2021,3
+battery_chem_mfg,battery thermal management,2022,4
+battery_chem_mfg,battery thermal management,2023,4
+battery_chem_mfg,battery thermal management,2024,2
+battery_chem_mfg,battery thermal management,2025,2
+battery_chem_mfg,battery thermal management,2026,2
+battery_chem_mfg,direct lithium extraction,2015,1
+battery_chem_mfg,direct lithium extraction,2016,1
+battery_chem_mfg,direct lithium extraction,2017,1
+battery_chem_mfg,direct lithium extraction,2018,0
+battery_chem_mfg,direct lithium extraction,2019,0
+battery_chem_mfg,direct lithium extraction,2020,0
+battery_chem_mfg,direct lithium extraction,2021,0
+battery_chem_mfg,direct lithium extraction,2022,4
+battery_chem_mfg,direct lithium extraction,2023,11
+battery_chem_mfg,direct lithium extraction,2024,15
+battery_chem_mfg,direct lithium extraction,2025,12
+battery_chem_mfg,direct lithium extraction,2026,10
+photonics_pic,silicon photonics,2015,6
+photonics_pic,silicon photonics,2016,9
+photonics_pic,silicon photonics,2017,9
+photonics_pic,silicon photonics,2018,13
+photonics_pic,silicon photonics,2019,11
+photonics_pic,silicon photonics,2020,16
+photonics_pic,silicon photonics,2021,14
+photonics_pic,silicon photonics,2022,21
+photonics_pic,silicon photonics,2023,23
+photonics_pic,silicon photonics,2024,20
+photonics_pic,silicon photonics,2025,21
+photonics_pic,silicon photonics,2026,22
+photonics_pic,photonic integrated circuit,2015,6
+photonics_pic,photonic integrated circuit,2016,3
+photonics_pic,photonic integrated circuit,2017,4
+photonics_pic,photonic integrated circuit,2018,3
+photonics_pic,photonic integrated circuit,2019,4
+photonics_pic,photonic integrated circuit,2020,5
+photonics_pic,photonic integrated circuit,2021,4
+photonics_pic,photonic integrated circuit,2022,4
+photonics_pic,photonic integrated circuit,2023,5
+photonics_pic,photonic integrated circuit,2024,3
+photonics_pic,photonic integrated circuit,2025,3
+photonics_pic,photonic integrated circuit,2026,4
+photonics_pic,co-packaged optics,2015,0
+photonics_pic,co-packaged optics,2016,0
+photonics_pic,co-packaged optics,2017,0
+photonics_pic,co-packaged optics,2018,0
+photonics_pic,co-packaged optics,2019,0
+photonics_pic,co-packaged optics,2020,0
+photonics_pic,co-packaged optics,2021,1
+photonics_pic,co-packaged optics,2022,1
+photonics_pic,co-packaged optics,2023,2
+photonics_pic,co-packaged optics,2024,3
+photonics_pic,co-packaged optics,2025,6
+photonics_pic,co-packaged optics,2026,11
+photonics_pic,optical interconnect,2015,4
+photonics_pic,optical interconnect,2016,4
+photonics_pic,optical interconnect,2017,4
+photonics_pic,optical interconnect,2018,8
+photonics_pic,optical interconnect,2019,7
+photonics_pic,optical interconnect,2020,6
+photonics_pic,optical interconnect,2021,6
+photonics_pic,optical interconnect,2022,4
+photonics_pic,optical interconnect,2023,2
+photonics_pic,optical interconnect,2024,1
+photonics_pic,optical interconnect,2025,3
+photonics_pic,optical interconnect,2026,6
+photonics_pic,thin-film lithium niobate,2015,0
+photonics_pic,thin-film lithium niobate,2016,0
+photonics_pic,thin-film lithium niobate,2017,0
+photonics_pic,thin-film lithium niobate,2018,0
+photonics_pic,thin-film lithium niobate,2019,0
+photonics_pic,thin-film lithium niobate,2020,0
+photonics_pic,thin-film lithium niobate,2021,0
+photonics_pic,thin-film lithium niobate,2022,0
+photonics_pic,thin-film lithium niobate,2023,1
+photonics_pic,thin-film lithium niobate,2024,2
+photonics_pic,thin-film lithium niobate,2025,2
+photonics_pic,thin-film lithium niobate,2026,2
+photonics_pic,optical transceiver,2015,5
+photonics_pic,optical transceiver,2016,5
+photonics_pic,optical transceiver,2017,6
+photonics_pic,optical transceiver,2018,7
+photonics_pic,optical transceiver,2019,9
+photonics_pic,optical transceiver,2020,11
+photonics_pic,optical transceiver,2021,7
+photonics_pic,optical transceiver,2022,7
+photonics_pic,optical transceiver,2023,7
+photonics_pic,optical transceiver,2024,6
+photonics_pic,optical transceiver,2025,5
+photonics_pic,optical transceiver,2026,8
+photonics_pic,linear pluggable optics,2015,0
+photonics_pic,linear pluggable optics,2016,0
+photonics_pic,linear pluggable optics,2017,0
+photonics_pic,linear pluggable optics,2018,0
+photonics_pic,linear pluggable optics,2019,0
+photonics_pic,linear pluggable optics,2020,0
+photonics_pic,linear pluggable optics,2021,0
+photonics_pic,linear pluggable optics,2022,0
+photonics_pic,linear pluggable optics,2023,0
+photonics_pic,linear pluggable optics,2024,0
+photonics_pic,linear pluggable optics,2025,1
+photonics_pic,linear pluggable optics,2026,1
+tpd_ev_cfdna,targeted protein degradation,2015,0
+tpd_ev_cfdna,targeted protein degradation,2016,0
+tpd_ev_cfdna,targeted protein degradation,2017,0
+tpd_ev_cfdna,targeted protein degradation,2018,1
+tpd_ev_cfdna,targeted protein degradation,2019,2
+tpd_ev_cfdna,targeted protein degradation,2020,1
+tpd_ev_cfdna,targeted protein degradation,2021,7
+tpd_ev_cfdna,targeted protein degradation,2022,13
+tpd_ev_cfdna,targeted protein degradation,2023,12
+tpd_ev_cfdna,targeted protein degradation,2024,12
+tpd_ev_cfdna,targeted protein degradation,2025,14
+tpd_ev_cfdna,targeted protein degradation,2026,12
+tpd_ev_cfdna,PROTAC,2015,0
+tpd_ev_cfdna,PROTAC,2016,0
+tpd_ev_cfdna,PROTAC,2017,1
+tpd_ev_cfdna,PROTAC,2018,0
+tpd_ev_cfdna,PROTAC,2019,1
+tpd_ev_cfdna,PROTAC,2020,1
+tpd_ev_cfdna,PROTAC,2021,2
+tpd_ev_cfdna,PROTAC,2022,5
+tpd_ev_cfdna,PROTAC,2023,7
+tpd_ev_cfdna,PROTAC,2024,5
+tpd_ev_cfdna,PROTAC,2025,3
+tpd_ev_cfdna,PROTAC,2026,2
+tpd_ev_cfdna,molecular glue,2015,1
+tpd_ev_cfdna,molecular glue,2016,1
+tpd_ev_cfdna,molecular glue,2017,1
+tpd_ev_cfdna,molecular glue,2018,1
+tpd_ev_cfdna,molecular glue,2019,1
+tpd_ev_cfdna,molecular glue,2020,1
+tpd_ev_cfdna,molecular glue,2021,1
+tpd_ev_cfdna,molecular glue,2022,6
+tpd_ev_cfdna,molecular glue,2023,5
+tpd_ev_cfdna,molecular glue,2024,9
+tpd_ev_cfdna,molecular glue,2025,11
+tpd_ev_cfdna,molecular glue,2026,14
+tpd_ev_cfdna,degrader,2015,1
+tpd_ev_cfdna,degrader,2016,2
+tpd_ev_cfdna,degrader,2017,3
+tpd_ev_cfdna,degrader,2018,4
+tpd_ev_cfdna,degrader,2019,7
+tpd_ev_cfdna,degrader,2020,5
+tpd_ev_cfdna,degrader,2021,23
+tpd_ev_cfdna,degrader,2022,30
+tpd_ev_cfdna,degrader,2023,31
+tpd_ev_cfdna,degrader,2024,33
+tpd_ev_cfdna,degrader,2025,24
+tpd_ev_cfdna,degrader,2026,29
+tpd_ev_cfdna,extracellular vesicle,2015,0
+tpd_ev_cfdna,extracellular vesicle,2016,0
+tpd_ev_cfdna,extracellular vesicle,2017,0
+tpd_ev_cfdna,extracellular vesicle,2018,0
+tpd_ev_cfdna,extracellular vesicle,2019,0
+tpd_ev_cfdna,extracellular vesicle,2020,0
+tpd_ev_cfdna,extracellular vesicle,2021,2
+tpd_ev_cfdna,extracellular vesicle,2022,2
+tpd_ev_cfdna,extracellular vesicle,2023,5
+tpd_ev_cfdna,extracellular vesicle,2024,3
+tpd_ev_cfdna,extracellular vesicle,2025,3
+tpd_ev_cfdna,extracellular vesicle,2026,3
+tpd_ev_cfdna,exosome,2015,3
+tpd_ev_cfdna,exosome,2016,7
+tpd_ev_cfdna,exosome,2017,11
+tpd_ev_cfdna,exosome,2018,10
+tpd_ev_cfdna,exosome,2019,17
+tpd_ev_cfdna,exosome,2020,13
+tpd_ev_cfdna,exosome,2021,15
+tpd_ev_cfdna,exosome,2022,24
+tpd_ev_cfdna,exosome,2023,25
+tpd_ev_cfdna,exosome,2024,25
+tpd_ev_cfdna,exosome,2025,24
+tpd_ev_cfdna,exosome,2026,23
+tpd_ev_cfdna,cell-free DNA,2015,7
+tpd_ev_cfdna,cell-free DNA,2016,8
+tpd_ev_cfdna,cell-free DNA,2017,7
+tpd_ev_cfdna,cell-free DNA,2018,7
+tpd_ev_cfdna,cell-free DNA,2019,8
+tpd_ev_cfdna,cell-free DNA,2020,12
+tpd_ev_cfdna,cell-free DNA,2021,16
+tpd_ev_cfdna,cell-free DNA,2022,21
+tpd_ev_cfdna,cell-free DNA,2023,17
+tpd_ev_cfdna,cell-free DNA,2024,22
+tpd_ev_cfdna,cell-free DNA,2025,15
+tpd_ev_cfdna,cell-free DNA,2026,18
+tpd_ev_cfdna,liquid biopsy,2015,7
+tpd_ev_cfdna,liquid biopsy,2016,21
+tpd_ev_cfdna,liquid biopsy,2017,19
+tpd_ev_cfdna,liquid biopsy,2018,23
+tpd_ev_cfdna,liquid biopsy,2019,26
+tpd_ev_cfdna,liquid biopsy,2020,32
+tpd_ev_cfdna,liquid biopsy,2021,34
+tpd_ev_cfdna,liquid biopsy,2022,36
+tpd_ev_cfdna,liquid biopsy,2023,43
+tpd_ev_cfdna,liquid biopsy,2024,39
+tpd_ev_cfdna,liquid biopsy,2025,36
+tpd_ev_cfdna,liquid biopsy,2026,30
+tpd_ev_cfdna,minimal residual disease,2015,13
+tpd_ev_cfdna,minimal residual disease,2016,15
+tpd_ev_cfdna,minimal residual disease,2017,16
+tpd_ev_cfdna,minimal residual disease,2018,13
+tpd_ev_cfdna,minimal residual disease,2019,17
+tpd_ev_cfdna,minimal residual disease,2020,19
+tpd_ev_cfdna,minimal residual disease,2021,21
+tpd_ev_cfdna,minimal residual disease,2022,29
+tpd_ev_cfdna,minimal residual disease,2023,36
+tpd_ev_cfdna,minimal residual disease,2024,39
+tpd_ev_cfdna,minimal residual disease,2025,33
+tpd_ev_cfdna,minimal residual disease,2026,35

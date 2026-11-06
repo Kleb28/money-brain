@@ -1,0 +1,640 @@
+theme,phrase,entity,ticker,cik,n_filings
+adv_packaging,advanced packaging,MICRON TECHNOLOGY INC,MU,0000723125,5
+adv_packaging,advanced packaging,INTEL CORP,INTC,0000050863,4
+adv_packaging,advanced packaging,ONTO INNOVATION INC.,ONTO,0000704532,3
+adv_packaging,advanced packaging,"AMKOR TECHNOLOGY, INC.",AMKR,0001047127,3
+adv_packaging,advanced packaging,"SkyWater Technology, Inc",SKYT,0001819974,3
+adv_packaging,advanced packaging,VEECO INSTRUMENTS INC,VECO,0000103145,3
+adv_packaging,advanced packaging,"ACM Research, Inc.",ACMR,0001680062,3
+adv_packaging,advanced packaging,KLA CORP,KLAC,0000319201,3
+adv_packaging,advanced packaging,LAM RESEARCH CORP,LRCX,0000707549,3
+adv_packaging,advanced packaging,DIODES INC /DEL/,DIOD,0000029002,3
+adv_packaging,advanced packaging,LATTICE SEMICONDUCTOR CORP,LSCC,0000855658,3
+adv_packaging,advanced packaging,Fabrinet,FN,0001408710,3
+adv_packaging,advanced packaging,"Marvell Technology, Inc.",MRVL,0001835632,3
+adv_packaging,advanced packaging,Mobileye Global Inc.,MBLY,0001910139,3
+adv_packaging,advanced packaging,Infinera Corp,INFN,0001138639,3
+adv_packaging,advanced packaging,Adeia Inc.,ADEA,0001803696,3
+adv_packaging,advanced packaging,SITIME Corp,SITM,0001451809,3
+adv_packaging,advanced packaging,ALPHA & OMEGA SEMICONDUCTOR Ltd,AOSL,0001387467,3
+adv_packaging,advanced packaging,CADENCE DESIGN SYSTEMS INC,CDNS,0000813672,3
+adv_packaging,advanced packaging,FORMFACTOR INC,FORM,0001039399,3
+adv_packaging,advanced packaging,"Qorvo, Inc.",QRVO,0001604778,3
+adv_packaging,advanced packaging,Element Solutions Inc,ESI,0001590714,3
+adv_packaging,advanced packaging,MERCURY SYSTEMS INC,MRCY,0001049521,3
+adv_packaging,advanced packaging,ADVANCED MICRO DEVICES INC,AMD,0000002488,3
+adv_packaging,advanced packaging,UTAH MEDICAL PRODUCTS INC,UTMD,0000706698,3
+adv_packaging,advanced packaging,VICOR CORP,VICR,0000751978,3
+adv_packaging,advanced packaging,"Guerrilla RF, Inc.",GUER,0001832487,3
+adv_packaging,advanced packaging,ENTEGRIS INC,ENTG,0001101302,3
+adv_packaging,advanced packaging,COHERENT CORP.,COHR,0000820318,3
+adv_packaging,advanced packaging,"Amcor plc  (AMCR, AMCCF)",,0001748790,3
+adv_packaging,advanced packaging,Lumentum Holdings Inc.,LITE,0001633978,3
+adv_packaging,advanced packaging,AMTECH SYSTEMS INC,ASYS,0000720500,2
+adv_packaging,advanced packaging,APPLIED MATERIALS INC /DE,AMAT,0000006951,2
+adv_packaging,advanced packaging,KULICKE & SOFFA INDUSTRIES INC,KLIC,0000056978,2
+adv_packaging,advanced packaging,"SmartKem, Inc.",SMTK,0001817760,2
+adv_packaging,advanced packaging,IPG PHOTONICS CORP,IPGP,0001111928,2
+adv_packaging,advanced packaging,INTEVAC INC,IVAC,0001001902,2
+adv_packaging,advanced packaging,TTM TECHNOLOGIES INC,TTMI,0001116942,2
+adv_packaging,advanced packaging,"Penguin Solutions, Inc.",PENG,0001616533,2
+adv_packaging,advanced packaging,Credo Technology Group Holding Ltd,CRDO,0001807794,2
+adv_packaging,advanced packaging,SemiLEDs Corp,LEDS,0001333822,2
+adv_packaging,advanced packaging,Navitas Semiconductor Corp,NVTS,0001821769,2
+adv_packaging,advanced packaging,ANSYS INC,ANSS,0001013462,2
+adv_packaging,advanced packaging,"MACOM Technology Solutions Holdings, Inc.",MTSI,0001493594,2
+adv_packaging,advanced packaging,"Origin Materials, Inc.  (ORGN, ORGNW)",,0001802457,2
+adv_packaging,advanced packaging,"DuPont de Nemours, Inc.",DD,0001666700,2
+adv_packaging,advanced packaging,"FARADAY FUTURE INTELLIGENT ELECTRIC INC.  (FFAI, FFAIW)",,0001805521,2
+adv_packaging,advanced packaging,TREDEGAR CORP,TG,0000850429,1
+adv_packaging,advanced packaging,"Qnity Electronics, Inc.",Q,0002058873,1
+adv_packaging,advanced packaging,PHOTRONICS INC,PLAB,0000810136,1
+adv_packaging,advanced packaging,Palomino Laboratories Inc.,,0001938569,1
+adv_packaging,advanced packaging,"Penguin Solutions, Inc.  (SGH, PENG)",,0001616533,1
+adv_packaging,advanced packaging,QUALCOMM INC/DE,QCOM,0000804328,1
+adv_packaging,advanced packaging,Solstice Advanced Materials Inc.,SOLS,0002064953,1
+adv_packaging,advanced packaging,"Lightwave Logic, Inc.",LWLG,0001325964,1
+adv_packaging,advanced packaging,"Ultra Clean Holdings, Inc.",UCTT,0001275014,1
+adv_packaging,advanced packaging,Quantum Computing Inc.,QUBT,0001758009,1
+adv_packaging,advanced packaging,Broadcom Inc.,AVGO,0001730168,1
+adv_packaging,advanced packaging,"NightFood Holdings, Inc.",NGTF,0001593001,1
+adv_packaging,advanced packaging,"GCT Semiconductor Holding, Inc.  (GCTS, GCTS-WT)",,0001851961,1
+adv_packaging,advanced packaging,SharonAI Holdings Inc.,SHAZ,0002068385,1
+adv_packaging,advanced packaging,"Super Micro Computer, Inc.",SMCI,0001375365,1
+adv_packaging,advanced packaging,"FARADAY FUTURE INTELLIGENT ELECTRIC INC.  (FFIE, FFIEW)",,0001805521,1
+adv_packaging,hybrid bonding,Adeia Inc.,ADEA,0001803696,3
+adv_packaging,hybrid bonding,KULICKE & SOFFA INDUSTRIES INC,KLIC,0000056978,2
+adv_packaging,hybrid bonding,"SkyWater Technology, Inc",SKYT,0001819974,2
+adv_packaging,hybrid bonding,Infinera Corp,INFN,0001138639,1
+adv_packaging,hybrid bonding,"AMKOR TECHNOLOGY, INC.",AMKR,0001047127,1
+adv_packaging,hybrid bonding,INTEL CORP,INTC,0000050863,1
+adv_packaging,backside power delivery,INTEL CORP,INTC,0000050863,3
+adv_packaging,high bandwidth memory,FORMFACTOR INC,FORM,0001039399,3
+adv_packaging,high bandwidth memory,VEECO INSTRUMENTS INC,VECO,0000103145,3
+adv_packaging,high bandwidth memory,"AMKOR TECHNOLOGY, INC.",AMKR,0001047127,3
+adv_packaging,high bandwidth memory,MICRON TECHNOLOGY INC,MU,0000723125,3
+adv_packaging,high bandwidth memory,NETLIST INC,NLST,0001282631,3
+adv_packaging,high bandwidth memory,LAM RESEARCH CORP,LRCX,0000707549,3
+adv_packaging,high bandwidth memory,KLA CORP,KLAC,0000319201,2
+adv_packaging,high bandwidth memory,"Ultra Clean Holdings, Inc.",UCTT,0001275014,2
+adv_packaging,high bandwidth memory,APPLIED MATERIALS INC /DE,AMAT,0000006951,2
+adv_packaging,high bandwidth memory,"TERADYNE, INC",TER,0000097210,2
+adv_packaging,high bandwidth memory,CADENCE DESIGN SYSTEMS INC,CDNS,0000813672,2
+adv_packaging,high bandwidth memory,"Marvell Technology, Inc.",MRVL,0001835632,2
+adv_packaging,high bandwidth memory,TRIO-TECH INTERNATIONAL,TRT,0000732026,1
+adv_packaging,high bandwidth memory,INTEL CORP,INTC,0000050863,1
+adv_packaging,high bandwidth memory,AEHR TEST SYSTEMS,AEHR,0001040470,1
+adv_packaging,high bandwidth memory,AIRGAIN INC,AIRG,0001272842,1
+adv_packaging,high bandwidth memory,KULICKE & SOFFA INDUSTRIES INC,KLIC,0000056978,1
+adv_packaging,high bandwidth memory,ENTEGRIS INC,ENTG,0001101302,1
+adv_packaging,high bandwidth memory,"Qnity Electronics, Inc.",Q,0002058873,1
+adv_packaging,high bandwidth memory,Broadcom Inc.,AVGO,0001730168,1
+adv_packaging,high bandwidth memory,COHU INC,COHU,0000021535,1
+adv_packaging,high bandwidth memory,ALPHA & OMEGA SEMICONDUCTOR Ltd,AOSL,0001387467,1
+adv_packaging,high bandwidth memory,"BRUKER CORP  (BRKR, BRKRP)",,0001109354,1
+adv_packaging,high bandwidth memory,"Owlet, Inc.  (OWLT, OWLTW)",,0001816708,1
+adv_packaging,high bandwidth memory,"MAXLINEAR, INC",MXL,0001288469,1
+adv_packaging,chiplet,"Arteris, Inc.",AIP,0001667011,3
+adv_packaging,chiplet,ADVANCED MICRO DEVICES INC,AMD,0000002488,3
+adv_packaging,chiplet,Credo Technology Group Holding Ltd,CRDO,0001807794,3
+adv_packaging,chiplet,INTEL CORP,INTC,0000050863,3
+adv_packaging,chiplet,CADENCE DESIGN SYSTEMS INC,CDNS,0000813672,2
+adv_packaging,chiplet,KULICKE & SOFFA INDUSTRIES INC,KLIC,0000056978,2
+adv_packaging,chiplet,MERCURY SYSTEMS INC,MRCY,0001049521,2
+adv_packaging,chiplet,"MOBIX LABS, INC  (MOBX, MOBXW)",,0001855467,2
+adv_packaging,chiplet,Palomino Laboratories Inc.,,0001938569,1
+adv_packaging,chiplet,"Rigetti Computing, Inc.  (RGTI, RGTIW)",,0001838359,1
+adv_packaging,chiplet,"Marvell Technology, Inc.",MRVL,0001835632,1
+adv_packaging,chiplet,"SmartKem, Inc.",SMTK,0001817760,1
+adv_packaging,chiplet,NVIDIA CORP,NVDA,0001045810,1
+adv_packaging,chiplet,"WISA TECHNOLOGIES, INC.",WISA,0001682149,1
+adv_packaging,chiplet,PDF SOLUTIONS INC,PDFS,0001120914,1
+adv_packaging,chiplet,CEVA INC,CEVA,0001173489,1
+adv_packaging,chiplet,"Qnity Electronics, Inc.",Q,0002058873,1
+adv_packaging,co-packaged optics,JABIL INC,JBL,0000898293,3
+adv_packaging,co-packaged optics,Lumentum Holdings Inc.,LITE,0001633978,3
+adv_packaging,co-packaged optics,FORMFACTOR INC,FORM,0001039399,2
+adv_packaging,co-packaged optics,ADVANCED MICRO DEVICES INC,AMD,0000002488,2
+adv_packaging,co-packaged optics,COHERENT CORP.,COHR,0000820318,2
+adv_packaging,co-packaged optics,"Lightwave Logic, Inc.",LWLG,0001325964,2
+adv_packaging,co-packaged optics,"Marvell Technology, Inc.",MRVL,0001835632,2
+adv_packaging,co-packaged optics,"Aeluma, Inc.",ALMU,0001828805,1
+adv_packaging,co-packaged optics,"AMKOR TECHNOLOGY, INC.",AMKR,0001047127,1
+adv_packaging,co-packaged optics,CIENA CORP,CIEN,0000936395,1
+adv_packaging,co-packaged optics,Palomino Laboratories Inc.,,0001938569,1
+adv_packaging,2.5D packaging,INTEL CORP,INTC,0000050863,1
+adv_packaging,3D packaging,MERCURY SYSTEMS INC,MRCY,0001049521,3
+adv_packaging,3D packaging,VEECO INSTRUMENTS INC,VECO,0000103145,2
+ntn_wifi7_oran,non-terrestrial network,"GCT Semiconductor Holding, Inc.  (GCTS, GCTS-WT)",,0001851961,2
+ntn_wifi7_oran,non-terrestrial network,Aerkomm Inc.,,0001590496,2
+ntn_wifi7_oran,non-terrestrial network,Aerkomm Inc.,AKOM,0001590496,2
+ntn_wifi7_oran,non-terrestrial network,Iridium Communications Inc.,IRDM,0001418819,2
+ntn_wifi7_oran,non-terrestrial network,QUALCOMM INC/DE,QCOM,0000804328,1
+ntn_wifi7_oran,direct-to-device,Iridium Communications Inc.,IRDM,0001418819,3
+ntn_wifi7_oran,direct-to-device,VIASAT INC,VSAT,0000797721,3
+ntn_wifi7_oran,direct-to-device,"AST SpaceMobile, Inc.",ASTS,0001780312,2
+ntn_wifi7_oran,direct-to-device,"FreeCast, Inc.",CAST,0001633369,1
+ntn_wifi7_oran,direct-to-device,Sidus Space Inc.,SIDU,0001879726,1
+ntn_wifi7_oran,direct-to-device,"AST SpaceMobile, Inc.  (ASTS, ASTSW)",,0001780312,1
+ntn_wifi7_oran,direct-to-device,"Qorvo, Inc.",QRVO,0001604778,1
+ntn_wifi7_oran,direct-to-device,Anterix Inc.,ATEX,0001304492,1
+ntn_wifi7_oran,direct-to-device,"Globalstar, Inc.",GSAT,0001366868,1
+ntn_wifi7_oran,direct-to-device,QUALCOMM INC/DE,QCOM,0000804328,1
+ntn_wifi7_oran,direct-to-device,Aerkomm Inc.,,0001590496,1
+ntn_wifi7_oran,direct to cell,EchoStar CORP,SATS,0001415404,2
+ntn_wifi7_oran,direct to cell,"AST SpaceMobile, Inc.",ASTS,0001780312,2
+ntn_wifi7_oran,direct to cell,"AST SpaceMobile, Inc.  (ASTS, ASTSW)",,0001780312,1
+ntn_wifi7_oran,direct to cell,Hughes Satellite Systems Corp,,0001533758,1
+ntn_wifi7_oran,direct to cell,AIRGAIN INC,AIRG,0001272842,1
+ntn_wifi7_oran,direct to cell,VIAVI SOLUTIONS INC.,VIAV,0000912093,1
+ntn_wifi7_oran,direct to cell,"Liberty Latin America Ltd.  (LILA, LILAB, LILAK)",,0001712184,1
+ntn_wifi7_oran,satellite connectivity,KVH INDUSTRIES INC \DE\,KVHI,0001007587,3
+ntn_wifi7_oran,satellite connectivity,Gogo Inc.,GOGO,0001537054,3
+ntn_wifi7_oran,satellite connectivity,"Globalstar, Inc.",GSAT,0001366868,3
+ntn_wifi7_oran,satellite connectivity,Aerkomm Inc.,,0001590496,2
+ntn_wifi7_oran,satellite connectivity,Aerkomm Inc.,AKOM,0001590496,2
+ntn_wifi7_oran,satellite connectivity,"Spirit Airlines, Inc.",SAVEQ,0001498710,2
+ntn_wifi7_oran,satellite connectivity,Genasys Inc.,GNSS,0000924383,2
+ntn_wifi7_oran,satellite connectivity,"SKYWORKS SOLUTIONS, INC.",SWKS,0000004127,2
+ntn_wifi7_oran,satellite connectivity,AIRGAIN INC,AIRG,0001272842,1
+ntn_wifi7_oran,satellite connectivity,"Knightscope, Inc.",KSCP,0001600983,1
+ntn_wifi7_oran,satellite connectivity,Hughes Satellite Systems Corp,,0001533758,1
+ntn_wifi7_oran,satellite connectivity,QUALCOMM INC/DE,QCOM,0000804328,1
+ntn_wifi7_oran,satellite connectivity,Iridium Communications Inc.,IRDM,0001418819,1
+ntn_wifi7_oran,satellite connectivity,"FreeCast, Inc.",CAST,0001633369,1
+ntn_wifi7_oran,Wi-Fi 7,AIRGAIN INC,AIRG,0001272842,3
+ntn_wifi7_oran,Wi-Fi 7,CEVA INC,CEVA,0001173489,3
+ntn_wifi7_oran,Wi-Fi 7,EXTREME NETWORKS INC,EXTR,0001078271,3
+ntn_wifi7_oran,Wi-Fi 7,"Qorvo, Inc.",QRVO,0001604778,3
+ntn_wifi7_oran,Wi-Fi 7,"CommScope Holding Company, Inc.",COMM,0001517228,2
+ntn_wifi7_oran,Wi-Fi 7,SYNAPTICS Inc,SYNA,0000817720,2
+ntn_wifi7_oran,Wi-Fi 7,"Hewlett Packard Enterprise Co  (HPE, HPE-PC)",,0001645590,2
+ntn_wifi7_oran,Wi-Fi 7,Cambium Networks Corp,CMBMF,0001738177,1
+ntn_wifi7_oran,Wi-Fi 7,"Cambium Networks Corp  (CMBM, CMBMF)",,0001738177,1
+ntn_wifi7_oran,Wi-Fi 7,"Akoustis Technologies, Inc.",AKTS,0001584754,1
+ntn_wifi7_oran,Wi-Fi 7,SONIM TECHNOLOGIES INC,SONM,0001178697,1
+ntn_wifi7_oran,Wi-Fi 7,"Vistance Networks, Inc.",VISN,0001517228,1
+ntn_wifi7_oran,Wi-Fi 7,ACACIA RESEARCH CORP,ACTG,0000934549,1
+ntn_wifi7_oran,Wi-Fi 7,JUNIPER NETWORKS INC,JNPR,0001043604,1
+ntn_wifi7_oran,Wi-Fi 7,"SKYWORKS SOLUTIONS, INC.",SWKS,0000004127,1
+ntn_wifi7_oran,Wi-Fi 7,"Cable One, Inc.",CABO,0001632127,1
+ntn_wifi7_oran,Wi-Fi 7,INTEL CORP,INTC,0000050863,1
+ntn_wifi7_oran,Wi-Fi 7,"ADTRAN Holdings, Inc.",ADTN,0000926282,1
+ntn_wifi7_oran,Wi-Fi 7,Uniti Group Inc.,UNIT,0002020795,1
+ntn_wifi7_oran,Open RAN,VIAVI SOLUTIONS INC.,VIAV,0000912093,3
+ntn_wifi7_oran,Open RAN,"AT&T INC.  (T, TBB, T-PA, T-PC)",,0000732717,2
+ntn_wifi7_oran,Open RAN,DZS INC.,DZSI,0001101680,2
+ntn_wifi7_oran,Open RAN,"AT&T INC.  (T, TBB, TBC, T-PA, T-PC)",,0000732717,1
+ntn_wifi7_oran,Open RAN,"AmpliTech Group, Inc.  (AMPG, AMPGR, AMPGZ)",,0001518461,1
+ntn_wifi7_oran,Open RAN,"SMITH MICRO SOFTWARE, INC.",SMSI,0000948708,1
+ntn_wifi7_oran,Open RAN,CEVA INC,CEVA,0001173489,1
+ntn_wifi7_oran,Open RAN,Airspan Networks Holdings Inc.,MIMOQ,0001823882,1
+ntn_wifi7_oran,Open RAN,VERIZON COMMUNICATIONS INC,VZ,0000732712,1
+battery_chem_mfg,solid-state battery,QuantumScape Corp,QS,0001811414,3
+battery_chem_mfg,solid-state battery,Solidion Technology Inc.,STI,0001881551,3
+battery_chem_mfg,solid-state battery,"Solid Power, Inc.  (SLDP, SLDPW)",,0001844862,3
+battery_chem_mfg,solid-state battery,"Dragonfly Energy Holdings Corp.  (DFLI, DFLIW)",,0001847986,3
+battery_chem_mfg,solid-state battery,"Microvast Holdings, Inc.  (MVST, MVSTW)",,0001760689,3
+battery_chem_mfg,solid-state battery,"Energy Vault Holdings, Inc.",NRGV,0001828536,3
+battery_chem_mfg,solid-state battery,"Borealis Foods Inc.  (BRLS, BRLSW)",,0001852973,2
+battery_chem_mfg,solid-state battery,Amesite Inc.,AMST,0001807166,1
+battery_chem_mfg,solid-state battery,"Nxu, Inc.",NXU,0001722969,1
+battery_chem_mfg,solid-state battery,"Perimeter Acquisition Corp. I  (PMTR, PMTRU, PMTRW)",,0002061473,1
+battery_chem_mfg,solid-state battery,Cenntro Inc.,CENN,0001707919,1
+battery_chem_mfg,solid-state battery,LIGHTPATH TECHNOLOGIES INC,LPTH,0000889971,1
+battery_chem_mfg,solid-state battery,"Invest Green Acquisition Corp  (IGAC, IGACR, IGACU)",,0002075068,1
+battery_chem_mfg,solid-state battery,MULLEN AUTOMOTIVE INC.,MULN,0001499961,1
+battery_chem_mfg,solid state battery,QuantumScape Corp,QS,0001811414,3
+battery_chem_mfg,solid state battery,Solidion Technology Inc.,STI,0001881551,3
+battery_chem_mfg,solid state battery,"Solid Power, Inc.  (SLDP, SLDPW)",,0001844862,3
+battery_chem_mfg,solid state battery,"Dragonfly Energy Holdings Corp.  (DFLI, DFLIW)",,0001847986,3
+battery_chem_mfg,solid state battery,"Microvast Holdings, Inc.  (MVST, MVSTW)",,0001760689,3
+battery_chem_mfg,solid state battery,"Energy Vault Holdings, Inc.",NRGV,0001828536,3
+battery_chem_mfg,solid state battery,"Borealis Foods Inc.  (BRLS, BRLSW)",,0001852973,2
+battery_chem_mfg,solid state battery,Amesite Inc.,AMST,0001807166,1
+battery_chem_mfg,solid state battery,"Nxu, Inc.",NXU,0001722969,1
+battery_chem_mfg,solid state battery,"Perimeter Acquisition Corp. I  (PMTR, PMTRU, PMTRW)",,0002061473,1
+battery_chem_mfg,solid state battery,Cenntro Inc.,CENN,0001707919,1
+battery_chem_mfg,solid state battery,LIGHTPATH TECHNOLOGIES INC,LPTH,0000889971,1
+battery_chem_mfg,solid state battery,"Invest Green Acquisition Corp  (IGAC, IGACR, IGACU)",,0002075068,1
+battery_chem_mfg,solid state battery,MULLEN AUTOMOTIVE INC.,MULN,0001499961,1
+battery_chem_mfg,dry electrode,"Dragonfly Energy Holdings Corp.  (DFLI, DFLIW)",,0001847986,3
+battery_chem_mfg,dry electrode,QuantumScape Corp,QS,0001811414,3
+battery_chem_mfg,dry electrode,MATTHEWS INTERNATIONAL CORP,MATW,0000063296,2
+battery_chem_mfg,lithium iron phosphate,"NeoVolta Inc.  (NEOV, NEOVW)",,0001748137,3
+battery_chem_mfg,lithium iron phosphate,Expion360 Inc.,XPON,0001894954,3
+battery_chem_mfg,lithium iron phosphate,"Dragonfly Energy Holdings Corp.  (DFLI, DFLIW)",,0001847986,3
+battery_chem_mfg,lithium iron phosphate,"Flux Power Holdings, Inc.",FLUX,0001083743,3
+battery_chem_mfg,lithium iron phosphate,"Microvast Holdings, Inc.  (MVST, MVSTW)",,0001760689,3
+battery_chem_mfg,lithium iron phosphate,ASPEN AEROGELS INC,ASPN,0001145986,3
+battery_chem_mfg,lithium iron phosphate,Chilean Cobalt Corp.,COBA,0001727255,3
+battery_chem_mfg,lithium iron phosphate,"TMC the metals Co Inc.  (TMC, TMCWW)",,0001798562,3
+battery_chem_mfg,lithium iron phosphate,QuantumScape Corp,QS,0001811414,2
+battery_chem_mfg,lithium iron phosphate,"Arcadium Lithium plc  (ALTM, ARLTF)",,0001977303,2
+battery_chem_mfg,lithium iron phosphate,Solidion Technology Inc.,STI,0001881551,2
+battery_chem_mfg,lithium iron phosphate,"Xos, Inc.  (XOS, XOSWW)",,0001819493,2
+battery_chem_mfg,lithium iron phosphate,BORGWARNER INC,BWA,0000908255,2
+battery_chem_mfg,lithium iron phosphate,"Piedmont Lithium Inc.  (PLL, PLLTL)",,0001728205,2
+battery_chem_mfg,lithium iron phosphate,"CBAK Energy Technology, Inc.",CBAT,0001117171,2
+battery_chem_mfg,lithium iron phosphate,MULLEN AUTOMOTIVE INC.,MULN,0001499961,2
+battery_chem_mfg,lithium iron phosphate,PUGET ENERGY INC /WA,,0001085392,2
+battery_chem_mfg,lithium iron phosphate,PUGET SOUND ENERGY INC,,0000081100,2
+battery_chem_mfg,lithium iron phosphate,"MINIM, INC.",MINM,0001467761,1
+battery_chem_mfg,lithium iron phosphate,"FREYR Battery, Inc. /DE/  (FREY, FREY-WT)",,0001992243,1
+battery_chem_mfg,lithium iron phosphate,"ESS Tech, Inc.  (GWH, GWH-WT)",,0001819438,1
+battery_chem_mfg,lithium iron phosphate,Beam Global,BEEM,0001398805,1
+battery_chem_mfg,lithium iron phosphate,"WESTWATER RESOURCES, INC.",WWR,0000839470,1
+battery_chem_mfg,lithium iron phosphate,Cenntro Inc.,CENN,0001707919,1
+battery_chem_mfg,lithium iron phosphate,Microbot Medical Inc.,MBOT,0000883975,1
+battery_chem_mfg,lithium iron phosphate,"Kandi Technologies Group, Inc.",,0001316517,1
+battery_chem_mfg,lithium iron phosphate,Li-Cycle Holdings Corp.,LICY,0001828811,1
+battery_chem_mfg,lithium iron phosphate,"SOLAREDGE TECHNOLOGIES, INC.",SEDG,0001419612,1
+battery_chem_mfg,lithium iron phosphate,"Enphase Energy, Inc.",ENPH,0001463101,1
+battery_chem_mfg,lithium iron phosphate,"Li-Cycle Holdings Corp.  (LICY, LICYF)",,0001828811,1
+battery_chem_mfg,lithium iron phosphate,"ALBEMARLE CORP  (ALB, ALB-PA)",,0000915913,1
+battery_chem_mfg,lithium iron phosphate,Atlas Lithium Corp,ATLX,0001540684,1
+battery_chem_mfg,LFP battery,"Dragonfly Energy Holdings Corp.  (DFLI, DFLIW)",,0001847986,3
+battery_chem_mfg,LFP battery,"Enphase Energy, Inc.",ENPH,0001463101,3
+battery_chem_mfg,LFP battery,"Microvast Holdings, Inc.  (MVST, MVSTW)",,0001760689,3
+battery_chem_mfg,LFP battery,"Xos, Inc.  (XOS, XOSWW)",,0001819493,2
+battery_chem_mfg,LFP battery,"TMC the metals Co Inc.  (TMC, TMCWW)",,0001798562,2
+battery_chem_mfg,LFP battery,Cenntro Inc.,CENN,0001707919,1
+battery_chem_mfg,LFP battery,"WESTWATER RESOURCES, INC.",WWR,0000839470,1
+battery_chem_mfg,LFP battery,Atlas Lithium Corp,ATLX,0001540684,1
+battery_chem_mfg,LFP battery,Pacific Green Technologies Inc.,,0001553404,1
+battery_chem_mfg,LFP battery,MULLEN AUTOMOTIVE INC.,MULN,0001499961,1
+battery_chem_mfg,lithium-sulfur,Solidion Technology Inc.,STI,0001881551,3
+battery_chem_mfg,lithium sulfur,Solidion Technology Inc.,STI,0001881551,3
+battery_chem_mfg,sodium-ion,"GULF RESOURCES, INC.",GURE,0000885462,6
+battery_chem_mfg,sodium-ion,"CBAK Energy Technology, Inc.",CBAT,0001117171,3
+battery_chem_mfg,sodium-ion,Solidion Technology Inc.,STI,0001881551,3
+battery_chem_mfg,sodium-ion,"ALBEMARLE CORP  (ALB, ALB-PA)",,0000915913,3
+battery_chem_mfg,sodium-ion,CUMBERLAND PHARMACEUTICALS INC,CPIX,0001087294,3
+battery_chem_mfg,sodium-ion,"Dragonfly Energy Holdings Corp.  (DFLI, DFLIW)",,0001847986,3
+battery_chem_mfg,sodium-ion,"Dogwood Therapeutics, Inc.",DWTX,0001818844,2
+battery_chem_mfg,sodium-ion,Pelthos Therapeutics Inc.,PTHS,0001919246,1
+battery_chem_mfg,sodium-ion,Channel Therapeutics Corp,CHRO,0001919246,1
+battery_chem_mfg,sodium-ion,"ESS Tech, Inc.  (GWH, GWH-WT)",,0001819438,1
+battery_chem_mfg,sodium-ion,"Longboard Pharmaceuticals, Inc.",LBPH,0001832168,1
+battery_chem_mfg,sodium-ion,"Energy Vault Holdings, Inc.",NRGV,0001828536,1
+battery_chem_mfg,sodium-ion,Chromocell Therapeutics Corp,CHRO,0001919246,1
+battery_chem_mfg,sodium-ion,"Stardust Power Inc.  (SDST, SDSTW)",,0001831979,1
+battery_chem_mfg,sodium-ion,BIONOMICS LIMITED/FI,BNOX,0001191070,1
+battery_chem_mfg,battery thermal management,MODINE MANUFACTURING CO,MOD,0000067347,3
+battery_chem_mfg,battery thermal management,Gentherm Inc,THRM,0000903129,2
+battery_chem_mfg,battery thermal management,GENTHERM Inc,THRM,0000903129,1
+battery_chem_mfg,direct lithium extraction,Lithium Corp,LTUM,0001415332,4
+battery_chem_mfg,direct lithium extraction,"AMERICAN BATTERY MATERIALS, INC.",BLTH,0001487718,3
+battery_chem_mfg,direct lithium extraction,NEXT-ChemX Corporation.,CHMX,0001657045,3
+battery_chem_mfg,direct lithium extraction,"5E Advanced Materials, Inc.  (FEAM, FEAV)",,0001888654,3
+battery_chem_mfg,direct lithium extraction,"Arcadium Lithium plc  (ALTM, ARLTF)",,0001977303,3
+battery_chem_mfg,direct lithium extraction,"Piedmont Lithium Inc.  (PLL, PLLTL)",,0001728205,3
+battery_chem_mfg,direct lithium extraction,"Stardust Power Inc.  (SDST, SDSTW)",,0001831979,2
+battery_chem_mfg,direct lithium extraction,"ALBEMARLE CORP  (ALB, ALB-PA)",,0000915913,2
+battery_chem_mfg,direct lithium extraction,Tronox Holdings plc,TROX,0001530804,2
+battery_chem_mfg,direct lithium extraction,INTERNATIONAL BATTERY METALS LTD.,IBATF,0001786318,1
+battery_chem_mfg,direct lithium extraction,Sustainable Projects Group Inc.,SPGX,0001500305,1
+battery_chem_mfg,direct lithium extraction,NEXT-ChemX Corporation.,,0001657045,1
+battery_chem_mfg,direct lithium extraction,SCHLUMBERGER LIMITED/NV,SLB,0000087347,1
+battery_chem_mfg,direct lithium extraction,Ivanhoe Electric Inc.,IE,0001879016,1
+battery_chem_mfg,direct lithium extraction,Enertopia Corp.,ENRT,0001346022,1
+battery_chem_mfg,direct lithium extraction,National Energy Services Reunited Corp.,NESR,0001698514,1
+battery_chem_mfg,direct lithium extraction,CHEVRON CORP,CVX,0000093410,1
+battery_chem_mfg,direct lithium extraction,"Leapfrog Acquisition Corp  (LFAC, LFACU, LFACW)",,0002084563,1
+battery_chem_mfg,direct lithium extraction,"Li-Cycle Holdings Corp.  (LICY, LICYF)",,0001828811,1
+battery_chem_mfg,direct lithium extraction,IMPERIAL OIL LTD,IMO,0000049938,1
+battery_chem_mfg,direct lithium extraction,COMPASS MINERALS INTERNATIONAL INC,CMP,0001227654,1
+photonics_pic,silicon photonics,"SYNTEC OPTICS HOLDINGS, INC.  (OPTX, OPTXW)",,0001866816,4
+photonics_pic,silicon photonics,"ADTRAN Holdings, Inc.",ADTN,0000926282,4
+photonics_pic,silicon photonics,"Lightwave Logic, Inc.",LWLG,0001325964,3
+photonics_pic,silicon photonics,AEHR TEST SYSTEMS,AEHR,0001040470,3
+photonics_pic,silicon photonics,"Marvell Technology, Inc.",MRVL,0001835632,3
+photonics_pic,silicon photonics,AXT INC,AXTI,0001051627,3
+photonics_pic,silicon photonics,COHERENT CORP.,COHR,0000820318,3
+photonics_pic,silicon photonics,FORMFACTOR INC,FORM,0001039399,3
+photonics_pic,silicon photonics,Credo Technology Group Holding Ltd,CRDO,0001807794,3
+photonics_pic,silicon photonics,"IonQ, Inc.  (IONQ, IONQ-WT)",,0001824920,3
+photonics_pic,silicon photonics,ALLIENT INC,ALNT,0000046129,3
+photonics_pic,silicon photonics,JABIL INC,JBL,0000898293,3
+photonics_pic,silicon photonics,"Aeva Technologies, Inc.  (AEVA, AEVAW)",,0001789029,2
+photonics_pic,silicon photonics,"Aeluma, Inc.",ALMU,0001828805,2
+photonics_pic,silicon photonics,"Aurora Innovation, Inc.  (AUR, AUROW)",,0001828108,2
+photonics_pic,silicon photonics,CADENCE DESIGN SYSTEMS INC,CDNS,0000813672,2
+photonics_pic,silicon photonics,"SkyWater Technology, Inc",SKYT,0001819974,2
+photonics_pic,silicon photonics,"AMKOR TECHNOLOGY, INC.",AMKR,0001047127,2
+photonics_pic,silicon photonics,ANSYS INC,ANSS,0001013462,2
+photonics_pic,silicon photonics,"Aeva Technologies, Inc.  (AEVA, AEVA-WT)",,0001789029,1
+photonics_pic,silicon photonics,"TERADYNE, INC",TER,0000097210,1
+photonics_pic,silicon photonics,Mobileye Global Inc.,MBLY,0001910139,1
+photonics_pic,silicon photonics,Palomino Laboratories Inc.,,0001938569,1
+photonics_pic,silicon photonics,"All In FutureTech Alliance, Inc.",AGAE,0001708341,1
+photonics_pic,silicon photonics,JUNIPER NETWORKS INC,JNPR,0001043604,1
+photonics_pic,silicon photonics,PHOTRONICS INC,PLAB,0000810136,1
+photonics_pic,silicon photonics,"MACOM Technology Solutions Holdings, Inc.",MTSI,0001493594,1
+photonics_pic,silicon photonics,Ralliant Corp,RAL,0002041385,1
+photonics_pic,silicon photonics,INTEL CORP,INTC,0000050863,1
+photonics_pic,silicon photonics,"Q/C TECHNOLOGIES, INC.",QCLS,0001321834,1
+photonics_pic,photonic integrated circuit,"Lightwave Logic, Inc.",LWLG,0001325964,3
+photonics_pic,photonic integrated circuit,Quantum Computing Inc.,QUBT,0001758009,2
+photonics_pic,photonic integrated circuit,Lumentum Holdings Inc.,LITE,0001633978,2
+photonics_pic,photonic integrated circuit,"TERADYNE, INC",TER,0000097210,1
+photonics_pic,photonic integrated circuit,Credo Technology Group Holding Ltd,CRDO,0001807794,1
+photonics_pic,photonic integrated circuit,Mobileye Global Inc.,MBLY,0001910139,1
+photonics_pic,co-packaged optics,JABIL INC,JBL,0000898293,3
+photonics_pic,co-packaged optics,Lumentum Holdings Inc.,LITE,0001633978,3
+photonics_pic,co-packaged optics,FORMFACTOR INC,FORM,0001039399,2
+photonics_pic,co-packaged optics,ADVANCED MICRO DEVICES INC,AMD,0000002488,2
+photonics_pic,co-packaged optics,COHERENT CORP.,COHR,0000820318,2
+photonics_pic,co-packaged optics,"Lightwave Logic, Inc.",LWLG,0001325964,2
+photonics_pic,co-packaged optics,"Marvell Technology, Inc.",MRVL,0001835632,2
+photonics_pic,co-packaged optics,"Aeluma, Inc.",ALMU,0001828805,1
+photonics_pic,co-packaged optics,"AMKOR TECHNOLOGY, INC.",AMKR,0001047127,1
+photonics_pic,co-packaged optics,CIENA CORP,CIEN,0000936395,1
+photonics_pic,co-packaged optics,Palomino Laboratories Inc.,,0001938569,1
+photonics_pic,optical interconnect,"MAXLINEAR, INC",MXL,0001288469,3
+photonics_pic,optical interconnect,"Lightwave Logic, Inc.",LWLG,0001325964,2
+photonics_pic,optical interconnect,Palomino Laboratories Inc.,,0001938569,1
+photonics_pic,optical interconnect,Credo Technology Group Holding Ltd,CRDO,0001807794,1
+photonics_pic,optical interconnect,"Crane Harbor Acquisition Corp.  (CHAC, CHACR, CHACU)",,0002054174,1
+photonics_pic,optical interconnect,CIENA CORP,CIEN,0000936395,1
+photonics_pic,optical interconnect,"CISCO SYSTEMS, INC.",CSCO,0000858877,1
+photonics_pic,thin-film lithium niobate,Quantum Computing Inc.,QUBT,0001758009,3
+photonics_pic,thin-film lithium niobate,"Lightwave Logic, Inc.",LWLG,0001325964,3
+photonics_pic,optical transceiver,"MAXLINEAR, INC",MXL,0001288469,3
+photonics_pic,optical transceiver,"Lightwave Logic, Inc.",LWLG,0001325964,3
+photonics_pic,optical transceiver,"CISCO SYSTEMS, INC.",CSCO,0000858877,3
+photonics_pic,optical transceiver,Lumentum Holdings Inc.,LITE,0001633978,3
+photonics_pic,optical transceiver,"MACOM Technology Solutions Holdings, Inc.",MTSI,0001493594,2
+photonics_pic,optical transceiver,Palomino Laboratories Inc.,,0001938569,1
+photonics_pic,optical transceiver,Credo Technology Group Holding Ltd,CRDO,0001807794,1
+photonics_pic,optical transceiver,"Crane Harbor Acquisition Corp.  (CHAC, CHACR, CHACU)",,0002054174,1
+photonics_pic,optical transceiver,"CapsoVision, Inc",CV,0001378325,1
+photonics_pic,optical transceiver,Avinger Inc,AVGR,0001506928,1
+photonics_pic,linear pluggable optics,"Marvell Technology, Inc.",MRVL,0001835632,2
+tpd_ev_cfdna,targeted protein degradation,"C4 Therapeutics, Inc.",CCCC,0001662579,5
+tpd_ev_cfdna,targeted protein degradation,"Nurix Therapeutics, Inc.",NRIX,0001549595,3
+tpd_ev_cfdna,targeted protein degradation,"Kymera Therapeutics, Inc.",KYMR,0001815442,3
+tpd_ev_cfdna,targeted protein degradation,"Monte Rosa Therapeutics, Inc.",GLUE,0001826457,3
+tpd_ev_cfdna,targeted protein degradation,"ARVINAS, INC.",ARVN,0001655759,3
+tpd_ev_cfdna,targeted protein degradation,Foghorn Therapeutics Inc.,FHTX,0001822462,3
+tpd_ev_cfdna,targeted protein degradation,Prelude Therapeutics Inc,PRLD,0001678660,3
+tpd_ev_cfdna,targeted protein degradation,"REVVITY, INC.",RVTY,0000031791,3
+tpd_ev_cfdna,targeted protein degradation,"Gain Therapeutics, Inc.",GANX,0001819411,3
+tpd_ev_cfdna,targeted protein degradation,BeyondSpring Inc.,BYSI,0001677940,2
+tpd_ev_cfdna,targeted protein degradation,Blueprint Medicines Corp,BPMC,0001597264,2
+tpd_ev_cfdna,targeted protein degradation,"Salarius Pharmaceuticals, Inc.",SLRX,0001615219,2
+tpd_ev_cfdna,targeted protein degradation,"BRISTOL MYERS SQUIBB CO  (BMY, BMYMP, CELG-RI)",,0000014272,2
+tpd_ev_cfdna,targeted protein degradation,"Caris Life Sciences, Inc.",CAI,0002019410,1
+tpd_ev_cfdna,PROTAC,"ARVINAS, INC.",ARVN,0001655759,3
+tpd_ev_cfdna,PROTAC,"Kronos Bio, Inc.",KRON,0001741830,2
+tpd_ev_cfdna,PROTAC,Decoy Therapeutics Inc.,DCOY,0001615219,1
+tpd_ev_cfdna,PROTAC,"IDEAYA Biosciences, Inc.",IDYA,0001676725,1
+tpd_ev_cfdna,PROTAC,"Monte Rosa Therapeutics, Inc.",GLUE,0001826457,1
+tpd_ev_cfdna,PROTAC,"Peak Bio, Inc.  (PKBO, PKBOW)",,0001834645,1
+tpd_ev_cfdna,PROTAC,PFIZER INC,PFE,0000078003,1
+tpd_ev_cfdna,molecular glue,"Monte Rosa Therapeutics, Inc.",GLUE,0001826457,4
+tpd_ev_cfdna,molecular glue,"Aclaris Therapeutics, Inc.",ACRS,0001557746,3
+tpd_ev_cfdna,molecular glue,Foghorn Therapeutics Inc.,FHTX,0001822462,3
+tpd_ev_cfdna,molecular glue,"RECURSION PHARMACEUTICALS, INC.",RXRX,0001601830,3
+tpd_ev_cfdna,molecular glue,GALECTIN THERAPEUTICS INC,GALT,0001133416,3
+tpd_ev_cfdna,molecular glue,"Erasca, Inc.",ERAS,0001761918,2
+tpd_ev_cfdna,molecular glue,BeyondSpring Inc.,BYSI,0001677940,2
+tpd_ev_cfdna,molecular glue,"Ikena Oncology, Inc.",IKNA,0001835579,2
+tpd_ev_cfdna,molecular glue,"Day One Biopharmaceuticals, Inc.",DAWN,0001845337,2
+tpd_ev_cfdna,molecular glue,"Nurix Therapeutics, Inc.",NRIX,0001549595,2
+tpd_ev_cfdna,molecular glue,"Tango Therapeutics, Inc.",TNGX,0001819133,1
+tpd_ev_cfdna,molecular glue,"Kymera Therapeutics, Inc.",KYMR,0001815442,1
+tpd_ev_cfdna,molecular glue,"C4 Therapeutics, Inc.",CCCC,0001662579,1
+tpd_ev_cfdna,molecular glue,"Salarius Pharmaceuticals, Inc.",SLRX,0001615219,1
+tpd_ev_cfdna,molecular glue,"Vigil Neuroscience, Inc.",VIGL,0001827087,1
+tpd_ev_cfdna,molecular glue,PALATIN TECHNOLOGIES INC,PTN,0000911216,1
+tpd_ev_cfdna,molecular glue,"GILEAD SCIENCES, INC.",GILD,0000882095,1
+tpd_ev_cfdna,molecular glue,"Kiniksa Pharmaceuticals International, plc",KNSA,0001730430,1
+tpd_ev_cfdna,degrader,"Kymera Therapeutics, Inc.",KYMR,0001815442,6
+tpd_ev_cfdna,degrader,"C4 Therapeutics, Inc.",CCCC,0001662579,5
+tpd_ev_cfdna,degrader,"Nurix Therapeutics, Inc.",NRIX,0001549595,4
+tpd_ev_cfdna,degrader,"Monte Rosa Therapeutics, Inc.",GLUE,0001826457,4
+tpd_ev_cfdna,degrader,"Olema Pharmaceuticals, Inc.",OLMA,0001750284,4
+tpd_ev_cfdna,degrader,"ARVINAS, INC.",ARVN,0001655759,3
+tpd_ev_cfdna,degrader,Prelude Therapeutics Inc,PRLD,0001678660,3
+tpd_ev_cfdna,degrader,Foghorn Therapeutics Inc.,FHTX,0001822462,3
+tpd_ev_cfdna,degrader,Biohaven Ltd.,BHVN,0001935979,3
+tpd_ev_cfdna,degrader,"RECURSION PHARMACEUTICALS, INC.",RXRX,0001601830,3
+tpd_ev_cfdna,degrader,"BRISTOL MYERS SQUIBB CO  (BMY, BMYMP, CELG-RI)",,0000014272,3
+tpd_ev_cfdna,degrader,"Salarius Pharmaceuticals, Inc.",SLRX,0001615219,2
+tpd_ev_cfdna,degrader,Blueprint Medicines Corp,BPMC,0001597264,2
+tpd_ev_cfdna,degrader,BeyondSpring Inc.,BYSI,0001677940,2
+tpd_ev_cfdna,degrader,"Sensei Biotherapeutics, Inc.",SNSE,0001829802,2
+tpd_ev_cfdna,degrader,"Zentalis Pharmaceuticals, Inc.",ZNTL,0001725160,2
+tpd_ev_cfdna,degrader,VERTEX PHARMACEUTICALS INC / MA,VRTX,0000875320,2
+tpd_ev_cfdna,degrader,"Apogee Therapeutics, Inc.",APGE,0001974640,2
+tpd_ev_cfdna,degrader,"OnKure Therapeutics, Inc.",OKUR,0001637715,2
+tpd_ev_cfdna,degrader,"Immunovant, Inc.",IMVT,0001764013,2
+tpd_ev_cfdna,degrader,Centessa Pharmaceuticals plc,CNTA,0001847903,2
+tpd_ev_cfdna,degrader,VERU INC.,VERU,0000863894,2
+tpd_ev_cfdna,degrader,"Relay Therapeutics, Inc.",RLAY,0001812364,2
+tpd_ev_cfdna,degrader,"Boundless Bio, Inc.",BOLD,0001782303,1
+tpd_ev_cfdna,degrader,"Castellum, Inc.",CTM,0001877939,1
+tpd_ev_cfdna,degrader,Decoy Therapeutics Inc.,DCOY,0001615219,1
+tpd_ev_cfdna,degrader,"GILEAD SCIENCES, INC.",GILD,0000882095,1
+tpd_ev_cfdna,degrader,"BeiGene, Ltd.  (ONC, BEIGF)",,0001651308,1
+tpd_ev_cfdna,degrader,"BeOne Medicines Ltd.  (ONC, BEIGF)",,0001651308,1
+tpd_ev_cfdna,degrader,"ATOSSA THERAPEUTICS, INC.",ATOS,0001488039,1
+tpd_ev_cfdna,degrader,"Schrodinger, Inc.",SDGR,0001490978,1
+tpd_ev_cfdna,degrader,"Caris Life Sciences, Inc.",CAI,0002019410,1
+tpd_ev_cfdna,degrader,"Acrivon Therapeutics, Inc.",ACRV,0001781174,1
+tpd_ev_cfdna,degrader,ESSA Pharma Inc.,EPIX,0001633932,1
+tpd_ev_cfdna,degrader,Context Therapeutics Inc.,CNTX,0001842952,1
+tpd_ev_cfdna,degrader,BIOGEN INC.,BIIB,0000875045,1
+tpd_ev_cfdna,degrader,PALATIN TECHNOLOGIES INC,PTN,0000911216,1
+tpd_ev_cfdna,degrader,"Oncternal Therapeutics, Inc.",ONCT,0001260990,1
+tpd_ev_cfdna,degrader,"Perspective Therapeutics, Inc.",CATX,0000728387,1
+tpd_ev_cfdna,degrader,"Kiniksa Pharmaceuticals International, plc",KNSA,0001730430,1
+tpd_ev_cfdna,degrader,PFIZER INC,PFE,0000078003,1
+tpd_ev_cfdna,degrader,"Spyre Therapeutics, Inc.",SYRE,0001636282,1
+tpd_ev_cfdna,degrader,"Erasca, Inc.",ERAS,0001761918,1
+tpd_ev_cfdna,degrader,"Day One Biopharmaceuticals, Inc.",DAWN,0001845337,1
+tpd_ev_cfdna,extracellular vesicle,AETHLON MEDICAL INC,AEMD,0000882291,2
+tpd_ev_cfdna,extracellular vesicle,"Celularity Inc  (CELU, CELUW)",,0001752828,2
+tpd_ev_cfdna,extracellular vesicle,"Zeo ScientifiX, Inc.",ZEOX,0001557376,2
+tpd_ev_cfdna,extracellular vesicle,Orgenesis Inc.,ORGS,0001460602,2
+tpd_ev_cfdna,extracellular vesicle,"Organicell Regenerative Medicine, Inc.",ZEOX,0001557376,1
+tpd_ev_cfdna,exosome,BIO-TECHNE Corp,TECH,0000842023,5
+tpd_ev_cfdna,exosome,"Vitro Biopharma, Inc.",,0000793171,5
+tpd_ev_cfdna,exosome,VITASPRING BIOMEDICAL CO. LTD.,,0001697884,4
+tpd_ev_cfdna,exosome,"CAPRICOR THERAPEUTICS, INC.",CAPR,0001133869,3
+tpd_ev_cfdna,exosome,"Coya Therapeutics, Inc.",COYA,0001835022,3
+tpd_ev_cfdna,exosome,BRAINSTORM CELL THERAPEUTICS INC.,BCLI,0001137883,3
+tpd_ev_cfdna,exosome,Avalon GloboCare Corp.,ALBT,0001630212,3
+tpd_ev_cfdna,exosome,AETHLON MEDICAL INC,AEMD,0000882291,3
+tpd_ev_cfdna,exosome,"Longevity Health Holdings, Inc.  (XAGE, XAGEW)",,0001842939,3
+tpd_ev_cfdna,exosome,uniQure N.V.,QURE,0001590560,3
+tpd_ev_cfdna,exosome,"CREATIVE MEDICAL TECHNOLOGY HOLDINGS, INC.",CELZ,0001187953,3
+tpd_ev_cfdna,exosome,"ZyVersa Therapeutics, Inc.",ZVSA,0001859007,3
+tpd_ev_cfdna,exosome,iSpecimen Inc.,ISPC,0001558569,3
+tpd_ev_cfdna,exosome,"Onconetix, Inc.",ONCO,0001782107,3
+tpd_ev_cfdna,exosome,Elevai Labs Inc.,ELAB,0001840563,2
+tpd_ev_cfdna,exosome,Regenerative Medical Technology Group Inc.,RMTG,0001760026,2
+tpd_ev_cfdna,exosome,"Celularity Inc  (CELU, CELUW)",,0001752828,2
+tpd_ev_cfdna,exosome,"TuHURA Biosciences, Inc./NV",HURA,0001498382,2
+tpd_ev_cfdna,exosome,America Great Health,,0001098009,2
+tpd_ev_cfdna,exosome,"First Choice Healthcare Solutions, Inc.",FCHS,0001416876,2
+tpd_ev_cfdna,exosome,"Sigyn Therapeutics, Inc.",SIGY,0001642159,2
+tpd_ev_cfdna,exosome,CIMG Inc.,IMG,0001527613,1
+tpd_ev_cfdna,exosome,"THERAPEUTIC SOLUTIONS INTERNATIONAL, INC.",TSOI,0001419051,1
+tpd_ev_cfdna,exosome,America Great Health,AAGH,0001098009,1
+tpd_ev_cfdna,exosome,Limitless X Holdings Inc.,LIMX,0001803977,1
+tpd_ev_cfdna,exosome,"MESO NUMISMATICS, INC.",MSSV,0001760026,1
+tpd_ev_cfdna,exosome,"Renalytix plc  (RNLX, RTNXF)",,0001811115,1
+tpd_ev_cfdna,exosome,"LUDWIG ENTERPRISES, INC.",LUDG,0001960262,1
+tpd_ev_cfdna,exosome,Celcuity Inc.,CELC,0001603454,1
+tpd_ev_cfdna,exosome,"BioRestorative Therapies, Inc.",BRTX,0001505497,1
+tpd_ev_cfdna,exosome,"Vicarious Surgical Inc.  (RBOT, RBOTW)",,0001812173,1
+tpd_ev_cfdna,exosome,Orgenesis Inc.,ORGS,0001460602,1
+tpd_ev_cfdna,cell-free DNA,"Natera, Inc.",NTRA,0001604821,3
+tpd_ev_cfdna,cell-free DNA,"CareDx, Inc.",CDNA,0001217234,3
+tpd_ev_cfdna,cell-free DNA,MYRIAD GENETICS INC,MYGN,0000899923,3
+tpd_ev_cfdna,cell-free DNA,Adaptive Biotechnologies Corp,ADPT,0001478320,3
+tpd_ev_cfdna,cell-free DNA,"Guardant Health, Inc.",GH,0001576280,3
+tpd_ev_cfdna,cell-free DNA,"ILLUMINA, INC.",ILMN,0001110803,3
+tpd_ev_cfdna,cell-free DNA,BIODESIX INC,BDSX,0001439725,3
+tpd_ev_cfdna,cell-free DNA,"IN8BIO, INC.",INAB,0001740279,3
+tpd_ev_cfdna,cell-free DNA,"Xenetic Biosciences, Inc.",XBIO,0001534525,2
+tpd_ev_cfdna,cell-free DNA,Oncocyte Corp,OCX,0001642380,2
+tpd_ev_cfdna,cell-free DNA,PDS Biotechnology Corp,PDSB,0001472091,2
+tpd_ev_cfdna,cell-free DNA,"GRAIL, Inc.",GRAL,0001699031,2
+tpd_ev_cfdna,cell-free DNA,"VERACYTE, INC.",VCYT,0001384101,2
+tpd_ev_cfdna,cell-free DNA,"Tempus AI, Inc.",TEM,0001717115,2
+tpd_ev_cfdna,cell-free DNA,"Allogene Therapeutics, Inc.",ALLO,0001737287,1
+tpd_ev_cfdna,cell-free DNA,"SeqLL, Inc.  (ATLN, SQLLW)",,0001605888,1
+tpd_ev_cfdna,cell-free DNA,"PDS Biotechnology Corp  (EDGE, PDSB)",,0001472091,1
+tpd_ev_cfdna,cell-free DNA,Insight Molecular Diagnostics Inc.,IMDX,0001642380,1
+tpd_ev_cfdna,cell-free DNA,Telesis Bio Inc.,TBIO,0001850079,1
+tpd_ev_cfdna,cell-free DNA,"Omega Therapeutics, Inc.",OMGA,0001850838,1
+tpd_ev_cfdna,cell-free DNA,"BillionToOne, Inc.",BLLN,0002070849,1
+tpd_ev_cfdna,cell-free DNA,BNB PLUS CORP.,BNBX,0000744452,1
+tpd_ev_cfdna,cell-free DNA,"CapsoVision, Inc",CV,0001378325,1
+tpd_ev_cfdna,cell-free DNA,"Salarius Pharmaceuticals, Inc.",SLRX,0001615219,1
+tpd_ev_cfdna,cell-free DNA,"REVVITY, INC.",RVTY,0000031791,1
+tpd_ev_cfdna,cell-free DNA,NEOGENOMICS INC,NEO,0001077183,1
+tpd_ev_cfdna,cell-free DNA,"Singular Genomics Systems, Inc.",OMIC,0001850906,1
+tpd_ev_cfdna,cell-free DNA,"FibroBiologics, Inc.",FBLG,0001958777,1
+tpd_ev_cfdna,cell-free DNA,"Moderna, Inc.",MRNA,0001682852,1
+tpd_ev_cfdna,cell-free DNA,"Peak Bio, Inc.  (PKBO, PKBOW)",,0001834645,1
+tpd_ev_cfdna,cell-free DNA,"Century Therapeutics, Inc.",IPSC,0001850119,1
+tpd_ev_cfdna,cell-free DNA,"Caris Life Sciences, Inc.",CAI,0002019410,1
+tpd_ev_cfdna,cell-free DNA,"Erasca, Inc.",ERAS,0001761918,1
+tpd_ev_cfdna,liquid biopsy,"Allogene Therapeutics, Inc.",ALLO,0001737287,4
+tpd_ev_cfdna,liquid biopsy,"Guardant Health, Inc.",GH,0001576280,3
+tpd_ev_cfdna,liquid biopsy,BioNexus Gene Lab Corp,BGLC,0001737523,3
+tpd_ev_cfdna,liquid biopsy,NEOGENOMICS INC,NEO,0001077183,3
+tpd_ev_cfdna,liquid biopsy,VOLITIONRX LTD,VNRX,0000093314,3
+tpd_ev_cfdna,liquid biopsy,"Alpha Teknova, Inc.",TKNO,0001850902,3
+tpd_ev_cfdna,liquid biopsy,"Personalis, Inc.",PSNL,0001527753,3
+tpd_ev_cfdna,liquid biopsy,ORASURE TECHNOLOGIES INC,OSUR,0001116463,3
+tpd_ev_cfdna,liquid biopsy,MYRIAD GENETICS INC,MYGN,0000899923,3
+tpd_ev_cfdna,liquid biopsy,"Tyra Biosciences, Inc.",TYRA,0001863127,3
+tpd_ev_cfdna,liquid biopsy,BIO-TECHNE Corp,TECH,0000842023,3
+tpd_ev_cfdna,liquid biopsy,AIM ImmunoTech Inc.,AIM,0000946644,3
+tpd_ev_cfdna,liquid biopsy,"Onconetix, Inc.",ONCO,0001782107,3
+tpd_ev_cfdna,liquid biopsy,BIODESIX INC,BDSX,0001439725,3
+tpd_ev_cfdna,liquid biopsy,"Precipio, Inc.",PRPO,0001043961,3
+tpd_ev_cfdna,liquid biopsy,iSpecimen Inc.,ISPC,0001558569,3
+tpd_ev_cfdna,liquid biopsy,Lucid Diagnostics Inc.,LUCD,0001799011,3
+tpd_ev_cfdna,liquid biopsy,"VERACYTE, INC.",VCYT,0001384101,3
+tpd_ev_cfdna,liquid biopsy,"Natera, Inc.",NTRA,0001604821,3
+tpd_ev_cfdna,liquid biopsy,EXACT SCIENCES CORP,EXAS,0001124140,2
+tpd_ev_cfdna,liquid biopsy,Twist Bioscience Corp,TWST,0001581280,2
+tpd_ev_cfdna,liquid biopsy,"Tempus AI, Inc.",TEM,0001717115,2
+tpd_ev_cfdna,liquid biopsy,"LUDWIG ENTERPRISES, INC.",LUDG,0001960262,2
+tpd_ev_cfdna,liquid biopsy,RENOVARO INC.,RENB,0001527728,2
+tpd_ev_cfdna,liquid biopsy,"LIXTE BIOTECHNOLOGY HOLDINGS, INC.  (LIXT, LIXTW)",,0001335105,2
+tpd_ev_cfdna,liquid biopsy,Quanterix Corp,QTRX,0001503274,2
+tpd_ev_cfdna,liquid biopsy,"Valuence Merger Corp. I  (VMCAF, VMCUF, VMCWF)",,0001892747,2
+tpd_ev_cfdna,liquid biopsy,"Fulgent Genetics, Inc.",FLGT,0001674930,2
+tpd_ev_cfdna,liquid biopsy,Merus N.V.,MRUS,0001651311,2
+tpd_ev_cfdna,liquid biopsy,"BillionToOne, Inc.",BLLN,0002070849,1
+tpd_ev_cfdna,liquid biopsy,Advanced Biomed Inc.,ADVB,0001941029,1
+tpd_ev_cfdna,liquid biopsy,"Co-Diagnostics, Inc.",CODX,0001692415,1
+tpd_ev_cfdna,liquid biopsy,Zomedica Corp.,ZOM,0001684144,1
+tpd_ev_cfdna,liquid biopsy,"SeqLL, Inc.  (ATLN, SQLLW)",,0001605888,1
+tpd_ev_cfdna,liquid biopsy,"bioAffinity Technologies, Inc.  (BIAF, BIAFW)",,0001712762,1
+tpd_ev_cfdna,liquid biopsy,"DermTech, Inc.",DMTKQ,0001651944,1
+tpd_ev_cfdna,liquid biopsy,"Accelerate Diagnostics, Inc",AXDX,0000727207,1
+tpd_ev_cfdna,liquid biopsy,Lunai Bioworks Inc.,RENB,0001527728,1
+tpd_ev_cfdna,liquid biopsy,"Caris Life Sciences, Inc.",CAI,0002019410,1
+tpd_ev_cfdna,liquid biopsy,"CNS Pharmaceuticals, Inc.",CNSP,0001729427,1
+tpd_ev_cfdna,liquid biopsy,"LIXTE BIOTECHNOLOGY HOLDINGS, INC.",LIXT,0001335105,1
+tpd_ev_cfdna,liquid biopsy,Talis Biomedical Corp,TLIS,0001584751,1
+tpd_ev_cfdna,liquid biopsy,"CapsoVision, Inc",CV,0001378325,1
+tpd_ev_cfdna,liquid biopsy,"Vocodia Holdings Corp  (VHAI, VHAI-WTA, VHAI-WTB)",,0001880431,1
+tpd_ev_cfdna,liquid biopsy,"Singular Genomics Systems, Inc.",OMIC,0001850906,1
+tpd_ev_cfdna,liquid biopsy,QUEST DIAGNOSTICS INC,DGX,0001022079,1
+tpd_ev_cfdna,liquid biopsy,"Valuence Merger Corp. I  (VMCA, VMCAU, VMCAW)",,0001892747,1
+tpd_ev_cfdna,liquid biopsy,"20/20 Biolabs, Inc.",AIDX,0001139685,1
+tpd_ev_cfdna,liquid biopsy,Insight Molecular Diagnostics Inc.,IMDX,0001642380,1
+tpd_ev_cfdna,liquid biopsy,"FibroBiologics, Inc.",FBLG,0001958777,1
+tpd_ev_cfdna,liquid biopsy,Oncocyte Corp,OCX,0001642380,1
+tpd_ev_cfdna,liquid biopsy,"GERON CORP  (GERN, GERNW)",,0000886744,1
+tpd_ev_cfdna,liquid biopsy,"Renalytix plc  (RNLX, RTNXF)",,0001811115,1
+tpd_ev_cfdna,liquid biopsy,GERON CORP,GERN,0000886744,1
+tpd_ev_cfdna,liquid biopsy,"Equillium, Inc.",EQ,0001746466,1
+tpd_ev_cfdna,liquid biopsy,"Deciphera Pharmaceuticals, Inc.",,0001654151,1
+tpd_ev_cfdna,minimal residual disease,"Allogene Therapeutics, Inc.",ALLO,0001737287,5
+tpd_ev_cfdna,minimal residual disease,"Guardant Health, Inc.",GH,0001576280,3
+tpd_ev_cfdna,minimal residual disease,NEOGENOMICS INC,NEO,0001077183,3
+tpd_ev_cfdna,minimal residual disease,Adaptive Biotechnologies Corp,ADPT,0001478320,3
+tpd_ev_cfdna,minimal residual disease,"VERACYTE, INC.",VCYT,0001384101,3
+tpd_ev_cfdna,minimal residual disease,"Imunon, Inc.",IMNN,0000749647,3
+tpd_ev_cfdna,minimal residual disease,QUEST DIAGNOSTICS INC,DGX,0001022079,3
+tpd_ev_cfdna,minimal residual disease,"Arcellx, Inc.",ACLX,0001786205,3
+tpd_ev_cfdna,minimal residual disease,VOLITIONRX LTD,VNRX,0000093314,3
+tpd_ev_cfdna,minimal residual disease,BIODESIX INC,BDSX,0001439725,3
+tpd_ev_cfdna,minimal residual disease,AMGEN INC,AMGN,0000318154,3
+tpd_ev_cfdna,minimal residual disease,"Elicio Therapeutics, Inc.",ELTX,0001601485,3
+tpd_ev_cfdna,minimal residual disease,"Inmune Bio, Inc.",INMB,0001711754,3
+tpd_ev_cfdna,minimal residual disease,"Sana Biotechnology, Inc.",SANA,0001770121,3
+tpd_ev_cfdna,minimal residual disease,"Personalis, Inc.",PSNL,0001527753,3
+tpd_ev_cfdna,minimal residual disease,"Cytek Biosciences, Inc.",CTKB,0001831915,3
+tpd_ev_cfdna,minimal residual disease,"SELLAS Life Sciences Group, Inc.",SLS,0001390478,3
+tpd_ev_cfdna,minimal residual disease,"TScan Therapeutics, Inc.",TCRX,0001783328,3
+tpd_ev_cfdna,minimal residual disease,"GT Biopharma, Inc.",GTBP,0000109657,2
+tpd_ev_cfdna,minimal residual disease,"GRAIL, Inc.",GRAL,0001699031,2
+tpd_ev_cfdna,minimal residual disease,"ILLUMINA, INC.",ILMN,0001110803,2
+tpd_ev_cfdna,minimal residual disease,Twist Bioscience Corp,TWST,0001581280,2
+tpd_ev_cfdna,minimal residual disease,"Tempus AI, Inc.",TEM,0001717115,2
+tpd_ev_cfdna,minimal residual disease,Autolus Therapeutics plc,AUTL,0001730463,2
+tpd_ev_cfdna,minimal residual disease,Syndax Pharmaceuticals Inc,SNDX,0001395937,2
+tpd_ev_cfdna,minimal residual disease,OS Therapies Inc,OSTX,0001795091,2
+tpd_ev_cfdna,minimal residual disease,"PACIFIC BIOSCIENCES OF CALIFORNIA, INC.",PACB,0001299130,2
+tpd_ev_cfdna,minimal residual disease,Vor Biopharma Inc.,VOR,0001817229,2
+tpd_ev_cfdna,minimal residual disease,"CERO THERAPEUTICS HOLDINGS, INC.  (CERO, CEROW)",,0001870404,2
+tpd_ev_cfdna,minimal residual disease,"Natera, Inc.",NTRA,0001604821,1
+tpd_ev_cfdna,minimal residual disease,BioNexus Gene Lab Corp,BGLC,0001737523,1
+tpd_ev_cfdna,minimal residual disease,Aptose Biosciences Inc.,APTOF,0000882361,1
+tpd_ev_cfdna,minimal residual disease,MYRIAD GENETICS INC,MYGN,0000899923,1
+tpd_ev_cfdna,minimal residual disease,"Caris Life Sciences, Inc.",CAI,0002019410,1
+tpd_ev_cfdna,minimal residual disease,"INOVIO PHARMACEUTICALS, INC.",INO,0001055726,1
+tpd_ev_cfdna,minimal residual disease,GLYCOMIMETICS INC,GLYC,0001253689,1
+tpd_ev_cfdna,minimal residual disease,"Cullinan Oncology, Inc.",CGEM,0001789972,1
+tpd_ev_cfdna,minimal residual disease,"Notable Labs, Ltd.",NTBL,0001603207,1
+tpd_ev_cfdna,minimal residual disease,"Biomea Fusion, Inc.",BMEA,0001840439,1
+tpd_ev_cfdna,minimal residual disease,"Syros Pharmaceuticals, Inc.",SYRS,0001556263,1
+tpd_ev_cfdna,minimal residual disease,CURIS INC,CRIS,0001108205,1
+tpd_ev_cfdna,minimal residual disease,"LUDWIG ENTERPRISES, INC.",LUDG,0001960262,1
+tpd_ev_cfdna,minimal residual disease,"Transcode Therapeutics, Inc.",RNAZ,0001829635,1
+tpd_ev_cfdna,minimal residual disease,"Cyclacel Pharmaceuticals, Inc.  (CYCC, CYCCP)",,0001130166,1
+tpd_ev_cfdna,minimal residual disease,"Actinium Pharmaceuticals, Inc.",ATNM,0001388320,1
+tpd_ev_cfdna,minimal residual disease,Aptevo Therapeutics Inc.,APVO,0001671584,1
+tpd_ev_cfdna,minimal residual disease,"Lumexa Imaging Holdings, Inc.",LMRI,0002071288,1
+tpd_ev_cfdna,minimal residual disease,Oncocyte Corp,OCX,0001642380,1
+tpd_ev_cfdna,minimal residual disease,"BRISTOL MYERS SQUIBB CO  (BMY, BMYMP, CELG-RI)",,0000014272,1
+tpd_ev_cfdna,minimal residual disease,ADC Therapeutics SA,ADCT,0001771910,1
+tpd_ev_cfdna,minimal residual disease,"Tempest Therapeutics, Inc.",TPST,0001544227,1
+tpd_ev_cfdna,minimal residual disease,Biohaven Ltd.,BHVN,0001935979,1
+tpd_ev_cfdna,minimal residual disease,"SUTRO BIOPHARMA, INC.",STRO,0001382101,1
+tpd_ev_cfdna,minimal residual disease,"CARGO Therapeutics, Inc.",CRGX,0001966494,1
+tpd_ev_cfdna,minimal residual disease,"Caribou Biosciences, Inc.",CRBU,0001619856,1
+tpd_ev_cfdna,minimal residual disease,"BeiGene, Ltd.  (ONC, BEIGF)",,0001651308,1
+tpd_ev_cfdna,minimal residual disease,Beam Therapeutics Inc.,BEAM,0001745999,1
+tpd_ev_cfdna,minimal residual disease,"BeOne Medicines Ltd.  (ONC, BEIGF)",,0001651308,1
