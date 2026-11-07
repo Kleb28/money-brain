@@ -21,8 +21,12 @@ START = "2008-01-01"
 
 def stooq(ticker: str) -> list[tuple[str, float]] | None:
     sym = ticker.lower().replace(".", "-") + ".us"
-    r = requests.get("https://stooq.com/q/d/l/", params={"s": sym, "i": "d", "d1": START.replace("-", "")},
-                     headers={"User-Agent": "Mozilla/5.0 (money-brain simulation)"}, timeout=60)
+    try:
+        r = requests.get("https://stooq.com/q/d/l/", params={"s": sym, "i": "d", "d1": START.replace("-", "")},
+                         headers={"User-Agent": "Mozilla/5.0 (money-brain simulation)"}, timeout=30)
+    except requests.RequestException as e:
+        print(f"  stooq error for {ticker}: {e.__class__.__name__}", flush=True)
+        return None
     if r.status_code != 200:
         return None
     if not r.text.startswith("Date"):
@@ -43,10 +47,16 @@ def yahoo_batch(tickers: list[str]) -> dict[str, list[tuple[str, float]]]:
     out: dict[str, list[tuple[str, float]]] = {}
     for i in range(0, len(tickers), 50):
         chunk = tickers[i:i + 50]
-        try:
-            df = yf.download(chunk, start=START, auto_adjust=False, progress=False, threads=True, group_by="ticker")
-        except Exception as e:  # noqa: BLE001
-            print(f"  yfinance batch failed: {e!r}", flush=True); continue
+        df = None
+        for attempt in range(3):
+            try:
+                df = yf.download(chunk, start=START, auto_adjust=False, progress=False, threads=False, group_by="ticker")
+                break
+            except Exception as e:  # noqa: BLE001
+                print(f"  yfinance batch failed ({attempt}): {e!r}"[:200], flush=True); time.sleep(30 * (attempt + 1))
+        if df is None or df.empty:
+            continue
+        print(f"  yfinance {i + len(chunk)}/{len(tickers)}", flush=True)
         for t in chunk:
             try:
                 s = df[t]["Close"].dropna() if len(chunk) > 1 else df["Close"].dropna()
