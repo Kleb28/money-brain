@@ -1,0 +1,38 @@
+name: dealflow-and-sim-d
+
+on:
+  workflow_dispatch:
+    inputs:
+      themes:
+        description: "comma-separated theme ids from config/themes.yml"
+        required: false
+        default: "adv_packaging,ntn_wifi7_oran,battery_chem_mfg"
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      EDGAR_USER_AGENT: ${{ vars.EDGAR_USER_AGENT }}
+      USPTO_API_KEY: ${{ secrets.USPTO_API_KEY }}
+      DEALFLOW_THEMES: ${{ github.event.inputs.themes }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt yfinance
+      - run: python -u -m scripts.dealflow
+      - run: python -u simulation/sim_d.py
+      - name: Commit
+        run: |
+          git config user.name "money-brain-bot"
+          git config user.email "money-brain-bot@users.noreply.github.com"
+          git add outputs/dealflow.md outputs/dealflow.csv outputs/sim_d.md
+          if git diff --cached --quiet; then echo "nothing to commit"; else
+            git commit -m "outputs: dealflow applicants + Sim D ETF post-launch $(date -u +%F)"
+            for i in 1 2 3 4 5; do git pull --rebase origin main && git push origin HEAD:main && break; sleep 15; done
+          fi
