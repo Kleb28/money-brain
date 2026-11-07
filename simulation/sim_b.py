@@ -25,6 +25,8 @@ OUT = ROOT / "outputs"
 PRE = "30/0.5/2"
 HOLDS = (1, 2, 3)
 MIN_TICKERS = 3
+MIN_ENTRY_PRICE = 1.0   # exclude sub-$1 (OTC shell) stocks at entry — added 2026-11-07, see protocol change log
+MAX_TICKER_RETURN = 5.0  # winsorize a single ticker's holding return at +500% — added 2026-11-07
 LAST_DATE = None  # set from data
 
 
@@ -106,8 +108,8 @@ def main() -> None:
                 if not s:
                     continue
                 p0, p1 = price_on_or_after(s, entry_day), price_on_or_after(s, exit_day)
-                if p0 and p1 and p0 > 0:
-                    tr.append(p1 / p0 - 1)
+                if p0 and p1 and p0 >= MIN_ENTRY_PRICE:
+                    tr.append(min(p1 / p0 - 1, MAX_TICKER_RETURN))
             if k == 1:
                 cov_num += len(tr); cov_den += len(tickers)
             if len(tr) >= MIN_TICKERS:
@@ -117,7 +119,7 @@ def main() -> None:
 
     lines = ["# Sim B — basket excess returns (protocol: simulation/protocol.md)", "",
              f"Entry: first trading day on/after 1 July of T+1 (10-K season over); exit after 1/2/3 years; equal weight, price returns, excess over SPY. "
-             f"Baskets need ≥ {MIN_TICKERS} tickers with prices. Prices end {last}. Ticker coverage at entry (tickers with prices ÷ tickers named in 10-Ks): "
+             f"Baskets need ≥ {MIN_TICKERS} tickers with prices; tickers below ${MIN_ENTRY_PRICE:.0f} at entry are excluded and a ticker's return is capped at +{MAX_TICKER_RETURN*100:.0f}% (OTC-shell artifacts). Adjusted closes (splits, dividends). Prices end {last}. Ticker coverage at entry (tickers with prices ÷ tickers named in 10-Ks): "
              f"{cov_num/cov_den:.2f} — missing tickers are mostly delisted firms (survivorship bias, same direction for every arm).", "",
              "Columns: mean excess | cluster SE (by T) | t | median / hit rate | n events (T clusters)", ""]
 

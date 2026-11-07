@@ -1,4 +1,4 @@
-"""Sim B prices: daily closes since 2008 for every ticker in data/external/sim_filers_*.csv (+ SPY).
+"""Sim B prices: daily ADJUSTED closes (splits and dividends, yfinance auto_adjust) since 2008 for every ticker in data/external/sim_filers_*.csv (+ SPY).
 Stooq CSV first; when Stooq stops answering with CSV (daily hit limit), yfinance for the rest.
 Output: data/external/sim_prices_<shard>.csv.gz (ticker, date, close). Resumable per ticker.
 Run on the Actions runner (Stooq/Yahoo are not reachable from the sandbox)."""
@@ -50,7 +50,7 @@ def yahoo_batch(tickers: list[str]) -> dict[str, list[tuple[str, float]]]:
         df = None
         for attempt in range(3):
             try:
-                df = yf.download(chunk, start=START, auto_adjust=False, progress=False, threads=False, group_by="ticker")
+                df = yf.download(chunk, start=START, auto_adjust=True, progress=False, threads=False, group_by="ticker")
                 break
             except Exception as e:  # noqa: BLE001
                 print(f"  yfinance batch failed ({attempt}): {e!r}"[:200], flush=True); time.sleep(30 * (attempt + 1))
@@ -88,7 +88,7 @@ def main() -> None:
                 have.add(r["ticker"]); rows.append((r["ticker"], r["date"], float(r["close"])))
     todo = [t for t in mine if t not in have]
     print(f"shard {a.shard}: {len(mine)} tickers, {len(todo)} to fetch", flush=True)
-    use_yahoo = False
+    use_yahoo = True   # adjusted closes; Stooq kept as a fallback only when yfinance returns nothing
     pending_yahoo: list[str] = []
     for i, t in enumerate(todo):
         if not use_yahoo:
@@ -105,6 +105,9 @@ def main() -> None:
     if pending_yahoo:
         got = yahoo_batch(pending_yahoo)
         for t, s in got.items():
+            if not s:
+                s2 = stooq(t) or []
+                s = s2
             rows.extend((t, d, c) for d, c in s); have.add(t)
     with gzip.open(out, "wt", newline="", encoding="utf-8") as f:
         w = csv.writer(f); w.writerow(["ticker", "date", "close"])
