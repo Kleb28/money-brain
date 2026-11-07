@@ -60,3 +60,9 @@
 - V3 R&D 집약 언급 회사: 사건 basket 안에서 R&D/매출 ≥ 10%(EDGAR companyfacts XBRL, T년 회계연도)인 회사만 — 부수적 언급 제거. 대조군 basket에도 같은 필터.
 - 공통: 조정 종가, $1 하한, +500% 상한, cluster SE(연도), 진입 7월 1일 — Sim B와 동일. survivorship bias 동일.
 - 추가 수집: companyfacts(CIK별 RevenueFromContractWithCustomer·Revenues·ResearchAndDevelopmentExpense), 티커 4,778개 → 약 4,800 요청.
+
+## Sim B2 결과 기록 (2026-11-08)
+- V1 niche: T1 −2.9 / −5.6 / −15.7% (t −0.6 / −0.9 / −2.7) vs 대조군 +0.2 / −4.0 / −14.5% → 미달
+- V2 회사 순위: 상위 10% − 나머지 +2.3 / +2.2 / −2.3 pp (t 0.5 / 0.4 / −0.5); 대조군 어휘로도 +1.1 / −0.4 / −2.5 pp → 미달
+- V3 R&D 집약(≥10%): T1 −2.6 / −9.5 / −25.4% (t −0.3 / −1.0 / −3.0) vs 대조군 −9.0 / −15.4 / −33.7%; 차이 +6 / +6 / +8 pp, 결합 SE ≈ 11 → t ≈ 0.6-0.8 → 미달 (재무 데이터: companyfacts 4,775 CIK 중 매출·R&D 모두 있는 회사-연도 11,534)
+- 판정: 세 변형 모두 통과 기준(t ≥ 2.5, 대조군 대비 양) 미달. 사전 등록대로 "특허 신호 → 10-K 언급 회사" arithmetic 연결은 닫음. 회사 선별은 카드(for/against)로만 두고 paper portfolio로 측정. 파이프라인의 검증된 범위는 테마 선별(Sim A·OOS)까지.
