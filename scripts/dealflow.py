@@ -31,7 +31,7 @@ ACADEMIC = re.compile(r"\b(universit|institute|college|school|foundation|hospita
 def norm(name: str) -> str:
     s = name.lower()
     s = re.sub(r"[^a-z0-9 ]+", " ", s)
-    s = re.sub(r"\b(inc|corp|corporation|co|company|ltd|limited|llc|plc|sa|ag|nv|se|gmbh|kk|kabushiki kaisha|holdings?|group|technologies|technology|international|the)\b", " ", s)
+    s = re.sub(r"\b(inc|incorporated|corp|corporation|co|company|ltd|limited|llc|lp|l p|plc|sa|ag|nv|se|gmbh|kk|kabushiki kaisha|jidosha|holdings?|group|technologies|technology|international|the|publ)\b", " ", s)
     return " ".join(s.split())
 
 
