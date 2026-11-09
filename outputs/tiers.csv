@@ -2,30 +2,30 @@ technology_id,name,arm,status,tier,signal_year,signal_growth_3y,edgar_latest_cou
 3d_printing,3D printing,tech,validation,T1,2012,-0.067,104,2015
 autonomous_cars,Autonomous cars,tech,validation,T1,2013,-0.149,173,2018
 bispecific_antibody,Bispecific antibody,bio,validation,T1,2014,0.053,110,2019
-cloud_computing,Cloud computing,tech,validation,T2,2011,0.092,1517,2011
-computer_vision,Computer vision,tech,validation,T-,,0.127,173,2019
+cloud_computing,Cloud computing,tech,validation,T2,2011,0.092,1520,2011
+computer_vision,Computer vision,tech,validation,T-,,0.127,174,2019
 drug_conjugates,Antibody drug conjugates,bio,validation,T1,2013,0.329,128,2015
-millimeter_wave,Millimeter wave,tech,validation,T0,2018,0.27,24,2020
+millimeter_wave,Millimeter wave,tech,validation,T0,2018,0.27,25,2020
 fingerprint_sensor,Fingerprint sensor,tech,validation,T0,2014,-0.404,3,
-fracking,Fracking,tech,validation,T1,2011,0.058,198,2010
-hybrid_ev,Hybrid vehicle / Electric car,tech,validation,T2,2008,-0.323,604,2010
+fracking,Fracking,tech,validation,T1,2011,0.058,199,2010
+hybrid_ev,Hybrid vehicle / Electric car,tech,validation,T2,2008,-0.323,605,2010
 lithium_battery,Lithium battery,tech,validation,T1,2010,-0.177,114,2009
-machine_learning,Machine learning / AI,tech,validation,T2,2015,0.424,3989,2016
-mobile_payment,Mobile payment,tech,validation,T1,2012,-0.543,136,2011
+machine_learning,Machine learning / AI,tech,validation,T2,2015,0.424,3995,2016
+mobile_payment,Mobile payment,tech,validation,T1,2012,-0.543,137,2011
 oled_display,OLED display,tech,validation,T0,2003,-0.134,24,
-smart_devices,Smart devices,tech,validation,T2,2012,0.072,1133,2011
-social_networking,Social networking,tech,validation,T2,2005,0.4,2707,2008
-solar_power,Solar power,tech,validation,T2,2008,0.221,314,2009
+smart_devices,Smart devices,tech,validation,T2,2012,0.072,1136,2011
+social_networking,Social networking,tech,validation,T2,2005,0.4,2714,2008
+solar_power,Solar power,tech,validation,T2,2008,0.221,315,2009
 stent_graft,Stent graft,bio,validation,T-,,-0.323,5,
-virtual_reality,Virtual reality,tech,validation,T1,2011,0.199,175,2017
+virtual_reality,Virtual reality,tech,validation,T1,2011,0.199,177,2017
 wireless_charging,Wireless charging,tech,validation,T0,2010,0.001,17,
 rfid,RFID,tech,validation,T1,2005,0.045,54,2005
-touch_screen,Touch screen,tech,validation,T1,2008,-0.244,73,
-gps,GPS,tech,validation,T2,,-0.205,219,
+touch_screen,Touch screen,tech,validation,T1,2008,-0.244,74,
+gps,GPS,tech,validation,T2,,-0.205,220,
 search_engine,Search engine,tech,validation,T2,,-0.051,507,2009
-online_streaming,Online streaming,tech,validation,T1,2012,0.109,153,
-wifi,Wi-Fi,tech,validation,T2,,0.155,267,
-electronic_gaming,Electronic gaming,tech,validation,T-,,0.148,118,
+online_streaming,Online streaming,tech,validation,T1,2012,0.109,155,
+wifi,Wi-Fi,tech,validation,T2,,0.155,271,
+electronic_gaming,Electronic gaming,tech,validation,T-,,0.148,119,
 software_defined_radio,Software defined radio,tech,validation,T-,,0.097,6,
 lane_departure,Lane departure warning,tech,validation,T-,,-0.238,12,
 ctl_ball_bearing,Ball bearing (control),tech,control,T-,,-0.119,5,
@@ -46,3 +46,11 @@ ctl_rna_interference,RNA interference (control),bio,control,T1,2003,-0.292,74,
 ctl_stem_cell,Stem cell (control),bio,control,T2,,-0.211,235,2010
 ctl_toothbrush,Toothbrush (control),tech,control,T-,,-0.621,4,
 ctl_razor,Razor (control),tech,control,T-,,-0.588,8,
+adv_packaging,Advanced packaging / backside power / HBM,tech,candidate,T-,,,60,
+ntn_d2d,Direct-to-device satellite (NTN),tech,candidate,T-,,,14,
+wifi7_mlo,Wi-Fi 7 multi-link,tech,candidate,T-,,,13,
+battery_next,Solid-state / dry-electrode / LFP battery manufacturing,tech,candidate,T-,,,26,
+photonics_cpo,Silicon photonics / co-packaged optics,tech,candidate,T-,,,29,
+protein_degradation,Targeted protein degradation,bio,candidate,T-,,,16,
+cfdna_mrd,Cell-free DNA / MRD diagnostics,bio,candidate,T-,,,73,2017
+extracellular_vesicles,Extracellular vesicle therapeutics,bio,candidate,T-,,,9,

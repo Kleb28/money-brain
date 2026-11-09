@@ -1,4 +1,4 @@
-# Validation report (2026-11-05)
+# Validation report (2026-11-09)
 
 Rule G: window 2y, +50%, 2 consecutive, min_count 30. lead = ec_year - signal_year (positive = detector led the earnings-call breakthrough).
 

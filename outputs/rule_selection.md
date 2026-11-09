@@ -1,4 +1,4 @@
-# Rule selection (2026-11-05)
+# Rule selection (2026-11-09)
 
 Positives: 16 validation technologies with ec_year > 2002. Controls: 13 valid of 18 (valid = max 10-K share 2005-19 / mean 2002-04 < 3.0).
 
