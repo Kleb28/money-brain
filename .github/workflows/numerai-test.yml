@@ -1,0 +1,33 @@
+name: numerai-signals-test
+
+on:
+  workflow_dispatch:
+    inputs:
+      split:
+        description: "train (decide) or validation (open once, only if train passed)"
+        required: true
+        default: "train"
+
+permissions:
+  contents: write
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt numerapi pandas pyarrow numpy scipy
+      - run: python -u -m scripts.numerai_signals_test --split ${{ github.event.inputs.split }}
+      - name: Commit
+        run: |
+          git config user.name "money-brain-bot"
+          git config user.email "money-brain-bot@users.noreply.github.com"
+          git add outputs/numerai_signals_test_*.md
+          if git diff --cached --quiet; then echo "nothing to commit"; else
+            git commit -m "outputs: Sim F Numerai Signals offline test (${{ github.event.inputs.split }}) $(date -u +%F)"
+            for i in 1 2 3 4 5; do git pull --rebase origin main && git push origin HEAD:main && break; sleep 15; done
+          fi

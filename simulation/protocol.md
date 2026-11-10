@@ -74,3 +74,12 @@
 - 유일하게 일관된 회사 단위 신호는 음(−): 추적 bigram 언급 수가 많은 회사일수록 1y 수익 저조, 매출 하위 1/3에 집중 (IC −0.061, t −3.7, 14개 연도 중 10개 음; 중·대형은 0). 탐색적 발견이므로 OOS 확인 전까지 신호로 쓰지 않음
 - T1 bigram 언급 수의 IC는 소형 −0.025(t −1.9) / 대형 +0.035(t +1.3)로 부호가 갈림 — 유의하지 않으나 "capability vs talk" 가설(특허 출원인 연결, Sim E 후보)과 방향이 맞음
 - 2020-22 구간 cluster SE ±0.1은 세 해 평균이 우연히 같아서(−29.8/−30.2/−30.2%) 생긴 것, 버그 아님
+
+## Sim F — Numerai Signals 오프라인 검정 (2026-11-11 사전 등록, 실행 전)
+배경: 복기(2026-11-09)에서 "추적 bigram을 10-K에 많이 쓰는 소형사는 다음 1년 수익이 낮다"(IC −0.061, t −3.7, 매출 하위 1/3)가 사후 발견됨. 같은 가설을 다른 target(Numerai Signals v3.1 `target_jupiter_20/60`: Numerai risk factor에 중립화된 20/60일 수익)으로 검정함. 우리 수익 데이터와 기간이 겹치므로 완전 독립은 아니나, target 정의·중립화·universe가 다름.
+- 데이터: `signals/v3.1/train.parquet`(~2018-12-28)·`validation.parquet`(2019-01-04~)·neutralizer parquet. 미국 티커만(`numerai_ticker` 국가 접미사 US). 우리 feature는 filing 연도 y1의 10-K 기준으로 y1년 7월 1일 ~ y1+1년 6월 30일에 유효 (sim_filers·filer_queries·sim_financials에서 계산; 매칭 안 되는 티커는 제외하고 매칭률을 보고)
+- Feature (3개 고정, 전부 "높을수록 좋음" 방향으로 부호를 맞춤): F1 = −(추적 bigram 언급 수); F2 = F1을 매출 하위 1/3(그 날짜 매칭 티커 기준)에만 적용, 나머지 0; F3 = T1 bigram 언급 수에 규모로 부호 부여(하위 1/3 −, 상위 1/3 +, 중간 0)
+- 지표: 날짜별 Spearman corr(feature vs target) — raw와 neutralizer 행렬에 선형 중립화한 뒤(Numerai NCORR 근사) 둘 다. 20일 target은 4주 간격, 60일 target은 12주 간격 날짜만 써서 겹침 제거. 평균·SD·t(= 평균/(SD/√n))·양의 비율·날짜 수·날짜당 티커 수
+- 분할: train(~2018)에서 먼저 판정. 통과 기준: F1 또는 F2의 중립화 corr(60일 target) 평균 ≥ +0.005 이고 t ≥ 2 이고 양의 날짜 비율 ≥ 0.6. 통과 시에만 validation(2019~)을 한 번 열어 재현 여부를 기록. 미달이면 Numerai 경로는 "우리 텍스트 feature로는 edge 없음"으로 닫고 unstaked 제출도 하지 않음
+- 통과 후 경로: unstaked 제출 → 라이브 라운드에서 paper trading → stake 판단은 별도
+- 한계: 우리 10-K feature는 추적 bigram(5,382 bigram-연도 + 대조군)에 한정된 부분 집합이라 실제 제출 feature는 전체 10-K로 다시 만들어야 함; Numerai universe는 유동성 상위 종목이라 복기에서 효과가 있던 소형 구간과 일부만 겹침
