@@ -48,7 +48,8 @@ detector:
   control_edgar_max_ratio: 3.0   # max(share 2005-2019) / mean(share 2002-2004) must be below this
   # provisional Tier thresholds for NEW candidates (no ec_year label). Re-tune after validation.
   tier:
-    edgar_low_max: 50      # 10-K mentions/yr below this = "market not yet talking" (Tier 0/1)
+    edgar_low_min: 10      # with a patent signal: 10-K mentions below this = "TW" (watch; nobody talks yet — Kalyani-set check 2026-11-11: disruptive 21% vs 69% for 10-49)
+    edgar_low_max: 50      # 10-K mentions/yr in [edgar_low_min, this) with a signal = "T0" (market barely talking)
     edgar_high_min: 200    # at/above this = "already in the conversation" (Tier 2)
 
 candidates:

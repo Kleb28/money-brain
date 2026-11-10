@@ -100,6 +100,7 @@ def main() -> None:
     w, g, hits, mc = int(d["growth_window_years"]), float(d["growth_threshold"]), int(d["consecutive_hits"]), int(d["min_count"])
     y_start = int(settings["years"]["start"])
     lo, hi = int(d["tier"]["edgar_low_max"]), int(d["tier"]["edgar_high_min"])
+    lo_min = int(d["tier"].get("edgar_low_min", 0))
     min_asg = int(settings.get("candidates", {}).get("min_assignees", 10))
 
     raw: dict[str, dict[int, int]] = defaultdict(dict)
@@ -169,7 +170,7 @@ def main() -> None:
         if e:
             ly = max(e)  # 10-Ks for fiscal year Y are filed in Y+1, so the newest EDGAR year is usable
             r["edgar_latest"] = max(e[ly], e.get(ly - 1, 0))
-            r["tier"] = "T2" if e[ly] >= hi else ("T0" if e[ly] < lo else "T1")
+            r["tier"] = "T2" if e[ly] >= hi else ("TW" if e[ly] < lo_min else ("T0" if e[ly] < lo else "T1"))
         else:
             r["edgar_latest"], r["tier"] = None, None
 

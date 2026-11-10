@@ -99,6 +99,7 @@ def main() -> None:
 
     # Tiers (provisional; for candidates AND validation rows, so thresholds can be inspected)
     lo, hi = int(d["tier"]["edgar_low_max"]), int(d["tier"]["edgar_high_min"])
+    lo_min = int(d["tier"].get("edgar_low_min", 0))
     tier_rows = []
     for tid, t in techs.items():
         s = sig_by_tech.get(tid, {})
@@ -111,6 +112,8 @@ def main() -> None:
             tier = "T0" if sci_signal else "T-"
         elif ed_latest >= hi:
             tier = "T2"
+        elif sci_signal and ed_latest < lo_min:
+            tier = "TW"   # watch: signal but the market has not started talking (10-K < edgar_low_min)
         elif sci_signal and ed_latest < lo:
             tier = "T0"
         elif sci_signal:

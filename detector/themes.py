@@ -110,7 +110,7 @@ def main() -> None:
               "| theme | bigrams | applications 2023 | max 10-K |", "|---|---|---|---|"]
     for name, n_items, n_apps, k in summary:
         lines.append(f"| {name} | {n_items} | {n_apps} | {k} |")
-    unassigned = [b for b in rows if b not in assigned and rows[b]["tier"] in ("T0", "T1")]
+    unassigned = [b for b in rows if b not in assigned and rows[b]["tier"] in ("TW", "T0", "T1")]
     lines += ["", f"Unassigned T0/T1 candidate bigrams (drafting fragments, layout boilerplate, or not yet grouped): {len(unassigned)} — kept in candidates_bigrams.csv."]
     (OUT / "candidates_themes.md").write_text("\n".join(lines), encoding="utf-8")
     print(f"themes: {len(THEMES)}; assigned {len(assigned)} bigrams; unassigned T0/T1 {len(unassigned)}")
