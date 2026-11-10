@@ -51,19 +51,25 @@ front rear left right new improved improvement improvements mm cm nm um kg mg wt
 """.split()
 
 
-def build_sql() -> str:
+def build_sql(basis: str = "publication") -> str:
+    """basis = 'publication': year = the application's earliest publication date (what was knowable that year;
+    US applications publish ~18 months after the earliest priority date). 'filing': filing year (look-ahead of
+    ~1-1.5 years — used until 2026-11-11, see simulation/protocol.md 타이밍 결함 기록)."""
     stop = ", ".join(f"'{w}'" for w in sorted(set(STOP)))
+    date_col = "filing_date" if basis == "filing" else "publication_date"
+    yr_expr = ("CAST(FLOOR(filing_date / 10000) AS INT64)" if basis == "filing"
+               else "CAST(FLOOR(MIN(publication_date) OVER (PARTITION BY application_number) / 10000) AS INT64)")
     return f"""
 WITH docs AS (
   SELECT application_number,
-         CAST(FLOOR(filing_date / 10000) AS INT64) AS yr,
+         {yr_expr} AS yr,
          IFNULL((SELECT name FROM UNNEST(assignee_harmonized) LIMIT 1), '') AS asg,
          IFNULL((SELECT SUBSTR(code, 1, 4) FROM UNNEST(cpc) ORDER BY first DESC LIMIT 1), '') AS cpc4,
          LOWER(CONCAT(
            IFNULL((SELECT text FROM UNNEST(title_localized) WHERE language = 'en' LIMIT 1), ''), ' ',
            IFNULL((SELECT text FROM UNNEST(abstract_localized) WHERE language = 'en' LIMIT 1), ''))) AS txt
   FROM {TABLE}
-  WHERE country_code = 'US' AND filing_date BETWEEN {Y0}0101 AND {Y1}1231
+  WHERE country_code = 'US' AND {date_col} BETWEEN {Y0}0101 AND {Y1}1231
 ),
 docs1 AS (
   SELECT application_number, yr, asg, cpc4, txt FROM docs
@@ -107,7 +113,10 @@ def main() -> None:
 
     creds = service_account.Credentials.from_service_account_info(json.loads(key))
     client = bigquery.Client(project=project, credentials=creds)
-    sql = build_sql()
+    basis = env("BQ_DATE_BASIS", "publication")
+    out = OUT if basis == "filing" else OUT.with_name("bigram_counts_pub.csv.gz")
+    sql = build_sql(basis)
+    log(f"bigrams: date basis = {basis}; output {out.name}")
     est = client.query(sql, job_config=bigquery.QueryJobConfig(dry_run=True, use_query_cache=False))
     gb = est.total_bytes_processed / 1e9
     log(f"bigrams: dry run — {gb:.1f} GB would be scanned")
@@ -119,16 +128,16 @@ def main() -> None:
     job = client.query(sql)
     it = job.result(page_size=100_000)
     log(f"bigrams: query done; billed {job.total_bytes_billed/1e9:.1f} GB; slot {job.slot_millis/6e4:.1f} min; downloading")
-    OUT.parent.mkdir(parents=True, exist_ok=True)
+    out.parent.mkdir(parents=True, exist_ok=True)
     n = 0
-    with gzip.open(OUT, "wt", newline="", encoding="utf-8") as f:
+    with gzip.open(out, "wt", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
         w.writerow(["bigram", "year", "count", "n_assignees", "n_cpc"])
         for r in it:
             w.writerow([r["bigram"], int(r["yr"]), int(r["n"]), int(r["n_asg"]), int(r["n_cpc"])]); n += 1
             if n % 1_000_000 == 0:
                 log(f"  {n:,} rows")
-    log(f"bigrams: wrote {OUT.name} with {n:,} rows ({OUT.stat().st_size/1e6:.1f} MB)")
+    log(f"bigrams: wrote {out.name} with {n:,} rows ({out.stat().st_size/1e6:.1f} MB)")
 
 
 if __name__ == "__main__":
