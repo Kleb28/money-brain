@@ -153,17 +153,27 @@ def main() -> None:
     dates = sorted(m["date"].unique())
     grid = {"target_jupiter_20": dates[::4], "target_jupiter_60": dates[::12]}
 
-    # neutralizer (optional)
+    # neutralizer (optional): stream the 7 GB file batch by batch, keep US tickers on the grid dates only
     neut = None
     try:
-        nschema = pq.read_schema(ddir / nfn).names
-        ncols = [c for c in nschema if c not in (id_col, "composite_figi", "date")]
-        neut_tbl = pq.read_table(ddir / nfn, filters=[("date", "in", [pd.Timestamp(d) for d in set(grid["target_jupiter_20"]) | set(grid["target_jupiter_60"])])])
-        neut = neut_tbl.to_pandas()
-        if "date" not in neut.columns:
-            neut = neut.reset_index()
+        pf = pq.ParquetFile(ddir / nfn)
+        nschema = pf.schema_arrow
+        ncols = [c for c in nschema.names if c not in (id_col, "composite_figi", "date", "data_type")]
+        want_dates = {pd.Timestamp(d).strftime("%Y-%m-%d") for d in set(grid["target_jupiter_20"]) | set(grid["target_jupiter_60"])}
+        parts = []
+        for batch in pf.iter_batches(batch_size=250_000):
+            b = batch.to_pandas()
+            if "date" not in b.columns:
+                b = b.reset_index()
+            dstr = pd.to_datetime(b["date"]).dt.strftime("%Y-%m-%d")
+            keep = dstr.isin(want_dates) & b[id_col].astype(str).str.endswith(" US")
+            if keep.any():
+                sub = b.loc[keep, [id_col, "date"] + ncols].copy()
+                sub[ncols] = sub[ncols].astype("float32")
+                parts.append(sub)
+        neut = pd.concat(parts, ignore_index=True)
         neut["date"] = pd.to_datetime(neut["date"])
-        print(f"neutralizer: {len(neut)} rows, {len(ncols)} columns", flush=True)
+        print(f"neutralizer: {len(neut)} US rows on grid dates, {len(ncols)} columns", flush=True)
     except Exception as e:  # noqa: BLE001
         print(f"neutralizer not usable: {e!r}"[:300], flush=True)
 
