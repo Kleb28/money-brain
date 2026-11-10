@@ -96,3 +96,9 @@
 - 통과 기준: E2 − C2 (2y) t ≥ 2.5 이고 E2 − C1 > 0. E1은 보고만(규모 효과와 분리가 어려움). 검정 2변형 × 보유 3 = 6회
 - 예상: E1 ≈ C2(incumbent 효과는 규모), E2 > C2이면 "capability 연결"을 카드의 수혜주 선정 규칙에 arithmetic 입력으로 추가하고 paper portfolio 다음 코호트에 적용. 미달이면 arithmetic 회사 연결은 완전히 닫음
 - 한계: 상장 출원인은 미국 상장(ADR 포함)으로 한정 → 한·중·일 상장사는 빠짐; harmonized 이름의 자회사 분산; survivorship bias는 Sim B와 동일
+
+## Sim F 결과 기록 (2026-11-11, train 구간 2009-07 ~ 2018-12)
+- 매칭: Numerai US 티커 날짜당 중앙값 2,239개 중 우리 10-K feature가 있는 종목 909개(41%)
+- 판정 지표(60일 Jupiter target, neutralizer 300열에 중립화): F1 −0.0014 (t −0.25), F2 +0.0071 (t +1.07, 양의 날짜 비율 0.68, n 37), F3 +0.0040 (t +0.69). raw도 같은 방향(F2 +0.0079, t 1.47). 20일 target은 셋 다 0 근처
+- 판정: 통과 기준(평균 ≥ 0.005 이고 t ≥ 2 이고 양의 비율 ≥ 0.6)을 어느 feature도 충족하지 못함 — F2는 평균·비율은 넘고 t만 미달. 사전 등록대로 validation(2019~)은 열지 않고, 현재 feature로는 unstaked 제출도 하지 않음. "소형주 buzzword 과다 → 저조"는 방향이 재현됐으나 이 feature(추적 bigram 부분집합, 매칭률 41%)로는 노이즈를 못 이김. 전체 10-K 본문으로 다시 만든 feature는 별도 사전 등록 대상이며, 그때 validation 구간을 봉인된 검정으로 쓸 수 있음
+- Sim E 준비: 출원인 쿼리 dry run 239.8 GB(publication 기준, 7,671 bigram) — 12월 2일 한도 갱신 후 실행
