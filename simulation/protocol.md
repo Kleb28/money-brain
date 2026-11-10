@@ -83,3 +83,16 @@
 - 분할: train(~2018)에서 먼저 판정. 통과 기준: F1 또는 F2의 중립화 corr(60일 target) 평균 ≥ +0.005 이고 t ≥ 2 이고 양의 날짜 비율 ≥ 0.6. 통과 시에만 validation(2019~)을 한 번 열어 재현 여부를 기록. 미달이면 Numerai 경로는 "우리 텍스트 feature로는 edge 없음"으로 닫고 unstaked 제출도 하지 않음
 - 통과 후 경로: unstaked 제출 → 라이브 라운드에서 paper trading → stake 판단은 별도
 - 한계: 우리 10-K feature는 추적 bigram(5,382 bigram-연도 + 대조군)에 한정된 부분 집합이라 실제 제출 feature는 전체 10-K로 다시 만들어야 함; Numerai universe는 유동성 상위 종목이라 복기에서 효과가 있던 소형 구간과 일부만 겹침
+
+## 타이밍 결함 기록 (2026-11-11)
+- 모든 특허 count(bigram_counts, uspto_abs 시계열)는 filing 연도 기준임. 미국 출원은 최초 우선일로부터 18개월 뒤 공개되므로 T년 filing의 상당수는 T+1년 하반기~T+2년에야 보임. 따라서 "T년까지의 특허 count로 신호"는 실제 운용에서 약 1-1.5년 늦게 알게 되고, Sim A·OOS의 lead(선행 기간)는 그만큼 과대, Sim B의 7월 1일(T+1) 진입은 약 6-12개월 이름. Sim B·B2의 결과가 null이어서 결론은 바뀌지 않으나, 이후 모든 시뮬레이션과 12월 2일 재집계는 publication 연도(출원당 최초 publication_date) 기준으로 함. 운용 중인 detector는 "latest complete year = 전년 대비 denominator 90% 이상인 마지막 해"(2023) 규칙으로 불완전 연도를 피하고 있어 자체 모순은 없으나, publication 기준으로 바꾸면 2024년 데이터를 지금 쓸 수 있음
+
+## Sim E — capability 연결: 특허 출원인 basket (2026-11-11 사전 등록, 12월 2일 BigQuery 무료 한도 갱신 후 실행)
+가설: 테마를 10-K에 "언급한" 회사가 아니라 그 테마로 특허를 "낸" 회사가 수혜를 봄. 근거: 복기에서 사후 전환 테마의 언급 basket도 SPY를 못 이김; T1 bigram 언급 수의 IC가 대형 +/소형 −로 갈림(유의하지 않음).
+- 사건: Sim B와 같은 사건(사전 등록 rule T1·대조군 T1, 2008-2023) — 단 publication 연도 count로 다시 뽑은 사건을 1차로 쓰고, filing 연도 사건으로도 같은 표를 보고함(비교용)
+- 데이터(BigQuery 1회, 약 240 GB): 사건 bigram별·publication 연도 T−2…T별 harmonized 출원인 이름과 건수; 출원인별 그 해 미국 출원 총건수. 출원인→티커 매칭은 SEC company_tickers.json + scripts/dealflow.norm() + 상위 200개 출원인 수동 alias 표(IBM·Alphabet 등). 매칭률 보고
+- Basket (사건당): E1 = bigram 출원 건수 상위 10개 상장 출원인(incumbent); E2 = 특화도(bigram 출원 ÷ 그 출원인 총 출원, T−2…T 합) 상위 10개, 단 bigram 출원 ≥ 3건(pure play). 동일 비중, 진입 T+1년 7월 1일, 보유 1/2/3년, 조정 종가·$1 하한·+500% 상한·cluster SE — Sim B와 동일
+- 대조군: C1 = 같은 해 미국 출원 ≥ 3건인 상장 출원인 전체에서 같은 수를 무작위로 뽑은 basket(100회 평균); C2 = 총 출원 건수 십분위를 맞춘 무작위 basket(규모 효과 제거 — 이것이 주 대조군). 같은 사건의 Sim B 언급 basket도 나란히 보고
+- 통과 기준: E2 − C2 (2y) t ≥ 2.5 이고 E2 − C1 > 0. E1은 보고만(규모 효과와 분리가 어려움). 검정 2변형 × 보유 3 = 6회
+- 예상: E1 ≈ C2(incumbent 효과는 규모), E2 > C2이면 "capability 연결"을 카드의 수혜주 선정 규칙에 arithmetic 입력으로 추가하고 paper portfolio 다음 코호트에 적용. 미달이면 arithmetic 회사 연결은 완전히 닫음
+- 한계: 상장 출원인은 미국 상장(ADR 포함)으로 한정 → 한·중·일 상장사는 빠짐; harmonized 이름의 자회사 분산; survivorship bias는 Sim B와 동일
