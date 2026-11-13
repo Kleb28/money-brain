@@ -7,6 +7,10 @@ on:
         description: "small / medium / all"
         required: false
         default: "medium"
+      extra:
+        description: "1 = also train base + money-brain features (Sim G)"
+        required: false
+        default: "0"
   schedule:
     - cron: "0 20 * * 6"   # Saturday 20:00 UTC, after the weekend round opens (18:00 UTC)
 
@@ -22,6 +26,7 @@ jobs:
       NUMERAI_SECRET_KEY: ${{ secrets.NUMERAI_SECRET_KEY }}
       NUMERAI_MODEL_NAME: ${{ vars.NUMERAI_MODEL_NAME }}
       NUMERAI_FEATURE_SET: ${{ github.event.inputs.feature_set || 'medium' }}
+      NUMERAI_EXTRA: ${{ github.event.inputs.extra || '0' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5

@@ -102,3 +102,9 @@
 - 판정 지표(60일 Jupiter target, neutralizer 300열에 중립화): F1 −0.0014 (t −0.25), F2 +0.0071 (t +1.07, 양의 날짜 비율 0.68, n 37), F3 +0.0040 (t +0.69). raw도 같은 방향(F2 +0.0079, t 1.47). 20일 target은 셋 다 0 근처
 - 판정: 통과 기준(평균 ≥ 0.005 이고 t ≥ 2 이고 양의 비율 ≥ 0.6)을 어느 feature도 충족하지 못함 — F2는 평균·비율은 넘고 t만 미달. 사전 등록대로 validation(2019~)은 열지 않고, 현재 feature로는 unstaked 제출도 하지 않음. "소형주 buzzword 과다 → 저조"는 방향이 재현됐으나 이 feature(추적 bigram 부분집합, 매칭률 41%)로는 노이즈를 못 이김. 전체 10-K 본문으로 다시 만든 feature는 별도 사전 등록 대상이며, 그때 validation 구간을 봉인된 검정으로 쓸 수 있음
 - Sim E 준비: 출원인 쿼리 dry run 239.8 GB(publication 기준, 7,671 bigram) — 12월 2일 한도 갱신 후 실행
+
+## Sim G — Numerai Unity base 모델에 money-brain feature를 더했을 때의 증분 (2026-11-13 사전 등록)
+배경: Numerai Unity(2026-10-15)가 종목 id를 공개하고 "자기 feature를 join하라"고 함. 우리 데이터의 가치를 재는 가장 깨끗한 자는 "같은 모델·같은 target에서 feature 열만 추가했을 때 validation NCORR가 오르는가"임.
+- 모델: numerai/train_baseline.py의 LightGBM(Numerai 예제 recipe, medium feature set, 4 era마다 하나). A = Unity feature만, B = A + numerai/extra_features.csv(mb_n_any·mb_n_t1·mb_n_t2·mb_n_ctl; 미국 티커·filing 연도 기준, 미매칭은 NaN). 같은 행으로 학습·평가
+- 지표: validation era별 NCORR(예측을 Numerai neutralizer에 중립화한 뒤 numerai_corr), target은 `target`과 jupiter_20/60. 판정은 B−A의 era별 paired 차이: 평균 > 0 이고 t ≥ 2 (n ≈ 100 era). 미달이면 "현재 feature는 Unity 위에서 증분 없음"으로 기록하고, 전체 10-K 본문 feature(Lazy Prices류·신흥기술 어휘·verbosity)를 만든 뒤 같은 틀로 재검정
+- 알려진 한계: extra feature 커버리지가 미국 행의 ~40%, 전체 행의 ~20%라 증분이 있어도 작게 나옴; 2024년 이후 filing은 feature 없음(sim_filers 범위)

@@ -31,6 +31,8 @@ FEATURE_SET = os.environ.get("NUMERAI_FEATURE_SET", "medium")
 ERA_STEP = int(os.environ.get("NUMERAI_ERA_STEP", "4"))      # every 4th era: 20-day targets do not overlap
 PARAMS = dict(n_estimators=2000, learning_rate=0.01, max_depth=5, num_leaves=2 ** 5 - 1, colsample_bytree=0.1, verbose=-1)
 NEUTRALIZE_PROP = 1.0
+EXTRA = os.environ.get("NUMERAI_EXTRA", "0") == "1"      # Sim G: also train base + money-brain features (numerai/extra_features.csv)
+EXTRA_FILE = ROOT / "numerai" / "extra_features.csv"
 
 
 def log(msg: str) -> None:
@@ -64,6 +66,21 @@ def neutralize(df: pd.DataFrame, pred_col: str, feats: list[str], prop: float = 
         beta, *_ = np.linalg.lstsq(X, p, rcond=None)
         out.append(pd.Series(p - prop * X @ beta, index=g.index))
     return pd.concat(out).reindex(df.index)
+
+
+def join_extra(df: pd.DataFrame, era_col: str) -> tuple[pd.DataFrame, list[str]]:
+    """Join money-brain features by (US ticker, filing year): date in [1 Jul y1, 30 Jun y1+1] -> y1. Non-US / unmatched -> NaN."""
+    ex = pd.read_csv(EXTRA_FILE)
+    xcols = [c for c in ex.columns if c.startswith("mb_")]
+    tk = df["numerai_ticker"].astype(str)
+    df["_tk"] = np.where(tk.str.endswith(" US"), tk.str.replace(r"\s+US$", "", regex=True).str.replace("/", "-").str.replace(".", "-"), None)
+    d = pd.to_datetime(df[era_col])
+    df["_y1"] = np.where(d.dt.month >= 7, d.dt.year, d.dt.year - 1)
+    m = df.merge(ex.rename(columns={"ticker": "_tk", "y1": "_y1"}), on=["_tk", "_y1"], how="left")
+    m.index = df.index
+    cov = m[xcols[0]].notna().mean()
+    log(f"extra features joined: {len(xcols)} columns, coverage {cov:.1%} of rows ({m.loc[tk.str.endswith(' US'), xcols[0]].notna().mean():.1%} of US rows)")
+    return m.drop(columns=["_tk", "_y1"]), xcols
 
 
 def era_stats(per_era: pd.Series) -> dict:
@@ -148,6 +165,13 @@ def main() -> None:
     model.fit(train[feats].astype(np.float32), train[target], categorical_feature=[feats.index(f) for f in str_feats] or "auto")
     log(f"trained in {(time.time()-t0)/60:.1f} min")
     n_train_used = train["era"].nunique()
+    model_x, xcols = None, []
+    if EXTRA and EXTRA_FILE.exists():
+        train, xcols = join_extra(train, era_col)
+        model_x = lgb.LGBMRegressor(**PARAMS)
+        t0 = time.time()
+        model_x.fit(train[feats + xcols].astype(np.float32), train[target], categorical_feature=[feats.index(f) for f in str_feats] or "auto")
+        log(f"trained base+extra ({len(xcols)} extra) in {(time.time()-t0)/60:.1f} min")
     del train
 
     val, n_val_eras, val_uniques = load("validation.parquet", ERA_STEP)
@@ -155,6 +179,9 @@ def main() -> None:
     val_eras = sorted(val["era"].unique())
     val["pred"] = model.predict(val[feats].astype(np.float32))
     val["pred_neut"] = neutralize(val, "pred", feats, NEUTRALIZE_PROP)
+    if model_x is not None:
+        val, _ = join_extra(val, era_col)
+        val["pred_x"] = model_x.predict(val[feats + xcols].astype(np.float32))
     log(f"validation: {len(val):,} rows, {val['era'].nunique()} eras")
 
     def per_era_corr(frame: pd.DataFrame, pred_col: str, tgt: str) -> pd.Series:
@@ -181,16 +208,18 @@ def main() -> None:
                 sub = b.loc[keep, ["numerai_ticker", era_col] + ncols].copy(); sub[ncols] = sub[ncols].astype("float32"); parts.append(sub)
         neut = pd.concat(parts, ignore_index=True)
         log(f"neutralizer: {len(neut):,} rows on our dates, {len(ncols)} columns")
-        v = val[["numerai_ticker", era_col, "era", "pred"]].merge(neut, on=["numerai_ticker", era_col], how="inner")
-        out = []
-        for _, g in v.groupby("era", sort=False):
-            r = (g["pred"].rank().to_numpy() - 0.5) / len(g); gz = norm.ppf(r)
-            M = np.nan_to_num(g[ncols].to_numpy(float)); M = M - M.mean(axis=0)
-            beta, *_ = np.linalg.lstsq(M, gz - gz.mean(), rcond=None)
-            out.append(pd.Series(gz - gz.mean() - M @ beta, index=g.index))
-        v["pred_ncorr"] = pd.concat(out)
-        val = val.merge(v[["numerai_ticker", era_col, "pred_ncorr"]], on=["numerai_ticker", era_col], how="left", suffixes=("_drop", ""))
-        val = val.drop(columns=[c for c in val.columns if c.endswith("_drop")])
+        pcols = ["pred"] + (["pred_x"] if model_x is not None else [])
+        v = val[["numerai_ticker", era_col, "era"] + pcols].merge(neut, on=["numerai_ticker", era_col], how="inner")
+        for pc in pcols:
+            out = []
+            for _, g in v.groupby("era", sort=False):
+                r = (g[pc].rank().to_numpy() - 0.5) / len(g); gz = norm.ppf(r)
+                M = np.nan_to_num(g[ncols].to_numpy(float)); M = M - M.mean(axis=0)
+                beta, *_ = np.linalg.lstsq(M, gz - gz.mean(), rcond=None)
+                out.append(pd.Series(gz - gz.mean() - M @ beta, index=g.index))
+            v[pc + "_ncorr"] = pd.concat(out)
+        keep = ["numerai_ticker", era_col] + [pc + "_ncorr" for pc in pcols]
+        val = val.drop(columns=["pred_ncorr"]).merge(v[keep], on=["numerai_ticker", era_col], how="left")
         del neut, v
     except Exception as e:  # noqa: BLE001
         log(f"NCORR not computed: {e!r}"[:300])
@@ -201,6 +230,15 @@ def main() -> None:
         rows_tbl.append(f"| ours, feature-neutralized ({NEUTRALIZE_PROP:.0%}) | {tgt} | {fmt(era_stats(per_era_corr(val, 'pred_neut', tgt)))} | FNC-style |")
         if val["pred_ncorr"].notna().any():
             rows_tbl.append(f"| ours, NCORR (Numerai neutralizer) | {tgt} | {fmt(era_stats(per_era_corr(val.dropna(subset=['pred_ncorr']), 'pred_ncorr', tgt)))} | payout metric |")
+    if model_x is not None:
+        for tgt in eval_targets:
+            rows_tbl.append(f"| base + money-brain features, raw | {tgt} | {fmt(era_stats(per_era_corr(val, 'pred_x', tgt)))} | Sim G |")
+            if "pred_x_ncorr" in val.columns and val["pred_x_ncorr"].notna().any():
+                vv = val.dropna(subset=["pred_ncorr", "pred_x_ncorr"])
+                a_, b_ = per_era_corr(vv, "pred_x_ncorr", tgt), per_era_corr(vv, "pred_ncorr", tgt)
+                rows_tbl.append(f"| base + money-brain features, NCORR | {tgt} | {fmt(era_stats(a_))} | Sim G |")
+                d_ = (a_ - b_).dropna()
+                rows_tbl.append(f"| Sim G paired difference (extra − base), NCORR | {tgt} | {fmt(era_stats(d_))} | pass bar: mean > 0 and t ≥ 2 |")
     per_era = per_era_corr(val, "pred", target)
 
     # benchmark models on the same eras (join on ticker + date)
