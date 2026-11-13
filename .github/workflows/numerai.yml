@@ -1,0 +1,41 @@
+name: numerai-baseline
+
+on:
+  workflow_dispatch:
+    inputs:
+      feature_set:
+        description: "small / medium / all"
+        required: false
+        default: "medium"
+  schedule:
+    - cron: "0 20 * * 6"   # Saturday 20:00 UTC, after the weekend round opens (18:00 UTC)
+
+permissions:
+  contents: write
+
+jobs:
+  baseline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    env:
+      NUMERAI_PUBLIC_ID: ${{ secrets.NUMERAI_PUBLIC_ID }}
+      NUMERAI_SECRET_KEY: ${{ secrets.NUMERAI_SECRET_KEY }}
+      NUMERAI_MODEL_NAME: ${{ vars.NUMERAI_MODEL_NAME }}
+      NUMERAI_FEATURE_SET: ${{ github.event.inputs.feature_set || 'medium' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install numerapi pandas pyarrow numpy scipy lightgbm
+      - run: df -h / | tail -1; free -g | head -2
+      - run: python -u -m numerai.train_baseline
+      - name: Commit
+        run: |
+          git config user.name "money-brain-bot"
+          git config user.email "money-brain-bot@users.noreply.github.com"
+          git add outputs/numerai_baseline.md
+          if git diff --cached --quiet; then echo "nothing to commit"; else
+            git commit -m "outputs: Numerai baseline diagnostics $(date -u +%F)"
+            for i in 1 2 3 4 5; do git pull --rebase origin main && git push origin HEAD:main && break; sleep 15; done
+          fi
