@@ -294,11 +294,10 @@ def main() -> None:
             log("NUMERAI_MODEL_NAME not set and the account has several model slots; set the repository variable"); return
     if model_name not in models:
         log(f"model '{model_name}' not found in account; have {sorted(models)}"); return
-    live = encode(pq.read_table(DATA / "live.parquet", columns=feats).to_pandas())
+    live = encode(pq.read_table(DATA / "live.parquet", columns=["numerai_ticker"] + feats).to_pandas())
     live["prediction"] = model.predict(live[feats].astype(np.float32))
     live["prediction"] = live["prediction"].rank(pct=True)
-    sub = live[["prediction"]].reset_index()
-    sub.columns = ["id", "prediction"]
+    sub = live[["numerai_ticker", "prediction"]]   # v6 submissions are keyed by a stock identifier
     path = DATA / "live_predictions.csv"; sub.to_csv(path, index=False)
     try:
         napi.upload_predictions(str(path), model_id=models[model_name])
