@@ -123,18 +123,19 @@ def main() -> None:
     log(f"train: {len(train):,} rows, {train['era'].nunique()} eras (every {ERA_STEP}th of {n_train_eras})")
 
     # string-valued features (e.g. feature_country) -> integer codes with one vocabulary across train/validation/live
-    str_feats = [f for f in feats if train[f].dtype == object]
+    str_feats = [f for f in feats if not pd.api.types.is_numeric_dtype(train[f])]
+    log(f"non-numeric feature dtypes: {[(f, str(train[f].dtype)) for f in str_feats][:5]}")
     vocab: dict[str, dict] = {}
     for f in str_feats:
         vals = set()
         for path in ("train.parquet", "validation.parquet", "live.parquet"):
-            vals |= set(pq.read_table(DATA / path, columns=[f]).column(0).to_pylist())
-        vocab[f] = {v: i for i, v in enumerate(sorted(x for x in vals if x is not None))}
+            vals |= set(str(v) for v in pq.read_table(DATA / path, columns=[f]).column(0).to_pylist() if v is not None)
+        vocab[f] = {v: i for i, v in enumerate(sorted(vals))}
     log(f"string features encoded as categorical codes: {str_feats}")
 
     def encode(df: pd.DataFrame) -> pd.DataFrame:
         for f, m in vocab.items():
-            df[f] = df[f].map(m).fillna(-1).astype(np.int32)
+            df[f] = df[f].astype(str).map(m).fillna(-1).astype(np.int32)
         return df
     train = encode(train)
 
