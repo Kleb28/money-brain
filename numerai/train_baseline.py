@@ -38,10 +38,12 @@ def log(msg: str) -> None:
 
 
 def pick_version(napi) -> str:
-    vers = sorted({m.group(1) for f in napi.list_datasets() if (m := re.match(r"^(v5\.\d+)/train\.parquet$", f))},
+    names = napi.list_datasets()
+    log(f"{len(names)} dataset files; train files: {[n for n in names if 'train' in n][:12]}")
+    vers = sorted({m.group(1) for f in names if (m := re.match(r"^(v\d+\.\d+)/train(_int8)?\.parquet$", f))},
                   key=lambda v: float(v[1:]))
     if not vers:
-        raise SystemExit("no v5.x dataset found")
+        raise SystemExit("no vX.Y/train.parquet dataset found")
     return vers[-1]
 
 
