@@ -279,19 +279,32 @@ def main() -> None:
     print("\n".join(lines))
 
     # live prediction + submission
-    if a.no_submit or not (pub and sec and model_name):
+    if a.no_submit or not (pub and sec):
         log("submission skipped (no keys / --no-submit)"); return
+    try:
+        models = napi.get_models()   # {name: id}
+    except Exception as e:  # noqa: BLE001
+        log(f"could not list models with the given keys: {e!r}"[:300]); return
+    log(f"models in account: {sorted(models)}")
+    if not model_name:
+        if len(models) == 1:
+            model_name = next(iter(models))
+            log(f"NUMERAI_MODEL_NAME not set; using the only model slot '{model_name}'")
+        else:
+            log("NUMERAI_MODEL_NAME not set and the account has several model slots; set the repository variable"); return
+    if model_name not in models:
+        log(f"model '{model_name}' not found in account; have {sorted(models)}"); return
     live = encode(pq.read_table(DATA / "live.parquet", columns=feats).to_pandas())
     live["prediction"] = model.predict(live[feats].astype(np.float32))
     live["prediction"] = live["prediction"].rank(pct=True)
     sub = live[["prediction"]].reset_index()
     sub.columns = ["id", "prediction"]
     path = DATA / "live_predictions.csv"; sub.to_csv(path, index=False)
-    models = napi.get_models()
-    if model_name not in models:
-        raise SystemExit(f"model '{model_name}' not found in account; have {list(models)}")
-    napi.upload_predictions(str(path), model_id=models[model_name])
-    log(f"submitted {len(sub):,} live predictions for model {model_name}")
+    try:
+        napi.upload_predictions(str(path), model_id=models[model_name])
+        log(f"submitted {len(sub):,} live predictions for model '{model_name}' (round {napi.get_current_round()})")
+    except Exception as e:  # noqa: BLE001
+        log(f"upload failed: {e!r}"[:400])
 
 
 if __name__ == "__main__":
