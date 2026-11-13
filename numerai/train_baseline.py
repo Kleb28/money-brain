@@ -122,15 +122,32 @@ def main() -> None:
     train, n_train_eras, _ = load("train.parquet", ERA_STEP)
     log(f"train: {len(train):,} rows, {train['era'].nunique()} eras (every {ERA_STEP}th of {n_train_eras})")
 
+    # string-valued features (e.g. feature_country) -> integer codes with one vocabulary across train/validation/live
+    str_feats = [f for f in feats if train[f].dtype == object]
+    vocab: dict[str, dict] = {}
+    for f in str_feats:
+        vals = set()
+        for path in ("train.parquet", "validation.parquet", "live.parquet"):
+            vals |= set(pq.read_table(DATA / path, columns=[f]).column(0).to_pylist())
+        vocab[f] = {v: i for i, v in enumerate(sorted(x for x in vals if x is not None))}
+    log(f"string features encoded as categorical codes: {str_feats}")
+
+    def encode(df: pd.DataFrame) -> pd.DataFrame:
+        for f, m in vocab.items():
+            df[f] = df[f].map(m).fillna(-1).astype(np.int32)
+        return df
+    train = encode(train)
+
     import lightgbm as lgb
     model = lgb.LGBMRegressor(**PARAMS)
     t0 = time.time()
-    model.fit(train[feats].astype(np.float32), train[target])
+    model.fit(train[feats].astype(np.float32), train[target], categorical_feature=[feats.index(f) for f in str_feats] or "auto")
     log(f"trained in {(time.time()-t0)/60:.1f} min")
     n_train_used = train["era"].nunique()
     del train
 
     val, n_val_eras, val_uniques = load("validation.parquet", ERA_STEP)
+    val = encode(val)
     val_eras = sorted(val["era"].unique())
     val["pred"] = model.predict(val[feats].astype(np.float32))
     val["pred_neut"] = neutralize(val, "pred", feats, NEUTRALIZE_PROP)
@@ -176,7 +193,7 @@ def main() -> None:
     # live prediction + submission
     if a.no_submit or not (pub and sec and model_name):
         log("submission skipped (no keys / --no-submit)"); return
-    live = pq.read_table(DATA / "live.parquet", columns=feats).to_pandas()
+    live = encode(pq.read_table(DATA / "live.parquet", columns=feats).to_pandas())
     live["prediction"] = model.predict(live[feats].astype(np.float32))
     live["prediction"] = live["prediction"].rank(pct=True)
     sub = live[["prediction"]].reset_index()
