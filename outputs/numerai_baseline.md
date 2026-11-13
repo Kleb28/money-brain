@@ -2,11 +2,21 @@
 
 Train: 209 of 835 eras; validation: 100 of 397 eras (2019-01-04 .. 2026-08-07). Columns: mean per-era numerai_corr | std | sharpe | max drawdown (cum corr) | share of eras > 0 | n eras.
 
-| model | mean | std | sharpe | max dd | pos | n | note |
-|---|---|---|---|---|---|---|---|
-| ours, raw | +0.0275 | 0.0203 | 1.35 | 0.036 | 0.89 | 100 | feature exposure max 0.24, mean 0.065 |
-| ours, feature-neutralized (100%) | +0.0266 | 0.0225 | 1.19 | 0.028 | 0.93 | 100 | FNC-style |
-| benchmark models not loaded: TypeError("unsupported operand type(s) for /: 'str' and 'int'") |
+| model | target | mean | std | sharpe | max dd | pos | n | note |
+|---|---|---|---|---|---|---|---|---|
+| ours, raw | target | +0.0275 | 0.0203 | 1.35 | 0.036 | 0.89 | 100 | feature exposure max 0.24, mean 0.065 |
+| ours, feature-neutralized (100%) | target | +0.0266 | 0.0225 | 1.19 | 0.028 | 0.93 | 100 | FNC-style |
+| ours, NCORR (Numerai neutralizer) | target | +0.0307 | 0.0230 | 1.34 | 0.037 | 0.89 | 100 | payout metric |
+| ours, raw | target_jupiter_20 | +0.0181 | 0.0212 | 0.85 | 0.057 | 0.83 | 100 | feature exposure max 0.24, mean 0.065 |
+| ours, feature-neutralized (100%) | target_jupiter_20 | +0.0180 | 0.0206 | 0.87 | 0.043 | 0.82 | 100 | FNC-style |
+| ours, NCORR (Numerai neutralizer) | target_jupiter_20 | +0.0208 | 0.0234 | 0.89 | 0.058 | 0.83 | 100 | payout metric |
+| ours, raw | target_jupiter_60 | +0.0275 | 0.0203 | 1.35 | 0.036 | 0.89 | 100 | feature exposure max 0.24, mean 0.065 |
+| ours, feature-neutralized (100%) | target_jupiter_60 | +0.0266 | 0.0225 | 1.19 | 0.028 | 0.93 | 100 | FNC-style |
+| ours, NCORR (Numerai neutralizer) | target_jupiter_60 | +0.0307 | 0.0230 | 1.34 | 0.037 | 0.89 | 100 | payout metric |
+| benchmark lgbm_jupiter_60 | target | +0.0359 | 0.0195 | 1.83 | 0.003 | 0.99 | 100 | corr with our preds 0.67 |
+| benchmark lgbm_jupiter_60 | target_jupiter_20 | +0.0250 | 0.0216 | 1.16 | 0.019 | 0.87 | 100 | corr with our preds 0.67 |
+| benchmark lgbm_jupiter_60 | target_jupiter_60 | +0.0359 | 0.0195 | 1.83 | 0.003 | 0.99 | 100 | corr with our preds 0.67 |
+| (same-era check) ours NCORR vs this benchmark raw | target | +0.0307 | 0.0230 | 1.34 | 0.037 | 0.89 | 100 | eras with benchmark coverage |
 
 Per-era corr (raw), by year of era index:
 
