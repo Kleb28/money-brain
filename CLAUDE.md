@@ -1,6 +1,8 @@
 # money-brain — instructions for Claude sessions
 
 ## What this repo is
+Start with HANDOVER.md (current state, running automation, secrets by name, Dec-2 runbook, open items); simulation/protocol.md holds every pre-registration and verdict.
+
 Caleb's personal investment-thesis discovery pipeline. Weekly GitHub Actions collect yearly document counts per technology from PubMed / arXiv / SEC EDGAR / ClinicalTrials.gov / USPTO, a deterministic detector turns them into Tier labels, and thesis cards live in `theses/`. See README.md for the design papers and rules.
 
 ## Hard rules
