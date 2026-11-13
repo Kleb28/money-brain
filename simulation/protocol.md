@@ -108,3 +108,9 @@
 - 모델: numerai/train_baseline.py의 LightGBM(Numerai 예제 recipe, medium feature set, 4 era마다 하나). A = Unity feature만, B = A + numerai/extra_features.csv(mb_n_any·mb_n_t1·mb_n_t2·mb_n_ctl; 미국 티커·filing 연도 기준, 미매칭은 NaN). 같은 행으로 학습·평가
 - 지표: validation era별 NCORR(예측을 Numerai neutralizer에 중립화한 뒤 numerai_corr), target은 `target`과 jupiter_20/60. 판정은 B−A의 era별 paired 차이: 평균 > 0 이고 t ≥ 2 (n ≈ 100 era). 미달이면 "현재 feature는 Unity 위에서 증분 없음"으로 기록하고, 전체 10-K 본문 feature(Lazy Prices류·신흥기술 어휘·verbosity)를 만든 뒤 같은 틀로 재검정
 - 알려진 한계: extra feature 커버리지가 미국 행의 ~40%, 전체 행의 ~20%라 증분이 있어도 작게 나옴; 2024년 이후 filing은 feature 없음(sim_filers 범위)
+
+## Sim G 결과 기록 (2026-11-13, 1차 — 현재 feature 파일 기준)
+- Base(Unity medium 351) validation NCORR jupiter_60 +0.0307 (sharpe 1.34, 양의 era 89%, n 100); Numerai benchmark lgbm_jupiter_60 같은 era raw corr +0.0359 (sharpe 1.83, 99%)
+- Base + money-brain 4 feature: NCORR +0.0277. Paired 차이 −0.0030, SD 0.0067, t ≈ −4.5 (sharpe −0.45 × √100), 개선된 era 36% → 통과 기준(평균 > 0, t ≥ 2) 미달이고 방향이 음임
+- 원인으로 적어 두는 것: feature 커버리지가 train 행의 9.8%(미국 행 23%), validation 행의 18.2%(미국 행 48%)로 기간에 따라 다름 — "우리 추적 목록에 없음"과 "데이터 없음"이 같은 NaN으로 들어가 모델이 결측 패턴을 학습했을 가능성. 다음 버전은 10-K가 있는 모든 미국 행에 값을 주고(없으면 0), 비미국만 NaN으로 둬야 함
+- 판정: 현재 feature는 Unity 위에서 증분 없음(오히려 감소). 전체 10-K 본문 feature를 만든 뒤 같은 틀로 재검정. 표에 t 열을 추가함(이번 결과는 sharpe×√n으로 환산)

@@ -14,6 +14,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import math
 import os
 import re
 import time
@@ -85,12 +86,13 @@ def join_extra(df: pd.DataFrame, era_col: str) -> tuple[pd.DataFrame, list[str]]
 
 def era_stats(per_era: pd.Series) -> dict:
     cum = per_era.cumsum(); dd = (cum.cummax() - cum).max()
-    return {"mean": per_era.mean(), "std": per_era.std(), "sharpe": per_era.mean() / per_era.std() if per_era.std() else float("nan"),
+    sh = per_era.mean() / per_era.std() if per_era.std() else float("nan")
+    return {"mean": per_era.mean(), "std": per_era.std(), "sharpe": sh, "t": sh * math.sqrt(len(per_era)),
             "max_dd": dd, "pos": (per_era > 0).mean(), "n": len(per_era)}
 
 
 def fmt(s: dict) -> str:
-    return f"{s['mean']:+.4f} | {s['std']:.4f} | {s['sharpe']:.2f} | {s['max_dd']:.3f} | {s['pos']:.2f} | {s['n']}"
+    return f"{s['mean']:+.4f} | {s['std']:.4f} | {s['sharpe']:.2f} | {s['t']:+.1f} | {s['max_dd']:.3f} | {s['pos']:.2f} | {s['n']}"
 
 
 def main() -> None:
@@ -266,8 +268,8 @@ def main() -> None:
 
     lines = [f"# Numerai baseline — {ver}, LightGBM on '{FEATURE_SET}' ({len(feats)} features), target {target}, every {ERA_STEP}th era",
              "", f"Train: {n_train_used} of {n_train_eras} eras; validation: {val['era'].nunique()} of {n_val_eras} eras ({val_uniques[0]} .. {val_uniques[-1]}). "
-             "Columns: mean per-era numerai_corr | std | sharpe | max drawdown (cum corr) | share of eras > 0 | n eras.", "",
-             "| model | target | mean | std | sharpe | max dd | pos | n | note |", "|---|---|---|---|---|---|---|---|---|"] + rows_tbl + bench_lines
+             "Columns: mean per-era numerai_corr | std | sharpe (mean/std) | t (sharpe·√n) | max drawdown (cum corr) | share of eras > 0 | n eras.", "",
+             "| model | target | mean | std | sharpe | t | max dd | pos | n | note |", "|---|---|---|---|---|---|---|---|---|---|"] + rows_tbl + bench_lines
     lines += ["", "Per-era corr (raw), by year of era index:", ""]
     yr = (per_era.index.to_series() // 52)
     for k, g in per_era.groupby(yr):
