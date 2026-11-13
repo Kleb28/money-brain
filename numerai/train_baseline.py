@@ -99,25 +99,39 @@ def main() -> None:
     target = "target" if "target" in targets or not targets else targets[0]
     log(f"feature set {FEATURE_SET}: {len(feats)} features; target '{target}'; {len(targets)} target columns in file")
 
-    cols = ["era", "data_type", target] + feats
-    train = pq.read_table(DATA / "train.parquet", columns=cols).to_pandas()
-    train["era"] = train["era"].astype(int)
-    eras = sorted(train["era"].unique())
-    train = train[train["era"].isin(eras[::ERA_STEP])]
-    log(f"train: {len(train):,} rows, {train['era'].nunique()} eras (every {ERA_STEP}th of {len(eras)})")
+    schema = pq.read_schema(DATA / "train.parquet").names
+    non_feat = [c for c in schema if not c.startswith("feature_") and not c.startswith("target")]
+    log(f"non-feature columns: {non_feat[:20]}")
+    era_col = next((c for c in ("era", "date") if c in schema), None)
+    if era_col is None:
+        raise SystemExit(f"no era/date column; columns start {schema[:10]}")
+    extra = [c for c in ("data_type",) if c in schema]
+    cols = [era_col] + extra + [target] + feats
+
+    def load(path: str, step: int) -> pd.DataFrame:
+        df = pq.read_table(DATA / path, columns=cols).to_pandas()
+        if "data_type" in df.columns and path.startswith("validation"):
+            df = df[df["data_type"] == "validation"]
+        df = df.dropna(subset=[target])
+        codes, uniques = pd.factorize(df[era_col], sort=True)   # eras as ordered integers (works for 'era' strings and dates)
+        df["era"] = codes
+        n_eras = len(uniques)
+        df = df[df["era"] % step == 0]
+        return df, n_eras, uniques
+
+    train, n_train_eras, _ = load("train.parquet", ERA_STEP)
+    log(f"train: {len(train):,} rows, {train['era'].nunique()} eras (every {ERA_STEP}th of {n_train_eras})")
 
     import lightgbm as lgb
     model = lgb.LGBMRegressor(**PARAMS)
     t0 = time.time()
     model.fit(train[feats].astype(np.float32), train[target])
     log(f"trained in {(time.time()-t0)/60:.1f} min")
+    n_train_used = train["era"].nunique()
     del train
 
-    val = pq.read_table(DATA / "validation.parquet", columns=cols).to_pandas()
-    val = val[val["data_type"] == "validation"].dropna(subset=[target])
-    val["era"] = val["era"].astype(int)
+    val, n_val_eras, val_uniques = load("validation.parquet", ERA_STEP)
     val_eras = sorted(val["era"].unique())
-    val = val[val["era"].isin(val_eras[::ERA_STEP])]
     val["pred"] = model.predict(val[feats].astype(np.float32))
     val["pred_neut"] = neutralize(val, "pred", feats, NEUTRALIZE_PROP)
     log(f"validation: {len(val):,} rows, {val['era'].nunique()} eras")
@@ -146,7 +160,7 @@ def main() -> None:
         bench_lines.append(f"| benchmark models not loaded: {e!r:.120} |")
 
     lines = [f"# Numerai baseline — {ver}, LightGBM on '{FEATURE_SET}' ({len(feats)} features), target {target}, every {ERA_STEP}th era",
-             "", f"Train eras {train_eras_note(eras, ERA_STEP)}; validation eras {val_eras[0]}–{val_eras[-1]} (n={val['era'].nunique()}). "
+             "", f"Train: {n_train_used} of {n_train_eras} eras; validation: {val['era'].nunique()} of {n_val_eras} eras ({val_uniques[0]} .. {val_uniques[-1]}). "
              "Columns: mean per-era numerai_corr | std | sharpe | max drawdown (cum corr) | share of eras > 0 | n eras.", "",
              "| model | mean | std | sharpe | max dd | pos | n | note |", "|---|---|---|---|---|---|---|---|",
              f"| ours, raw | {fmt(era_stats(per_era))} | feature exposure max {expo.max():.2f}, mean {expo.mean():.3f} |",
@@ -162,21 +176,17 @@ def main() -> None:
     # live prediction + submission
     if a.no_submit or not (pub and sec and model_name):
         log("submission skipped (no keys / --no-submit)"); return
-    live = pq.read_table(DATA / "live.parquet", columns=["era"] + feats).to_pandas()
+    live = pq.read_table(DATA / "live.parquet", columns=feats).to_pandas()
     live["prediction"] = model.predict(live[feats].astype(np.float32))
     live["prediction"] = live["prediction"].rank(pct=True)
-    sub = live[["prediction"]].reset_index().rename(columns={"index": "id"})
+    sub = live[["prediction"]].reset_index()
+    sub.columns = ["id", "prediction"]
     path = DATA / "live_predictions.csv"; sub.to_csv(path, index=False)
     models = napi.get_models()
     if model_name not in models:
         raise SystemExit(f"model '{model_name}' not found in account; have {list(models)}")
     napi.upload_predictions(str(path), model_id=models[model_name])
     log(f"submitted {len(sub):,} live predictions for model {model_name}")
-
-
-def train_eras_note(eras, step):
-    used = eras[::step]
-    return f"{used[0]}–{used[-1]} ({len(used)} of {len(eras)})"
 
 
 if __name__ == "__main__":
