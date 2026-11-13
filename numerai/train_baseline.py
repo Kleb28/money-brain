@@ -105,8 +105,11 @@ def main() -> None:
     era_col = next((c for c in ("era", "date") if c in schema), None)
     if era_col is None:
         raise SystemExit(f"no era/date column; columns start {schema[:10]}")
-    extra = [c for c in ("data_type",) if c in schema]
-    cols = [era_col] + extra + [target] + feats
+    extra = [c for c in ("data_type", "numerai_ticker", "composite_figi") if c in schema]
+    eval_targets = [t for t in (target, "target_jupiter_20", "target_jupiter_60") if t in schema]
+    eval_targets = list(dict.fromkeys(eval_targets))
+    cols = [era_col] + extra + eval_targets + feats
+    log(f"targets in features.json: {targets}")
 
     def load(path: str, step: int) -> pd.DataFrame:
         df = pq.read_table(DATA / path, columns=cols).to_pandas()
@@ -154,35 +157,79 @@ def main() -> None:
     val["pred_neut"] = neutralize(val, "pred", feats, NEUTRALIZE_PROP)
     log(f"validation: {len(val):,} rows, {val['era'].nunique()} eras")
 
-    per_era = val.groupby("era").apply(lambda g: numerai_corr(g["pred"], g[target]))
-    per_era_n = val.groupby("era").apply(lambda g: numerai_corr(g["pred_neut"], g[target]))
-    # feature exposure
+    def per_era_corr(frame: pd.DataFrame, pred_col: str, tgt: str) -> pd.Series:
+        return frame.dropna(subset=[tgt]).groupby("era").apply(lambda g: numerai_corr(g[pred_col], g[tgt]))
+
     expo = pd.Series({f: np.corrcoef(val[f].astype(float), val["pred"])[0, 1] for f in feats}).abs()
-    # benchmark comparison on the same eras
+
+    # NCORR: neutralize predictions to Numerai's neutralizer matrix (streamed; only our validation dates)
+    val["pred_ncorr"] = np.nan
+    try:
+        nfile = "validation_neutralizer.parquet"
+        if not a.no_download:
+            napi.download_dataset(f"{ver}/{nfile}", dest_path=str(DATA / nfile))
+            log(f"downloaded {nfile}: {os.path.getsize(DATA / nfile)/1e6:.0f} MB")
+        pf = pq.ParquetFile(DATA / nfile)
+        ncols = [c for c in pf.schema_arrow.names if c not in ("numerai_ticker", "composite_figi", "date", "data_type", "era")]
+        want = set(pd.to_datetime(val[era_col]).dt.strftime("%Y-%m-%d")) if era_col == "date" else set(val[era_col].astype(str))
+        parts = []
+        for batch in pf.iter_batches(batch_size=250_000):
+            b = batch.to_pandas()
+            key = pd.to_datetime(b[era_col]).dt.strftime("%Y-%m-%d") if era_col == "date" else b[era_col].astype(str)
+            keep = key.isin(want)
+            if keep.any():
+                sub = b.loc[keep, ["numerai_ticker", era_col] + ncols].copy(); sub[ncols] = sub[ncols].astype("float32"); parts.append(sub)
+        neut = pd.concat(parts, ignore_index=True)
+        log(f"neutralizer: {len(neut):,} rows on our dates, {len(ncols)} columns")
+        v = val[["numerai_ticker", era_col, "era", "pred"]].merge(neut, on=["numerai_ticker", era_col], how="inner")
+        out = []
+        for _, g in v.groupby("era", sort=False):
+            r = (g["pred"].rank().to_numpy() - 0.5) / len(g); gz = norm.ppf(r)
+            M = np.nan_to_num(g[ncols].to_numpy(float)); M = M - M.mean(axis=0)
+            beta, *_ = np.linalg.lstsq(M, gz - gz.mean(), rcond=None)
+            out.append(pd.Series(gz - gz.mean() - M @ beta, index=g.index))
+        v["pred_ncorr"] = pd.concat(out)
+        val = val.merge(v[["numerai_ticker", era_col, "pred_ncorr"]], on=["numerai_ticker", era_col], how="left", suffixes=("_drop", ""))
+        val = val.drop(columns=[c for c in val.columns if c.endswith("_drop")])
+        del neut, v
+    except Exception as e:  # noqa: BLE001
+        log(f"NCORR not computed: {e!r}"[:300])
+
+    rows_tbl = []
+    for tgt in eval_targets:
+        rows_tbl.append(f"| ours, raw | {tgt} | {fmt(era_stats(per_era_corr(val, 'pred', tgt)))} | feature exposure max {expo.max():.2f}, mean {expo.mean():.3f} |")
+        rows_tbl.append(f"| ours, feature-neutralized ({NEUTRALIZE_PROP:.0%}) | {tgt} | {fmt(era_stats(per_era_corr(val, 'pred_neut', tgt)))} | FNC-style |")
+        if val["pred_ncorr"].notna().any():
+            rows_tbl.append(f"| ours, NCORR (Numerai neutralizer) | {tgt} | {fmt(era_stats(per_era_corr(val.dropna(subset=['pred_ncorr']), 'pred_ncorr', tgt)))} | payout metric |")
+    per_era = per_era_corr(val, "pred", target)
+
+    # benchmark models on the same eras (join on ticker + date)
     bench_lines = []
     try:
         bm = pq.read_table(DATA / "validation_benchmark_models.parquet").to_pandas()
-        if "id" in bm.columns:
-            bm = bm.set_index("id")
-        bcols = [c for c in bm.columns if c not in ("era", "data_type")]
-        bm = bm.reindex(val.index)
+        if "numerai_ticker" not in bm.columns:
+            bm = bm.reset_index()
+        bcols = [c for c in bm.columns if c not in ("numerai_ticker", "composite_figi", "date", "data_type", "era", "id") and pd.api.types.is_numeric_dtype(bm[c])]
+        log(f"benchmark models: {bcols}")
+        v2 = val[["numerai_ticker", era_col, "era", "pred", "pred_ncorr"] + eval_targets].merge(bm[["numerai_ticker", era_col] + bcols], on=["numerai_ticker", era_col], how="inner")
         for c in bcols[:8]:
-            s = bm[c]
-            if s.notna().sum() < 1000:
+            vv = v2.dropna(subset=[c])
+            if len(vv) < 1000:
                 continue
-            v2 = val.assign(b=s).dropna(subset=["b"])
-            pe = v2.groupby("era").apply(lambda g: numerai_corr(g["b"], g[target]))
-            cwith = float(np.corrcoef(v2["b"], v2["pred"])[0, 1])
-            bench_lines.append(f"| benchmark {c} | {fmt(era_stats(pe))} | corr with our preds {cwith:.2f} |")
+            cwith = float(np.corrcoef(vv[c], vv["pred"])[0, 1])
+            for tgt in eval_targets:
+                bench_lines.append(f"| benchmark {c} | {tgt} | {fmt(era_stats(per_era_corr(vv, c, tgt)))} | corr with our preds {cwith:.2f} |")
+            # benchmark NCORR on the same eras, if neutralized preds exist
+            if val["pred_ncorr"].notna().any():
+                vb = vv.dropna(subset=["pred_ncorr"])
+                bench_lines.append(f"| (same-era check) ours NCORR vs this benchmark raw | {target} | {fmt(era_stats(per_era_corr(vb, 'pred_ncorr', target)))} | eras with benchmark coverage |")
     except Exception as e:  # noqa: BLE001
-        bench_lines.append(f"| benchmark models not loaded: {e!r:.120} |")
+        bench_lines.append(f"| benchmark models not loaded | | {e!r:.120} |")
 
     lines = [f"# Numerai baseline — {ver}, LightGBM on '{FEATURE_SET}' ({len(feats)} features), target {target}, every {ERA_STEP}th era",
              "", f"Train: {n_train_used} of {n_train_eras} eras; validation: {val['era'].nunique()} of {n_val_eras} eras ({val_uniques[0]} .. {val_uniques[-1]}). "
              "Columns: mean per-era numerai_corr | std | sharpe | max drawdown (cum corr) | share of eras > 0 | n eras.", "",
-             "| model | mean | std | sharpe | max dd | pos | n | note |", "|---|---|---|---|---|---|---|---|",
-             f"| ours, raw | {fmt(era_stats(per_era))} | feature exposure max {expo.max():.2f}, mean {expo.mean():.3f} |",
-             f"| ours, feature-neutralized ({NEUTRALIZE_PROP:.0%}) | {fmt(era_stats(per_era_n))} | FNC-style |"] + bench_lines
+             "| model | target | mean | std | sharpe | max dd | pos | n | note |", "|---|---|---|---|---|---|---|---|---|"] + rows_tbl + bench_lines
     lines += ["", "Per-era corr (raw), by year of era index:", ""]
     yr = (per_era.index.to_series() // 52)
     for k, g in per_era.groupby(yr):
