@@ -27,7 +27,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - run: pip install numerapi pandas pyarrow numpy scipy lightgbm
+      - run: pip install numerapi pandas pyarrow numpy scipy scikit-learn lightgbm
       - run: df -h / | tail -1; free -g | head -2
       - run: python -u -m numerai.train_baseline
       - name: Commit
