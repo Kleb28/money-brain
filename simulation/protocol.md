@@ -125,3 +125,9 @@
 - 지표: 기간 수익 평균·SD, 연율화(×13, ×√13), Sharpe, t(평균/(SD/√n)), max drawdown, 양의 기간 비율, 연도별 분해
 - 통과 기준(모델 (1) 기준, 비용 차감 후): LS 연 Sharpe ≥ 0.5 이고 t ≥ 2 → "대회 밖 미국 시장에서 시장중립 수익 정보 있음". 별도로 LO10 − EW 기간 초과수익 평균 > 0 이고 t ≥ 2 → "long-only에서도 남음". 미달은 그대로 기록
 - 한계: yfinance에 상장폐지 종목이 없어 survivorship bias(LS short leg 쪽 수익 과대 가능), 재사용된 ticker가 다른 회사로 잡힐 수 있음, 미국 행만 써서 Numerai 점수(전 세계·neutralizer 중립)와 같지 않음, 4주 보유는 60일 target보다 짧음
+
+## Sim H 결과 기록 (2026-11-14, outputs/numerai_real_backtest.md)
+- 1차 실행은 Yahoo 요청 제한으로 가격 커버리지 28%·SPY 누락 → 무효 처리. 2차: Sim B 가격 캐시 + yfinance, 날짜당 미국 종목 중앙값 2,084개(Numerai 미국 행의 79%), 리밸런스 100회(2019-01 ~ 2026-08)
+- kleb28 recipe(net): LS 연 +3.0%, Sharpe 0.33, t 0.93 → 미달; 상위 10% − EW 기간 +0.24%, t 1.41 → 미달. long-only 상위 10%는 연 +16.4%(Sharpe 0.83)이나 SPY 연 +16.9%(Sharpe 1.06)보다 낮음
+- benchmark lgbm_jupiter_60(net, 참고): LS 연 +5.2%, Sharpe 0.59, t 1.64; 상위 10% − EW +0.28%, t 1.79 → 같은 기준이면 Sharpe는 넘고 t는 미달
+- 판정: Numerai 점수상 유의(corr t 13)인 예측이 미국 실제 가격 4주 보유·비용 차감 후에는 통계적으로 구분되지 않음. 방향은 양(+)이고 2025년이 가장 나쁨. survivorship(상장폐지 누락)·대여비 0은 결과를 좋게 만드는 쪽이라 실제는 이보다 낮을 가능성
