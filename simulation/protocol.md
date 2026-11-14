@@ -114,3 +114,20 @@
 - Base + money-brain 4 feature: NCORR +0.0277. Paired 차이 −0.0030, SD 0.0067, t ≈ −4.5 (sharpe −0.45 × √100), 개선된 era 36% → 통과 기준(평균 > 0, t ≥ 2) 미달이고 방향이 음임
 - 원인으로 적어 두는 것: feature 커버리지가 train 행의 9.8%(미국 행 23%), validation 행의 18.2%(미국 행 48%)로 기간에 따라 다름 — "우리 추적 목록에 없음"과 "데이터 없음"이 같은 NaN으로 들어가 모델이 결측 패턴을 학습했을 가능성. 다음 버전은 10-K가 있는 모든 미국 행에 값을 주고(없으면 0), 비미국만 NaN으로 둬야 함
 - 판정: 현재 feature는 Unity 위에서 증분 없음(오히려 감소). 전체 10-K 본문 feature를 만든 뒤 같은 틀로 재검정. 표에 t 열을 추가함(이번 결과는 sharpe×√n으로 환산)
+
+## Sim H — Numerai 모델 예측을 실제 미국 주가로 매매했다면 (2026-11-14 사전 등록, 실행 전)
+배경: Unity(2026-10-16)부터 예측이 실제 ticker에 붙음. Caleb 질문 "Numerai용 알고리즘이 대회 밖 실제 시장에서 수익 정보가 되는가"에 직접 답하는 측정임. money-brain 데이터는 쓰지 않음.
+- 예측: (1) kleb28과 같은 recipe(numerai/train_baseline.py: LightGBM, medium, train 4 era마다, ~2018-12 학습) (2) Numerai benchmark `lgbm_jupiter_60`(validation_benchmark_models.parquet). validation(2019-01 ~ 최신 target 있는 날짜)은 두 모델 모두 학습에 안 쓴 구간
+- universe: `numerai_ticker`가 " US"로 끝나는 행, Yahoo 기호(`/`·`.` → `-`)로 yfinance 조정 종가(auto_adjust)가 있는 종목만. 진입가 $1 미만 제외, 기간 수익 [−95%, +500%]로 clip
+- 리밸런스: validation 날짜 4개마다 하나(약 4주, 겹침 없음). 날짜 d(금요일 종가 기준 feature) → d 이후 2번째 거래일 종가 진입, 다음 리밸런스의 진입일 종가 청산
+- 포트폴리오(동일 비중): LS = 예측 상위 10% long − 하위 10% short; LO10 = 상위 10% long-only; LO50 = 상위 50종목; 비교 EW = 같은 날 가격 있는 미국 universe 전체 동일 비중, SPY
+- 비용: 한쪽 10 bp × 회전율(비중 변화 절댓값 합/2를 leg별로), 공매도 대여비는 0으로 가정(과대평가 쪽)
+- 지표: 기간 수익 평균·SD, 연율화(×13, ×√13), Sharpe, t(평균/(SD/√n)), max drawdown, 양의 기간 비율, 연도별 분해
+- 통과 기준(모델 (1) 기준, 비용 차감 후): LS 연 Sharpe ≥ 0.5 이고 t ≥ 2 → "대회 밖 미국 시장에서 시장중립 수익 정보 있음". 별도로 LO10 − EW 기간 초과수익 평균 > 0 이고 t ≥ 2 → "long-only에서도 남음". 미달은 그대로 기록
+- 한계: yfinance에 상장폐지 종목이 없어 survivorship bias(LS short leg 쪽 수익 과대 가능), 재사용된 ticker가 다른 회사로 잡힐 수 있음, 미국 행만 써서 Numerai 점수(전 세계·neutralizer 중립)와 같지 않음, 4주 보유는 60일 target보다 짧음
+
+## Sim H 결과 기록 (2026-11-14, outputs/numerai_real_backtest.md)
+- 1차 실행은 Yahoo 요청 제한으로 가격 커버리지 28%·SPY 누락 → 무효 처리. 2차: Sim B 가격 캐시 + yfinance, 날짜당 미국 종목 중앙값 2,084개(Numerai 미국 행의 79%), 리밸런스 100회(2019-01 ~ 2026-08)
+- kleb28 recipe(net): LS 연 +3.0%, Sharpe 0.33, t 0.93 → 미달; 상위 10% − EW 기간 +0.24%, t 1.41 → 미달. long-only 상위 10%는 연 +16.4%(Sharpe 0.83)이나 SPY 연 +16.9%(Sharpe 1.06)보다 낮음
+- benchmark lgbm_jupiter_60(net, 참고): LS 연 +5.2%, Sharpe 0.59, t 1.64; 상위 10% − EW +0.28%, t 1.79 → 같은 기준이면 Sharpe는 넘고 t는 미달
+- 판정: Numerai 점수상 유의(corr t 13)인 예측이 미국 실제 가격 4주 보유·비용 차감 후에는 통계적으로 구분되지 않음. 방향은 양(+)이고 2025년이 가장 나쁨. survivorship(상장폐지 누락)·대여비 0은 결과를 좋게 만드는 쪽이라 실제는 이보다 낮을 가능성
