@@ -36,25 +36,52 @@ def yahoo_symbol(t: str) -> str | None:
     return t[:-3].strip().replace("/", "-").replace(".", "-")
 
 
+def cached_prices(symbols: list[str], start: str) -> pd.DataFrame:
+    """Adjusted closes already collected for Sim B (data/external/sim_prices_*.csv.gz, ticker/date/close)."""
+    import glob
+    from numerai.train_baseline import ROOT
+    want = set(symbols)
+    parts = []
+    for f in sorted(glob.glob(str(ROOT / "data" / "external" / "sim_prices_*.csv.gz"))):
+        d = pd.read_csv(f)
+        d = d[d["ticker"].isin(want) & (d["date"] >= start)]
+        parts.append(d)
+    if not parts:
+        return pd.DataFrame()
+    d = pd.concat(parts).drop_duplicates(["ticker", "date"])
+    px = d.pivot(index="date", columns="ticker", values="close")
+    px.index = pd.to_datetime(px.index)
+    return px.sort_index()
+
+
 def download_prices(symbols: list[str], start: str, end: str) -> pd.DataFrame:
+    """yfinance, slowly (the runner gets rate-limited): chunks of 40, no threads, pause, retry symbols that came back empty."""
     import yfinance as yf
-    frames = []
-    for i in range(0, len(symbols), 100):
-        chunk = symbols[i:i + 100]
-        for attempt in range(3):
+    got: dict[str, pd.Series] = {}
+    todo = list(symbols)
+    for rnd in range(3):
+        missing = []
+        for i in range(0, len(todo), 40):
+            chunk = todo[i:i + 40]
             try:
-                df = yf.download(chunk, start=start, end=end, auto_adjust=True, progress=False, threads=True, group_by="column")
+                df = yf.download(chunk, start=start, end=end, auto_adjust=True, progress=False, threads=False, group_by="column")
                 close = df["Close"] if isinstance(df.columns, pd.MultiIndex) else df[["Close"]].rename(columns={"Close": chunk[0]})
-                frames.append(close)
-                break
             except Exception as e:  # noqa: BLE001
-                log(f"yfinance chunk {i} failed ({attempt}): {e!r}"[:200]); time.sleep(20 * (attempt + 1))
-        if (i // 100) % 5 == 0:
-            log(f"prices {min(i + 100, len(symbols))}/{len(symbols)}")
-    px = pd.concat(frames, axis=1)
-    px = px.loc[:, ~px.columns.duplicated()].sort_index()
+                log(f"yfinance chunk failed: {e!r}"[:200]); close = pd.DataFrame()
+            for t in chunk:
+                ser = close[t].dropna() if t in close.columns else pd.Series(dtype=float)
+                (got.__setitem__(t, ser) if len(ser) else missing.append(t))
+            time.sleep(4)
+        log(f"yfinance round {rnd}: {len(got)} found, {len(missing)} empty")
+        if not missing:
+            break
+        todo = missing
+        time.sleep(90)
+    if not got:
+        return pd.DataFrame()
+    px = pd.DataFrame(got)
     px.index = pd.to_datetime(px.index).tz_localize(None)
-    return px
+    return px.sort_index()
 
 
 def stats(r: pd.Series) -> dict:
@@ -140,7 +167,14 @@ def main() -> None:
         f"{val['sym'].nunique()} symbols, median {val.groupby('d').size().median():.0f}/date")
 
     syms = sorted(val["sym"].unique())
-    px = download_prices(syms + ["SPY"], (pd.Timestamp(dates[0]) - pd.Timedelta(days=10)).strftime("%Y-%m-%d"), pd.Timestamp.today().strftime("%Y-%m-%d"))
+    start = (pd.Timestamp(dates[0]) - pd.Timedelta(days=10)).strftime("%Y-%m-%d")
+    cache = cached_prices(syms + ["SPY"], start)
+    have_c = set(cache.columns[cache.notna().any()]) if len(cache) else set()
+    rest = [s for s in syms + ["SPY"] if s not in have_c]
+    log(f"cached Sim B prices for {len(have_c)} symbols; downloading {len(rest)} from yfinance")
+    fresh = download_prices(rest, start, pd.Timestamp.today().strftime("%Y-%m-%d")) if rest else pd.DataFrame()
+    px = pd.concat([cache, fresh], axis=1).sort_index()
+    px = px.loc[:, ~px.columns.duplicated()]
     tdays = px.index
     have = set(px.columns[px.notna().any()])
     log(f"price series found for {len(have & set(syms))}/{len(syms)} symbols")
@@ -200,7 +234,7 @@ def main() -> None:
     ew, spy = pd.Series(common["EW"], idx), pd.Series(common["SPY"], idx)
     lines = [f"# Sim H — Numerai 예측을 실제 미국 주가로 매매 ({ver}, {pd.Timestamp.today():%Y-%m-%d})", "",
              f"리밸런스 {len(idx)}회({idx.min():%Y-%m-%d} .. {idx.max():%Y-%m-%d}, 약 4주 보유), 날짜당 가격 있는 미국 종목 중앙값 "
-             f"{int(np.median(common['n']))}개(Numerai 미국 행 대비 {np.median(common['cover']):.0%}). 비용 한쪽 {COST_BP:.0f} bp × 회전율, 공매도 대여비 0 가정. "
+             f"{int(np.median(common['n']))}개(Numerai 미국 행 대비 {np.median(common['cover']):.0%}; 가격 출처: Sim B 캐시 {len(have_c)}종목 + yfinance {len(fresh.columns)}종목). 비용 한쪽 {COST_BP:.0f} bp × 회전율, 공매도 대여비 0 가정. "
              "열: 기간 평균 | 연율 복리 | 연 변동성 | 연 Sharpe | t | max DD | 양의 비율 | n.", "",
              "| 포트폴리오 | 기간 평균 | 연율 | 연 vol | Sharpe | t | max DD | pos | n |", "|---|---|---|---|---|---|---|---|---|"]
     lines.append(row("SPY", spy)); lines.append(row("미국 universe 동일 비중(EW)", ew))
