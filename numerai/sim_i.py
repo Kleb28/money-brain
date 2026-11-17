@@ -1,4 +1,4 @@
-"""Sim H — does lowering our correlation with the Meta Model raise MMC? (pre-registered in simulation/protocol.md)
+"""Sim I — does lowering our correlation with the Meta Model raise MMC? (pre-registered in simulation/protocol.md)
 
 A  = baseline LightGBM (same recipe as train_baseline.py: medium features, every 4th era, `target`)
 H1 = rank mean of A and LightGBMs on the 2 auxiliary targets least correlated with `target` in train eras
@@ -7,7 +7,7 @@ H3 = A orthogonalized 50% against the Meta Model proxy
 MM proxy = meta_model file of the dataset if one exists, else benchmark lgbm_jupiter_60 (else first benchmark column).
 Per validation era: MMC proxy, NCORR (Numerai neutralizer), raw corr, correlation with the MM proxy.
 Verdict: variant − A paired per era; pass = MMC-proxy mean > 0 and t ≥ 2.4 and NCORR mean diff ≥ −0.003.
-Writes outputs/sim_h.md. Runs on GitHub Actions (numer.ai is not reachable from the sandbox).
+Writes outputs/sim_i.md. Runs on GitHub Actions (numer.ai is not reachable from the sandbox).
 """
 from __future__ import annotations
 
@@ -211,7 +211,7 @@ def main() -> None:
     piv = {k: R.pivot(index="era", columns="variant", values=k) for k in ("ncorr", "corr", "mmc", "corr_mm")}
     n = piv["mmc"]["A"].notna().sum()
 
-    L = [f"# Sim H — lower Meta Model correlation for MMC ({ver}, {FEATURE_SET} {len(feats)} features, target `{target}`, every {ERA_STEP}th era)", "",
+    L = [f"# Sim I — lower Meta Model correlation for MMC ({ver}, {FEATURE_SET} {len(feats)} features, target `{target}`, every {ERA_STEP}th era)", "",
          f"MM proxy: {mm_src}. Validation eras with MM proxy and neutralizer: {n}. Auxiliary targets (H1): {', '.join(aux)} "
          f"(train per-era corr with target {', '.join(f'{cand_corr[a]:.2f}' for a in aux)}). MLP epochs {mlp.n_iter_}.", "",
          "Per-era means. Columns: MMC proxy | NCORR | raw corr | corr with MM proxy | n eras", "",
@@ -230,8 +230,8 @@ def main() -> None:
         L.append(f"| {v} | NCORR | {fm(sn)} | bar ≥ {NCORR_TOL} |")
     L += ["", f"Pass rule (pre-registered): MMC-proxy diff mean > 0 and t ≥ {T_PASS}, and NCORR diff mean ≥ {NCORR_TOL}."]
     OUT.mkdir(exist_ok=True)
-    (OUT / "sim_h.md").write_text("\n".join(L) + "\n", encoding="utf-8")
-    R.to_csv(OUT / "sim_h_eras.csv", index=False, float_format="%.6f")
+    (OUT / "sim_i.md").write_text("\n".join(L) + "\n", encoding="utf-8")
+    R.to_csv(OUT / "sim_i_eras.csv", index=False, float_format="%.6f")
     print("\n".join(L))
 
 

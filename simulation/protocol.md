@@ -115,7 +115,7 @@
 - 원인으로 적어 두는 것: feature 커버리지가 train 행의 9.8%(미국 행 23%), validation 행의 18.2%(미국 행 48%)로 기간에 따라 다름 — "우리 추적 목록에 없음"과 "데이터 없음"이 같은 NaN으로 들어가 모델이 결측 패턴을 학습했을 가능성. 다음 버전은 10-K가 있는 모든 미국 행에 값을 주고(없으면 0), 비미국만 NaN으로 둬야 함
 - 판정: 현재 feature는 Unity 위에서 증분 없음(오히려 감소). 전체 10-K 본문 feature를 만든 뒤 같은 틀로 재검정. 표에 t 열을 추가함(이번 결과는 sharpe×√n으로 환산)
 
-## Sim H — Meta Model과 덜 닮은 예측으로 MMC 올리기 (2026-11-17 사전 등록)
+## Sim I — Meta Model과 덜 닮은 예측으로 MMC 올리기 (2026-11-17 사전 등록)
 배경: 리더보드 상위 valois*·tdd_model* 계열은 corr가 다른 상위 모델보다 높지 않고(최근 약 250 round corr20V2 중앙값 +0.013-0.014 vs top 20 그 외 +0.0175), Meta Model 상관이 낮아서(0.33·0.18 vs 0.51) mmc가 높음(공개 점수 집계; 방법은 공개되지 않음). 우리 baseline은 Numerai 예제 recipe라 MM과 많이 닮았을 것으로 추정(benchmark lgbm_jupiter_60와 예측 상관 0.67).
 - 기준 A: numerai/train_baseline.py와 같은 LightGBM(medium, 4 era마다, `target`)
 - MM proxy: Unity dataset에 meta_model 파일이 있으면 그 열, 없으면 validation_benchmark_models의 lgbm_jupiter_60(없으면 첫 benchmark 열). 어느 쪽을 썼는지 결과에 기록
