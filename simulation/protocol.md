@@ -127,3 +127,12 @@
 - 판정: 변형−A의 era별 paired 차이. 통과 = MMC proxy 차이 평균 > 0 이고 t ≥ 2.4(변형 3개 Bonferroni), 동시에 NCORR 차이 평균 ≥ −0.003. 통과한 변형 중 MMC proxy t가 가장 큰 것을 live 모델 교체 후보로 올리고 교체는 Caleb이 결정
 - 같이 보고(판정에 안 씀): 각 변형의 MM proxy와의 era별 상관 평균(우리 baseline의 MM 상관 포함), raw corr, standalone MLP·보조 target 모델 성적
 - 한계: proxy가 실제 MM이 아닐 수 있음; validation 구간을 Sim G에 이어 다시 씀; live MM 상관(corrWMetamodel)은 kleb28 resolved round가 없어 측정하지 않았음(2026-11-17 API에서 전부 null)
+
+## Sim I 결과 기록 (2026-11-17, outputs/sim_i.md)
+- MM proxy: Unity v6.0 dataset에 쓸 수 있는 meta_model 파일이 없어 benchmark lgbm_jupiter_60을 씀(실제 Meta Model 아님). validation 100 era, 666,606행
+- 우리 baseline(A)의 MM proxy 상관 0.675, NCORR +0.0307, MMC proxy +0.0006(benchmark 대비 독자 기여가 거의 없음)
+- H1 보조 target(target_eleven_4·target_raw_return_20, train 상관 0.16·0.33): MM 상관 0.560, MMC proxy 차이 −0.0002(t −0.8), NCORR 차이 −0.0044(t −3.8) → 미달
+- H2 MLP 50/50: MM 상관 0.574, MMC proxy 차이 −0.0004(t −1.6), NCORR 차이 −0.0070(t −5.1) → 미달
+- H3 MM 50% 중립화: MM 상관 0.423, MMC proxy 차이 +0.0002(t +2.0, 기준 2.4), NCORR 차이 −0.0100(t −14.7) → 미달
+- 참고: MLP 단독 MM 상관 0.217이지만 NCORR +0.0065로 약함; 보조 target 단독 MM 상관 0.271, NCORR +0.0131
+- 판정: 세 변형 모두 통과 기준 미달. MM 상관을 낮추는 것만으로는 MMC proxy가 오르지 않았고 NCORR 손실이 큼. live 모델 교체 없음. valois·tdd처럼 낮은 MM 상관에서 높은 mmc를 내려면 상관이 낮으면서 단독 성능도 있는 신호가 필요하고, 그건 이번 세 방법으로는 얻지 못함
