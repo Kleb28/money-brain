@@ -1,0 +1,33 @@
+name: sim-k
+
+# Sim K (simulation/protocol.md): TSMOM re-test 1972-2002 -> outputs/sim_k.md
+on:
+  workflow_dispatch:
+  push:
+    branches: [claude/project-thread-7pasfq]
+    paths: [simulation/sim_k.py, .github/workflows/sim-k.yml]
+
+permissions:
+  contents: write
+
+jobs:
+  sim-k:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install pandas numpy requests yfinance
+      - run: python -u -W ignore -m simulation.sim_k
+      - name: Commit
+        run: |
+          git config user.name "money-brain-bot"
+          git config user.email "money-brain-bot@users.noreply.github.com"
+          git add outputs/sim_k.md
+          if git diff --cached --quiet; then echo "nothing to commit"; else
+            git commit -m "outputs: Sim K TSMOM re-test $(date -u +%F)"
+            B="${GITHUB_REF_NAME}"
+            for i in 1 2 3 4 5; do git pull --rebase origin "$B" && git push origin HEAD:"$B" && break; sleep 15; done
+          fi

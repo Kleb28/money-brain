@@ -133,3 +133,11 @@
 - J2(1990-01 ~ 2026-09, 441개월): 1/N Sharpe 0.78, MV 0.71, 차이 t −0.99 → 미달. 변동성 역가중(t −2.11)·factor momentum(t −0.33)도 1/N을 못 이김. 2010년 이후 1/N Sharpe 0.43 < 시장 0.87 — 팩터 프리미엄 자체가 표본 밖에서 약해짐(SMB 0.08·HML 0.17)
 - J3(2002-11 ~ 2026-10, 288개월): COMP long-short 연 +0.41%(Sharpe 0.13, t 0.64) → J3a 미달. RIDGE 연 +1.41%(Sharpe 0.40), RIDGE−COMP t 1.11 → J3b 미달. 참고: TSMOM Sharpe 0.47(t 2.28), long-only는 SPY 60/IEF 40(0.77)이 ETF 1/N(0.57)·COMP 상위 1/3(0.47)보다 높음. 신호 단독으로는 TREND 0.41·LOWVOL 0.37·MOM 0.27이 양, REV −0.63·VAL −0.25가 음이라 동일가중 COMP가 서로 상쇄됨
 - 판정: 주 검정 4개 모두 미달. "경제적 근거가 있는 공개 컴포넌트를 모아 조합·최적화"는 세 universe 모두 단순 기준(과거 평균·1/N·buy-and-hold)을 표본 밖에서 유의하게 못 이김 — Welch·Goyal(RFS 2008), DeMiguel·Garlappi·Uppal(RFS 2009)과 같은 방향. paper portfolio 후보 없음. TSMOM·RIDGE의 양의 부호는 사후 관찰이라 이 표본으로 재검정하지 않음(새 사전 등록 + 다른 표본, 예: 1990년 이전 선물 장기 데이터가 필요)
+
+## Sim K — 추세추종(TSMOM)을 Sim J와 겹치지 않는 표본에서 재검정 (2026-11-18 사전 등록, 실행 전)
+배경: Sim J에서 TSMOM이 판정 밖 참고값으로 Sharpe 0.47(t 2.28, 2002-11 ~ 2026-10)이었음. 사후에 고른 것이므로 같은 표본으로는 검정하지 않고, J3 이전 구간 1972-01 ~ 2002-10에서 다른 자산 집합으로 한 번만 검정함. Caleb 요청(2026-11-18). 코드 simulation/sim_k.py, workflow sim-k.yml, 결과 outputs/sim_k.md.
+- 자산(FRED, OECD MEI·Fed 월간; 8개국 US·JP·GB·DE·FR·CA·AU·CH): 주식 = OECD share price index(SPASTT01xxM661N, 배당 제외) 현지 단기금리 초과수익; 국채 10년 = IRLTLT01xxM156N 수익률에서 근사(월 초과수익 = y/12 − D·Δy − 단기/12, D = 10년 par bond modified duration, convexity 무시); 통화 = 달러 대비 외화 7개(EXJPUS·EXUSUK·EXGEUS·EXFRUS·EXCAUS·EXUSAL·EXSZUS), long 외화 초과수익 = Δln(달러/외화) + (외국 단기 − 미국 단기)/12. 단기금리 = IR3TIB01xxM156N, 결측은 IRSTCI01xxM156N, 미국은 TB3MS. 자산은 데이터가 생기는 달부터 들어감
+- 신호: t−12 ~ t−1월 누적 초과수익의 부호(최근 1개월 제외 — FRED 월간 값이 월평균이라 인접 월 수익이 기계적으로 상관되기 때문; Moskowitz·Ooi·Pedersen(JFE 2012) 원 정의와 다른 점). 비중 = 부호 × (10%/σ_i) ÷ N, σ_i = 직전 24개월 초과수익 표준편차 연율화, N = 그 달 쓸 수 있는 자산 수(4개 이상인 달만). t+1월 수익에 적용, 비용 5 bp × turnover
+- 통과 = TSMOM 월수익 평균 > 0 이고 Newey-West t(lag 3) ≥ 2.5
+- 같이 보고(판정에 안 씀): 자산군별(주식·국채·통화) Sharpe, 전반(1972-1986)·후반(1987-2002), 같은 위험 비중으로 늘 long인 포트폴리오 Sharpe(추세추종이 단순 long beta인지 확인), 최근 월 포함 원 정의 결과
+- 한계: 1985-2002 구간은 MOP 2012(1985-2009)·Hurst·Ooi·Pedersen(JPM 2017, 1880-2016)이 이미 본 표본이라 "우리 표본 밖"이지 "문헌 표본 밖"이 아님 — 진짜 표본 밖은 앞으로의 실거래뿐임; 월평균 자료와 수익률 근사(배당·convexity·carry 일부 누락) 때문에 실제 선물 수익과 다름; 원자재는 장기 무료 total return 자료가 없어 다루지 않았음
