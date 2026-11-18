@@ -8,6 +8,7 @@
 ## 2. 지금 돌아가는 것 (GitHub Actions, 리포는 public — 로그도 public)
 - `collect.yml` 매주 월 03:17 UTC — PubMed·arXiv·EDGAR 등 수집 → detector → outputs/tiers.csv·signals.csv·validation_report.md
 - `portfolio.yml` 매주 토 04:00 UTC — paper portfolio 가격 누적 → outputs/portfolio.md (inception 2026-11-06, 24개월, 읽기 2027-05-06·2027-11-06·2028-05-06; 규칙 portfolio/rules.md, 종목 변경 금지)
+- `portfolio-trend.yml` 매주 토 04:30 UTC — 추세추종 혼합 paper portfolio(SPY 60/IEF 40 대 그 80% + TSMOM sleeve 20%) → outputs/portfolio_trend.md (inception 2026-11-30, 24개월, 읽기 2027-11-30·2028-11-30; 규칙 portfolio/trend_rules.md, 변경 금지; 근거 protocol.md Sim J·K)
 - `bq.yml` 매월 2일 — Google Patents BigQuery 키워드 count(uspto_abs). 1회 약 236 GB, 무료 한도 1 TB/월
 - `numerai.yml` 매주 토 20:00 UTC — Unity v6.0 다운로드 → LightGBM(medium 351 feature, 4 era마다) → validation 진단 → live 예측 제출(모델 kleb28) → outputs/numerai_baseline.md
 - 수동 실행만: `bq-bigrams`(전체 bigram count, ~254 GB), `bq-assignees`(Sim E 출원인, ~240 GB), `numerai-test`(Sim F), `dealflow`, `filers`, `prices`, `companyfacts`, `theme-market`, `probe`, `oos`
