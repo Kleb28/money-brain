@@ -126,3 +126,10 @@
   - 같이 보고: time-series momentum(12개월 초과수익 부호 × 10%/σ_i ÷ N; Moskowitz·Ooi·Pedersen, JFE 2012), COMP 상위 1/3 long-only vs ETF 1/N vs SPY 60/IEF 40
 - 판정 해석: 주 검정 4개(J1·J2·J3a·J3b), 각 t ≥ 2.5. J1 미달 = "공개 거시·가격 변수로 지수 방향 예측은 과거 평균을 못 이김". J2·J3b 미달 = "알려진 컴포넌트를 모아 최적화해도 단순 동일가중을 못 이김"(DeMiguel·Garlappi·Uppal, RFS 2009 1/N 결과의 재현 여부). J3a 통과 시 paper portfolio 후보로 올리고 실제 편입은 Caleb이 결정
 - 미리 적는 한계: French 팩터는 비용·공매도 제약 없는 paper 수익이고, 팩터 자체가 1981-2015년에 발견·발표돼 1990년 이후 표본 밖도 "어떤 팩터를 넣을지"는 사후 지식임(발표 후 수익 감소 McLean·Pontiff, J. Finance 2016); ETF는 2007년 전후 상장이라 표본 약 18년으로 검정력이 낮음(t 2.5에 Sharpe 약 0.6 필요); 밸류에이션 변수(D/P·CAPE)는 무료 월간 원본을 Actions에서 안정적으로 받기 어려워 J1에서 다루지 않았음; yfinance는 현재 상장 ETF만 있어 생존 편향이 있음
+
+## Sim J 결과 기록 (2026-11-18, outputs/sim_j.md)
+- 실행 메모: FRED가 러너의 plain requests를 timeout시켜 browser TLS 흉내(curl_cffi)로 받음(데이터·변수 변경 없음). J3는 진행 중인 달(2026-11)을 빼고 완결된 달만 씀. RIDGE 학습 panel은 ETF가 8개 미만이던 1990년대 달도 포함해(엄격히 과거 데이터만) 표본 밖 첫 달부터 예측이 있었음 → J3b 비교 구간이 COMP 전체 구간과 같음
+- J1(1980-01 ~ 2026-09, 560개월): COMB R²_OS +0.38%, Clark-West t 1.61 → 미달. 단변수 중 svar(+0.63%, t 1.98)·infl(+0.53%, t 1.72)만 양수, kitchen sink −2.18%. 타이밍 전략 Sharpe 0.78 < buy-and-hold 0.83(2000년 이후 0.52 vs 0.60)
+- J2(1990-01 ~ 2026-09, 441개월): 1/N Sharpe 0.78, MV 0.71, 차이 t −0.99 → 미달. 변동성 역가중(t −2.11)·factor momentum(t −0.33)도 1/N을 못 이김. 2010년 이후 1/N Sharpe 0.43 < 시장 0.87 — 팩터 프리미엄 자체가 표본 밖에서 약해짐(SMB 0.08·HML 0.17)
+- J3(2002-11 ~ 2026-10, 288개월): COMP long-short 연 +0.41%(Sharpe 0.13, t 0.64) → J3a 미달. RIDGE 연 +1.41%(Sharpe 0.40), RIDGE−COMP t 1.11 → J3b 미달. 참고: TSMOM Sharpe 0.47(t 2.28), long-only는 SPY 60/IEF 40(0.77)이 ETF 1/N(0.57)·COMP 상위 1/3(0.47)보다 높음. 신호 단독으로는 TREND 0.41·LOWVOL 0.37·MOM 0.27이 양, REV −0.63·VAL −0.25가 음이라 동일가중 COMP가 서로 상쇄됨
+- 판정: 주 검정 4개 모두 미달. "경제적 근거가 있는 공개 컴포넌트를 모아 조합·최적화"는 세 universe 모두 단순 기준(과거 평균·1/N·buy-and-hold)을 표본 밖에서 유의하게 못 이김 — Welch·Goyal(RFS 2008), DeMiguel·Garlappi·Uppal(RFS 2009)과 같은 방향. paper portfolio 후보 없음. TSMOM·RIDGE의 양의 부호는 사후 관찰이라 이 표본으로 재검정하지 않음(새 사전 등록 + 다른 표본, 예: 1990년 이전 선물 장기 데이터가 필요)
