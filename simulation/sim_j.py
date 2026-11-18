@@ -76,12 +76,33 @@ def french() -> pd.DataFrame:
     return out
 
 
+CHROME = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) "
+          "Chrome/130.0 Safari/537.36", "Accept": "text/csv,text/plain,*/*"}
+
+
 def fred(series: str) -> pd.Series:
-    df = pd.read_csv(io.BytesIO(get(f"https://fred.stlouisfed.org/graph/fredgraph.csv?id={series}")))
-    df.columns = ["date", series]
-    s = pd.to_numeric(df[series], errors="coerce")
-    s.index = pd.to_datetime(df["date"]) + pd.offsets.MonthEnd(0)
-    return s
+    """FRED monthly series; tries the csv graph endpoint, then the plain-text data endpoint."""
+    for i in range(3):
+        for kind, url in [("csv", f"https://fred.stlouisfed.org/graph/fredgraph.csv?id={series}"),
+                          ("txt", f"https://fred.stlouisfed.org/data/{series}.txt")]:
+            try:
+                r = requests.get(url, headers=CHROME, timeout=(10, 30))
+                r.raise_for_status()
+                if kind == "csv":
+                    df = pd.read_csv(io.BytesIO(r.content))
+                    dates, vals = df.iloc[:, 0], df.iloc[:, 1]
+                else:
+                    rows = [ln.split() for ln in r.text.splitlines()]
+                    rows = [x for x in rows if len(x) == 2 and x[0][:4].isdigit() and "-" in x[0]]
+                    dates, vals = [x[0] for x in rows], [x[1] for x in rows]
+                s = pd.Series(pd.to_numeric(pd.Series(list(vals)), errors="coerce").values,
+                              index=pd.to_datetime(pd.Series(list(dates))) + pd.offsets.MonthEnd(0))
+                if s.notna().sum() > 100:
+                    return s
+            except Exception as e:  # noqa: BLE001
+                print(f"  FRED {series} {kind} try {i + 1}: {e}", flush=True)
+        time.sleep(10 * (i + 1))
+    raise RuntimeError(f"FRED download failed: {series}")
 
 
 def etf_prices() -> pd.DataFrame:
@@ -383,12 +404,12 @@ def main() -> None:
              f"실행 {pd.Timestamp.utcnow():%Y-%m-%d} UTC. 모든 가중치·예측은 t월 말까지의 데이터로 만들고 t+1월에 적용.", ""]
     print("French...", flush=True)
     ff = french()
-    print("FRED...", flush=True)
-    fr = {s: fred(s) for s in ["TB3MS", "GS10", "BAA", "AAA", "CPIAUCSL"]}
-    fr = {k: v.reindex(ff.index) / (100.0 if k != "CPIAUCSL" else 1.0) for k, v in fr.items()}
     lines.append(f"- 데이터: French 월간 {ff.index[0]:%Y-%m} ~ {ff.index[-1]:%Y-%m}")
     summary = []
     try:
+        print("FRED...", flush=True)
+        fr = {s: fred(s) for s in ["TB3MS", "GS10", "BAA", "AAA", "CPIAUCSL"]}
+        fr = {k: v.reindex(ff.index) / (100.0 if k != "CPIAUCSL" else 1.0) for k, v in fr.items()}
         r1 = j1(ff, fr, lines)
         summary.append(f"- J1 지수 타이밍: R²_OS {r1['r2'] * 100:+.2f}%, CW t {r1['cw']:.2f} → {'통과' if r1['pass'] else '미달'}")
     except Exception as e:  # noqa: BLE001
