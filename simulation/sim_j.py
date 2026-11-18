@@ -86,7 +86,9 @@ def fred(series: str) -> pd.Series:
         for kind, url in [("csv", f"https://fred.stlouisfed.org/graph/fredgraph.csv?id={series}"),
                           ("txt", f"https://fred.stlouisfed.org/data/{series}.txt")]:
             try:
-                r = requests.get(url, headers=CHROME, timeout=(10, 30))
+                # FRED's CDN stalls plain python TLS clients on GitHub runners; impersonate a browser
+                from curl_cffi import requests as creq
+                r = creq.get(url, impersonate="chrome", timeout=40)
                 r.raise_for_status()
                 if kind == "csv":
                     df = pd.read_csv(io.BytesIO(r.content))
@@ -284,6 +286,7 @@ def ls_weights(score: pd.Series, vol: pd.Series) -> pd.Series:
 
 def j3(px: pd.DataFrame, rf: pd.Series, lines: list[str]) -> dict:
     px = px.dropna(how="all")
+    px = px.loc[px.index < pd.Timestamp.today().normalize().replace(day=1)]  # complete months only
     dret = px.pct_change(fill_method=None)
     vol = (dret.rolling(63, min_periods=50).std() * np.sqrt(252)).resample("ME").last()
     M = px.resample("ME").last()
