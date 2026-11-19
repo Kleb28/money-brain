@@ -102,6 +102,9 @@ def record_cost(model: str, tin: int, tout: int) -> float:
     return cost
 
 
+from wallets import wallet_lines  # noqa: E402
+
+
 def build_ledger() -> dict:
     code, st = call("GET", "/internal/stats?days=400")
     if code != 200:
@@ -157,6 +160,7 @@ def write_ledger(L: dict, status: str) -> None:
         "|---|---|---|---|---|---|---|---|",
         *L["rows"],
         "",
+        *wallet_lines(L["stats"].get("payments")),
     ]
     ROOT.mkdir(exist_ok=True)
     LEDGER.write_text("\n".join(lines))
