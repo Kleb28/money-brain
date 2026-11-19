@@ -219,7 +219,17 @@ function payMiddleware(env: Env, list: Product[]) {
       : new HTTPFacilitatorClient({ url: "https://x402.org/facilitator" });
   const server = new x402ResourceServer(facilitator)
     .register(env.NETWORK as `${string}:${string}`, new ExactEvmScheme())
-    .registerExtension(bazaarResourceServerExtension);
+    .registerExtension(bazaarResourceServerExtension)
+    // Record what the facilitator said about Bazaar discovery (success / processing / rejected);
+    // the buyer never sees this, so it is the only way to learn why a listing did not appear.
+    .onAfterSettle(async (ctx) => {
+      try {
+        const r = ctx.result as { transaction?: string; extensionResponses?: unknown };
+        await env.KV.put("bazaar:last", JSON.stringify({ at: new Date().toISOString(), resource: (ctx.paymentPayload as { resource?: { url?: string } }).resource?.url ?? null, transaction: r.transaction ?? null, payload_has_bazaar: Boolean((ctx.paymentPayload as { extensions?: Record<string, unknown> }).extensions?.bazaar), extension_responses: r.extensionResponses ?? null }));
+      } catch {
+        // diagnostics only: never let this affect a settled payment
+      }
+    });
   const routes: Record<string, any> = {};
   for (const p of active) {
     routes[`GET /v1/p/${p.id}`] = {
@@ -350,7 +360,7 @@ app.get("/internal/stats", async (c) => {
     const s = await c.env.KV.get<Stats>(k, "json");
     if (s) out[d].products![id] = { ...EMPTY, ...s };
   }
-  return c.json({ dead: (await c.env.KV.get("dead")) === "1", network: c.env.NETWORK, pay_to: c.env.PAY_TO, caps: CAPS, allowed_forms: ALLOWED_FORMS, days: out });
+  return c.json({ dead: (await c.env.KV.get("dead")) === "1", bazaar_last: await c.env.KV.get("bazaar:last", "json"), network: c.env.NETWORK, pay_to: c.env.PAY_TO, caps: CAPS, allowed_forms: ALLOWED_FORMS, days: out });
 });
 
 app.get("/internal/products", async (c) => {

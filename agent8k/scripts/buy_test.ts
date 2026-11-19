@@ -28,7 +28,5 @@ const pay = wrapFetchWithPaymentFromConfig(fetch, {
 const path = process.env.BUY_PATH ?? "/v1/8k/summary";
 const res = await pay(`${base.replace(/\/$/, "")}${path}?ticker=${ticker}`);
 console.log(res.status, res.headers.get("payment-response") ?? res.headers.get("x-payment-response") ?? "");
-const ext = res.headers.get("extension-responses");
-if (ext) console.log("extension-responses:", Buffer.from(ext, "base64").toString("utf8"));
-else console.log("extension-responses: (none; Bazaar discovery was not reported by the facilitator)");
+// The facilitator's Bazaar verdict is not sent to buyers; the Worker stores it (bazaar_last in /internal/stats).
 console.log(JSON.stringify(await res.json(), null, 2));

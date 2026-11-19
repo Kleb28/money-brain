@@ -63,7 +63,17 @@ function payMiddleware(env: Env) {
       : new HTTPFacilitatorClient({ url: "https://x402.org/facilitator" }); // testnets only
   const server = new x402ResourceServer(facilitator)
     .register(env.NETWORK as `${string}:${string}`, new ExactEvmScheme())
-    .registerExtension(bazaarResourceServerExtension);
+    .registerExtension(bazaarResourceServerExtension)
+    // Record what the facilitator said about Bazaar discovery (success / processing / rejected);
+    // the buyer never sees this, so it is the only way to learn why a listing did not appear.
+    .onAfterSettle(async (ctx) => {
+      try {
+        const r = ctx.result as { transaction?: string; extensionResponses?: unknown };
+        await env.KV.put("bazaar:last", JSON.stringify({ at: new Date().toISOString(), resource: (ctx.paymentPayload as { resource?: { url?: string } }).resource?.url ?? null, transaction: r.transaction ?? null, payload_has_bazaar: Boolean((ctx.paymentPayload as { extensions?: Record<string, unknown> }).extensions?.bazaar), extension_responses: r.extensionResponses ?? null }));
+      } catch {
+        // diagnostics only: never let this affect a settled payment
+      }
+    });
   const mw = paymentMiddleware(
     {
       [`GET ${PAID_PATH}`]: {
@@ -169,7 +179,7 @@ app.get("/internal/stats", async (c) => {
     const v = await c.env.KV.get<Stats>(`stats:${d}`, "json");
     if (v) out[d] = { ...EMPTY, ...v };
   }
-  return c.json({ dead: (await c.env.KV.get("dead")) === "1", price: c.env.PRICE, network: c.env.NETWORK, pay_to: c.env.PAY_TO, days: out });
+  return c.json({ dead: (await c.env.KV.get("dead")) === "1", bazaar_last: await c.env.KV.get("bazaar:last", "json"), price: c.env.PRICE, network: c.env.NETWORK, pay_to: c.env.PAY_TO, days: out });
 });
 
 app.post("/internal/kill", async (c) => {
