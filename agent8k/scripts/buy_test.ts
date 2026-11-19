@@ -7,9 +7,15 @@ import { wrapFetchWithPaymentFromConfig } from "@x402/fetch";
 import { ExactEvmScheme } from "@x402/evm";
 import { privateKeyToAccount } from "viem/accounts";
 
-const key = process.env.BUYER_KEY as `0x${string}` | undefined;
+import { existsSync, readFileSync } from "node:fs";
+import { homedir } from "node:os";
+import { join } from "node:path";
+
+// Key from BUYER_KEY, else from the file written by scripts/new_wallet.ts.
+const keyFile = join(homedir(), ".agent8k-buyer-key");
+const key = (process.env.BUYER_KEY ?? (existsSync(keyFile) ? readFileSync(keyFile, "utf8").trim() : undefined)) as `0x${string}` | undefined;
 const base = process.env.AGENT8K_URL;
-if (!key || !base) throw new Error("set BUYER_KEY and AGENT8K_URL");
+if (!key || !base) throw new Error("set AGENT8K_URL, and BUYER_KEY or run scripts/new_wallet.ts first");
 const ticker = process.argv[2] ?? "AAPL";
 const network = (process.env.BUYER_NETWORK ?? "eip155:84532") as `${string}:${string}`;
 if (network !== "eip155:84532" && network !== "eip155:8453") throw new Error("BUYER_NETWORK must be eip155:84532 or eip155:8453");
