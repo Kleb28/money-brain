@@ -62,6 +62,7 @@ def main() -> None:
     in_price = float(env("AGENT8K_IN_PER_MTOK", "0.10"))  # claude-haiku-5-5
     out_price = float(env("AGENT8K_OUT_PER_MTOK", "0.50"))
     start = env("AGENT8K_START", "")
+    self_calls = int(env("AGENT8K_SELF_CALLS", "0"))  # paid calls made by the owner; excluded from external revenue
 
     st = http_json(f"{url}/internal/stats?days=400", headers={"authorization": f"Bearer {token}"})
     price = float(str(st["price"]).replace("$", ""))
@@ -81,6 +82,7 @@ def main() -> None:
         )
 
     survival = budget + cum_rev - cum_cost
+    ext_rev = max(cum_rev - self_calls * price, 0.0)
     bal = usdc_balance(st["network"], st["pay_to"])
     dead = st["dead"]
     killed_now = False
@@ -96,6 +98,7 @@ def main() -> None:
         "",
         f"- Network: {st['network']} · price {st['price']}/call · receive address {st['pay_to']}",
         f"- Budget ${budget:.2f} · revenue (paid calls × price) ${cum_rev:.2f} · model cost (estimated from tokens) ${cum_cost:.4f}",
+        f"- External revenue (excludes {self_calls} owner call{'s' if self_calls != 1 else ''}) ${ext_rev:.2f} · verdict test: external revenue ≥ model cost → {'pass' if ext_rev >= cum_cost else 'not yet'}",
         f"- Survival balance ${survival:.2f} · on-chain USDC {'n/a' if bal is None else f'${bal:.2f}'}",
         f"- Status: {'RETIRED' + (' today' if killed_now else '') if dead else 'alive'}",
         "",

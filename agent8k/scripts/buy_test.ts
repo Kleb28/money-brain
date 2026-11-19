@@ -1,17 +1,28 @@
-// Pays for one summary with a TEST wallet on Base Sepolia, to prove the x402 flow end to end.
-// Usage: BUYER_KEY=0x... AGENT8K_URL=https://agent8k.<you>.workers.dev npx tsx scripts/buy_test.ts AAPL
-// The buyer wallet needs Base Sepolia test USDC (free from Circle's faucet). Never use a real-money key here.
+// Pays for one summary to prove the x402 flow end to end.
+// Testnet (default): BUYER_KEY=0x... AGENT8K_URL=https://agent8k.<you>.workers.dev npx tsx scripts/buy_test.ts AAPL
+//   The buyer wallet needs Base Sepolia test USDC (free from Circle's faucet).
+// Mainnet self-purchase: add BUYER_NETWORK=eip155:8453. Spends real USDC (the route price, $0.03).
+//   Use a throwaway wallet holding about $1, never a main wallet. Record it in repo variable AGENT8K_SELF_CALLS.
 import { wrapFetchWithPaymentFromConfig } from "@x402/fetch";
 import { ExactEvmScheme } from "@x402/evm";
 import { privateKeyToAccount } from "viem/accounts";
 
-const key = process.env.BUYER_KEY as `0x${string}` | undefined;
+import { existsSync, readFileSync } from "node:fs";
+import { homedir } from "node:os";
+import { join } from "node:path";
+
+// Key from BUYER_KEY, else from the file written by scripts/new_wallet.ts.
+const keyFile = join(homedir(), ".agent8k-buyer-key");
+const key = (process.env.BUYER_KEY ?? (existsSync(keyFile) ? readFileSync(keyFile, "utf8").trim() : undefined)) as `0x${string}` | undefined;
 const base = process.env.AGENT8K_URL;
-if (!key || !base) throw new Error("set BUYER_KEY and AGENT8K_URL");
+if (!key || !base) throw new Error("set AGENT8K_URL, and BUYER_KEY or run scripts/new_wallet.ts first");
 const ticker = process.argv[2] ?? "AAPL";
+const network = (process.env.BUYER_NETWORK ?? "eip155:84532") as `${string}:${string}`;
+if (network !== "eip155:84532" && network !== "eip155:8453") throw new Error("BUYER_NETWORK must be eip155:84532 or eip155:8453");
+console.log(`network ${network}${network === "eip155:8453" ? " (real USDC)" : " (test USDC)"}`);
 
 const pay = wrapFetchWithPaymentFromConfig(fetch, {
-  schemes: [{ network: "eip155:84532", client: new ExactEvmScheme(privateKeyToAccount(key)) }],
+  schemes: [{ network, client: new ExactEvmScheme(privateKeyToAccount(key)) }],
 });
 const res = await pay(`${base.replace(/\/$/, "")}/v1/8k/summary?ticker=${ticker}`);
 console.log(res.status, res.headers.get("payment-response") ?? res.headers.get("x-payment-response") ?? "");
