@@ -233,19 +233,20 @@ def bazaar_search(query: str, limit: int = 15) -> str:
 
 
 @beta_tool
-def upsert_product(id: str, title: str, description: str, forms: list[str], instructions: str, price_usd: float) -> str:
+def upsert_product(id: str, title: str, description: str, forms: list[str], instructions: str, price_usd: float, kind: str = "summary") -> str:
     """Create a new product or update an existing one (same id). The Worker rejects anything outside the caps.
 
     Args:
-        id: URL slug, 2-32 chars of a-z, 0-9 and '-'. The paid route becomes GET /v1/p/<id>?ticker=XXX.
+        id: URL slug, 2-32 chars of a-z, 0-9 and '-'. The paid route becomes GET /v1/p/<id>?ticker=XXX (summary) or GET /v1/p/<id>?hours=6 (feed).
         title: Short name shown to buyers (max 60 chars).
         description: What a buyer gets, 20-400 chars, read by agents in the x402 catalog. Promise only the fixed output fields.
         forms: 1-4 SEC form types this product summarizes (see list_products for the allowed list).
         instructions: Focus for the summarizer (max 1500 chars): which facts to emphasize. The output schema is fixed.
         price_usd: Price per call in USD.
+        kind: "summary" (model-written summary of one filing for one ticker) or "feed" (newest filings of these forms across all companies in the last N hours; no model call, so serving cost is zero; instructions are unused).
     """
-    code, res = call("PUT", f"/internal/products/{id}", {"title": title, "description": description, "forms": forms, "instructions": instructions, "price_usd": price_usd})
-    journal(f"upsert {id} forms={forms} price=${price_usd} -> {code} {res.get('error') or ('created' if res.get('created') else 'updated')}")
+    code, res = call("PUT", f"/internal/products/{id}", {"title": title, "description": description, "forms": forms, "instructions": instructions, "price_usd": price_usd, "kind": kind})
+    journal(f"upsert {id} kind={kind} forms={forms} price=${price_usd} -> {code} {res.get('error') or ('created' if res.get('created') else 'updated')}")
     return json.dumps({"status": code, **res})
 
 
@@ -280,7 +281,8 @@ What you control: the product catalog. Each product = a set of SEC form types, a
 What you cannot do: spend or move money, contact anyone, post anywhere, change code, raise the caps, or buy your own products. The server enforces all limits; a rejected request returns the reason.
 Each run costs real money (you are billed for your own tokens), so be brief: look at the numbers, make at most a few changes, write one journal note, and stop.
 Prefer changes you can measure. The owner wants to find a revenue source fast: try several distinct products (different forms, buyers, price points) early rather than one at a time. Keep products that get calls; retire ones with no calls after about 3 days to make room for new ideas.
-Every product returns the same fixed JSON: headline, key_points[], figures[{label,value}], form, filed, accession, source_url. Descriptions must promise only these. The summarizer states facts only: no sentiment, signals, ratings or advice (the server rejects such wording, and a product showing blocked_reason is not being sold until you fix it).
+Two product kinds, each with a fixed JSON output. "summary": headline, key_points[], figures[{label,value}], form, filed, accession, source_url for one ticker. "feed": generated_at, window_hours, count, filings[{form, company, cik, role, filed_at, accession, items[], source_url}] for all companies, newest first, no ticker needed. Descriptions must promise only these fields.
+What we know about buyers (2026-11-20, on-chain): the only external payers so far are two long-running buyer agents that try each new listing once and keep buying a small share of them. What they keep buying is cheap ($0.002-0.007), general, and returns a different answer on every call (search, balances, live lists). A summary of the same filing gives them no reason to return; a feed does. Unless the catalog already has one, create a feed product at the minimum price this run. get_stats returns `payments` (payer wallet per settlement): judge products by wallets that buy more than once, not by first calls. The summarizer states facts only: no sentiment, signals, ratings or advice (the server rejects such wording, and a product showing blocked_reason is not being sold until you fix it).
 Buyers find products through the Bazaar listing, which appears only after a product's first paid call. Write descriptions for machine readers: concrete, what fields come back, which forms."""
 
 
