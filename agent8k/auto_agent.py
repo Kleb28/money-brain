@@ -18,6 +18,7 @@ import datetime as dt
 import json
 import os
 import pathlib
+import time
 import urllib.error
 import urllib.request
 
@@ -54,18 +55,24 @@ RUN_ID = os.environ.get("GITHUB_RUN_ID", NOW.strftime("local-%H%M%S"))
 
 
 def call(method: str, path: str, body: dict | None = None) -> tuple[int, dict]:
-    req = urllib.request.Request(URL + path, method=method, headers={"authorization": f"Bearer {TOKEN}", "user-agent": "agent8k-auto"})
-    if body is not None:
-        req.data = json.dumps(body).encode()
-        req.add_header("content-type", "application/json")
-    try:
-        with urllib.request.urlopen(req, timeout=30) as r:
-            return r.status, json.loads(r.read())
-    except urllib.error.HTTPError as e:
+    last: Exception | None = None
+    for attempt in range(3):  # network errors and timeouts are retried; HTTP errors are returned
+        req = urllib.request.Request(URL + path, method=method, headers={"authorization": f"Bearer {TOKEN}", "user-agent": "agent8k-auto"})
+        if body is not None:
+            req.data = json.dumps(body).encode()
+            req.add_header("content-type", "application/json")
         try:
-            return e.code, json.loads(e.read())
-        except Exception:
-            return e.code, {"error": str(e)}
+            with urllib.request.urlopen(req, timeout=30) as r:
+                return r.status, json.loads(r.read())
+        except urllib.error.HTTPError as e:
+            try:
+                return e.code, json.loads(e.read())
+            except Exception:
+                return e.code, {"error": str(e)}
+        except (urllib.error.URLError, TimeoutError, OSError) as e:
+            last = e
+            time.sleep(3 * (attempt + 1))
+    return 599, {"error": f"network: {last}"}
 
 
 def journal(line: str) -> None:

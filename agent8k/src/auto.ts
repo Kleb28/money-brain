@@ -219,7 +219,17 @@ function payMiddleware(env: Env, list: Product[]) {
       : new HTTPFacilitatorClient({ url: "https://x402.org/facilitator" });
   const server = new x402ResourceServer(facilitator)
     .register(env.NETWORK as `${string}:${string}`, new ExactEvmScheme())
-    .registerExtension(bazaarResourceServerExtension);
+    .registerExtension(bazaarResourceServerExtension)
+    // Record what the facilitator said about Bazaar discovery (success / processing / rejected);
+    // the buyer never sees this, so it is the only way to learn why a listing did not appear.
+    .onAfterSettle(async (ctx) => {
+      try {
+        const r = ctx.result as { transaction?: string; extensionResponses?: unknown };
+        await env.KV.put("bazaar:last", JSON.stringify({ at: new Date().toISOString(), resource: (ctx.paymentPayload as { resource?: { url?: string } }).resource?.url ?? null, transaction: r.transaction ?? null, payload_has_bazaar: Boolean((ctx.paymentPayload as { extensions?: Record<string, unknown> }).extensions?.bazaar), extension_responses: r.extensionResponses ?? null }));
+      } catch {
+        // diagnostics only: never let this affect a settled payment
+      }
+    });
   const routes: Record<string, any> = {};
   for (const p of active) {
     routes[`GET /v1/p/${p.id}`] = {
@@ -324,21 +334,33 @@ function authed(c: Context<{ Bindings: Env }>) {
 
 app.get("/internal/stats", async (c) => {
   if (!authed(c)) return c.json({ error: "unauthorized" }, 401);
+  // Only read keys that exist (KV list), so the cost does not grow with days x products.
   const days = Math.min(Number(c.req.query("days") ?? 30), 400);
-  const list = await products(c.env);
+  const since = new Date(Date.now() - (days - 1) * 86400000).toISOString().slice(0, 10);
+  const keys = async (prefix: string) => {
+    const names: string[] = [];
+    let cursor: string | undefined;
+    do {
+      const r: KVNamespaceListResult<unknown> = await c.env.KV.list({ prefix, cursor });
+      names.push(...r.keys.map((k) => k.name));
+      cursor = r.list_complete ? undefined : r.cursor;
+    } while (cursor);
+    return names;
+  };
   const out: Record<string, Stats & { products?: Record<string, Stats> }> = {};
-  for (let i = 0; i < days; i++) {
-    const d = new Date(Date.now() - i * 86400000).toISOString().slice(0, 10);
-    const v = await c.env.KV.get<Stats>(`stats:${d}`, "json");
-    if (!v) continue;
-    const per: Record<string, Stats> = {};
-    for (const p of list) {
-      const s = await c.env.KV.get<Stats>(`pstats:${d}:${p.id}`, "json");
-      if (s) per[p.id] = { ...EMPTY, ...s };
-    }
-    out[d] = { ...EMPTY, ...v, products: per };
+  for (const k of await keys("stats:")) {
+    const d = k.slice(6);
+    if (d < since) continue;
+    const v = await c.env.KV.get<Stats>(k, "json");
+    if (v) out[d] = { ...EMPTY, ...v, products: {} };
   }
-  return c.json({ dead: (await c.env.KV.get("dead")) === "1", network: c.env.NETWORK, pay_to: c.env.PAY_TO, caps: CAPS, allowed_forms: ALLOWED_FORMS, days: out });
+  for (const k of await keys("pstats:")) {
+    const [, d, id] = k.split(":");
+    if (!out[d]) continue;
+    const s = await c.env.KV.get<Stats>(k, "json");
+    if (s) out[d].products![id] = { ...EMPTY, ...s };
+  }
+  return c.json({ dead: (await c.env.KV.get("dead")) === "1", bazaar_last: await c.env.KV.get("bazaar:last", "json"), network: c.env.NETWORK, pay_to: c.env.PAY_TO, caps: CAPS, allowed_forms: ALLOWED_FORMS, days: out });
 });
 
 app.get("/internal/products", async (c) => {
