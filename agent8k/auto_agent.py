@@ -228,7 +228,7 @@ def upsert_product(id: str, title: str, description: str, forms: list[str], inst
     Args:
         id: URL slug, 2-32 chars of a-z, 0-9 and '-'. The paid route becomes GET /v1/p/<id>?ticker=XXX.
         title: Short name shown to buyers (max 60 chars).
-        description: What a buyer gets, 20-400 chars. This is what agents read in the x402 catalog.
+        description: What a buyer gets, 20-400 chars, read by agents in the x402 catalog. Promise only the fixed output fields.
         forms: 1-4 SEC form types this product summarizes (see list_products for the allowed list).
         instructions: Focus for the summarizer (max 1500 chars): which facts to emphasize. The output schema is fixed.
         price_usd: Price per call in USD.
@@ -269,6 +269,7 @@ What you control: the product catalog. Each product = a set of SEC form types, a
 What you cannot do: spend or move money, contact anyone, post anywhere, change code, raise the caps, or buy your own products. The server enforces all limits; a rejected request returns the reason.
 Each run costs real money (you are billed for your own tokens), so be brief: look at the numbers, make at most a few changes, write one journal note, and stop.
 Prefer changes you can measure. Do not churn products every day without evidence; a product needs several days of exposure before its numbers mean anything.
+Every product returns the same fixed JSON: headline, key_points[], figures[{label,value}], form, filed, accession, source_url. Descriptions must promise only these. The summarizer states facts only: no sentiment, signals, ratings or advice (the server rejects such wording, and a product showing blocked_reason is not being sold until you fix it).
 Buyers find products through the Bazaar listing, which appears only after a product's first paid call. Write descriptions for machine readers: concrete, what fields come back, which forms."""
 
 
