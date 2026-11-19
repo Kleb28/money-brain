@@ -3,3 +3,6 @@ __pycache__/
 .venv/
 .env
 numerai_data/
+node_modules
+.wrangler/
+.dev.vars
