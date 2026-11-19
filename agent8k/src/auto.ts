@@ -282,7 +282,8 @@ app.use("/v1/p/:id", async (c, next) => {
   if ((await c.env.KV.get("dead")) === "1") return c.json({ error: "service retired: budget exhausted" }, 503);
   const list = await products(c.env);
   if (!list.find((x) => x.id === c.req.param("id") && sellable(x))) return c.json({ error: "unknown product" }, 404);
-  normalizeTicker(c.req.query("ticker"));
+  // A missing ticker still gets the 402 (the Bazaar indexer probes the bare URL); a malformed one fails unpaid.
+  if (c.req.query("ticker") !== undefined) normalizeTicker(c.req.query("ticker"));
   try {
     return await payMiddleware(c.env, list)(c, next);
   } catch (err) {
