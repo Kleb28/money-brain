@@ -342,6 +342,14 @@ app.onError((err, c) => {
   return c.json({ error: err.message }, status as 400);
 });
 
+// Service manifest read by x402 indexes (e.g. Agent402's crawler): which URLs are paid resources.
+// Price, network and description come from each resource's own 402 challenge.
+app.get("/.well-known/x402", async (c) => {
+  const origin = new URL(c.req.url).origin;
+  const list = (await products(c.env)).filter(sellable);
+  return c.json({ version: 1, name: "SEC Filing Briefs", summary: "Pay-per-call JSON from US SEC EDGAR filings: per-ticker filing summaries and a feed of the newest filings across all companies.", resources: list.map((p) => `${origin}/v1/p/${p.id}`) });
+});
+
 app.get("/", async (c) => {
   const list = (await products(c.env)).filter(sellable);
   return c.json({

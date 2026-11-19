@@ -26,7 +26,9 @@ const pay = wrapFetchWithPaymentFromConfig(fetch, {
 });
 // BUY_PATH picks another paid route, e.g. /v1/p/insider-form4 on agent8k-auto.
 const path = process.env.BUY_PATH ?? "/v1/8k/summary";
-const res = await pay(`${base.replace(/\/$/, "")}${path}?ticker=${ticker}`);
+// BUY_QUERY replaces the default ?ticker=... query (set it to "" for routes that take no input).
+const query = process.env.BUY_QUERY ?? `ticker=${ticker}`;
+const res = await pay(`${base.replace(/\/$/, "")}${path}${query ? `?${query}` : ""}`);
 console.log(res.status, res.headers.get("payment-response") ?? res.headers.get("x-payment-response") ?? "");
 // The facilitator's Bazaar verdict is not sent to buyers; the Worker stores it (bazaar_last in /internal/stats).
 console.log(JSON.stringify(await res.json(), null, 2));

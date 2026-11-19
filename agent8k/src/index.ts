@@ -122,6 +122,11 @@ app.onError((err, c) => {
   return c.json({ error: err.message }, status as 400);
 });
 
+// Service manifest read by x402 indexes: which URLs are paid resources (details come from the 402 challenge).
+app.get("/.well-known/x402", (c) =>
+  c.json({ version: 1, name: "8-K Brief", summary: "Pay-per-call JSON summary of a company's latest SEC 8-K filing, by ticker.", resources: [`${new URL(c.req.url).origin}${PAID_PATH}`] }),
+);
+
 app.get("/", (c) =>
   c.json({
     service: "8-K Brief",
