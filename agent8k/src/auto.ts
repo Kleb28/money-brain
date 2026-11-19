@@ -43,7 +43,8 @@ export interface Product {
   id: string; // url slug
   title: string;
   description: string; // shown to buyers and in the x402 catalog
-  forms: string[]; // which SEC forms this product summarizes
+  forms: string[]; // which SEC forms this product covers
+  kind: "summary" | "feed"; // summary: one filing of one ticker, written by the model. feed: newest filings across all companies, no model call
   instructions: string; // agent-written focus for the summarizer (cannot change the output schema)
   price_usd: number;
   active: boolean;
@@ -70,10 +71,13 @@ async function products(env: Env): Promise<Product[]> {
 // Buyers always get the fixed schema below, so a description may not promise other fields,
 // and nothing may ask for opinions or trading signals.
 const OUTPUT_FIELDS = "headline, key_points[], figures[{label,value}], form, filed, accession, source_url";
+const FEED_FIELDS = "generated_at, window_hours, count, filings[{form, company, cik, role, filed_at, accession, items[], source_url}]";
+const kindOf = (p: { kind?: string }) => (p.kind === "feed" ? "feed" : "summary");
+const fieldsOf = (p: { kind?: string }) => (kindOf(p) === "feed" ? FEED_FIELDS : OUTPUT_FIELDS);
 const BANNED = /\b(bullish|bearish|sentiment|signal|recommend\w*|price target|buy rating|sell rating|outperform|underperform|advice)\b/i;
-export function contentProblem(p: { description: string; instructions: string }): string | null {
+export function contentProblem(p: { description: string; instructions: string; kind?: string }): string | null {
   const m = BANNED.exec(p.description) ?? BANNED.exec(p.instructions);
-  return m ? `"${m[0]}": output is factual only (fields: ${OUTPUT_FIELDS}); do not promise sentiment, signals or advice` : null;
+  return m ? `"${m[0]}": output is factual only (fields: ${fieldsOf(p)}); do not promise sentiment, signals or advice` : null;
 }
 const sellable = (p: Product) => p.active && !contentProblem(p);
 
@@ -84,6 +88,7 @@ export function validateProduct(p: any, existing: Product[], createdToday: numbe
   if (typeof p.description !== "string" || p.description.length < 20 || p.description.length > CAPS.maxDescriptionChars) return `description: 20-${CAPS.maxDescriptionChars} chars`;
   if (typeof p.instructions !== "string" || p.instructions.length > CAPS.maxInstructionChars) return `instructions: at most ${CAPS.maxInstructionChars} chars`;
   if (!Array.isArray(p.forms) || !p.forms.length || p.forms.length > 4 || !p.forms.every((f: any) => ALLOWED_FORMS.includes(f))) return `forms: 1-4 of ${ALLOWED_FORMS.join(", ")}`;
+  if (p.kind !== undefined && p.kind !== "summary" && p.kind !== "feed") return "kind: summary or feed";
   if (typeof p.price_usd !== "number" || !(p.price_usd >= CAPS.minPrice && p.price_usd <= CAPS.maxPrice)) return `price_usd: ${CAPS.minPrice}-${CAPS.maxPrice}`;
   const bad = contentProblem(p);
   if (bad) return `description/instructions: ${bad}`;
@@ -98,6 +103,7 @@ export function validateProduct(p: any, existing: Product[], createdToday: numbe
     title: p.title.trim(),
     description: p.description.trim(),
     forms: p.forms,
+    kind: kindOf(p.kind === undefined && prev ? prev : p),
     instructions: p.instructions.trim(),
     price_usd: Math.round(p.price_usd * 1000) / 1000,
     active,
@@ -209,6 +215,55 @@ async function summarize(p: Product, f: Filing, ticker: string, text: string, en
 // ---- x402: one paid route per active product, rebuilt when the catalog changes ----
 let cachedMw: { key: string; mw: ReturnType<typeof paymentMiddleware> } | null = null;
 
+// ---- EDGAR "latest filings" feed (feed products): changes every few minutes, no model call ----
+interface FeedItem { form: string; company: string; cik: string; role: string; filed_at: string; accession: string; items: string[]; source_url: string }
+const unescapeXml = (t: string) => t.replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"').replace(/&#39;|&apos;/g, "'").replace(/&amp;/g, "&");
+
+export function parseCurrentAtom(xml: string, form: string): FeedItem[] {
+  const out = new Map<string, FeedItem>();
+  for (const e of xml.split("<entry>").slice(1)) {
+    const term = /<category[^>]*term="([^"]+)"/.exec(e)?.[1];
+    if (term !== form) continue; // EDGAR matches the type as a prefix ("4" also returns 424B2, 40-F)
+    const title = /<title>([\s\S]*?)<\/title>/.exec(e)?.[1] ?? "";
+    const m = /^.*? - ([\s\S]*) \((\d{10})\) \(([^)]+)\)\s*$/.exec(unescapeXml(title).trim());
+    const accession = /accession-number=([\d-]+)/.exec(e)?.[1];
+    const updated = /<updated>([^<]+)<\/updated>/.exec(e)?.[1];
+    const href = /<link[^>]*href="([^"]+)"/.exec(e)?.[1];
+    if (!m || !accession || !updated || !href) continue;
+    const summary = unescapeXml(unescapeXml(/<summary[^>]*>([\s\S]*?)<\/summary>/.exec(e)?.[1] ?? ""));
+    const items = [...summary.matchAll(/Item (\d+\.\d+)/g)].map((x) => x[1]);
+    const item: FeedItem = { form, company: m[1].trim(), cik: m[2], role: m[3], filed_at: new Date(updated).toISOString(), accession, items, source_url: href };
+    // One accession appears once per party (Form 4: reporting person and issuer); keep the company-side entry.
+    const prev = out.get(accession);
+    if (!prev || /^(Issuer|Filer|Subject)$/.test(item.role)) out.set(accession, item);
+  }
+  return [...out.values()];
+}
+
+async function latestFilings(forms: string[], env: Env): Promise<FeedItem[]> {
+  const key = `feed:${forms.join(",")}`;
+  const hit = await env.KV.get<FeedItem[]>(key, "json");
+  if (hit) return hit;
+  const all: FeedItem[] = [];
+  for (const form of forms) {
+    const url = `https://www.sec.gov/cgi-bin/browse-edgar?action=getcurrent&type=${encodeURIComponent(form)}&company=&dateb=&owner=include&count=100&output=atom`;
+    const res = await fetch(url, { headers: { "User-Agent": env.EDGAR_USER_AGENT, Accept: "application/atom+xml" } });
+    if (!res.ok) throw new HttpError(502, `EDGAR ${res.status} for the latest ${form} filings`);
+    all.push(...parseCurrentAtom(await res.text(), form));
+  }
+  all.sort((a, b) => b.filed_at.localeCompare(a.filed_at));
+  await env.KV.put(key, JSON.stringify(all), { expirationTtl: 120 }); // also keeps us far below EDGAR's rate limit
+  return all;
+}
+
+function feedResponse(p: Product, all: FeedItem[], hoursRaw: string | undefined, limitRaw: string | undefined) {
+  const hours = Math.min(Math.max(Number(hoursRaw ?? 6) || 6, 1), 48);
+  const limit = Math.min(Math.max(Math.floor(Number(limitRaw ?? 50)) || 50, 1), 100);
+  const since = new Date(Date.now() - hours * 3600e3).toISOString();
+  const filings = all.filter((f) => f.filed_at >= since).slice(0, limit);
+  return { product: p.id, forms: p.forms, generated_at: new Date().toISOString(), window_hours: hours, count: filings.length, filings };
+}
+
 function payMiddleware(env: Env, list: Product[]) {
   const active = list.filter(sellable);
   const key = JSON.stringify([env.PAY_TO, env.NETWORK, env.CDP_API_KEY_ID ?? "", active.map((p) => [p.id, p.price_usd, p.description, p.updated])]);
@@ -229,17 +284,36 @@ function payMiddleware(env: Env, list: Product[]) {
       } catch {
         // diagnostics only: never let this affect a settled payment
       }
+      // One key per settlement, facts in KV metadata so the ledger can count buyers by wallet
+      // (one-off crawler wallets vs repeat buyers) without reading each key.
+      try {
+        const r = ctx.result as { transaction?: string; payer?: string };
+        const url = (ctx.paymentPayload as { resource?: { url?: string } }).resource?.url ?? "";
+        const amount = Number((ctx.requirements as { amount?: string }).amount ?? 0);
+        if (r.transaction) await env.KV.put(`pay:${r.transaction}`, "", { metadata: { at: new Date().toISOString(), payer: (r.payer ?? "unknown").toLowerCase(), path: url ? new URL(url).pathname : "", amount_micro: amount } });
+      } catch {
+        // same: bookkeeping must not affect the payment
+      }
     });
   const routes: Record<string, any> = {};
   for (const p of active) {
     routes[`GET /v1/p/${p.id}`] = {
       accepts: { scheme: "exact", price: `$${p.price_usd}`, network: env.NETWORK as `${string}:${string}`, payTo: env.PAY_TO },
-      description: `${p.description} Returns JSON: ${OUTPUT_FIELDS}.`,
+      description: `${p.description} Returns JSON: ${fieldsOf(p)}.`,
       mimeType: "application/json",
       serviceName: p.title,
       tags: ["finance", "sec", "edgar", ...p.forms.map((f) => f.toLowerCase().replace(/\s+/g, "-"))],
       extensions: {
-        ...declareDiscoveryExtension({
+        ...declareDiscoveryExtension(kindOf(p) === "feed" ? {
+          input: { hours: 6 },
+          inputSchema: {
+            properties: {
+              hours: { type: "number", description: "Look-back window in hours, 1-48 (default 6)" },
+              limit: { type: "number", description: "Max filings returned, 1-100 (default 50)" },
+            },
+          },
+          output: { example: { product: p.id, forms: p.forms, generated_at: "2026-01-01T00:00:00.000Z", window_hours: 6, count: 1, filings: [{ form: p.forms[0], company: "…", cik: "0000000000", role: "Filer", filed_at: "2026-01-01T00:00:00.000Z", accession: "…", items: ["2.02"], source_url: "…" }] } },
+        } : {
           input: { ticker: "AAPL" },
           inputSchema: {
             properties: {
@@ -263,6 +337,8 @@ const app = new Hono<{ Bindings: Env }>();
 app.onError((err, c) => {
   const status = err instanceof HttpError ? err.status : 500;
   c.executionCtx.waitUntil(bump(c.env, null, { errors: 1 }));
+  // Keep the last error so a counted error can be explained (buyers are not charged for these).
+  c.executionCtx.waitUntil(c.env.KV.put("error:last", JSON.stringify({ at: new Date().toISOString(), path: new URL(c.req.url).pathname, status, message: err.message.slice(0, 300) })));
   return c.json({ error: err.message }, status as 400);
 });
 
@@ -272,8 +348,7 @@ app.get("/", async (c) => {
     service: "SEC Filing Briefs (agent-run catalog)",
     what: "Pay-per-call JSON summaries of US SEC filings for software agents. The catalog is managed by an autonomous agent.",
     network: c.env.NETWORK,
-    output_fields: OUTPUT_FIELDS,
-    products: list.map((p) => ({ id: p.id, title: p.title, description: p.description, forms: p.forms, price: `$${p.price_usd}`, paid: `GET /v1/p/${p.id}?ticker=AAPL`, free_list: `GET /v1/p/${p.id}/list?ticker=AAPL` })),
+    products: list.map((p) => ({ id: p.id, title: p.title, description: p.description, forms: p.forms, price: `$${p.price_usd}`, kind: kindOf(p), returns: fieldsOf(p), paid: kindOf(p) === "feed" ? `GET /v1/p/${p.id}?hours=6` : `GET /v1/p/${p.id}?ticker=AAPL`, free_list: kindOf(p) === "feed" ? `GET /v1/p/${p.id}/list` : `GET /v1/p/${p.id}/list?ticker=AAPL` })),
     notes: ["Failed calls are not charged.", "Machine-generated; verify against source_url. Not investment advice."],
   });
 });
@@ -281,6 +356,12 @@ app.get("/", async (c) => {
 app.get("/v1/p/:id/list", async (c) => {
   const p = (await products(c.env)).find((x) => x.id === c.req.param("id") && sellable(x));
   if (!p) throw new HttpError(404, "unknown product");
+  if (kindOf(p) === "feed") {
+    // Free sample: the three newest filings, so a buyer can check the shape before paying.
+    const sample = (await latestFilings(p.forms, c.env)).slice(0, 3);
+    c.executionCtx.waitUntil(bump(c.env, p.id, { free_calls: 1 }));
+    return c.json({ product: p.id, sample: true, filings: sample });
+  }
   const ticker = normalizeTicker(c.req.query("ticker"));
   const list = await recentFilings(ticker, p.forms, c.env, 10);
   c.executionCtx.waitUntil(bump(c.env, p.id, { free_calls: 1 }));
@@ -291,9 +372,10 @@ app.get("/v1/p/:id/list", async (c) => {
 app.use("/v1/p/:id", async (c, next) => {
   if ((await c.env.KV.get("dead")) === "1") return c.json({ error: "service retired: budget exhausted" }, 503);
   const list = await products(c.env);
-  if (!list.find((x) => x.id === c.req.param("id") && sellable(x))) return c.json({ error: "unknown product" }, 404);
+  const prod = list.find((x) => x.id === c.req.param("id") && sellable(x));
+  if (!prod) return c.json({ error: "unknown product" }, 404);
   // A missing ticker still gets the 402 (the Bazaar indexer probes the bare URL); a malformed one fails unpaid.
-  if (c.req.query("ticker") !== undefined) normalizeTicker(c.req.query("ticker"));
+  if (kindOf(prod) === "summary" && c.req.query("ticker") !== undefined) normalizeTicker(c.req.query("ticker"));
   try {
     return await payMiddleware(c.env, list)(c, next);
   } catch (err) {
@@ -305,6 +387,11 @@ app.use("/v1/p/:id", async (c, next) => {
 app.get("/v1/p/:id", async (c) => {
   const env = c.env;
   const p = (await products(env)).find((x) => x.id === c.req.param("id") && x.active)!;
+  if (kindOf(p) === "feed") {
+    const body = feedResponse(p, await latestFilings(p.forms, env), c.req.query("hours"), c.req.query("limit"));
+    c.executionCtx.waitUntil(bump(env, p.id, { paid_calls: 1, revenue_micro: Math.round(p.price_usd * 1e6) }));
+    return c.json(body);
+  }
   const ticker = normalizeTicker(c.req.query("ticker"));
   const want = c.req.query("accession")?.trim();
   const list = await recentFilings(ticker, p.forms, env, 40);
@@ -330,6 +417,18 @@ app.get("/v1/p/:id", async (c) => {
 // ---- operator API used by the agent (bearer STATS_TOKEN) ----
 function authed(c: Context<{ Bindings: Env }>) {
   return c.env.STATS_TOKEN && c.req.header("authorization") === `Bearer ${c.env.STATS_TOKEN}`;
+}
+
+type Payment = { tx: string; at: string; payer: string; path: string; amount_micro: number };
+async function payments(kv: KVNamespace): Promise<Payment[]> {
+  const out: Payment[] = [];
+  let cursor: string | undefined;
+  do {
+    const r: KVNamespaceListResult<Omit<Payment, "tx">> = await kv.list({ prefix: "pay:", cursor });
+    for (const k of r.keys) if (k.metadata) out.push({ tx: k.name.slice(4), ...k.metadata });
+    cursor = r.list_complete ? undefined : r.cursor;
+  } while (cursor);
+  return out;
 }
 
 app.get("/internal/stats", async (c) => {
@@ -360,12 +459,12 @@ app.get("/internal/stats", async (c) => {
     const s = await c.env.KV.get<Stats>(k, "json");
     if (s) out[d].products![id] = { ...EMPTY, ...s };
   }
-  return c.json({ dead: (await c.env.KV.get("dead")) === "1", bazaar_last: await c.env.KV.get("bazaar:last", "json"), network: c.env.NETWORK, pay_to: c.env.PAY_TO, caps: CAPS, allowed_forms: ALLOWED_FORMS, days: out });
+  return c.json({ dead: (await c.env.KV.get("dead")) === "1", bazaar_last: await c.env.KV.get("bazaar:last", "json"), error_last: await c.env.KV.get("error:last", "json"), payments: await payments(c.env.KV), network: c.env.NETWORK, pay_to: c.env.PAY_TO, caps: CAPS, allowed_forms: ALLOWED_FORMS, days: out });
 });
 
 app.get("/internal/products", async (c) => {
   if (!authed(c)) return c.json({ error: "unauthorized" }, 401);
-  return c.json({ products: (await products(c.env)).map((p) => ({ ...p, blocked_reason: p.active ? contentProblem(p) : null })), output_fields: OUTPUT_FIELDS, caps: CAPS, allowed_forms: ALLOWED_FORMS });
+  return c.json({ products: (await products(c.env)).map((p) => ({ ...p, kind: kindOf(p), blocked_reason: p.active ? contentProblem(p) : null })), output_fields: OUTPUT_FIELDS, feed_fields: FEED_FIELDS, caps: CAPS, allowed_forms: ALLOWED_FORMS });
 });
 
 app.put("/internal/products/:id", async (c) => {

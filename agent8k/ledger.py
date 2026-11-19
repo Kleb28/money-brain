@@ -55,6 +55,9 @@ def usdc_balance(network: str, address: str) -> float | None:
         return None
 
 
+from wallets import wallet_lines  # noqa: E402
+
+
 def main() -> None:
     url = env("AGENT8K_URL").rstrip("/")
     token = env("AGENT8K_STATS_TOKEN")
@@ -106,6 +109,7 @@ def main() -> None:
         "|---|---|---|---|---|---|---|---|---|",
         *rows,
         "",
+        *wallet_lines(st.get("payments")),
     ]
     LEDGER.write_text("\n".join(lines))
     print("\n".join(lines[:9]))

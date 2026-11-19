@@ -73,6 +73,16 @@ function payMiddleware(env: Env) {
       } catch {
         // diagnostics only: never let this affect a settled payment
       }
+      // One key per settlement, facts in KV metadata so the ledger can count buyers by wallet
+      // (one-off crawler wallets vs repeat buyers) without reading each key.
+      try {
+        const r = ctx.result as { transaction?: string; payer?: string };
+        const url = (ctx.paymentPayload as { resource?: { url?: string } }).resource?.url ?? "";
+        const amount = Number((ctx.requirements as { amount?: string }).amount ?? 0);
+        if (r.transaction) await env.KV.put(`pay:${r.transaction}`, "", { metadata: { at: new Date().toISOString(), payer: (r.payer ?? "unknown").toLowerCase(), path: url ? new URL(url).pathname : "", amount_micro: amount } });
+      } catch {
+        // same: bookkeeping must not affect the payment
+      }
     });
   const mw = paymentMiddleware(
     {
@@ -170,6 +180,18 @@ function authed(c: Context<{ Bindings: Env }>) {
   return c.env.STATS_TOKEN && c.req.header("authorization") === `Bearer ${c.env.STATS_TOKEN}`;
 }
 
+type Payment = { tx: string; at: string; payer: string; path: string; amount_micro: number };
+async function payments(kv: KVNamespace): Promise<Payment[]> {
+  const out: Payment[] = [];
+  let cursor: string | undefined;
+  do {
+    const r: KVNamespaceListResult<Omit<Payment, "tx">> = await kv.list({ prefix: "pay:", cursor });
+    for (const k of r.keys) if (k.metadata) out.push({ tx: k.name.slice(4), ...k.metadata });
+    cursor = r.list_complete ? undefined : r.cursor;
+  } while (cursor);
+  return out;
+}
+
 app.get("/internal/stats", async (c) => {
   if (!authed(c)) return c.json({ error: "unauthorized" }, 401);
   const days = Math.min(Number(c.req.query("days") ?? 30), 400);
@@ -179,7 +201,7 @@ app.get("/internal/stats", async (c) => {
     const v = await c.env.KV.get<Stats>(`stats:${d}`, "json");
     if (v) out[d] = { ...EMPTY, ...v };
   }
-  return c.json({ dead: (await c.env.KV.get("dead")) === "1", bazaar_last: await c.env.KV.get("bazaar:last", "json"), price: c.env.PRICE, network: c.env.NETWORK, pay_to: c.env.PAY_TO, days: out });
+  return c.json({ dead: (await c.env.KV.get("dead")) === "1", bazaar_last: await c.env.KV.get("bazaar:last", "json"), payments: await payments(c.env.KV), price: c.env.PRICE, network: c.env.NETWORK, pay_to: c.env.PAY_TO, days: out });
 });
 
 app.post("/internal/kill", async (c) => {

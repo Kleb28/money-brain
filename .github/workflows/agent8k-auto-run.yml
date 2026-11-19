@@ -36,6 +36,7 @@ jobs:
           AUTO_URL: ${{ vars.AGENT8K_AUTO_URL }}
           AUTO_START: ${{ vars.AGENT8K_AUTO_START }}
           AUTO_SELF_REVENUE_USD: ${{ vars.AGENT8K_AUTO_SELF_REVENUE_USD }}
+          AGENT8K_SELF_WALLETS: ${{ vars.AGENT8K_SELF_WALLETS || '0x354EBc4428175B3829e9332aad61Da956EccbCb3' }}
           AUTO_LEDGER_ONLY: ${{ inputs.ledger_only && '1' || '' }}
           AGENT8K_STATS_TOKEN: ${{ secrets.AGENT8K_STATS_TOKEN }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
