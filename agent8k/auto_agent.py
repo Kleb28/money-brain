@@ -301,7 +301,7 @@ def run_agent(L: dict) -> None:
         "your_cost_so_far_usd": round(L["agent_cost"], 4),
         "per_product_totals": L["per_product"],
         "worker_url": URL,
-        "runs_per_day": 6,
+        "runs_per_day": 1,
     }
     user = f"Run {RUN_ID}.\n\nLedger:\n{json.dumps(brief, indent=1)}\n\nYour journal (latest lines):\n" + ("\n".join(tail) or "(empty: this is your first run)")
     kwargs = dict(

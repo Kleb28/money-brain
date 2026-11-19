@@ -44,7 +44,7 @@ After 14 days live on mainnet: pass if external revenue ≥ model cost; otherwis
 
 Same machinery, but the paid catalog is data and an agent manages it. 8-K Brief above stays unchanged as the control.
 - Worker `agent8k-auto` (`src/auto.ts`, `wrangler.auto.toml`, own KV). Paid route per product: `GET /v1/p/<id>?ticker=XXX`; free `GET /v1/p/<id>/list`. Products have a kind: `summary` (one filing of one ticker, model-written) or `feed` (`GET /v1/p/<id>?hours=6`: newest filings of its forms across all companies from the EDGAR latest-filings feed, cached 2 minutes, no model call).
-- Operator `auto_agent.py`, every 4 hours from 10:10 KST (`agent8k-auto-run.yml`): ledger → survival check → one Claude run (Sonnet 5.5) with tools list_products, get_stats, bazaar_search, upsert_product, retire_product, write_journal.
+- Operator `auto_agent.py`, daily at 10:10 KST (`agent8k-auto-run.yml`): ledger → survival check → one Claude run (Sonnet 5.5) with tools list_products, get_stats, bazaar_search, upsert_product, retire_product, write_journal.
 - Survival = $20 budget + revenue − serving cost (Haiku) − the agent's own model cost. ≤ 0 → Worker killed for good. Below $0.50 → ledger only.
 - Caps enforced by the Worker, not the prompt: ≤ 12 active products, ≤ 6 new per UTC day, price $0.005–$0.25, allowed SEC forms only, fixed output schema, 40 new summaries per day.
 - The agent cannot: move money (no wallet key deployed), contact anyone, change code or caps.
