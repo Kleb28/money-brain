@@ -24,6 +24,11 @@ console.log(`network ${network}${network === "eip155:8453" ? " (real USDC)" : " 
 const pay = wrapFetchWithPaymentFromConfig(fetch, {
   schemes: [{ network, client: new ExactEvmScheme(privateKeyToAccount(key)) }],
 });
-const res = await pay(`${base.replace(/\/$/, "")}/v1/8k/summary?ticker=${ticker}`);
+// BUY_PATH picks another paid route, e.g. /v1/p/insider-form4 on agent8k-auto.
+const path = process.env.BUY_PATH ?? "/v1/8k/summary";
+const res = await pay(`${base.replace(/\/$/, "")}${path}?ticker=${ticker}`);
 console.log(res.status, res.headers.get("payment-response") ?? res.headers.get("x-payment-response") ?? "");
+const ext = res.headers.get("extension-responses");
+if (ext) console.log("extension-responses:", Buffer.from(ext, "base64").toString("utf8"));
+else console.log("extension-responses: (none; Bazaar discovery was not reported by the facilitator)");
 console.log(JSON.stringify(await res.json(), null, 2));

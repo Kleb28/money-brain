@@ -124,7 +124,8 @@ app.get("/v1/8k/list", async (c) => {
 // Kill switch and validation run BEFORE payment, so a dead or invalid call returns 4xx/5xx unpaid.
 app.use(PAID_PATH, async (c, next) => {
   if ((await c.env.KV.get("dead")) === "1") return c.json({ error: "service retired: budget exhausted" }, 503);
-  normalizeTicker(c.req.query("ticker"));
+  // A missing ticker still gets the 402 (the Bazaar indexer probes the bare URL); a malformed one fails unpaid.
+  if (c.req.query("ticker") !== undefined) normalizeTicker(c.req.query("ticker"));
   await next();
 });
 app.use(PAID_PATH, (c, next) => payMiddleware(c.env)(c, next));

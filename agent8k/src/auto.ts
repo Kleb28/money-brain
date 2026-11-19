@@ -29,8 +29,8 @@ export interface Env {
 
 // ---- hard caps (the agent cannot change these) ----
 export const CAPS = {
-  maxActiveProducts: 6,
-  maxNewProductsPerDay: 2,
+  maxActiveProducts: 12,
+  maxNewProductsPerDay: 6,
   minPrice: 0.005,
   maxPrice: 0.25,
   maxInstructionChars: 1500,
@@ -67,6 +67,16 @@ async function products(env: Env): Promise<Product[]> {
   return (await env.KV.get<Product[]>("products", "json")) ?? [];
 }
 
+// Buyers always get the fixed schema below, so a description may not promise other fields,
+// and nothing may ask for opinions or trading signals.
+const OUTPUT_FIELDS = "headline, key_points[], figures[{label,value}], form, filed, accession, source_url";
+const BANNED = /\b(bullish|bearish|sentiment|signal|recommend\w*|price target|buy rating|sell rating|outperform|underperform|advice)\b/i;
+export function contentProblem(p: { description: string; instructions: string }): string | null {
+  const m = BANNED.exec(p.description) ?? BANNED.exec(p.instructions);
+  return m ? `"${m[0]}": output is factual only (fields: ${OUTPUT_FIELDS}); do not promise sentiment, signals or advice` : null;
+}
+const sellable = (p: Product) => p.active && !contentProblem(p);
+
 export function validateProduct(p: any, existing: Product[], createdToday: number): Product | string {
   if (typeof p !== "object" || !p) return "body must be a JSON object";
   if (typeof p.id !== "string" || !/^[a-z0-9][a-z0-9-]{1,31}$/.test(p.id)) return "id: 2-32 chars, a-z 0-9 and -";
@@ -75,6 +85,8 @@ export function validateProduct(p: any, existing: Product[], createdToday: numbe
   if (typeof p.instructions !== "string" || p.instructions.length > CAPS.maxInstructionChars) return `instructions: at most ${CAPS.maxInstructionChars} chars`;
   if (!Array.isArray(p.forms) || !p.forms.length || p.forms.length > 4 || !p.forms.every((f: any) => ALLOWED_FORMS.includes(f))) return `forms: 1-4 of ${ALLOWED_FORMS.join(", ")}`;
   if (typeof p.price_usd !== "number" || !(p.price_usd >= CAPS.minPrice && p.price_usd <= CAPS.maxPrice)) return `price_usd: ${CAPS.minPrice}-${CAPS.maxPrice}`;
+  const bad = contentProblem(p);
+  if (bad) return `description/instructions: ${bad}`;
   const prev = existing.find((x) => x.id === p.id);
   const active = p.active !== false;
   const activeOthers = existing.filter((x) => x.active && x.id !== p.id).length;
@@ -198,7 +210,7 @@ async function summarize(p: Product, f: Filing, ticker: string, text: string, en
 let cachedMw: { key: string; mw: ReturnType<typeof paymentMiddleware> } | null = null;
 
 function payMiddleware(env: Env, list: Product[]) {
-  const active = list.filter((p) => p.active);
+  const active = list.filter(sellable);
   const key = JSON.stringify([env.PAY_TO, env.NETWORK, env.CDP_API_KEY_ID ?? "", active.map((p) => [p.id, p.price_usd, p.description, p.updated])]);
   if (cachedMw?.key === key) return cachedMw.mw;
   const facilitator =
@@ -212,7 +224,7 @@ function payMiddleware(env: Env, list: Product[]) {
   for (const p of active) {
     routes[`GET /v1/p/${p.id}`] = {
       accepts: { scheme: "exact", price: `$${p.price_usd}`, network: env.NETWORK as `${string}:${string}`, payTo: env.PAY_TO },
-      description: p.description,
+      description: `${p.description} Returns JSON: ${OUTPUT_FIELDS}.`,
       mimeType: "application/json",
       serviceName: p.title,
       tags: ["finance", "sec", "edgar", ...p.forms.map((f) => f.toLowerCase().replace(/\s+/g, "-"))],
@@ -245,18 +257,19 @@ app.onError((err, c) => {
 });
 
 app.get("/", async (c) => {
-  const list = (await products(c.env)).filter((p) => p.active);
+  const list = (await products(c.env)).filter(sellable);
   return c.json({
     service: "SEC Filing Briefs (agent-run catalog)",
     what: "Pay-per-call JSON summaries of US SEC filings for software agents. The catalog is managed by an autonomous agent.",
     network: c.env.NETWORK,
+    output_fields: OUTPUT_FIELDS,
     products: list.map((p) => ({ id: p.id, title: p.title, description: p.description, forms: p.forms, price: `$${p.price_usd}`, paid: `GET /v1/p/${p.id}?ticker=AAPL`, free_list: `GET /v1/p/${p.id}/list?ticker=AAPL` })),
     notes: ["Failed calls are not charged.", "Machine-generated; verify against source_url. Not investment advice."],
   });
 });
 
 app.get("/v1/p/:id/list", async (c) => {
-  const p = (await products(c.env)).find((x) => x.id === c.req.param("id") && x.active);
+  const p = (await products(c.env)).find((x) => x.id === c.req.param("id") && sellable(x));
   if (!p) throw new HttpError(404, "unknown product");
   const ticker = normalizeTicker(c.req.query("ticker"));
   const list = await recentFilings(ticker, p.forms, c.env, 10);
@@ -268,8 +281,9 @@ app.get("/v1/p/:id/list", async (c) => {
 app.use("/v1/p/:id", async (c, next) => {
   if ((await c.env.KV.get("dead")) === "1") return c.json({ error: "service retired: budget exhausted" }, 503);
   const list = await products(c.env);
-  if (!list.find((x) => x.id === c.req.param("id") && x.active)) return c.json({ error: "unknown product" }, 404);
-  normalizeTicker(c.req.query("ticker"));
+  if (!list.find((x) => x.id === c.req.param("id") && sellable(x))) return c.json({ error: "unknown product" }, 404);
+  // A missing ticker still gets the 402 (the Bazaar indexer probes the bare URL); a malformed one fails unpaid.
+  if (c.req.query("ticker") !== undefined) normalizeTicker(c.req.query("ticker"));
   try {
     return await payMiddleware(c.env, list)(c, next);
   } catch (err) {
@@ -329,7 +343,7 @@ app.get("/internal/stats", async (c) => {
 
 app.get("/internal/products", async (c) => {
   if (!authed(c)) return c.json({ error: "unauthorized" }, 401);
-  return c.json({ products: await products(c.env), caps: CAPS, allowed_forms: ALLOWED_FORMS });
+  return c.json({ products: (await products(c.env)).map((p) => ({ ...p, blocked_reason: p.active ? contentProblem(p) : null })), output_fields: OUTPUT_FIELDS, caps: CAPS, allowed_forms: ALLOWED_FORMS });
 });
 
 app.put("/internal/products/:id", async (c) => {

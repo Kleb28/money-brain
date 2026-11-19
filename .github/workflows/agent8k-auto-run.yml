@@ -5,7 +5,7 @@ name: agent8k-auto-run
 # Commits agent8k/auto/{ledger.md,journal.md,agent_costs.csv}.
 on:
   schedule:
-    - cron: "10 1 * * *"  # 10:10 KST, after the 8-K Brief ledger
+    - cron: "10 1,5,9,13,17,21 * * *"  # every 4h from 10:10 KST
   workflow_dispatch:
     inputs:
       ledger_only:
