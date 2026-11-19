@@ -1,0 +1,41 @@
+# agent8k — 8-K Brief (budget-bounded paid API experiment)
+
+A small, self-built take on the "automaton" idea: a service that must earn its own model costs.
+It sells JSON summaries of SEC Form 8-K filings to software agents for $0.03 per call, paid in USDC
+over [x402](https://github.com/coinbase/x402). A daily ledger retires the paid endpoint when
+`budget + revenue − model cost ≤ 0`.
+
+Not part of the thesis pipeline; nothing here feeds tiers or cards.
+
+## Safety by construction
+- The Worker only knows a **receive** address (`PAY_TO`). No private key is deployed, so the service cannot send money.
+- The only money at risk is the Anthropic API key's spend limit (set it in the Console, e.g. $10/month).
+- Failed calls (4xx/5xx) are not settled, so buyers are not charged for errors.
+- At most `MAX_NEW_SUMMARIES_PER_DAY` model calls per day; summaries are cached per accession number, so repeat calls cost nothing.
+- Kill switch: `POST /internal/kill` (bearer `STATS_TOKEN`), also triggered by the ledger.
+
+## Endpoints
+| Route | Price | Returns |
+|---|---|---|
+| `GET /` | free | service description |
+| `GET /v1/8k/list?ticker=AAPL` | free | latest 8-K filings: date, item codes, accession |
+| `GET /v1/8k/summary?ticker=AAPL[&accession=…]` | $0.03 (x402) | headline, key points, figures, item titles, source URL |
+| `GET /internal/stats` | bearer token | daily counters |
+
+## Pieces
+- `src/` — Cloudflare Worker (Hono + `@x402/hono`), EDGAR fetch, Claude Haiku 5.5 summary with structured output
+- `ledger.py` — daily arithmetic ledger → `ledger.md`; Mondays writes one proposed change to `reflections/` (human reviews; nothing auto-deploys)
+- `scripts/buy_test.ts` — pays once with a Base Sepolia **test** wallet to prove the payment flow
+- `.github/workflows/agent8k-deploy.yml` (manual) and `agent8k-daily.yml` (00:40 UTC)
+
+## Setup (once)
+1. Cloudflare: free account → API token with "Edit Cloudflare Workers" + "Workers KV Storage: Edit" → GitHub secrets `CLOUDFLARE_API_TOKEN`, `CLOUDFLARE_ACCOUNT_ID`.
+2. Anthropic Console: API key with a monthly spend limit → secret `ANTHROPIC_API_KEY`.
+3. Any random string → secret `AGENT8K_STATS_TOKEN`.
+4. Variables: `AGENT8K_PAY_TO` (receive address), `EDGAR_USER_AGENT` (already set). Leave `AGENT8K_NETWORK` unset for the Base Sepolia test run.
+5. Run **agent8k-deploy**; copy the printed `workers.dev` URL into variable `AGENT8K_URL`.
+6. Test payment: `BUYER_KEY=<test key> AGENT8K_URL=… npx tsx scripts/buy_test.ts AAPL`.
+7. Go live: Coinbase Developer Platform API key → secrets `CDP_API_KEY_ID`, `CDP_API_KEY_SECRET`; set `AGENT8K_NETWORK=eip155:8453` and `AGENT8K_START=<today>`; re-run deploy. The CDP facilitator also lists the endpoint in its x402 discovery catalog (Bazaar).
+
+## Verdict rule (set before launch)
+After 14 days live on mainnet: pass if external revenue ≥ model cost; otherwise retire and record the numbers.
