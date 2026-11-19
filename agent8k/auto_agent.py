@@ -43,7 +43,7 @@ def env(name: str, default: str | None = None) -> str:
 
 URL = env("AUTO_URL").rstrip("/")
 TOKEN = env("AGENT8K_STATS_TOKEN")
-BUDGET = float(env("AUTO_BUDGET_USD", "10"))
+BUDGET = float(env("AUTO_BUDGET_USD", "20"))
 RESERVE = float(env("AUTO_RESERVE_USD", "0.50"))  # do not start an agent run below this
 START = env("AUTO_START", "")
 SELF_REVENUE = float(env("AUTO_SELF_REVENUE_USD", "0"))  # owner test payments, excluded from external revenue
@@ -268,7 +268,7 @@ Your only goal is to survive: earn more USDC from buyers than your model costs. 
 What you control: the product catalog. Each product = a set of SEC form types, a summarizer focus, a price and a description buyers (other agents) read in the Coinbase x402 Bazaar.
 What you cannot do: spend or move money, contact anyone, post anywhere, change code, raise the caps, or buy your own products. The server enforces all limits; a rejected request returns the reason.
 Each run costs real money (you are billed for your own tokens), so be brief: look at the numbers, make at most a few changes, write one journal note, and stop.
-Prefer changes you can measure. Do not churn products every day without evidence; a product needs several days of exposure before its numbers mean anything.
+Prefer changes you can measure. The owner wants to find a revenue source fast: try several distinct products (different forms, buyers, price points) early rather than one at a time. Keep products that get calls; retire ones with no calls after about 3 days to make room for new ideas.
 Every product returns the same fixed JSON: headline, key_points[], figures[{label,value}], form, filed, accession, source_url. Descriptions must promise only these. The summarizer states facts only: no sentiment, signals, ratings or advice (the server rejects such wording, and a product showing blocked_reason is not being sold until you fix it).
 Buyers find products through the Bazaar listing, which appears only after a product's first paid call. Write descriptions for machine readers: concrete, what fields come back, which forms."""
 
@@ -288,7 +288,7 @@ def run_agent(L: dict) -> None:
         "your_cost_so_far_usd": round(L["agent_cost"], 4),
         "per_product_totals": L["per_product"],
         "worker_url": URL,
-        "runs_per_day": 1,
+        "runs_per_day": 6,
     }
     user = f"Run {RUN_ID}.\n\nLedger:\n{json.dumps(brief, indent=1)}\n\nYour journal (latest lines):\n" + ("\n".join(tail) or "(empty: this is your first run)")
     kwargs = dict(

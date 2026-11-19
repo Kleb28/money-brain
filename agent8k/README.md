@@ -44,9 +44,9 @@ After 14 days live on mainnet: pass if external revenue ≥ model cost; otherwis
 
 Same machinery, but the paid catalog is data and an agent manages it. 8-K Brief above stays unchanged as the control.
 - Worker `agent8k-auto` (`src/auto.ts`, `wrangler.auto.toml`, own KV). Paid route per product: `GET /v1/p/<id>?ticker=XXX`; free `GET /v1/p/<id>/list`.
-- Operator `auto_agent.py`, daily 10:10 KST (`agent8k-auto-run.yml`): ledger → survival check → one Claude run (Sonnet 5.5) with tools list_products, get_stats, bazaar_search, upsert_product, retire_product, write_journal.
-- Survival = $10 budget + revenue − serving cost (Haiku) − the agent's own model cost. ≤ 0 → Worker killed for good. Below $0.50 → ledger only.
-- Caps enforced by the Worker, not the prompt: ≤ 6 active products, ≤ 2 new per UTC day, price $0.005–$0.25, allowed SEC forms only, fixed output schema, 40 new summaries per day.
+- Operator `auto_agent.py`, every 4 hours from 10:10 KST (`agent8k-auto-run.yml`): ledger → survival check → one Claude run (Sonnet 5.5) with tools list_products, get_stats, bazaar_search, upsert_product, retire_product, write_journal.
+- Survival = $20 budget + revenue − serving cost (Haiku) − the agent's own model cost. ≤ 0 → Worker killed for good. Below $0.50 → ledger only.
+- Caps enforced by the Worker, not the prompt: ≤ 12 active products, ≤ 6 new per UTC day, price $0.005–$0.25, allowed SEC forms only, fixed output schema, 40 new summaries per day.
 - The agent cannot: move money (no wallet key deployed), contact anyone, change code or caps.
 - Everything it does is committed: `auto/journal.md`, `auto/ledger.md`, `auto/agent_costs.csv`.
 - Setup: run `agent8k-auto-deploy`, set repo variables `AGENT8K_AUTO_URL` (printed by the deploy) and `AGENT8K_AUTO_START`, then run `agent8k-auto-run` once by hand.

@@ -29,8 +29,8 @@ export interface Env {
 
 // ---- hard caps (the agent cannot change these) ----
 export const CAPS = {
-  maxActiveProducts: 6,
-  maxNewProductsPerDay: 2,
+  maxActiveProducts: 12,
+  maxNewProductsPerDay: 6,
   minPrice: 0.005,
   maxPrice: 0.25,
   maxInstructionChars: 1500,
