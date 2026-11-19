@@ -25,6 +25,7 @@ jobs:
         env:
           AGENT8K_URL: ${{ vars.AGENT8K_URL }}
           AGENT8K_START: ${{ vars.AGENT8K_START }}
+          AGENT8K_SELF_CALLS: ${{ vars.AGENT8K_SELF_CALLS }}
           AGENT8K_STATS_TOKEN: ${{ secrets.AGENT8K_STATS_TOKEN }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
       - name: Commit
