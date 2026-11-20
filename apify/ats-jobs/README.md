@@ -1,6 +1,6 @@
-# Workday, Greenhouse, Lever & Ashby Jobs Scraper
+# Greenhouse, Lever, Ashby & Workable Jobs Scraper
 
-Live open jobs for any list of companies, in one unified JSON schema. It reads six applicant tracking systems directly (Workday, Greenhouse, Lever, Ashby, Workable, SmartRecruiters), using their public job-board JSON, so results are current to the minute and runs take seconds: no browser, no proxy, no stale index.
+Live open jobs for any list of companies, in one unified JSON schema. It calls the official public job-board APIs of five applicant tracking systems directly, so results are current to the minute and runs take seconds: no browser, no proxy, no stale index.
 
 ## What you can do with it
 - Track new openings at target accounts every day (set **Posted or updated on or after**)
@@ -11,7 +11,7 @@ Live open jobs for any list of companies, in one unified JSON schema. It reads s
 ## Input
 | Field | Meaning |
 |---|---|
-| `companies` | Careers URLs (`https://jobs.ashbyhq.com/openai`), `ats:slug` (`greenhouse:stripe`), or a bare slug (`stripe`), which is tried on every system except Workday. For Workday give the careers URL (`https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite`) |
+| `companies` | Careers URLs (`https://jobs.ashbyhq.com/openai`), `ats:slug` (`greenhouse:stripe`), or a bare slug (`stripe`), which is tried on all five systems |
 | `titleKeywords`, `locationKeywords` | Keep jobs containing any keyword |
 | `remoteOnly` | Only jobs marked remote |
 | `postedAfter` | ISO date; older jobs are skipped |
@@ -39,9 +39,8 @@ Live open jobs for any list of companies, in one unified JSON schema. It reads s
 ```
 
 ## Notes
-- Fields a system does not publish are `null` (for example, Greenhouse has no employment type; SmartRecruiters' and Workday's lists have no description).
-- Workday shows relative dates ("Posted 3 Days Ago"), so `postedAt` is a day-level estimate and is `null` for jobs older than 30 days. Without filters a Workday board is read up to `maxJobsPerCompany`; with filters, up to its first 2,000 postings.
-- A company must use one of the six systems with a public board. iCIMS and custom career sites are not covered.
+- Fields a system does not publish are `null` (for example, Greenhouse has no employment type; SmartRecruiters' list has no description).
+- A company must use one of the five systems with a public board. Workday, iCIMS and custom career sites are not covered.
 
 ## Pricing
 Free for now: you pay only Apify platform usage (a typical run costs well under one cent).

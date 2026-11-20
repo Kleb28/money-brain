@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { ATS, htmlToText, keep, parseCompany, workday, workdayPosted } from "../src/ats.js";
+import { ATS, htmlToText, keep, parseCompany } from "../src/ats.js";
 
 test("parseCompany", () => {
   assert.deepEqual(parseCompany("https://boards.greenhouse.io/stripe"), [{ ats: "greenhouse", slug: "stripe" }]);
@@ -42,20 +42,4 @@ test("keep", () => {
   assert.equal(keep(j, { locationKeywords: ["berlin"] }), false);
   assert.equal(keep(j, { remoteOnly: true }), false);
   assert.equal(keep(j, { postedAfter: "2026-11-15T00:00:00.000Z" }), false);
-});
-
-test("workday", () => {
-  assert.deepEqual(parseCompany("https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite"), [{ ats: "workday", slug: "nvidia.wd5/NVIDIAExternalCareerSite" }]);
-  assert.deepEqual(parseCompany("https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/x"), [{ ats: "workday", slug: "nvidia.wd5/NVIDIAExternalCareerSite" }]);
-  assert.deepEqual(parseCompany("workday:nvidia.wd5/NVIDIAExternalCareerSite"), [{ ats: "workday", slug: "nvidia.wd5/NVIDIAExternalCareerSite" }]);
-  assert.equal(workday.listUrl("nvidia.wd5/NVIDIAExternalCareerSite"), "https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/jobs");
-  const now = Date.parse("2026-11-20T12:00:00Z");
-  assert.equal(workdayPosted("Posted Today", now), "2026-11-20T00:00:00.000Z");
-  assert.equal(workdayPosted("Posted 3 Days Ago", now), "2026-11-17T00:00:00.000Z");
-  assert.equal(workdayPosted("Posted 30+ Days Ago", now), null);
-  const j = workday.norm({ title: "Senior Production Engineer", externalPath: "/job/Switzerland-Remote/Senior_JR1", locationsText: "2 Locations", postedOn: "Posted Yesterday", bulletFields: ["JR1"] }, "nvidia.wd5/NVIDIAExternalCareerSite", now);
-  assert.equal(j.jobId, "JR1");
-  assert.equal(j.remote, true);
-  assert.equal(j.url, "https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite/job/Switzerland-Remote/Senior_JR1");
-  assert.equal(j.postedAt, "2026-11-19T00:00:00.000Z");
 });
