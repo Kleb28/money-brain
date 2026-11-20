@@ -1,4 +1,4 @@
-# Website Contact Finder
+# Website Contact Scraper: Emails, Phones & Social Links
 
 Give it a list of company websites and get back the public contact details published on them: emails, phone numbers and social profiles. It reads the home page and the most contact-like internal pages (contact, about, team, impressum) over plain HTTP, so a site takes a second or two and costs a fraction of a browser-based crawl.
 

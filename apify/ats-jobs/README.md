@@ -1,4 +1,4 @@
-# Company Jobs API: Greenhouse, Lever, Ashby, Workable, SmartRecruiters
+# Greenhouse, Lever, Ashby & Workable Jobs Scraper
 
 Live open jobs for any list of companies, in one unified JSON schema. It calls the official public job-board APIs of five applicant tracking systems directly, so results are current to the minute and runs take seconds: no browser, no proxy, no stale index.
 

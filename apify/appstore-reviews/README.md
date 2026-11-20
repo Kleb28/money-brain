@@ -1,4 +1,4 @@
-# App Store Reviews API
+# App Store Reviews Scraper: Multi-Country, Rating & Date Filters
 
 Recent iOS App Store reviews for any app, in any country storefront, as clean JSON. It reads Apple's own public review feed, so there is no login, no proxy and no browser: runs finish in seconds.
 
