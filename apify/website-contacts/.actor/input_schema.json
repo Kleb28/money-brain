@@ -1,0 +1,35 @@
+{
+  "title": "Website Contact Finder",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "websites": {
+      "title": "Websites",
+      "type": "array",
+      "description": "Company domains or URLs, one per line (example.com or https://example.com).",
+      "editor": "stringList",
+      "prefill": ["apify.com"]
+    },
+    "maxPagesPerSite": {
+      "title": "Max pages per site",
+      "type": "integer",
+      "description": "The home page plus the most contact-like internal pages (contact, about, team, impressum...).",
+      "default": 5,
+      "minimum": 1,
+      "maximum": 15
+    },
+    "sameDomainEmailsOnly": {
+      "title": "Only emails on the site's own domain",
+      "type": "boolean",
+      "description": "Drops addresses on other domains (for example a web agency's address in the footer).",
+      "default": false
+    },
+    "respectRobotsTxt": {
+      "title": "Respect robots.txt",
+      "type": "boolean",
+      "description": "Skip pages the site disallows for all crawlers.",
+      "default": true
+    }
+  },
+  "required": ["websites"]
+}

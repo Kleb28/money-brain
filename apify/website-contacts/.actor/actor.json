@@ -1,0 +1,10 @@
+{
+  "actorSpecification": 1,
+  "name": "website-contact-finder",
+  "title": "Website Contact Finder: emails, phones and social links from company sites",
+  "description": "Give it company websites; get back the public contact emails, phone numbers and social profiles found on the home, contact and about pages. Fast HTTP crawl, a few pages per site, no browser.",
+  "version": "0.1",
+  "input": "./input_schema.json",
+  "dockerfile": "../Dockerfile",
+  "storages": { "dataset": "./dataset_schema.json" }
+}
