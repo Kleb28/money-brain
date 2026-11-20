@@ -43,6 +43,7 @@ for (const raw of input.websites ?? []) {
     }
     item.emails = [...emails].filter((e) => !input.sameDomainEmailsOnly || e.endsWith(`@${site.domain}`) || e.endsWith(`.${site.domain}`));
     item.phones = [...phones];
+    if (!item.pagesCrawled) item.error = queue.length ? "no page could be read" : "blocked by robots.txt";
   } catch (err) {
     item.error = String(err.message ?? err).slice(0, 200);
   }

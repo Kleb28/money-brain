@@ -86,4 +86,10 @@ export function robotsDisallows(txt) {
   }
   return out;
 }
-export const allowed = (url, disallows) => !disallows.some((p) => new URL(url).pathname.startsWith(p.replace(/\*.*$/, "")) && p.replace(/\*.*$/, "") !== "");
+// robots.txt path patterns: "*" matches any run of characters, a trailing "$" anchors the end.
+const robotsRe = (p) => new RegExp("^" + p.split("*").map((x) => x.replace(/[.+?^{}()|[\]\\]/g, "\\$&").replace(/\$$/, "$")).join(".*"));
+export const allowed = (url, disallows) => {
+  const u = new URL(url);
+  const target = u.pathname + u.search;
+  return !disallows.some((p) => robotsRe(p).test(target));
+};
