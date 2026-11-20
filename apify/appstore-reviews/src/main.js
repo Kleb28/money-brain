@@ -22,6 +22,9 @@ async function resolveApp(ref, country) {
   return { id: String(hit.trackId), name: hit.trackName ?? null };
 }
 
+const feedPage = async (country, app, page, sort) =>
+  parseFeedPage(await getJson(feedUrl(country, app.id, page, sort)), { appId: app.id, appName: app.name, country });
+
 await Actor.init();
 const input = (await Actor.getInput()) ?? {};
 const countries = (input.countries?.length ? input.countries : ["us"]).map((c) => String(c).trim().toLowerCase()).filter((c) => /^[a-z]{2}$/.test(c));
@@ -45,8 +48,24 @@ for (const raw of input.apps ?? []) {
   }
   for (const country of countries) {
     let got = 0;
+    let sort = sortBy;
     for (let page = 1; page <= MAX_PAGES && got < max; page++) {
-      const reviews = parseFeedPage(await getJson(feedUrl(country, app.id, page, sortBy)), { appId: app.id, appName: app.name, country });
+      let reviews = await feedPage(country, app, page, sort);
+      if (!reviews.length && page === 1) {
+        // Apple's feed intermittently serves an empty "most recent" list while "most helpful" still works.
+        for (const wait of [5000, 15000]) {
+          await new Promise((r) => setTimeout(r, wait));
+          reviews = await feedPage(country, app, 1, sort);
+          if (reviews.length) break;
+        }
+        if (!reviews.length && sort === "mostrecent") {
+          reviews = await feedPage(country, app, 1, "mosthelpful");
+          if (reviews.length) {
+            sort = "mosthelpful";
+            log.warning(`${app.name ?? app.id} [${country}]: Apple's most-recent feed is empty right now; returning most-helpful reviews instead (date filter still applied).`);
+          }
+        }
+      }
       if (!reviews.length) break;
       const batch = reviews.filter((r) => keep(r, filter)).slice(0, max - got);
       if (batch.length) {
@@ -60,7 +79,7 @@ for (const raw of input.apps ?? []) {
         }
       }
       // Newest first: once a page holds reviews older than `since`, later pages are older still.
-      if (filter.since && sortBy === "mostrecent" && reviews.some((r) => r.date && r.date < filter.since)) break;
+      if (filter.since && sort === "mostrecent" && reviews.some((r) => r.date && r.date < filter.since)) break;
     }
     log.info(`${app.name ?? app.id} [${country}]: ${got} reviews`);
     total += got;
