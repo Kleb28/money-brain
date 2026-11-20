@@ -42,4 +42,4 @@ Recent iOS App Store reviews for any app, in any country storefront, as clean JS
 - Reviews only (text reviews), not star-only ratings.
 
 ## Pricing
-Pay per review returned. Runs that return nothing cost nothing beyond platform usage.
+Free for now: you pay only Apify platform usage (a typical run costs well under one cent).

@@ -6,7 +6,7 @@ Live open jobs for any list of companies, in one unified JSON schema. It calls t
 - Track new openings at target accounts every day (set **Posted or updated on or after**)
 - Build a niche job board or a hiring-signal feed for sales and recruiting
 - Give an AI agent a reliable "what is this company hiring for" tool
-- Filter by title keywords, location or remote before you pay for a result
+- Filter by title keywords, location or remote so you only get the jobs you need
 
 ## Input
 | Field | Meaning |
@@ -43,4 +43,4 @@ Live open jobs for any list of companies, in one unified JSON schema. It calls t
 - A company must use one of the five systems with a public board. Workday, iCIMS and custom career sites are not covered.
 
 ## Pricing
-Pay per job returned. A company with no matching jobs costs nothing beyond platform usage.
+Free for now: you pay only Apify platform usage (a typical run costs well under one cent).

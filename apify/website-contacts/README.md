@@ -39,4 +39,4 @@ Give it a list of company websites and get back the public contact details publi
 - You are responsible for using contact data in line with the laws that apply to you (for example GDPR and anti-spam rules).
 
 ## Pricing
-Pay per website reached. Unreachable sites are returned with an `error` and are not charged.
+Free for now: you pay only Apify platform usage (a typical run costs well under one cent).
