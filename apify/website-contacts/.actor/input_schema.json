@@ -16,7 +16,11 @@
       "title": "Dataset from another Actor (optional)",
       "type": "string",
       "resourceType": "dataset",
-      "description": "Pick the results of a Google Maps Scraper run (or any dataset whose rows have a website field). Every distinct website in it is read, and each result keeps the place's name, address, phone and placeId so you can join it back."
+      "description": "Pick the results of a Google Maps Scraper run (or any dataset whose rows have a website field). Every distinct website in it is read, and each result keeps the place's name, address, phone and placeId so you can join it back.",
+      "resourcePermissions": [
+        "READ"
+      ],
+      "editor": "resourcePicker"
     },
     "websiteField": {
       "title": "Website field in that dataset",
