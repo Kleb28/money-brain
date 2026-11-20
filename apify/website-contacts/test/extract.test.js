@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { allowed, extractEmails, extractPhones, extractSocial, normalizeSite, pickLinks, robotsDisallows } from "../src/extract.js";
+import { allowed, extractEmails, extractPhones, extractSocial, normalizeSite, pickLinks, robotsDisallows, SOCIAL_HOST, sourceFields } from "../src/extract.js";
 
 test("normalizeSite", () => {
   assert.deepEqual(normalizeSite("Example.com/pricing"), { start: "https://example.com/", domain: "example.com" });
@@ -40,4 +40,12 @@ test("robots", () => {
   assert.equal(allowed("https://a.io/p?_rsc=1", w), false);
   assert.equal(allowed("https://a.io/f.pdf", w), false);
   assert.equal(allowed("https://a.io/f.pdfx", w), true);
+});
+
+test("dataset rows", () => {
+  assert.ok(SOCIAL_HOST.test("facebook.com"));
+  assert.ok(SOCIAL_HOST.test("m.facebook.com"));
+  assert.ok(!SOCIAL_HOST.test("notfacebook.company"));
+  assert.deepEqual(sourceFields({ title: "Cafe A", phone: "+1 555", location: { lat: 1 }, website: "a.com", placeId: "p1", extra: 1 }), { title: "Cafe A", phone: "+1 555", placeId: "p1" });
+  assert.equal(sourceFields({ foo: 1 }), null);
 });

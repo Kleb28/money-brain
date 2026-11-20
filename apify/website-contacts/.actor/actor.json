@@ -1,8 +1,8 @@
 {
   "actorSpecification": 1,
   "name": "website-contact-finder",
-  "title": "Website Contact Scraper: Emails, Phones & Social Links",
-  "description": "Give it company websites; get back the public contact emails, phone numbers and social profiles found on the home, contact and about pages. Fast HTTP crawl, a few pages per site, no browser.",
+  "title": "Google Maps Email Extractor & Website Contact Scraper",
+  "description": "Add emails, phones and social links to Google Maps Scraper results or any list of company websites. Reads each company's own home, contact and about pages over fast HTTP: no browser, a second or two per site.",
   "version": "0.1",
   "input": "./input_schema.json",
   "output": "./output_schema.json",

@@ -93,3 +93,14 @@ export const allowed = (url, disallows) => {
   const target = u.pathname + u.search;
   return !disallows.some((p) => robotsRe(p).test(target));
 };
+
+/** Hosts that are a profile page, not a company's own website (common in the "website" field of map listings). */
+export const SOCIAL_HOST = /(^|\.)(facebook\.com|instagram\.com|linkedin\.com|twitter\.com|x\.com|tiktok\.com|youtube\.com|linktr\.ee|wa\.me|yelp\.com|google\.com)$/i;
+
+const KEEP = ["title", "name", "categoryName", "address", "city", "countryCode", "phone", "placeId", "totalScore", "reviewsCount", "url"];
+/** The identifying fields of a source row (Google Maps Scraper names), so each result can be joined back to its place. */
+export function sourceFields(row) {
+  const out = {};
+  for (const k of KEEP) if (row?.[k] !== undefined && row[k] !== null && typeof row[k] !== "object") out[k] = row[k];
+  return Object.keys(out).length ? out : null;
+}
