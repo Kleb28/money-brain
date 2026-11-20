@@ -1,14 +1,29 @@
 {
-  "title": "Website Contact Finder",
+  "title": "Website Contact Scraper",
   "type": "object",
   "schemaVersion": 1,
   "properties": {
     "websites": {
       "title": "Websites",
       "type": "array",
-      "description": "Company domains or URLs, one per line (example.com or https://example.com).",
+      "description": "Company domains or URLs, one per line (example.com or https://example.com). Optional when you give a dataset below.",
       "editor": "stringList",
-      "prefill": ["apify.com"]
+      "prefill": [
+        "apify.com"
+      ]
+    },
+    "datasetId": {
+      "title": "Dataset from another Actor (optional)",
+      "type": "string",
+      "resourceType": "dataset",
+      "description": "Pick the results of a Google Maps Scraper run (or any dataset whose rows have a website field). Every distinct website in it is read, and each result keeps the place's name, address, phone and placeId so you can join it back."
+    },
+    "websiteField": {
+      "title": "Website field in that dataset",
+      "type": "string",
+      "description": "Name of the field that holds the website URL.",
+      "default": "website",
+      "editor": "textfield"
     },
     "maxPagesPerSite": {
       "title": "Max pages per site",
@@ -29,7 +44,15 @@
       "type": "boolean",
       "description": "Skip pages the site disallows for all crawlers.",
       "default": true
+    },
+    "concurrency": {
+      "title": "Sites read at the same time",
+      "type": "integer",
+      "description": "Each site is a different host, so several can be read in parallel.",
+      "default": 5,
+      "minimum": 1,
+      "maximum": 20
     }
   },
-  "required": ["websites"]
+  "required": []
 }
