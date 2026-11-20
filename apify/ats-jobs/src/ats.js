@@ -1,5 +1,6 @@
 // One adapter per ATS: the public endpoint and a pure normalizer to the unified schema.
-// All five are the vendors' documented public job-board APIs (no auth, meant for embedding).
+// The first five are the vendors' documented public job-board APIs (no auth, meant for embedding).
+// Workday has no such API; its adapter reads the same public JSON the company's own careers page loads.
 
 const decode = (s) =>
   String(s ?? "")
@@ -80,7 +81,41 @@ export const ATS = {
   },
 };
 
+/** "Posted Today" | "Posted Yesterday" | "Posted 3 Days Ago" | "Posted 30+ Days Ago" -> ISO day (approximate) or null. */
+export function workdayPosted(text, now = Date.now()) {
+  const t = String(text ?? "").toLowerCase();
+  if (/30\+/.test(t)) return null; // only "older than 30 days" is known
+  const days = /today/.test(t) ? 0 : /yesterday/.test(t) ? 1 : Number(/(\d+)\s+days?\s+ago/.exec(t)?.[1] ?? NaN);
+  if (Number.isNaN(days)) return null;
+  return new Date(Math.floor((now - days * 86400000) / 86400000) * 86400000).toISOString();
+}
+
+/** slug = "<tenant>.<wdN>/<site>", e.g. "nvidia.wd5/NVIDIAExternalCareerSite". */
+export const workday = {
+  parts: (slug) => {
+    const m = /^([\w-]+)\.(wd\d+)\/([\w-]+)$/i.exec(slug);
+    return m ? { tenant: m[1], host: `${m[1]}.${m[2]}.myworkdayjobs.com`, site: m[3] } : null;
+  },
+  listUrl: (slug) => {
+    const p = workday.parts(slug);
+    return p ? `https://${p.host}/wday/cxs/${p.tenant}/${p.site}/jobs` : null;
+  },
+  norm: (x, slug, now) => {
+    const p = workday.parts(slug);
+    const url = x.externalPath ? `https://${p.host}/${p.site}${x.externalPath}` : null;
+    return {
+      company: p.tenant, ats: "workday", jobId: String(x.bulletFields?.[0] ?? x.externalPath ?? ""), title: x.title ?? "",
+      location: x.locationsText ?? null, remote: x.remoteType ? /remote/i.test(x.remoteType) : isRemote(x.locationsText, x.title, x.externalPath),
+      department: null, employmentType: x.timeType ?? null,
+      postedAt: workdayPosted(x.postedOn, now), updatedAt: null,
+      url, applyUrl: url, compensation: null,
+      description: null, // the list has no description; kept null rather than one extra request per job
+    };
+  },
+};
+
 const HOSTS = [
+  [/([\w-]+\.wd\d+)\.myworkdayjobs\.com\/(?:[a-z]{2}-[A-Z]{2}\/)?([\w-]+)/, "workday"],
   [/(?:boards|job-boards)(?:\.eu)?\.greenhouse\.io\/(?:embed\/job_board\?for=)?([\w-]+)/i, "greenhouse"],
   [/jobs(?:\.eu)?\.lever\.co\/([\w-]+)/i, "lever"],
   [/jobs\.ashbyhq\.com\/([\w.%-]+)/i, "ashby"],
@@ -94,8 +129,10 @@ export function parseCompany(raw) {
   if (!s) return [];
   for (const [re, ats] of HOSTS) {
     const m = re.exec(s);
-    if (m) return [{ ats, slug: decodeURIComponent(m[1]) }];
+    if (m) return [{ ats, slug: ats === "workday" ? `${m[1]}/${m[2]}` : decodeURIComponent(m[1]) }];
   }
+  const wd = /^workday:([\w-]+\.wd\d+\/[\w-]+)$/i.exec(s);
+  if (wd) return [{ ats: "workday", slug: wd[1] }];
   const pair = /^(\w+):([\w.-]+)$/.exec(s);
   if (pair && ATS[pair[1].toLowerCase()]) return [{ ats: pair[1].toLowerCase(), slug: pair[2] }];
   if (/^[\w.-]+$/.test(s)) return Object.keys(ATS).map((ats) => ({ ats, slug: s }));

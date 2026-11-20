@@ -6,7 +6,7 @@
     "companies": {
       "title": "Companies",
       "type": "array",
-      "description": "Careers-page URLs (e.g. https://boards.greenhouse.io/stripe, https://jobs.lever.co/spotify, https://jobs.ashbyhq.com/openai), 'ats:slug' pairs (greenhouse:stripe), or a bare slug (stripe), which is tried on every supported ATS.",
+      "description": "Careers-page URLs (e.g. https://boards.greenhouse.io/stripe, https://jobs.lever.co/spotify, https://jobs.ashbyhq.com/openai, https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite), 'ats:slug' pairs (greenhouse:stripe), or a bare slug (stripe), which is tried on every supported ATS except Workday (Workday needs the URL).",
       "editor": "stringList",
       "prefill": ["https://jobs.ashbyhq.com/openai", "greenhouse:stripe"]
     },
