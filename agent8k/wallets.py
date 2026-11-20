@@ -11,6 +11,11 @@ import os
 SELF_WALLETS = {w.strip().lower() for w in os.environ.get("AGENT8K_SELF_WALLETS", "").split(",") if w.strip()}
 
 
+def external_usd(payments: list[dict] | None) -> float:
+    """Revenue from wallets that are not the owner's, among recorded settlements."""
+    return sum(p.get("amount_micro", 0) / 1e6 for p in payments or [] if p["payer"] not in SELF_WALLETS)
+
+
 def wallet_lines(payments: list[dict] | None) -> list[str]:
     payments = payments or []
     by: dict[str, dict] = {}

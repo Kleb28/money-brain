@@ -34,4 +34,10 @@ test("robots", () => {
   assert.deepEqual(d, ["/private"]);
   assert.equal(allowed("https://a.io/private/x", d), false);
   assert.equal(allowed("https://a.io/contact", d), true);
+  // wildcard rules must not block the whole site (apify.com: "Disallow: /*?_rsc")
+  const w = ["/*?_rsc", "/*.pdf$"];
+  assert.equal(allowed("https://a.io/", w), true);
+  assert.equal(allowed("https://a.io/p?_rsc=1", w), false);
+  assert.equal(allowed("https://a.io/f.pdf", w), false);
+  assert.equal(allowed("https://a.io/f.pdfx", w), true);
 });

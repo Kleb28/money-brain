@@ -5,6 +5,7 @@
   "description": "Recent iOS App Store reviews for any app by ID, URL or name, across one or many countries, as clean JSON. Uses Apple's public review feed: no login, no proxy, no browser.",
   "version": "0.1",
   "input": "./input_schema.json",
+  "output": "./output_schema.json",
   "dockerfile": "../Dockerfile",
   "storages": { "dataset": "./dataset_schema.json" }
 }

@@ -55,7 +55,7 @@ def usdc_balance(network: str, address: str) -> float | None:
         return None
 
 
-from wallets import wallet_lines  # noqa: E402
+from wallets import external_usd, wallet_lines  # noqa: E402
 
 
 def main() -> None:
@@ -85,7 +85,9 @@ def main() -> None:
         )
 
     survival = budget + cum_rev - cum_cost
-    ext_rev = max(cum_rev - self_calls * price, 0.0)
+    # The call counter missed one early settlement, so "total minus owner calls" can undercount;
+    # settlements recorded by wallet are exact for what they cover. Take the larger.
+    ext_rev = max(cum_rev - self_calls * price, external_usd(st.get("payments")), 0.0)
     bal = usdc_balance(st["network"], st["pay_to"])
     dead = st["dead"]
     killed_now = False
