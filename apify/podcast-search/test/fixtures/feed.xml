@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/stylesheet.xsl"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:podcast="https://podcastindex.org/namespace/1.0">
+  <channel>
+    <atom:link href="https://feeds.example.com/biotech-bench" rel="self" type="application/rss+xml"/>
+    <title>The Biotech Bench</title>
+    <generator>ExampleHost 4.2</generator>
+    <image>
+      <url>https://cdn.example.com/shows/biotech-bench/cover-rss.jpg</url>
+      <title>The Biotech Bench (cover)</title>
+      <link>https://cdn.example.com/not-the-website</link>
+    </image>
+    <link>https://www.biotechbench.example/</link>
+    <language>en-us</language>
+    <copyright>&#169; 2026 Helix Media LLC</copyright>
+    <lastBuildDate>Tue, 17 Nov 2026 08:05:11 +0000</lastBuildDate>
+    <description><![CDATA[<p>Weekly conversations with the scientists &amp; founders building new medicines.</p><p>Hosted by <a href="https://www.biotechbench.example/about">Priya Nair</a>.</p>]]></description>
+    <itunes:author>Priya Nair &amp; Helix Media</itunes:author>
+    <itunes:summary>Weekly conversations about new medicines.</itunes:summary>
+    <itunes:type>episodic</itunes:type>
+    <itunes:owner>
+      <itunes:name>Helix Media LLC</itunes:name>
+      <itunes:email>hello@biotechbench.example</itunes:email>
+    </itunes:owner>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:image href="https://cdn.example.com/shows/biotech-bench/cover-3000.jpg"/>
+    <itunes:category text="Science">
+      <itunes:category text="Life Sciences"/>
+    </itunes:category>
+    <itunes:category text="Business"/>
+    <podcast:locked>yes</podcast:locked>
+    <item>
+      <title>Ep. 212: Base editing leaves the lab</title>
+      <itunes:title>Base editing leaves the lab</itunes:title>
+      <description><![CDATA[<p>What the first in-vivo base editing readouts mean.</p>]]></description>
+      <link>https://www.biotechbench.example/episodes/212</link>
+      <guid isPermaLink="false">b7c1d2e3-0212</guid>
+      <pubDate>Tue, 17 Nov 2026 08:00:00 +0000</pubDate>
+      <enclosure url="https://media.example.com/biotech-bench/212.mp3?source=rss&amp;v=2" length="43392000" type="audio/mpeg"/>
+      <itunes:duration>00:45:12</itunes:duration>
+      <itunes:image href="https://cdn.example.com/shows/biotech-bench/ep212.jpg"/>
+      <itunes:explicit>true</itunes:explicit>
+      <itunes:episode>212</itunes:episode>
+      <itunes:episodeType>full</itunes:episodeType>
+    </item>
+    <item>
+      <title><![CDATA[Ep. 211: GLP-1s & the manufacturing crunch]]></title>
+      <link>https://www.biotechbench.example/episodes/211</link>
+      <guid isPermaLink="true">https://www.biotechbench.example/episodes/211</guid>
+      <pubDate>Tue, 10 Nov 2026 03:00:00 -0500</pubDate>
+      <enclosure length="51840000" type="audio/mpeg" url='https://media.example.com/biotech-bench/211.mp3'/>
+      <itunes:duration>3240</itunes:duration>
+    </item>
+    <item>
+      <title>Ep. 210: A founder&apos;s guide to Series A</title>
+      <guid isPermaLink="false">b7c1d2e3-0210</guid>
+      <pubDate>Tue, 03 Nov 2026 08:00:00 GMT</pubDate>
+      <enclosure url="https://media.example.com/biotech-bench/210.mp3" length="30720000" type="audio/mpeg"/>
+      <itunes:duration>32:00</itunes:duration>
+    </item>
+    <item>
+      <title>Trailer</title>
+      <link/>
+      <pubDate>not a date</pubDate>
+      <itunes:episodeType>trailer</itunes:episodeType>
+    </item>
+  </channel>
+</rss>

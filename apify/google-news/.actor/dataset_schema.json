@@ -1,0 +1,11 @@
+{
+  "actorSpecification": 1,
+  "fields": {},
+  "views": {
+    "overview": {
+      "title": "Articles",
+      "transformation": { "fields": ["title", "source", "publishedAt", "query", "link"] },
+      "display": { "component": "table" }
+    }
+  }
+}

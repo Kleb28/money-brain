@@ -1,0 +1,26 @@
+{
+  "title": "Podcast Scraper",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "searchTerms": {
+      "title": "Search terms",
+      "type": "array",
+      "description": "Keywords to search on Apple Podcasts (for example a topic, an industry or a show name). Each term is searched separately.",
+      "editor": "stringList",
+      "prefill": ["biotech", "startup founders"]
+    },
+    "podcasts": {
+      "title": "Specific podcasts",
+      "type": "array",
+      "description": "Optional. Apple Podcasts URLs (https://podcasts.apple.com/us/podcast/name/id123456789), numeric Apple IDs (123456789) or RSS feed URLs (https://example.com/feed.xml).",
+      "editor": "stringList"
+    },
+    "country": { "title": "Country", "type": "string", "description": "Two-letter Apple storefront country code (us, gb, de, kr ...).", "editor": "textfield", "default": "us" },
+    "maxPodcastsPerTerm": { "title": "Max podcasts per search term", "type": "integer", "description": "Apple returns at most 200 shows per search.", "default": 50, "minimum": 1, "maximum": 200 },
+    "maxEpisodes": { "title": "Latest episodes per podcast", "type": "integer", "description": "How many of the newest episodes to include on each item. 0 = none.", "default": 5, "minimum": 0 },
+    "onlyWithEmail": { "title": "Only podcasts with an email", "type": "boolean", "description": "Keep only shows whose feed publishes an owner email.", "default": false },
+    "activeWithinDays": { "title": "Active within (days)", "type": "integer", "description": "Optional. Keep only shows whose latest episode is newer than this many days.", "minimum": 1 },
+    "concurrency": { "title": "Concurrency", "type": "integer", "description": "How many RSS feeds to fetch at the same time.", "default": 5, "minimum": 1, "maximum": 20 }
+  }
+}
