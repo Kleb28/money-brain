@@ -201,11 +201,19 @@ app.get("/internal/stats", async (c) => {
   if (!authed(c)) return c.json({ error: "unauthorized" }, 401);
   const days = Math.min(Number(c.req.query("days") ?? 30), 400);
   const out: Record<string, Stats> = {};
-  for (let i = 0; i < days; i++) {
-    const d = new Date(Date.now() - i * 86400000).toISOString().slice(0, 10);
-    const v = await c.env.KV.get<Stats>(`stats:${d}`, "json");
-    if (v) out[d] = { ...EMPTY, ...v };
-  }
+  // Only read keys that exist (KV list): 400 sequential gets timed out the ledger's request.
+  const since = new Date(Date.now() - (days - 1) * 86400000).toISOString().slice(0, 10);
+  let cursor: string | undefined;
+  do {
+    const r: KVNamespaceListResult<unknown> = await c.env.KV.list({ prefix: "stats:", cursor });
+    for (const k of r.keys) {
+      const d = k.name.slice(6);
+      if (d < since) continue;
+      const v = await c.env.KV.get<Stats>(k.name, "json");
+      if (v) out[d] = { ...EMPTY, ...v };
+    }
+    cursor = r.list_complete ? undefined : r.cursor;
+  } while (cursor);
   return c.json({ dead: (await c.env.KV.get("dead")) === "1", bazaar_last: await c.env.KV.get("bazaar:last", "json"), payments: await payments(c.env.KV), price: c.env.PRICE, network: c.env.NETWORK, pay_to: c.env.PAY_TO, days: out });
 });
 
