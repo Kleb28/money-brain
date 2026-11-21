@@ -1,0 +1,35 @@
+name: portfolio-trend
+
+# Trend-following blend paper portfolio (portfolio/trend_rules.md) -> outputs/portfolio_trend.md
+on:
+  schedule:
+    - cron: "30 4 * * 6"   # Saturdays 04:30 UTC
+  workflow_dispatch:
+  push:
+    branches: [claude/project-thread-7pasfq]
+    paths: [portfolio/track_trend.py, .github/workflows/portfolio-trend.yml]
+
+permissions:
+  contents: write
+
+jobs:
+  track:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install pandas numpy yfinance
+      - run: python -u -W ignore portfolio/track_trend.py
+      - name: Commit
+        run: |
+          git config user.name "money-brain-bot"
+          git config user.email "money-brain-bot@users.noreply.github.com"
+          git add outputs/portfolio_trend.md
+          if git diff --cached --quiet; then echo "nothing to commit"; else
+            git commit -m "portfolio-trend: NAV $(date -u +%F)"
+            B="${GITHUB_REF_NAME}"
+            for i in 1 2 3 4 5; do git pull --rebase origin "$B" && git push origin HEAD:"$B" && break; sleep 15; done
+          fi

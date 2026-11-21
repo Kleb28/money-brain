@@ -136,3 +136,44 @@
 - H3 MM 50% 중립화: MM 상관 0.423, MMC proxy 차이 +0.0002(t +2.0, 기준 2.4), NCORR 차이 −0.0100(t −14.7) → 미달
 - 참고: MLP 단독 MM 상관 0.217이지만 NCORR +0.0065로 약함; 보조 target 단독 MM 상관 0.271, NCORR +0.0131
 - 판정: 세 변형 모두 통과 기준 미달. MM 상관을 낮추는 것만으로는 MMC proxy가 오르지 않았고 NCORR 손실이 큼. live 모델 교체 없음. valois·tdd처럼 낮은 MM 상관에서 높은 mmc를 내려면 상관이 낮으면서 단독 성능도 있는 신호가 필요하고, 그건 이번 세 방법으로는 얻지 못함
+
+## Sim J — 경제적 근거가 있는 팩터를 모아 조합·최적화하면 표본 밖에서 이기는가 (2026-11-18 사전 등록, 실행 전)
+배경: Caleb 질문(2026-11-17) — "현상을 설명하는 컴포넌트를 다 모아 optimization을 돌리면 S&P500이든 어떤 상품이든 예측해서 수익을 낼 수 있지 않나". 이것을 세 universe에서 같은 형식으로 검정함: 지수 타이밍(J1), 미국 주식 팩터 조합(J2), 자산군 ETF cross-section(J3). 모든 예측·가중치는 t월 말까지의 데이터로만 만들고 t+1월 수익에 적용(walk-forward, expanding window). 후보 팩터·방법·기준은 아래로 고정하고 결과를 본 뒤 바꾸지 않음. 코드 simulation/sim_j.py, workflow sim-j.yml, 결과 outputs/sim_j.md.
+- 데이터(무료, Actions에서 수집): Ken French Data Library 월간(Mkt-RF·RF 1926-, 5 factor 2x3·Mom·ST_Rev·LT_Rev 1963-07-), FRED 월간(TB3MS·GS10·BAA·AAA·CPIAUCSL), yfinance 일별 조정 종가(ETF 21개)
+- J1 지수 타이밍(S&P500 대신 CRSP 가치가중 시장, French Mkt-RF): 예측 변수 7개 = tbl(TB3MS), term(GS10−TB3MS), dfy(BAA−AAA), infl(CPI 전년비, 발표 지연 1개월), mom12(시장 12개월 수익), trend(지수 > 10개월 평균이면 1), svar(12개월 월수익 제곱합). 추정 1954-01부터 expanding, 표본 밖 1980-01-끝. 기준 예측 HM = 과거 평균 초과수익. 주 예측 COMB = 7개 단변수 OLS 예측의 단순 평균(Rapach·Strauss·Zhou, RFS 2010). 통과 = COMB의 R²_OS > 0 이고 Clark-West t(Newey-West lag 3) ≥ 2.5. 같이 보고(판정에 안 씀): 단변수 7개·kitchen sink OLS의 R²_OS, 타이밍 전략(w = clip(f/(3σ²), 0, 1.5), σ² = 60개월 분산) vs buy-and-hold Sharpe, 2000-01 이후 부분 기간
+- J2 미국 주식 팩터 조합(French 8개: Mkt-RF·SMB·HML·RMW·CMA·Mom·ST_Rev·LT_Rev, long-short paper portfolio): 1/N = 8개 고정 동일가중(추정 없음). MV = Σ⁻¹μ(μ = expanding 표본평균, Σ = 표본공분산을 대각행렬 쪽으로 50% shrink), Σ|w| = 1로 정규화. 추정 1963-07부터 expanding, 표본 밖 1990-01-끝, 매월 재조정. 통과 = MV와 1/N 수익을 각자 표본 밖 표준편차로 나눈 차이 d_t의 평균 > 0 이고 Newey-West t(lag 3) ≥ 2.5. 같이 보고: 변동성 역가중, factor momentum(12개월 수익 > 0인 팩터만 동일가중; Ehsani·Linnainmaa, J. Finance 2022), 1/N 대 Mkt-RF, 2010-01 이후
+- J3 자산군 ETF(SPY·IWM·EFA·EEM·EWJ·TLT·IEF·SHY·LQD·HYG·TIP·EMB·GLD·SLV·DBC·USO·DBA·VNQ·UUP·FXE·FXY): 월말 신호 5개 = MOM(t−12→t−1 수익), TREND(가격/10개월 평균 − 1), REV(−1개월 수익), LOWVOL(−63거래일 변동성), VAL(−60개월 수익, 이력 60개월 이상 종목만). 각 신호 cross-sectional z(±3 winsor). COMP = 쓸 수 있는 z의 평균(가중치 추정 없음). 포트폴리오 = (COMP − 단면평균)/σ_i(63거래일 연율 변동성), Σ|w| = 1의 dollar-neutral long-short, t+1월 보유, 비용 5 bp × turnover. RIDGE = 다음 달 변동성 조정 수익(r/σ)을 z 5개(결측 0)에 pooled ridge(α = 0.05 × 학습 행 수) 회귀, 학습 36개월 이후부터, 같은 포트폴리오 구성. 표본 밖 = ETF 8개 이상이 신호를 가진 첫 달부터 끝
+  - J3a 통과 = COMP long-short 순수익 평균 > 0 이고 Newey-West t(lag 3) ≥ 2.5
+  - J3b 통과 = RIDGE − COMP(각자 표준편차로 나눈 차이, RIDGE가 있는 달만) 평균 > 0 이고 t ≥ 2.5
+  - 같이 보고: time-series momentum(12개월 초과수익 부호 × 10%/σ_i ÷ N; Moskowitz·Ooi·Pedersen, JFE 2012), COMP 상위 1/3 long-only vs ETF 1/N vs SPY 60/IEF 40
+- 판정 해석: 주 검정 4개(J1·J2·J3a·J3b), 각 t ≥ 2.5. J1 미달 = "공개 거시·가격 변수로 지수 방향 예측은 과거 평균을 못 이김". J2·J3b 미달 = "알려진 컴포넌트를 모아 최적화해도 단순 동일가중을 못 이김"(DeMiguel·Garlappi·Uppal, RFS 2009 1/N 결과의 재현 여부). J3a 통과 시 paper portfolio 후보로 올리고 실제 편입은 Caleb이 결정
+- 미리 적는 한계: French 팩터는 비용·공매도 제약 없는 paper 수익이고, 팩터 자체가 1981-2015년에 발견·발표돼 1990년 이후 표본 밖도 "어떤 팩터를 넣을지"는 사후 지식임(발표 후 수익 감소 McLean·Pontiff, J. Finance 2016); ETF는 2007년 전후 상장이라 표본 약 18년으로 검정력이 낮음(t 2.5에 Sharpe 약 0.6 필요); 밸류에이션 변수(D/P·CAPE)는 무료 월간 원본을 Actions에서 안정적으로 받기 어려워 J1에서 다루지 않았음; yfinance는 현재 상장 ETF만 있어 생존 편향이 있음
+
+## Sim J 결과 기록 (2026-11-18, outputs/sim_j.md)
+- 실행 메모: FRED가 러너의 plain requests를 timeout시켜 browser TLS 흉내(curl_cffi)로 받음(데이터·변수 변경 없음). J3는 진행 중인 달(2026-11)을 빼고 완결된 달만 씀. RIDGE 학습 panel은 ETF가 8개 미만이던 1990년대 달도 포함해(엄격히 과거 데이터만) 표본 밖 첫 달부터 예측이 있었음 → J3b 비교 구간이 COMP 전체 구간과 같음
+- J1(1980-01 ~ 2026-09, 560개월): COMB R²_OS +0.38%, Clark-West t 1.61 → 미달. 단변수 중 svar(+0.63%, t 1.98)·infl(+0.53%, t 1.72)만 양수, kitchen sink −2.18%. 타이밍 전략 Sharpe 0.78 < buy-and-hold 0.83(2000년 이후 0.52 vs 0.60)
+- J2(1990-01 ~ 2026-09, 441개월): 1/N Sharpe 0.78, MV 0.71, 차이 t −0.99 → 미달. 변동성 역가중(t −2.11)·factor momentum(t −0.33)도 1/N을 못 이김. 2010년 이후 1/N Sharpe 0.43 < 시장 0.87 — 팩터 프리미엄 자체가 표본 밖에서 약해짐(SMB 0.08·HML 0.17)
+- J3(2002-11 ~ 2026-10, 288개월): COMP long-short 연 +0.41%(Sharpe 0.13, t 0.64) → J3a 미달. RIDGE 연 +1.41%(Sharpe 0.40), RIDGE−COMP t 1.11 → J3b 미달. 참고: TSMOM Sharpe 0.47(t 2.28), long-only는 SPY 60/IEF 40(0.77)이 ETF 1/N(0.57)·COMP 상위 1/3(0.47)보다 높음. 신호 단독으로는 TREND 0.41·LOWVOL 0.37·MOM 0.27이 양, REV −0.63·VAL −0.25가 음이라 동일가중 COMP가 서로 상쇄됨
+- 판정: 주 검정 4개 모두 미달. "경제적 근거가 있는 공개 컴포넌트를 모아 조합·최적화"는 세 universe 모두 단순 기준(과거 평균·1/N·buy-and-hold)을 표본 밖에서 유의하게 못 이김 — Welch·Goyal(RFS 2008), DeMiguel·Garlappi·Uppal(RFS 2009)과 같은 방향. paper portfolio 후보 없음. TSMOM·RIDGE의 양의 부호는 사후 관찰이라 이 표본으로 재검정하지 않음(새 사전 등록 + 다른 표본, 예: 1990년 이전 선물 장기 데이터가 필요)
+
+## Sim K — 추세추종(TSMOM)을 Sim J와 겹치지 않는 표본에서 재검정 (2026-11-18 사전 등록, 실행 전)
+배경: Sim J에서 TSMOM이 판정 밖 참고값으로 Sharpe 0.47(t 2.28, 2002-11 ~ 2026-10)이었음. 사후에 고른 것이므로 같은 표본으로는 검정하지 않고, J3 이전 구간 1972-01 ~ 2002-10에서 다른 자산 집합으로 한 번만 검정함. Caleb 요청(2026-11-18). 코드 simulation/sim_k.py, workflow sim-k.yml, 결과 outputs/sim_k.md.
+- 자산(FRED, OECD MEI·Fed 월간; 8개국 US·JP·GB·DE·FR·CA·AU·CH): 주식 = OECD share price index(SPASTT01xxM661N, 배당 제외) 현지 단기금리 초과수익; 국채 10년 = IRLTLT01xxM156N 수익률에서 근사(월 초과수익 = y/12 − D·Δy − 단기/12, D = 10년 par bond modified duration, convexity 무시); 통화 = 달러 대비 외화 7개(EXJPUS·EXUSUK·EXGEUS·EXFRUS·EXCAUS·EXUSAL·EXSZUS), long 외화 초과수익 = Δln(달러/외화) + (외국 단기 − 미국 단기)/12. 단기금리 = IR3TIB01xxM156N, 결측은 IRSTCI01xxM156N, 미국은 TB3MS. 자산은 데이터가 생기는 달부터 들어감
+- 신호: t−12 ~ t−1월 누적 초과수익의 부호(최근 1개월 제외 — FRED 월간 값이 월평균이라 인접 월 수익이 기계적으로 상관되기 때문; Moskowitz·Ooi·Pedersen(JFE 2012) 원 정의와 다른 점). 비중 = 부호 × (10%/σ_i) ÷ N, σ_i = 직전 24개월 초과수익 표준편차 연율화, N = 그 달 쓸 수 있는 자산 수(4개 이상인 달만). t+1월 수익에 적용, 비용 5 bp × turnover
+- 통과 = TSMOM 월수익 평균 > 0 이고 Newey-West t(lag 3) ≥ 2.5
+- 같이 보고(판정에 안 씀): 자산군별(주식·국채·통화) Sharpe, 전반(1972-1986)·후반(1987-2002), 같은 위험 비중으로 늘 long인 포트폴리오 Sharpe(추세추종이 단순 long beta인지 확인), 최근 월 포함 원 정의 결과
+- 한계: 1985-2002 구간은 MOP 2012(1985-2009)·Hurst·Ooi·Pedersen(JPM 2017, 1880-2016)이 이미 본 표본이라 "우리 표본 밖"이지 "문헌 표본 밖"이 아님 — 진짜 표본 밖은 앞으로의 실거래뿐임; 월평균 자료와 수익률 근사(배당·convexity·carry 일부 누락) 때문에 실제 선물 수익과 다름; 원자재는 장기 무료 total return 자료가 없어 다루지 않았음
+
+## Sim K 결과 기록 (2026-11-18, outputs/sim_k.md)
+- 자산 23개(주식 8·국채 8·통화 7). 일본은 단기금리 자료가 1985-08부터라 그 전에는 빠짐. 370개월(1972-01 ~ 2002-10)
+- TSMOM 연 +3.78%(10% 목표 비중 기준), Sharpe 0.89, Newey-West t 3.99 → 통과
+- 같이 본 것: 전반 Sharpe 1.00(t 3.17)·후반 0.79(t 2.52)로 두 구간 모두 양; 자산군별 국채 0.78·통화 0.58·주식 0.38; 같은 위험 비중 항상 long은 0.16이고 TSMOM과 상관 0.01 → 단순 long beta가 아님. 최근 월을 포함한 원 정의는 1.34로 더 높지만 월평균 자료 때문에 부푼 값으로 봄
+- 2002-11 ~ 2026-10 ETF 표본(Sim J 참고값) Sharpe 0.47보다 1972-2002가 높음 — 최근 구간에서 약해진 것은 문헌과 같은 방향(Hurst·Ooi·Pedersen, JPM 2017)
+- 판정: 우리가 고른 표본 밖에서 추세추종 효과가 재현됨. 단 1985-2002는 문헌이 이미 본 구간이고, 수익은 근사치(배당·convexity 제외, 월평균 자료)임. 실거래 편입이나 paper portfolio 추가는 Caleb이 정함(paper portfolio 규칙상 기존 종목 변경은 안 되므로 하려면 별도 portfolio로 시작)
+
+## 탐색적: 60/40 + 추세추종 혼합 (2026-11-18, 사전 등록 아님, outputs/blend_tsmom.md)
+- 같은 2002-2026 ETF 구간(2003-09 ~ 2026-10, 278개월)을 다시 본 것이라 판정이 아니라 참고용. 추세추종 sleeve = 무위험 + 2 × Sim J TSMOM(연 변동성 약 9%), 비용 반영
+- SPY 60/IEF 40: 연 8.26%, 변동성 8.89%, Sharpe 0.75, 최대낙폭 −29.5%. 추세추종 20% 혼합: 연 7.97%, 변동성 7.39%, Sharpe 0.85, 최대낙폭 −21.2%. 30%: Sharpe 0.88, 최대낙폭 −16.9%
+- 2008년: 60/40 −18.0% vs 20% 혼합 −12.2%(sleeve 단독 +13.2%); 2022년: −16.7% vs −10.3%(sleeve +16.6%)
+- 상관 0.03. 60/40이 손실인 달만 보면 TSMOM 평균은 −0.15%/월이라 한 달 단위 hedge는 아니고, 몇 달 이어지는 하락장에서 효과가 쌓임
+- Sharpe 차이 t는 10% 2.18·20% 1.92·30% 1.60으로 유의 기준 미달 → 확인된 건 변동성·낙폭 감소이고, 위험 대비 수익 개선은 확인되지 않음
