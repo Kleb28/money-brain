@@ -1,0 +1,62 @@
+{
+  "title": "Website Contact Scraper",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "websites": {
+      "title": "Websites",
+      "type": "array",
+      "description": "Company domains or URLs, one per line (example.com or https://example.com). Optional when you give a dataset below.",
+      "editor": "stringList",
+      "prefill": [
+        "apify.com"
+      ]
+    },
+    "datasetId": {
+      "title": "Dataset from another Actor (optional)",
+      "type": "string",
+      "resourceType": "dataset",
+      "description": "Pick the results of a Google Maps Scraper run (or any dataset whose rows have a website field). Every distinct website in it is read, and each result keeps the place's name, address, phone and placeId so you can join it back.",
+      "resourcePermissions": [
+        "READ"
+      ],
+      "editor": "resourcePicker"
+    },
+    "websiteField": {
+      "title": "Website field in that dataset",
+      "type": "string",
+      "description": "Name of the field that holds the website URL.",
+      "default": "website",
+      "editor": "textfield"
+    },
+    "maxPagesPerSite": {
+      "title": "Max pages per site",
+      "type": "integer",
+      "description": "The home page plus the most contact-like internal pages (contact, about, team, impressum...).",
+      "default": 5,
+      "minimum": 1,
+      "maximum": 15
+    },
+    "sameDomainEmailsOnly": {
+      "title": "Only emails on the site's own domain",
+      "type": "boolean",
+      "description": "Drops addresses on other domains (for example a web agency's address in the footer).",
+      "default": false
+    },
+    "respectRobotsTxt": {
+      "title": "Respect robots.txt",
+      "type": "boolean",
+      "description": "Skip pages the site disallows for all crawlers.",
+      "default": true
+    },
+    "concurrency": {
+      "title": "Sites read at the same time",
+      "type": "integer",
+      "description": "Each site is a different host, so several can be read in parallel.",
+      "default": 5,
+      "minimum": 1,
+      "maximum": 20
+    }
+  },
+  "required": []
+}

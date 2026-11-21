@@ -1,0 +1,11 @@
+{
+  "actorSpecification": 1,
+  "fields": {},
+  "views": {
+    "overview": {
+      "title": "Screenshots",
+      "transformation": { "fields": ["url", "status", "title", "format", "screenshotUrl", "width", "height", "bytes", "error"] },
+      "display": { "component": "table", "properties": { "screenshotUrl": { "format": "link" } } }
+    }
+  }
+}

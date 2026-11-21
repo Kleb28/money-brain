@@ -1,0 +1,11 @@
+{
+  "actorSpecification": 1,
+  "fields": {},
+  "views": {
+    "overview": {
+      "title": "Podcasts",
+      "transformation": { "fields": ["title", "author", "ownerEmail", "website", "episodeCount", "latestEpisodeAt", "searchTerm"] },
+      "display": { "component": "table" }
+    }
+  }
+}

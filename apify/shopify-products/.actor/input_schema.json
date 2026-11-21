@@ -1,0 +1,53 @@
+{
+  "title": "Shopify Products Scraper",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "stores": {
+      "title": "Stores or collections",
+      "type": "array",
+      "description": "Shopify store URLs or domains (https://www.allbirds.com, allbirds.com) for the whole catalog, or collection URLs (https://www.gymshark.com/collections/all) for one collection.",
+      "editor": "stringList",
+      "prefill": ["https://www.allbirds.com", "https://www.gymshark.com/collections/all"]
+    },
+    "maxProductsPerStore": { "title": "Max products per store", "type": "integer", "description": "Upper limit per store or collection after filtering.", "default": 1000, "minimum": 1 },
+    "oneRowPer": {
+      "title": "One row per",
+      "type": "string",
+      "description": "'product' returns one item per product with a nested variants array. 'variant' returns one item per variant with the product fields repeated.",
+      "editor": "select",
+      "enum": ["product", "variant"],
+      "enumTitles": ["Product", "Variant"],
+      "default": "product"
+    },
+    "titleKeywords": {
+      "title": "Title keywords",
+      "type": "array",
+      "description": "Keep products whose title contains any of these (case-insensitive). Empty keeps all.",
+      "editor": "stringList"
+    },
+    "productTypes": {
+      "title": "Product types",
+      "type": "array",
+      "description": "Keep products whose product type equals any of these (case-insensitive). Empty keeps all.",
+      "editor": "stringList"
+    },
+    "vendors": {
+      "title": "Vendors",
+      "type": "array",
+      "description": "Keep products whose vendor equals any of these (case-insensitive). Empty keeps all.",
+      "editor": "stringList"
+    },
+    "tags": {
+      "title": "Tags",
+      "type": "array",
+      "description": "Keep products that carry any of these tags (case-insensitive). Empty keeps all.",
+      "editor": "stringList"
+    },
+    "inStockOnly": { "title": "In stock only", "type": "boolean", "description": "Keep only products with at least one available variant. In variant mode, unavailable variants are dropped too.", "default": false },
+    "updatedAfter": { "title": "Updated on or after", "type": "string", "description": "ISO date. Keeps products whose updated_at is on or after this date. Use it to find new or changed products.", "editor": "datepicker" },
+    "includeDescription": { "title": "Include description text", "type": "boolean", "description": "Adds the plain-text product description (from body_html) to each item.", "default": true },
+    "respectRobotsTxt": { "title": "Respect robots.txt", "type": "boolean", "description": "Read each store's robots.txt first and skip the store if the products.json feed is disallowed.", "default": true },
+    "concurrency": { "title": "Stores in parallel", "type": "integer", "description": "How many stores are read at the same time. Pages of one store are always read one after another with a pause.", "default": 3, "minimum": 1, "maximum": 10 }
+  }
+}

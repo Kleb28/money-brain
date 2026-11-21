@@ -1,0 +1,11 @@
+{
+  "actorSpecification": 1,
+  "fields": {},
+  "views": {
+    "overview": {
+      "title": "Reviews",
+      "transformation": { "fields": ["appName", "country", "rating", "title", "text", "version", "author", "date", "reviewId", "appId", "url"] },
+      "display": { "component": "table" }
+    }
+  }
+}

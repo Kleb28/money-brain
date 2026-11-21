@@ -1,0 +1,16 @@
+# agent8k-auto: the Conway-style variant (src/auto.ts). Separate Worker, separate KV, same
+# receive address. Deployed by .github/workflows/agent8k-auto-deploy.yml.
+name = "agent8k-auto"
+main = "src/auto.ts"
+compatibility_date = "2026-10-01"
+compatibility_flags = ["nodejs_compat"]
+
+[[kv_namespaces]]
+binding = "KV"
+id = "REPLACE_WITH_KV_ID"
+
+[vars]
+NETWORK = "eip155:84532"
+MODEL = "claude-haiku-5-5"
+MAX_NEW_SUMMARIES_PER_DAY = "40"
+# PAY_TO, EDGAR_USER_AGENT come from GitHub vars; ANTHROPIC_API_KEY, STATS_TOKEN, CDP_* are Worker secrets.

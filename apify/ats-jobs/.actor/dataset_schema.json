@@ -1,0 +1,11 @@
+{
+  "actorSpecification": 1,
+  "fields": {},
+  "views": {
+    "overview": {
+      "title": "Jobs",
+      "transformation": { "fields": ["company", "title", "location", "remote", "department", "employmentType", "postedAt", "ats", "url"] },
+      "display": { "component": "table" }
+    }
+  }
+}
