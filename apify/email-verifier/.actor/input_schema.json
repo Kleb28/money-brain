@@ -1,0 +1,37 @@
+{
+  "title": "Email Verifier",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "emails": {
+      "title": "Emails",
+      "type": "array",
+      "description": "Email addresses to check, one per line.",
+      "editor": "stringList",
+      "prefill": ["hello@apify.com", "test@mailinator.com", "not-an-email"]
+    },
+    "datasetId": {
+      "title": "Dataset with emails",
+      "type": "string",
+      "description": "Optional. A dataset from another Actor run (for example a website contact scraper) whose items contain emails. They are checked together with the list above.",
+      "resourceType": "dataset",
+      "resourcePermissions": ["READ"],
+      "editor": "resourcePicker"
+    },
+    "emailField": {
+      "title": "Email field in the dataset",
+      "type": "string",
+      "description": "Name of the item field that holds the email. The field may be a string or an array of strings.",
+      "editor": "textfield",
+      "default": "emails"
+    },
+    "concurrency": {
+      "title": "Concurrency",
+      "type": "integer",
+      "description": "How many emails are checked in parallel. DNS answers are cached per domain.",
+      "default": 10,
+      "minimum": 1,
+      "maximum": 50
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "actorSpecification": 1,
+  "name": "podcast-scraper",
+  "title": "Podcast Scraper: Apple Podcasts Search, Host Contact Email & Episodes",
+  "description": "Search Apple Podcasts by keyword, then read each show's public RSS feed: owner contact email, author, website, categories, episode count, latest episode date and recent episodes. No browser, no proxy.",
+  "version": "0.1",
+  "input": "./input_schema.json",
+  "output": "./output_schema.json",
+  "dockerfile": "../Dockerfile",
+  "storages": { "dataset": "./dataset_schema.json" }
+}

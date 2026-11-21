@@ -1,0 +1,11 @@
+{
+  "actorSpecification": 1,
+  "fields": {},
+  "views": {
+    "overview": {
+      "title": "Emails",
+      "transformation": { "fields": ["email", "status", "reason", "hasMx", "disposable", "roleBased", "freeProvider", "didYouMean"] },
+      "display": { "component": "table" }
+    }
+  }
+}

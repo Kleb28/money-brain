@@ -1,0 +1,11 @@
+{
+  "actorSpecification": 1,
+  "name": "shopify-products-scraper",
+  "title": "Shopify Products Scraper: Prices, Variants, Stock & Images (products.json)",
+  "description": "Products of any Shopify store or collection from the store's own public products.json feed: prices, variants, availability, images, tags. One row per product or per variant. No browser, no proxy; respects robots.txt.",
+  "version": "0.1",
+  "input": "./input_schema.json",
+  "output": "./output_schema.json",
+  "dockerfile": "../Dockerfile",
+  "storages": { "dataset": "./dataset_schema.json" }
+}

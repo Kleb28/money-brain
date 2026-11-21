@@ -1,0 +1,9 @@
+{
+  "name": "website-screenshot-api",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "scripts": { "start": "node src/main.js", "test": "node --test" },
+  "dependencies": { "apify": "^3.4.0", "playwright": "*" },
+  "engines": { "node": ">=20" }
+}

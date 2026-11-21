@@ -1,0 +1,11 @@
+{
+  "actorSpecification": 1,
+  "fields": {},
+  "views": {
+    "overview": {
+      "title": "Products",
+      "transformation": { "fields": ["store", "title", "vendor", "productType", "priceMin", "priceMax", "onSale", "available", "variantCount", "url"] },
+      "display": { "component": "table" }
+    }
+  }
+}

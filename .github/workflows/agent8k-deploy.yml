@@ -1,0 +1,72 @@
+name: agent8k-deploy
+
+# Deploys the 8-K Brief Worker (agent8k/) to Cloudflare. Manual only, so nothing goes
+# live until Caleb has added the secrets below and runs it.
+#   secrets: CLOUDFLARE_API_TOKEN, CLOUDFLARE_ACCOUNT_ID, ANTHROPIC_API_KEY,
+#            AGENT8K_STATS_TOKEN, (mainnet only) CDP_API_KEY_ID, CDP_API_KEY_SECRET
+#   vars:    AGENT8K_PAY_TO, AGENT8K_NETWORK (default eip155:84532 = Base Sepolia test), EDGAR_USER_AGENT
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: agent8k
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: npm ci
+      - run: npx tsc --noEmit
+      - name: KV namespace (create once, reuse after)
+        run: |
+          id=$(npx wrangler kv namespace list | python3 -c "import json,sys; print(next((n['id'] for n in json.load(sys.stdin) if n['title'] in ('agent8k-KV','KV')), ''))")
+          if [ -z "$id" ]; then
+            npx wrangler kv namespace create KV
+            id=$(npx wrangler kv namespace list | python3 -c "import json,sys; print(next(n['id'] for n in json.load(sys.stdin) if n['title'] in ('agent8k-KV','KV')))")
+          fi
+          sed -i "s/REPLACE_WITH_KV_ID/$id/" wrangler.toml
+      - name: Deploy
+        env:
+          PAY_TO: ${{ vars.AGENT8K_PAY_TO }}
+          NETWORK: ${{ vars.AGENT8K_NETWORK || 'eip155:84532' }}
+          UA: ${{ vars.EDGAR_USER_AGENT }}
+        run: |
+          test -n "$PAY_TO" || { echo "set repo variable AGENT8K_PAY_TO"; exit 1; }
+          npx wrangler deploy --var "PAY_TO:$PAY_TO" --var "NETWORK:$NETWORK" --var "EDGAR_USER_AGENT:$UA" | tee /tmp/deploy.log
+          url=$(grep -o 'https://[a-zA-Z0-9.-]*workers.dev' /tmp/deploy.log | head -1)
+          echo "WORKER_URL=$url" >> "$GITHUB_ENV"
+          echo "Worker URL: $url  (set repo variable AGENT8K_URL to this)"
+      - name: Secrets
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          STATS_TOKEN: ${{ secrets.AGENT8K_STATS_TOKEN }}
+          CDP_API_KEY_ID: ${{ secrets.CDP_API_KEY_ID }}
+          CDP_API_KEY_SECRET: ${{ secrets.CDP_API_KEY_SECRET }}
+        run: |
+          python3 - > /tmp/secrets.json <<'PY'
+          import json, os
+          keys = ["ANTHROPIC_API_KEY", "STATS_TOKEN", "CDP_API_KEY_ID", "CDP_API_KEY_SECRET"]
+          print(json.dumps({k: os.environ[k] for k in keys if os.environ.get(k)}))
+          PY
+          npx wrangler secret bulk /tmp/secrets.json
+          rm /tmp/secrets.json
+      - name: Smoke test (free routes, and the paid route must answer 402 without payment)
+        run: |
+          sleep 5
+          curl -fsS "$WORKER_URL/" | head -c 300; echo
+          curl -fsS "$WORKER_URL/v1/8k/list?ticker=AAPL" | head -c 600; echo
+          code=$(curl -s -o /tmp/402.json -w "%{http_code}" "$WORKER_URL/v1/8k/summary?ticker=AAPL")
+          echo "paid route without payment -> $code"; head -c 600 /tmp/402.json; echo
+          test "$code" = "402"

@@ -1,0 +1,77 @@
+name: agent8k-auto-deploy
+
+# Deploys the Conway-style variant (agent8k/src/auto.ts) as a separate Worker "agent8k-auto"
+# with its own KV. Reuses the 8-K Brief secrets and receive address. Manual only.
+#   secrets: CLOUDFLARE_API_TOKEN, CLOUDFLARE_ACCOUNT_ID, ANTHROPIC_API_KEY,
+#            AGENT8K_STATS_TOKEN, CDP_API_KEY_ID, CDP_API_KEY_SECRET
+#   vars:    AGENT8K_PAY_TO, AGENT8K_NETWORK, EDGAR_USER_AGENT
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: agent8k
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: npm ci
+      - run: npx tsc --noEmit
+      - name: KV namespace (create once, reuse after)
+        run: |
+          find_id() { npx wrangler kv namespace list | python3 -c "import json,sys; print(next((n['id'] for n in json.load(sys.stdin) if n['title'] in ('agent8k-auto-kv','agent8k-auto-agent8k-auto-kv')), ''))"; }
+          id=$(find_id)
+          if [ -z "$id" ]; then npx wrangler kv namespace create agent8k-auto-kv -c wrangler.auto.toml; id=$(find_id); fi
+          test -n "$id"
+          sed -i "s/REPLACE_WITH_KV_ID/$id/" wrangler.auto.toml
+      - name: Deploy
+        env:
+          PAY_TO: ${{ vars.AGENT8K_PAY_TO }}
+          NETWORK: ${{ vars.AGENT8K_NETWORK || 'eip155:84532' }}
+          UA: ${{ vars.EDGAR_USER_AGENT }}
+        run: |
+          test -n "$PAY_TO" || { echo "set repo variable AGENT8K_PAY_TO"; exit 1; }
+          npx wrangler deploy -c wrangler.auto.toml --var "PAY_TO:$PAY_TO" --var "NETWORK:$NETWORK" --var "EDGAR_USER_AGENT:$UA" | tee /tmp/deploy.log
+          url=$(grep -o 'https://[a-zA-Z0-9.-]*workers.dev' /tmp/deploy.log | head -1)
+          echo "WORKER_URL=$url" >> "$GITHUB_ENV"
+          echo "Worker URL: $url  (set repo variable AGENT8K_AUTO_URL to this)"
+      - name: Secrets
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          STATS_TOKEN: ${{ secrets.AGENT8K_STATS_TOKEN }}
+          CDP_API_KEY_ID: ${{ secrets.CDP_API_KEY_ID }}
+          CDP_API_KEY_SECRET: ${{ secrets.CDP_API_KEY_SECRET }}
+        run: |
+          python3 - > /tmp/secrets.json <<'PY'
+          import json, os
+          keys = ["ANTHROPIC_API_KEY", "STATS_TOKEN", "CDP_API_KEY_ID", "CDP_API_KEY_SECRET"]
+          print(json.dumps({k: os.environ[k] for k in keys if os.environ.get(k)}))
+          PY
+          npx wrangler secret bulk /tmp/secrets.json -c wrangler.auto.toml
+          rm /tmp/secrets.json
+      - name: Smoke test
+        env:
+          STATS_TOKEN: ${{ secrets.AGENT8K_STATS_TOKEN }}
+        run: |
+          sleep 5
+          curl -fsS "$WORKER_URL/" | head -c 400; echo
+          curl -fsS -H "authorization: Bearer $STATS_TOKEN" "$WORKER_URL/internal/products" | head -c 400; echo
+          # if the agent has already created products, the first one must answer 402 without payment
+          id=$(curl -fsS "$WORKER_URL/" | python3 -c "import json,sys; p=json.load(sys.stdin)['products']; print(p[0]['id'] if p else '')")
+          if [ -n "$id" ]; then
+            code=$(curl -s -o /tmp/402.json -w "%{http_code}" "$WORKER_URL/v1/p/$id?ticker=AAPL")
+            echo "paid route $id without payment -> $code"; head -c 400 /tmp/402.json; echo
+            test "$code" = "402"
+          fi
