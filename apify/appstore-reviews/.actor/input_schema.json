@@ -1,0 +1,48 @@
+{
+  "title": "App Store Reviews API",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "apps": {
+      "title": "Apps",
+      "type": "array",
+      "description": "App Store IDs (e.g. 284882215), App Store URLs, or app names. A name is resolved to the top search result in the first country.",
+      "editor": "stringList",
+      "prefill": ["284882215"]
+    },
+    "countries": {
+      "title": "Countries",
+      "type": "array",
+      "description": "Two-letter App Store country codes. Reviews differ per country storefront.",
+      "editor": "stringList",
+      "default": ["us"],
+      "prefill": ["us"]
+    },
+    "maxReviewsPerApp": {
+      "title": "Max reviews per app and country",
+      "type": "integer",
+      "description": "Apple's feed serves at most the 500 most recent reviews per app and country.",
+      "default": 100,
+      "minimum": 1,
+      "maximum": 500
+    },
+    "sortBy": {
+      "title": "Sort by",
+      "type": "string",
+      "description": "Order of the feed.",
+      "editor": "select",
+      "enum": ["mostrecent", "mosthelpful"],
+      "enumTitles": ["Most recent", "Most helpful"],
+      "default": "mostrecent"
+    },
+    "since": {
+      "title": "Only reviews on or after",
+      "type": "string",
+      "description": "ISO date (e.g. 2026-11-01). With 'Most recent' the run stops paging once older reviews appear, so daily monitoring stays cheap.",
+      "editor": "datepicker"
+    },
+    "minRating": { "title": "Minimum rating", "type": "integer", "description": "Keep reviews with at least this many stars.", "minimum": 1, "maximum": 5 },
+    "maxRating": { "title": "Maximum rating", "type": "integer", "description": "Keep reviews with at most this many stars (e.g. 2 for complaints only).", "minimum": 1, "maximum": 5 }
+  },
+  "required": ["apps"]
+}

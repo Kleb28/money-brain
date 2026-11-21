@@ -1,0 +1,11 @@
+{
+  "actorSpecification": 1,
+  "name": "email-verifier",
+  "title": "Email Verifier & Validator: MX, Disposable & Role Check",
+  "description": "Checks a list of email addresses for syntax, MX records (mail servers), disposable domains, role-based addresses, free providers and common domain typos. DNS only: it does not connect to mail servers or probe mailboxes.",
+  "version": "0.1",
+  "input": "./input_schema.json",
+  "output": "./output_schema.json",
+  "dockerfile": "../Dockerfile",
+  "storages": { "dataset": "./dataset_schema.json" }
+}

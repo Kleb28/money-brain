@@ -1,0 +1,11 @@
+{
+  "actorSpecification": 1,
+  "name": "ats-jobs-api",
+  "title": "Greenhouse, Lever, Ashby & Workable Jobs Scraper",
+  "description": "Live open jobs for any list of companies, straight from the official public job-board APIs of Greenhouse, Lever, Ashby, Workable and SmartRecruiters, in one unified JSON schema. No browser, no proxy.",
+  "version": "0.1",
+  "input": "./input_schema.json",
+  "output": "./output_schema.json",
+  "dockerfile": "../Dockerfile",
+  "storages": { "dataset": "./dataset_schema.json" }
+}

@@ -1,0 +1,52 @@
+name: agent8k-auto-run
+
+# Daily run of the Conway-style operator (agent8k/auto_agent.py): ledger, survival check,
+# then one Claude run that may change the product catalog. Caps are enforced by the Worker.
+# Commits agent8k/auto/{ledger.md,journal.md,agent_costs.csv}.
+on:
+  schedule:
+    - cron: "10 1 * * *"  # daily 10:10 KST (was every 4h until 2026-11-20: x402 demand judged too small to spend more on)
+  workflow_dispatch:
+    inputs:
+      ledger_only:
+        description: "Only update the ledger; do not run the agent"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: agent8k-auto
+  cancel-in-progress: false
+
+jobs:
+  run:
+    if: ${{ vars.AGENT8K_AUTO_URL != '' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install "anthropic==2.10.0"
+      - run: python -u agent8k/auto_agent.py
+        env:
+          AUTO_URL: ${{ vars.AGENT8K_AUTO_URL }}
+          AUTO_START: ${{ vars.AGENT8K_AUTO_START }}
+          AUTO_SELF_REVENUE_USD: ${{ vars.AGENT8K_AUTO_SELF_REVENUE_USD }}
+          AGENT8K_SELF_WALLETS: ${{ vars.AGENT8K_SELF_WALLETS || '0x354EBc4428175B3829e9332aad61Da956EccbCb3' }}
+          AUTO_LEDGER_ONLY: ${{ inputs.ledger_only && '1' || '' }}
+          AGENT8K_STATS_TOKEN: ${{ secrets.AGENT8K_STATS_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      - name: Commit
+        if: always()
+        run: |
+          git config user.name "money-brain-bot"
+          git config user.email "money-brain-bot@users.noreply.github.com"
+          git add agent8k/auto 2>/dev/null || true
+          if git diff --cached --quiet; then echo "nothing to commit"; else
+            git commit -m "agent8k-auto: run $(date -u +%F)"
+            for i in 1 2 3 4 5; do git pull --rebase origin main && git push origin HEAD:main && break; sleep 15; done
+          fi

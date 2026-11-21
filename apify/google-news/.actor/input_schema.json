@@ -1,0 +1,41 @@
+{
+  "title": "Google News RSS",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "queries": {
+      "title": "Search queries",
+      "type": "array",
+      "description": "One search feed per query. Google News operators work: site:reuters.com, intitle:word, \"exact phrase\", OR, -exclude, when:7d.",
+      "editor": "stringList",
+      "prefill": ["openai", "site:reuters.com biotech"]
+    },
+    "topics": {
+      "title": "Topic sections",
+      "type": "array",
+      "description": "Optional. One topic feed per selected section.",
+      "editor": "select",
+      "items": {
+        "type": "string",
+        "enum": ["WORLD", "NATION", "BUSINESS", "TECHNOLOGY", "ENTERTAINMENT", "SPORTS", "SCIENCE", "HEALTH"],
+        "enumTitles": ["World", "Nation", "Business", "Technology", "Entertainment", "Sports", "Science", "Health"]
+      }
+    },
+    "topHeadlines": { "title": "Top headlines", "type": "boolean", "description": "Also read the top-headlines feed for the chosen language and country.", "default": false },
+    "language": { "title": "Language", "type": "string", "description": "Google News language code (hl), e.g. en, de, fr, ja, pt-419.", "editor": "textfield", "default": "en" },
+    "country": { "title": "Country", "type": "string", "description": "Two-letter country code (gl), e.g. US, GB, DE, JP.", "editor": "textfield", "default": "US" },
+    "timeRange": {
+      "title": "Time range",
+      "type": "string",
+      "description": "Applies to search queries only. Implemented by appending 'when:1d' etc. to each query.",
+      "editor": "select",
+      "enum": ["any", "1h", "1d", "7d", "30d", "1y"],
+      "enumTitles": ["Any time", "Past hour", "Past day", "Past 7 days", "Past 30 days", "Past year"],
+      "default": "any"
+    },
+    "after": { "title": "Published after", "type": "string", "description": "Search queries only. Appended to each query as 'after:YYYY-MM-DD'.", "editor": "datepicker" },
+    "before": { "title": "Published before", "type": "string", "description": "Search queries only. Appended to each query as 'before:YYYY-MM-DD'.", "editor": "datepicker" },
+    "maxItemsPerQuery": { "title": "Max items per query", "type": "integer", "description": "Upper limit per feed. A Google News feed returns at most about 100 items.", "default": 100, "minimum": 1 },
+    "dedupe": { "title": "Remove duplicates", "type": "boolean", "description": "Return each article link only once per run, even if several queries match it.", "default": true }
+  }
+}

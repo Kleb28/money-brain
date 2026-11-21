@@ -1,0 +1,155 @@
+{
+  "products": [
+    {
+      "id": 7093452013648,
+      "title": "Men's Wool Runner - Natural Black",
+      "handle": "mens-wool-runners-natural-black",
+      "body_html": "<p>Our original sneaker, made with <strong>ZQ Merino wool</strong> &amp; a sugarcane midsole.</p>\n<ul>\n<li>Machine washable</li>\n<li>Wear with or without socks</li>\n</ul>",
+      "published_at": "2024-03-12T09:00:05-07:00",
+      "created_at": "2024-03-01T11:22:41-08:00",
+      "updated_at": "2026-11-18T06:31:17-08:00",
+      "vendor": "Allbirds",
+      "product_type": "Shoes",
+      "tags": ["allbirds::carbon-score => 5.4", "gender::mens", "material::wool", "silhouette::runner"],
+      "variants": [
+        {
+          "id": 40872615772240,
+          "title": "8",
+          "option1": "8",
+          "option2": null,
+          "option3": null,
+          "sku": "WR3MNBK080",
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": null,
+          "available": true,
+          "price": "98.00",
+          "grams": 680,
+          "compare_at_price": null,
+          "position": 1,
+          "product_id": 7093452013648,
+          "created_at": "2024-03-01T11:22:41-08:00",
+          "updated_at": "2026-11-18T06:31:17-08:00"
+        },
+        {
+          "id": 40872615805008,
+          "title": "9",
+          "option1": "9",
+          "option2": null,
+          "option3": null,
+          "sku": "WR3MNBK090",
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": null,
+          "available": false,
+          "price": "98.00",
+          "grams": 700,
+          "compare_at_price": null,
+          "position": 2,
+          "product_id": 7093452013648,
+          "created_at": "2024-03-01T11:22:41-08:00",
+          "updated_at": "2026-11-17T22:04:53-08:00"
+        }
+      ],
+      "images": [
+        { "id": 31234567890001, "created_at": "2024-03-01T11:22:44-08:00", "position": 1, "updated_at": "2024-03-01T11:22:44-08:00", "product_id": 7093452013648, "variant_ids": [], "src": "https://cdn.shopify.com/s/files/1/1104/4168/files/WR3MNBK_SHOE_LEFT.png?v=1709320964", "width": 1600, "height": 1600 },
+        { "id": 31234567890002, "created_at": "2024-03-01T11:22:44-08:00", "position": 2, "updated_at": "2024-03-01T11:22:44-08:00", "product_id": 7093452013648, "variant_ids": [], "src": "https://cdn.shopify.com/s/files/1/1104/4168/files/WR3MNBK_SHOE_TOP.png?v=1709320964", "width": 1600, "height": 1600 }
+      ],
+      "options": [{ "name": "Size", "position": 1, "values": ["8", "9"] }]
+    },
+    {
+      "id": 7201188839504,
+      "title": "Trino Cozy Crew Sock",
+      "handle": "trino-cozy-crew-sock",
+      "body_html": "<p>Soft crew socks.</p>",
+      "published_at": "2025-10-02T08:00:00-07:00",
+      "created_at": "2025-09-20T10:00:00-07:00",
+      "updated_at": "2026-10-30T12:00:00-07:00",
+      "vendor": "Allbirds",
+      "product_type": "Socks",
+      "tags": "gender::unisex, material::trino, sale",
+      "variants": [
+        {
+          "id": 41200000000001,
+          "title": "M / Grey",
+          "option1": "M",
+          "option2": "Grey",
+          "option3": null,
+          "sku": "TCC-M-GRY",
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": { "id": 31234567890010, "product_id": 7201188839504, "position": 1, "src": "https://cdn.shopify.com/s/files/1/1104/4168/files/TCC_GREY.png?v=1758387600", "width": 1200, "height": 1200, "variant_ids": [41200000000001] },
+          "available": true,
+          "price": "12.00",
+          "grams": 60,
+          "compare_at_price": "16.00",
+          "position": 1,
+          "product_id": 7201188839504,
+          "created_at": "2025-09-20T10:00:00-07:00",
+          "updated_at": "2026-10-30T12:00:00-07:00"
+        },
+        {
+          "id": 41200000000002,
+          "title": "L / Grey",
+          "option1": "L",
+          "option2": "Grey",
+          "option3": null,
+          "sku": "",
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": null,
+          "available": true,
+          "price": "14.50",
+          "grams": 65,
+          "compare_at_price": "14.50",
+          "position": 2,
+          "product_id": 7201188839504,
+          "created_at": "2025-09-20T10:00:00-07:00",
+          "updated_at": "2026-10-30T12:00:00-07:00"
+        }
+      ],
+      "images": [
+        { "id": 31234567890010, "created_at": "2025-09-20T10:00:00-07:00", "position": 1, "updated_at": "2025-09-20T10:00:00-07:00", "product_id": 7201188839504, "variant_ids": [41200000000001], "src": "https://cdn.shopify.com/s/files/1/1104/4168/files/TCC_GREY.png?v=1758387600", "width": 1200, "height": 1200 }
+      ],
+      "options": [
+        { "name": "Size", "position": 1, "values": ["M", "L"] },
+        { "name": "Color", "position": 2, "values": ["Grey"] }
+      ]
+    },
+    {
+      "id": 6900000000003,
+      "title": "Digital Gift Card",
+      "handle": "gift-card",
+      "body_html": "",
+      "published_at": "2022-01-05T00:00:00-08:00",
+      "created_at": "2022-01-04T00:00:00-08:00",
+      "updated_at": "2025-01-15T00:00:00-08:00",
+      "vendor": "Allbirds",
+      "product_type": "",
+      "tags": [],
+      "variants": [
+        {
+          "id": 40000000000003,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": null,
+          "requires_shipping": false,
+          "taxable": false,
+          "featured_image": null,
+          "available": false,
+          "price": "50.00",
+          "grams": 0,
+          "compare_at_price": null,
+          "position": 1,
+          "product_id": 6900000000003,
+          "created_at": "2022-01-04T00:00:00-08:00",
+          "updated_at": "2025-01-15T00:00:00-08:00"
+        }
+      ],
+      "images": [],
+      "options": [{ "name": "Title", "position": 1, "values": ["Default Title"] }]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "title": "Company Jobs API",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "companies": {
+      "title": "Companies",
+      "type": "array",
+      "description": "Careers-page URLs (e.g. https://boards.greenhouse.io/stripe, https://jobs.lever.co/spotify, https://jobs.ashbyhq.com/openai), 'ats:slug' pairs (greenhouse:stripe), or a bare slug (stripe), which is tried on every supported ATS.",
+      "editor": "stringList",
+      "prefill": ["https://jobs.ashbyhq.com/openai", "greenhouse:stripe"]
+    },
+    "titleKeywords": {
+      "title": "Title keywords",
+      "type": "array",
+      "description": "Keep jobs whose title contains any of these (case-insensitive). Empty keeps all.",
+      "editor": "stringList"
+    },
+    "locationKeywords": {
+      "title": "Location keywords",
+      "type": "array",
+      "description": "Keep jobs whose location contains any of these (case-insensitive). Empty keeps all.",
+      "editor": "stringList"
+    },
+    "remoteOnly": { "title": "Remote only", "type": "boolean", "description": "Keep only jobs marked remote.", "default": false },
+    "postedAfter": { "title": "Posted or updated on or after", "type": "string", "description": "ISO date. Use it for daily 'new jobs' monitoring.", "editor": "datepicker" },
+    "includeDescription": { "title": "Include description text", "type": "boolean", "description": "Adds the plain-text job description to each item.", "default": true },
+    "maxJobsPerCompany": { "title": "Max jobs per company", "type": "integer", "description": "Upper limit per company after filtering.", "default": 1000, "minimum": 1 }
+  },
+  "required": ["companies"]
+}

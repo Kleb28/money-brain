@@ -1,0 +1,11 @@
+{
+  "actorSpecification": 1,
+  "fields": {},
+  "views": {
+    "overview": {
+      "title": "Contacts",
+      "transformation": { "fields": ["domain", "emails", "phones", "linkedin", "twitter", "facebook", "instagram", "youtube", "pagesCrawled", "error"] },
+      "display": { "component": "table" }
+    }
+  }
+}
