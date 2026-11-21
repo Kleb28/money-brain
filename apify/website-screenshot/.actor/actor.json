@@ -1,0 +1,11 @@
+{
+  "actorSpecification": 1,
+  "name": "website-screenshot-api",
+  "title": "Website Screenshot API: Full Page PNG, JPEG & PDF in Bulk",
+  "description": "Capture full-page or viewport screenshots of any list of URLs as PNG, JPEG or PDF. Options for viewport, mobile, dark mode, element selector and hiding cookie banners. Files go to the key-value store, one dataset row per URL with a direct link.",
+  "version": "0.1",
+  "input": "./input_schema.json",
+  "output": "./output_schema.json",
+  "dockerfile": "../Dockerfile",
+  "storages": { "dataset": "./dataset_schema.json" }
+}

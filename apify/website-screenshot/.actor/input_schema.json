@@ -1,0 +1,51 @@
+{
+  "title": "Website Screenshot API",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "urls": {
+      "title": "URLs",
+      "type": "array",
+      "description": "Pages to capture. 'https://' is added when the scheme is missing. Private network addresses (localhost, 10.x, 192.168.x and similar) are refused.",
+      "editor": "stringList",
+      "prefill": ["https://apify.com", "https://news.ycombinator.com"]
+    },
+    "format": {
+      "title": "Format",
+      "type": "string",
+      "description": "Output file type. PDF is printed on A4 pages with backgrounds.",
+      "editor": "select",
+      "enum": ["png", "jpeg", "pdf"],
+      "enumTitles": ["PNG", "JPEG", "PDF"],
+      "default": "png"
+    },
+    "fullPage": { "title": "Full page", "type": "boolean", "description": "Capture the whole scrollable page. Turn off to capture only the viewport. Ignored for PDF.", "default": true },
+    "viewportWidth": { "title": "Viewport width", "type": "integer", "description": "Browser window width in CSS pixels.", "default": 1280, "minimum": 320, "maximum": 3840 },
+    "viewportHeight": { "title": "Viewport height", "type": "integer", "description": "Browser window height in CSS pixels.", "default": 800, "minimum": 240, "maximum": 2160 },
+    "deviceScaleFactor": { "title": "Device scale factor", "type": "integer", "description": "Pixel density. 2 gives retina-sharp images at four times the pixel count.", "default": 1, "minimum": 1, "maximum": 3 },
+    "mobile": { "title": "Mobile", "type": "boolean", "description": "Emulate a phone: 390x844 viewport, scale factor 3, mobile layout and touch. Overrides the viewport and scale fields. The browser's own user agent is kept.", "default": false },
+    "darkMode": { "title": "Dark mode", "type": "boolean", "description": "Ask the page for its dark color scheme (prefers-color-scheme: dark).", "default": false },
+    "waitUntil": {
+      "title": "Wait until",
+      "type": "string",
+      "description": "Page event to wait for before capturing. 'networkidle' is slowest and suits pages that load content with JavaScript.",
+      "editor": "select",
+      "enum": ["load", "domcontentloaded", "networkidle"],
+      "enumTitles": ["Load", "DOM content loaded", "Network idle"],
+      "default": "load"
+    },
+    "delayMs": { "title": "Extra delay (ms)", "type": "integer", "description": "Extra wait after the page has loaded, for animations and late content.", "default": 1000, "minimum": 0, "maximum": 15000 },
+    "selector": { "title": "Element selector", "type": "string", "description": "Optional CSS selector. Only the first matching element is captured. Ignored for PDF.", "editor": "textfield" },
+    "hideSelectors": {
+      "title": "Hide selectors",
+      "type": "array",
+      "description": "CSS selectors of elements to hide before capturing, for example cookie banners or chat widgets.",
+      "editor": "stringList"
+    },
+    "jpegQuality": { "title": "JPEG quality", "type": "integer", "description": "1 to 100. Used only for JPEG.", "default": 80, "minimum": 1, "maximum": 100 },
+    "maxPageHeight": { "title": "Max page height (px)", "type": "integer", "description": "Full-page captures of longer pages are clipped to this height in CSS pixels.", "default": 20000, "minimum": 100, "maximum": 50000 },
+    "timeoutSecs": { "title": "Timeout per page (s)", "type": "integer", "description": "Maximum time for a page to load.", "default": 45, "minimum": 5, "maximum": 180 },
+    "concurrency": { "title": "Concurrency", "type": "integer", "description": "Pages captured in parallel.", "default": 3, "minimum": 1, "maximum": 8 }
+  },
+  "required": []
+}
