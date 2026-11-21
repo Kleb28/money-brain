@@ -50,4 +50,4 @@ No field is required. With no queries and no topics, the top-headlines feed is r
 - Requests use a plain identifying user-agent. On HTTP 429 or 5xx the feed is retried three times with a pause, then skipped with a warning.
 
 ## Pricing
-Free for now: you pay only Apify platform usage (a typical run costs well under one cent).
+Pay per event: $1.00 per 1,000 articles, platform usage included.

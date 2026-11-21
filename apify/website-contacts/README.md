@@ -45,4 +45,4 @@ Google Maps Scraper gives you each place's website but not its email. Run it, th
 - You are responsible for using contact data in line with the laws that apply to you (for example GDPR and anti-spam rules).
 
 ## Pricing
-Free for now: you pay only Apify platform usage (a typical run costs well under one cent).
+Pay per event: $2.00 per 1,000 websites, platform usage included.

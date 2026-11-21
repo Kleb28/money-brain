@@ -42,4 +42,4 @@ Recent iOS App Store reviews for any app, in any country storefront, as clean JS
 - Reviews only (text reviews), not star-only ratings.
 
 ## Pricing
-Free for now: you pay only Apify platform usage (a typical run costs well under one cent).
+Pay per event: $0.10 per 1,000 reviews, platform usage included.
