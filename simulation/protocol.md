@@ -114,3 +114,25 @@
 - Base + money-brain 4 feature: NCORR +0.0277. Paired 차이 −0.0030, SD 0.0067, t ≈ −4.5 (sharpe −0.45 × √100), 개선된 era 36% → 통과 기준(평균 > 0, t ≥ 2) 미달이고 방향이 음임
 - 원인으로 적어 두는 것: feature 커버리지가 train 행의 9.8%(미국 행 23%), validation 행의 18.2%(미국 행 48%)로 기간에 따라 다름 — "우리 추적 목록에 없음"과 "데이터 없음"이 같은 NaN으로 들어가 모델이 결측 패턴을 학습했을 가능성. 다음 버전은 10-K가 있는 모든 미국 행에 값을 주고(없으면 0), 비미국만 NaN으로 둬야 함
 - 판정: 현재 feature는 Unity 위에서 증분 없음(오히려 감소). 전체 10-K 본문 feature를 만든 뒤 같은 틀로 재검정. 표에 t 열을 추가함(이번 결과는 sharpe×√n으로 환산)
+
+## Sim I — Meta Model과 덜 닮은 예측으로 MMC 올리기 (2026-11-17 사전 등록)
+배경: 리더보드 상위 valois*·tdd_model* 계열은 corr가 다른 상위 모델보다 높지 않고(최근 약 250 round corr20V2 중앙값 +0.013-0.014 vs top 20 그 외 +0.0175), Meta Model 상관이 낮아서(0.33·0.18 vs 0.51) mmc가 높음(공개 점수 집계; 방법은 공개되지 않음). 우리 baseline은 Numerai 예제 recipe라 MM과 많이 닮았을 것으로 추정(benchmark lgbm_jupiter_60와 예측 상관 0.67).
+- 기준 A: numerai/train_baseline.py와 같은 LightGBM(medium, 4 era마다, `target`)
+- MM proxy: Unity dataset에 meta_model 파일이 있으면 그 열, 없으면 validation_benchmark_models의 lgbm_jupiter_60(없으면 첫 benchmark 열). 어느 쪽을 썼는지 결과에 기록
+- 오프라인 MMC proxy(era별): 예측과 MM proxy를 각각 rank→gauss 변환, 예측을 MM에 대해 직교화한 잔차와 중심화한 `target`의 공분산(Numerai MMC 정의 형태). 같은 행에서 NCORR(`target`, Numerai neutralizer)도 계산
+- 변형(결과를 보기 전에 고정):
+  - H1 보조 target 앙상블: train era에서 era별 `target`과의 상관 평균이 가장 낮은 보조 target 2개(jupiter·`target` 자신과 동일 열 제외)로 같은 LightGBM을 학습, A와 rank 평균(1/3씩)
+  - H2 다른 모델 class: MLP(sklearn, hidden 256-64, adam, early stopping, seed 0, medium 중 숫자 feature, train 중앙값 대치·표준화)와 A의 rank 50/50 평균
+  - H3 MM 부분 중립화: A 예측(gauss)을 MM proxy에 대해 50% 직교화
+- 판정: 변형−A의 era별 paired 차이. 통과 = MMC proxy 차이 평균 > 0 이고 t ≥ 2.4(변형 3개 Bonferroni), 동시에 NCORR 차이 평균 ≥ −0.003. 통과한 변형 중 MMC proxy t가 가장 큰 것을 live 모델 교체 후보로 올리고 교체는 Caleb이 결정
+- 같이 보고(판정에 안 씀): 각 변형의 MM proxy와의 era별 상관 평균(우리 baseline의 MM 상관 포함), raw corr, standalone MLP·보조 target 모델 성적
+- 한계: proxy가 실제 MM이 아닐 수 있음; validation 구간을 Sim G에 이어 다시 씀; live MM 상관(corrWMetamodel)은 kleb28 resolved round가 없어 측정하지 않았음(2026-11-17 API에서 전부 null)
+
+## Sim I 결과 기록 (2026-11-17, outputs/sim_i.md)
+- MM proxy: Unity v6.0 dataset에 쓸 수 있는 meta_model 파일이 없어 benchmark lgbm_jupiter_60을 씀(실제 Meta Model 아님). validation 100 era, 666,606행
+- 우리 baseline(A)의 MM proxy 상관 0.675, NCORR +0.0307, MMC proxy +0.0006(benchmark 대비 독자 기여가 거의 없음)
+- H1 보조 target(target_eleven_4·target_raw_return_20, train 상관 0.16·0.33): MM 상관 0.560, MMC proxy 차이 −0.0002(t −0.8), NCORR 차이 −0.0044(t −3.8) → 미달
+- H2 MLP 50/50: MM 상관 0.574, MMC proxy 차이 −0.0004(t −1.6), NCORR 차이 −0.0070(t −5.1) → 미달
+- H3 MM 50% 중립화: MM 상관 0.423, MMC proxy 차이 +0.0002(t +2.0, 기준 2.4), NCORR 차이 −0.0100(t −14.7) → 미달
+- 참고: MLP 단독 MM 상관 0.217이지만 NCORR +0.0065로 약함; 보조 target 단독 MM 상관 0.271, NCORR +0.0131
+- 판정: 세 변형 모두 통과 기준 미달. MM 상관을 낮추는 것만으로는 MMC proxy가 오르지 않았고 NCORR 손실이 큼. live 모델 교체 없음. valois·tdd처럼 낮은 MM 상관에서 높은 mmc를 내려면 상관이 낮으면서 단독 성능도 있는 신호가 필요하고, 그건 이번 세 방법으로는 얻지 못함
