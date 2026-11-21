@@ -63,4 +63,4 @@ Find podcasts by keyword and get one clean record per show: who runs it, the con
 - The Actor identifies itself as `PodcastFeedReader/0.1 (+https://apify.com)` and does not use proxies. Feeds that refuse that request are reported in `error`.
 
 ## Pricing
-Free for now: you pay only Apify platform usage (a typical run costs well under one cent).
+Pay per event: $2.00 per 1,000 podcasts, platform usage included.

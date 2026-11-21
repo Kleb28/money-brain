@@ -43,4 +43,4 @@ Live open jobs for any list of companies, in one unified JSON schema. It calls t
 - A company must use one of the five systems with a public board. Workday, iCIMS and custom career sites are not covered.
 
 ## Pricing
-Free for now: you pay only Apify platform usage (a typical run costs well under one cent).
+Pay per event: $1.00 per 1,000 jobs, platform usage included.

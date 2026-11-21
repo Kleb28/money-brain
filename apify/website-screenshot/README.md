@@ -57,4 +57,4 @@ Give it a list of URLs and get one screenshot per page as PNG, JPEG or PDF. Each
 - 2 GB of memory is recommended. Lower `concurrency` for long pages or scale factors above 1.
 
 ## Pricing
-Free for now: you pay only Apify platform usage (a typical run costs well under one cent per page).
+Pay per event: $5.00 per 1,000 screenshots, platform usage included.

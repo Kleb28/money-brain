@@ -82,4 +82,4 @@ A store that cannot be read returns one item with `store`, `url` and an `error` 
 - With `respectRobotsTxt` on, a store is skipped when its `robots.txt` disallows the feed path (or the whole site) for all crawlers, or when `robots.txt` answers with a server error.
 
 ## Pricing
-Free for now: you pay only Apify platform usage (a typical run costs well under one cent).
+Pay per event: $0.50 per 1,000 products, platform usage included.

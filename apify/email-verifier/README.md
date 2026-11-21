@@ -56,4 +56,4 @@ Duplicates are checked once (comparison ignores letter case).
 - Catch-all domains, full mailboxes and deactivated accounts cannot be detected without contacting the mail server, which this Actor does not do.
 
 ## Pricing
-Free for now: you pay only Apify platform usage (a typical run costs well under one cent).
+Pay per event: $0.50 per 1,000 emails, platform usage included.
