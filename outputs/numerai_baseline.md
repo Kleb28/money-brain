@@ -1,6 +1,6 @@
 # Numerai baseline — v6.0, LightGBM on 'medium' (351 features), target target, every 4th era
 
-Train: 209 of 835 eras; validation: 100 of 398 eras (2019-01-04 .. 2026-08-14). Columns: mean per-era numerai_corr | std | sharpe (mean/std) | t (sharpe·√n) | max drawdown (cum corr) | share of eras > 0 | n eras.
+Train: 209 of 835 eras; validation: 100 of 399 eras (2019-01-04 .. 2026-08-21). Columns: mean per-era numerai_corr | std | sharpe (mean/std) | t (sharpe·√n) | max drawdown (cum corr) | share of eras > 0 | n eras.
 
 | model | target | mean | std | sharpe | t | max dd | pos | n | note |
 |---|---|---|---|---|---|---|---|---|---|
