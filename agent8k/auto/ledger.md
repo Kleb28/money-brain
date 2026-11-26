@@ -1,11 +1,11 @@
 # agent8k-auto ledger
 
-Updated 2026-11-25 09:44Z by agent8k/auto_agent.py. Do not edit by hand.
+Updated 2026-11-26 09:24Z by agent8k/auto_agent.py. Do not edit by hand.
 
 - Network: eip155:8453 · receive address 0x928980543D761ceb65600Aea70Cbd6D865c9b9Bc
-- Budget $20.00 · revenue $0.030 (external $0.020) · serving cost $0.0008 · agent cost $0.4803
+- Budget $20.00 · revenue $0.030 (external $0.020) · serving cost $0.0008 · agent cost $0.5124
 - Verdict test: external revenue ≥ serving + agent cost → not yet
-- Survival balance $19.549 · status: alive
+- Survival balance $19.517 · status: alive
 
 | product | free calls | paid calls | revenue $ |
 |---|---|---|---|
