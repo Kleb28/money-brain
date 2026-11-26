@@ -1,6 +1,6 @@
 # 8-K Brief ledger
 
-Updated 2026-11-25 by agent8k/ledger.py. Do not edit by hand.
+Updated 2026-11-26 by agent8k/ledger.py. Do not edit by hand.
 
 - Network: eip155:8453 · price $0.03/call · receive address 0x928980543D761ceb65600Aea70Cbd6D865c9b9Bc
 - Budget $10.00 · revenue (paid calls × price) $0.06 · model cost (estimated from tokens) $0.0003
