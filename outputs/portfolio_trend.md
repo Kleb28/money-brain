@@ -1,4 +1,4 @@
-# 추세추종 혼합 paper portfolio — inception 2026-11-30, 2026-11-21 기준
+# 추세추종 혼합 paper portfolio — inception 2026-11-30, 2026-11-28 기준
 
 규칙: portfolio/trend_rules.md. 완결된 달만 기록. B = SPY 60/IEF 40, T = B 80% + 추세추종 sleeve 20%.
 
